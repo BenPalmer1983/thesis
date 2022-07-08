@@ -1,0 +1,20 @@
+\begin{lstlisting}[style=sPseudo,caption={Add two numbers function}]
+// Four point interpolation
+function fourpoint(x, data)
+  // x - point value being interpolated at
+  // data - four x,y data points in a 4 by 2 array
+  y = 0.0
+  n = 4
+  for i = 1,n
+    l = 1.0
+    for j = 1,n
+      if (i != j) then
+        l = l * (x - data[j][1]) / (data[i][1] - data[j][1])
+      end if
+    next j
+    y = y + l * data[i][2]
+  next i
+end function
+\end{lstlisting}
+
+

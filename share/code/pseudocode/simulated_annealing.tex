@@ -1,0 +1,58 @@
+\begin{lstlisting}[style=sPseudo,caption={Simple simulated annealing subroutine}]
+// Simulated Annealing
+subroutine simulated_annealing(f, p, pv, x, y, t, p_best)
+  // f -       (IN)  the function f(p, x) for which the parameters are being optimised
+  // p -       (IN)  array containing parameter/parameters
+  // pv -      (IN)  array of maximum parameter/s variance
+  // x -       (IN)  array of x points
+  // y -       (IN)  array o fy points
+  // t -       (IN)  starting temperature
+  // p_best -  (OUT) optimised parameters
+  //
+
+  rss = (f(x[:], p[:]) - y[:])**2 
+  
+  rss_best = rss
+  p_best[:] = p[:]
+  
+  // These may be modified as required
+  outer_loops = 100
+  inner_loops = 1000
+  t_decrease = 0.99
+  pv_decrease = 0.99
+  
+  for outer = 1, outer_loops
+    for inner = 1, inner_loops
+    
+      r[:] = 0.5 - random_float(0.0, 1.0)  // array of random floats (same size as p)
+      
+      pt[:] = p[:] + r[:] * pv[:]
+      rss = (f(x[:], pt[:]) - y[:])**2 
+      
+      // If better, always use new parameters
+      if (rss < rss_best) then
+        rss_best = rss
+        p[:] = pt[:]
+        p_best[:] = pt[:]
+        
+      // If worse, sometimes use parameters (based on how good they are, and the temperature)
+      else      
+        // as t -> 0   exp((rss_best - rss)/t) -> 0
+        // as (rss_best - rss) -> 0    exp((rss_best - rss)/t) -> 1  (where t = 1) 
+        rn = random_float(0.0, 1.0)
+        if (rn <= exp((rss_best - rss) / t)) then
+          p[:] = pt[:]
+        end if
+      end if     
+      
+    end for
+    
+    // Decrease temperature
+    t = t_decrease * t
+    
+    // Decrease variance
+    pv[:] = pv_decrease * pv[:]
+    
+  end for
+end subroutine
+\end{lstlisting}

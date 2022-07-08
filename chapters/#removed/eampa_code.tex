@@ -1,0 +1,143 @@
+\section{Embedded Atom Model Potential Analysis Code}
+
+\subsection{Introduction}
+
+A computer code was developed to calculate ther properties of EAM potentials.  It was written in Python3, and as this is a simple language it is easy to add or modify this part of the code.  The speed benefits of Fortran and OpenMP were leveraged by writing part of the code in Fortran and compiling it into modules, available to use in Python, with F2PY.
+
+The Python code takes care of reading user input and outputting the results.  It also controls the potential functions, and given the nature of Python, it is easy to add custom potential functions with minimal coding knowledge.  
+
+Fortran subroutines were written to convert the potential functions to a tabulated format, where the value and derivative of a function is calculated by interpolation of data points, obviating the need for many different functions to be included in the Fortran code.  
+
+The first Fortran library, efs, was written to calculate the energy, forces and stresses of tens or hundreds of configurations of atoms.  The expected energy, forces and stresses may also be selectively passed to the library, in order to calculate the RSS and weighted RSS values, in order to measure the calculated values against exected values.
+
+The second Fortran library, bp, is used to calculate a number of properties of the modelled material.  This includes the bulk modulus, shear modulus and Young's modulus, as well as the nine elastic constants of an orthorhombic crsytal.
+
+A third Fortran library may be used to include a range of preset configurations to calculate the surface energy, vacancy energy and interstitial energies.  
+
+
+
+\subsubsection{FitPot}
+
+FitPot is a java program developed by Derek J. Hepburn at the University of Edinburgh.  It fits a potential to the energy, forces and stresses of reference configurations as well as elastic constants.  The minimisation options are a grid search of the parameter space, conjugate gradient minimisation and Levenberg-Marquart.  
+
+There are a couple of drawbacks with this code.  With just 2 parameters, a 10 by 10 grid is feasible to search.  However, if the potential is being fitted for an alloy, with 7 functions and a minimum or just one parameter per function, the parameter space would have 7 dimensions, and many more in reality, as most of the functions have more than one parameter.
+
+Without a method to search the parameter space globally, the conjugate-gradient and Levenberg-Marquart will only find their nearest minima, which may be far from the global minimum.  
+
+Finally, the Java program is not optimised to use multiple cores, whereas programs written C and Fortran may use OpenMP and OpenMPI to run sections of a program in parallel rather than serial.
+
+
+\subsubsection{PotFit}
+
+PotFit was developed by Peter Brommer and has continued to be developed by Daniel Schopf.  It is written in C and takes advantage of OpenMPI.  It has been modified in the past to also calculate other properties such as elastic constants, in addition to the energy, forces and stresses in atom configurations, but this was carried out by Dr Sheng of the George Mason University, and it is not a part of the repository available on GitHub.
+
+The code uses simulated annealing to search the parameter space, before minimising locally using Powell's conjugate direction method.  When PotFit was considered in this work, there was only an option to fit tabulated potentials, although the ability to fit analytic potentials may have been added.
+
+
+\subsubsection{First Glance Differences with EAMPA}
+
+The code was developed so the energy, force, stress and bulk property calculations are performed in Fortran, taking advantage of OpenMP where possible to speed up the calculations.  The remainder of the code, in Python, can be easily added to or modified without the need to edit the Fortran subroutines.
+
+Potential functions may be defined within Python and a ZBL potential for pair functions may be automatically switched on and splined with other pair functions, which may be particularly useful for potentials developed for simulations with high energy collisions, as seen during neutron or proton irradiation.
+
+Finally, EAMPA uses a genetic algorithm to fit the parameters of the potential functions.  The user is able to set the population size and the number of generations; this leads to a trade off between an increase in computation time against a possible route to a more optimised solution.
+
+
+
+
+\subsection{Development of the EAMPA Code}
+
+The first version of the code was developed in only Fortran.  It is a solid language, but it is unforgiving, it isn't as flexible nor does it have many of the modern features that a language such as Python has.
+
+The final version 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Introduction}
+
+
+
+
+\subsection{Splining Nodes}
+
+If a ZBL function is required, the user defines the range over which the ZBL function will apply, and the range over which the pair potential will apply.  It is unlikely that the value, derivative and second derivative of the two functions will match, so for a small distance between the two functions there will be a spline to ensure the entire function is continuous with a continuous derivative and, where possible, a continuous second derivative.
+
+Where a tabulated potential is supplied, it would be impratical to use each datam point as a parameter.  Nodes are selected from the data, and these nodes are used to spline between.
+
+The choice of spline in the EAMPA code is either a 3rd order or 5th order polynomial, or the exponential of either of these polynomials.  Which ever spline is required, the method of splining requires solving a linear set of equations to give the coefficients.
+
+Node a:
+
+\begin{equation}
+\begin{split}
+f_a(x_a) = c_0 + c_1 x_a + c_2 x_a^2 + c_3 x_a^3  \\
+f_a'(x_a) = 0 c_0 + c_1 + 2 c_2 x_a + 3 {c_3}^2 x_a  \\
+\end{split}
+\label{eq:eqFinnisSinclair}
+\end{equation}
+
+
+Node b:
+
+\begin{equation}
+\begin{split}
+f_b(x_b) = c_0 + c_1 x_b + c_2 x_b^2 + c_3 x_b^3  \\
+f_b'(x_b) = 0 c_0 + c_1 + 2 c_2 x_b + 3 {c_3}^2 x_b  \\
+\end{split}
+\label{eq:eqFinnisSinclair}
+\end{equation}
+
+Re-write as a matrix:
+
+\newcommand{\eqMehlStrainA}{
+  \begin{equation}
+    \begin{split}
+      \begin{bmatrix}
+      1 & x_a & x_a^2 & x_a^3  \\ 
+      0 & 1 & x_a & x_a^2 \\ 
+      1 & x_b & x_b^2 & x_b^3  \\ 
+      0 & 1 & x_b & x_b^2 \\ 
+      \end{bmatrix}
+      \begin{bmatrix}
+      c_0 & c_1 & c_2 & c_3  \\ 
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+      f_a(x_a) & f_a'(x_a) & f_b(x_b) & f_b'(x_b)  \\ 
+      \end{bmatrix}
+    \end{split}
+    \label{eq:splineFitting}
+  \end{equation}
+}
+
+
+
+
+
+
+
+
+
+

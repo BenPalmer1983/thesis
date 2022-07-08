@@ -1,0 +1,9 @@
+Rho Convergence Energy 160   < 1.5e-6
+Wfc Convergence Energy 50    < 5.0e-6
+Rho Convergence Force 160    < 3.0e-8
+Wfc Convergence Force 50     < 4.0e-8
+
+Degauss 0.04 , K-points 11  Energy     < 4e-5 Ry / 0.0 Ry
+Degauss 0.04 , K-points 11  Energy     < 0.0 RyBohr-1 / 0.0 Ry
+                
+

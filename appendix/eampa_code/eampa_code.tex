@@ -1,0 +1,98 @@
+\chapter{EAMPA Code}
+\label{chapter:appendix-eampa}
+ 
+The full code is available at https://github.com/BenPalmer1983/eampa\_v3
+
+Several of the important functions and subroutines that make up the code are listed below.  In some cases they will require Fortran module globals or Python classes in order to run.
+
+
+
+\section{Energy, Force, and Stress Subroutine}
+\label{section:appendixenergyforcestress}
+
+The subroutine that calculates energy, stress and forces is given in listing \ref{listing:efssubroutine}.  It uses OpenMP to split the calculations for individual configurations so each is computed by an individual process, meaning multiple configurations may be calculated in parallel.  It handles one or multiple density/embedding groups where either standard \acrshort{eam}, \acrshort{2beam} or more bands are required.
+
+\lstinputlisting[style=sFortran,caption={Energy, Force and Stress subroutine (Fortran)},label={listing:efssubroutine}]{appendix/eampa_code/efs.txt}
+
+
+\section{Bulk Properties: Add Configuration Subroutine}
+\label{section:appendixbpaddconfiguration}
+
+In this subroutine, the structures used to compute bulk properties are created.  The atom positions are set, depending on the crystal type, and then distortions are applied to the basis vector for each configuration in order to compute the equation of state and elastic constants (listing \ref{listing:addbpsubroutine}).
+
+\lstinputlisting[style=sFortran,caption={Bulk Properties - add configuration subroutine (Fortran)},label={listing:addbpsubroutine}]{appendix/eampa_code/bp.txt}
+
+
+\section{Main fitting class}
+
+The fitting class is in Python and is given in listing \ref{listing:fittingclass}.  It loops over the required fitting settings provided by the user and attempts to optimise the parameters for the potentials.
+
+\lstinputlisting[style=sPython,caption={Potential fitting - main class (Python)},label={listing:fittingclass}]{appendix/eampa_code/pot_fit.txt}
+
+
+
+\section{Cubic Splines}
+\label{section:appendixcubicspline}
+
+Fortran computes the cubic spline in the fnc module and the subroutine for the Heaviside type spline is in listing \ref{listing:splineheaviside}.
+
+\lstinputlisting[style=sFortran,caption={A cubic spline, using the Heaviside step function to cutoff each summed polynomial},label={listing:splineheaviside}]{appendix/eampa_code/cubic_spline.txt}
+
+
+\section{Spline Subroutine for the Cubic Knot Spline}
+\label{section:appendixcubicknotspline}
+
+The cubic knot spline is also computed in Fortran (listing \ref{listing:cubicsplinezbl}) and uses the solve linear set (sls\_solve) subroutine.
+
+\lstinputlisting[style=sFortran,caption={A cubic knot spline that could be extended to a quintic.},label={listing:cubicspline}]{appendix/eampa_code/cubic_knot_spline.txt}
+
+
+\section{ZBL with Cubic Knot Spline}
+\label{section:appendixcubicknotsplinezbl}
+
+A further set of subroutines are used to compute the cubic spline summed to the ZBL function (listing \ref{listing:cubicsplinezbl}).
+
+\lstinputlisting[style=sFortran,caption={ZBL with cubic knot spline, variable x, y(x) and y'(x) parameters},label={listing:cubicsplinezbl}]{appendix/eampa_code/cubic_knot_spline_zbl.txt}
+
+
+
+\section{Simulated Annealing}
+\label{section:simulatedannealing}
+
+The simulated annealing algorithm is used in Python and is one of the global optimization algorithms (listing \ref{listing:simulatedannealing}).
+
+\lstinputlisting[style=sPython,caption={Simulated Annealing global optimization function},label={listing:simulatedannealing}]{appendix/eampa_code/sa.txt}
+
+
+\section{Genetic Algorithm}
+\label{section:geneticalgorithm}
+
+Another global optimization algorithm used in the Python section of the program is the genetic algorithm (listing \ref{listing:geneticalgorithm}).
+
+\lstinputlisting[style=sPython,caption={Genetic Algorithm global optimization function},label={listing:geneticalgorithm}]{appendix/eampa_code/ga.txt}
+
+
+
+\section{Gradient Descent}
+\label{section:gradientdescent}
+
+Gradient descent using a line search is one option to refine the genetic algorithm (listing \ref{listing:gradientdescent}), but on reflection it may have been better to use the algorithms in SciPy to enhance members of the genetic algorithm population.
+
+\lstinputlisting[style=sPython,caption={Gradient descent pseudocode},label={listing:gradientdescent}]{appendix/eampa_code/gd_pseudo.txt}
+
+
+
+\section{Interpolation}
+\label{section:interpolationpseudo}
+
+Lagrange polynomial interpolation was programmed in Fortran and was used in a number of places throughout the program (listing \ref{listing:lagrangepoly}).
+
+\lstinputlisting[style=sFortran,caption={Lagrange polynomial interpolation},label={listing:lagrangepoly}]{appendix/eampa_code/interp.txt}
+
+
+\section{Interpolation (Gradient)}
+\label{section:interpolationgradientpseudo}
+
+A modified version of the Lagrange polynomial interpolation was programmed in Fortran to interpolate the derivative of a set of data points at a given position between (and including) the start and end point (listing \ref{listing:lagrangepolygradient}).
+
+\lstinputlisting[style=sFortran,caption={Lagrange polynomial interpolation (Gradients)},label={listing:lagrangepolygradient}]{appendix/eampa_code/interp_gradient.txt}

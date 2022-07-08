@@ -1,0 +1,246 @@
+13.130      ######################################################
+13.130      Sim 1
+13.130      ######################################################
+13.130      
+13.130      Beam flux:          3120754564499.886
+13.130      Target depth:       0.0005
+13.130      Projectile:         p
+13.130      Beam duration/s:    300.0
+13.130      Sim end time/s:     260000.0
+13.130      
+13.130      Starting Target Material:
+13.130      
+13.130      ####################################################
+13.130                           Isotopes                       
+13.130      ####################################################
+13.130        Isotope       Percentage by Mass  
+13.130        26 Fe 56      91.753250
+13.130        26 Fe 54      5.845279
+13.130        26 Fe 57      2.119074
+13.130        26 Fe 58      0.282397
+13.130      
+13.130      Loading exyz /cloud/Code/python/activity/examples/fe/Fe36MeV.exyz
+13.620      Load complete
+13.620      
+13.620      Calculate residual reaction rates
+25.746      Save reaction rates
+25.746      
+25.746      
+25.746      #################################################################
+25.746      Particle & Residual Reaction Rates
+25.746      #################################################################
+25.746      Source isotope: 54Fe  (26054)
+25.746      helium-3:           8128226.96053868
+25.746      deuteron:           31267425.752861295
+25.746      triton:             658063.9037544213
+25.746      alpha:              47929259.98417321
+25.746      gamma:              529302786.1997857
+25.746      proton:             1280534004.9887292
+25.746      neutron:            341994739.706016
+25.746      52Fe:               10375758.270700272
+25.746      54Co(meta 1):       1268489.4293415854
+25.746      52Fe(meta 1):       91996.5249677117
+25.746      53Fe:               109537376.08734141
+25.746      53Fe(meta 1):       7878234.293365053
+25.746      50Mn(meta 1):       447309.355049635
+25.746      54Co:               6134948.952811248
+25.746      50Mn:               405358.7041290127
+25.746      52Mn(meta 1):       51514257.29426319
+25.746      52Mn:               79833423.71247151
+25.746      54Fe:               92416418.45220399
+25.746      55Co:               140959.1816623515
+25.746      47V:                128374.10459496645
+25.746      53Mn:               121917363.90080762
+25.746      49Cr:               2248642.2236076766
+25.746      53Co:               166474.72453697983
+25.746      51Mn:               13144593.549430655
+25.746      51Cr:               2004868.7752378457
+25.746      52Cr:               39343113.4701649
+25.746      46Ti:               10113.753559680361
+25.746      50Cr:               20277932.722341496
+25.746      49V:                4456332.156319902
+25.746      
+25.746      
+25.746      Source isotope: 56Fe  (26056)
+25.746      helium-3:           113796332.11233293
+25.746      deuteron:           640048071.8232051
+25.746      triton:             27462082.512083083
+25.746      alpha:              784412097.0717504
+25.746      gamma:              12750097788.074738
+25.746      proton:             12862634835.97489
+25.746      neutron:            13361355665.752747
+25.746      53Fe(meta 2):       35110.96922030936
+25.746      54Co(meta 1):       2098133.50324677
+25.746      48Ti:               130153.19806252541
+25.746      53Fe:               1650122.878507311
+25.746      48Ti(meta 2):       1.3498721704564602
+25.747      54Co:               2217228.5579557572
+25.747      52Mn(meta 1):       51722330.55364108
+25.747      52Mn:               69812825.68860963
+25.747      53Mn:               617186326.652764
+25.747      56Co:               297046346.5343496
+25.747      57Co:               3332169.8943027295
+25.747      56Fe:               1324989311.7401316
+25.747      54Mn:               1105697455.8025718
+25.747      48V:                6824.981311026873
+25.747      54Cr:               8886829.249919416
+25.747      51V:                1908704.2981555585
+25.747      54Fe:               1768658520.9905515
+25.747      55Mn:               469054279.81113464
+25.747      51Mn:               18427975.828979623
+25.747      51Cr:               157917501.71033847
+25.747      55Co:               158802991.55014923
+25.747      55Fe:               3310150310.2897525
+25.747      52Cr:               198718293.6955533
+25.747      53Cr:               868047.1046782847
+25.747      50Cr:               24883.064209825417
+25.747      49V:                3730773.4294895227
+25.747      
+25.747      
+25.747      Source isotope: 57Fe  (26057)
+25.747      helium-3:           2815186.114818401
+25.747      deuteron:           16795071.729165718
+25.747      triton:             1290070.0147642847
+25.747      alpha:              18996008.688927133
+25.747      gamma:              318048823.03063726
+25.747      proton:             263457267.1862257
+25.747      neutron:            381235458.34554696
+25.747      58Co(meta 1):       17711.056288183212
+25.747      58Co:               45119.123356589305
+25.747      52Mn(meta 1):       756983.0649500752
+25.747      52Mn:               1130057.9800183107
+25.747      54Mn:               10749922.705687553
+25.747      57Co:               6645538.449427711
+25.747      57Fe:               22282747.27841167
+25.747      53Mn:               9077540.382290483
+25.747      56Mn:               5561497.664552677
+25.747      54Cr:               32475.710066264975
+25.747      51V:                278.34482695928915
+25.747      50V:                60535.34442859975
+25.747      56Co:               7513776.276815263
+25.747      54Fe:               2335917.272526654
+25.747      49Ti:               66.6465837718329
+25.747      55Mn:               17896651.547242593
+25.747      55Cr:               5259.683969248049
+25.747      51Cr:               3777.5330594318025
+25.747      55Co:               1040282.7451955614
+25.747      55Fe:               52180477.480709895
+25.747      52Cr:               3736281.5484410194
+25.747      53Cr:               810918.822403883
+25.747      52V:                1714.7498473523403
+25.747      56Fe:               82701492.44833918
+25.747      49V:                29701.937810047228
+25.747      
+25.747      
+25.747      Source isotope: 58Fe  (26058)
+25.747      helium-3:           265562.0411442721
+25.747      deuteron:           2046736.073932219
+25.747      triton:             161109.31102851706
+25.747      alpha:              2132323.5017096302
+25.747      gamma:              43596863.655506425
+25.747      proton:             27781338.358164437
+25.747      neutron:            60156638.64809996
+25.747      58Co(meta 1):       393025.0417438573
+25.747      58Co:               787138.5782124916
+25.747      58Fe:               3578387.673606792
+25.747      59Co:               7298.027151484427
+25.747      55Mn:               917307.4059246042
+25.747      53Mn:               519923.8215990508
+25.747      50Ti:               139.09122070067937
+25.747      56Mn:               495624.1780436759
+25.747      54Mn:               750596.5413600848
+25.747      54Cr:               42781.814693838154
+25.747      51V:                3640.3531430735275
+25.747      50V:                610.1198082776706
+25.747      56Co:               528863.6120293873
+25.747      54Fe:               188.91955540759065
+25.747      57Co:               2188175.452108935
+25.747      57Fe:               7076618.451591522
+25.747      55Cr:               26.068658806358545
+25.747      57Mn:               347080.97455489024
+25.747      55Co:               3843.437575999017
+25.747      55Fe:               445703.4711783764
+25.747      52Cr:               1584.071467022736
+25.747      53Cr:               94533.22614130769
+25.747      56Fe:               8672082.613410642
+25.747      
+25.747      
+25.747      Calculate residual amounts over time
+25.747      
+25.747      In beam time steps: 101
+25.747      Out of beam time steps: 201
+25.747      
+25.748      In beam activity over 101 time steps
+27.168      In beam activity over 201 time steps
+30.417      Tally amount by residual isotope
+30.417      Tally amount of residual isotopes by target isotope
+30.417      Activity per target isotope by residual radioactive isotope over time
+30.419      Activity by residual radioactive isotope over time
+30.420      Activity resulting from each target isotope over time
+30.422      Total activity from all targets and residuals over time
+30.424      Activity per target and residual over time
+30.528      Activity per residual over time
+30.655      Activity per target over time
+30.771      Activity data for pie charts
+30.793      Tally gammas by target -> residual -> energy
+30.797      Tally gammas by residual -> energy
+30.800      Tally gammas by target -> energy
+30.803      Tally gammas -> by gamma energy
+30.807      Tally gammas by residual and gamma energies
+30.809      Tally gammas by target and gamma energies
+30.811      Tally gammas by target, residual and gamma energies
+30.814      Per target and residual gamma lines over time
+31.061      Per residual gamma lines over time
+31.297      Per target gamma lines over time
+31.542      Tallied gamma lines over time
+31.790      Per residual gamma lines over time
+31.966      Per target gamma lines over time
+32.119      Total activity and energy of gammas over time
+32.266      Gamma data for pie charts
+32.294      Activity and Gamma totals over time for charts
+32.294      
+32.294   
+45.551      Gamma Dose - Beam End  
+45.551      ===================================================
+45.551      Activity (Bq)              1.1873e+08  
+45.551      Gamma Energy (eV)          9.7722e+13    
+45.551      Gamma Energy (mW)          1.5657e-02   
+45.551      Absorbed Dose (mGy/s)      1.5570e-11    
+45.551      Absorbed Dose (mGy/hr)     5.6051e-08                
+45.551      
+45.552      
+45.552      Gamma Dose - Sim End
+45.552      ===================================================
+45.552      Activity (Bq)              1.8420e+05
+45.552      Gamma Energy (eV)          3.5639e+11    
+45.552      Gamma Energy (mW)          5.7100e-05     
+45.552      Absorbed Dose (mGy/s)      5.6782e-14     
+45.552      Absorbed Dose (mGy/hr)     2.0442e-10   
+45.552      
+45.552      
+45.552      Absorbed Dose Calculations
+45.552      ===================================================
+45.552      Absorbed dose assumptions:
+45.552      1. radiation from point, emitted isotropically
+45.552      2. 80Kg human
+45.552      3. 1m from point source
+45.552      4. 1m squared surface area
+45.552      5. all energy absorbed
+45.552      
+45.552      
+45.552      Dose Limits
+45.552      ===================================================
+45.552      employees 18+             20 millisieverts/year
+45.552      trainees 18+              6 millisieverts/year
+45.552      public and under 18s      1 millisievert/year
+45.552      public and under 18s      1.140771128E-04 millisieverts/hour
+45.552      public and under 18s      3.2E-08 millisieverts/second
+45.552      
+45.552      Dose averaged over area of skin not exceeding 1cm2
+45.552      Source: http://www.hse.gov.uk/radiation/ionising/doses/
+45.552      
+45.552      1mW gammas completely absorbed by 80kg human will give public limit for entire year over 80 seconds.
+45.552      
+45.552      Dose under 1W gammas absorbed for 1s no imediate changes (under 100 Rads)
+45.552      Dose 1W-2W gammas absorbed for 1s acute radiation syndrome (100-200 Rads)
+45.552      Dose 10W+ gammas absorbed for 1s mostly fatal (1000+ Rads)

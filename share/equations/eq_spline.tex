@@ -1,0 +1,57 @@
+%%==================================================================================================
+%%==================================================================================================
+
+\newcommand{\eqSplineThreePoints}{
+  \begin{equation}
+    \begin{split}
+      P_{1} = \left( x_A, f(x_A) \right) \\
+      P_{2} = \left( x_A, f'(x_A) \right) \\
+      P_{3} = \left( x_B, f(x_B) \right) \\
+      P_{4} = \left( x_B, f'(x_B) \right)
+    \end{split}
+    \label{eq:eqSplineThreePoints}
+  \end{equation}
+}
+
+\newcommand{\eqSplineThreeEquations}{
+  \begin{equation}
+    \begin{split}
+      c_0 + c_1 x_A + c_2 {x_A}^2 + c_3 {x_A}^3 = f(x_A) \\
+      0 + c_1 + 2 c_2 {x_A} + 3 c_3 {x_A}^2 = f'(x_A) \\
+      c_0 + c_1 x_B + c_2 {x_B}^2 + c_3 {x_B}^3 = f(x_B) \\
+      0 + c_1 + 2 c_2 {x_B} + 3 c_3 {x_B}^2 = f'(x_B) 
+    \end{split}
+    \label{eq:eqSplineThreeEquations}
+  \end{equation}
+}
+
+\newcommand{\eqSplineThreeMatrix}{
+  \begin{equation}
+    \begin{split}
+      \begin{bmatrix}
+      1  &  x_A  &  {x_A}^2  &  {x_A}^3     \\
+      0  &  1    &  2 x_A    &  3 {x_A}^2   \\
+      1  &  x_B  &  {x_B}^2  &  {x_B}^3     \\
+      0  &  1    &  2 x_B    &  3 {x_B}^2
+      \end{bmatrix}
+      \begin{bmatrix}
+      c_0 \\
+      c_1 \\ 
+      c_2 \\ 
+      c_3
+      \end{bmatrix}
+      = 
+      \begin{bmatrix}
+      f(x_A) \\
+      f'(x_A) \\ 
+      f(x_B) \\ 
+      f'(x_B)
+      \end{bmatrix}
+    \end{split}
+    \label{eq:eqSplineThreeMatrix}
+  \end{equation}
+}
+
+
+
+

@@ -1,0 +1,238 @@
+\chapter{Fe-Pd Potential}
+\label{chapter:appendix-fepdpotential}
+
+This potential has been developed specifically for Fe and Pd where the atoms are in an \acrshort{fcc} structure.  Particular weighting was given to the relaxed configurations of each pure element, those with small additions of Pd to Fe and surface/slab configurations.
+
+\section{Tabulated Potential}
+
+The files for the potential are large, with the \acrshort{lammps} version being over 7,000 lines long containing 35,000+ data points.  They are not included here but are available to download from:
+
+https://github.com/BenPalmer1983/fepd\_feru\_potential
+
+
+
+
+
+\clearpage
+\section{Bulk Properties}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Iron FCC Bulk Properties
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\FloatBarrier
+\subsection{Iron FCC}
+
+\subsubsection{Bulk Property Values}
+
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lcccccc}
+\hline\hline
+Property & \multicolumn{3}{c}{DFT Computed} & \multicolumn{3}{c}{This Potential} \\
+\hline\hline
+$a_0$ (angs)         & \multicolumn{3}{c}{3.42}   & \multicolumn{3}{c}{3.43} \\
+Basis            & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.05 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.05 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} \\
+$E_{coh}$ (eV)           & \multicolumn{3}{c}{-4.26}  & \multicolumn{3}{c}{-4.27} \\
+$B_0$ (GPa)              & \multicolumn{3}{c}{226.0}  & \multicolumn{3}{c}{297.2} \\
+Stiff.1 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 364.6 & 141.6 & 233.8 & 0 & 0 & 0 \\ 141.6 & 298.7 & 130.40 & 0 & 0 & 0 \\ 233.8 & 130.4 & 364.6 & 0 & 0 & 0 \\ 0 & 0 & 0 & 186.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 266.8 & 0 \\ 0 & 0 & 0 & 0 & 0 & 186.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 354.89 &  239.78 & 278.15 & 0 & 0 & 0 \\ 239.78 & 348.39 & 239.78 & 0 & 0 & 0 \\ 278.15 & 239.78 & 354.89 & 0 & 0 & 0 \\ 0 & 0 & 0 & 164.38 & 0 & 0 \\ 0 & 0 & 0 & 0 & 208.83 & 0 \\ 0 & 0 & 0 & 0 & 0 & 164.38 \end{bmatrix}$} \\
+Stiff.2 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 364.6 & 141.6 & 233.8 & 0 & 0 & 0 \\ 141.6 & 298.7 & 130.40 & 0 & 0 & 0 \\ 233.8 & 130.4 & 364.6 & 0 & 0 & 0 \\ 0 & 0 & 0 & 186.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 266.8 & 0 \\ 0 & 0 & 0 & 0 & 0 & 186.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 370.46 & 260.55 & 260.55 & 0 & 0 & 0 \\ 260.55 & 370.46 & 260.55 & 0 & 0 & 0 \\ 260.55 & 260.55 & 370.46 & 0 & 0 & 0 \\ 0 & 0 & 0 & 187.87 & 0 & 0 \\ 0 & 0 & 0 & 0 & 187.87 & 0 \\ 0 & 0 & 0 & 0 & 0 & 187.87 \end{bmatrix}$} \\
+\hline\hline
+\end{tabular}
+\caption{The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state.  The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite{dfttisiravindran} and in stiffness (2) by Mehl et al\cite{mehlsp}\cite{elasticpropertiesmehl}.}
+\label{table:fedftvspotential}
+\end{table}
+
+
+\subsubsection{Equation of State Plots}
+
+\begin{figure}[htb]
+\begin{subfigure}{.44\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/rose_plot_bp_1.eps}  
+  \caption{Rose-Vinet}
+  \label{fig:fepd-fefcc-rose}
+\end{subfigure}
+\begin{subfigure}{.44\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/equation_of_state_bp_1.eps}  
+  \caption{Birch Murnaghan}
+  \label{fig:fepd-fefcc-bmeos}
+\end{subfigure}
+\label{fig:fig:fepd-fefcc-equation-of-state}
+\caption{Equation of State plots from this potential for \acrshort{fcc} Fe}
+\end{figure}
+
+
+\clearpage
+\subsubsection{Elastic Constant Plots}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.90\linewidth]{chapters/results_potential_fitting/fepd_potential/elastic_strains_bp_1.eps}  
+\label{fig:fepd-fefcc-rose}
+\caption{Ravindran et al\cite{dfttisiravindran} distortion-energy plots}
+\end{figure}
+
+\begin{figure}[htb]
+\begin{subfigure}{.42\textwidth}
+  \centering
+  \includegraphics[width=.90\linewidth]{chapters/results_potential_fitting/fepd_potential/msp_c11_c12_plot_bp_1.eps}  
+  \caption{C11-C12 orthorhombic distortion}
+  \label{fig:fepd-fefcc-rose}
+\end{subfigure}
+\begin{subfigure}{.42\textwidth}
+  \centering
+  \includegraphics[width=.90\linewidth]{chapters/results_potential_fitting/fepd_potential/msp_c44_plot_bp_1.eps}  
+  \caption{C44 monoclinic distortion}
+  \label{fig:fepd-fefcc-bmeos}
+\end{subfigure}
+\label{fig:fig:fepd-fefcc-equation-of-state}
+\caption{Equation of State plots from this potential for \acrshort{fcc} Fe}
+\end{figure}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Palladium FCC Bulk Properties
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\FloatBarrier
+\subsection{Palladium FCC}
+
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lcccccc}
+\hline\hline
+Property & \multicolumn{3}{c}{DFT Computed} & \multicolumn{3}{c}{This Potential} \\
+\hline\hline
+$a_0$ (angs)         & \multicolumn{3}{c}{3.93}   & \multicolumn{3}{c}{3.94} \\
+Basis            & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} \\
+$E_{coh}$ (eV)           & \multicolumn{3}{c}{-3.91}  & \multicolumn{3}{c}{--3.92} \\
+$B_0$ (GPa)              & \multicolumn{3}{c}{184.0}  & \multicolumn{3}{c}{172.3} \\
+Stiff.1 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 218.5 & 151.4 & 151.4 & 0 & 0 & 0 \\ 151.4 & 218.5 & 151.4 & 0 & 0 & 0 \\ 151.4 & 151.4 & 218.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 80.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 80.3 & 0 \\ 0 & 0 & 0 & 0 & 0 & 80.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 193.52 & 142.54 & 142.54 & 0 & 0 & 0 \\ 142.54 & 193.52 & 142.54 & 0 & 0 & 0 \\ 142.54 & 142.54 & 193.52 & 0 & 0 & 0 \\ 0 & 0 & 0 & 70.86 & 0 & 0 \\ 0 & 0 & 0 & 0 & 70.86 & 0 \\ 0 & 0 & 0 & 0 & 0 & 70.86 \end{bmatrix}$} \\
+Stiff.2 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 218.5 & 151.4 & 151.4 & 0 & 0 & 0 \\ 151.4 & 218.5 & 151.4 & 0 & 0 & 0 \\ 151.4 & 151.4 & 218.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 80.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 80.3 & 0 \\ 0 & 0 & 0 & 0 & 0 & 80.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 206.76 & 155.09 & 155.09 & 0 & 0 & 0 \\ 155.09 & 206.76 & 155.09 & 0 & 0 & 0 \\ 155.09 & 155.09 & 206.76 & 0 & 0 & 0 \\ 0 & 0 & 0 & 71.77 & 0 & 0 \\ 0 & 0 & 0 & 0 & 71.77 & 0 \\ 0 & 0 & 0 & 0 & 0 & 71.77 \end{bmatrix}$} \\
+\hline\hline
+\end{tabular}
+\caption{The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state.  The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite{dfttisiravindran} and in stiffness (2) by Mehl et al\cite{mehlsp}\cite{elasticpropertiesmehl}.}
+\label{table:fedftvspotential}
+\end{table}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Iron BCC Bulk Properties
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\FloatBarrier
+\subsection{Iron BCC}
+
+
+
+
+
+
+
+
+\clearpage
+\section{Energy-Force-Stress Matching}
+
+\subsection{Comparing DFT energies to Potential Energies}
+
+\begin{figure}[htb]
+\begin{subfigure}{.42\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/potential_known_energy_fit_set.eps}  
+  \caption{C11-C12 orthorhombic distortion}
+  \label{fig:fepd-fefcc-rose}
+\end{subfigure}
+\begin{subfigure}{.42\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/potential_known_energy_full_set.eps}  
+  \caption{C44 monoclinic distortion}
+  \label{fig:fepd-fefcc-bmeos}
+\end{subfigure}
+\label{fig:fig:fepd-fefcc-equation-of-state}
+\caption{Equation of State plots from this potential for \acrshort{fcc} Fe}
+\end{figure}
+
+
+
+
+\clearpage
+\subsection{Surface Energy}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.65\linewidth]{chapters/results_potential_fitting/fepd_potential/fe_surface_energy.eps}  
+\caption{Comparing the \acrshort{dft} energies to those calculated with this potential.}
+\label{fig:fepd-fefcc-rose}
+\end{figure}
+
+
+
+
+
+\clearpage
+\FloatBarrier
+\section{Potential Function Plots}
+
+\begin{figure}[htb]
+\begin{subfigure}{.32\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/fefe_pair.eps}  
+  \caption{Fe-Fe Pair}
+  \label{fig:fepd-pot-fefe}
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/fepd_pair.eps}  
+  \caption{Fe-Pd Pair}
+  \label{fig:fepd-pot-fepd}
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/pdpd_pair.eps}  
+  \caption{Pd-Pd Pair}
+  \label{fig:fepd-pot-pdpd}
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/fe_dens.eps}  
+  \caption{Fe Density}
+  \label{fig:fepd-pot-fedens}
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/fe_embe.eps}  
+  \caption{Fe Embed}
+  \label{fig:fepd-pot-feembe}
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/pd_dens.eps}  
+  \caption{Pd Density}
+  \label{fig:fepd-pot-pddens}
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/results_potential_fitting/fepd_potential/pd_embe.eps}  
+  \caption{Pd Embed}
+  \label{fig:fepd-pot-pdembe}
+\end{subfigure}
+\label{fig:fig:fepd-fefcc-equation-of-state}
+\caption{Equation of State plots from this potential for \acrshort{fcc} Fe}
+\end{figure}
+
+
+

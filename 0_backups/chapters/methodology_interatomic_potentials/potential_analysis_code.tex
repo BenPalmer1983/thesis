@@ -1,0 +1,59 @@
+\section{Potential Analysis and Fitting Code}
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Tabulated Potentials and Interpolation}
+
+
+
+
+\subsubsection{Lagrange Interpolation}
+
+Lagrange interpolation is a valuable tool when evaluating or optimising potentials.  Rather than fit a polynomial that exactly passes through n points, Lagrange interpolation returns the value of f(x) only.  This is much faster, computationally, than fitting an nth order polynomial, but it doesn't return enough information in itself to calculate f'(x) and f''(x).
+By using the Lagrange interpolation algorithm recursively, the first and second derivative values are calculated.  This makes it a useful tool for splining between nodes, where the x, f(x), f'(x) and f''(x) are required, and for energy and force calculations from tabulated potentials where the radius and density values of the functions/functionals fall between tabulated points.  For a set of data points:
+
+\begin{equation}
+D = \lbrace \left( x_0, y_0 \right) \rbrace
+\end{equation}
+
+An alternative method is to set up a system of linear equations and solve this by matrix inversion.  Using Fortran, both methods were evaluated for three, four and five point interpolation.  The outcome is that Lagrange Interpolation shows a decrease of processing time of up to a factor of ten.
+
+\begin{equation}
+P(n, x) = \sum_{i=1}^{i=n} y_n L_n (x)
+\end{equation}
+
+
+
+
+
+
+
+
+
+\subsection{Simulated Annealing}
+
+
+
+
+
+
+
+\subsection{Levenberg-Marquardt Optimisation}
+
+
+
+
+
+
+
+
+

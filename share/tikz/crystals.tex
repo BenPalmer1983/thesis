@@ -1,0 +1,285 @@
+\newcommand{\dLine}[7]{
+%% X,Y,Z
+  \draw[#1] (#2,#4,#3) -- (#5,#7,#6);  
+}
+
+
+\newcommand{\dAxis}[4]{
+	%% X,Y,Z	
+	\dLine{dashed,black,very thick}{#1-0.5*#4}{#2}{#3}{#1+0.5*#4}{#2}{#3}
+	\dLine{dashed,black,very thick}{#1}{#2-0.5*#4}{#3}{#1}{#2+0.5*#4}{#3}
+	\dLine{dashed,black,very thick}{#1}{#2}{#3-0.5*#4}{#1}{#2}{#3+0.5*#4}
+}
+
+
+
+
+
+
+
+
+
+
+\newcommand{\cubeBackground}[3]{%
+	%%
+	%% {width (x), depth(y), height(z)}
+	%%
+	%% Side panels	
+	\fill[blue!10,opacity=1.0] (0,0,0) -- (0,0,#2) -- (#1,0,#2) -- (#1,0,0) -- cycle;     %% bottom square
+	\fill[blue!10,opacity=0.3] (0,0,0) -- (#1,0,0) -- (#1,#3,0) -- (0,#3,0) -- cycle;    %% rear square
+	\fill[blue!10,opacity=0.0] (0,0,0) -- (0,0,#2) -- (#1,#3,0) -- (0,#3,0) -- cycle;    %% side square
+	\fill[blue!10,opacity=0.0] (0,0,#2) -- (#1,0,#2) -- (#1,#3,#2) -- (0,#3,#2) -- cycle; %% front square
+	\fill[gray!10,opacity=0.0] (0,#3,0) -- (0,#3,#2) -- (#1,#3,#2) -- (#1,#3,0) -- cycle;  %% top square
+	\fill[blue!10,opacity=0.3] (0,0,0) -- (0,0,#2) -- (0,#3,#2) -- (0,#3,0) -- cycle;     %% bottom square
+	%% draw external edges
+	\draw[] (0,0,#2) -- (#1,0,#2) -- (#1,#3,#2) --(0,#3,#2) --(0,0,#2)
+	(#1,0,#2) -- (#1,0,0)  -- (#1,#3,0) --(0,#3,0) -- (0,#3,#2)    
+	(#1,#3,#2) -- (#1,#3,0);
+	%% Draw "hidden" edges	
+	\draw[dashed] (0,0,0) -- (0,0,#2);
+	\draw[dashed] (0,0,0) -- (#1,0,0); 
+	\draw[dashed] (0,0,0) -- (0,#3,0);	
+	%% Base Grid
+	%% vert	
+	\draw[dashed,gray,very thin] (0.25*#1,0,0) -- (0.25*#1,0,#2);
+	\draw[dashed,gray,very thin] (0.50*#1,0,0) -- (0.50*#1,0,#2);
+	\draw[dashed,gray,very thin] (0.75*#1,0,0) -- (0.75*#1,0,#2);
+	%% horiz	
+	\draw[dashed,gray,very thin] (0,0,0.25*#2) -- (#1,0,0.25*#2);
+	\draw[dashed,gray,very thin] (0,0,0.50*#2) -- (#1,0,0.50*#2);
+	\draw[dashed,gray,very thin] (0,0,0.75*#2) -- (#1,0,0.75*#2);
+	
+	%% Back grid
+	%% vert	
+	\draw[dashed,gray,very thin] (0.25*#1,0,0) -- (0.25*#1,#3,0);
+	\draw[dashed,gray,very thin] (0.50*#1,0,0) -- (0.50*#1,#3,0);
+	\draw[dashed,gray,very thin] (0.75*#1,0,0) -- (0.75*#1,#3,0);
+	%% horiz	
+	\draw[dashed,gray,very thin] (0,0.25*#3,0) -- (#1,0.25*#3,0);
+	\draw[dashed,gray,very thin] (0,0.50*#3,0) -- (#1,0.50*#3,0);
+	\draw[dashed,gray,very thin] (0,0.75*#3,0) -- (#1,0.75*#3,0);
+	
+	%% Side grid
+	%% vert	
+	\draw[dashed,gray,very thin] (0,0,0.25*#1) -- (0,#3,0.25*#1);
+	\draw[dashed,gray,very thin] (0,0,0.50*#1) -- (0,#3,0.50*#1);
+	\draw[dashed,gray,very thin] (0,0,0.75*#1) -- (0,#3,0.75*#1);	
+	%% horiz	
+	\draw[dashed,gray,very thin] (0,0.25*#3,0) -- (0,0.25*#3,#1);
+	\draw[dashed,gray,very thin] (0,0.50*#3,0) -- (0,0.50*#3,#1);
+	\draw[dashed,gray,very thin] (0,0.75*#3,0) -- (0,0.75*#3,#1);	
+	
+	%% central axis    
+	\draw[dashed,black,very thick] (0.5*#2,0,0.5*#1) -- (0.5*#2,#3,0.5*#1); 
+	\draw[dashed,black,very thick] (0,0.5*#3,0.5*#1) -- (#2,0.5*#3,0.5*#1);	
+	\draw[dashed,black,very thick] (0.5*#2,0.5*#3,0) -- (0.5*#2,0.5*#3,#1);
+}
+
+\newcommand{\atom}[4]{%
+	\filldraw[ball color=blueC] (#1,#2,#3) circle[radius=#4];
+}   
+
+\newcommand{\atomDefect}[4]{%
+	\filldraw[ball color=blueA] (#1,#2,#3) circle[radius=#4];
+}   
+
+\newcommand{\atomGhost}[4]{%
+	\filldraw[ball color=blueA!10] (#1,#2,#3) circle[radius=#4];
+}   
+
+
+
+
+%%##########################################################
+%% FCC Config
+%%##########################################################
+
+\newcommand{\fccConfig}[4]{
+\begin{tikzpicture}	
+%% Background	
+\cubeBackground{#1}{#2}{#3}
+%% Atoms
+%% corners  
+\atom{0.0}{0.0}{0.0}{#4*#1.0};
+\atom{#2}{0.0}{0.0}{#4*#1.0};
+\atom{0.0}{#3}{0.0}{#4*#1.0};
+\atom{0.0}{0.0}{#1}{#4*#1*1.4};
+\atom{#2}{#3}{0.0}{#4*#1.0};
+\atom{#2}{0.0}{#1}{#4*#1*1.4};
+\atom{0.0}{#3}{#1}{#4*#1*1.4};
+\atom{#2}{#3}{#1}{#4*#1*1.4};
+%% rear plane  
+\atom{0.5*#2}{0.0}{0.5*#1}{#4*#1*1.2};
+%% middle plane  
+\atom{0.0}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+\atom{0.5*#2}{0.5*#3}{0.0}{#4*#1.0};
+\atom{0.5*#2}{0.5*#3}{#1}{#4*#1*1.4};
+\atom{#2}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+%% front plane  
+\atom{0.5*#2}{#3}{0.5*#1}{#4*#1*1.2};	
+\end{tikzpicture} 
+}
+
+\newcommand{\fccConfigFig}[6]{
+\begin{figure}[!htbp]
+\begin{center}
+\fccConfig{#3}{#4}{#5}{#6}
+\captionsetup{font={it}}
+\caption{#1}
+\label{fig:#2}
+\end{center}
+\end{figure}
+}   
+
+
+
+%%##########################################################
+%% FCC Config Octahedral Interstitial
+%%##########################################################
+
+\newcommand{\fccOctaConfig}[4]{%
+\begin{tikzpicture}	
+%% Background	
+\cubeBackground{#1}{#2}{#3}
+	
+%% Octahedral lines
+\draw[black,very thin] (0.5*#2,0.5*#3,0) -- (0,0.5*#3,0.5*#1);	
+\draw[black,very thin] (0.5*#2,0.5*#3,0) -- (1*#2,0.5*#3,0.5*#1);	
+\draw[black,very thin] (0.5*#2,0.5*#3,0) -- (0.5*#2,0,0.5*#1);	
+\draw[black,very thin] (0.5*#2,0.5*#3,0) -- (0.5*#2,1*#3,0.5*#1);	
+%%
+\draw[black,very thin] (0.5*#2,0.5*#3,1*#1) -- (0,0.5*#3,0.5*#1);	
+\draw[black,very thin] (0.5*#2,0.5*#3,1*#1) -- (1*#2,0.5*#3,0.5*#1);	
+\draw[black,very thin] (0.5*#2,0.5*#3,1*#1) -- (0.5*#2,0,0.5*#1);	
+\draw[black,very thin] (0.5*#2,0.5*#3,1*#1) -- (0.5*#2,1*#3,0.5*#1);	
+%%
+\draw[black,very thin] (0.5*#2,0,0.5*#1) -- (0,0.5*#3,0.5*#1) -- (0.5*#2,1*#3,0.5*#1) -- (1*#2,0.5*#3,0.5*#1) -- cycle;
+	
+%% Atoms
+%% corners  
+\atom{0.0}{0.0}{0.0}{#4*#1.0};
+\atom{#2}{0.0}{0.0}{#4*#1.0};
+\atom{0.0}{#3}{0.0}{#4*#1.0};
+\atom{0.0}{0.0}{#1}{#4*#1*1.4};
+\atom{#2}{#3}{0.0}{#4*#1.0};
+\atom{#2}{0.0}{#1}{#4*#1*1.4};
+\atom{0.0}{#3}{#1}{#4*#1*1.4};
+\atom{#2}{#3}{#1}{#4*#1*1.4};
+%% rear plane  
+\atom{0.5*#2}{0.0}{0.5*#1}{#4*#1*1.2};
+%% middle plane  
+\atom{0.0}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+\atom{0.5*#2}{0.5*#3}{0.0}{#4*#1.0};
+\atom{0.5*#2}{0.5*#3}{#1}{#4*#1*1.4};
+\atom{#2}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+%% front plane  
+\atom{0.5*#2}{#3}{0.5*#1}{#4*#1*1.2};
+%% defect atom
+\atomDefect{0.5*#2}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+\end{tikzpicture} 	
+}   
+
+\newcommand{\fccOctaConfigFig}[6]{
+\begin{figure}[!htbp]
+\begin{center}
+\fccOctaConfig{#3}{#4}{#5}{#6}
+\captionsetup{font={it}}
+\caption{#1}
+\label{fig:#2}
+\end{center}
+\end{figure}
+}  
+
+
+
+\newcommand{\fccOctaBConfig}[4]{%
+	%% Background	
+	\cubeBackground{#1}{#2}{#3}
+	%% Y Z X  / | -  
+	%% Octahedral lines
+	\dLine{black,very thin}{0.5*#1}{0.5*#2}{0}{1*#1}{0}{0}
+	\dLine{black,very thin}{0.5*#1}{0.5*#2}{0}{1*#1}{1*#2}{0}
+	\dLine{black,very thin}{0.5*#1}{0.5*#2}{0}{1*#1}{0.5*#2}{0.5*#3}	
+	%% Octahedral lines - outside of cube
+	\dLine{black,dashed,very thin}{0.5*#1}{0.5*#2}{0}{1*#1}{0.5*#2}{-0.5*#3}
+	\dLine{black,dashed,very thin}{1.0*#1}{0.0*#2}{0.0*#3}{1.0*#1}{0.5*#2}{-0.5*#3}
+	\dLine{black,dashed,very thin}{1.0*#1}{1.0*#2}{0.0*#3}{1.0*#1}{0.5*#2}{-0.5*#3}
+	%%
+	\dLine{black,dashed,very thin}{1.5*#1}{0.5*#2}{0.0}{1*#1}{0.0*#2}{0.0*#3}
+	\dLine{black,dashed,very thin}{1.5*#1}{0.5*#2}{0.0}{1*#1}{1.0*#2}{0.0*#3}
+	\dLine{black,dashed,very thin}{1.5*#1}{0.5*#2}{0.0}{1*#1}{0.5*#2}{-0.5*#3}
+	\dLine{black,dashed,very thin}{1.5*#1}{0.5*#2}{0.0}{1*#1}{0.5*#2}{0.5*#3}
+    %% Draw Axis
+    \dAxis{0.5*#1}{0.5*#2}{0.5*#3}{#1}	
+	\dAxis{1.0*#1}{0.5*#2}{0.0*#3}{#1}
+	
+	%% X Z Y  / | -  	
+	%% Atoms
+	%% corners  
+	\atom{0.0}{0.0}{0.0}{#4*#1.0};
+	\atom{#2}{0.0}{0.0}{#4*#1.0};
+	\atom{0.0}{#3}{0.0}{#4*#1.0};
+	\atom{0.0}{0.0}{#1}{#4*#1*1.4};
+	\atom{#2}{#3}{0.0}{#4*#1.0};
+	\atom{#2}{0.0}{#1}{#4*#1*1.4};
+	\atom{0.0}{#3}{#1}{#4*#1*1.4};
+	\atom{#2}{#3}{#1}{#4*#1*1.4};
+	%% rear plane  
+	\atom{0.5*#2}{0.0}{0.5*#1}{#4*#1*1.2};
+	%% middle plane  
+	\atom{0.0}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+	\atom{0.5*#2}{0.5*#3}{0.0}{#4*#1.0};
+	\atom{0.5*#2}{0.5*#3}{#1}{#4*#1*1.4};
+	\atom{#2}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+	%% front plane  
+	\atom{0.5*#2}{#3}{0.5*#1}{#4*#1*1.2};
+	%% defect atom
+	\atomDefect{1.0*#2}{0.0}{0.5*#1}{#4*#1*1.2};
+	
+	\atomGhost{1.0*#2}{-0.5*#3}{0.5*#1}{#4*#1*1.2};
+	\atomGhost{1.5*#2}{0.0}{0.5*#1}{#4*#1*1.2};
+	
+	
+}   
+
+%% Example usage: \fccTetraConfig{3}{3}{3}{0.06};  %% {width (x), depth(y), height(z)}
+\newcommand{\fccTetraConfig}[4]{%
+%% Background	
+    \cubeBackground{#1}{#2}{#3}    
+    %% Y Z X  / | -      
+    %% Tetrahedral lines
+    \draw[black, thick] (0,0,1*#1) -- (0,0.5*#3,0.5*#1) -- (0.5*#2,0.0,0.5*#1) -- cycle;	
+    \draw[black, thick] (0,0.5*#3,0.5*#1) -- (0.5*#2,0.5*#3,1*#1) -- (0.5*#2,0,0.5*#1);	
+	
+	%% Atoms
+	%% corners  
+	\atom{0.0}{0.0}{0.0}{#4*#1.0};
+	\atom{#2}{0.0}{0.0}{#4*#1.0};
+	\atom{0.0}{#3}{0.0}{#4*#1.0};
+	\atom{0.0}{0.0}{#1}{#4*#1*1.4};
+	\atom{#2}{#3}{0.0}{#4*#1.0};
+	\atom{#2}{0.0}{#1}{#4*#1*1.4};
+	\atom{0.0}{#3}{#1}{#4*#1*1.4};
+	\atom{#2}{#3}{#1}{#4*#1*1.4};
+	%% rear plane  
+	\atom{0.5*#2}{0.0}{0.5*#1}{#4*#1*1.2};
+	%% middle plane  
+	\atom{0.0}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+	\atom{0.5*#2}{0.5*#3}{0.0}{#4*#1.0};
+	\atom{0.5*#2}{0.5*#3}{#1}{#4*#1*1.4};
+	\atom{#2}{0.5*#3}{0.5*#1}{#4*#1*1.2};
+	%% front plane  
+	\atom{0.5*#2}{#3}{0.5*#1}{#4*#1*1.2};	
+	
+	
+	%% Tetrahedral defect atom
+	\atomDefect{0.25*#2}{0.25*#3}{0.75*#1}{#4*#1*1.3};
+	%% Tetrahedral lines cont.
+	\draw[black, thick] (0,0,1*#1) -- (0.5*#2,0.5*#3,1.0*#1);	
+	
+    %% Overlapped atoms	
+	\atom{0.0}{0.0}{1*#1}{#4*#1.4};
+	\atom{0.5*#2}{0.5*#3}{1*#1}{#4*#1*1.4}
+	
+}   
+

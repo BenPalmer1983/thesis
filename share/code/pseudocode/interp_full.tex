@@ -1,0 +1,68 @@
+\begin{lstlisting}[style=sPseudo,caption={Add two numbers function}]
+// lagrange polynomial interpolation
+function lpinterp_y(x, data)
+  // x - point value being interpolated at to calc f(x)
+  // data - four x,y data points (n by 2 array)
+  n = len(data, 1)
+  y = 0.0
+  for i = 1,n
+    l = 1.0
+    for j = 1,n
+      if (i != j) then
+        l = l * (x - data[j][1]) / (data[i][1] - data[j][1])
+      end if
+    next j
+    y = y + l * data[i][2]
+  next i
+end function lpinterp_y
+
+
+// lagrange polynomial interpolation
+function lpinterp_dydx(x, data)
+  // x - point value being interpolated at fo calc f'(x)
+  // data - four x,y data points (n by 2 array)
+  n = len(data, 1)
+  dydx = 0.0
+  for i = 1,n
+    fx = 1.0
+    gx = 1.0
+    for j = 1, n
+      if (i != j) then
+        fx = fx / (data[i][1] - data[j][1])
+        psum = 1.0
+        for k = 1, n
+          if (i != k and j != k) then
+            psum = psum * (x - data[k][1])
+          end if
+        next k
+        gx = gx + psum
+      end if
+    next j
+    dydx = dydx + fx * gx * data[i][2]
+  next i
+end function lpinterp_dydx
+
+
+function lpinterp(x, data, d=0)
+
+if (d == 0) then
+  return lpinterp_y(x, data, n)
+else if (d == 1) then
+  return lpinterp_dydx(x, data, n)  
+else if (d > 1) then
+  n = len(data, 1)
+  dcount = 1
+  // Recusively build a f', f'', f''' etc as required
+  do while(dcount < d) 
+    for ncount = 1, n
+      data_temp[ncount][1] = data[ncount][1]
+      data_temp[ncount][2] = lpinterp_dydx(x,data[ncount][1])    
+    next ncount
+    data = data_temp
+    dcount = dcount + 1
+  end do
+  return lpinterp_dydx(x, data, n)    
+end if
+end function lpinterp
+
+\end{lstlisting}

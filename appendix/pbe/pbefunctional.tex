@@ -1,0 +1,176 @@
+\chapter{PBE Functional}
+\label{chaper:pbefunctional}
+
+The \acrshort{gga} \acrshort{pbe} functional was the primary type used in this work for the \acrshort{dft} calculated data.  The \acrshort{lda}, \acrshort{lsda} and \acrshort{gga} are described in detail in \enquote{Density functionals from LDA to GGA}\cite{ldaggaperdew}.
+
+The local density approximation is:
+
+\begin{equation}
+\begin{split}
+E_{xc}^{LDA} [\rho] = \int d^3r \rho(\vec{r}) \left[e_x(\rho(\vec{r})) + e_c(\rho(\vec{r})) \right ]
+\end{split}
+\label{eq:functional1}
+\end{equation}
+
+Exchange energy per electron of the unpolarized uniform electron gas:
+
+\begin{equation}
+\begin{split}
+e_x (\rho)
+\end{split}
+\label{eq:functional2}
+\end{equation}
+
+Correlation energy per electron of the unpolarized uniform electron gas:
+
+\begin{equation}
+\begin{split}
+e_c (\rho)
+\end{split}
+\label{eq:functional3}
+\end{equation}
+
+Splitting the density into spin up and spin down:
+
+\begin{equation}
+\begin{split}
+\rho_{\uparrow} (\vec{r}) = \sum_k^{occ} \lvert \phi_{k,\uparrow} (\vec{r} \rvert^2 \
+\rho_{\downarrow} (\vec{r}) = \sum_k^{occ} \lvert \phi_{k,\downarrow} (\vec{r} \rvert^2 \
+\rho(\vec{r}) = \rho_{\uparrow} (\vec{r}) + \rho_{\downarrow} (\vec{r})
+\end{split}
+\label{eq:functional4}
+\end{equation}
+
+The relative spin polarization is:
+
+\begin{equation}
+\begin{split}
+\zeta = \frac{\rho_{\uparrow} - \rho_{\downarrow}}{\rho_{\uparrow} + \rho_{\downarrow}}
+\end{split}
+\label{eq:functional5}
+\end{equation}
+
+The \acrshort{lsda} is:
+
+\begin{equation}
+\begin{split}
+E_{xc}^{LSDA} [\rho_{\uparrow}, \rho_{\downarrow}] = \int d^3r \rho(\vec{r}) \left[e_x(\rho(\vec{r})) f(\zeta(\vec{r})) + e_c(r_s(\vec{r}), \zeta(\vec{r})) \right ]
+\end{split}
+\label{eq:functional6}
+\end{equation}
+
+where
+
+\begin{equation}
+\begin{split}
+f(\zeta) = \frac{1}{2} \left[(1 + \zeta)^{\frac{4}{3}} + (1 - \zeta)^{\frac{4}{3}} \right]
+\end{split}
+\label{eq:functional7}
+\end{equation}
+
+The correlation energy per electron of the spin-polarized uniform electron gas is:
+
+\begin{equation}
+\begin{split}
+e_c (r_s, \zeta)
+\end{split}
+\label{eq:functional8}
+\end{equation}
+
+where $r_s$ is the local Seitz radius:
+
+\begin{equation}
+\begin{split}
+\rho = 3/4 \pi r_s^3 \\
+r_s = \sqrt[3]{\frac{4 \rho}{3 \pi}}
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+The \acrshort{pbe} correlation energy functional is:
+
+\begin{equation}
+\begin{split}
+E_{c}^{PBE} [\rho_{\uparrow}, \rho{\downarrow}] = \int d^3r \rho[e_c (r_s, \zeta) + H(r_s, \zeta, t)] 
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+where
+
+\begin{equation}
+\begin{split}
+t = \left(\frac{\pi}{4}\right)^{\frac{1}{2}} \left(\frac{9 \pi}{4}\right)^{\frac{1}{6}} \frac{s}{\phi r_s^{\frac{1}{2}}}
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+s = \frac{\lvert \nabla \rho \rvert}{2(3\pi^2)^{\frac{1}{3}} \rho^{\frac{4}{3}}} = \frac{3}{2} \left(\frac{4}{9\pi}\right)^{\frac{1}{3}} a_B \lvert \nabla r_s \rvert
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+a_B = \frac{\hbar^2}{m \epsilon^2} \text{ (the Bohr radius)}
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\phi(\zeta) = \frac{1}{2} \left[(1+ \zeta)^{\frac{2}{3}} + (1 - \zeta)^{\frac{2}{3}}\right]
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+H = \gamma \phi^3 ln \left[ 1+ \frac{\beta}{\gamma} t^2 \left(\frac{1+At^2}{1 + At^2 + A^2t^4} \right) \right]
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+A = \left(\frac{\beta}{\gamma} \right) \frac{1}{exp(-e_c(r_s,\zeta) / (\gamma \phi^3))-1}
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+where $\beta = 0.066725$ and $\gamma = 0.031091$ Hartree.
+
+
+The \acrshort{pbe} exchange energy functional is:
+
+\begin{equation}
+\begin{split}
+E_{x}^{PBE} [\rho] = \int d^3r \rho e_x(\rho)F_x(s)
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+where
+
+\begin{equation}
+\begin{split}
+F_x(s) = 1 + \kappa - \frac{\kappa}{1 + \mu s^2 / \kappa}
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+where $\kappa = 0.804$ and $\mu = 0.21951$.
+
+The spin density functional is:
+
+\begin{equation}
+\begin{split}
+E_{x}^{PBE} [\rho_{\uparrow}, \rho_{\downarrow}] = \frac{1}{2} E_{x}^{PBE} [2 \rho_{\uparrow}] + \frac{1}{2} E_{x}^{PBE} [2 \rho_{\downarrow}]
+\end{split}
+\label{eq:functional9}
+\end{equation}
+
+

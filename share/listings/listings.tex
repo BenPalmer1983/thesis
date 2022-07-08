@@ -1,0 +1,163 @@
+%% Listings for code
+\usepackage{listings}
+
+
+\lstloadlanguages{Fortran,Bash,Python,C++}
+\lstloadlanguages{Matlab}
+
+\lstset{frame=tb,
+  aboveskip=1mm,
+  belowskip=1mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\footnotesize\ttfamily}
+}
+
+%% Listing styles
+\lstdefinestyle{terminal}
+{
+  breaklines=true,
+  language=bash,
+  tabsize=4,
+  keywordstyle=\color{red}
+}
+\lstdefinestyle{sBash}
+{
+  breaklines=true,
+  numbers=left,
+  stepnumber=1,
+  language=bash,
+  tabsize=4,
+  keywordstyle=\color{red}
+}
+\lstdefinestyle{sFortran}
+{
+  breaklines=true,
+  numbers=left,
+  stepnumber=1,
+  language=Fortran,
+  tabsize=4,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve}
+}
+\lstdefinestyle{sPython}
+{
+  breaklines=true,
+	numbers=left,
+	stepnumber=1,
+	language=Python,
+	tabsize=4,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve}
+}
+\lstdefinestyle{sPhp}
+{
+  breaklines=true,
+	numbers=left,
+	stepnumber=1,
+	language=Php,
+	tabsize=4,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve}
+}
+\lstdefinestyle{sC++}
+{
+  breaklines=true,
+	numbers=left,
+	stepnumber=1,
+	language=C++,
+	tabsize=4,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve}
+}
+\lstdefinestyle{sMatlab}
+{
+  breaklines=true,
+	numbers=left,
+	stepnumber=1,
+	language=Matlab,
+	tabsize=4,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve}
+}
+
+
+
+\lstdefinestyle{pseudocode}
+{
+  breaklines=true,
+  numbers=left,
+  stepnumber=1,
+  tabsize=4,
+  keywordstyle=\color{blue}
+}
+
+
+
+
+\lstdefinelanguage{pseudo}
+{morekeywords={for, next, if, else, end, function, then, ==, !=},
+  keywordstyle=\color{codeblue},
+  sensitive=false,
+  morecomment=[l][\color{codegreen}]{//},
+  morestring=[b]",
+  stringstyle=\color{redstrings}
+}
+
+\lstdefinestyle{sPseudo}
+{
+  breaklines=true,
+  numbers=left,
+  stepnumber=1,
+  language=pseudo,
+  tabsize=4,
+  keywordstyle=\color{blue}
+}
+
+
+\lstdefinelanguage{email}
+{
+}
+
+\lstdefinestyle{sEmail}
+{
+  numbers=left,
+  stepnumber=1,
+  language=pseudo,
+  tabsize=4,
+  keywordstyle=\color{black}
+}
+
+
+\lstdefinestyle{sMaestro}
+{
+  numbers=left,
+  stepnumber=1,
+  language=pseudo,
+  tabsize=4,
+  keywordstyle=\color{black}
+}
+
+
+\lstdefinestyle{sOutputFile}
+{
+  breaklines=true,
+  numbers=left,
+  stepnumber=1,
+  language=pseudo,
+  tabsize=4,
+  keywordstyle=\color{black}
+}
+
+
+

@@ -1,0 +1,53 @@
+\newcommand{\activityDecayFlowchart}{
+  \centering
+  %% Draw boxes
+  \begin{tikzpicture}[node distance=2cm]
+  \node (parent) [startstop] {Parent Isotope, N$_{\text{1}}$(t)};
+  \node (isotope1) [process, below of=parent] {1st Unstable Daughter Isotope, N$_{\text{2}}$(t)};
+  \node (isotope2) [process, below of=isotope1] {2nd Unstable Daughter Isotope, N$_{\text{3}}$(t)};
+  \node (stable) [startstop, below of=isotope2] {Stable Daughter Isotope, N$_{\text{4}}$(t)};
+  %% Draw arrows
+  \draw [->] (parent) -- (isotope1);
+  \draw [->] (isotope1) -- (isotope2);
+  \draw [->] (isotope2) -- (stable);
+  \end{tikzpicture}
+}
+
+\newcommand{\activityFullDecayChain}{
+\centering
+\begin{tikzpicture}[node distance=2cm]
+% Row 1
+\node (parent) [startstop] {Parent Isotope};
+\node (parent_source) [process, left of=parent, xshift=-4cm] {Parent Source};
+% Row 2
+\node (parent_branch) [decision, below of=parent] {Branching};
+% Row 3
+\node (daughter_1a) [process, below of=parent_branch, xshift=-2.5cm] {Daughter 1 (Branch A)};
+\node (daughter_1a_src) [process, left of=daughter_1a, xshift=-2.5cm] {External Source};
+\node (daughter_1b) [process, below of=parent_branch, xshift=2.5cm] {Daughter 1 (Branch B)};
+\node (daughter_1b_src) [process, right of=daughter_1b, xshift=2.5cm] {External Source};
+% Row 4
+\node (daughter_1a_branch) [decision, below of=daughter_1a, xshift=0.5cm] {Branching};
+% Row 5
+\node (daughter_2a) [process, below of=daughter_1a_branch, xshift=-0.5cm] {Daughter 2 (Branch A)};
+\node (daughter_2a_src) [process, left of=daughter_2a, xshift=-2.5cm] {External Source};
+\node (daughter_2b) [process, below of=daughter_1a_branch, xshift=4.5cm] {Daughter 2 (Branch B)};
+\node (daughter_2b_src) [process, right of=daughter_2b, xshift=2.5cm] {External Source};
+
+% arrows
+\draw [thick,->] (parent_source) -- (parent);
+\draw [thick,->] (parent) -- (parent_branch);
+\draw [thick,->] (parent_branch) -- (daughter_1a);
+\draw [thick,->] (parent_branch) -- (daughter_1b);
+\draw [thick,->] (daughter_1a_src) -- (daughter_1a);
+\draw [thick,->] (daughter_1b_src) -- (daughter_1b);
+\draw [thick,->] (daughter_1a) -- (daughter_1a_branch);
+\draw [thick,->] (daughter_1a_branch) -- (daughter_2a);
+\draw [thick,->] (daughter_1a_branch) -- (daughter_2b);
+\draw [thick,->] (daughter_2a_src) -- (daughter_2a);
+\draw [thick,->] (daughter_2b_src) -- (daughter_2b);
+
+%\draw [->] (isotope1) -- (isotope2);
+%\draw [->] (isotope2) -- (stable);
+\end{tikzpicture}
+}

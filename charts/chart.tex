@@ -1,0 +1,140 @@
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\geometry{a4paper,total={210mm,297mm},left=20mm,right=20mm,top=20mm,bottom=20mm}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+
+
+\begin{document}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=5.0em, text badly centered, node distance=3.0cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=6em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+\begin{tikzpicture}[node distance = 2cm, auto]
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Setup 
+    \node [block] (exp) {Collate experimental properties};
+    \node [block, below of=exp] (ppchoice) {Choose or generate PPs};
+    \node [block, below of=ppchoice] (ecut) {Converge ecutwfc and ecutrho};
+    \node [block, below of=ecut] (kpoints) {Converge k-points and choose smearing};
+    \node [decision, below of=kpoints] (stop1) {More config sizes?};
+    \node [block, below of=stop1, yshift=-0.5cm] (dfttest) {Test the settings};
+    \node [decision, below of=dfttest] (stop2) {Continue with these settings?};
+    % lines
+    \path [line] (exp) -- (ppchoice);
+    \path [line] (ppchoice) -- (ecut);  
+    \path [line] (ecut) -- (kpoints); 
+    \path [line] (kpoints) -- (stop1);   
+    \coordinate[left of=stop1] (stop1a);
+    \coordinate[left of=kpoints] (stop1b);
+    \path [line] (stop1) -| node {yes}  ([xshift=-0.8cm]stop1a) -- ([xshift=-0.8cm]stop1b)  --  (kpoints); 
+    \path [line] (stop1) -- (dfttest);  
+    \coordinate[left of=stop2] (stop2a);
+    \coordinate[left of=ppchoice] (stop2b);
+    \path [line] (stop2) -| node {no}  ([xshift=-1.8cm]stop2a) -- ([xshift=-1.8cm]stop2b)  --  (ppchoice);
+    \path [line] (dfttest) -- (stop2);  
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=exp, node distance=5.5cm] (top1);
+    \node [block, below of=top1] (relax) {Relax pure element crystal};
+    \node [block, below of=relax] (eos) {Compute BM EoS};
+    \node [block, below of=eos] (ec) {Compute Elastic Constants};
+    \node [block, below of=ec] (random) {Randomly perturbed configs};
+    \node [block, below of=random] (surface) {Surface configs};
+    \node [decision, below of=surface] (stop3) {All elements complete?};
+    % lines
+    \coordinate[right of=stop2] (stop2c);
+    \coordinate[right of=exp] (stop2d);
+    \path [line] (stop2) -| node[yshift=-0.2cm] {yes}  ([xshift=0.5cm]stop2c) -- ([xshift=0.5cm]stop2d)  --  (top1)  --  (relax);
+    \path [line] (relax) -- (eos);  
+    \path [line] (eos) -- (ec);  
+    \path [line] (ec) -- (random);  
+    \path [line] (random) -- (surface);  
+    \path [line] (surface) -- (stop3);  
+    \coordinate[left of=stop3] (stop3a);
+    \coordinate[left of=relax] (stop3b);
+    \path [line] (stop3) -| node {no}  ([xshift=-0.3cm]stop3a) -- ([xshift=-0.3cm]stop3b)  --  (relax);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=top1, node distance=5.5cm] (top2);
+    \node [block, below of=top2] (alloy) {Binary Alloy calculations};
+    \node [block, below of=alloy] (alloyrelax) {Relax};
+    \node [block, below of=alloyrelax] (alloybulk) {Bulk};
+    \node [block, below of=alloybulk] (alloyrand) {Randomly perturbed configs};
+    \node [block, below of=alloyrand] (alloysurface) {Surface configs};
+    \node [decision, below of=alloysurface] (stop4) {All pairs complete?};
+    % lines
+    \coordinate[right of=stop3] (stop3c);
+    \coordinate[right of=top1] (stop3d);
+    \path [line] (stop3) -| node[yshift=-0.2cm] {yes}  ([xshift=0.5cm]stop3c) -- ([xshift=0.5cm]stop3d)  --  (top2)  --  (alloy);
+    \path [line] (alloy) -- (alloyrelax); 
+    \path [line] (alloyrelax) -- (alloybulk); 
+    \path [line] (alloybulk) -- (alloyrand); 
+    \path [line] (alloyrand) -- (alloysurface); 
+    \path [line] (alloysurface) -- (stop4); 
+    \coordinate[left of=stop4] (stop4a);
+    \coordinate[left of=alloyrelax] (stop4b);
+    \path [line] (stop4) -| node {no}  ([xshift=-0.3cm]stop4a) -- ([xshift=-0.3cm]stop4b)  --  (alloyrelax);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=top2, node distance=5.5cm] (top3);
+    \node [block, below of=top3] (fit) {Pure element fitting};
+    \node [block, below of=fit] (fitform) {Choose EAM function form};
+    \node [block, below of=fitform] (fitstart) {Choose starting parameters};
+    \node [block, below of=fitstart] (fitbp) {Fit to bulk properties};
+    \node [block, below of=fitbp] (fitefs) {Introduce EFS configs};
+    \node [block, below of=fitefs] (fittest) {Test Potential};
+    % lines
+    \path [line] (fit) -- (fitform); 
+    \path [line] (fitform) -- (fitstart); 
+    \path [line] (fitstart) -- (fitbp); 
+    \path [line] (fitbp) -- (fitefs); 
+    \path [line] (fitefs) -- (fittest); 
+    \coordinate[right of=stop4] (stop4c);
+    \coordinate[right of=top2] (stop4d);
+    \path [line] (stop4) -| node[yshift=-0.2cm] {yes}  ([xshift=0.5cm]stop4c) -- ([xshift=0.5cm]stop4d)  --  (top3)  --  (fit);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=top3, node distance=5.5cm] (top4);
+    \node [block, below of=top4] (fitimprov) {Improve fit}; 
+    \node [decision, below of=fitimprov, yshift=0.5cm] (stop5) {All alements done?};
+    \node [block, below of=stop5, yshift=-1.1cm] (gauge) {Effective gauge transformations}; 
+    \node [block, below of=gauge] (crosspair) {Fit alloy cross pair potentials}; 
+    \node [block, below of=crosspair] (lammpsdpoly) {Save as LAMMPS \& DLPOLY}; 
+    \node [block, below of=lammpsdpoly] (finaltest) {Test alloy potential}; 
+    % lines
+    \path [line] (fitimprov) -- (stop5);
+    \path [line] (stop5) --  node {yes} (gauge);
+    \path [line] (gauge) -- (crosspair);
+    \path [line] (crosspair) -- (lammpsdpoly);  
+    \path [line] (lammpsdpoly) -- (finaltest);    
+    \coordinate[right of=fittest] (fittesta);
+    \coordinate[right of=top3] (fittestb);
+    \path [line] (fittest) -|  ([xshift=0.5cm]fittesta) -- ([xshift=0.5cm]fittestb)  --  (top4)  --  (fitimprov);
+    \coordinate[left of=stop5] (stop5a);
+    \coordinate[left of=finaltest] (stop5b);
+    \path [line] (stop5) -| node[yshift=-0.2cm, xshift=0.9cm] {no}  ([xshift=-0.5cm]stop5a)   --  ([xshift=-0.5cm]stop5b)  --  ([xshift=-5.5cm]stop5b)  --  ([xshift=-5.5cm, yshift=11.6cm]stop5b) -- (fit);
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    
+    
+\end{tikzpicture}
+
+
+\end{document}

@@ -1,0 +1,125 @@
+\newcommand{\cpuDiagram}{
+  \begin{tikzpicture}
+  %% Background	
+  \draw [black, fill=white] (6,0.5) rectangle (12,8.0);
+  %%\draw [fill=white] (2,0) rectangle (3.5,1);
+
+
+%%\node at (1,1) {yes};
+  \end{tikzpicture}  
+	
+}   
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming: Conditional
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\conditionalChartA}{
+  \resizebox{8.0cm}{!}{
+%% Draw boxes
+    \begin{tikzpicture}[node distance=2.4cm]
+% Row 1
+    \node (codeStart) [startstop] {Code Starts};
+% Row 2
+    \node (condA) [decision, below of=codeStart] {Conditional A};
+% Row 3
+    \node (condAProcessA) [process, below of=condA, xshift=-3cm] {True: execute code in IF block};
+    \node (condAProcessB) [process, below of=condA, xshift=3cm] {False: execute code in ELSE block};
+% Row 4
+    \node (condB) [decision, below of=condAProcessA, xshift=3cm] {Conditional B};
+% Row 5
+    \node (condBProcessA) [process, below of=condB, xshift=-3cm] {True: execute code in IF block};
+    \node (condBProcessB) [process, below of=condB, xshift=3cm] {False: execute code in ELSE block};
+% Row 6
+    \node (codeEnd) [startstop, below of=condBProcessA, xshift=3cm] {Code Ends};
+%% Draw arrows
+% Row 1-2
+    \draw [thick,->] (codeStart) -- (condA);
+  %Row 2-3
+    \draw [thick,->] (condA) -- (condAProcessA);
+    \draw [thick,->] (condA) -- (condAProcessB);
+  %Row 3-4
+    \draw [thick,->] (condAProcessA) -- (condB);
+    \draw [thick,->] (condAProcessB) -- (condB);
+  %Row 4-5
+    \draw [thick,->] (condB) -- (condBProcessA);
+    \draw [thick,->] (condB) -- (condBProcessB);
+  %Row 5-6
+    \draw [thick,->] (condBProcessA) -- (codeEnd);
+    \draw [thick,->] (condBProcessB) -- (codeEnd);
+    \end{tikzpicture}
+  }
+}
+
+
+
+\newcommand{\conditionalChartB}{
+  \resizebox{8.0cm}{!}{
+  %% Draw boxes
+  \begin{tikzpicture}[node distance=2.4cm]
+% Row 1
+  \node (codeStart) [startstop] {Code Starts};
+% Row 2
+  \node (condA) [decision, below of=codeStart] {Conditional A};
+% Row 3
+  \node (condAProcessA) [process, below of=condA, xshift=-3cm] {IF A};
+  \node (condAProcessB) [process, below of=condA, xshift=-3cm] {ELIF B};
+  \node (condAProcessC) [process, below of=condA, xshift=-3cm] {ELIF C};
+  \node (condAProcessD) [process, below of=condA, xshift=3cm] {ELSE};
+% Row 4
+  \node (codeEnd) [startstop, below of=condBProcessA, xshift=3cm] {Code Ends};
+  %% Draw arrows
+  % Row 1-2
+  \draw [thick,->] (codeStart) -- (condA);
+  %Row 2-3
+  \draw [thick,->] (condA) -- (condAProcessA);
+  \draw [thick,->] (condA) -- (condAProcessB);
+  \draw [thick,->] (condA) -- (condAProcessC);
+  \draw [thick,->] (condA) -- (condAProcessD);
+  %Row 3-4
+  \draw [thick,->] (condAProcessA) -- (codeEnd);
+  \draw [thick,->] (condAProcessB) -- (codeEnd);
+  \draw [thick,->] (condAProcessC) -- (codeEnd);
+  \draw [thick,->] (condAProcessD) -- (codeEnd);
+  \end{tikzpicture}
+  }
+}
+
+
+
+
+
+
+
+
+\newcommand{\twoDGrid}{
+  \resizebox{12.0cm}{!}{
+    \begin{tikzpicture}
+    %% Background	
+    \foreach \i in {1,...,5}
+    {
+      \foreach \j in {1,...,5}
+      {
+        %% Left hand box
+        \tikzmath{\iPrint = int(\i - 1);}
+        \tikzmath{\jPrint = int(\j - 1);}
+        \tikzmath{\offset = 6.5;}
+        \draw [black, fill=none] (\i-1,\j-1) rectangle (\i,\j) node[pos=.5] {\iPrint , \jPrint};
+
+        %% Right hand box
+        \tikzmath{\rd = sqrt((\j-1) * (\j-1) + (\i-1) + (\i-1));}
+        \tikzmath{\rd = int(\rd * 100);}
+        \tikzmath{\rdPrint = \rd / 100;}
+        \draw [black, fill=none] (\i-1+\offset,\j-1) rectangle (\i+\offset,\j) node[pos=.5] {\pgfmathprintnumber{\rdPrint}};
+
+        
+      }
+    }
+    \end{tikzpicture}  
+  }
+}   
+
+

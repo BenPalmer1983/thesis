@@ -1,0 +1,16 @@
+// lagrange polynomial interpolation
+function lpinterp_y(x, data)
+  // x - point value being interpolated at to calc f(x)
+  // data - four x,y data points (n by 2 array)
+  n = len(data, 1)
+  y = 0.0
+  for i = 1,n
+    l = 1.0
+    for j = 1,n
+      if (i != j) then
+        l = l * (x - data[j][1]) / (data[i][1] - data[j][1])
+      end if
+    next j
+    y = y + l * data[i][2]
+  next i
+end function lpinterp_y

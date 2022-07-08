@@ -1,0 +1,65 @@
+%%==================================================================================================
+%%==================================================================================================
+
+\newcommand{\eqMurnaghan}{
+  \begin{equation}
+    \begin{split}
+      E(V,E_{0},V_0,B_0,B_0^{'}) = E_0 + \frac{B_0 V}{B'_0} \left[ \left(\frac{V_0}{V} \right)^{B'_0} \frac{1}{B'_0 - 1} + 1 \left] - \frac{B_0 V_0}{B'_0 - 1}
+    \end{split}
+    \label{eq:eqBirchMurnaghan}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqBirchMurnaghan}{
+  \begin{equation}
+    \begin{split}
+      E(V,E_{0},V_0,B_0,B_0^{'}) = E_0 + \frac{9}{16} B_0 V_0 (V^{\frac{2}{3}}V_0^{-\frac{2}{3}} - 1)^{2} \\
+          \times (6+B'_{0} (V^{\frac{2}{3}}V_0^{-\frac{2}{3}} - 1) - 4 V^{\frac{2}{3}}V_0^{-\frac{2}{3}})
+    \end{split}
+    \label{eq:eqBirchMurnaghan}
+  \end{equation}
+}
+%% http://gilgamesh.cheme.cmu.edu/doc/software/jacapo/appendices/appendix-eos.html
+%% now unaccessible
+
+
+\newcommand{\eqInternalEnergyEC}{
+  \begin{equation}
+    \begin{split}
+      E\left(V,\left\{ \epsilon_{mn} \right\} \right) = E \left(V \right) + V \sum_{ij} \sigma_{ij} \epsilon_{ij} + \frac{V}{2} \sum_{ijkl} c_{ijkl} \epsilon_{ij} \epsilon_{kl} \\
+      \textnormal{where   } \sigma_{ij} = \frac{1}{V} \left[ \frac{\partial E(V,\left\{ \epsilon_{mn} \right\})}{\partial \epsilon_{ij}} E \right]_{\epsilon=0} \\
+      \textnormal{and     } c_{ijkl} = \frac{1}{V} \left[ \frac{\partial^2 E(V,\left\{ \epsilon_{mn} \right\})}{\partial \epsilon_{ij} \partial \epsilon_{kl}} E \right]_{\epsilon=0}
+    \end{split}
+    \label{eq:eqInternalEnergyEC}
+  \end{equation}
+}
+%% First principles elastic constants and electronic structure of alpha-Pt2Si and PtSi
+%% O. Beckstein, J. E. Klepeis, G. L. W. Hart, and O. Pankratov
+%% 15 March 2001
+
+
+
+\newcommand{\eqBulkModulusA}{
+  \begin{equation}
+    \begin{split}
+    B_{0} = -V \frac{\partial P}{\partial V}
+    \end{split}
+    \label{eq:eqBulkModulusA}
+  \end{equation}
+}
+
+
+\newcommand{\eqBulkModulusB}{
+  \begin{equation}
+    \begin{split}
+    B_{0} = V \frac{\partial^2 E}{\partial V^2}
+    \end{split}
+    \label{eq:eqBulkModulusB}
+  \end{equation}
+}
+
+
+%%==================================================================================================
+%%==================================================================================================

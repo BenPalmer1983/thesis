@@ -1,0 +1,405 @@
+%%==================================================================================================
+%%==================================================================================================
+
+\newcommand{\eqStiffnessTensor}{
+  \begin{equation}
+    \begin{split}
+      \vec{\sigma_{ij}} = \vec{C_{ijkl}} \vec{\epsilon{kl}} 
+    \end{split}
+    \label{eq:eqStiffnessTensor}
+  \end{equation}
+}
+
+
+\newcommand{\eqMehlStrainA}{
+  \begin{equation}
+    \begin{split}
+      \epsilon_{(C11 - C22)} = 
+      \begin{bmatrix}
+      \delta & 0 & 0   \\
+      0 & - \delta & 0   \\
+      0 & 0 & \delta^2 / (1 - \delta^2)   \\
+      \end{bmatrix}
+    \end{split}
+    \label{eq:eqStiffnessTensor}
+  \end{equation}
+}
+
+
+\newcommand{\eqMehlStrainB}{
+  \begin{equation}
+    \begin{split}
+      \epsilon_{(C44)} = 
+      \begin{bmatrix}
+      0 & \frac{\delta}{2} & 0   \\
+       \frac{\delta}{2} & 0 & 0   \\
+      0 & 0 & \delta^2 / (4 - \delta^2)   \\
+      \end{bmatrix}
+    \end{split}
+    \label{eq:eqStiffnessTensor}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqCubicEC}{
+  \begin{equation}
+    \begin{split}
+      C_{ij} = 
+      \begin{bmatrix}
+      C_{11} & C_{12} & C_{12} & 0      & 0      & 0      \\
+      C_{12} & C_{11} & C_{12} & 0      & 0      & 0      \\
+      C_{12} & C_{12} & C_{11} & 0      & 0      & 0      \\
+      0      & 0      & 0      & C_{44} & 0      & 0      \\
+      0      & 0      & 0      &        & C_{44} & 0      \\
+      0      & 0      & 0      &        &        & C_{44} \\
+      \end{bmatrix}\\
+      \text{(3 independent values)}
+    \end{split}
+    \label{eq:eqCubicEC}
+  \end{equation}
+}
+
+
+\newcommand{\eqOrthoRhombicEC}{
+  \begin{equation}
+    \begin{split}
+      C_{ij} = 
+      \begin{bmatrix}
+      C_{11} & C_{12} & C_{13} & 0      & 0      & 0      \\
+      C_{12} & C_{22} & C_{23} & 0      & 0      & 0      \\
+      C_{13} & C_{23} & C_{33} & 0      & 0      & 0      \\
+      0      & 0      & 0      & C_{44} & 0      & 0      \\
+      0      & 0      & 0      & 0      & C_{55} & 0      \\
+      0      & 0      & 0      & 0      & 0      & C_{66} \\
+      \end{bmatrix}\\
+      \text{(9 independent values)}
+    \end{split}
+    \label{eq:eqOrthoRhombicEC}
+  \end{equation}
+}
+
+
+
+
+
+
+\newcommand{\eqStrainTensor}{
+  \begin{equation}
+    \begin{split}
+      \epsilon_{ij} = 
+      \begin{bmatrix}
+      \epsilon_{11} & \epsilon_{12} & \epsilon_{13} \\
+      \epsilon_{21} & \epsilon_{22} & \epsilon_{23} \\
+      \epsilon_{31} & \epsilon_{32} & \epsilon_{33} \\
+      \end{bmatrix}\\
+    \end{split}
+    \label{eq:eqStrainTensor}
+  \end{equation}
+}
+
+
+\newcommand{\eqStressTensor}{
+  \begin{equation}
+    \begin{split}
+      \sigma{ij} = 
+      \begin{bmatrix}
+      \sigma_{11} & \sigma_{12} & \sigma_{13} \\
+      \sigma_{21} & \sigma_{22} & \sigma_{23} \\
+      \sigma_{31} & \sigma_{32} & \sigma_{33} \\
+      \end{bmatrix}\\
+    \end{split}
+    \label{eq:eqStrainTensor}
+  \end{equation}
+}
+
+
+\newcommand{\eqStrainTensorVoight}{
+  \begin{equation}
+    \begin{split}
+      \epsilon_{ij} = 
+      \begin{bmatrix}
+      \epsilon_{1} = \epsilon_{11} = \epsilon_{11} \\
+      \epsilon_{2} = \epsilon_{22} = \epsilon_{22} \\
+      \epsilon_{3} = \epsilon_{33} = \epsilon_{33} \\
+      \epsilon_{4} = \epsilon_{23} = \epsilon_{32} \\
+      \epsilon_{5} = \epsilon_{13} = \epsilon_{31} \\
+      \epsilon_{6} = \epsilon_{12} = \epsilon_{21} \\
+      \end{bmatrix}\\
+    \end{split}
+    \label{eq:eqStrainTensorVoight}
+  \end{equation}
+}
+
+
+\newcommand{\eqStrainStress}{
+  \begin{equation}
+    \begin{split}
+      \epsilon_{ij} = \C{ijkl} \sigma_{kl} 
+    \end{split}
+    \label{eq:eqStrainStress}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqStrainStressFull}{
+  \begin{equation}
+    \begin{split}
+      \begin{bmatrix}
+      \sigma_{1} \\
+      \sigma_{2} \\
+      \sigma_{3} \\
+      \sigma_{4} \\
+      \sigma_{5} \\
+      \sigma_{6} \\
+      \end{bmatrix}\\
+       = \\
+      \begin{bmatrix}
+      C_{11} & C_{12} & C_{13} & C_{14} & C_{15} & C_{16} \\
+      C_{21} & C_{22} & C_{23} & C_{24} & C_{25} & C_{26} \\
+      C_{31} & C_{32} & C_{33} & C_{34} & C_{35} & C_{36} \\
+      C_{41} & C_{42} & C_{43} & C_{44} & C_{45} & C_{45} \\
+      C_{51} & C_{52} & C_{53} & C_{54} & C_{55} & C_{55} \\
+      C_{61} & C_{62} & C_{63} & C_{64} & C_{65} & C_{66} \\
+      \end{bmatrix}\\
+      \\
+      \begin{bmatrix}
+      \epsilon_{1} \\
+      \epsilon_{2} \\
+      \epsilon_{3} \\
+      \epsilon_{4} \\
+      \epsilon_{5} \\
+      \epsilon_{6} \\
+      \end{bmatrix}\\
+    \end{split}
+    \label{eq:eqOrthoRhombicEC}
+  \end{equation}
+}
+
+
+
+
+
+
+
+
+
+\newcommand{\eqDistortionA}{
+  \begin{equation}
+    \begin{split}
+      D_{1} = 
+      \begin{bmatrix}
+      1 + \delta & 0       & 0             \\
+      0          & 1       & 0             \\
+      0          & 0       & 1             \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqDistortionB}{
+  \begin{equation}
+    \begin{split}
+      D_{2} = 
+      \begin{bmatrix}
+      1          & 0           & 0             \\
+      0          & 1 + \delta  & 0             \\
+      0          & 0           & 1             \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqDistortionC}{
+  \begin{equation}
+    \begin{split}
+      D_{3} = 
+      \begin{bmatrix}
+      1          & 0           & 0             \\
+      0          & 1           & 0             \\
+      0          & 0           & 1 + \delta    \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqDistortionD}{
+  \begin{equation}
+    \begin{split}
+      D_{4} = 
+      \begin{bmatrix}
+      \frac{1}{(1-\sigma^2)^{\frac{1}{3}}} & 0           & 0             \\
+      0                                    & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}      & \frac{\sigma}{(1-\sigma^2)^{\frac{1}{3}}}  \\
+      0                                    & \frac{\sigma}{(1-\sigma^2)^{\frac{1}{3}}} & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}       \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+\newcommand{\eqDistortionE}{
+  \begin{equation}
+    \begin{split}
+      D_{5} = 
+      \begin{bmatrix}
+      \frac{1}{(1-\sigma^2)^{\frac{1}{3}}} & 0           & \frac{\sigma}{(1-\sigma^2)^{\frac{1}{3}}}              \\
+      0                                    & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}      &   0  \\
+      \frac{\sigma}{(1-\sigma^2)^{\frac{1}{3}}}   &   0  & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}       \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+\newcommand{\eqDistortionF}{
+  \begin{equation}
+    \begin{split}
+      D_{6} = 
+      \begin{bmatrix}
+      \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}        & \frac{\sigma}{(1-\sigma^2)^{\frac{1}{3}}} & 0   \\
+      \frac{\sigma}{(1-\sigma^2)^{\frac{1}{3}}}   & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}      &   0  \\
+      0                                           & 0                                         & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}       \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+\newcommand{\eqDistortionG}{
+  \begin{equation}
+    \begin{split}
+      D_{7} = 
+      \begin{bmatrix}
+      \frac{1 + \sigma}{(1-\sigma^2)^{\frac{1}{3}}} & 0           & 0              \\
+      0                                    & \frac{1 - \sigma}{(1-\sigma^2)^{\frac{1}{3}}}      &   0  \\
+      0  &   0  & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}       \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+\newcommand{\eqDistortionH}{
+  \begin{equation}
+    \begin{split}
+      D_{8} = 
+      \begin{bmatrix}
+      \frac{1 + \sigma}{(1-\sigma^2)^{\frac{1}{3}}} & 0           & 0              \\
+      0                                    & \frac{1}{(1-\sigma^2)^{\frac{1}{3}}}      &   0  \\
+      0  &   0  & \frac{1-\sigma}{(1-\sigma^2)^{\frac{1}{3}}}       \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+\newcommand{\eqDistortionI}{
+  \begin{equation}
+    \begin{split}
+      D_{9} = 
+      \begin{bmatrix}
+      \frac{1}{(1-\sigma^2)^{\frac{1}{3}}} & 0           & 0              \\
+      0  & \frac{1 + \sigma}{(1-\sigma^2)^{\frac{1}{3}}}      &   0  \\
+      0  &   0  & \frac{1 - \sigma}{(1-\sigma^2)^{\frac{1}{3}}}       \\
+      \end{bmatrix}
+    \end{split}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqInternalEnergy}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left( \sum_{i} \tau_i \epsilon_i \sigma_i + \frac{1}{2} \sum_{ij} c_{ij} \sigma_{i} \epsilon{i} \sigma_{j} \epsilon{j} \right) + O(\sigma^3)
+    \end{split}
+  \end{equation}
+}
+
+
+\newcommand{\eqDistortionEnergyA}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left( \tau_{1} \sigma + \frac{c_{11}}{2} \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+\newcommand{\eqDistortionEnergyB}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left( \tau_{2} \sigma + \frac{c_{22}}{2} \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+\newcommand{\eqDistortionEnergyC}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left( \tau_{3} \sigma + \frac{c_{33}}{2} \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqDistortionEnergyD}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left(2 \tau_{4} \sigma + 2 \frac{c_{44}}{2} \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+\newcommand{\eqDistortionEnergyE}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left(2 \tau_{5} \sigma + 2 \frac{c_{55}}{2} \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+\newcommand{\eqDistortionEnergyF}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left(2 \tau_{6} \sigma + 2 \frac{c_{66}}{2} \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqDistortionEnergyG}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left((\tau_{1}-\tau{2} \sigma + \frac{1}{2} (c_{11} + c_{22} - 2 c{12}) \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+\newcommand{\eqDistortionEnergyH}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left((\tau_{1}-\tau{3} \sigma + \frac{1}{2} (c_{11} + c_{33} - 2 c{13}) \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+\newcommand{\eqDistortionEnergyI}{
+  \begin{equation}
+    \begin{split}
+    E(V,\sigma) = E(V_{0},0) + V_{0} \left((\tau_{2}-\tau{3} \sigma + \frac{1}{2} (c_{22} + c_{33} - 2 c{23}) \sigma^2 \right)
+    \end{split}
+  \end{equation}
+}
+
+
+%%==================================================================================================
+%%==================================================================================================

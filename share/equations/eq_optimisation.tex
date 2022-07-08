@@ -1,0 +1,84 @@
+%%==================================================================================================
+%%==================================================================================================
+
+\newcommand{\eqNewtonGauss}{
+  \begin{equation}
+    \begin{split}
+      \vec{J}^{T} \vec{J} \vec{p} = \vec{J}^{T} \vec{r} \\
+      \vec{r} = \vec{y} - f(\vec{x}, \vec{p})
+    \end{split}
+    \label{eq:eqNewtonGauss}
+  \end{equation}
+}
+
+
+
+
+\newcommand{\eqLevenbergMarquardt}{
+  \begin{equation}
+    \begin{split}
+      \left( \vec{J}^{T} \vec{W} \vec{J} + \lambda diag\left( \vec{J}^{T} \vec{W} \vec{J} \right) \right) \vec{p} = {\left(\vec{J}^{T} \vec{W} \vec{r} \right)} \\
+      \vec{r} = \vec{y} - f(\vec{x}, \vec{p})
+    \end{split}
+    \label{eq:eqLevenbergMarquardt}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqLeastSquaresFit}{
+  \begin{equation}
+    \begin{split}
+      \begin{bmatrix}
+      \sum_{i=1}^{n} x_i^0 & \sum_{i=1}^{n} x_i^1 & \sum_{i=1}^{n} x_i^2 \\
+      \sum_{i=1}^{n} x_i^1 & \sum_{i=1}^{n} x_i^2 & \sum_{i=1}^{n} x_i^3 \\ 
+      \sum_{i=1}^{n} x_i^2 & \sum_{i=1}^{n} x_i^3 & \sum_{i=1}^{n} x_i^4 \\ 
+      \end{bmatrix}
+      \begin{bmatrix}
+      c_0 \\
+      c_1 \\ 
+      c_2 \\ 
+      \end{bmatrix}
+      = 
+      \begin{bmatrix}
+      \sum_{i=1}^{n} \left( x_i^0 y_i \right) \\
+      \sum_{i=1}^{n} \left( x_i^1 y_i \right) \\ 
+      \sum_{i=1}^{n} \left( x_i^2 y_i \right) \\ 
+      \end{bmatrix}
+    \end{split}
+    \label{eq:eqLeastSquaresFit}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqNewtonGaussR}{
+  \begin{equation}
+    \begin{split}
+      \begin{bmatrix}
+      y_1 - f(x_1, \vec{p}) \\
+      y_2 - f(x_2, \vec{p}) \\
+      y_n - f(x_n, \vec{p}) \\
+      \end{bmatrix}
+    \end{split}
+    \label{eq:eqNewtonGaussR}
+  \end{equation}
+}
+
+
+
+\newcommand{\eqSimulatedAnnealing}{
+  \begin{equation}
+    \begin{split}
+      p = exp((best/new) / t)
+    \end{split}
+    \label{eq:eqSimulatedAnnealing}
+  \end{equation}
+}
+
+
+
+
+
+%%==================================================================================================
+%%==================================================================================================

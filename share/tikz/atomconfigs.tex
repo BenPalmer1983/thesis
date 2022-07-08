@@ -1,0 +1,86 @@
+\newcommand{\atomcenter}[5]{
+\filldraw[ball color=greyL] (#1,#2,#3) circle[radius=#4];
+\node[text width=1cm] at (#1,#2) {#5};
+}  
+
+
+\newcommand{\atomelectronangle}[3]{
+\pgfmathsetmacro\ex{#1*cos(#2)}
+\pgfmathsetmacro\ey{#1*sin(#2)}
+\filldraw[ball color=#3] (\ey,\ex,0) circle[radius=0.3];  
+}
+
+\newcommand{\atomelectronangleempty}[2]{
+\pgfmathsetmacro\ex{#1*cos(#2)}
+\pgfmathsetmacro\ey{#1*sin(#2)}
+\draw[black,fill=white] (\ey,\ex) circle (0.3);
+}
+
+\newcommand{\atomelectroncoords}[3]{
+\pgfmathsetmacro\ex{#1}
+\pgfmathsetmacro\ey{#2}
+\filldraw[ball color=#3] (\ey,\ex,0) circle[radius=0.3];  
+}
+
+\newcommand{\electronshellsfes}[3]{
+\draw (#1,#2) circle (#3);
+\atomelectronangle{#3}{-12}{greyLL}
+\atomelectronangle{#3}{12}{greyDD}
+}  
+
+\newcommand{\electronshellsfed}[3]{
+\draw (#1,#2) circle (#3);
+\def\theanglediff{7.0}
+\def\theangle{180}
+\atomelectronangle{#3}{\theangle+\theanglediff}{greyDD}
+\atomelectronangle{#3}{\theangle-\theanglediff}{greyLL}
+\def\theangle{252}
+\atomelectronangle{#3}{\theangle+\theanglediff}{greyDD}
+\atomelectronangle{#3}{\theangle-\theanglediff}{greyLL}
+\def\theangle{324}
+\atomelectronangle{#3}{\theangle+\theanglediff}{greyDD}
+\atomelectronangleempty{#3}{\theangle-\theanglediff}
+\def\theangle{36}
+\atomelectronangle{#3}{\theangle+\theanglediff}{greyDD}
+\atomelectronangleempty{#3}{\theangle-\theanglediff}
+\def\theangle{108}
+\atomelectronangle{#3}{\theangle+\theanglediff}{greyDD}
+\atomelectronangleempty{#3}{\theangle-\theanglediff}
+}  
+
+
+\newcommand{\electronlegend}[2]{
+\filldraw[ball color=greyLL] (#1,#2+1.0,0) circle[radius=0.3];  
+\filldraw[ball color=greyDD] (#1,#2,0) circle[radius=0.3];  
+\draw[black,fill=white] (#1,#2-1.0) circle (0.3);
+\node[text width=1cm] at (#1+1.5,#2+1.0) {Up};
+\node[text width=1cm] at (#1+1.5,#2) {Down};
+\node[text width=1cm] at (#1+1.5,#2-1.0) {Empty};
+}  
+
+
+\newcommand{\atomconfigfe}{
+\begin{tikzpicture}
+
+\electronshellsfes{0.0}{0.0}{1.5}
+\electronshellsfed{0.0}{0.0}{2.5}
+\atomcenter{0.0}{0.0}{0.0}{0.7}{Fe}
+
+\electronlegend{7.0}{0.0}
+
+\end{tikzpicture}
+}   
+
+
+\newcommand{\atomconfigfefig}[2]{
+\begin{figure}[!htbp]
+\begin{center}
+\atomconfigfe
+\captionsetup{font={it}}
+\caption{#1}
+\label{fig:#2}
+\end{center}
+\end{figure}
+}  
+
+

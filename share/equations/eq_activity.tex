@@ -1,0 +1,38 @@
+%%==================================================================================================
+%%==================================================================================================
+
+\newcommand{\eqBateman}{
+  \begin{equation}
+    \begin{split}
+      N_{n}(t) = \sum_{i=1}^{i=n} \left( \left( \prod_{j=i}^{j=n-1} \lambda_{(ij+1)}\right) \sum_{j=i}^{j=n} \left(\frac{N_{i0}\exp(-\lambda_{j}t)}{\prod_{p=i,p\neq j}^{p=n} (\lambda_{p} - \lambda_{j})}\right)\right)
+    \end{split}
+    \label{eq:bateman}
+  \end{equation}
+}
+
+
+\newcommand{\eqReactionRate}{
+  \begin{equation}
+	\begin{split}
+      R = \frac{J}{e} n_{t} \sigma \cdot 10^{-28} \delta t
+    \end{split}
+  \label{eq:eqReactionRate}
+  \end{equation}
+}
+
+\newcommand{\eqDecayConstant}{
+  \begin{equation}
+	\begin{split}
+	  \lambda = - \frac{N'(t)}{N(t)}
+	\end{split}
+	\label{eq:eqDecayConstant}
+  \end{equation}
+}
+
+
+
+
+
+
+%%==================================================================================================
+%%==================================================================================================

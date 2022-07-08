@@ -1,0 +1,77 @@
+%%==================================================================================================
+%%==================================================================================================
+
+\newcommand{\eqLagrangePolynomialNew}{
+  \begin{equation}
+    \begin{split}
+      p_n (x) = \sum _{i=0} ^n y_i L(i, x) 
+      \textnormal{where    } l(i, x) = \prod _{j=0 , j!=i} ^n (x - x_j)
+    \end{split}
+    \label{eq:eqLagrangePolynomialNew}
+  \end{equation}
+}
+
+\newcommand{\eqLagrangePolynomialDerivativeNew}{
+%% Sample hybrid function
+\begin{equation}
+\begin{split}
+q_n \left( x \right) = \sum_{i=0}^{i=n} y_{i} g \left(i,  x \right) \\
+\textnormal{where    } g \left(i, x \right) = \left( \prod_{j=0, j \neq i}^{j=n} \frac{1}{x_i - x_j} \right) \times \left( \sum_{k=0, k \neq i}^{k=n} \prod_{j=0, j \neq k, j \neq i}^{j=n} \left( x - x_j \right) \right)
+\end{split}
+\label{eq:eqLagrangePolynomialNew}
+\end{equation}
+}
+
+
+\newcommand{\eqLagrangeDataSet}{
+%% Sample hybrid function
+\begin{equation}
+\begin{split}
+D = \lbrace \left(x_0, y_0 \right) \left(x_1, y_1 \right) \left(x_2, y_2 \right) \dotsm \left(x_n, y_n \right) \rbrace
+\end{split}
+\label{eq:eqLagrangeDataSet}
+\end{equation}
+}
+
+
+\newcommand{\eqLagrangePolynomial}{
+%% Sample hybrid function
+\begin{equation}
+\begin{split}
+p_n \left( x \right) = \sum_{i=0}^{i=n} y_{i} L_{i} \left( x \right) \\
+\textnormal{where    } L_{i,n} \left( x \right) = \prod_{j=0, j \neq i}^{j=n} \frac{x - x_j}{x_i - x_j}
+\end{split}
+\label{eq:eqLagrangePolynomial}
+\end{equation}
+}
+
+
+\newcommand{\eqLagrangePolynomialExpanded}{
+%% Sample hybrid function
+\begin{equation}
+\begin{split}
+p_n \left( x \right) = y_0 L_0 \left( x \right) + y_1 L_1 \left( x \right) + \dotsm + y_n L_n \left( x \right) \\
+\textnormal{where    } L_{i,n} \left( x \right) = \frac{\left( x - x_0 \right) \dotsm \left( x - x_{i-1} \right) \left( x - x_{i+1} \right) \dotsm \left( x - x_n \right) }
+{\left( x_i - x_0 \right) \dotsm \left( x_i - x_{i-1} \right) \left( x_i - x_{i+1} \right) \dotsm \left( x_i - x_n \right) }
+\end{split}
+\label{eq:eqLagrangePolynomialExpanded}
+\end{equation}
+}
+
+
+\newcommand{\eqLagrangePolynomialDerivative}{
+%% Sample hybrid function
+\begin{equation}
+\begin{split}
+p{'}_n \left( x \right) = \sum_{i=0}^{i=n} y_{i} L{'}_{i} \left( x \right) \\
+\textnormal{where    } L'_{i,n} \left( x \right) = \left( \prod_{j=0, j \neq i}^{j=n} \frac{1}{x_i - x_j} \right) \times \left( \sum_{k=0, k \neq i}^{k=n} \prod_{j=0, j \neq k, j \neq i}^{j=n} \left( x - x_j \right) \right)
+\end{split}
+\label{eq:eqLagrangePolynomial}
+\end{equation}
+}
+
+
+
+
+%%==================================================================================================
+%%==================================================================================================

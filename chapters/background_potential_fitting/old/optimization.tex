@@ -1,0 +1,303 @@
+\section{Optimization}
+
+\subsection{Introduction}
+
+Optimization is the process of finding the best solution for a problem that may also need to satisfy a number of imposed contraints.  In terms of this work, there are several points in which optimization plays a key role, whether it be in the DFT and MD codes use or the fitting codes developed here.  
+
+The mathematical description of optimisation, as written in Numerical Optimization by Nocedal and Wright, is as follows:
+
+Equations here
+
+This work relies on optimization in several stages throughout.  The DFT code used (PWScf) employs the Broyden-Fletcher-Goldfarb-Shanno algorithm to relax structures to give the optimum volume and optimal structure of an arrangement of atoms.  During the fitting of the variety options of equation of state to the energy-volume points, the Levenberg-Marquart Algorithm (LMA) is used.  Finally, a genetic algorithm and simmulated annealing algoritm are coupled with LMA to locate the global optimal parameters for Interatomic Potential functions.
+
+
+\subsection{Continuous and Discrete Optimization}
+
+Problems that may be solved using discrete optimisation have, as the name suggests, discrete solutions.  An example would be the traveling salesman problem, where the aim is to minimise the distance travelled by the salesman between cities.  An example of the solution may be city E to A to B to C to D.  There's a set of possible solutions to the problem.  If the problem was changed such that any point within a 1 mile radius of the center of each city is a valid solution, and the aim is to find the optimal points to travel between within the area of each city, it would become a continuous problem.
+
+Fitting interatomic potentials to data is an example of continuous optimisation.  The Morse potential takes three parameters plus the seperation r between the two atoms.  If the parameters are being optimised such that Morse potential matches the experimental forces (assuming they could be measured experimentally) between two atoms for a set of seperation values, the choice of parameters isn't discrete; they are taken from a continuous range of reals.
+
+
+
+\subsection{Constrained and Unconstrained Optimization}
+
+There are constraints that may need to be considered, and constraints that apply to the fitting of interatomic potentials are as follows:
+
+\begin{itemize}
+\item continuous well behaved function
+\item continuous first-derivative, smooth change in force wrt r
+\item positive electron density
+\item smooth cutoff at some $r = r_{cut}$
+\item repulsion (ZBL/exponential) as r approaches 0
+\item continuous second-derivative
+\item enough parameters coupled with a good choice of functions so the potential is flexible enough to replicate all the experimental data well
+\item a small enough range of parameters to keep the parameter space small enough to search in a reasonable amount of time
+\item maintain physical elegance
+\item ignore physical elegance
+\end{itemize}
+
+Certain constraints listed will battle one-another, while others may be dropped, such as restricting to positive electron-densities if the choice to ignore physical elegance is selected. 
+
+
+\subsection{Global and Local Optimization}
+
+An example to discuss the difference between local and global optimization will be given in a very literal sense.  I am located in Birmingham, and I wish to find the highest point local to me.  Using a modern smartphone and map I could quickly find the nearest hill to my current position; this would be the local maxima.  I would, however, need to go up and down many peaks and troughs, scouring the entire surface of the Earth, until I found the global maxima, somewhere amongst the many peaks and troughs in the Himalayas. 
+
+When optimising the parameters of a function, it is relatively easy to find a local extreme that would give me the optimum parameters locally.  It is a much harder task to find the global optimum, especially if very little, or nothing at all, is known about the function for which the parameters are being optimised.
+
+
+
+\subsection{Global Optimization Algorithms}
+
+
+\subsubsection{Simulated Annealing}
+
+A large amount of computing power is required to problems in Physics.  The optimum arrangement of Iron atoms, at various concentrations and temperatures is one such example, but nature "calculates" the correct structure and reacts accordingly as the conditions change.  It makes perfect sense to look to nature when designing optimisation algorithms.
+
+Simulated annealing mimics the way a solid cools, with its atoms settling into the optimum relaxed positions as time passes.  Initially, the solid is hot and the atoms are able to take non-optimal positions, but as the solid cools the atoms take their optimal places.  The heating allows the atoms to move from non-optimal positions in the initial configuration.
+
+The simulated annealing algorithm takes in a starting set of parameters.  These are varied and, if the new parameters give a better solution to the problem, the parameters are updated.  However, there is a chance that a worse set of parameters are used, and this depends on how bad they are and the current value of the temperature in the algorithm.  By allowing a worse set of parameters to be used, it gives the solution the chance to jump out of a local minimum and explore other solutions that it would otherwise be oblivious to.
+
+
+\begin{lstlisting}[style=sPseudo,caption={Simple simulated annealing subroutine}]
+// Simulated Annealing
+subroutine simulated_annealing(f, p, pv, x, y, t, p_best)
+  // f -       (IN)  the function f(p, x) for which the parameters are being optimised
+  // p -       (IN)  array containing parameter/parameters
+  // pv -      (IN)  array of maximum parameter/s variance
+  // x -       (IN)  array of x points
+  // y -       (IN)  array o fy points
+  // t -       (IN)  starting temperature
+  // p_best -  (OUT) optimised parameters
+  //
+
+  rss = (f(x[:], p[:]) - y[:])**2 
+  
+  rss_best = rss
+  p_best[:] = p[:]
+  
+  // These may be modified as required
+  outer_loops = 100
+  inner_loops = 1000
+  t_decrease = 0.99
+  pv_decrease = 0.99
+  
+  for outer = 1, outer_loops
+    for inner = 1, inner_loops
+    
+      r[:] = 0.5 - random_float(0.0, 1.0)  // array of random floats (same size as p)
+      
+      pt[:] = p[:] + r[:] * pv[:]
+      rss = (f(x[:], pt[:]) - y[:])**2 
+      
+      // If better, always use new parameters
+      if (rss < rss_best) then
+        rss_best = rss
+        p[:] = pt[:]
+        p_best[:] = pt[:]
+        
+      // If worse, sometimes use parameters (based on how good they are, and the temperature)
+      else      
+        // as t -> 0   exp((rss_best - rss)/t) -> 0
+        // as (rss_best - rss) -> 0    exp((rss_best - rss)/t) -> 1  (where t = 1) 
+        rn = random_float(0.0, 1.0)
+        if (rn <= exp((rss_best - rss) / t)) then
+          p[:] = pt[:]
+        end if
+      end if     
+      
+    end for
+    
+    // Decrease temperature
+    t = t_decrease * t
+    
+    // Decrease variance
+    pv[:] = pv_decrease * pv[:]
+    
+  end for
+end subroutine
+\end{lstlisting}
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Genetic Algorithm}
+
+It is unclear whether life started on this planet, or was brought to this planet, and this idea only removes the problem of how life as we are able to understand it was conceived to a different time and place.  However it started, there is evidence of life on this planet approximately 3.5 billion years ago.  Prokaryotes were the simple single cell organisms that inhabited our planet for billions of these.  Their cell does not have a nucleus and the genetic information is contained in RNA and DNA within the cell.
+
+Approximately 1.5 billion years ago, life made a leap forward in complexity and evolved into the first Eukaryotic cells.  These are larger and more complex than Prokaryotes, and the genetic material is stored within a nucleus.
+
+Through processes of inheritance, variation, natural selection and the vast expanse of time, more complex organisms developed.
+
+As simulated annealing takes inspiration from cooling solids, genetic algorithms take inspiration from evolution.  
+ 
+
+
+\begin{lstlisting}[style=sPseudo,caption={Simple simulated annealing subroutine}]
+// Simulated Annealing
+subroutine simulated_annealing(f, p, pv, x, y, t, p_best)
+  // f -       (IN)  the function f(p, x) for which the parameters are being optimised
+  // p -       (IN)  array containing parameter/parameters
+  // pv -      (IN)  array of maximum parameter/s variance
+  // x -       (IN)  array of x points
+  // y -       (IN)  array o fy points
+  // t -       (IN)  starting temperature
+  // p_best -  (OUT) optimised parameters
+  //
+  
+  // Set important variables
+  pop_size = 32
+  fresh_size = 8
+  generations = 100
+  chance_to_mutate = 0.1
+  extinction_chance = 0.1
+
+  // Create population array
+  pop = make_pop(pop_size, p, pv)   // Some function that initialises the population
+  
+  // Calc rss for each parameter set in the pop array
+  for n=1,pop_size
+    pop_rss[n] = sum((y[:] - f(pop[n,:] - x[:]))**2) 
+  end for
+
+  // Loop through generations
+  for n=1, generations
+  
+    // Breed and replace if improvements
+    key = shuffled_list(1,generations)  // Make a shuffled list of integers, unique, 1 to generations
+    for m=1, pop_size//2 
+      parent_a = pop[key[2 * m - 1]]
+      parent_b = pop[key[2 * m]]
+      child_a, child_b = breed(parent_a, parent_b, chance_to_mutate)  // Breed, possibly mutate
+      
+      child_a_rss = sum((y[:] - f(child_a[:] - x[:]))**2) 
+      child_b_rss = sum((y[:] - f(child_b[:] - x[:]))**2) 
+      
+      no_clones(pop, child_a, child_b)  // if either already exists in pop, mutate to avoid clones
+      replace(pop)  // some subroutine to replace parent/s with child parameters if better
+      
+      update(p_best)  // some subroutine to update p_best
+    end for
+    
+    // Fresh solutions
+    fresh = make_pop(fresh_size, p, pv)    
+    key = shuffled_list(1,generations)  // Make a shuffled list of integers, unique, 1 to generations
+    
+    // Breed with fresh parameters
+    for m=1, fresh_size 
+      parent_a = pop[key[m]]
+      parent_b = fresh[m]
+      
+      child_a, child_b = breed(parent_a, parent_b)  // Breed
+      
+      child_a_rss = sum((y[:] - f(child_a[:] - x[:]))**2) 
+      child_b_rss = sum((y[:] - f(child_b[:] - x[:]))**2) 
+      
+      no_clones(pop, child_a, child_b)  // if either already exists in pop, mutate to avoid clones
+      replace(pop)  // some subroutine to replace parent with best child
+      
+      update(p_best)  // some subroutine to update p_best
+      
+    end for
+    
+    // Chance of extinction event to kill off bad parameters
+    extinction_event(pop, extinction_chance) // remove worst performing, replace with slight mutations of best
+  end for
+  
+end subroutine
+\end{lstlisting}
+
+
+
+
+
+\subsection{Local Optimization Algorithms}
+
+
+\subsection{Gradient Descent}
+
+The gradient descent method it a reliable way of searching for a local minimum.  It requires only the first derivative coupled with a line search to move closer to the minimum point.  Close to the minimum, it is slower than the Newton-Gauss and LMA, but these require the computation of the Jacobian to estimate the Hessian matrix, so these are more computationally intensive.
+
+
+\begin{lstlisting}[style=sPseudo,caption={Simple simulated annealing subroutine}]
+// Simulated Annealing
+subroutine simulated_annealing(f, p, p_best)
+
+// f is the function being optimised
+// p is an array of the parameters
+
+p_search = True
+rss_best = calc_rss(f, p)
+
+do while(p_search)
+
+  // Some function to calculate the 
+  df(:) = gradient(f,p(:))
+  
+  // Back track line search
+  alpha = 1.0  
+  alpha_search = True
+  last_rss = -1.0
+  do while(alpha_search)
+    rss = calc_rss(f, p(:) - alpha * df(:))
+    
+    // If it's the first step, store rss into last_rss
+    if(last_rss == -1.0)then
+      last_rss = rss
+    end if
+    
+    // If the new one is worse, stop searching and step alpha back
+    if(rss > ls_rss)then
+      alpha_search = False
+      alpha = 2.0 * alpha
+    // If it's better, reduce alpha and keep searching
+    else
+      alpha = 0.5 * alpha
+      last_rss = rss      
+    end if 
+  end do
+  
+  // Check new parameters
+  rss = calc_rss(f, p(:) - alpha * df(:))
+  
+  // If it's better, save and keep searching
+  if(rss < rss_best)then
+    p(:) = p(:) - alpha * df(:)
+    rss_best = rss
+  
+  // Break out
+  else
+    p_search = False
+  end if
+end do
+
+
+end subroutine
+\end{lstlisting}
+
+\subsection{Newton Gauss}
+
+The Newton Gauss method is an algorithm that finds the local minimum of a function by approximating the Hessian matrix with the Jacobian and its transpose.  By estimating the Hessian, the algorithm only requires the computation of the first order derivatives with respect to each parameter, at each point pair x, y.  It is possible to use the function and the analytical derivative, but as this work requires the calculation of functions that have no simple analytical form, the first derivative will be approximated within the algorithm.
+
+\eqNewtonGauss
+
+Close to a minima, the Newton-Gauss method quickly moves to the optimum point.  Depending on the starting point, it may converge only to a local minimum, and not the global, and it may also be unstable, not converging at all.
+
+
+
+
+\subsection{Levenberg Marquardt}
+
+The LMA is a Newton-Gauss type algorithm that includes the addition of a dampening term that helps to increase the robustness of the algorithm.  The particular algorithm here uses a number of other schemes to improve the overall effectiveness of the algorithm.  
+
+The starting value for lambda is calculated as a function of the estimate of the Hessian and a cutoff for lambda is introduced to remove dampening altogether.  A delayed gratification scheme has also been introduced to increase lambda by 50 percent if the trial solution is worse, and to decrease lambda by a factor of 5 if the trial solution is better. Finally, a diagonal weighting matrix has been included to allow certain parameters to be preferenced during their optimisation.
+
+\eqLevenbergMarquardt
+
+

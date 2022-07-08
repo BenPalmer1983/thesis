@@ -1,0 +1,567 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces U-235 and U-238 Fission Cross Sections\relax }}{3}{figure.caption.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Remaining reactor locations in the UK\relax }}{4}{figure.caption.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Electricity in Millions of Tonnes of Oil Equivalent\relax }}{5}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Safest and cleanest sources of energy \cite {deathsfromenergysource} - deaths per terawatt hour and tonnes of CO\textsubscript {2} per gigawatt hour\relax }}{6}{figure.caption.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Typical Reactor Flux - Thermal and Fast Spectra\relax }}{9}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Inelastic scattering - scattering angle vs energy loss for a range of target atoms\relax }}{10}{figure.caption.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Energy demand to produce hydrogen by electrolysis as temperature changes\relax }}{11}{figure.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Phases of Water: Pressure vs Temperature\relax }}{12}{figure.caption.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Neutron Energy Spectrum from Fission\cite {jeff311}\relax }}{14}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.10}{\ignorespaces \acrshort {pka} energy as a funtion of neutron energy in Fe\cite {pkaenergyspectra}\relax }}{14}{figure.caption.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.12}{\ignorespaces (a) 5KeV Fe PKA Damage Cascade in Fe (b) 10KeV Fe PKA Damage Cascade in Fe (c) 20KeV Fe PKA Damage Cascade in Fe (d) 50KeV Fe PKA Damage Cascade in Fe\relax }}{16}{figure.caption.27}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Direct interaction p-p\cite {pionexchange}\relax }}{19}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Direct interaction p-n\cite {pionexchange}\relax }}{19}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Direct interaction n-n\cite {pionexchange}\relax }}{19}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exchange interaction n-p\cite {pionexchange}\relax }}{20}{figure.caption.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exchange interaction p-n\cite {pionexchange}\relax }}{20}{figure.caption.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Pair production Feynman diagram\relax }}{21}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Compton Scattering Feynman diagram\relax }}{21}{figure.caption.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Photoelectric Effect Feynman diagram\relax }}{21}{figure.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Coherent Scattering Feynman diagram\relax }}{22}{figure.caption.39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Predicted Mn 56 activity after neutron irradiation\relax }}{25}{figure.caption.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Steel Irradiation Gamma Dose $2.5 \times 10^7$ neutrons per cm squared per second\relax }}{25}{figure.caption.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces High Flux Isotope Reactor Neutron Flux\relax }}{25}{figure.caption.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Steel Irradiation Gamma Dose $1.0 \times 10^{14}$ neutrons per cm squared per second\relax }}{26}{figure.caption.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces .\relax }}{27}{figure.caption.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Interstitials in the cascades of 10keV, 20keV and 40keV displacement cascades \cite {stollerdamage1996}\relax }}{28}{figure.caption.50}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Steel Cr-Ni Schaeffler Diagram\relax }}{30}{figure.caption.51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Iron-Chromium-Nickel Phase Diagram\cite {fenicrternaryphase}\relax }}{30}{figure.caption.51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \acrshort {bcc} structure of ferritic stainless steel\relax }}{30}{figure.caption.53}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \acrshort {fcc} structure of austenitic stainless steel\relax }}{30}{figure.caption.55}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Expected DPA during component life time and operating temperatures\cite {genIVstrucmat}\relax }}{32}{figure.caption.58}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Scattering angle probability of neutrons\relax }}{33}{figure.caption.59}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Energy transfer as a from a neutron dependant on target mass\relax }}{33}{figure.caption.59}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Recoil energies for neutrons at 102keV, 1.02MeV, 10.1MeV and 14.1MeV\cite {pkaenergyspectra}\relax }}{33}{figure.caption.60}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Depletion of cr, fe and enrichment of ni at the surface\cite {johnstonris}\relax }}{35}{figure.caption.61}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Concentration profile after 46\acrshort {dpa} irradiation with 75 keV Ni ions\cite {marwickris}\relax }}{35}{figure.caption.61}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Temperature and \acrshort {dpa} dependence of \acrshort {ris}\cite {risokamoto}\relax }}{35}{figure.caption.62}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Formation of chromium precipitates at the grain boundary \cite {rolledalloys}\relax }}{36}{figure.caption.63}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Sensitization of an alloy: chromium carbide precipitation \cite {ssina}\relax }}{36}{figure.caption.63}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Changing water chemistry: radiolysis of water\cite {waterradiolysis}\relax }}{37}{figure.caption.64}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Three requirements for \acrshort {igscc} to occur\relax }}{38}{figure.caption.65}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Inter Granular Stress Corrosion Cracking in Nickel Alloy\cite {staehlecoriou}\relax }}{38}{figure.caption.66}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Alloy choices for early LWRs\relax }}{39}{figure.caption.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Nickel, IGSCC and TGSCC\relax }}{39}{figure.caption.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Addition of Ru to Fe30Cr and Fe40Cr steels - open current corrosion potential variation with time in 10\% sulphuric acid\cite {potgieter1994}\relax }}{41}{figure.caption.68}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Failure times for 304SS, Pd doped 304SS (with and without Mn) and Ru doped 304SS in polythionic acid at ambient temperature\cite {scrstainless}\relax }}{41}{figure.caption.69}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A cross section of the \acrshort {hfir} \cite {hfirornl}\relax }}{45}{figure.caption.73}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Neutron Flux in the \acrshort {hfir} while at 85MW \cite {hfiruserguide}\relax }}{45}{figure.caption.73}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \acrshort {nbsr} building layout\cite {nbsrhistory}\relax }}{46}{figure.caption.75}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces An example of a neutron spallation source where high energy ions collide with heavy atoms\cite {spallationsource}\relax }}{47}{figure.caption.76}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Neutron Spectra from the Fission of U235\cite {leachmanneutrons}\relax }}{48}{figure.caption.78}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Neutron, proton and deuteron cross sections for Fe56 and Ni58\relax }}{48}{figure.caption.79}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces TALYS work flow \cite {talysmanual}\relax }}{51}{figure.caption.85}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces TALYS Fe54-Co55 cross section comparison with experiment \cite {tendlfeco}\relax }}{52}{figure.caption.86}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces An example decay chain from an unstable parent isotope, through unstable daughter isotopes ending with a stable daughter isotope.\relax }}{55}{figure.caption.89}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces One hundred simulated 13MeV proton energy loss curves in Fe simulated with SRIM \cite {srim}\relax }}{57}{figure.caption.90}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Time and Size Scales for Computer Packages \cite {scalediagram}\relax }}{59}{figure.caption.91}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Rose-Vinet Equation of State\relax }}{62}{figure.caption.98}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Correlation between $C_{11}$ and temperature\relax }}{69}{figure.caption.99}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Lennard-Jones Potential\relax }}{70}{figure.caption.101}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Morse Potential\relax }}{71}{figure.caption.103}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Buckingham Potential\relax }}{72}{figure.caption.105}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \acrshort {zbl} universal screening potential\relax }}{73}{figure.caption.107}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Polynomial knot to knot spline\relax }}{79}{figure.caption.115}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Damage in \acrshort {mox} (LAMMPS)\cite {moxlammpsdamage}\relax }}{85}{figure.caption.118}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Sputtering of plutonium oxide (LAMMPS)\cite {pusputtering}\relax }}{85}{figure.caption.118}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces 5keV cascade (MOLDY)\cite {pkamoldy}\relax }}{85}{figure.caption.119}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces 20keV cascade (MOLDY)\cite {pkamoldy}\relax }}{85}{figure.caption.119}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces 100keV cascade after 50ps in TiO2 (DL\_POLY)\cite {dlpolyradiationdamage}\relax }}{86}{figure.caption.120}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Neighbouring atom count dependant upon lattice parameter and cutoff radius\relax }}{87}{figure.caption.122}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Atoms in simulation box with a halo of atoms at the boundary\relax }}{87}{figure.caption.123}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Partitioning in \acrshort {lammps}\cite {lammpsdd}\relax }}{89}{figure.caption.124}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Damage cascade: 500kev iron projectiles into an iron target calculated with SRIM\relax }}{93}{figure.caption.129}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Common approximations used to enable \acrshort {dft} calculations\relax }}{100}{figure.caption.143}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces A useful, albeit incorrect, way of visualising an "infinite" chain of atoms in 1D\relax }}{104}{figure.caption.146}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.20}{\ignorespaces A 2D example of a translation by an integer multiple of the unit cell from the origin unit cell\relax }}{104}{figure.caption.146}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.21}{\ignorespaces BCC Wigner Seitz Cell and \acrshort {bz} \cite {fccbccreciprocal}\relax }}{105}{figure.caption.147}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.22}{\ignorespaces FCC Wigner Seitz Cell and \acrshort {bz} \cite {fccbccreciprocal}\relax }}{105}{figure.caption.147}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Charge density FCC aluminium xy plane at $z=0.0 a_0$\relax }}{107}{figure.caption.148}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Charge density FCC aluminium xy plane at $z=0.5 a_0$\relax }}{107}{figure.caption.148}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.25}{\ignorespaces \Acrshort {scf} algorithm for Quantum Espresso\relax }}{109}{figure.caption.149}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Replacing the complex potentials with a pseudopotential\cite {ppselloni}\relax }}{111}{figure.caption.150}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Successes and failures of the \acrshort {gga} functional\cite {ldaggaperdew}\relax }}{114}{figure.caption.155}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Energy gap between valence and conduction bands\cite {bandgapshyperphysics}\relax }}{116}{figure.caption.159}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Probability F(E) of finding a fermion with energy E at several temperatures\cite {fermidiracdist}\relax }}{116}{figure.caption.160}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Delta function replaced by successive Hermite polynomials\cite {methfesslpaxton}\relax }}{117}{figure.caption.161}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.31}{\ignorespaces The occupancy for the Marzari-Vanderbilt smearing function is always positive, unlike the Methfessl-Paxton function\cite {marzarithesis2}\relax }}{118}{figure.caption.162}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces An example of several decay chains including branching factors and possible external source terms for each isotope on each chain.\relax }}{122}{figure.caption.163}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Decay of Po-218: Analytic and Gaver-Stehfest Calculations \cite {jeff311}\relax }}{126}{figure.caption.164}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Flow chart of major processes in the Activity code\relax }}{126}{figure.caption.165}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces 36MeV Ion Track\relax }}{128}{figure.caption.166}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces 36MeV Ion Track\relax }}{128}{figure.caption.167}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Cyclotron layout - main hall and beam lines\relax }}{129}{figure.caption.169}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Gamma warning alarm during 0.5 microamp 36MeV proton irradiation of iron \relax }}{130}{figure.caption.170}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces High Purity Germanium Detector\relax }}{130}{figure.caption.171}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Decay path of Polonium-216\relax }}{132}{figure.caption.172}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Decay path of Polonium-216\relax }}{133}{figure.caption.175}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Proton stopping distances in various materials\relax }}{134}{figure.caption.176}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Decay path of Cobalt-55\relax }}{135}{figure.caption.177}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Cobalt-55 Gamma Intensity Plot\relax }}{135}{figure.caption.178}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Gamma counts from the irradiated iron target over 300 seconds\relax }}{136}{figure.caption.179}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Protons through a 0.5mm thick iron target - 100 proton histories\relax }}{137}{figure.caption.180}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Protons through target thick enough to stop all ions - 100 proton histories\relax }}{138}{figure.caption.181}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.9}{\ignorespaces $Fe56(p,2n)Co55$ cross section data from several sources \cite {tendl2009}\cite {tendl2017}\cite {tendl2019}\cite {exforco55}\cite {talys}\relax }}{139}{figure.caption.182}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Isotopes with the top 5 radioactivity plotted over approximately 3 days\relax }}{141}{figure.caption.185}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Predicted gamma lines approximately 3 days after irradiation\relax }}{141}{figure.caption.185}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Cross sections for $({}^{56}_{26}Fe, p)$ reactions\relax }}{142}{figure.caption.186}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Particle production rate in beam\relax }}{143}{figure.caption.187}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Gamma output of residual isotopes, by isotope, at the start and end of irradiation\relax }}{144}{figure.caption.188}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Residual isotope power output, by residual, once beam is off.\relax }}{144}{figure.caption.189}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Expected gamma lines by the end of the experiment (3 days)\relax }}{145}{figure.caption.190}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Change in isotope gamma output over time with proton beam off.\relax }}{147}{figure.caption.193}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.18}{\ignorespaces Proton irradiated Molybdenum gamma activity measured by colleague John Hewett\relax }}{148}{figure.caption.194}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Isotopes in naturally occurring Molybdenum\relax }}{148}{figure.caption.196}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.20}{\ignorespaces Reaction cross sections for ${}^{96}_{42}Mo (p, n) {}^{96}_{43}Tc$ from various sources\relax }}{149}{figure.caption.197}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.21}{\ignorespaces Technetium activity and beam energy as a function of depth into the target, showing a non-uniform distribution of radioactive atoms in the sample\relax }}{150}{figure.caption.199}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.22}{\ignorespaces The attenuation of Gammas through Molybdenum for a range of energies and thicknesses\cite {massattenuation}\relax }}{151}{figure.caption.200}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.23}{\ignorespaces Comparison of Gamma peaks from experiment, a simple estimate and the Activity code.\relax }}{152}{figure.caption.201}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Work flow used to fit potentials\relax }}{154}{figure.caption.203}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Effect of randomly perturbing atom locations\relax }}{161}{figure.caption.207}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces A sample of configurations used for binary alloy \acrshort {dft} calculations for Fe-Pd and Fe-Ru.\relax }}{161}{figure.caption.208}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Fe-Ru calculations failed to converge in 100 iterations when plain mixing was used, but achieved convergence in under 40 iterations with local-TF convergence\relax }}{164}{figure.caption.209}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces DIRAC calculated radial electron density for Iron\relax }}{167}{figure.caption.214}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces DIRAC calculated radial electron density for Palladium\relax }}{167}{figure.caption.214}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Equation of state fit through data points for Chromium BCC with no magnetism, ferromagnetic and antiferromagnetic configurations\relax }}{173}{figure.caption.216}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Equation of state fit through data points for Iron BCC (no magnetism, ferromagnetic) and Iron FCC (no magnetism and antiferromagnetic)\relax }}{174}{figure.caption.218}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Magnetic alignment along the z-axis, antiferromagnetic Fe fcc\relax }}{177}{figure.caption.223}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Isolated atom energies as cell size increase\relax }}{181}{figure.caption.227}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Parameter Breed Event\relax }}{187}{figure.caption.237}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv1coh} and \ref {fepdv1se}\relax }}{197}{figure.caption.241}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv2coh} and \ref {fepdv2se}\relax }}{198}{figure.caption.242}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.1}{\ignorespaces DFT Aluminium Cohesive Energy\relax }}{201}{figure.caption.243}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.2}{\ignorespaces DFT Aluminium Surface Energy\relax }}{201}{figure.caption.243}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Decay path for Chromium-49 \cite {jeff311}\relax }}{236}{figure.caption.251}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Decay path for Nickel-66 \cite {jeff311}\relax }}{237}{figure.caption.253}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Decay path for Caesium-125 \cite {jeff311}\relax }}{238}{figure.caption.255}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{239}{figure.caption.257}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{240}{figure.caption.259}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{241}{figure.caption.261}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.1}{\ignorespaces \relax }}{328}{figure.caption.264}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.2}{\ignorespaces \relax }}{328}{figure.caption.265}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.3}{\ignorespaces \relax }}{329}{figure.caption.266}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.4}{\ignorespaces \relax }}{329}{figure.caption.267}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.5}{\ignorespaces \relax }}{330}{figure.caption.268}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.6}{\ignorespaces \relax }}{330}{figure.caption.269}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.7}{\ignorespaces \relax }}{331}{figure.caption.270}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.8}{\ignorespaces \relax }}{331}{figure.caption.271}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.9}{\ignorespaces \relax }}{332}{figure.caption.272}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.10}{\ignorespaces \relax }}{332}{figure.caption.273}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.11}{\ignorespaces \relax }}{333}{figure.caption.274}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.12}{\ignorespaces \relax }}{333}{figure.caption.275}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.13}{\ignorespaces \relax }}{334}{figure.caption.276}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.14}{\ignorespaces \relax }}{334}{figure.caption.277}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.15}{\ignorespaces \relax }}{335}{figure.caption.278}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.16}{\ignorespaces \relax }}{335}{figure.caption.279}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.17}{\ignorespaces \relax }}{336}{figure.caption.280}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.18}{\ignorespaces \relax }}{336}{figure.caption.281}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.19}{\ignorespaces \relax }}{337}{figure.caption.282}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.20}{\ignorespaces \relax }}{337}{figure.caption.283}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.21}{\ignorespaces \relax }}{338}{figure.caption.284}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.22}{\ignorespaces \relax }}{338}{figure.caption.285}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.23}{\ignorespaces \relax }}{339}{figure.caption.286}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.24}{\ignorespaces \relax }}{339}{figure.caption.287}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.25}{\ignorespaces Total activity over time\relax }}{344}{figure.caption.289}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.26}{\ignorespaces Total gamma power output over time\relax }}{344}{figure.caption.290}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.27}{\ignorespaces Radioactive decay from residual isotopes tallied by target isotope - end of beam (1,500 seconds)\relax }}{345}{figure.caption.291}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.28}{\ignorespaces Radioactive decay from residual isotopes tallied by target isotope - 3 days after irradiation\relax }}{345}{figure.caption.292}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.29}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - end of beam (1,500 seconds)\relax }}{346}{figure.caption.293}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.30}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - 3 days after irradiation\relax }}{346}{figure.caption.294}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.31}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - end of beam (1,500 seconds)\relax }}{347}{figure.caption.295}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.32}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - 3 days after irradiation\relax }}{347}{figure.caption.296}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.33}{\ignorespaces Predicted gamma lines - end of beam (1,500 seconds)\relax }}{348}{figure.caption.297}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {E.34}{\ignorespaces Predicted gamma lines - 3 days after irradiation\relax }}{348}{figure.caption.298}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.1}{\ignorespaces \relax }}{350}{figure.caption.300}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.2}{\ignorespaces \relax }}{351}{figure.caption.301}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.3}{\ignorespaces \relax }}{351}{figure.caption.302}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.4}{\ignorespaces \relax }}{352}{figure.caption.303}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.5}{\ignorespaces \relax }}{353}{figure.caption.304}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.6}{\ignorespaces \relax }}{353}{figure.caption.305}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.7}{\ignorespaces \relax }}{354}{figure.caption.306}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.8}{\ignorespaces \relax }}{355}{figure.caption.307}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.9}{\ignorespaces \relax }}{355}{figure.caption.308}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.10}{\ignorespaces \relax }}{356}{figure.caption.309}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.11}{\ignorespaces \relax }}{357}{figure.caption.310}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.12}{\ignorespaces \relax }}{357}{figure.caption.311}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.13}{\ignorespaces \relax }}{358}{figure.caption.312}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.14}{\ignorespaces \relax }}{359}{figure.caption.313}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.15}{\ignorespaces \relax }}{359}{figure.caption.314}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.16}{\ignorespaces \relax }}{360}{figure.caption.315}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.17}{\ignorespaces \relax }}{361}{figure.caption.316}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.18}{\ignorespaces \relax }}{361}{figure.caption.317}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.19}{\ignorespaces \relax }}{362}{figure.caption.318}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Genetic Algorithm Population Size 512 vs Simulated Annealing\relax }}{363}{figure.caption.319}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Genetic Algorithm Population Size 512 vs Simulated Annealing\relax }}{363}{figure.caption.320}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {G.3}{\ignorespaces Genetic Algorithm Population Size 512 vs Simulated Annealing\relax }}{363}{figure.caption.321}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {G.4}{\ignorespaces Genetic Algorithm Population Size 512 vs Simulated Annealing\relax }}{364}{figure.caption.322}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {G.5}{\ignorespaces Genetic Algorithm Population Size 512 vs Simulated Annealing\relax }}{364}{figure.caption.323}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.1}{\ignorespaces Ecutwfc and Ecutrho convergence for aluminium (energy and force)\relax }}{380}{figure.caption.336}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.2}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - alluminium\relax }}{381}{figure.caption.337}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.3}{\ignorespaces Ecutwfc and Ecutrho convergence for iron (energy and force)\relax }}{382}{figure.caption.338}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.4}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - iron\relax }}{383}{figure.caption.339}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.5}{\ignorespaces Ecutwfc and Ecutrho convergence for palladium (energy and force)\relax }}{384}{figure.caption.340}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.6}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - palladium\relax }}{385}{figure.caption.341}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.1}{\ignorespaces Aluminium FCC equation of state plot\relax }}{388}{figure.caption.343}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.2}{\ignorespaces Aluminium FCC elastic constants plot\relax }}{388}{figure.caption.343}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.3}{\ignorespaces Iron BCC equation of state plot\relax }}{391}{figure.caption.345}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.4}{\ignorespaces Iron BCC elastic constants plot\relax }}{391}{figure.caption.345}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.5}{\ignorespaces Iron BCC (magnetic) equation of state plot\relax }}{395}{figure.caption.347}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.6}{\ignorespaces Iron BCC (magnetic) elastic constants plot\relax }}{395}{figure.caption.347}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.7}{\ignorespaces Iron FCC (magnetic) equation of state plot\relax }}{400}{figure.caption.350}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.8}{\ignorespaces Iron FCC (magnetic) elastic constants plot\relax }}{400}{figure.caption.350}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.9}{\ignorespaces Palladium FCC equation of state plot\relax }}{404}{figure.caption.353}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.10}{\ignorespaces Palladium FCC elastic constants plot\relax }}{404}{figure.caption.353}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.1}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{413}{figure.caption.357}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.2}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{413}{figure.caption.358}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.3}{\ignorespaces Birch Murnaghan equation of state for BCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{415}{figure.caption.359}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.4}{\ignorespaces Rose-Vinet equation of state for BCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{415}{figure.caption.360}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.5}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{416}{figure.caption.361}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.6}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{416}{figure.caption.362}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.7}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{417}{figure.caption.363}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.8}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{417}{figure.caption.364}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.9}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{418}{figure.caption.365}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.10}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{418}{figure.caption.366}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.11}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{419}{figure.caption.367}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.12}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{419}{figure.caption.368}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.1}{\ignorespaces Ackland Mendelev Pair\relax }}{449}{figure.caption.369}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.2}{\ignorespaces Buckingham Potential\relax }}{449}{figure.caption.370}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.3}{\ignorespaces Cubic Knot Spline\relax }}{450}{figure.caption.371}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.4}{\ignorespaces Cubic Knot Spline Fixed End\relax }}{451}{figure.caption.372}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.5}{\ignorespaces Cubic Knot Spline Fixed End Pair\relax }}{452}{figure.caption.373}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.6}{\ignorespaces Ackland Embedding\relax }}{453}{figure.caption.374}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.7}{\ignorespaces Ackland Embedding\relax }}{454}{figure.caption.375}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.8}{\ignorespaces Ackland Embedding\relax }}{454}{figure.caption.376}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.9}{\ignorespaces Embedding A\relax }}{455}{figure.caption.377}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.10}{\ignorespaces Embedding B\relax }}{455}{figure.caption.378}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.11}{\ignorespaces Embedding C\relax }}{456}{figure.caption.379}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.12}{\ignorespaces Embedding D\relax }}{457}{figure.caption.380}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.13}{\ignorespaces Ackland Embedding\relax }}{457}{figure.caption.381}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.14}{\ignorespaces Embedding F Function Plot\relax }}{458}{figure.caption.382}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.15}{\ignorespaces Embedding G Function Plot\relax }}{458}{figure.caption.383}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.16}{\ignorespaces Lennard-Jones\relax }}{459}{figure.caption.384}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.17}{\ignorespaces Morse\relax }}{460}{figure.caption.385}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.18}{\ignorespaces Quadratic Density\relax }}{460}{figure.caption.386}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.19}{\ignorespaces ZBL\relax }}{461}{figure.caption.387}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {P.20}{\ignorespaces Zero\relax }}{462}{figure.caption.388}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {R.1}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{472}{figure.caption.392}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {R.2}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots\relax }}{473}{figure.caption.394}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {R.3}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{473}{figure.caption.395}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {R.4}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{476}{figure.caption.397}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {R.5}{\ignorespaces Comparing the \acrshort {dft} energies to those calculated with this potential.\relax }}{477}{figure.caption.398}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {R.6}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{478}{figure.caption.399}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

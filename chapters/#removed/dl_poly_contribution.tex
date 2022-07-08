@@ -1,0 +1,39 @@
+\section{DL\_POLY Contribution}
+
+\subsection{Introduction}
+
+DL\_POLY is a Molecular Dynamics code developed by W. Smith, T.R. Forester and I.T. Todorov at Daresbury Laboratory in Warrington. It is written in Fortran and, before the modifications, included a number of potential types for metals including
+
+\begin{itemize}
+\item Finnis Sinclair
+\item EAM
+\item EEAM
+\end{itemize}
+
+The Finnis Sinclair is a particular form of the EAM potential, and EEAM is a modification where, is the metal is an alloy, the density and embedding functional for each atom type are treated separately.
+
+\subsection{Modifying DL\_POLY: 2BEAM}
+
+A meeting was held with Dr. Todorov at Daresbury Laboratory, where a brief overview of the relevant code was given.  After this point, and corresponding by email, the two band EAM type was added (2BEAM).  Two major additions to the code were and array used to store the d-band density function and d-band embedding functional, as well as the s-band function/functional (which are stored in the existing two arrays).  The calculation of energy and forces on atoms was also altered to make use of these arrays when a two band EAM potential is used.
+
+\subsection{Mailshot Extract}
+
+\begin{lstlisting}[style=sEmail,caption={Mailshot Extract}]
+DL_POLY_4.05: New Release & Events - MAILSHOT 013
+
+NEW FEATURES \& IMPROVEMENTS
+--------------------------- 
+1.  New two band (2B) EAM and EEAM potentials for metals (TEST45 and TEST46). 
+
+Acknowledgements
+----------------
+Ben Palmer \@ University of Birmingham (UK) for contributing to the
+development and testing of the 2BEAM for metals;
+
+Regards,
+
+Ilian Todorov
+July 2013 
+
+
+\end{lstlisting}

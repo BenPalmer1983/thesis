@@ -1,0 +1,87 @@
+\chapter{Useful Laplace Transforms}
+\label{chapter:usefullaplacetransforms}
+
+\section{Table of Transforms}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c c}
+\hline\hline
+$f(t) = \mathcal{L}^{-1}\left\{ F(s) \right\}$   &   $F(s) = \mathcal{L}\left\{ f(t) \right\} $ \\
+\hline\hline
+$f(t)$                                       & $F(s)$                  \\
+$f'(t)$                                      & $sF(s) - f(0)$          \\
+$a$                                          & $\frac{a}{s}$           \\
+$\exp(-at)$                                   & $\frac{1}{s+a}$         \\
+$a \exp(-bt)$                                 & $\frac{a}{s+b}$         \\
+$\frac{1}{a} \left[1 - \exp(-at)\right]$      & $\frac{a}{s(s+a)}$      \\
+$\frac{a}{b} \left[1 - \exp(-bt)\right]$      & $\frac{a}{s(s+b)}$      \\
+\hline\hline
+\end{tabular}
+\end{center}
+\caption{Useful Laplace transforms}
+\label{table:usefullaplacetranforms}
+\end{table}
+
+
+\section{Decay with a Source Term}
+
+Set up the equation:
+
+\begin{equation}
+\begin{split}
+\frac{dN(t)}{dt} = \omega - \lambda N(t)
+\end{split}
+\label{eq:decaysourceterm1}
+\end{equation}
+
+Transform:
+
+\begin{equation}
+\begin{split}
+\mathcal{L}\left\{  \frac{dN(t)}{dt}       \right\} = sF(s) - N_{0} \\
+\mathcal{L}\left\{  \omega - \lambda N(t)  \right\} = \frac{\omega}{s} - \lambda N(s) \\
+\end{split}
+\label{eq:decaysourceterm2}
+\end{equation}
+ 
+Rearrange to make $N(s)$ the subject:
+
+\begin{equation}
+\begin{split}
+sN(s) - N_{0} = \frac{\omega}{s} - \lambda N(s) \\
+(s + \lambda) N(s) = \frac{\omega}{s} + N_{0} \\
+N(s) = \frac{\omega}{s(s + \lambda)} + \frac{N_{0}}{(s + \lambda)} \\
+\end{split}
+\label{eq:decaysourceterm3}
+\end{equation}
+
+Inverse transform:
+
+\begin{equation}
+\begin{split}
+\mathcal{L}^{-1}\left\{  N(s)    \right\} = N(t) \\
+\mathcal{L}^{-1}\left\{  \frac{\omega}{s(s + \lambda)}   \right\} = \frac{\omega}{\lambda} \left(1 - \exp(-\lambda t)\right) \\
+\mathcal{L}^{-1}\left\{  \frac{N_{0}}{s + \lambda}   \right\} = N_{0} \exp(-\lambda t) \\
+\end{split}
+\label{eq:decaysourceterm3}
+\end{equation}
+
+Simplify:
+
+\begin{equation}
+\begin{split}
+N(t) = \frac{\omega}{\lambda} \left(1 - \exp(-\lambda t)\right) + N_{0} \exp(-\lambda t)\\
+N(t) = \frac{\omega}{\lambda} + \left(N_{0} - \frac{\omega}{\lambda} \right) \exp(-\lambda t) \\
+\end{split}
+\label{eq:decaysourceterm3}
+\end{equation}
+
+
+
+
+
+
+
+
+

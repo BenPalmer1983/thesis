@@ -1,0 +1,24 @@
+\begin{lstlisting}[style=sPseudo,caption={}]
+function lpinterp(x, data, d=0)
+
+if (d == 0) then
+  return lpinterp_y(x, data, n)
+else if (d == 1) then
+  return lpinterp_dydx(x, data, n)  
+else if (d > 1) then
+  n = len(data, 1)
+  dcount = 1
+  // Recusively build a f', f'', f''' etc as required
+  do while(dcount < d) 
+    for ncount = 1, n
+      data_temp[ncount][1] = data[ncount][1]
+      data_temp[ncount][2] = lpinterp_dydx(x,data[ncount][1])    
+    next ncount
+    data = data_temp
+    dcount = dcount + 1
+  end do
+  return lpinterp_dydx(x, data, n)    
+end if
+end function lpinterp
+
+\end{lstlisting}

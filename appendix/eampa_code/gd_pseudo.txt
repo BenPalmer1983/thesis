@@ -1,0 +1,53 @@
+// Simulated Annealing
+subroutine simulated_annealing(f, p, p_best)
+
+// f is the function being optimised
+// p is an array of the parameters
+
+p_search = True
+rss_best = calc_rss(f, p)
+
+do while(p_search)
+
+  // Some function to calculate the 
+  df(:) = gradient(f,p(:))
+  
+  // Back track line search
+  alpha = 1.0  
+  alpha_search = True
+  last_rss = -1.0
+  do while(alpha_search)
+    rss = calc_rss(f, p(:) - alpha * df(:))
+    
+    // If it's the first step, store rss into last_rss
+    if(last_rss == -1.0)then
+      last_rss = rss
+    end if
+    
+    // If the new one is worse, stop searching and step alpha back
+    if(rss > ls_rss)then
+      alpha_search = False
+      alpha = 2.0 * alpha
+    // If it's better, reduce alpha and keep searching
+    else
+      alpha = 0.5 * alpha
+      last_rss = rss      
+    end if 
+  end do
+  
+  // Check new parameters
+  rss = calc_rss(f, p(:) - alpha * df(:))
+  
+  // If it's better, save and keep searching
+  if(rss < rss_best)then
+    p(:) = p(:) - alpha * df(:)
+    rss_best = rss
+  
+  // Break out
+  else
+    p_search = False
+  end if
+end do
+
+
+end subroutine

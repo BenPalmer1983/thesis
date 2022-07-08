@@ -1,0 +1,241 @@
+\documentclass[12pt,twoside]{share/cls/thesis}
+\include{glossary/make_glossary}
+
+
+\newcommand{\changefont}{%
+    \fontsize{8}{11}\selectfont
+}
+\fancyhf{}
+\fancyhead[LE,RO]{\changefont \slshape \rightmark} %section
+\fancyhead[RE,LO]{\changefont \slshape \leftmark} %chapter
+\fancyfoot[C]{\changefont \thepage} %footer
+
+\pagestyle{fancy}
+%\pagestyle{plain}
+
+
+
+
+
+\begin{document}
+
+
+\include{cover/cover}
+
+
+%% Cover + Abstract
+\pagenumbering{gobble}
+
+\pagenumbering{roman} 
+\include{abstract/abstract}
+
+%% Tables of...
+\include{contents/contents}
+\include{contents/figures}
+\include{contents/tables}
+
+
+
+%% Chapters of Thesis
+\pagenumbering{arabic}
+
+
+
+
+
+%%##################################################################
+%% Introduction
+%%##################################################################
+
+\include{chapters/introduction/introduction}
+
+
+%%##################################################################
+%% Background: Radiation Effects and Transport
+%%##################################################################
+
+\include{chapters/background_radiation_effects_and_transport/background_radiation_effects_and_transport}
+
+
+
+%%##################################################################
+%% Background: Austenitic Steels in Nuclear Power
+%%##################################################################
+
+
+\include{chapters/background_austenitic_steels_in_nuclear/bcc}
+\include{chapters/background_austenitic_steels_in_nuclear/fcc}
+\include{chapters/background_austenitic_steels_in_nuclear/fct}
+\include{chapters/background_austenitic_steels_in_nuclear/background_austenitic_steels_in_nuclear}
+
+
+
+
+%%##################################################################
+%% Background: Activity
+%%##################################################################
+
+\include{chapters/background_activity/background_activity}
+
+
+%%##################################################################
+%% Background: Interatomic Potentials
+%%##################################################################
+
+\include{chapters/background_potential_fitting/background_potential_fitting}
+
+
+
+%%##################################################################
+%% Methodology: Activity
+%%##################################################################
+
+\include{chapters/methodology_activity/methodology_activity}
+
+
+
+%%##################################################################
+%% Results: Activity Code
+%%##################################################################
+
+\include{chapters/results_activity_code/activity_code}
+
+
+
+%%##################################################################
+%% Methodology: Interatomic Potentials
+%%##################################################################
+
+\include{chapters/methodology_interatomic_potentials/methodology_ip}
+
+
+
+%%##################################################################
+%% Results: DFT Reference Database
+%%##################################################################
+
+\include{chapters/results_dft_reference_db/results_dft}
+
+
+%%##################################################################
+%% Results: Potential Fitting
+%%##################################################################
+
+\include{chapters/results_potential_fitting/results_potfit}
+
+
+
+
+%%##################################################################
+%% Conclusions
+%%##################################################################
+
+\include{chapters/conclusions/conclusions}
+
+
+
+
+
+%%##################################################################
+%% Future Work
+%%##################################################################
+
+\include{chapters/future_work/future_work}
+
+
+
+
+%%##################################################################
+%% Glossary
+%%##################################################################
+
+\include{glossary/glossary}
+
+
+
+%%##################################################################
+%% Bibliography
+%%##################################################################
+
+\include{bibliography/bibliography}
+
+
+
+%%##################################################################
+%% Acknowledgements
+%%##################################################################
+
+\include{chapters/acknowledgement/acknowledgement}
+
+
+
+
+
+%%##################################################################
+%% Appendix
+%%##################################################################
+
+\begin{appendices}
+
+
+%% Activity Code
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{appendix/laplace/useful_laplace_transforms}
+\input{appendix/activity_equation/activity_equation}
+\input{appendix/activity_code/activity_code}
+\input{appendix/activity_results/activity_v1_iron}
+\input{appendix/activity_results/activity_v2}
+\input{appendix/activity_results/activity_v2_iron}
+\input{appendix/activity_results/activity_v2_mo_john}
+\input{appendix/activity_results/activity_v2_steel_mo_alex}
+\input{appendix/iron_activity/iron_activity}
+\input{appendix/srim_data/srim_data}
+
+
+
+%% Potential fitting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{appendix/crystal_structures/crystal_structures}
+\input{appendix/elastic_constants/elastic_constants}
+\input{appendix/pbe/pbefunctional}
+\input{appendix/dft_calibration/dft_calibration}
+\input{appendix/qeeos/qeeos}
+\input{appendix/dft_property_calculations/dft_property_calculations}
+%\input{appendix/qeforfit/qeforfit}
+\input{appendix/transferability/transferability}
+\input{appendix/eampa_code/eampa_code}
+\input{appendix/functions/functions}
+\input{appendix/dlpoly_contribution/dlpoly_contribution}
+
+
+\input{appendix/results_fepd/results_fepd.tex}
+\input{appendix/results_feru/results_feru.tex}
+
+
+
+
+\end{appendices}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%\include{chapters/background_austenitic_steels_in_nuclear/chapter}
+%%\include{chapters/background_austenitic_steels_in_nuclear/stainless_steel}
+%%\include{chapters/background_austenitic_steels_in_nuclear/radiation_damage}
+%%\include{chapters/background_austenitic_steels_in_nuclear/corrosion_resistance}
+%%\include{chapters/background_austenitic_steels_in_nuclear/intergranular_scc}

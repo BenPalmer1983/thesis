@@ -1,0 +1,14 @@
+\section{Calculating Crystal Properties}
+
+\subsection{Introduction}
+
+
+\subsection{Bulk Modulus}
+
+This method for calculating the bulk-modulus was used with both for DFT calculations and within the potential analysis code.
+
+\eqBirchMurnaghan
+
+A number of homogenous strains (positive and negative) are applied to the relaxed primitive cell.  The energy and volume measurements for each strain are recorded, and a second order polynomial is fit to the data points.  By rearranging the Birch-Murnaghan and either using Levenberg-Marquardt or some similar optimisation technique, the four parameters are fit to the data.  A a maximum strain of a few percent was applied throughout this work.
+
+
