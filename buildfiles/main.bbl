@@ -3728,98 +3728,6 @@
     \field{year}{2016}
   \endentry
 
-  \entry{simanneal}{article}{}
-    \name{author}{3}{}{%
-      {{hash=KS}{%
-         family={Kirkpatrick},
-         familyi={K\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=JCDG}{%
-         family={Jr},
-         familyi={J\bibinitperiod},
-         given={C.\bibnamedelima D.\bibnamedelima Gelatt},
-         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  G\bibinitperiod},
-      }}%
-      {{hash=VMP}{%
-         family={Vecchi},
-         familyi={V\bibinitperiod},
-         given={M.\bibnamedelima P.},
-         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KSJCDGVMP1}
-    \strng{fullhash}{KSJCDGVMP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{issue}{4598}
-    \field{pages}{671\bibrangedash 680}
-    \field{title}{Optimization by Simulated Annealing}
-    \field{volume}{220}
-    \field{type}{ARTICLE}
-    \field{journaltitle}{Science}
-    \field{year}{1983}
-  \endentry
-
-  \entry{basinhopping}{article}{}
-    \name{author}{2}{}{%
-      {{hash=WDJ}{%
-         family={Wales},
-         familyi={W\bibinitperiod},
-         given={David\bibnamedelima J.},
-         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=DJPK}{%
-         family={Doye},
-         familyi={D\bibinitperiod},
-         given={Jonathan P.\bibnamedelima K.},
-         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
-  K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WDJDJPK1}
-    \strng{fullhash}{WDJDJPK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{5111\bibrangedash 5116}
-    \field{title}{Global Optimization by Basin-Hopping and the Lowest Energy
-  Structures of Lennard-Jones Clusters Containing up to 110 Atoms}
-    \field{volume}{101}
-    \field{type}{ARTICLE}
-    \field{journaltitle}{J. Phys. Chem. A 1997}
-    \field{year}{1997}
-  \endentry
-
-  \entry{basinhoppingscipy}{online}{}
-    \field{labeltitlesource}{title}
-    \field{title}{SciPy Basin Hopping Algorithm}
-    \field{type}{ONLINE}
-  \endentry
-
-  \entry{conjugategradient}{online}{}
-    \name{author}{1}{}{%
-      {{hash=SJR}{%
-         family={Shewchuk},
-         familyi={S\bibinitperiod},
-         given={Jonathan\bibnamedelima Richard},
-         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SJR1}
-    \strng{fullhash}{SJR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{An Introduction to the Conjugate Gradient Method Without the
-  Agonizing Pain Edition 1.25}
-    \verb{url}
-    \verb https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf
-    \endverb
-    \field{type}{ONLINE}
-    \field{year}{1994}
-  \endentry
-
   \entry{hepburnfec}{article}{}
     \name{author}{2}{}{%
       {{hash=HDJ}{%
@@ -5376,23 +5284,96 @@
     \field{type}{ONLINE}
   \endentry
 
-  \entry{solidstatebasicswcs}{book}{}
-    \name{author}{1}{}{%
-      {{hash=SSH}{%
-         family={Simon},
-         familyi={S\bibinitperiod},
-         given={Steven\bibnamedelima H.},
-         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+  \entry{simanneal}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KS}{%
+         family={Kirkpatrick},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JCDG}{%
+         family={Jr},
+         familyi={J\bibinitperiod},
+         given={C.\bibnamedelima D.\bibnamedelima Gelatt},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+      }}%
+      {{hash=VMP}{%
+         family={Vecchi},
+         familyi={V\bibinitperiod},
+         given={M.\bibnamedelima P.},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SSH1}
-    \strng{fullhash}{SSH1}
+    \strng{namehash}{KSJCDGVMP1}
+    \strng{fullhash}{KSJCDGVMP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{pages}{115}
-    \field{title}{Solid State Basics}
-    \field{type}{BOOK}
-    \field{year}{2013}
+    \field{issue}{4598}
+    \field{pages}{671\bibrangedash 680}
+    \field{title}{Optimization by Simulated Annealing}
+    \field{volume}{220}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Science}
+    \field{year}{1983}
+  \endentry
+
+  \entry{basinhopping}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WDJ}{%
+         family={Wales},
+         familyi={W\bibinitperiod},
+         given={David\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DJPK}{%
+         family={Doye},
+         familyi={D\bibinitperiod},
+         given={Jonathan P.\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WDJDJPK1}
+    \strng{fullhash}{WDJDJPK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{5111\bibrangedash 5116}
+    \field{title}{Global Optimization by Basin-Hopping and the Lowest Energy
+  Structures of Lennard-Jones Clusters Containing up to 110 Atoms}
+    \field{volume}{101}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{J. Phys. Chem. A 1997}
+    \field{year}{1997}
+  \endentry
+
+  \entry{basinhoppingscipy}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{SciPy Basin Hopping Algorithm}
+    \field{type}{ONLINE}
+  \endentry
+
+  \entry{conjugategradient}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SJR}{%
+         family={Shewchuk},
+         familyi={S\bibinitperiod},
+         given={Jonathan\bibnamedelima Richard},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJR1}
+    \strng{fullhash}{SJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{An Introduction to the Conjugate Gradient Method Without the
+  Agonizing Pain Edition 1.25}
+    \verb{url}
+    \verb https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{1994}
   \endentry
 \enddatalist
 \endinput

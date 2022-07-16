@@ -66,26 +66,26 @@
 \glossaryentry{Neel temperature?\glossentry{neeltemp}|setentrycounter[]{page}\glsnumberformat}{77}
 \glossaryentry{antiferromagnetic?\glossentry{antiferromagnetic}|setentrycounter[]{page}\glsnumberformat}{77}
 \glossaryentry{Cauchy pressure?\glossentry{cauchypressure}|setentrycounter[]{page}\glsnumberformat}{77}
-\glossaryentry{Hamiltonian?\glossentry{hamiltonian}|setentrycounter[]{page}\glsnumberformat}{99}
-\glossaryentry{wave function?\glossentry{wavefunction}|setentrycounter[]{page}\glsnumberformat}{99}
-\glossaryentry{plane wave?\glossentry{planewave}|setentrycounter[]{page}\glsnumberformat}{105}
-\glossaryentry{Bloch theorem?\glossentry{blochtheorem}|setentrycounter[]{page}\glsnumberformat}{105}
-\glossaryentry{Brillouin Zone?\glossentry{brillouinzone}|setentrycounter[]{page}\glsnumberformat}{105}
-\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{105}
-\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{105}
-\glossaryentry{Fermi energy?\glossentry{fermienergy}|setentrycounter[]{page}\glsnumberformat}{105}
-\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{109}
-\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{110}
-\glossaryentry{Pauli exclusion principle?\glossentry{pauliexp}|setentrycounter[]{page}\glsnumberformat}{110}
-\glossaryentry{fermion?\glossentry{fermion}|setentrycounter[]{page}\glsnumberformat}{110}
-\glossaryentry{valence electron?\glossentry{valenceelectron}|setentrycounter[]{page}\glsnumberformat}{111}
-\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{112}
-\glossaryentry{homogeneous electron gas?\glossentry{heg}|setentrycounter[]{page}\glsnumberformat}{112}
-\glossaryentry{invar effect?\glossentry{invareffect}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{matrix diagonalization?\glossentry{matrixdiagonalization}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{observationally stable?\glossentry{obsstable}|setentrycounter[]{page}\glsnumberformat}{148}
-\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{177}
-\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{177}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{202}
+\glossaryentry{Hamiltonian?\glossentry{hamiltonian}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{wave function?\glossentry{wavefunction}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{plane wave?\glossentry{planewave}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{Bloch theorem?\glossentry{blochtheorem}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{Brillouin Zone?\glossentry{brillouinzone}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{Fermi energy?\glossentry{fermienergy}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{103}
+\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{103}
+\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{104}
+\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{Pauli exclusion principle?\glossentry{pauliexp}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{fermion?\glossentry{fermion}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{valence electron?\glossentry{valenceelectron}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{homogeneous electron gas?\glossentry{heg}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{invar effect?\glossentry{invareffect}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{matrix diagonalization?\glossentry{matrixdiagonalization}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{observationally stable?\glossentry{obsstable}|setentrycounter[]{page}\glsnumberformat}{143}
+\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{172}
+\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{172}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{197}

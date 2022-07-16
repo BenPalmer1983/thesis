@@ -11,7 +11,7 @@ A level-1 auxilliary file: contents/contents.aux
 A level-1 auxilliary file: contents/figures.aux
 A level-1 auxilliary file: contents/tables.aux
 A level-1 auxilliary file: chapters/introduction/introduction.aux
-A level-1 auxilliary file: chapters/background_radiation_effects_and_transport/background_radiation_effects_and_transport.aux
+A level-1 auxilliary file: chapters/consequences_of_ionizing_radiation/consequences_of_ionizing_radiation.aux
 A level-1 auxilliary file: chapters/background_austenitic_steels_in_nuclear/bcc.aux
 A level-1 auxilliary file: chapters/background_austenitic_steels_in_nuclear/fcc.aux
 A level-1 auxilliary file: chapters/background_austenitic_steels_in_nuclear/fct.aux
@@ -19,12 +19,12 @@ A level-1 auxilliary file: chapters/background_austenitic_steels_in_nuclear/back
 A level-1 auxilliary file: chapters/background_activity/background_activity.aux
 A level-1 auxilliary file: chapters/background_potential_fitting/background_potential_fitting.aux
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 807 of file main.aux
+---line 792 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys localtfraczkowski and localtfRaczkowski
----line 864 of file main.aux
+---line 849 of file main.aux
  : \citation{localtfraczkowski
  :                            }
 I'm skipping whatever remains of this command
@@ -39,52 +39,52 @@ A level-1 auxilliary file: glossary/glossary.aux
 A level-1 auxilliary file: bibliography/bibliography.aux
 A level-1 auxilliary file: chapters/acknowledgement/acknowledgement.aux
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 1598 of file main.aux
+---line 1580 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 1601 of file main.aux
+---line 1583 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 1985 of file main.aux
+---line 2010 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 1994 of file main.aux
+---line 2019 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2015 of file main.aux
+---line 2040 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2018 of file main.aux
+---line 2043 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2030 of file main.aux
+---line 2055 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2039 of file main.aux
+---line 2064 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2080 of file main.aux
+---line 2105 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2089 of file main.aux
+---line 2114 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
@@ -106,7 +106,7 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 32383 items from 5000.
+Reallocated field_info (elt_size=8) to 32244 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: share/bib/thesis2022.bib
 I was expecting a `,' or a `}'---line 888 of file share/bib/thesis2022.bib
@@ -130,10 +130,10 @@ Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 
 Here's how much of BibTeX's memory you used:
- Cites:               196 out of 750
- Fields:            27243 out of 32383
- Hash table:       199118 out of 200000
- Strings:            2106 out of 200000
- Free string pool:  36921 out of 65000
+ Cites:               195 out of 750
+ Fields:            27104 out of 32244
+ Hash table:       199119 out of 200000
+ Strings:            2104 out of 200000
+ Free string pool:  36883 out of 65000
  Wizard functions:   6365 out of 9000
 (There were 15 error messages)
