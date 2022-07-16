@@ -36,22 +36,27 @@ A level-1 auxilliary file: glossary/glossary.aux
 A level-1 auxilliary file: bibliography/bibliography.aux
 A level-1 auxilliary file: chapters/acknowledgement/acknowledgement.aux
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
+---line 1577 of file main.aux
+ : \citation{dfttisiravindran
+ :                           }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
 ---line 1580 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 1583 of file main.aux
+---line 2007 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2010 of file main.aux
+---line 2016 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2019 of file main.aux
+---line 2037 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
@@ -61,27 +66,22 @@ Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2043 of file main.aux
+---line 2052 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2055 of file main.aux
+---line 2061 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2064 of file main.aux
+---line 2102 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2105 of file main.aux
- : \citation{dfttisiravindran
- :                           }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
----line 2114 of file main.aux
+---line 2111 of file main.aux
  : \citation{dfttisiravindran
  :                           }
 I'm skipping whatever remains of this command
@@ -103,7 +103,7 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 32383 items from 5000.
+Reallocated field_info (elt_size=8) to 32244 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: share/bib/thesis2022.bib
 I was expecting a `,' or a `}'---line 888 of file share/bib/thesis2022.bib
@@ -127,10 +127,10 @@ Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 
 Here's how much of BibTeX's memory you used:
- Cites:               196 out of 750
- Fields:            27243 out of 32383
- Hash table:       199118 out of 200000
- Strings:            2103 out of 200000
- Free string pool:  36746 out of 65000
+ Cites:               195 out of 750
+ Fields:            27104 out of 32244
+ Hash table:       199119 out of 200000
+ Strings:            2101 out of 200000
+ Free string pool:  36724 out of 65000
  Wizard functions:   6365 out of 9000
 (There were 15 error messages)

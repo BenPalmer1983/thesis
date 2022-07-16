@@ -5284,25 +5284,6 @@
     \field{type}{ONLINE}
   \endentry
 
-  \entry{solidstatebasicswcs}{book}{}
-    \name{author}{1}{}{%
-      {{hash=SSH}{%
-         family={Simon},
-         familyi={S\bibinitperiod},
-         given={Steven\bibnamedelima H.},
-         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SSH1}
-    \strng{fullhash}{SSH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{115}
-    \field{title}{Solid State Basics}
-    \field{type}{BOOK}
-    \field{year}{2013}
-  \endentry
-
   \entry{simanneal}{article}{}
     \name{author}{3}{}{%
       {{hash=KS}{%

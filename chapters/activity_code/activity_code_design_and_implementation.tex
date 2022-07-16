@@ -305,8 +305,6 @@ The numeric solution only requires the equation to be solved in the s-domain; th
 \FloatBarrier
 \section{Activity Code}
 
-\subsection{}
-
 The first version of the Activity code was written in Fortran.  A paper that describes this code is contained in section \ref{section:activityv1published} of the appendix along with the manual describing how to use it (section \ref{section:activityv1published}).  This version used the TENDL-2013 cross section database and was replaced by a version of the code written in Python.
 
 There were a number of issues with version 1 of the computer code.  It was written in Fortran, but over time this has been a stumbling block for new users, especially those new to Linux and unfamiliar with Fortran. 
@@ -438,7 +436,7 @@ The cyclotron used in the experimental work has an energy range up to 40MeV for 
 \end{figure}
 
 
-Due to limitations of the TALYS code, the calculations were processed in batches of either 400 or 600 points.  The data was collated and processed resulting in a datafile of particle production reactions and residual production reactions.  This is accessible through a stand-alone python class that is also a part of the Activity V2 code.
+Limitations of the TALYS code caused the calculations to be processed in batches of either 400 or 600 points.  The data was collated and processed resulting in a datafile of particle production reactions and residual production reactions.  This is accessible through a stand-alone python class that is also a part of the Activity V2 code.
 
 The residual reactions are grouped by target isotope and then by residual isotope, whereas the particle cross sections are grouped by target isotope then particle type.  The computed values are plotted for all available reactions and all residuals for ${}^{56}_{26}Fe$ reactions with protons (figure \ref{fig:xsdata-particle}) and these show a good agreement, although there is a more detailed set of residual isotopes for the generated cross sections.
 
@@ -602,65 +600,27 @@ ${}^3 He^{2+}$ & 4-20 & 60 & $1.87 \times 10^14$ \\
 The cyclotron is located in one room, and several beam lines run from the cyclotron to other rooms in the cyclotron building.  The operation room is separate from the cyclotron and beam line rooms (figure \ref{fig:cyclotronlayout}).
 
 \begin{figure}[htp]
+	\minipage{0.49\textwidth}
   \begin{center}
-    \includegraphics[scale=0.7]{chapters/activity_code/images/cyclotron_layout.png}
+    \includegraphics[width=\linewidth]{chapters/activity_code/images/cyclotron_layout.png}
     \caption{Cyclotron layout - main hall and beam lines}
     \label{fig:cyclotronlayout}
   \end{center}
+	\endminipage\hfill
+	\minipage{0.49\textwidth}
+  \begin{center}
+    \includegraphics[width=\linewidth]{chapters/activity_code/images/gamma_warning.png}
+    \caption{Gamma warning alarm during 0.5 microamp 36MeV proton irradiation of iron }
+    \label{fig:gammawarning}
+  \end{center}
+	\endminipage\hfill  
 \end{figure}
 
 The iron sample was held perpendicular to the beam line, with the ions passing through the 0.5mm thickness of the sheet.  The beam area was approximately $6.4 \times 10^{-5} m^2$, irradiating a volume of approximately $3.2 \times 10^{-8} m^3$.  The target was irradiated for 300 seconds at 0.5 micro amps and it was expected to cause over $1.4 \times 10^{16}$ displacements within the volume of iron targetted by the beam.  With a number density of approximately $8\times10^{28}$ atoms per cubic meter, giving a relatively low damage dose, when compared to that expected over the lifetime of a component within the reactor, of $5 \time 10^{-6}$ \acrshort{dpa}.
 
-\begin{figure}[htp]
-  \begin{center}
-    \includegraphics[scale=0.7]{chapters/activity_code/images/gamma_warning.png}
-    \caption{Gamma warning alarm during 0.5 microamp 36MeV proton irradiation of iron }
-    \label{fig:gammawarning}
-  \end{center}
-\end{figure}
-
 During irradiation, the amount of gamma radiation released was enough to trip the alarm for the room (figure \ref{fig:gammawarning}).  The proton fluence was less than 1\% of the maximum fluence capable of being produced by the cyclotron, so this was definitely a concern.  To increase the damage dose, and keep to a shorter period of time, the current would most probably be increased to a much higher percentage, also increasing the rate of Gammas produced during irradiation.
 
-
-\subsection{Measurement of Sample Activity}
-
-The sample was too radioactive to safely handle immediately after irradiation, so it was left to cool for several days before taking measurements.  After it had cooled, a high purity germanium detector (figure \ref{fig:hpge}) was used to measure the activity of the irradiated sample.
-
-\begin{figure}[htp]
-  \begin{center}
-    \includegraphics[scale=0.8]{chapters/activity_code/images/hpge.png}
-    \caption{High Purity Germanium Detector}
-    \label{fig:hpge}
-  \end{center}
-\end{figure}
-
-The detector and preamplifier are both cooled by liquid nitrogen to 77K, as the band-gap of germanium is 0.7eV and the thermal motion of electrons and nuclei at higher temperatures would induce currents causing noise and interference in the detector.  As a gamma ray enters the detector it creates an electron-hole pair in the medium of the detector.  The holes and electrons are attracted to the center and to the outer cylinder of the detector, or vice versa.
-
-
-
-\subsection{Prediction of Activity}
-
-Following the measurement of the thin target, in the first instance the predicted activity will be estimated using the average ion energy, the cross section of this energy and the two reactions that result in Co-55 (${}^{54}_{26} Fe (p, \gamma) {}^{55}_{27} Co$ and ${}^{56}_{26} Fe (p, 2n) {}^{55}_{27} Co$).  The activity code (version 1 and version 2) are then used to predict the activity of the sample as well as the expected gamma spectra.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section[Experimental Irradiation - Iron]{Experimental Proton Irradiation of Iron Target}
-
-\subsection{Predicted Depth of Beam}
-
-In this work Iron has been irradiated with a proton beam from the University of Birmingham cyclotron.  Early on it was determined that ${}^{55}_{27}Co$ would be responsible for a 931KeV gamma.  Preliminary investigations with SRIM into the stopping distance of protons in a range of materials shows 36MeV ions stop within 3mm in Iron and Steel(figure \ref{fig:stoppingdistanceprotons}).
+Preliminary investigations with SRIM into the stopping distance of protons in a range of materials shows 36MeV ions stop within 3mm in Iron and Steel(figure \ref{fig:stoppingdistanceprotons}).
 
 \FloatBarrier
 \begin{figure}[h]
@@ -706,12 +666,24 @@ The stable isotope ${}^{54}_{26} Fe$  makes up almost 6\% of natural iron, and o
 Due to the short half-life and intensity of the 931KeV gamma, this peak was measured in particular after irradiating the iron target.  It was also estimated manually using the \acrshort{tendl}-2009 and \acrshort{tendl}-2019 cross section databases.
 
 
-\FloatBarrier
-\subsection{Irradiation Parameters and Resulting Gamma Count}
 
-A 0.5mm thick pure iron target was irradiated for five minutes at a current of 0.5 microamps with 36MeV protons.  The proton beam formed a $64mm^2$ square that was taken from the cyclotron through one of the beam lines, with the target perpendicular to the beam.
 
-The target was left to cool for several days before being safe enough to handle.  The radioactivity was measured using a high purity germanium detector which was calibrated to detect approximately 4 out of every 100 gammas emitted.  
+\subsection{Measurement of Sample Activity}
+
+The sample was too radioactive to safely handle immediately after irradiation, so it was left to cool for several days before taking measurements.  After it had cooled, a high purity germanium detector (figure \ref{fig:hpge}) was used to measure the activity of the irradiated sample.  The radioactivity was measured using a high purity germanium detector which was calibrated to detect approximately 4 out of every 100 gammas emitted.  
+
+\begin{figure}[htp]
+  \begin{center}
+    \includegraphics[scale=0.8]{chapters/activity_code/images/hpge.png}
+    \caption{High Purity Germanium Detector}
+    \label{fig:hpge}
+  \end{center}
+\end{figure}
+
+The detector and preamplifier are both cooled by liquid nitrogen to 77K, as the band-gap of germanium is 0.7eV and the thermal motion of electrons and nuclei at higher temperatures would induce currents causing noise and interference in the detector.  As a gamma ray enters the detector it creates an electron-hole pair in the medium of the detector.  The holes and electrons are attracted to the center and to the outer cylinder of the detector, or vice versa.
+
+
+
 
 \begin{lstlisting}[style=sMaestro,caption={Maestro 931KeV Peak Measurement},captionpos=b]
 RANGE: 617 = 911.51keV to 649 = 958.79keV
@@ -747,15 +719,19 @@ There are several decay modes that contribute to the radioactivity of the sample
 Where positrons are emitted, they will annihilate with an electron.  This event will release two photons in opposite directions, each of which will have a 511KeV energy.  This is responsible for the 511KeV peak measured in figure \ref{fig:measuredgammacounts}.  However, at the time of writing, the computer code will not compute this peak and it will be omitted from the computational results.
 
 
-%\subsection{Gamma Attenuation and Build Up}
 
 
+
+
+\subsection{Prediction of Activity}
+
+Following the measurement of the thin target, in the first instance the predicted activity will be estimated using the average ion energy, the cross section of this energy and the two reactions that result in Co-55 (${}^{54}_{26} Fe (p, \gamma) {}^{55}_{27} Co$ and ${}^{56}_{26} Fe (p, 2n) {}^{55}_{27} Co$).  The activity code (version 1 and version 2) are then used to predict the activity of the sample as well as the expected gamma spectra.
 
 
 
 
 \FloatBarrier
-\section{Estimation of Cobalt-55 Radioactivity}
+\subsection{Estimation of Cobalt-55 Radioactivity}
 
 There are over ten \acrshort{tendl} libraries available, and the available data and the range of data points is inconsistent across these different versions.  The earlier library, that was used in the first version of the Activity code, covers a range up to 200MeV for Iron-proton reaction cross sections.  Many of the more recent data files contain total reaction cross sections only, and in the most recent data files, 2017 and 2019, the energy range only covers proton reactions from 0MeV to 28MeV, abruptly dropping to 0 barns at 30MeV as seen in fig \ref{fig:fe56co55-cross-sections}.
 
@@ -835,18 +811,9 @@ Out of the estimates calculated, the outliers are those that used data files wit
 \FloatBarrier
 
 
-\section{Actvity V1}
+\subsection{Simulating Proton Irradiated Iron with Actvity V1}
 
-A large proportion of the results for this part of the work was the development of a computer program to implement the decay equations and calculate reaction rates of isotopes, protons and production rates of residual isotopes.
-
-\subsection{Computer Code}
-
-Activity V1 uses the \acrshort{tendl}-2013 cross section database, as well as several other data files that contain element, isotope and decay data. This data has been processed and is packaged with the computer code.  The source code and instructions on how to use the program are available to download from GitHub: 
-
-https://github.com/BenPalmer1983/activity
-
-The user provides an ion trajectory file and an input file that specifies beam parameters and target composition.  The program produced a number of plots including activity over time and expected gamma lines.  The activity code with the derived activity equations was used to calculate the predicted radioactivity (figure \ref{fig:act1top5radioactive}) and predicted gamma lines (figure \ref{fig:act1gammalines}).  A full output file and details of all isotopes and their activities are in Appendix \autoref{chapter:appendix-activity-v1}.
-
+The activity code with the derived activity equations was used to calculate the predicted radioactivity (figure \ref{fig:act1top5radioactive}) and predicted gamma lines (figure \ref{fig:act1gammalines}).  A full output file and details of all isotopes and their activities are in Appendix \autoref{chapter:appendix-activity-v1}.
 
 \FloatBarrier
 \begin{figure}[!htb]
@@ -868,21 +835,7 @@ The code predicts a final 931KeV gamma activity of over 59,000 Bq and highlights
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{Simulated Proton Irradiated Iron}
+\subsection{Simulating Proton Irradiated Iron with Actvity V2}
 
 The iron irradiation experiment was modelled using the second version of the activity code.  In this version the entire cross section database was created using the TALYS computer code (\ref{section:activitytalysdb}).  The same decay equations used in version 1 were also used here.
 
@@ -975,59 +928,6 @@ Activity V2 & $4.2\times10^4$ \\
 \label{table:activityResultsCompared}
 \end{table}
 
-
-
-%
-% only in appendix
-%
-\begin{comment}
-\begin{lstlisting}[style=sOutputFile,caption={Activity V2 Results 36MeV Protons and Iron},label={listing:activityv2iron}]
-45.551      Gamma Dose - Beam End  
-45.551      ===================================================
-45.551      Activity (Bq)              1.1873e+08  
-45.551      Gamma Energy (eV)          9.7722e+13    
-45.551      Gamma Energy (mW)          1.5657e-02   
-45.551      Absorbed Dose (mGy/s)      1.5570e-11    
-45.551      Absorbed Dose (mGy/hr)     5.6051e-08                
-45.551      
-45.552      
-45.552      Gamma Dose - Sim End
-45.552      ===================================================
-45.552      Activity (Bq)              1.8420e+05
-45.552      Gamma Energy (eV)          3.5639e+11    
-45.552      Gamma Energy (mW)          5.7100e-05     
-45.552      Absorbed Dose (mGy/s)      5.6782e-14     
-45.552      Absorbed Dose (mGy/hr)     2.0442e-10   
-45.552      
-45.552      
-45.552      Absorbed Dose Calculations
-45.552      ===================================================
-45.552      Absorbed dose assumptions:
-45.552      1. radiation from point, emitted isotropically
-45.552      2. 80Kg human
-45.552      3. 1m from point source
-45.552      4. 1m squared surface area
-45.552      5. all energy absorbed
-45.552      
-45.552      
-45.552      Dose Limits
-45.552      ===================================================
-45.552      employees 18+             20 millisieverts/year
-45.552      trainees 18+              6 millisieverts/year
-45.552      public and under 18s      1 millisievert/year
-45.552      public and under 18s      1.140771128E-04 millisieverts/hour
-45.552      public and under 18s      3.2E-08 millisieverts/second
-45.552      
-45.552      Dose averaged over area of skin not exceeding 1cm2
-45.552      Source: http://www.hse.gov.uk/radiation/ionising/doses/
-45.552      
-45.552      1mW gammas completely absorbed by 80kg human will give public limit for entire year over 80 seconds.
-45.552      
-45.552      Dose under 1W gammas absorbed for 1s no imediate changes (under 100 Rads)
-45.552      Dose 1W-2W gammas absorbed for 1s acute radiation syndrome (100-200 Rads)
-45.552      Dose 10W+ gammas absorbed for 1s mostly fatal (1000+ Rads)
-\end{lstlisting}
-\end{comment}
 
 
 

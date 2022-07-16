@@ -1,0 +1,219 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.1}{\ignorespaces Bulk, shear, Young's modulus comparison: Zirlo and austenitic stainless steel \relax }}{7}{table.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.2}{\ignorespaces Approximate simulation sizes by PKA energy\relax }}{16}{table.caption.28}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.1}{\ignorespaces Neutron Categories by Energy Range \cite {njcarron}\relax }}{19}{table.caption.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.2}{\ignorespaces Irradiation dose comparison in mSv\relax }}{24}{table.caption.41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.3}{\ignorespaces Cohesive Energies \cite {shengeamonline}\relax }}{27}{table.caption.48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.4}{\ignorespaces Average recoil energy of Nickel \acrshort {pka}s\cite {gswas}\relax }}{28}{table.caption.49}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Common grades of ferritic, austenitic, duplex and martensitic stainless steel and their properties. Hardness using the \acrshort {hrb}, \gls {ultimatetensilestrength} (UTS) and \Gls {youngsmodulus} E.\relax }}{31}{table.caption.57}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Radioactive products and their half lives for \acrshort {pgm} doped 304SS\relax }}{42}{table.caption.70}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.1}{\ignorespaces University of Birmingham Cyclotron Ion Beams\relax }}{44}{table.caption.71}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Examples of neutron sources, energies and flux, with the MC-40 as a reference for protons\relax }}{47}{table.caption.77}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.1}{\ignorespaces Seven Crystal Classes\relax }}{60}{table.caption.92}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Example bulk modulii for three metals\relax }}{61}{table.caption.94}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Caesium 2BEAM parameters\relax }}{75}{table.caption.111}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.4}{\ignorespaces Bravais lattice vector length and angle relationships\relax }}{98}{table.caption.135}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} for $TiSi_2$\cite {DftTiSiRavindran}\relax }}{110}{table.caption.147}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.6}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} vs \acrshort {gga} PBESOL for $LaAlO_3$\cite {laalo3gga}\relax }}{110}{table.caption.148}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.7}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} - the \acrshort {dft} values were computed with a PWscf\cite {quantumespresso} using a 2x2x2 cell, 7x7x7 kpoints and ecutwfc=50\relax }}{111}{table.caption.149}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Half life of isotopes in the Po-216 decay chain\relax }}{122}{table.caption.157}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for the decay equation vs numeric calculation comparison\relax }}{122}{table.caption.158}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Beam Characteristics of the Scanditronix MC-40\relax }}{127}{table.caption.165}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Parameters used to estimate Co55 931KeV gamma activity\relax }}{133}{table.caption.173}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.5}{\ignorespaces Estimation of the Cobalt-55 931KeV gamma activity based on the \acrshort {tendl}-2009\cite {tendl2009}, \acrshort {tendl}-2017\cite {tendl2017}, \acrshort {tendl}-2019\cite {tendl2019} data files, \acrshort {exfor} experimental data \cite {exforco55} and TALYS generated data files\cite {talys}.\relax }}{133}{table.caption.174}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison of proton irradiated iron Co55 931KeV gamma rates\relax }}{137}{table.caption.180}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.7}{\ignorespaces Comparison of proton irradiated iron up to 100DPA at a range of proton energies. The first set of measurements\textsuperscript {1} are calculated values at the point the proton beam is turned off. The second set\textsuperscript {2} are calculated after 1 week of cooling.\relax }}{137}{table.caption.181}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.8}{\ignorespaces Gamma emissions measured from a 0.5mm thick sample of Molybdenum irradiated with 13MeV protons at 5 microamps for 1,500 seconds\relax }}{139}{table.caption.184}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.9}{\ignorespaces A comparison between measured and estimated peaks from a 0.5mm thick sample of Molybdenum irradiated with 13MeV protons at 5 microamps for 1,500 seconds\relax }}{141}{table.caption.187}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.10}{\ignorespaces A comparison between measured and calculated peaks from a 0.5mm thick sample of Molybdenum irradiated with 13MeV protons at 5 microamps for 1,500 seconds\relax }}{143}{table.caption.191}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Predicted lattice parameters based on the density, atomic number and type of structure\relax }}{148}{table.caption.193}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces Predicted lattice parameters based on the density, atomic number and type of structure\relax }}{149}{table.caption.194}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces Improving convergence SCF calculations of defects in Iron\relax }}{158}{table.caption.199}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.4}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{159}{table.caption.200}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.5}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{159}{table.caption.201}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.6}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{160}{table.caption.202}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.7}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} - the \acrshort {dft} values were computed with a PWscf\cite {quantumespresso} using a 2x2x2 cell, 7x7x7 kpoints and ecutwfc=50\relax }}{164}{table.caption.204}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.8}{\ignorespaces Chromium properties with and without collinear spin\relax }}{165}{table.caption.206}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.9}{\ignorespaces \acrshort {bcc} Iron properties with and without collinear spin\relax }}{166}{table.caption.208}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.10}{\ignorespaces DFT Settings - pseudo-potentials, ecutwfc, ecutrho, k-points, smearing\relax }}{167}{table.caption.209}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.11}{\ignorespaces DFT Settings - other settings\relax }}{167}{table.caption.210}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.12}{\ignorespaces Relaxed energies calculated in Quantum Espresso\relax }}{168}{table.caption.211}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.13}{\ignorespaces Fe input parameters for fitting\relax }}{171}{table.caption.213}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.14}{\ignorespaces Pd input parameters for fitting\relax }}{172}{table.caption.214}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.15}{\ignorespaces Pd input parameters for fitting\relax }}{172}{table.caption.215}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.16}{\ignorespaces \acrshort {dft} calculated energies per atom\relax }}{173}{table.caption.217}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.17}{\ignorespaces Relaxed energies for 32 atoms, using 9x9x9 k-points, and 256 atoms, using the gamma point. These were used with the known cohesive energy to compute the offset energy.\relax }}{173}{table.caption.218}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {A.1}{\ignorespaces Useful Laplace transforms\relax }}{213}{table.caption.239}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.2}{\ignorespaces \relax }}{228}{table.caption.241}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.4}{\ignorespaces \relax }}{229}{table.caption.243}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.6}{\ignorespaces \relax }}{230}{table.caption.245}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.8}{\ignorespaces \relax }}{231}{table.caption.247}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.10}{\ignorespaces \relax }}{232}{table.caption.249}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.12}{\ignorespaces \relax }}{234}{table.caption.251}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {E.1}{\ignorespaces \relax }}{315}{table.caption.252}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {E.2}{\ignorespaces \relax }}{332}{table.caption.277}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {E.3}{\ignorespaces \relax }}{341}{table.caption.288}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.1}{\ignorespaces \relax }}{357}{table.caption.313}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.2}{\ignorespaces \relax }}{358}{table.caption.314}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.3}{\ignorespaces \relax }}{359}{table.caption.315}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.4}{\ignorespaces \relax }}{359}{table.caption.316}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.1}{\ignorespaces \relax }}{362}{table.caption.317}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.2}{\ignorespaces \relax }}{363}{table.caption.318}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.3}{\ignorespaces \relax }}{363}{table.caption.319}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.4}{\ignorespaces \relax }}{364}{table.caption.320}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.5}{\ignorespaces Calculation of elastic constants using the equation of state, a volume conserving orthorhombic strain and volume conserving monoclinic strain.\cite {elasticpropertiesmehl}\cite {mehlsp}\relax }}{364}{table.caption.321}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.6}{\ignorespaces Calculation of orthorhombic elastic constants by Ravindran et al.\cite {dfttisiravindran}\relax }}{365}{table.caption.322}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.7}{\ignorespaces Calculation of elastic constants for a cubic crystal\cite {orthonisi}\relax }}{366}{table.caption.323}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.8}{\ignorespaces Calculation of elastic constants for a cubic crystal\cite {orthonisi}, $u = (1-\sigma ^2)^{-\frac {1}{3}}$\relax }}{367}{table.caption.324}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.1}{\ignorespaces Aluminium DFT settings\relax }}{380}{table.caption.331}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.2}{\ignorespaces FCC Aluminium: Experimental Values vs \acrshort {dft} Calculated Variables\relax }}{382}{table.caption.333}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.3}{\ignorespaces Iron DFT settings\relax }}{387}{table.caption.335}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.4}{\ignorespaces BCC Iron: Experimental Values vs DFT Calculated Variables\relax }}{391}{table.caption.337}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.5}{\ignorespaces Iron DFT settings\relax }}{392}{table.caption.338}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.6}{\ignorespaces Iron FCC: DFT Calculated Properties\relax }}{395}{table.caption.340}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.7}{\ignorespaces Palladium DFT settings\relax }}{396}{table.caption.341}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.8}{\ignorespaces FCC Palladium: Experimental Values vs DFT Calculated Properties\relax }}{399}{table.caption.343}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.9}{\ignorespaces Ruthenium DFT settings\relax }}{400}{table.caption.344}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.10}{\ignorespaces Ruthenium FCC: DFT Calculated Properties\relax }}{403}{table.caption.345}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {S.1}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{469}{table.caption.388}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {S.2}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{471}{table.caption.394}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {T.1}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{477}{table.caption.398}%
