@@ -1,0 +1,12 @@
+output file_type='eps' name='mo_gamma_attenuation.eps'
+data1 visible=True file="attenuation0050um.csv" sep="," line='solid' label="50 micron" fit="none" fitline='solid' fitcolour='match'
+data2 visible=True file="attenuation0100um.csv" sep="," line='solid' label="100 micron" fit="none" fitline='solid' fitcolour='match'
+data3 visible=True file="attenuation0250um.csv" sep="," line='solid' label="250 micron" fit="none" fitline='solid' fitcolour='match'
+data4 visible=True file="attenuation0500um.csv" sep="," line='solid' label="500 micron" fit="none" fitline='solid' fitcolour='match'
+data5 visible=True file="attenuation1000um.csv" sep="," line='solid' label="1mm" fit="none" fitline='solid' fitcolour='match'
+data6 visible=True file="attenuation1500um.csv" sep="," line='solid' label="1.5mm" fit="none" fitline='solid' fitcolour='match'
+data7 visible=True file="attenuation2000um.csv" sep="," line='solid' label="2.0mm" fit="none" fitline='solid' fitcolour='match'
+data8 visible=True file="attenuation2500um.csv" sep="," line='solid' label="2.5mm" fit="none" fitline='solid' fitcolour='match'
+data9 visible=True file="attenuation5000um.csv" sep="," line='solid' label="5.0mm" fit="none" fitline='solid' fitcolour='match'
+data10 visible=True file="attenuation10000um.csv" sep="," line='solid' label="1.0cm" fit="none" fitline='solid' fitcolour='match'
+plot xlabel='Gamma Energy (MeV)' ylabel='Intensity' title='Gamma Attenuation in Molybdenum' width=6 height=3.6 dpi=144 palette="tab" legend=True fitpoints=101

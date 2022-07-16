@@ -1,7 +1,0 @@
-Molybdenum
-
-Thickness:  0.506mm
-Energy:     13MeV
-Area:       50mm^2
-Current:    5.0 microamp
-Duration:   1500s
