@@ -1,19 +1,13 @@
 \chapter[Activity Code]{Activity Code: Design and Implementation}
 
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{Rewrite\\
+\abstractpreamble{A computer program was developed to calculate the radioactivity of an ion irradiated target.  The code has been released in two versions, with the first being written in Fortran and the second in Python.  \acrshort{srim}, an ion transport code, was used to calculate proton trajectories used by the Activity codes.\\
 \\
-A computer program was developed to calculate the radioactivity of an ion irradiated target.  The choice of projectile was limited to protons, but there is the option to increase this to other light ions.  The decay equations were derived to be able to calculate the activity of isotopes within the target at time t during and after irradiation.  The simulation is split into two parts: the first with the beam on, where there will be source terms for isotopes, and the second with the beam off where there are no external source terms.  \\
+Decay equations were derived to calculate the activity of isotopes within the target at time t during and after irradiation.  These were created in a similar manner to the Bateman equations for radioactive decay, but include source terms and branching factors for radioactive isotopes in a decay chain.  These were implemented in a module and class for each version of the code.\\
 \\
-\acrshort{srim}, an ion transport code, was used to calculate ion trajectory data.  Iron was irradiated experimentally by 36MeV protons with the University of Birmingham cyclotron, and its activity was measured and calculated using the activity code.  Additional data where a colleague irradiated Molybdenum was also compared with that calculated by the activity code.  Initially it was developed in Fortran, but the most recent version was written in Python.\\
+The University of Birmingham cyclotron was used to activate Iron samples (this work) and Molybdenum (a colleagues work).  The radioactivity of these samples were compared to the predicted activity and gamma lines of the Activity code.\\
 \\
-The equations and code were then used to predict the activity of an iron sample irradiated to 100\acrshort{dpa} for a range of proton energies.  This is a reasonable damage dose that is expected in \acrshort{gen4} reactors.\\
-\\
-The aim of the first part of this work was to derive an equation capable of calculating the radioactivity of an isotope and all the subsequent isotopes in the decay chain, taking into account branching factors and source terms.\\
-\\
-This was achieved and two versions of a computer code, Activity, were developed.  The first was written in Fortran and this was released in 2015.  A revised version developed in Python3, with more features, has also been developed and is available for use.\\
-\\
-The results of the computer code were compared to the experimental irradiation of Iron targets with the Scanditronix MC-40 Cyclotron.  One code has also been used to predict the radioactivity of Iron targets against a range of ion energies up to 100DPA in order to select a beam energy that causes the required amount of damage, but minimises radioactive waste.
+Finally, the latest version of the Activity code was used to predict the activity of a Steel specified by another colleague and a set of Iron samples irradiated to 100DPA at varying proton energies.  The results of these simulations are presented in this chapter.
 }
 \end{changemargin}
 
@@ -308,64 +302,172 @@ The numeric solution only requires the equation to be solved in the s-domain; th
 
 
 
-\section{Computational Methods}
+\FloatBarrier
+\section{Activity Code}
 
-\subsection{Activity V1}
+\subsection{}
 
-The Activity V1 program has been developed in Fortran and takes advantage of MPI (Message Parsing Interface) to speed up calculation times by allowing the use of multiple processes in parallel.  It has a self contained maths library, although this could be improved in the future by using optimised maths libraries for certain functions (e.g. linear algebra).
+The first version of the Activity code was written in Fortran.  A paper that describes this code is contained in section \ref{section:activityv1published} of the appendix along with the manual describing how to use it (section \ref{section:activityv1published}).  This version used the TENDL-2013 cross section database and was replaced by a version of the code written in Python.
 
-The code was developed on a Debian based distribution of Linux, but it should be supported on other variants of Linux and Unix, and does not require any specialist hardware.
+There were a number of issues with version 1 of the computer code.  It was written in Fortran, but over time this has been a stumbling block for new users, especially those new to Linux and unfamiliar with Fortran. 
 
-\begin{figure}[!h]
-	\centering
-	\begin{tikzpicture}[node distance=2cm]
-	% Row 1
-	\node (1a) [process] {\makecell[l]{User input file\\read into memory}};
-	\node (1b) [process, right of=1a, xshift=2.5cm] {\makecell[l]{Load cross section\\data for isotopes\\(specified by user)}};
-	\node (1c) [process, right of=1b, xshift=2.5cm] {\makecell[l]{Load ion exyz\\trajectory file}};
-	% Row 2
-	\node (2a) [process, below of=1a] {\makecell[l]{Loop through time steps:\\calculate amount/activity\\of each isotope}};
-	\node (2b) [process, right of=2a, xshift=2.5cm] {\makecell[l]{Split polynomial fit\\into segments: calculate\\all possible reaction rates}};
-	\node (2c) [process, right of=2b, xshift=2.5cm] {\makecell[l]{Use MPI: Fit polynomial\\to trajectory of each ion\\and take superposition}};
-	% Row 3
-	\node (3a) [process, below of=2a] {\makecell[l]{Output data and\\charts to user}};
-	
-	% arrows
-	\draw [thick,->] (1a) -- (1b);
-	\draw [thick,->] (1b) -- (1c);
-	\draw [thick,->] (1c) -- (2c);
-	\draw [thick,->] (2c) -- (2b);
-	\draw [thick,->] (2b) -- (2a);
-	\draw [thick,->] (2a) -- (3a);
-	%\draw [->] (isotope1) -- (isotope2);
-	%\draw [->] (isotope2) -- (stable);
-	\end{tikzpicture}
-	\captionsetup{font={it}}
-	\caption{Flow chart of major processes in the Activity code}
-	\label{fig:processflowchart}
+In the first version of the code, the trajectory data was replaced with a series of polynomials, but this method was not a reliable solution and it was preferred to use the data directly to calculate the reaction rates.  Finally, a language such as Python3 is more widely used and contains very useful features such as dictionaries and a plotting module (matplotlib).
+
+
+\subsection{Computer Code Development}
+
+Activity V2 uses a custom cross section database generated using the TALYS nuclear reaction code along with the JEFF3.1.1 datafile for decay data.  All the data has been processed and is packaged with the source code.  The source code and instructions on how to use the program are available to download from GitHub: 
+
+https://github.com/BenPalmer1983/activity\_v2
+
+As with version 1, the user provides an ion trajectory file and an input file that specifies beam parameters and target composition.  The code may be used for both protons and deuterons, providing the correct trajectory file has been generated.  It does also contain neutron reaction cross sections and may be used for very thin foils with a flat distribution of neutron energies.
+
+
+
+
+\subsection{Extended Bateman Equations}
+
+The Bateman equations were derived from scratch to include a source term for each isotope and branching factors from parent isotope to daughter isotope(s).  This process along with the numerical and analytic solutions are outlined in section \ref{section:activitysolution}.
+
+\FloatBarrier
+
+The decay equations were programmed as a class in python (appendix \ref{section:decayclass}) that used decay data accessible through a second class, isotopes, populated with data from the JEFF 3.1.1 data file.  The static function for computing activity in this class was tested against numerically computed values.  
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.7\linewidth]{chapters/activity_code/84po216/84Po216_path.png}
+    \caption{Decay path of Polonium-216}
+    \label{fig:DecayPathPo216}
+  \end{center}
 \end{figure}
 
-The user is required to prepare an input file that contains the instructions required to perform a calculation.  In addition to the input file, the user must provide an \acrshort{exyz} ion trajectory file output by \acrshort{srim}.  Activity will read in the user input file, and the \acrshort{srim} and data files listed within, before performing the calculation.  Figure \ref{fig:processflowchart} shows a flowchart of the major steps the code performs.
+Due to the large range in magnitude of the half life for various isotopes, a decay chain was selected where the time step for the numeric calculation would be applicable to the half life of the isotopes in the decay chain, whilst keeping the number of steps low enough to compute the activities in a reasonable amount of time with a simple algorithm.  The decay path of  ${}^{216}_{84}Po$ (figure \ref{fig:DecayPathPo216}) contains 6 isotopes and includes one branch at ${}^{212}_{83}Bi$.
 
-There are various settings in the user input file, but the main ones relating to the simulated experiment are:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c c}
+\hline\hline
+Isotope & Half Life (s)\\
+\hline\hline
+Po-216 & $1.45 \times 10^{-1}$ \\
+Pb-212 & $3.83 \times 10^{4}$ \\
+Bi-212 & $3.63 \times 10^{3}$ \\
+Po-212 & $2.99 \times 10^{-7}$ \\
+Tl-212 & $3.1 \times 10^{1}$ \\
+Pb-208 & Stable \\
+\hline\hline
+\end{tabular}
+\end{center}
+\caption{Half life of isotopes in the Po-216 decay chain}
+\label{table:po216halflives}
+\end{table}
 
-\begin{itemize}
-	\item Element composition of target (percentage by mass).
-	\item Beam flux (current), energy, duration and area on target.
-	\item Activity measurement time (end of the ``experiment").
-	\item Material density.
-	\item Target thickness.
-\end{itemize}
+The range of half life times (table \ref{table:po216halflives}) in the Polonium decay chain was from $3.83 \times 10^4$s for ${}^{212}_{82}Pb$ down to $2.99 \times 10^{-7}$s for ${}^{212}_{83}Po$ and the maximum number of steps used in the numeric calculation is $10^{10}$.  This number of steps was near the limit at which increasing by another order of magnitude would take a significant amount of time to run the calculation. 
 
-A brief manual that accompanies the program is in the appendix section \ref{section:activityv1manual} and the published paper that accompanies the code is in section \ref{section:activityv1published}.  The cross section data is taken from the existing TENDL-2013 datafile.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c c c}
+\hline\hline
+Isotope & Source Rate & Starting amount $N_0$ \\
+\hline\hline
+Po-216 & $2.0 \times 10^{-1}$ & $1.0 \times 10^{2}$ \\
+Pb-212 & $0.0 \times 10^{0}$  & $5.0 \times 10^{0}$ \\
+Bi-212 & $7.0 \times 10^{-2}$ & $1.5 \times 10^{1}$ \\
+Po-212 & $5.0 \times 10^{-3}$ & $0.0 \times 10^{0}$ \\
+Tl-212 & $0.0 \times 10^{0}$  & $0.0 \times 10^{0}$ \\
+Pb-208 & $1.0 \times 10^{-2}$ & $3.0 \times 10^{2}$  \\
+\hline\hline
+\end{tabular}
+\end{center}
+\caption{Parameters used for the decay equation vs numeric calculation comparison}
+\label{table:po216parameters}
+\end{table}
+
+The numeric code used to perform these calculations is detailed in the appendix (section \ref{section:decaypo216numeric}).  The calculation was set up with a range of source rates and isotope starting amounts including no source for ${}^{212}_{81}Tl$ and a zero starting amount for both ${}^{212}_{81}Tl$ and ${}^{212}_{83}Po$.  The full details are given in table \ref{table:po216parameters} and these were used in both the numeric and analytic codes.
+
+\FloatBarrier
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.7\linewidth]{chapters/activity_code/84po216/decay_84Po216.png}
+    \caption{Decay path of Polonium-216}
+    \label{fig:decay_equations_vs_analytic}
+  \end{center}
+\end{figure}
+
+As seen in figure \ref{fig:decay_equations_vs_analytic}, for all but the shortest half life isotope Po-212, the numeric calculations are in good agreement with the decay equations.  As the number of steps increases, and hence the time step decreases, the numerically computed activity for Po-212 also converges to that calculated with the decay equations.
+
+The modified Bateman equation was also tested with several other decay chains against a numeric solution for each chain.  These were the decay of ${}^{49}_{24}Cr$, ${}^{66}_{28}Ni$, ${}^{125}_{55}Cs$, ${}^{213}_{83}Bi$, ${}^{216}_{84}Po$ and ${}^{218}_{86}Rn$.  Apart from a break down in the numeric code, where the half life was comparable to or smaller than the time step, the results from both the equations and the numeric solver were in good agreement.  The full results to this testing are included in appendix \ref{section:decaypo216numeric}.
 
 
 
-\subsection{Activity V2}
 
-A second program was developed to use Python rather than Fortran.  One problem that motivated this was occasionally a particular isotope would cause the code to crash, and a second issue was the complication of compiling the code for new users.  The Python version runs with relatively few interventions by the user and it handles errors in the data more gracefully than the Fortran version.  The procedure it follows is similar to the Activity V1 code and the manual is included in appendix section \ref{section:activityv2manual}.
+\subsection{Talys Generated Proton Cross Section Database}
+\label{section:activitytalysdb}
 
-Due to a variation in range of energies in cross section data files, the cross section data was computed from scratch using the TALYS code and the BlueBEAR HPC.
+Due to a variation in range of energies in the existing cross section data files, the cross section data was computed from scratch using the TALYS code and the BlueBEAR HPC.
+
+A set of proton reaction cross section data files already exist and are updated every few years.  The type and range of data changes between versions of the file.  For example, the \acrshort{tendl}-2014 version contains only elastic and (z,anything) files for (p,Fe56).  The \acrshort{tendl}-2009 file contains a wider ranger of reactions and under 50 data points span the energy range from 0MeV to 200MeV.  The 2019 version contains even more reactions but spans a much shorter energy range, 0MeV to 28MeV, with cross sections given at just under 60 energy points.
+
+The cyclotron used in the experimental work has an energy range up to 40MeV for protons and 53MeV for ${}^{4}He^{2+}$ ions.  To cover this entire range, the TALYS code was used to compute cross section reaction data from 0.01MeV to 62.0MeV in increments of 10KeV, breaking the energy range up into 6,200 data points for each reaction.
+
+\begin{figure}[htb]
+\centering
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/tendl_2009_p_fe56.png}
+  \caption{TENDL-2009 cross sections}
+  \label{fig:xsdata-tendl2009}
+\end{subfigure}\hfil % <-- added
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/tendl_2019_p_fe56.png}
+  \caption{TENDL-2019 cross sections}
+  \label{fig:xsdata-tendl2019}
+\end{subfigure}
+
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/rxs_p_26056_all.eps}
+  \caption{TALYS generated residual cross sections}
+  \label{fig:xsdata-residual}
+\end{subfigure}\hfil % <-- added
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/pxs_p_26056_all.eps}
+  \caption{TALYS generated particle cross sections}
+  \label{fig:activity-v2-residual-6}
+\end{subfigure}
+\caption{Cross sections for $({}^{56}_{26}Fe, p)$ reactions}
+\label{fig:xsdata-particle}
+\end{figure}
+
+
+Due to limitations of the TALYS code, the calculations were processed in batches of either 400 or 600 points.  The data was collated and processed resulting in a datafile of particle production reactions and residual production reactions.  This is accessible through a stand-alone python class that is also a part of the Activity V2 code.
+
+The residual reactions are grouped by target isotope and then by residual isotope, whereas the particle cross sections are grouped by target isotope then particle type.  The computed values are plotted for all available reactions and all residuals for ${}^{56}_{26}Fe$ reactions with protons (figure \ref{fig:xsdata-particle}) and these show a good agreement, although there is a more detailed set of residual isotopes for the generated cross sections.
+
+\begin{lstlisting}[style=sOutputFile,caption={Status report from TALYS database code},label={listing:talysstatus}]
+##############################################
+    TALYS Cross Section Python Dictionary     
+##############################################
+
+               DB STATUS                      
+
+Talys dir:        ../../data/talys
+Isotopes file:    ../../data/isotopes.pz
+Database load time: 24.489s
+
+Projectiles:    n d p 
+
+Total data points:  18777965
+
+End time:  24.674s
+\end{lstlisting}
+
+The complete set of data files, and Python class used to read them, are available to download at:
+
+https://github.com/BenPalmer1983/talys\_xs\_db 
+
+The cross section data output by TALYS was grouped into four main files: elastic\_xs.pz, nonelastic\_xs.pz, particle\_xs.pz and residual\_xs.pz.  All data files that make up this database currently total over 400MB and contain over 18 million data points (listing \ref{listing:talysstatus}), although this could increase if more projectiles and a wide range of energies are added.
+
+
+
 
 
 \FloatBarrier
@@ -409,9 +511,63 @@ These assumptions and possible improvements are considered in chapter \ref{chapt
 
 \subsection{Foil Activation by Neutron Irradiation}
 
-%\subsection{Introduction}
-
 An additional feature was added to the Activity V2 code to estimate neutron activity based on the existing code developed to calculated ion activation.  It is a simple non-transport neutron activation code, used to estimate the activity and subsequent cooling of materials irradiated by neutrons.  A single energy neutron flux or Maxwell-Boltzmann distribution may be selected by the user and the TALYS generated database is used to provide cross sections for calculating reaction rates.  Finally, the previously derived extended Bateman equations are used to calculate isotopes at time t after irradiation begins.
+
+
+\FloatBarrier
+\section[Simulating with SRIM - Iron]{Simulating Proton Irradiated Iron with SRIM}
+
+The trajectory data used by the activity code(s), and also to estimate the ${}^{55}_{27} Co$ activity, was provided by SRIM.  An input configuration was set with Iron as the target material and protons as the projectile ion.  The sample depth was set to at least the target thickness, 0.5mm.  The activity code truncates the data to fit the target thickness, so a much larger depth, say 1m, could be set in SRIM to ensure all the ions stop within the simulated target, and this data file may be reused for targets of varying thicknesses.
+
+\begin{figure}[htb]
+\centering
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/images/trajectory_3d_500um.eps}
+  \caption{Proton trajectory}
+  \label{fig:iontrajectory1}
+\end{subfigure}\hfil
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_lost_500um.eps}
+  \caption{Histogram of energy lost passing through target}
+  \label{fig:energylost1}
+\end{subfigure}
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_depth_500um.eps}
+  \caption{Energy vs target depth}
+  \label{fig:fe36mevenergydepth}
+\end{subfigure}
+\caption{Protons through a 0.5mm thick iron target - 100 proton histories}
+\label{fig:xsdata-particle1}
+\end{figure}
+
+The ions travelling through the thin 0.5mm target lose between 4MeV and 5MeV (figure \ref{fig:energylost1}) as they pass, and they do so quite smoothly (figure \ref{fig:fe36mevenergydepth}).  The majority of the energy is lost smoothly through electronic stopping.  
+
+The ion trajectory plot shows the deflection of ions in both the y and z axis.  A large percentage of the ions here deviate very little from a straight pass through, but several are deflected by quite a large angle.  Within the activity computer codes, these ions deflected ions will travel a greater distance through the target.  The only cutoffs applied to the ion trajectory data are either the ion reaching 0MeV or travelling more than the depth in the x-axis.  Any ions travelling a large distance in the y or z axis are still determined to be within the target.
+
+\begin{figure}[htb]
+\centering
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/images/trajectory_3d_full.eps}
+  \caption{Proton trajectory}
+  \label{fig:iontrajectory2}
+\end{subfigure}\hfil
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_lost_full.eps}
+  \caption{Histogram of energy lost passing through target}
+  \label{fig:energylost2}
+\end{subfigure}
+\begin{subfigure}{0.49\textwidth}
+  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_depth_full.eps}
+  \caption{Energy vs target depth}
+  \label{fig:fe36mevenergydepthfull}
+\end{subfigure}
+\caption{Protons through target thick enough to stop all ions - 100 proton histories}
+\label{fig:xsdata-particle2}
+\end{figure}
+
+As the thickness of the iron is increased, all the energy is lost to the iron target, and this loss of energy occurs within a shorter range in the remaining quarter of a millimetre depth of the iron target (figure \ref{fig:iontrajectory2}).
+
+
 
 
 
@@ -489,105 +645,6 @@ Following the measurement of the thin target, in the first instance the predicte
 
 
 
-
-
-
-\section{Extended Bateman Equations}
-
-The Bateman equations were derived from scratch to include a source term for each isotope and branching factors from parent isotope to daughter isotope(s).  This process along with the numerical and analytic solutions are outlined in section \ref{section:activitysolution}.
-
-\FloatBarrier
-
-The decay equations were programmed as a class in python (appendix \ref{section:decayclass}) that used decay data accessible through a second class, isotopes, populated with data from the JEFF 3.1.1 data file.  The static function for computing activity in this class was tested against numerically computed values.  
-
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=0.7\linewidth]{chapters/activity_code/84po216/84Po216_path.png}
-    \caption{Decay path of Polonium-216}
-    \label{fig:DecayPathPo216}
-  \end{center}
-\end{figure}
-
-Due to the large range in magnitude of the half life for various isotopes, a decay chain was selected where the time step for the numeric calculation would be applicable to the half life of the isotopes in the decay chain, whilst keeping the number of steps low enough to compute the activities in a reasonable amount of time with a simple algorithm.  The decay path of  ${}^{216}_{84}Po$ (figure \ref{fig:DecayPathPo216}) contains 6 isotopes and includes one branch at ${}^{212}_{83}Bi$.
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{c c}
-\hline\hline
-Isotope & Half Life (s)\\
-\hline\hline
-Po-216 & $1.45 \times 10^{-1}$ \\
-Pb-212 & $3.83 \times 10^{4}$ \\
-Bi-212 & $3.63 \times 10^{3}$ \\
-Po-212 & $2.99 \times 10^{-7}$ \\
-Tl-212 & $3.1 \times 10^{1}$ \\
-Pb-208 & Stable \\
-\hline\hline
-\end{tabular}
-\end{center}
-\caption{Half life of isotopes in the Po-216 decay chain}
-\label{table:po216halflives}
-\end{table}
-
-The range of half life times (table \ref{table:po216halflives}) in the Polonium decay chain was from $3.83 \times 10^4$s for ${}^{212}_{82}Pb$ down to $2.99 \times 10^{-7}$s for ${}^{212}_{83}Po$ and the maximum number of steps used in the numeric calculation is $10^{10}$.  This number of steps was near the limit at which increasing by another order of magnitude would take a significant amount of time to run the calculation. 
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{c c c}
-\hline\hline
-Isotope & Source Rate & Starting amount $N_0$ \\
-\hline\hline
-Po-216 & $2.0 \times 10^{-1}$ & $1.0 \times 10^{2}$ \\
-Pb-212 & $0.0 \times 10^{0}$  & $5.0 \times 10^{0}$ \\
-Bi-212 & $7.0 \times 10^{-2}$ & $1.5 \times 10^{1}$ \\
-Po-212 & $5.0 \times 10^{-3}$ & $0.0 \times 10^{0}$ \\
-Tl-212 & $0.0 \times 10^{0}$  & $0.0 \times 10^{0}$ \\
-Pb-208 & $1.0 \times 10^{-2}$ & $3.0 \times 10^{2}$  \\
-\hline\hline
-\end{tabular}
-\end{center}
-\caption{Parameters used for the decay equation vs numeric calculation comparison}
-\label{table:po216parameters}
-\end{table}
-
-The numeric code used to perform these calculations is detailed in the appendix (section \ref{section:decaypo216numeric}).  The calculation was set up with a range of source rates and isotope starting amounts including no source for ${}^{212}_{81}Tl$ and a zero starting amount for both ${}^{212}_{81}Tl$ and ${}^{212}_{83}Po$.  The full details are given in table \ref{table:po216parameters} and these were used in both the numeric and analytic codes.
-
-\FloatBarrier
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=0.7\linewidth]{chapters/activity_code/84po216/decay_84Po216.png}
-    \caption{Decay path of Polonium-216}
-    \label{fig:decay_equations_vs_analytic}
-  \end{center}
-\end{figure}
-
-As seen in figure \ref{fig:decay_equations_vs_analytic}, for all but the shortest half life isotope Po-212, the numeric calculations are in good agreement with the decay equations.  As the number of steps increases, and hence the time step decreases, the numerically computed activity for Po-212 also converges to that calculated with the decay equations.
-
-The modified Bateman equation was also tested with several other decay chains against a numeric solution for each chain.  These were the decay of ${}^{49}_{24}Cr$, ${}^{66}_{28}Ni$, ${}^{125}_{55}Cs$, ${}^{213}_{83}Bi$, ${}^{216}_{84}Po$ and ${}^{218}_{86}Rn$.  Apart from a break down in the numeric code, where the half life was comparable to or smaller than the time step, the results from both the equations and the numeric solver were in good agreement.  The full results to this testing are included in appendix \ref{section:decaypo216numeric}.
-
-
-\FloatBarrier
-
-\begin{comment}
-\section{Neutron Activation}
-
-A small side-project was the development of a simple neutron activation code that uses the \acrshort{tendl}-2019 neutron cross section data file to estimate the activity of a neutron irradiated target.  The reason for this was to be able to estimate the activity of components irradiated in a high flux neutron reactor and compare these to the radioactivity of proton irradiated components.
-
-The source code and instructions on how to use the program are available to download from GitHub.
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{c c}
-\hline\hline
-Program & Repository\\
-\hline\hline
-Neutron Activation & https://github.com/BenPalmer1983/neutron\_activation \\
-\hline\hline
-\end{tabular}
-\end{center}
-\caption{Neutron Activation Code on GitHub}
-\end{table}
-\end{comment}
 
 
 
@@ -694,58 +751,7 @@ Where positrons are emitted, they will annihilate with an electron.  This event 
 
 
 
-\FloatBarrier
-\section[Simulating with SRIM - Iron]{Simulating Proton Irradiated Iron with SRIM}
 
-The trajectory data used by the activity code(s), and also to estimate the ${}^{55}_{27} Co$ activity, was provided by SRIM.  An input configuration was set with Iron as the target material and protons as the projectile ion.  The sample depth was set to at least the target thickness, 0.5mm.  The activity code truncates the data to fit the target thickness, so a much larger depth, say 1m, could be set in SRIM to ensure all the ions stop within the simulated target, and this data file may be reused for targets of varying thicknesses.
-
-\begin{figure}[htb]
-\centering
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/images/trajectory_3d_500um.eps}
-  \caption{Proton trajectory}
-  \label{fig:iontrajectory1}
-\end{subfigure}\hfil
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_lost_500um.eps}
-  \caption{Histogram of energy lost passing through target}
-  \label{fig:energylost1}
-\end{subfigure}
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_depth_500um.eps}
-  \caption{Energy vs target depth}
-  \label{fig:fe36mevenergydepth}
-\end{subfigure}
-\caption{Protons through a 0.5mm thick iron target - 100 proton histories}
-\label{fig:xsdata-particle1}
-\end{figure}
-
-The ions travelling through the thin 0.5mm target lose between 4MeV and 5MeV (figure \ref{fig:energylost1}) as they pass, and they do so quite smoothly (figure \ref{fig:fe36mevenergydepth}).  The majority of the energy is lost smoothly through electronic stopping.  
-
-The ion trajectory plot shows the deflection of ions in both the y and z axis.  A large percentage of the ions here deviate very little from a straight pass through, but several are deflected by quite a large angle.  Within the activity computer codes, these ions deflected ions will travel a greater distance through the target.  The only cutoffs applied to the ion trajectory data are either the ion reaching 0MeV or travelling more than the depth in the x-axis.  Any ions travelling a large distance in the y or z axis are still determined to be within the target.
-
-\begin{figure}[htb]
-\centering
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/images/trajectory_3d_full.eps}
-  \caption{Proton trajectory}
-  \label{fig:iontrajectory2}
-\end{subfigure}\hfil
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_lost_full.eps}
-  \caption{Histogram of energy lost passing through target}
-  \label{fig:energylost2}
-\end{subfigure}
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/images/energy_depth_full.eps}
-  \caption{Energy vs target depth}
-  \label{fig:fe36mevenergydepthfull}
-\end{subfigure}
-\caption{Protons through target thick enough to stop all ions - 100 proton histories}
-\label{fig:xsdata-particle2}
-\end{figure}
-
-As the thickness of the iron is increased, all the energy is lost to the iron target, and this loss of energy occurs within a shorter range in the remaining quarter of a millimetre depth of the iron target (figure \ref{fig:iontrajectory2}).
 
 
 \FloatBarrier
@@ -863,84 +869,18 @@ The code predicts a final 931KeV gamma activity of over 59,000 Bq and highlights
 
 
 
-\FloatBarrier
-\section{Activity V2}
-
-There were a number of issues with version 1 of the computer code.  It was written in Fortran, but over time this has been a stumbling block for new users, especially those new to Linux and unfamiliar with Fortran. 
-
-In the first version of the code, the trajectory data was replaced with a series of polynomials, but this method was not a reliable solution and it was preferred to use the data directly to calculate the reaction rates.  Finally, a language such as Python3 is more widely used and contains very useful features such as dictionaries and a plotting module (matplotlib).
-
-\subsection{Computer Code Development}
-
-Activity V2 uses a custom cross section database generated using the TALYS nuclear reaction code along with the JEFF3.1.1 datafile for decay data.  All the data has been processed and is packaged with the source code.  The source code and instructions on how to use the program are available to download from GitHub: 
-
-https://github.com/BenPalmer1983/activity\_v2
-
-As with version 1, the user provides an ion trajectory file and an input file that specifies beam parameters and target composition.  The code may be used for both protons and deuterons, providing the correct trajectory file has been generated.  It does also contain neutron reaction cross sections and may be used for very thin foils with a flat distribution of neutron energies.
 
 
-\subsection{Talys Generated Proton Cross Section Database}
-\label{section:activitytalysdb}
-
-A set of proton reaction cross section data files already exist and are updated every few years.  The type and range of data changes between versions of the file.  For example, the \acrshort{tendl}-2014 version contains only elastic and (z,anything) files for (p,Fe56).  The \acrshort{tendl}-2009 file contains a wider ranger of reactions and under 50 data points span the energy range from 0MeV to 200MeV.  The 2019 version contains even more reactions but spans a much shorter energy range, 0MeV to 28MeV, with cross sections given at just under 60 energy points.
-
-The cyclotron used in the experimental work has an energy range up to 40MeV for protons and 53MeV for ${}^{4}He^{2+}$ ions.  To cover this entire range, the TALYS code was used to compute cross section reaction data from 0.01MeV to 62.0MeV in increments of 10KeV, breaking the energy range up into 6,200 data points for each reaction.
-
-\begin{figure}[htb]
-\centering
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/tendl_2009_p_fe56.png}
-  \caption{TENDL-2009 cross sections}
-  \label{fig:xsdata-tendl2009}
-\end{subfigure}\hfil % <-- added
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/tendl_2019_p_fe56.png}
-  \caption{TENDL-2019 cross sections}
-  \label{fig:xsdata-tendl2019}
-\end{subfigure}
-
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/rxs_p_26056_all.eps}
-  \caption{TALYS generated residual cross sections}
-  \label{fig:xsdata-residual}
-\end{subfigure}\hfil % <-- added
-\begin{subfigure}{0.49\textwidth}
-  \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/pxs_p_26056_all.eps}
-  \caption{TALYS generated particle cross sections}
-  \label{fig:activity-v2-residual-6}
-\end{subfigure}
-\caption{Cross sections for $({}^{56}_{26}Fe, p)$ reactions}
-\label{fig:xsdata-particle}
-\end{figure}
 
 
-Due to limitations of the TALYS code, the calculations were processed in batches of either 400 or 600 points.  The data was collated and processed resulting in a datafile of particle production reactions and residual production reactions.  This is accessible through a stand-alone python class that is also a part of the Activity V2 code.
 
-The residual reactions are grouped by target isotope and then by residual isotope, whereas the particle cross sections are grouped by target isotope then particle type.  The computed values are plotted for all available reactions and all residuals for ${}^{56}_{26}Fe$ reactions with protons (figure \ref{fig:xsdata-particle}) and these show a good agreement, although there is a more detailed set of residual isotopes for the generated cross sections.
 
-\begin{lstlisting}[style=sOutputFile,caption={Status report from TALYS database code},label={listing:talysstatus}]
-##############################################
-    TALYS Cross Section Python Dictionary     
-##############################################
 
-               DB STATUS                      
 
-Talys dir:        ../../data/talys
-Isotopes file:    ../../data/isotopes.pz
-Database load time: 24.489s
 
-Projectiles:    n d p 
 
-Total data points:  18777965
 
-End time:  24.674s
-\end{lstlisting}
 
-The complete set of data files, and Python class used to read them, are available to download at:
-
-https://github.com/BenPalmer1983/talys\_xs\_db 
-
-The cross section data output by TALYS was grouped into four main files: elastic\_xs.pz, nonelastic\_xs.pz, particle\_xs.pz and residual\_xs.pz.  All data files that make up this database currently total over 400MB and contain over 18 million data points (listing \ref{listing:talysstatus}), although this could increase if more projectiles and a wide range of energies are added.
 
 \subsection{Simulated Proton Irradiated Iron}
 
