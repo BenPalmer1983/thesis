@@ -49,13 +49,7 @@ output="thesis.pdf"
 #rm bibliography/*.aux
 #
 #
-# Symlink to SHARED
-#########################
-#rm SHARED
-if [ ! \( -e "SHARED" \) ]; then
-  echo "Make symlink"
-  ln -s /cloud/latex/SHARED SHARED
-fi
+
 #
 # Make plots
 F_FindPlots
@@ -89,11 +83,19 @@ fi
 # Rename
 mv main.pdf $output
 # Move build files
-mv main.aux buildfiles/main.aux
+mv main.aux buildfiles/main.acn
+mv main.acr buildfiles/main.acr
+mv main.alg buildfiles/main.alg
 mv main.bbl buildfiles/main.bbl
 mv main.blg buildfiles/main.blg
+mv main.glg buildfiles/main.glg
+mv main.glo buildfiles/main.glo
+mv main.gls buildfiles/main.gls
+mv main.ist buildfiles/main.ist
 mv main.lof buildfiles/main.lof
 mv main.log buildfiles/main.log
+mv main.blg buildfiles/main.lot
+mv main.blg buildfiles/main.out
 mv main.run.xml buildfiles/main.run.xml
 mv main.toc buildfiles/main.toc
 mv main-blx.bib buildfiles/main-blx.bib
