@@ -16,7 +16,7 @@ A level-1 auxilliary file: chapters/austenitic_steels_in_nuclear/bcc.aux
 A level-1 auxilliary file: chapters/austenitic_steels_in_nuclear/fcc.aux
 A level-1 auxilliary file: chapters/austenitic_steels_in_nuclear/fct.aux
 A level-1 auxilliary file: chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.aux
-A level-1 auxilliary file: chapters/background_activity/background_activity.aux
+A level-1 auxilliary file: chapters/isotope_activation_and_radioactive_decay/isotope_activation_and_radioactive_decay.aux
 A level-1 auxilliary file: chapters/background_potential_fitting/background_potential_fitting.aux
 Case mismatch error between cite keys dfttisiravindran and DftTiSiRavindran
 ---line 792 of file main.aux
@@ -134,6 +134,6 @@ Here's how much of BibTeX's memory you used:
  Fields:            27243 out of 32383
  Hash table:       199118 out of 200000
  Strings:            2106 out of 200000
- Free string pool:  36850 out of 65000
+ Free string pool:  36892 out of 65000
  Wizard functions:   6365 out of 9000
 (There were 15 error messages)

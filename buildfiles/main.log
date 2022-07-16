@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.10)  16 JUL 2022 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.10)  16 JUL 2022 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2196,7 +2196,8 @@ LaTeX Warning: Label `eq:totalmicroscopic' multiply defined.
 (./chapters/austenitic_steels_in_nuclear/fcc.aux)
 (./chapters/austenitic_steels_in_nuclear/fct.aux)
 (./chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.aux)
-(./chapters/background_activity/background_activity.aux
+(./chapters/isotope_activation_and_radioactive_decay/isotope_activation_and_rad
+ioactive_decay.aux
 
 LaTeX Warning: Label `eq:saturationactivity' multiply defined.
 
@@ -2907,11 +2908,11 @@ l.45
 ]
 Package epstopdf Info: Source file: <chapters/introduction/plots/uranium_cross_
 section/u_xs.eps>
-(epstopdf)                    date: 2022-07-16 11:07:10
+(epstopdf)                    date: 2022-07-16 11:19:29
 (epstopdf)                    size: 932090 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/uranium_cross_
 section/u_xs-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:07:14
+(epstopdf)                    date: 2022-07-16 11:19:32
 (epstopdf)                    size: 251043 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/uranium_cross_section/u_xs-eps-converted-to.pdf chapters/introduction/plots/u
@@ -2940,11 +2941,11 @@ d on input line 107.
 pdf>] [4 <./chapters/introduction/images/remaining_plants.png>]
 Package epstopdf Info: Source file: <chapters/introduction/plots/elec_demand/el
 ec_demand.eps>
-(epstopdf)                    date: 2022-07-16 11:07:10
+(epstopdf)                    date: 2022-07-16 11:19:29
 (epstopdf)                    size: 33183 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/elec_demand/el
 ec_demand-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:07:14
+(epstopdf)                    date: 2022-07-16 11:19:33
 (epstopdf)                    size: 10159 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/elec_demand/elec_demand-eps-converted-to.pdf chapters/introduction/plots/elec
@@ -3026,11 +3027,11 @@ used on input line 366.
  [12 <./chapters/introduction/images/water_phase_diagram.png>] [13]
 Package epstopdf Info: Source file: <chapters/introduction/plots/fission_spectr
 a/fission_spectra.eps>
-(epstopdf)                    date: 2022-07-16 11:07:10
+(epstopdf)                    date: 2022-07-16 11:19:29
 (epstopdf)                    size: 25110 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/fission_spectr
 a/fission_spectra-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:07:18
+(epstopdf)                    date: 2022-07-16 11:19:36
 (epstopdf)                    size: 7435 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/fission_spectra/fission_spectra-eps-converted-to.pdf chapters/introduction/pl
@@ -3735,9 +3736,12 @@ LaTeX Warning: Reference `section:pgmactivity' on page 42 undefined on input li
 ne 566.
 
 ) [42]
-\openout2 = `chapters/background_activity/background_activity.aux'.
+\openout2 = `chapters/isotope_activation_and_radioactive_decay/isotope_activati
+on_and_radioactive_decay.aux'.
 
- (./chapters/background_activity/background_activity.tex
+
+(./chapters/isotope_activation_and_radioactive_decay/isotope_activation_and_rad
+ioactive_decay.tex
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
@@ -3753,125 +3757,136 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ] [44]
-<chapters/background_activity/images/hfir-cross-sections.jpg, id=4494, 1144.275
-pt x 557.08125pt>
-File: chapters/background_activity/images/hfir-cross-sections.jpg Graphic file 
-(type jpg)
-<use chapters/background_activity/images/hfir-cross-sections.jpg>
-Package pdftex.def Info: chapters/background_activity/images/hfir-cross-section
-s.jpg  used on input line 114.
+<chapters/isotope_activation_and_radioactive_decay/images/hfir-cross-sections.j
+pg, id=4494, 1144.275pt x 557.08125pt>
+File: chapters/isotope_activation_and_radioactive_decay/images/hfir-cross-secti
+ons.jpg Graphic file (type jpg)
+<use chapters/isotope_activation_and_radioactive_decay/images/hfir-cross-sectio
+ns.jpg>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/imag
+es/hfir-cross-sections.jpg  used on input line 114.
 (pdftex.def)             Requested size: 232.27281pt x 113.08034pt.
-<chapters/background_activity/images/hfirneutronflux.png, id=4499, 476.53032pt 
-x 294.34969pt>
-File: chapters/background_activity/images/hfirneutronflux.png Graphic file (typ
-e png)
-<use chapters/background_activity/images/hfirneutronflux.png>
-Package pdftex.def Info: chapters/background_activity/images/hfirneutronflux.pn
-g  used on input line 122.
+<chapters/isotope_activation_and_radioactive_decay/images/hfirneutronflux.png, 
+id=4499, 476.53032pt x 294.34969pt>
+File: chapters/isotope_activation_and_radioactive_decay/images/hfirneutronflux.
+png Graphic file (type png)
+<use chapters/isotope_activation_and_radioactive_decay/images/hfirneutronflux.p
+ng>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/imag
+es/hfirneutronflux.png  used on input line 122.
 (pdftex.def)             Requested size: 232.27281pt x 143.47354pt.
-<chapters/background_activity/images/nbsr.png, id=4506, 461.47406pt x 282.30469
-pt>
-File: chapters/background_activity/images/nbsr.png Graphic file (type png)
-<use chapters/background_activity/images/nbsr.png>
-Package pdftex.def Info: chapters/background_activity/images/nbsr.png  used on 
-input line 139.
+<chapters/isotope_activation_and_radioactive_decay/images/nbsr.png, id=4506, 46
+1.47406pt x 282.30469pt>
+File: chapters/isotope_activation_and_radioactive_decay/images/nbsr.png Graphic
+ file (type png)
+<use chapters/isotope_activation_and_radioactive_decay/images/nbsr.png>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/imag
+es/nbsr.png  used on input line 139.
 (pdftex.def)             Requested size: 338.58632pt x 207.12744pt.
- [45 <./chapters/background_activity/images/hfir-cross-sections.jpg> <./chapter
-s/background_activity/images/hfirneutronflux.png (PNG copy)>]
-<chapters/background_activity/images/spallation.png, id=4524, 539.76656pt x 307
-.90031pt>
-File: chapters/background_activity/images/spallation.png Graphic file (type png
-)
-<use chapters/background_activity/images/spallation.png>
-Package pdftex.def Info: chapters/background_activity/images/spallation.png  us
-ed on input line 160.
+ [45 <./chapters/isotope_activation_and_radioactive_decay/images/hfir-cross-sec
+tions.jpg> <./chapters/isotope_activation_and_radioactive_decay/images/hfirneut
+ronflux.png (PNG copy)>]
+<chapters/isotope_activation_and_radioactive_decay/images/spallation.png, id=45
+24, 539.76656pt x 307.90031pt>
+File: chapters/isotope_activation_and_radioactive_decay/images/spallation.png G
+raphic file (type png)
+<use chapters/isotope_activation_and_radioactive_decay/images/spallation.png>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/imag
+es/spallation.png  used on input line 160.
 (pdftex.def)             Requested size: 338.58632pt x 193.14194pt.
- [46 <./chapters/background_activity/images/nbsr.png (PNG copy)>]
-<chapters/background_activity/plots/neutronspectrau235fission.png, id=4543, 651
-.93562pt x 409.53pt>
-File: chapters/background_activity/plots/neutronspectrau235fission.png Graphic 
-file (type png)
-<use chapters/background_activity/plots/neutronspectrau235fission.png>
-Package pdftex.def Info: chapters/background_activity/plots/neutronspectrau235f
-ission.png  used on input line 223.
+ [46 <./chapters/isotope_activation_and_radioactive_decay/images/nbsr.png (PNG 
+copy)>]
+<chapters/isotope_activation_and_radioactive_decay/plots/neutronspectrau235fiss
+ion.png, id=4543, 651.93562pt x 409.53pt>
+File: chapters/isotope_activation_and_radioactive_decay/plots/neutronspectrau23
+5fission.png Graphic file (type png)
+<use chapters/isotope_activation_and_radioactive_decay/plots/neutronspectrau235
+fission.png>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/plot
+s/neutronspectrau235fission.png  used on input line 223.
 (pdftex.def)             Requested size: 338.58632pt x 212.7006pt.
- [47 <./chapters/background_activity/images/spallation.png (PNG copy)>]
-Package epstopdf Info: Source file: <chapters/background_activity/plots/npd_xs/
-fe56_ni58_xs.eps>
-(epstopdf)                    date: 2022-07-16 11:07:10
+ [47 <./chapters/isotope_activation_and_radioactive_decay/images/spallation.png
+ (PNG copy)>]
+Package epstopdf Info: Source file: <chapters/isotope_activation_and_radioactiv
+e_decay/plots/npd_xs/fe56_ni58_xs.eps>
+(epstopdf)                    date: 2022-07-16 11:19:29
 (epstopdf)                    size: 400931 bytes
-(epstopdf)             Output file: <chapters/background_activity/plots/npd_xs/
-fe56_ni58_xs-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:07:20
+(epstopdf)             Output file: <chapters/isotope_activation_and_radioactiv
+e_decay/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-07-16 11:19:39
 (epstopdf)                    size: 110231 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_activi
-ty/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf chapters/background_activity/
-plots/npd_xs/fe56_ni58_xs.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/isotope_activatio
+n_and_radioactive_decay/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf chapters
+/isotope_activation_and_radioactive_decay/plots/npd_xs/fe56_ni58_xs.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
-<chapters/background_activity/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf, i
-d=4552, 461.725pt x 201.75375pt>
-File: chapters/background_activity/plots/npd_xs/fe56_ni58_xs-eps-converted-to.p
-df Graphic file (type pdf)
-<use chapters/background_activity/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pd
-f>
-Package pdftex.def Info: chapters/background_activity/plots/npd_xs/fe56_ni58_xs
--eps-converted-to.pdf  used on input line 244.
+<chapters/isotope_activation_and_radioactive_decay/plots/npd_xs/fe56_ni58_xs-ep
+s-converted-to.pdf, id=4552, 461.725pt x 201.75375pt>
+File: chapters/isotope_activation_and_radioactive_decay/plots/npd_xs/fe56_ni58_
+xs-eps-converted-to.pdf Graphic file (type pdf)
+<use chapters/isotope_activation_and_radioactive_decay/plots/npd_xs/fe56_ni58_x
+s-eps-converted-to.pdf>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/plot
+s/npd_xs/fe56_ni58_xs-eps-converted-to.pdf  used on input line 244.
 (pdftex.def)             Requested size: 338.58632pt x 147.94704pt.
- [48 <./chapters/background_activity/plots/neutronspectrau235fission.png (PNG c
-opy)> <./chapters/background_activity/plots/npd_xs/fe56_ni58_xs-eps-converted-t
-o.pdf>] [49] [50]
-<chapters/background_activity/images/talys.png, id=4622, 599.23875pt x 435.1256
-3pt>
-File: chapters/background_activity/images/talys.png Graphic file (type png)
-<use chapters/background_activity/images/talys.png>
-Package pdftex.def Info: chapters/background_activity/images/talys.png  used on
- input line 352.
+ [48 <./chapters/isotope_activation_and_radioactive_decay/plots/neutronspectrau
+235fission.png (PNG copy)> <./chapters/isotope_activation_and_radioactive_decay
+/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf>] [49] [50]
+<chapters/isotope_activation_and_radioactive_decay/images/talys.png, id=4622, 5
+99.23875pt x 435.12563pt>
+File: chapters/isotope_activation_and_radioactive_decay/images/talys.png Graphi
+c file (type png)
+<use chapters/isotope_activation_and_radioactive_decay/images/talys.png>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/imag
+es/talys.png  used on input line 352.
 (pdftex.def)             Requested size: 290.22107pt x 210.74353pt.
-<chapters/background_activity/images/Fe54-Co55.png, id=4626, 536.75531pt x 410.
-2828pt>
-File: chapters/background_activity/images/Fe54-Co55.png Graphic file (type png)
-
-<use chapters/background_activity/images/Fe54-Co55.png>
-Package pdftex.def Info: chapters/background_activity/images/Fe54-Co55.png  use
-d on input line 363.
+<chapters/isotope_activation_and_radioactive_decay/images/Fe54-Co55.png, id=462
+6, 536.75531pt x 410.2828pt>
+File: chapters/isotope_activation_and_radioactive_decay/images/Fe54-Co55.png Gr
+aphic file (type png)
+<use chapters/isotope_activation_and_radioactive_decay/images/Fe54-Co55.png>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/imag
+es/Fe54-Co55.png  used on input line 363.
 (pdftex.def)             Requested size: 290.22107pt x 221.83739pt.
- [51 <./chapters/background_activity/images/talys.png (PNG copy)>]
+ [51 <./chapters/isotope_activation_and_radioactive_decay/images/talys.png (PNG
+ copy)>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 378.
 <<ot1tt.cmap>>
-[52 <./chapters/background_activity/images/Fe54-Co55.png (PNG copy)>]<<lgr.cmap
->> [53]
+[52 <./chapters/isotope_activation_and_radioactive_decay/images/Fe54-Co55.png (
+PNG copy)>]<<lgr.cmap>> [53]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\acrfull' on input line 512.
 
 [54] [55] [56]
-Package epstopdf Info: Source file: <chapters/background_activity/plots/fe_13Me
-V.eps>
-(epstopdf)                    date: 2022-07-16 11:07:10
+Package epstopdf Info: Source file: <chapters/isotope_activation_and_radioactiv
+e_decay/plots/fe_13MeV.eps>
+(epstopdf)                    date: 2022-07-16 11:19:29
 (epstopdf)                    size: 723637 bytes
-(epstopdf)             Output file: <chapters/background_activity/plots/fe_13Me
-V-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:07:21
+(epstopdf)             Output file: <chapters/isotope_activation_and_radioactiv
+e_decay/plots/fe_13MeV-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-07-16 11:19:40
 (epstopdf)                    size: 800169 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_activi
-ty/plots/fe_13MeV-eps-converted-to.pdf chapters/background_activity/plots/fe_13
-MeV.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/isotope_activatio
+n_and_radioactive_decay/plots/fe_13MeV-eps-converted-to.pdf chapters/isotope_ac
+tivation_and_radioactive_decay/plots/fe_13MeV.eps>
 (epstopdf)             \includegraphics on input line 631.
 Package epstopdf Info: Output file is already uptodate.
-<chapters/background_activity/plots/fe_13MeV-eps-converted-to.pdf, id=4764, 924
-.45375pt x 519.9425pt>
-File: chapters/background_activity/plots/fe_13MeV-eps-converted-to.pdf Graphic 
-file (type pdf)
-<use chapters/background_activity/plots/fe_13MeV-eps-converted-to.pdf>
-Package pdftex.def Info: chapters/background_activity/plots/fe_13MeV-eps-conver
-ted-to.pdf  used on input line 631.
+<chapters/isotope_activation_and_radioactive_decay/plots/fe_13MeV-eps-converted
+-to.pdf, id=4764, 924.45375pt x 519.9425pt>
+File: chapters/isotope_activation_and_radioactive_decay/plots/fe_13MeV-eps-conv
+erted-to.pdf Graphic file (type pdf)
+<use chapters/isotope_activation_and_radioactive_decay/plots/fe_13MeV-eps-conve
+rted-to.pdf>
+Package pdftex.def Info: chapters/isotope_activation_and_radioactive_decay/plot
+s/fe_13MeV-eps-converted-to.pdf  used on input line 631.
 (pdftex.def)             Requested size: 338.58632pt x 190.43196pt.
-) [57 <./chapters/background_activity/plots/fe_13MeV-eps-converted-to.pdf>]
+) [57 <./chapters/isotope_activation_and_radioactive_decay/plots/fe_13MeV-eps-c
+onverted-to.pdf>]
 \openout2 = `chapters/background_potential_fitting/background_potential_fitting
 .aux'.
 
@@ -11250,7 +11265,8 @@ on.aux) (./chapters/austenitic_steels_in_nuclear/bcc.aux)
 (./chapters/austenitic_steels_in_nuclear/fcc.aux)
 (./chapters/austenitic_steels_in_nuclear/fct.aux)
 (./chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.aux)
-(./chapters/background_activity/background_activity.aux)
+(./chapters/isotope_activation_and_radioactive_decay/isotope_activation_and_rad
+ioactive_decay.aux)
 (./chapters/background_potential_fitting/background_potential_fitting.aux)
 (./chapters/methodology_activity/methodology_activity.aux)
 (./chapters/results_activity_code/activity_code.aux)
@@ -11264,7 +11280,7 @@ on.aux) (./chapters/austenitic_steels_in_nuclear/bcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 714937DDE46B8FEBBF469D9D595460B9;34040.
+(rerunfilecheck)             Checksum: 32FB6147E50D587C3A5520F26127CC84;34041.
 
 
 LaTeX Warning: There were undefined references.
@@ -11284,7 +11300,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
  73580 strings out of 481239
- 1627351 string characters out of 5920377
+ 1628863 string characters out of 5920377
  2956708 words of memory out of 5000000
  80298 multiletter control sequences out of 15000+600000
  546877 words of font info for 82 fonts, out of 8000000 for 9000
@@ -11325,7 +11341,7 @@ sbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/txfonts/txmia.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/zapfding/uzdr.pfb>
-Output written on main.pdf (508 pages, 26880225 bytes).
+Output written on main.pdf (508 pages, 26880232 bytes).
 PDF statistics:
  22367 PDF objects out of 26593 (max. 8388607)
  14959 compressed objects within 150 object streams

@@ -146,7 +146,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.7}Addition of PGMs}{40}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Proton Activation and Radioactive Decay}{43}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Isotope Activation and Radioactive Decay}{43}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Ion Sources}{43}{section.4.1}%
 \defcounter {refsection}{0}\relax 
