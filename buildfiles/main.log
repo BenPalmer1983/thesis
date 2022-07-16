@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.10)  16 JUL 2022 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.10)  16 JUL 2022 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2201,7 +2201,7 @@ ioactive_decay.aux
 
 LaTeX Warning: Label `eq:saturationactivity' multiply defined.
 
-) (./chapters/background_potential_fitting/background_potential_fitting.aux
+) (./chapters/interatomic_potential_fitting/interatomic_potential_fitting.aux
 
 LaTeX Warning: Label `eq:eqMurnachanEquationofStateVolume' multiply defined.
 
@@ -2908,11 +2908,11 @@ l.45
 ]
 Package epstopdf Info: Source file: <chapters/introduction/plots/uranium_cross_
 section/u_xs.eps>
-(epstopdf)                    date: 2022-07-16 11:19:29
+(epstopdf)                    date: 2022-07-16 11:30:15
 (epstopdf)                    size: 932090 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/uranium_cross_
 section/u_xs-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:19:32
+(epstopdf)                    date: 2022-07-16 11:30:18
 (epstopdf)                    size: 251043 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/uranium_cross_section/u_xs-eps-converted-to.pdf chapters/introduction/plots/u
@@ -2941,11 +2941,11 @@ d on input line 107.
 pdf>] [4 <./chapters/introduction/images/remaining_plants.png>]
 Package epstopdf Info: Source file: <chapters/introduction/plots/elec_demand/el
 ec_demand.eps>
-(epstopdf)                    date: 2022-07-16 11:19:29
+(epstopdf)                    date: 2022-07-16 11:30:14
 (epstopdf)                    size: 33183 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/elec_demand/el
 ec_demand-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:19:33
+(epstopdf)                    date: 2022-07-16 11:30:18
 (epstopdf)                    size: 10159 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/elec_demand/elec_demand-eps-converted-to.pdf chapters/introduction/plots/elec
@@ -3027,11 +3027,11 @@ used on input line 366.
  [12 <./chapters/introduction/images/water_phase_diagram.png>] [13]
 Package epstopdf Info: Source file: <chapters/introduction/plots/fission_spectr
 a/fission_spectra.eps>
-(epstopdf)                    date: 2022-07-16 11:19:29
+(epstopdf)                    date: 2022-07-16 11:30:15
 (epstopdf)                    size: 25110 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/fission_spectr
 a/fission_spectra-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:19:36
+(epstopdf)                    date: 2022-07-16 11:30:22
 (epstopdf)                    size: 7435 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/fission_spectra/fission_spectra-eps-converted-to.pdf chapters/introduction/pl
@@ -3809,11 +3809,11 @@ s/neutronspectrau235fission.png  used on input line 223.
  (PNG copy)>]
 Package epstopdf Info: Source file: <chapters/isotope_activation_and_radioactiv
 e_decay/plots/npd_xs/fe56_ni58_xs.eps>
-(epstopdf)                    date: 2022-07-16 11:19:29
+(epstopdf)                    date: 2022-07-16 11:30:15
 (epstopdf)                    size: 400931 bytes
 (epstopdf)             Output file: <chapters/isotope_activation_and_radioactiv
 e_decay/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:19:39
+(epstopdf)                    date: 2022-07-16 11:30:25
 (epstopdf)                    size: 110231 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/isotope_activatio
 n_and_radioactive_decay/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf chapters
@@ -3865,11 +3865,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [54] [55] [56]
 Package epstopdf Info: Source file: <chapters/isotope_activation_and_radioactiv
 e_decay/plots/fe_13MeV.eps>
-(epstopdf)                    date: 2022-07-16 11:19:29
+(epstopdf)                    date: 2022-07-16 11:30:15
 (epstopdf)                    size: 723637 bytes
 (epstopdf)             Output file: <chapters/isotope_activation_and_radioactiv
 e_decay/plots/fe_13MeV-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:19:40
+(epstopdf)                    date: 2022-07-16 11:30:26
 (epstopdf)                    size: 800169 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/isotope_activatio
 n_and_radioactive_decay/plots/fe_13MeV-eps-converted-to.pdf chapters/isotope_ac
@@ -3887,11 +3887,11 @@ s/fe_13MeV-eps-converted-to.pdf  used on input line 631.
 (pdftex.def)             Requested size: 338.58632pt x 190.43196pt.
 ) [57 <./chapters/isotope_activation_and_radioactive_decay/plots/fe_13MeV-eps-c
 onverted-to.pdf>]
-\openout2 = `chapters/background_potential_fitting/background_potential_fitting
-.aux'.
+\openout2 = `chapters/interatomic_potential_fitting/interatomic_potential_fitti
+ng.aux'.
 
 
-(./chapters/background_potential_fitting/background_potential_fitting.tex
+(./chapters/interatomic_potential_fitting/interatomic_potential_fitting.tex
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -3908,201 +3908,202 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
 
 ]
-<chapters/background_potential_fitting/images/scale.png, id=4803, 1204.5pt x 92
-1.4425pt>
-File: chapters/background_potential_fitting/images/scale.png Graphic file (type
- png)
-<use chapters/background_potential_fitting/images/scale.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/scale.png
-  used on input line 53.
+<chapters/interatomic_potential_fitting/images/scale.png, id=4803, 1204.5pt x 9
+21.4425pt>
+File: chapters/interatomic_potential_fitting/images/scale.png Graphic file (typ
+e png)
+<use chapters/interatomic_potential_fitting/images/scale.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/scale.pn
+g  used on input line 53.
 (pdftex.def)             Requested size: 284.52756pt x 217.66382pt.
- [59 <./chapters/background_potential_fitting/images/scale.png>]
+ [59 <./chapters/interatomic_potential_fitting/images/scale.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [60] [61]
-<chapters/background_potential_fitting/images/rosevinet.png, id=4854, 469.00218
-pt x 333.49594pt>
-File: chapters/background_potential_fitting/images/rosevinet.png Graphic file (
-type png)
-<use chapters/background_potential_fitting/images/rosevinet.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/rosevinet
-.png  used on input line 222.
+<chapters/interatomic_potential_fitting/images/rosevinet.png, id=4854, 469.0021
+8pt x 333.49594pt>
+File: chapters/interatomic_potential_fitting/images/rosevinet.png Graphic file 
+(type png)
+<use chapters/interatomic_potential_fitting/images/rosevinet.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/rosevine
+t.png  used on input line 222.
 (pdftex.def)             Requested size: 241.84843pt x 171.96858pt.
- [62 <./chapters/background_potential_fitting/images/rosevinet.png>]
+ [62 <./chapters/interatomic_potential_fitting/images/rosevinet.png>]
 
 LaTeX Warning: Command \l invalid in math mode on input line 264.
 
 [63] [64] [65] [66] [67] [68]
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/plot
-s/c11_temperature.eps>
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/plo
+ts/c11_temperature.eps>
 (epstopdf)                    date: 2020-03-11 02:11:10
 (epstopdf)                    size: 28668 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/plot
-s/c11_temperature-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/plo
+ts/c11_temperature-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-03-11 02:12:17
 (epstopdf)                    size: 17653 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/plots/c11_temperature-eps-converted-to.pdf chapters/background_pote
-ntial_fitting/plots/c11_temperature.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/plots/c11_temperature-eps-converted-to.pdf chapters/interatomic_po
+tential_fitting/plots/c11_temperature.eps>
 (epstopdf)             \includegraphics on input line 859.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/plots/c1
-1_temperature-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, bu
-t at most version <1.5> allowed
-<chapters/background_potential_fitting/plots/c11_temperature-eps-converted-to.p
-df, id=4994, 433.62pt x 289.08pt>
-File: chapters/background_potential_fitting/plots/c11_temperature-eps-converted
--to.pdf Graphic file (type pdf)
-<use chapters/background_potential_fitting/plots/c11_temperature-eps-converted-
-to.pdf>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/c11_temper
-ature-eps-converted-to.pdf  used on input line 859.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/plots/c
+11_temperature-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, b
+ut at most version <1.5> allowed
+<chapters/interatomic_potential_fitting/plots/c11_temperature-eps-converted-to.
+pdf, id=4994, 433.62pt x 289.08pt>
+File: chapters/interatomic_potential_fitting/plots/c11_temperature-eps-converte
+d-to.pdf Graphic file (type pdf)
+<use chapters/interatomic_potential_fitting/plots/c11_temperature-eps-converted
+-to.pdf>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/c11_tempe
+rature-eps-converted-to.pdf  used on input line 859.
 (pdftex.def)             Requested size: 346.89647pt x 231.2643pt.
-[69 <./chapters/background_potential_fitting/plots/c11_temperature-eps-converte
-d-to.pdf>]
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/plot
-s/lennard_jones.eps>
+[69 <./chapters/interatomic_potential_fitting/plots/c11_temperature-eps-convert
+ed-to.pdf>]
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/plo
+ts/lennard_jones.eps>
 (epstopdf)                    date: 2020-05-06 06:33:21
 (epstopdf)                    size: 24555 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/plot
-s/lennard_jones-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/plo
+ts/lennard_jones-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-05-06 07:16:54
 (epstopdf)                    size: 14670 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/plots/lennard_jones-eps-converted-to.pdf chapters/background_potent
-ial_fitting/plots/lennard_jones.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/plots/lennard_jones-eps-converted-to.pdf chapters/interatomic_pote
+ntial_fitting/plots/lennard_jones.eps>
 (epstopdf)             \includegraphics on input line 897.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/plots/le
-nnard_jones-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but 
-at most version <1.5> allowed
-<chapters/background_potential_fitting/plots/lennard_jones-eps-converted-to.pdf
-, id=5042, 505.89pt x 361.35pt>
-File: chapters/background_potential_fitting/plots/lennard_jones-eps-converted-t
-o.pdf Graphic file (type pdf)
-<use chapters/background_potential_fitting/plots/lennard_jones-eps-converted-to
-.pdf>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/lennard_jo
-nes-eps-converted-to.pdf  used on input line 897.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/plots/l
+ennard_jones-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but
+ at most version <1.5> allowed
+<chapters/interatomic_potential_fitting/plots/lennard_jones-eps-converted-to.pd
+f, id=5042, 505.89pt x 361.35pt>
+File: chapters/interatomic_potential_fitting/plots/lennard_jones-eps-converted-
+to.pdf Graphic file (type pdf)
+<use chapters/interatomic_potential_fitting/plots/lennard_jones-eps-converted-t
+o.pdf>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/lennard_j
+ones-eps-converted-to.pdf  used on input line 897.
 (pdftex.def)             Requested size: 241.84843pt x 172.7513pt.
-[70 <./chapters/background_potential_fitting/plots/lennard_jones-eps-converted-
-to.pdf>]
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/plot
-s/morse.eps>
+[70 <./chapters/interatomic_potential_fitting/plots/lennard_jones-eps-converted
+-to.pdf>]
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/plo
+ts/morse.eps>
 (epstopdf)                    date: 2020-05-06 06:33:22
 (epstopdf)                    size: 23558 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/plot
-s/morse-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/plo
+ts/morse-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-05-06 07:16:54
 (epstopdf)                    size: 13321 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/plots/morse-eps-converted-to.pdf chapters/background_potential_fitt
-ing/plots/morse.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/plots/morse-eps-converted-to.pdf chapters/interatomic_potential_fi
+tting/plots/morse.eps>
 (epstopdf)             \includegraphics on input line 920.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/plots/mo
-rse-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
-version <1.5> allowed
-<chapters/background_potential_fitting/plots/morse-eps-converted-to.pdf, id=508
-4, 505.89pt x 361.35pt>
-File: chapters/background_potential_fitting/plots/morse-eps-converted-to.pdf Gr
-aphic file (type pdf)
-<use chapters/background_potential_fitting/plots/morse-eps-converted-to.pdf>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/morse-eps-
-converted-to.pdf  used on input line 920.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/plots/m
+orse-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
+ version <1.5> allowed
+<chapters/interatomic_potential_fitting/plots/morse-eps-converted-to.pdf, id=50
+84, 505.89pt x 361.35pt>
+File: chapters/interatomic_potential_fitting/plots/morse-eps-converted-to.pdf G
+raphic file (type pdf)
+<use chapters/interatomic_potential_fitting/plots/morse-eps-converted-to.pdf>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/morse-eps
+-converted-to.pdf  used on input line 920.
 (pdftex.def)             Requested size: 241.84843pt x 172.7513pt.
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/plot
-s/buckingham.eps>
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/plo
+ts/buckingham.eps>
 (epstopdf)                    date: 2020-05-06 06:33:22
 (epstopdf)                    size: 26727 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/plot
-s/buckingham-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/plo
+ts/buckingham-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-05-06 07:16:55
 (epstopdf)                    size: 15181 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/plots/buckingham-eps-converted-to.pdf chapters/background_potential
-_fitting/plots/buckingham.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/plots/buckingham-eps-converted-to.pdf chapters/interatomic_potenti
+al_fitting/plots/buckingham.eps>
 (epstopdf)             \includegraphics on input line 943.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/plots/bu
-ckingham-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at 
-most version <1.5> allowed
-<chapters/background_potential_fitting/plots/buckingham-eps-converted-to.pdf, i
-d=5087, 505.89pt x 361.35pt>
-File: chapters/background_potential_fitting/plots/buckingham-eps-converted-to.p
-df Graphic file (type pdf)
-<use chapters/background_potential_fitting/plots/buckingham-eps-converted-to.pd
-f>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/buckingham
--eps-converted-to.pdf  used on input line 943.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/plots/b
+uckingham-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at
+ most version <1.5> allowed
+<chapters/interatomic_potential_fitting/plots/buckingham-eps-converted-to.pdf, 
+id=5087, 505.89pt x 361.35pt>
+File: chapters/interatomic_potential_fitting/plots/buckingham-eps-converted-to.
+pdf Graphic file (type pdf)
+<use chapters/interatomic_potential_fitting/plots/buckingham-eps-converted-to.p
+df>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/buckingha
+m-eps-converted-to.pdf  used on input line 943.
 (pdftex.def)             Requested size: 241.84843pt x 172.7513pt.
-[71 <./chapters/background_potential_fitting/plots/morse-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/plot
-s/zbl.eps>
+[71 <./chapters/interatomic_potential_fitting/plots/morse-eps-converted-to.pdf>
+]
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/plo
+ts/zbl.eps>
 (epstopdf)                    date: 2020-05-07 05:11:48
 (epstopdf)                    size: 17652 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/plot
-s/zbl-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/plo
+ts/zbl-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-05-08 02:28:03
 (epstopdf)                    size: 11048 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/plots/zbl-eps-converted-to.pdf chapters/background_potential_fittin
-g/plots/zbl.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/plots/zbl-eps-converted-to.pdf chapters/interatomic_potential_fitt
+ing/plots/zbl.eps>
 (epstopdf)             \includegraphics on input line 984.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/plots/zb
-l-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
-rsion <1.5> allowed
-<chapters/background_potential_fitting/plots/zbl-eps-converted-to.pdf, id=5129,
- 505.89pt x 361.35pt>
-File: chapters/background_potential_fitting/plots/zbl-eps-converted-to.pdf Grap
-hic file (type pdf)
-<use chapters/background_potential_fitting/plots/zbl-eps-converted-to.pdf>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/zbl-eps-co
-nverted-to.pdf  used on input line 984.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/plots/z
+bl-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<chapters/interatomic_potential_fitting/plots/zbl-eps-converted-to.pdf, id=5129
+, 505.89pt x 361.35pt>
+File: chapters/interatomic_potential_fitting/plots/zbl-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use chapters/interatomic_potential_fitting/plots/zbl-eps-converted-to.pdf>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/zbl-eps-c
+onverted-to.pdf  used on input line 984.
 (pdftex.def)             Requested size: 241.84843pt x 172.7513pt.
-[72 <./chapters/background_potential_fitting/plots/buckingham-eps-converted-to.
-pdf>] [73 <./chapters/background_potential_fitting/plots/zbl-eps-converted-to.p
-df>] [74] [75] [76] [77] [78]
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/plot
-s/spline.eps>
+[72 <./chapters/interatomic_potential_fitting/plots/buckingham-eps-converted-to
+.pdf>] [73 <./chapters/interatomic_potential_fitting/plots/zbl-eps-converted-to
+.pdf>] [74] [75] [76] [77] [78]
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/plo
+ts/spline.eps>
 (epstopdf)                    date: 2020-06-02 19:57:25
 (epstopdf)                    size: 24270 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/plot
-s/spline-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/plo
+ts/spline-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-06-03 03:53:04
 (epstopdf)                    size: 14506 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/plots/spline-eps-converted-to.pdf chapters/background_potential_fit
-ting/plots/spline.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/plots/spline-eps-converted-to.pdf chapters/interatomic_potential_f
+itting/plots/spline.eps>
 (epstopdf)             \includegraphics on input line 1329.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/plots/sp
-line-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
- version <1.5> allowed
-<chapters/background_potential_fitting/plots/spline-eps-converted-to.pdf, id=53
-11, 505.89pt x 361.35pt>
-File: chapters/background_potential_fitting/plots/spline-eps-converted-to.pdf G
-raphic file (type pdf)
-<use chapters/background_potential_fitting/plots/spline-eps-converted-to.pdf>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/spline-eps
--converted-to.pdf  used on input line 1329.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/plots/s
+pline-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mos
+t version <1.5> allowed
+<chapters/interatomic_potential_fitting/plots/spline-eps-converted-to.pdf, id=5
+311, 505.89pt x 361.35pt>
+File: chapters/interatomic_potential_fitting/plots/spline-eps-converted-to.pdf 
+Graphic file (type pdf)
+<use chapters/interatomic_potential_fitting/plots/spline-eps-converted-to.pdf>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/spline-ep
+s-converted-to.pdf  used on input line 1329.
 (pdftex.def)             Requested size: 354.12057pt x 252.94327pt.
-[79 <./chapters/background_potential_fitting/plots/spline-eps-converted-to.pdf>
-] [80] [81]
+[79 <./chapters/interatomic_potential_fitting/plots/spline-eps-converted-to.pdf
+>] [80] [81]
 
 LaTeX Warning: Reference `' on page 82 undefined on input line 1465.
 
@@ -4112,21 +4113,21 @@ LaTeX Warning: Reference `mishinTransforms' on page 83 undefined on input line
 1551.
 
 [83]
-<chapters/background_potential_fitting/images/puo2damage.png, id=5421, 764.1046
-9pt x 387.69844pt>
-File: chapters/background_potential_fitting/images/puo2damage.png Graphic file 
-(type png)
-<use chapters/background_potential_fitting/images/puo2damage.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/puo2damag
-e.png  used on input line 1605.
+<chapters/interatomic_potential_fitting/images/puo2damage.png, id=5421, 764.104
+69pt x 387.69844pt>
+File: chapters/interatomic_potential_fitting/images/puo2damage.png Graphic file
+ (type png)
+<use chapters/interatomic_potential_fitting/images/puo2damage.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/puo2dama
+ge.png  used on input line 1605.
 (pdftex.def)             Requested size: 237.01411pt x 120.25626pt.
-<chapters/background_potential_fitting/images/puo-sputtering.png, id=5426, 545.
-78906pt x 459.96844pt>
-File: chapters/background_potential_fitting/images/puo-sputtering.png Graphic f
-ile (type png)
-<use chapters/background_potential_fitting/images/puo-sputtering.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/puo-sputt
-ering.png  used on input line 1610.
+<chapters/interatomic_potential_fitting/images/puo-sputtering.png, id=5426, 545
+.78906pt x 459.96844pt>
+File: chapters/interatomic_potential_fitting/images/puo-sputtering.png Graphic 
+file (type png)
+<use chapters/interatomic_potential_fitting/images/puo-sputtering.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/puo-sput
+tering.png  used on input line 1610.
 (pdftex.def)             Requested size: 237.01411pt x 199.74776pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1611--1611
@@ -4134,92 +4135,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 1611--1611
  []
 
 [84]
-<chapters/background_potential_fitting/images/moldy1.png, id=5441, 499.11469pt 
-x 556.32843pt>
-File: chapters/background_potential_fitting/images/moldy1.png Graphic file (typ
-e png)
-<use chapters/background_potential_fitting/images/moldy1.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/moldy1.pn
-g  used on input line 1622.
+<chapters/interatomic_potential_fitting/images/moldy1.png, id=5441, 499.11469pt
+ x 556.32843pt>
+File: chapters/interatomic_potential_fitting/images/moldy1.png Graphic file (ty
+pe png)
+<use chapters/interatomic_potential_fitting/images/moldy1.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/moldy1.p
+ng  used on input line 1622.
 (pdftex.def)             Requested size: 237.01411pt x 264.18234pt.
-<chapters/background_potential_fitting/images/moldy2.png, id=5444, 487.8225pt x
- 474.27188pt>
-File: chapters/background_potential_fitting/images/moldy2.png Graphic file (typ
-e png)
-<use chapters/background_potential_fitting/images/moldy2.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/moldy2.pn
-g  used on input line 1627.
+<chapters/interatomic_potential_fitting/images/moldy2.png, id=5444, 487.8225pt 
+x 474.27188pt>
+File: chapters/interatomic_potential_fitting/images/moldy2.png Graphic file (ty
+pe png)
+<use chapters/interatomic_potential_fitting/images/moldy2.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/moldy2.p
+ng  used on input line 1627.
 (pdftex.def)             Requested size: 237.01411pt x 230.43408pt.
-<chapters/background_potential_fitting/images/dlpolycascade.png, id=5454, 421.5
-75pt x 310.15875pt>
-File: chapters/background_potential_fitting/images/dlpolycascade.png Graphic fi
-le (type png)
-<use chapters/background_potential_fitting/images/dlpolycascade.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/dlpolycas
-cade.png  used on input line 1642.
+<chapters/interatomic_potential_fitting/images/dlpolycascade.png, id=5454, 421.
+575pt x 310.15875pt>
+File: chapters/interatomic_potential_fitting/images/dlpolycascade.png Graphic f
+ile (type png)
+<use chapters/interatomic_potential_fitting/images/dlpolycascade.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/dlpolyca
+scade.png  used on input line 1642.
 (pdftex.def)             Requested size: 237.01411pt x 174.37868pt.
 
 Underfull \hbox (badness 4467) in paragraph at lines 1643--1643
 []\OT1/cmr/m/n/9 Figure 5.13: |100keV cas-cade af-ter 50ps in TiO2
  []
 
-[85 <./chapters/background_potential_fitting/images/puo2damage.png (PNG copy)> 
-<./chapters/background_potential_fitting/images/puo-sputtering.png (PNG copy)> 
-<./chapters/background_potential_fitting/images/moldy1.png (PNG copy)> <./chapt
-ers/background_potential_fitting/images/moldy2.png (PNG copy)>]
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/plot
-s/atom_neighbours.eps>
+[85 <./chapters/interatomic_potential_fitting/images/puo2damage.png (PNG copy)>
+ <./chapters/interatomic_potential_fitting/images/puo-sputtering.png (PNG copy)
+> <./chapters/interatomic_potential_fitting/images/moldy1.png (PNG copy)> <./ch
+apters/interatomic_potential_fitting/images/moldy2.png (PNG copy)>]
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/plo
+ts/atom_neighbours.eps>
 (epstopdf)                    date: 2020-08-09 03:01:25
 (epstopdf)                    size: 186007 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/plot
-s/atom_neighbours-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/plo
+ts/atom_neighbours-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-08-09 04:58:55
 (epstopdf)                    size: 27744 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/plots/atom_neighbours-eps-converted-to.pdf chapters/background_pote
-ntial_fitting/plots/atom_neighbours.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/plots/atom_neighbours-eps-converted-to.pdf chapters/interatomic_po
+tential_fitting/plots/atom_neighbours.eps>
 (epstopdf)             \includegraphics on input line 1672.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/plots/at
-om_neighbours-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, bu
-t at most version <1.5> allowed
-<chapters/background_potential_fitting/plots/atom_neighbours-eps-converted-to.p
-df, id=5467, 867.24pt x 650.43pt>
-File: chapters/background_potential_fitting/plots/atom_neighbours-eps-converted
--to.pdf Graphic file (type pdf)
-<use chapters/background_potential_fitting/plots/atom_neighbours-eps-converted-
-to.pdf>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/atom_neigh
-bours-eps-converted-to.pdf  used on input line 1672.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/plots/a
+tom_neighbours-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, b
+ut at most version <1.5> allowed
+<chapters/interatomic_potential_fitting/plots/atom_neighbours-eps-converted-to.
+pdf, id=5467, 867.24pt x 650.43pt>
+File: chapters/interatomic_potential_fitting/plots/atom_neighbours-eps-converte
+d-to.pdf Graphic file (type pdf)
+<use chapters/interatomic_potential_fitting/plots/atom_neighbours-eps-converted
+-to.pdf>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/atom_neig
+hbours-eps-converted-to.pdf  used on input line 1672.
 (pdftex.def)             Requested size: 346.88986pt x 260.16739pt.
-[86 <./chapters/background_potential_fitting/images/dlpolycascade.png (PNG copy
-)>] [87 <./chapters/background_potential_fitting/plots/atom_neighbours-eps-conv
-erted-to.pdf>]
-<chapters/background_potential_fitting/images/domain-decomp.png, id=5523, 1230.
-09563pt x 311.66437pt>
-File: chapters/background_potential_fitting/images/domain-decomp.png Graphic fi
-le (type png)
-<use chapters/background_potential_fitting/images/domain-decomp.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/domain-de
-comp.png  used on input line 1786.
+[86 <./chapters/interatomic_potential_fitting/images/dlpolycascade.png (PNG cop
+y)>] [87 <./chapters/interatomic_potential_fitting/plots/atom_neighbours-eps-co
+nverted-to.pdf>]
+<chapters/interatomic_potential_fitting/images/domain-decomp.png, id=5523, 1230
+.09563pt x 311.66437pt>
+File: chapters/interatomic_potential_fitting/images/domain-decomp.png Graphic f
+ile (type png)
+<use chapters/interatomic_potential_fitting/images/domain-decomp.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/domain-d
+ecomp.png  used on input line 1786.
 (pdftex.def)             Requested size: 290.22107pt x 73.53122pt.
- [88] [89 <./chapters/background_potential_fitting/images/domain-decomp.png>] [
-90] [91]
-<chapters/background_potential_fitting/plots/fe500kev.png, id=5673, 530.98375pt
- x 478.78876pt>
-File: chapters/background_potential_fitting/plots/fe500kev.png Graphic file (ty
-pe png)
-<use chapters/background_potential_fitting/plots/fe500kev.png>
-Package pdftex.def Info: chapters/background_potential_fitting/plots/fe500kev.p
-ng  used on input line 1981.
+ [88] [89 <./chapters/interatomic_potential_fitting/images/domain-decomp.png>] 
+[90] [91]
+<chapters/interatomic_potential_fitting/plots/fe500kev.png, id=5673, 530.98375p
+t x 478.78876pt>
+File: chapters/interatomic_potential_fitting/plots/fe500kev.png Graphic file (t
+ype png)
+<use chapters/interatomic_potential_fitting/plots/fe500kev.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/plots/fe500kev.
+png  used on input line 1981.
 (pdftex.def)             Requested size: 290.22107pt x 261.69814pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[92] [93 <./chapters/background_potential_fitting/plots/fe500kev.png>]
+[92] [93 <./chapters/interatomic_potential_fitting/plots/fe500kev.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\acrshort' on input line 2071.
@@ -4267,102 +4268,102 @@ Overfull \hbox (57.58931pt too wide) in paragraph at lines 2394--2395
  []
 
 [98] [99]
-<chapters/background_potential_fitting/images/bcc_wcs_bz.png, id=5796, 591.7106
-3pt x 431.36156pt>
-File: chapters/background_potential_fitting/images/bcc_wcs_bz.png Graphic file 
-(type png)
-<use chapters/background_potential_fitting/images/bcc_wcs_bz.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/bcc_wcs_b
-z.png  used on input line 2502.
+<chapters/interatomic_potential_fitting/images/bcc_wcs_bz.png, id=5796, 591.710
+63pt x 431.36156pt>
+File: chapters/interatomic_potential_fitting/images/bcc_wcs_bz.png Graphic file
+ (type png)
+<use chapters/interatomic_potential_fitting/images/bcc_wcs_bz.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/bcc_wcs_
+bz.png  used on input line 2502.
 (pdftex.def)             Requested size: 237.01411pt x 172.7851pt.
-<chapters/background_potential_fitting/images/fcc_wcs_bz.png, id=5801, 668.4975
-pt x 432.11438pt>
-File: chapters/background_potential_fitting/images/fcc_wcs_bz.png Graphic file 
-(type png)
-<use chapters/background_potential_fitting/images/fcc_wcs_bz.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/fcc_wcs_b
-z.png  used on input line 2507.
+<chapters/interatomic_potential_fitting/images/fcc_wcs_bz.png, id=5801, 668.497
+5pt x 432.11438pt>
+File: chapters/interatomic_potential_fitting/images/fcc_wcs_bz.png Graphic file
+ (type png)
+<use chapters/interatomic_potential_fitting/images/fcc_wcs_bz.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/fcc_wcs_
+bz.png  used on input line 2507.
 (pdftex.def)             Requested size: 237.01411pt x 153.20715pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\Acrlong' on input line 2520.
 
-[100 <./chapters/background_potential_fitting/images/bcc_wcs_bz.png (PNG copy)>
- <./chapters/background_potential_fitting/images/fcc_wcs_bz.png (PNG copy)>]
+[100 <./chapters/interatomic_potential_fitting/images/bcc_wcs_bz.png (PNG copy)
+> <./chapters/interatomic_potential_fitting/images/fcc_wcs_bz.png (PNG copy)>]
 [101]
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/imag
-es/layer0000.eps>
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/ima
+ges/layer0000.eps>
 (epstopdf)                    date: 2021-06-18 02:02:59
 (epstopdf)                    size: 4000947 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/imag
-es/layer0000-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/ima
+ges/layer0000-eps-converted-to.pdf>
 (epstopdf)                    date: 2021-07-10 14:29:31
 (epstopdf)                    size: 787398 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/images/layer0000-eps-converted-to.pdf chapters/background_potential
-_fitting/images/layer0000.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/images/layer0000-eps-converted-to.pdf chapters/interatomic_potenti
+al_fitting/images/layer0000.eps>
 (epstopdf)             \includegraphics on input line 2633.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/images/l
-ayer0000-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at 
-most version <1.5> allowed
-<chapters/background_potential_fitting/images/layer0000-eps-converted-to.pdf, i
-d=5861, 867.24pt x 578.16pt>
-File: chapters/background_potential_fitting/images/layer0000-eps-converted-to.p
-df Graphic file (type pdf)
-<use chapters/background_potential_fitting/images/layer0000-eps-converted-to.pd
-f>
-Package pdftex.def Info: chapters/background_potential_fitting/images/layer0000
--eps-converted-to.pdf  used on input line 2633.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/images/
+layer0000-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at
+ most version <1.5> allowed
+<chapters/interatomic_potential_fitting/images/layer0000-eps-converted-to.pdf, 
+id=5861, 867.24pt x 578.16pt>
+File: chapters/interatomic_potential_fitting/images/layer0000-eps-converted-to.
+pdf Graphic file (type pdf)
+<use chapters/interatomic_potential_fitting/images/layer0000-eps-converted-to.p
+df>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/layer000
+0-eps-converted-to.pdf  used on input line 2633.
 (pdftex.def)             Requested size: 237.01411pt x 158.00201pt.
-Package epstopdf Info: Source file: <chapters/background_potential_fitting/imag
-es/layer0050.eps>
+Package epstopdf Info: Source file: <chapters/interatomic_potential_fitting/ima
+ges/layer0050.eps>
 (epstopdf)                    date: 2021-06-18 02:03:25
 (epstopdf)                    size: 3996623 bytes
-(epstopdf)             Output file: <chapters/background_potential_fitting/imag
-es/layer0050-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/interatomic_potential_fitting/ima
+ges/layer0050-eps-converted-to.pdf>
 (epstopdf)                    date: 2021-07-10 14:29:34
 (epstopdf)                    size: 786541 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_potent
-ial_fitting/images/layer0050-eps-converted-to.pdf chapters/background_potential
-_fitting/images/layer0050.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/interatomic_poten
+tial_fitting/images/layer0050-eps-converted-to.pdf chapters/interatomic_potenti
+al_fitting/images/layer0050.eps>
 (epstopdf)             \includegraphics on input line 2638.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_potential_fitting/images/l
-ayer0050-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at 
-most version <1.5> allowed
-<chapters/background_potential_fitting/images/layer0050-eps-converted-to.pdf, i
-d=5862, 867.24pt x 578.16pt>
-File: chapters/background_potential_fitting/images/layer0050-eps-converted-to.p
-df Graphic file (type pdf)
-<use chapters/background_potential_fitting/images/layer0050-eps-converted-to.pd
-f>
-Package pdftex.def Info: chapters/background_potential_fitting/images/layer0050
--eps-converted-to.pdf  used on input line 2638.
+pdfTeX warning: pdflatex (file ./chapters/interatomic_potential_fitting/images/
+layer0050-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at
+ most version <1.5> allowed
+<chapters/interatomic_potential_fitting/images/layer0050-eps-converted-to.pdf, 
+id=5862, 867.24pt x 578.16pt>
+File: chapters/interatomic_potential_fitting/images/layer0050-eps-converted-to.
+pdf Graphic file (type pdf)
+<use chapters/interatomic_potential_fitting/images/layer0050-eps-converted-to.p
+df>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/layer005
+0-eps-converted-to.pdf  used on input line 2638.
 (pdftex.def)             Requested size: 237.01411pt x 158.00201pt.
-[102 <./chapters/background_potential_fitting/images/layer0000-eps-converted-to
-.pdf> <./chapters/background_potential_fitting/images/layer0050-eps-converted-t
-o.pdf>] [103] [104]
+[102 <./chapters/interatomic_potential_fitting/images/layer0000-eps-converted-t
+o.pdf> <./chapters/interatomic_potential_fitting/images/layer0050-eps-converted
+-to.pdf>] [103] [104]
 
 LaTeX Warning: Citation 'localtfraczkowski' on page 105 undefined on input line
  2838.
 
 [105]
-<chapters/background_potential_fitting/images/pp.png, id=5972, 803.25093pt x 48
-1.8pt>
-File: chapters/background_potential_fitting/images/pp.png Graphic file (type pn
-g)
-<use chapters/background_potential_fitting/images/pp.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/pp.png  u
-sed on input line 2921.
+<chapters/interatomic_potential_fitting/images/pp.png, id=5972, 803.25093pt x 4
+81.8pt>
+File: chapters/interatomic_potential_fitting/images/pp.png Graphic file (type p
+ng)
+<use chapters/interatomic_potential_fitting/images/pp.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/pp.png  
+used on input line 2921.
 (pdftex.def)             Requested size: 193.47578pt x 116.04605pt.
- [106 <./chapters/background_potential_fitting/images/pp.png (PNG copy)>]
-[107]
+ [106 <./chapters/interatomic_potential_fitting/images/pp.png (PNG copy)>] [107
+]
 
 LaTeX Warning: Reference `pbesuccessfailure' on page 108 undefined on input lin
 e 3029.
@@ -4377,46 +4378,46 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [108] [109]
-<chapters/background_potential_fitting/images/energy-bands-hyperphysics.png, id
-=6139, 513.92pt x 257.96375pt>
-File: chapters/background_potential_fitting/images/energy-bands-hyperphysics.pn
-g Graphic file (type png)
-<use chapters/background_potential_fitting/images/energy-bands-hyperphysics.png
->
-Package pdftex.def Info: chapters/background_potential_fitting/images/energy-ba
-nds-hyperphysics.png  used on input line 3190.
+<chapters/interatomic_potential_fitting/images/energy-bands-hyperphysics.png, i
+d=6139, 513.92pt x 257.96375pt>
+File: chapters/interatomic_potential_fitting/images/energy-bands-hyperphysics.p
+ng Graphic file (type png)
+<use chapters/interatomic_potential_fitting/images/energy-bands-hyperphysics.pn
+g>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/energy-b
+ands-hyperphysics.png  used on input line 3190.
 (pdftex.def)             Requested size: 220.07904pt x 110.46957pt.
  [110]
-<chapters/background_potential_fitting/images/fermiDirac.jpg, id=6151, 501.875p
-t x 270.00874pt>
-File: chapters/background_potential_fitting/images/fermiDirac.jpg Graphic file 
-(type jpg)
-<use chapters/background_potential_fitting/images/fermiDirac.jpg>
-Package pdftex.def Info: chapters/background_potential_fitting/images/fermiDira
-c.jpg  used on input line 3209.
+<chapters/interatomic_potential_fitting/images/fermiDirac.jpg, id=6151, 501.875
+pt x 270.00874pt>
+File: chapters/interatomic_potential_fitting/images/fermiDirac.jpg Graphic file
+ (type jpg)
+<use chapters/interatomic_potential_fitting/images/fermiDirac.jpg>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/fermiDir
+ac.jpg  used on input line 3209.
 (pdftex.def)             Requested size: 220.07904pt x 118.40456pt.
- [111 <./chapters/background_potential_fitting/images/energy-bands-hyperphysics
-.png> <./chapters/background_potential_fitting/images/fermiDirac.jpg>]
-<chapters/background_potential_fitting/images/methfesselpaxton.png, id=6176, 23
-0.36063pt x 252.945pt>
-File: chapters/background_potential_fitting/images/methfesselpaxton.png Graphic
- file (type png)
-<use chapters/background_potential_fitting/images/methfesselpaxton.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/methfesse
-lpaxton.png  used on input line 3257.
+ [111 <./chapters/interatomic_potential_fitting/images/energy-bands-hyperphysic
+s.png> <./chapters/interatomic_potential_fitting/images/fermiDirac.jpg>]
+<chapters/interatomic_potential_fitting/images/methfesselpaxton.png, id=6176, 2
+30.36063pt x 252.945pt>
+File: chapters/interatomic_potential_fitting/images/methfesselpaxton.png Graphi
+c file (type png)
+<use chapters/interatomic_potential_fitting/images/methfesselpaxton.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/methfess
+elpaxton.png  used on input line 3257.
 (pdftex.def)             Requested size: 251.52097pt x 276.17932pt.
- [112 <./chapters/background_potential_fitting/images/methfesselpaxton.png (PNG
- copy)>]
-<chapters/background_potential_fitting/images/marzarismearing.png, id=6189, 517
-.18219pt x 516.42938pt>
-File: chapters/background_potential_fitting/images/marzarismearing.png Graphic 
-file (type png)
-<use chapters/background_potential_fitting/images/marzarismearing.png>
-Package pdftex.def Info: chapters/background_potential_fitting/images/marzarism
-earing.png  used on input line 3286.
+ [112 <./chapters/interatomic_potential_fitting/images/methfesselpaxton.png (PN
+G copy)>]
+<chapters/interatomic_potential_fitting/images/marzarismearing.png, id=6189, 51
+7.18219pt x 516.42938pt>
+File: chapters/interatomic_potential_fitting/images/marzarismearing.png Graphic
+ file (type png)
+<use chapters/interatomic_potential_fitting/images/marzarismearing.png>
+Package pdftex.def Info: chapters/interatomic_potential_fitting/images/marzaris
+mearing.png  used on input line 3286.
 (pdftex.def)             Requested size: 188.64192pt x 188.36513pt.
- [113 <./chapters/background_potential_fitting/images/marzarismearing.png (PNG 
-copy)>] [114]) [115]
+ [113 <./chapters/interatomic_potential_fitting/images/marzarismearing.png (PNG
+ copy)>] [114]) [115]
 \openout2 = `chapters/methodology_activity/methodology_activity.aux'.
 
 
@@ -11267,7 +11268,7 @@ on.aux) (./chapters/austenitic_steels_in_nuclear/bcc.aux)
 (./chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.aux)
 (./chapters/isotope_activation_and_radioactive_decay/isotope_activation_and_rad
 ioactive_decay.aux)
-(./chapters/background_potential_fitting/background_potential_fitting.aux)
+(./chapters/interatomic_potential_fitting/interatomic_potential_fitting.aux)
 (./chapters/methodology_activity/methodology_activity.aux)
 (./chapters/results_activity_code/activity_code.aux)
 (./chapters/methodology_interatomic_potentials/methodology_ip.aux)
@@ -11300,7 +11301,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
  73580 strings out of 481239
- 1628863 string characters out of 5920377
+ 1629028 string characters out of 5920377
  2956708 words of memory out of 5000000
  80298 multiletter control sequences out of 15000+600000
  546877 words of font info for 82 fonts, out of 8000000 for 9000
@@ -11341,7 +11342,7 @@ sbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/txfonts/txmia.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/zapfding/uzdr.pfb>
-Output written on main.pdf (508 pages, 26880232 bytes).
+Output written on main.pdf (508 pages, 26880272 bytes).
 PDF statistics:
  22367 PDF objects out of 26593 (max. 8388607)
  14959 compressed objects within 150 object streams
