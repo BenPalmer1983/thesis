@@ -250,43 +250,39 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Work flow used to fit potentials\relax }}{148}{figure.caption.194}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Work flow used to fit potentials\relax }}{149}{figure.caption.194}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Effect of randomly perturbing atom locations\relax }}{155}{figure.caption.198}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Effect of randomly perturbing atom locations\relax }}{156}{figure.caption.198}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces A sample of configurations used for binary alloy \acrshort {dft} calculations for Fe-Pd and Fe-Ru.\relax }}{155}{figure.caption.199}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces A sample of configurations used for binary alloy \acrshort {dft} calculations for Fe-Pd and Fe-Ru.\relax }}{156}{figure.caption.199}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Fe-Ru calculations failed to converge in 100 iterations when plain mixing was used, but achieved convergence in under 40 iterations with local-TF convergence\relax }}{158}{figure.caption.200}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Fe-Ru calculations failed to converge in 100 iterations when plain mixing was used, but achieved convergence in under 40 iterations with local-TF convergence\relax }}{159}{figure.caption.200}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces DIRAC calculated radial electron density for Iron\relax }}{161}{figure.caption.205}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces DIRAC calculated radial electron density for Iron\relax }}{162}{figure.caption.205}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces DIRAC calculated radial electron density for Palladium\relax }}{161}{figure.caption.205}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces DIRAC calculated radial electron density for Palladium\relax }}{162}{figure.caption.205}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Equation of state fit through data points for Chromium BCC with no magnetism, ferromagnetic and antiferromagnetic configurations\relax }}{167}{figure.caption.207}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Equation of state fit through data points for Chromium BCC with no magnetism, ferromagnetic and antiferromagnetic configurations\relax }}{167}{figure.caption.207}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Equation of state fit through data points for Iron BCC (no magnetism, ferromagnetic) and Iron FCC (no magnetism and antiferromagnetic)\relax }}{168}{figure.caption.209}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Equation of state fit through data points for Iron BCC (no magnetism, ferromagnetic) and Iron FCC (no magnetism and antiferromagnetic)\relax }}{168}{figure.caption.209}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Magnetic alignment along the z-axis, antiferromagnetic Fe fcc\relax }}{171}{figure.caption.214}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Magnetic alignment along the z-axis, antiferromagnetic Fe fcc\relax }}{171}{figure.caption.214}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Isolated atom energies as cell size increase\relax }}{175}{figure.caption.218}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Isolated atom energies as cell size increase\relax }}{175}{figure.caption.218}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Parameter Breed Event\relax }}{181}{figure.caption.228}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Parameter Breed Event\relax }}{181}{figure.caption.228}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv1coh} and \ref {fepdv1se}\relax }}{191}{figure.caption.232}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv1coh} and \ref {fepdv1se}\relax }}{191}{figure.caption.232}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv2coh} and \ref {fepdv2se}\relax }}{192}{figure.caption.233}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv2coh} and \ref {fepdv2se}\relax }}{192}{figure.caption.233}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.1}{\ignorespaces DFT Aluminium Cohesive Energy\relax }}{195}{figure.caption.234}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces DFT Aluminium Cohesive Energy\relax }}{195}{figure.caption.234}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11.2}{\ignorespaces DFT Aluminium Surface Energy\relax }}{195}{figure.caption.234}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces DFT Aluminium Surface Energy\relax }}{195}{figure.caption.234}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

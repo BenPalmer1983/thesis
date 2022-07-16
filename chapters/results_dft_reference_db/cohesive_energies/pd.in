@@ -1,5 +1,0 @@
-output file_type='eps' name='pd_cohesive_energy.eps'
-data1 visible=True file="pd_bcc.txt" sep="," line='none' label="BCC" fit="lagrange" fitline='solid' fitcolour='match'
-data2 visible=True file="pd_fcc.txt" sep="," line='none' label="FCC" fit="lagrange" fitline='solid' fitcolour='match'
-data3 visible=True file="pd_sc.txt" sep="," line='none' label="SC" fit="lagrange" fitline='solid' fitcolour='match'
-plot xlabel='Lattice Constant (angs)' ylabel='Energy (eV)' title='Palladium: Cohesive Energy Curve' width=6 height=4 dpi=144 palette="tab" legend=True fitpoints=101

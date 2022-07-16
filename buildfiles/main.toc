@@ -436,231 +436,227 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Interatomic Potential Fitting}{147}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Experimental \& DFT Bulk Property Data}{149}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Experimental \& DFT Bulk Property Data}{150}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}DFT Calculations}{149}{section.7.3}%
+\contentsline {section}{\numberline {7.3}DFT Calculations}{150}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}Quantum Espresso}{149}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.1}Quantum Espresso}{150}{subsection.7.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}Pseudopotential Selection}{149}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.2}Pseudopotential Selection}{150}{subsection.7.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.3}Smearing Type}{150}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.3}Smearing Type}{151}{subsection.7.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Parameter Convergence}{151}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Parameter Convergence}{152}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.1}Ecutwfc and Ecutrho}{151}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.1}Ecutwfc and Ecutrho}{152}{subsection.7.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.2}K-Points and Smearing Value}{152}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.2}K-Points and Smearing Value}{153}{subsection.7.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.3}Automating Convergence}{152}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.3}Automating Convergence}{153}{subsection.7.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Bulk Property Calculations}{152}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Bulk Property Calculations}{153}{section.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.1}QEEOS Python Program}{152}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.1}QEEOS Python Program}{153}{subsection.7.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.2}DFT Calculations}{152}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.2}DFT Calculations}{153}{subsection.7.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}DFT Reference Database}{153}{section.7.6}%
+\contentsline {section}{\numberline {7.6}DFT Reference Database}{154}{section.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.1}Bulk Property Calculations}{153}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.1}Bulk Property Calculations}{154}{subsection.7.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.2}Isolated Atom Settings}{153}{subsection.7.6.2}%
+\contentsline {subsection}{\numberline {7.6.2}Isolated Atom Settings}{154}{subsection.7.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.3}Pure Element Defects}{153}{subsection.7.6.3}%
+\contentsline {subsection}{\numberline {7.6.3}Pure Element Defects}{154}{subsection.7.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.4}Alloy Atom Positions for Pd and Ru}{154}{subsection.7.6.4}%
+\contentsline {subsection}{\numberline {7.6.4}Alloy Atom Positions for Pd and Ru}{155}{subsection.7.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.5}Configurations with Randomised Positions}{154}{subsection.7.6.5}%
+\contentsline {subsection}{\numberline {7.6.5}Configurations with Randomised Positions}{155}{subsection.7.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.6}Surface Energy Calculations}{155}{subsection.7.6.6}%
+\contentsline {subsection}{\numberline {7.6.6}Surface Energy Calculations}{156}{subsection.7.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.7}Defects in Fe-Pd and Fe-Ru Alloys}{156}{subsection.7.6.7}%
+\contentsline {subsection}{\numberline {7.6.7}Defects in Fe-Pd and Fe-Ru Alloys}{157}{subsection.7.6.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.7}Issues to Overcome}{156}{section.7.7}%
+\contentsline {section}{\numberline {7.7}Issues to Overcome}{157}{section.7.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.7.1}Insufficient Memory}{156}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.1}Insufficient Memory}{157}{subsection.7.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.7.2}Scratch Restrictions}{156}{subsection.7.7.2}%
+\contentsline {subsection}{\numberline {7.7.2}Scratch Restrictions}{157}{subsection.7.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.7.3}Caching Repeat Calculations}{157}{subsection.7.7.3}%
+\contentsline {subsection}{\numberline {7.7.3}Caching Repeat Calculations}{158}{subsection.7.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.7.4}Not Straying Too Far From Reality}{157}{subsection.7.7.4}%
+\contentsline {subsection}{\numberline {7.7.4}Not Straying Too Far From Reality}{158}{subsection.7.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.7.5}Adjustment of DFT Parameters}{158}{subsection.7.7.5}%
+\contentsline {subsection}{\numberline {7.7.5}Adjustment of DFT Parameters}{159}{subsection.7.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.7.6}Trial Parameters for Iron with and Octahedral Defect}{158}{subsection.7.7.6}%
+\contentsline {subsection}{\numberline {7.7.6}Trial Parameters for Iron with and Octahedral Defect}{159}{subsection.7.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.8}EAMPA}{159}{section.7.8}%
+\contentsline {section}{\numberline {7.8}EAMPA}{160}{section.7.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.9}Potential Transferability}{160}{section.7.9}%
+\contentsline {section}{\numberline {7.9}Potential Transferability}{161}{section.7.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.10}Fitting Potentials with EAMPA}{161}{section.7.10}%
+\contentsline {section}{\numberline {7.10}Fitting Potentials with EAMPA}{162}{section.7.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.10.1}Choice of Function and Functional}{161}{subsection.7.10.1}%
+\contentsline {subsection}{\numberline {7.10.1}Choice of Function and Functional}{162}{subsection.7.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.10.2}Searching Parameter Space}{162}{subsection.7.10.2}%
+\contentsline {subsection}{\numberline {7.10.2}Searching Parameter Space}{163}{subsection.7.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.11}DL\_POLY Contribution}{163}{section.7.11}%
+\contentsline {section}{\numberline {7.11}DL\_POLY Contribution}{164}{section.7.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}DFT Reference DB}{164}{chapter.8}%
+\contentsline {section}{\numberline {7.12}Introduction}{164}{section.7.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Introduction}{164}{section.8.1}%
+\contentsline {section}{\numberline {7.13}QECONVERGE Python Code}{165}{section.7.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}QECONVERGE Python Code}{164}{section.8.2}%
+\contentsline {subsection}{\numberline {7.13.1}Purpose of Code}{165}{subsection.7.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}Purpose of Code}{164}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {7.13.2}Source Code and Instructions}{166}{subsection.7.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Source Code and Instructions}{165}{subsection.8.2.2}%
+\contentsline {section}{\numberline {7.14}DFT Parameter Convergence}{166}{section.7.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}DFT Parameter Convergence}{165}{section.8.3}%
+\contentsline {subsection}{\numberline {7.14.1}Pseudopotential}{166}{subsection.7.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.1}Pseudopotential}{165}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {7.14.2}Collinear Spin Calculations}{167}{subsection.7.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.2}Collinear Spin Calculations}{166}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {7.14.3}Convergence Results}{168}{subsection.7.14.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.3}Convergence Results}{168}{subsection.8.3.3}%
+\contentsline {section}{\numberline {7.15}Preliminary Calculations}{169}{section.7.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Preliminary Calculations}{169}{section.8.4}%
+\contentsline {subsection}{\numberline {7.15.1}Relaxed Crystal Calculations}{169}{subsection.7.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4.1}Relaxed Crystal Calculations}{169}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {7.15.2}Relaxed FCC Iron}{171}{subsection.7.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4.2}Relaxed FCC Iron}{171}{subsection.8.4.2}%
+\contentsline {section}{\numberline {7.16}QEEOS Python Code}{171}{section.7.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}QEEOS Python Code}{171}{section.8.5}%
+\contentsline {subsection}{\numberline {7.16.1}Purpose of Code}{171}{subsection.7.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5.1}Purpose of Code}{171}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {7.16.2}Source Code and Instructions}{172}{subsection.7.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5.2}Source Code and Instructions}{172}{subsection.8.5.2}%
+\contentsline {section}{\numberline {7.17}Calculated Elastic Properties}{172}{section.7.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.6}Calculated Elastic Properties}{172}{section.8.6}%
+\contentsline {subsection}{\numberline {7.17.1}FCC Aluminium}{172}{subsection.7.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6.1}FCC Aluminium}{172}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {7.17.2}BCC Iron}{172}{subsection.7.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6.2}BCC Iron}{172}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {7.17.3}FCC Iron}{173}{subsection.7.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6.3}FCC Iron}{173}{subsection.8.6.3}%
+\contentsline {subsection}{\numberline {7.17.4}FCC Palladium}{173}{subsection.7.17.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6.4}FCC Palladium}{173}{subsection.8.6.4}%
+\contentsline {subsection}{\numberline {7.17.5}FCC Ruthenium}{174}{subsection.7.17.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6.5}FCC Ruthenium}{174}{subsection.8.6.5}%
+\contentsline {section}{\numberline {7.18}DFT Configuration Database}{175}{section.7.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.7}DFT Configuration Database}{175}{section.8.7}%
+\contentsline {subsection}{\numberline {7.18.1}Calibrating the Cohesive Energies}{175}{subsection.7.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.7.1}Calibrating the Cohesive Energies}{175}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {7.18.2}Complete DFT Reference Database}{175}{subsection.7.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.7.2}Complete DFT Reference Database}{175}{subsection.8.7.2}%
+\contentsline {section}{\numberline {7.19}EAMPA Python Code}{177}{section.7.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Potential Fitting}{177}{chapter.9}%
+\contentsline {subsection}{\numberline {7.19.1}Introduction}{177}{subsection.7.19.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}EAMPA Python Code}{177}{section.9.1}%
+\contentsline {subsection}{\numberline {7.19.2}Potentials}{177}{subsection.7.19.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Introduction}{177}{subsection.9.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.2}Potentials}{177}{subsection.9.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cubic and Quintic Splines}{178}{subsubsection*.222}%
+\contentsline {subsubsection}{Cubic and Quintic Splines}{177}{subsubsection*.222}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Knot to Knot Splines}{178}{subsubsection*.223}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.3}Calculations}{178}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {7.19.3}Calculations}{178}{subsection.7.19.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Energy, Force and Stress Calculations}{179}{subsubsection*.224}%
+\contentsline {subsubsection}{Energy, Force and Stress Calculations}{178}{subsubsection*.224}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Geometry and Coordinate Optimisation}{179}{subsubsection*.225}%
+\contentsline {subsubsection}{Geometry and Coordinate Optimisation}{178}{subsubsection*.225}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Bulk Property Calculations}{179}{subsubsection*.226}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{RSS - How Well The Potential Fits Experimental \& DFT Data}{179}{subsubsection*.227}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.4}Analytic Potential Fitting}{179}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {7.19.4}Analytic Potential Fitting}{179}{subsection.7.19.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.5}Overview of the Potential Fitting Process}{180}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {7.19.5}Overview of the Potential Fitting Process}{179}{subsection.7.19.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.6}Simulated Annealing}{181}{subsection.9.1.6}%
+\contentsline {subsection}{\numberline {7.19.6}Simulated Annealing}{180}{subsection.7.19.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.7}Genetic Algorithm}{181}{subsection.9.1.7}%
+\contentsline {subsection}{\numberline {7.19.7}Genetic Algorithm}{180}{subsection.7.19.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.8}Newton Gauss Optimisation}{182}{subsection.9.1.8}%
+\contentsline {subsection}{\numberline {7.19.8}Newton Gauss Optimisation}{181}{subsection.7.19.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.9}Levenberg-Marquardt Optimisation}{182}{subsection.9.1.9}%
+\contentsline {subsection}{\numberline {7.19.9}Levenberg-Marquardt Optimisation}{182}{subsection.7.19.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.10}Python SciPy Optimization Functions}{182}{subsection.9.1.10}%
+\contentsline {subsection}{\numberline {7.19.10}Python SciPy Optimization Functions}{182}{subsection.7.19.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.11}Minimising Runtime}{182}{subsection.9.1.11}%
+\contentsline {subsection}{\numberline {7.19.11}Minimising Runtime}{182}{subsection.7.19.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Python, Fortran \& OpenMP}{182}{subsubsection*.229}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Function Caching}{183}{subsubsection*.230}%
+\contentsline {subsubsection}{Function Caching}{182}{subsubsection*.230}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.12}Interpolation for Non Analytic Potentials}{183}{subsection.9.1.12}%
+\contentsline {subsection}{\numberline {7.19.12}Interpolation for Non Analytic Potentials}{183}{subsection.7.19.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.13}Effective Gauge Transforms}{184}{subsection.9.1.13}%
+\contentsline {subsection}{\numberline {7.19.13}Effective Gauge Transforms}{183}{subsection.7.19.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Iron-Palladium Potential}{184}{section.9.2}%
+\contentsline {section}{\numberline {7.20}Iron-Palladium Potential}{183}{section.7.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}Reference Database}{184}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {7.20.1}Reference Database}{183}{subsection.7.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}Potential}{184}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {7.20.2}Potential}{184}{subsection.7.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Conclusions}{185}{chapter.10}%
+\contentsline {chapter}{\numberline {8}Conclusions}{185}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}Inter Granular Stress Corrosion Cracking}{185}{section.10.1}%
+\contentsline {section}{\numberline {8.1}Inter Granular Stress Corrosion Cracking}{185}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}Predicting Ion Induced Radioactivity}{186}{section.10.2}%
+\contentsline {section}{\numberline {8.2}Predicting Ion Induced Radioactivity}{186}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.1}Modified Equation}{186}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {8.2.1}Modified Equation}{186}{subsection.8.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.2}Activity Code}{186}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {8.2.2}Activity Code}{186}{subsection.8.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.3}Iron Irradiation}{187}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {8.2.3}Iron Irradiation}{187}{subsection.8.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.4}Molybdenum Irradiation}{187}{subsection.10.2.4}%
+\contentsline {subsection}{\numberline {8.2.4}Molybdenum Irradiation}{187}{subsection.8.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.5}Beam Flux Reduction and Gamma Attenuation}{187}{subsection.10.2.5}%
+\contentsline {subsection}{\numberline {8.2.5}Beam Flux Reduction and Gamma Attenuation}{187}{subsection.8.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.6}More Experimental Data Required}{188}{subsection.10.2.6}%
+\contentsline {subsection}{\numberline {8.2.6}More Experimental Data Required}{188}{subsection.8.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.7}100DPA Activity Predictions}{188}{subsection.10.2.7}%
+\contentsline {subsection}{\numberline {8.2.7}100DPA Activity Predictions}{188}{subsection.8.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.8}Original Contribution}{188}{subsection.10.2.8}%
+\contentsline {subsection}{\numberline {8.2.8}Original Contribution}{188}{subsection.8.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}Iron-Palladium Potential}{189}{section.10.3}%
+\contentsline {section}{\numberline {8.3}Iron-Palladium Potential}{189}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.1}Restricting the Potential to Iron-Palladium}{189}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {8.3.1}Restricting the Potential to Iron-Palladium}{189}{subsection.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.2}Collinear Spin \acrshort {dft}}{189}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {8.3.2}Collinear Spin \acrshort {dft}}{189}{subsection.8.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.3}Bulk Properties of Orthorhombic \acrshort {fcc} Iron}{190}{subsection.10.3.3}%
+\contentsline {subsection}{\numberline {8.3.3}Bulk Properties of Orthorhombic \acrshort {fcc} Iron}{190}{subsection.8.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.4}Palladium-Iron Configurations as Fitting Data}{190}{subsection.10.3.4}%
+\contentsline {subsection}{\numberline {8.3.4}Palladium-Iron Configurations as Fitting Data}{190}{subsection.8.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.5}Iron-Palladium Potential}{190}{subsection.10.3.5}%
+\contentsline {subsection}{\numberline {8.3.5}Iron-Palladium Potential}{190}{subsection.8.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3.6}Original Contribution}{192}{subsection.10.3.6}%
+\contentsline {subsection}{\numberline {8.3.6}Original Contribution}{192}{subsection.8.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.4}Two-Band EAM Contribution to DL-Poly}{192}{section.10.4}%
+\contentsline {section}{\numberline {8.4}Two-Band EAM Contribution to DL-Poly}{192}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Future Work}{194}{chapter.11}%
+\contentsline {chapter}{\numberline {9}Future Work}{194}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}Activity Code}{194}{section.11.1}%
+\contentsline {section}{\numberline {9.1}Activity Code}{194}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.1}Experimental Activity Readings for Ion Irradiated Targets}{194}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {9.1.1}Experimental Activity Readings for Ion Irradiated Targets}{194}{subsection.9.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.2}Code Improvements}{194}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {9.1.2}Code Improvements}{194}{subsection.9.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.2}Potential Fitting and MD Simulations}{194}{section.11.2}%
+\contentsline {section}{\numberline {9.2}Potential Fitting and MD Simulations}{194}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.1}Larger Supercells}{195}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {9.2.1}Larger Supercells}{195}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.2}Properties of Fe-Pd Alloy}{195}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}Properties of Fe-Pd Alloy}{195}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.3}Improved Fitting: Surface Energy, Cohesive Energy and Defects}{195}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {9.2.3}Improved Fitting: Surface Energy, Cohesive Energy and Defects}{195}{subsection.9.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.4}Improved Potential: Non-Isotropic Structure}{196}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {9.2.4}Improved Potential: Non-Isotropic Structure}{196}{subsection.9.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2.5}Improved Potential: Fe-Ni-Cr-Pd}{196}{subsection.11.2.5}%
+\contentsline {subsection}{\numberline {9.2.5}Improved Potential: Fe-Ni-Cr-Pd}{196}{subsection.9.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Acknowledgements}{213}{chapter.12}%
+\contentsline {chapter}{\numberline {10}Acknowledgements}{213}{chapter.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendices}{214}{section*.240}%
 \defcounter {refsection}{0}\relax 

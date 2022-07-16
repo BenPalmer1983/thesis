@@ -68,43 +68,39 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Predicted lattice parameters based on the density, atomic number and type of structure\relax }}{149}{table.caption.195}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces Predicted lattice parameters based on the density, atomic number and type of structure\relax }}{150}{table.caption.195}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Predicted lattice parameters based on the density, atomic number and type of structure\relax }}{150}{table.caption.196}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Predicted lattice parameters based on the density, atomic number and type of structure\relax }}{151}{table.caption.196}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.3}{\ignorespaces Improving convergence SCF calculations of defects in Iron\relax }}{159}{table.caption.201}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Improving convergence SCF calculations of defects in Iron\relax }}{160}{table.caption.201}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.4}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{160}{table.caption.202}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{161}{table.caption.202}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.5}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{160}{table.caption.203}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{161}{table.caption.203}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.6}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{161}{table.caption.204}%
+\contentsline {table}{\numberline {7.6}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{162}{table.caption.204}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.7}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} - the \acrshort {dft} values were computed with a PWscf\cite {quantumespresso} using a 2x2x2 cell, 7x7x7 kpoints and ecutwfc=50\relax }}{166}{table.caption.206}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.1}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} - the \acrshort {dft} values were computed with a PWscf\cite {quantumespresso} using a 2x2x2 cell, 7x7x7 kpoints and ecutwfc=50\relax }}{166}{table.caption.206}%
+\contentsline {table}{\numberline {7.8}{\ignorespaces Chromium properties with and without collinear spin\relax }}{167}{table.caption.208}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.2}{\ignorespaces Chromium properties with and without collinear spin\relax }}{167}{table.caption.208}%
+\contentsline {table}{\numberline {7.9}{\ignorespaces \acrshort {bcc} Iron properties with and without collinear spin\relax }}{168}{table.caption.210}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.3}{\ignorespaces \acrshort {bcc} Iron properties with and without collinear spin\relax }}{168}{table.caption.210}%
+\contentsline {table}{\numberline {7.10}{\ignorespaces DFT Settings - pseudo-potentials, ecutwfc, ecutrho, k-points, smearing\relax }}{169}{table.caption.211}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.4}{\ignorespaces DFT Settings - pseudo-potentials, ecutwfc, ecutrho, k-points, smearing\relax }}{169}{table.caption.211}%
+\contentsline {table}{\numberline {7.11}{\ignorespaces DFT Settings - other settings\relax }}{169}{table.caption.212}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.5}{\ignorespaces DFT Settings - other settings\relax }}{169}{table.caption.212}%
+\contentsline {table}{\numberline {7.12}{\ignorespaces Relaxed energies calculated in Quantum Espresso\relax }}{170}{table.caption.213}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.6}{\ignorespaces Relaxed energies calculated in Quantum Espresso\relax }}{170}{table.caption.213}%
+\contentsline {table}{\numberline {7.13}{\ignorespaces Fe input parameters for fitting\relax }}{173}{table.caption.215}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.7}{\ignorespaces Fe input parameters for fitting\relax }}{173}{table.caption.215}%
+\contentsline {table}{\numberline {7.14}{\ignorespaces Pd input parameters for fitting\relax }}{174}{table.caption.216}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.8}{\ignorespaces Pd input parameters for fitting\relax }}{174}{table.caption.216}%
+\contentsline {table}{\numberline {7.15}{\ignorespaces Pd input parameters for fitting\relax }}{174}{table.caption.217}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.9}{\ignorespaces Pd input parameters for fitting\relax }}{174}{table.caption.217}%
+\contentsline {table}{\numberline {7.16}{\ignorespaces \acrshort {dft} calculated energies per atom\relax }}{175}{table.caption.219}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.10}{\ignorespaces \acrshort {dft} calculated energies per atom\relax }}{175}{table.caption.219}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.11}{\ignorespaces Relaxed energies for 32 atoms, using 9x9x9 k-points, and 256 atoms, using the gamma point. These were used with the known cohesive energy to compute the offset energy.\relax }}{175}{table.caption.220}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.17}{\ignorespaces Relaxed energies for 32 atoms, using 9x9x9 k-points, and 256 atoms, using the gamma point. These were used with the known cohesive energy to compute the offset energy.\relax }}{175}{table.caption.220}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
