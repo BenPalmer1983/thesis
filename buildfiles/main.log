@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.10)  16 JUL 2022 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.10)  16 JUL 2022 11:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2192,11 +2192,11 @@ LaTeX Warning: Label `eq:totalmicroscopic' multiply defined.
 
 LaTeX Warning: Label `eq:totalmicroscopic' multiply defined.
 
-) (./chapters/background_austenitic_steels_in_nuclear/bcc.aux)
-(./chapters/background_austenitic_steels_in_nuclear/fcc.aux)
-(./chapters/background_austenitic_steels_in_nuclear/fct.aux)
-(./chapters/background_austenitic_steels_in_nuclear/background_austenitic_steel
-s_in_nuclear.aux) (./chapters/background_activity/background_activity.aux
+) (./chapters/austenitic_steels_in_nuclear/bcc.aux)
+(./chapters/austenitic_steels_in_nuclear/fcc.aux)
+(./chapters/austenitic_steels_in_nuclear/fct.aux)
+(./chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.aux)
+(./chapters/background_activity/background_activity.aux
 
 LaTeX Warning: Label `eq:saturationactivity' multiply defined.
 
@@ -2907,11 +2907,11 @@ l.45
 ]
 Package epstopdf Info: Source file: <chapters/introduction/plots/uranium_cross_
 section/u_xs.eps>
-(epstopdf)                    date: 2022-07-16 11:02:05
+(epstopdf)                    date: 2022-07-16 11:07:10
 (epstopdf)                    size: 932090 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/uranium_cross_
 section/u_xs-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:02:08
+(epstopdf)                    date: 2022-07-16 11:07:14
 (epstopdf)                    size: 251043 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/uranium_cross_section/u_xs-eps-converted-to.pdf chapters/introduction/plots/u
@@ -2940,11 +2940,11 @@ d on input line 107.
 pdf>] [4 <./chapters/introduction/images/remaining_plants.png>]
 Package epstopdf Info: Source file: <chapters/introduction/plots/elec_demand/el
 ec_demand.eps>
-(epstopdf)                    date: 2022-07-16 11:02:05
+(epstopdf)                    date: 2022-07-16 11:07:10
 (epstopdf)                    size: 33183 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/elec_demand/el
 ec_demand-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:02:09
+(epstopdf)                    date: 2022-07-16 11:07:14
 (epstopdf)                    size: 10159 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/elec_demand/elec_demand-eps-converted-to.pdf chapters/introduction/plots/elec
@@ -3026,11 +3026,11 @@ used on input line 366.
  [12 <./chapters/introduction/images/water_phase_diagram.png>] [13]
 Package epstopdf Info: Source file: <chapters/introduction/plots/fission_spectr
 a/fission_spectra.eps>
-(epstopdf)                    date: 2022-07-16 11:02:05
+(epstopdf)                    date: 2022-07-16 11:07:10
 (epstopdf)                    size: 25110 bytes
 (epstopdf)             Output file: <chapters/introduction/plots/fission_spectr
 a/fission_spectra-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:02:12
+(epstopdf)                    date: 2022-07-16 11:07:18
 (epstopdf)                    size: 7435 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/introduction/plot
 s/fission_spectra/fission_spectra-eps-converted-to.pdf chapters/introduction/pl
@@ -3468,59 +3468,56 @@ ller1996damage.png  used on input line 648.
 (pdftex.def)             Requested size: 193.47578pt x 224.53978pt.
 ) [28 <./chapters/consequences_of_ionizing_radiation/images/stoller1996damage.p
 ng (PNG copy)>]
-\openout2 = `chapters/background_austenitic_steels_in_nuclear/bcc.aux'.
+\openout2 = `chapters/austenitic_steels_in_nuclear/bcc.aux'.
 
- (./chapters/background_austenitic_steels_in_nuclear/bcc.tex)
-\openout2 = `chapters/background_austenitic_steels_in_nuclear/fcc.aux'.
-
-
-(./chapters/background_austenitic_steels_in_nuclear/fcc.tex)
-\openout2 = `chapters/background_austenitic_steels_in_nuclear/fct.aux'.
+ (./chapters/austenitic_steels_in_nuclear/bcc.tex)
+\openout2 = `chapters/austenitic_steels_in_nuclear/fcc.aux'.
 
 
-(./chapters/background_austenitic_steels_in_nuclear/fct.tex)
-\openout2 = `chapters/background_austenitic_steels_in_nuclear/background_austen
-itic_steels_in_nuclear.aux'.
+(./chapters/austenitic_steels_in_nuclear/fcc.tex)
+\openout2 = `chapters/austenitic_steels_in_nuclear/fct.aux'.
 
 
-(./chapters/background_austenitic_steels_in_nuclear/background_austenitic_steel
-s_in_nuclear.tex
+(./chapters/austenitic_steels_in_nuclear/fct.tex)
+\openout2 = `chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear
+.aux'.
+
+
+(./chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.tex
 Chapter 3.
-<chapters/background_austenitic_steels_in_nuclear/plots/fecrschaeffler.png, id=
-4009, 543.02875pt x 483.8075pt>
-File: chapters/background_austenitic_steels_in_nuclear/plots/fecrschaeffler.png
- Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/plots/fecrschaeffler.png>
-
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/plots
-/fecrschaeffler.png  used on input line 43.
+<chapters/austenitic_steels_in_nuclear/plots/fecrschaeffler.png, id=4009, 543.0
+2875pt x 483.8075pt>
+File: chapters/austenitic_steels_in_nuclear/plots/fecrschaeffler.png Graphic fi
+le (type png)
+<use chapters/austenitic_steels_in_nuclear/plots/fecrschaeffler.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/plots/fecrschaef
+fler.png  used on input line 43.
 (pdftex.def)             Requested size: 200.25206pt x 178.41539pt.
-Package epstopdf Info: Source file: <chapters/background_austenitic_steels_in_n
-uclear/plots/FeCrNi.eps>
+Package epstopdf Info: Source file: <chapters/austenitic_steels_in_nuclear/plot
+s/FeCrNi.eps>
 (epstopdf)                    date: 2020-06-27 03:39:20
 (epstopdf)                    size: 112524 bytes
-(epstopdf)             Output file: <chapters/background_austenitic_steels_in_n
-uclear/plots/FeCrNi-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/austenitic_steels_in_nuclear/plot
+s/FeCrNi-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-06-27 03:40:20
 (epstopdf)                    size: 49212 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_austen
-itic_steels_in_nuclear/plots/FeCrNi-eps-converted-to.pdf chapters/background_au
-stenitic_steels_in_nuclear/plots/FeCrNi.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/austenitic_steels
+_in_nuclear/plots/FeCrNi-eps-converted-to.pdf chapters/austenitic_steels_in_nuc
+lear/plots/FeCrNi.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_austenitic_steels_in_nucle
-ar/plots/FeCrNi-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, 
-but at most version <1.5> allowed
-<chapters/background_austenitic_steels_in_nuclear/plots/FeCrNi-eps-converted-to
-.pdf, id=4010, 648.4225pt x 550.055pt>
-File: chapters/background_austenitic_steels_in_nuclear/plots/FeCrNi-eps-convert
-ed-to.pdf Graphic file (type pdf)
-<use chapters/background_austenitic_steels_in_nuclear/plots/FeCrNi-eps-converte
-d-to.pdf>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/plots
-/FeCrNi-eps-converted-to.pdf  used on input line 49.
+pdfTeX warning: pdflatex (file ./chapters/austenitic_steels_in_nuclear/plots/Fe
+CrNi-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
+ version <1.5> allowed
+<chapters/austenitic_steels_in_nuclear/plots/FeCrNi-eps-converted-to.pdf, id=40
+10, 648.4225pt x 550.055pt>
+File: chapters/austenitic_steels_in_nuclear/plots/FeCrNi-eps-converted-to.pdf G
+raphic file (type pdf)
+<use chapters/austenitic_steels_in_nuclear/plots/FeCrNi-eps-converted-to.pdf>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/plots/FeCrNi-eps
+-converted-to.pdf  used on input line 49.
 (pdftex.def)             Requested size: 200.25206pt x 169.869pt.
 [29
 
@@ -3532,218 +3529,207 @@ Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/plots
 
 
 
-] [30 <./chapters/background_austenitic_steels_in_nuclear/plots/fecrschaeffler.
-png> <./chapters/background_austenitic_steels_in_nuclear/plots/FeCrNi-eps-conve
-rted-to.pdf>] [31]
-<chapters/background_austenitic_steels_in_nuclear/images/dpagenIV.png, id=4091,
- 441.14813pt x 301.125pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/dpagenIV.png Grap
-hic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/dpagenIV.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/dpagenIV.png  used on input line 151.
+] [30 <./chapters/austenitic_steels_in_nuclear/plots/fecrschaeffler.png> <./cha
+pters/austenitic_steels_in_nuclear/plots/FeCrNi-eps-converted-to.pdf>]
+[31]
+<chapters/austenitic_steels_in_nuclear/images/dpagenIV.png, id=4091, 441.14813p
+t x 301.125pt>
+File: chapters/austenitic_steels_in_nuclear/images/dpagenIV.png Graphic file (t
+ype png)
+<use chapters/austenitic_steels_in_nuclear/images/dpagenIV.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/dpagenIV.
+png  used on input line 151.
 (pdftex.def)             Requested size: 242.63222pt x 165.61925pt.
-Package epstopdf Info: Source file: <chapters/background_austenitic_steels_in_n
-uclear/plots/scattering_angle.eps>
+Package epstopdf Info: Source file: <chapters/austenitic_steels_in_nuclear/plot
+s/scattering_angle.eps>
 (epstopdf)                    date: 2020-06-30 07:27:50
 (epstopdf)                    size: 26393 bytes
-(epstopdf)             Output file: <chapters/background_austenitic_steels_in_n
-uclear/plots/scattering_angle-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/austenitic_steels_in_nuclear/plot
+s/scattering_angle-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-06-30 08:41:50
 (epstopdf)                    size: 16785 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_austen
-itic_steels_in_nuclear/plots/scattering_angle-eps-converted-to.pdf chapters/bac
-kground_austenitic_steels_in_nuclear/plots/scattering_angle.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/austenitic_steels
+_in_nuclear/plots/scattering_angle-eps-converted-to.pdf chapters/austenitic_ste
+els_in_nuclear/plots/scattering_angle.eps>
 (epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_austenitic_steels_in_nucle
-ar/plots/scattering_angle-eps-converted-to.pdf): PDF inclusion: found PDF versi
-on <1.7>, but at most version <1.5> allowed
-<chapters/background_austenitic_steels_in_nuclear/plots/scattering_angle-eps-co
-nverted-to.pdf, id=4095, 462.72874pt x 346.29375pt>
-File: chapters/background_austenitic_steels_in_nuclear/plots/scattering_angle-e
-ps-converted-to.pdf Graphic file (type pdf)
-<use chapters/background_austenitic_steels_in_nuclear/plots/scattering_angle-ep
-s-converted-to.pdf>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/plots
-/scattering_angle-eps-converted-to.pdf  used on input line 172.
+pdfTeX warning: pdflatex (file ./chapters/austenitic_steels_in_nuclear/plots/sc
+attering_angle-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, b
+ut at most version <1.5> allowed
+<chapters/austenitic_steels_in_nuclear/plots/scattering_angle-eps-converted-to.
+pdf, id=4095, 462.72874pt x 346.29375pt>
+File: chapters/austenitic_steels_in_nuclear/plots/scattering_angle-eps-converte
+d-to.pdf Graphic file (type pdf)
+<use chapters/austenitic_steels_in_nuclear/plots/scattering_angle-eps-converted
+-to.pdf>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/plots/scattering
+_angle-eps-converted-to.pdf  used on input line 172.
 (pdftex.def)             Requested size: 200.25206pt x 149.8651pt.
-Package epstopdf Info: Source file: <chapters/background_austenitic_steels_in_n
-uclear/plots/nuclei_mass.eps>
+Package epstopdf Info: Source file: <chapters/austenitic_steels_in_nuclear/plot
+s/nuclei_mass.eps>
 (epstopdf)                    date: 2020-06-30 07:27:51
 (epstopdf)                    size: 25297 bytes
-(epstopdf)             Output file: <chapters/background_austenitic_steels_in_n
-uclear/plots/nuclei_mass-eps-converted-to.pdf>
+(epstopdf)             Output file: <chapters/austenitic_steels_in_nuclear/plot
+s/nuclei_mass-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-06-30 08:41:51
 (epstopdf)                    size: 14679 bytes
-(epstopdf)             Command: <repstopdf --outfile=chapters/background_austen
-itic_steels_in_nuclear/plots/nuclei_mass-eps-converted-to.pdf chapters/backgrou
-nd_austenitic_steels_in_nuclear/plots/nuclei_mass.eps>
+(epstopdf)             Command: <repstopdf --outfile=chapters/austenitic_steels
+_in_nuclear/plots/nuclei_mass-eps-converted-to.pdf chapters/austenitic_steels_i
+n_nuclear/plots/nuclei_mass.eps>
 (epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./chapters/background_austenitic_steels_in_nucle
-ar/plots/nuclei_mass-eps-converted-to.pdf): PDF inclusion: found PDF version <1
-.7>, but at most version <1.5> allowed
-<chapters/background_austenitic_steels_in_nuclear/plots/nuclei_mass-eps-convert
-ed-to.pdf, id=4096, 462.72874pt x 346.29375pt>
-File: chapters/background_austenitic_steels_in_nuclear/plots/nuclei_mass-eps-co
-nverted-to.pdf Graphic file (type pdf)
-<use chapters/background_austenitic_steels_in_nuclear/plots/nuclei_mass-eps-con
-verted-to.pdf>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/plots
-/nuclei_mass-eps-converted-to.pdf  used on input line 180.
+pdfTeX warning: pdflatex (file ./chapters/austenitic_steels_in_nuclear/plots/nu
+clei_mass-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at
+ most version <1.5> allowed
+<chapters/austenitic_steels_in_nuclear/plots/nuclei_mass-eps-converted-to.pdf, 
+id=4096, 462.72874pt x 346.29375pt>
+File: chapters/austenitic_steels_in_nuclear/plots/nuclei_mass-eps-converted-to.
+pdf Graphic file (type pdf)
+<use chapters/austenitic_steels_in_nuclear/plots/nuclei_mass-eps-converted-to.p
+df>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/plots/nuclei_mas
+s-eps-converted-to.pdf  used on input line 180.
 (pdftex.def)             Requested size: 200.25206pt x 149.8651pt.
-<chapters/background_austenitic_steels_in_nuclear/images/neutronrecoils.png, id
-=4097, 435.87843pt x 507.39563pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/neutronrecoils.pn
-g Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/neutronrecoils.png
->
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/neutronrecoils.png  used on input line 190.
+<chapters/austenitic_steels_in_nuclear/images/neutronrecoils.png, id=4097, 435.
+87843pt x 507.39563pt>
+File: chapters/austenitic_steels_in_nuclear/images/neutronrecoils.png Graphic f
+ile (type png)
+<use chapters/austenitic_steels_in_nuclear/images/neutronrecoils.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/neutronre
+coils.png  used on input line 190.
 (pdftex.def)             Requested size: 314.40001pt x 365.98267pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32 <./chapters/background_austenitic_steels_in_nuclear/images/dpagenIV.png (PN
-G copy)>] [33 <./chapters/background_austenitic_steels_in_nuclear/plots/scatter
-ing_angle-eps-converted-to.pdf> <./chapters/background_austenitic_steels_in_nuc
-lear/plots/nuclei_mass-eps-converted-to.pdf> <./chapters/background_austenitic_
-steels_in_nuclear/images/neutronrecoils.png (PNG copy)>]
-<chapters/background_austenitic_steels_in_nuclear/images/marwickfecrniseg1.png,
- id=4222, 705.38531pt x 475.02469pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/marwickfecrniseg1
-.png Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/marwickfecrniseg1.
-png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/marwickfecrniseg1.png  used on input line 236.
+[32 <./chapters/austenitic_steels_in_nuclear/images/dpagenIV.png (PNG copy)>]
+[33 <./chapters/austenitic_steels_in_nuclear/plots/scattering_angle-eps-convert
+ed-to.pdf> <./chapters/austenitic_steels_in_nuclear/plots/nuclei_mass-eps-conve
+rted-to.pdf> <./chapters/austenitic_steels_in_nuclear/images/neutronrecoils.png
+ (PNG copy)>]
+<chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg1.png, id=4222, 7
+05.38531pt x 475.02469pt>
+File: chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg1.png Graphi
+c file (type png)
+<use chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg1.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/marwickfe
+crniseg1.png  used on input line 236.
 (pdftex.def)             Requested size: 200.25206pt x 134.85431pt.
-<chapters/background_austenitic_steels_in_nuclear/images/marwickfecrniseg2.png,
- id=4225, 667.74469pt x 571.38469pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/marwickfecrniseg2
-.png Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/marwickfecrniseg2.
-png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/marwickfecrniseg2.png  used on input line 244.
+<chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg2.png, id=4225, 6
+67.74469pt x 571.38469pt>
+File: chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg2.png Graphi
+c file (type png)
+<use chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg2.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/marwickfe
+crniseg2.png  used on input line 244.
 (pdftex.def)             Requested size: 200.25206pt x 171.3557pt.
  [34
 
 ]
-<chapters/background_austenitic_steels_in_nuclear/images/okamoto_rehn_temp_ris.
-png, id=4252, 431.36156pt x 474.27188pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/okamoto_rehn_temp
-_ris.png Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/okamoto_rehn_temp_
-ris.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/okamoto_rehn_temp_ris.png  used on input line 259.
+<chapters/austenitic_steels_in_nuclear/images/okamoto_rehn_temp_ris.png, id=425
+2, 431.36156pt x 474.27188pt>
+File: chapters/austenitic_steels_in_nuclear/images/okamoto_rehn_temp_ris.png Gr
+aphic file (type png)
+<use chapters/austenitic_steels_in_nuclear/images/okamoto_rehn_temp_ris.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/okamoto_r
+ehn_temp_ris.png  used on input line 259.
 (pdftex.def)             Requested size: 241.84843pt x 265.90163pt.
- [35 <./chapters/background_austenitic_steels_in_nuclear/images/marwickfecrnise
-g1.png (PNG copy)> <./chapters/background_austenitic_steels_in_nuclear/images/m
-arwickfecrniseg2.png (PNG copy)> <./chapters/background_austenitic_steels_in_nu
-clear/images/okamoto_rehn_temp_ris.png (PNG copy)>]
+ [35 <./chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg1.png (PNG
+ copy)> <./chapters/austenitic_steels_in_nuclear/images/marwickfecrniseg2.png (
+PNG copy)> <./chapters/austenitic_steels_in_nuclear/images/okamoto_rehn_temp_ri
+s.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\Gls' on input line 314.
 
-<chapters/background_austenitic_steels_in_nuclear/images/alloy-sensitization.jp
-g, id=4273, 562.1pt x 205.76875pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/alloy-sensitizati
-on.jpg Graphic file (type jpg)
-<use chapters/background_austenitic_steels_in_nuclear/images/alloy-sensitizatio
-n.jpg>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/alloy-sensitization.jpg  used on input line 322.
+<chapters/austenitic_steels_in_nuclear/images/alloy-sensitization.jpg, id=4273,
+ 562.1pt x 205.76875pt>
+File: chapters/austenitic_steels_in_nuclear/images/alloy-sensitization.jpg Grap
+hic file (type jpg)
+<use chapters/austenitic_steels_in_nuclear/images/alloy-sensitization.jpg>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/alloy-sen
+sitization.jpg  used on input line 322.
 (pdftex.def)             Requested size: 200.25206pt x 73.30429pt.
-<chapters/background_austenitic_steels_in_nuclear/images/Intergranular-corrosio
-n__figure2.jpg, id=4276, 566.115pt x 444.66125pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/Intergranular-cor
-rosion__figure2.jpg Graphic file (type jpg)
-<use chapters/background_austenitic_steels_in_nuclear/images/Intergranular-corr
-osion__figure2.jpg>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/Intergranular-corrosion__figure2.jpg  used on input line 330.
+<chapters/austenitic_steels_in_nuclear/images/Intergranular-corrosion__figure2.
+jpg, id=4276, 566.115pt x 444.66125pt>
+File: chapters/austenitic_steels_in_nuclear/images/Intergranular-corrosion__fig
+ure2.jpg Graphic file (type jpg)
+<use chapters/austenitic_steels_in_nuclear/images/Intergranular-corrosion__figu
+re2.jpg>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/Intergran
+ular-corrosion__figure2.jpg  used on input line 330.
 (pdftex.def)             Requested size: 200.25206pt x 157.28929pt.
-[36 <./chapters/background_austenitic_steels_in_nuclear/images/alloy-sensitizat
-ion.jpg> <./chapters/background_austenitic_steels_in_nuclear/images/Intergranul
-ar-corrosion__figure2.jpg>]
-<chapters/background_austenitic_steels_in_nuclear/images/water_radiolysis.png, 
-id=4296, 3740.97626pt x 2706.11pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/water_radiolysis.
-png Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/water_radiolysis.p
-ng>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/water_radiolysis.png  used on input line 378.
+[36 <./chapters/austenitic_steels_in_nuclear/images/alloy-sensitization.jpg> <.
+/chapters/austenitic_steels_in_nuclear/images/Intergranular-corrosion__figure2.
+jpg>]
+<chapters/austenitic_steels_in_nuclear/images/water_radiolysis.png, id=4296, 37
+40.97626pt x 2706.11pt>
+File: chapters/austenitic_steels_in_nuclear/images/water_radiolysis.png Graphic
+ file (type png)
+<use chapters/austenitic_steels_in_nuclear/images/water_radiolysis.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/water_rad
+iolysis.png  used on input line 378.
 (pdftex.def)             Requested size: 241.84843pt x 174.91232pt.
- [37 <./chapters/background_austenitic_steels_in_nuclear/images/water_radiolysi
-s.png (PNG copy)>]
-<chapters/background_austenitic_steels_in_nuclear/images/igscc_nickel_alloy600.
-png, id=4320, 1158.3275pt x 825.0825pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/igscc_nickel_allo
-y600.png Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/igscc_nickel_alloy
-600.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/igscc_nickel_alloy600.png  used on input line 414.
-(pdftex.def)             Requested size: 199.16928pt x 141.86105pt.
-<chapters/background_austenitic_steels_in_nuclear/images/fecrnialloys.png, id=4
-324, 572.89032pt x 424.58624pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/fecrnialloys.png 
-Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/fecrnialloys.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/fecrnialloys.png  used on input line 426.
-(pdftex.def)             Requested size: 178.00371pt x 131.92487pt.
-<chapters/background_austenitic_steels_in_nuclear/images/tgscc_igscc_vs_nickel.
-png, id=4325, 1158.3275pt x 825.0825pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/tgscc_igscc_vs_ni
-ckel.png Graphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/tgscc_igscc_vs_nic
-kel.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/tgscc_igscc_vs_nickel.png  used on input line 434.
-(pdftex.def)             Requested size: 178.00371pt x 126.79115pt.
- [38 <./chapters/background_austenitic_steels_in_nuclear/images/igscc_nickel_al
-loy600.png>] [39 <./chapters/background_austenitic_steels_in_nuclear/images/fec
-rnialloys.png (PNG copy)> <./chapters/background_austenitic_steels_in_nuclear/i
-mages/tgscc_igscc_vs_nickel.png>]
-<chapters/background_austenitic_steels_in_nuclear/images/fe30crru.png, id=4388,
- 374.90062pt x 465.23813pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/fe30crru.png Grap
-hic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/fe30crru.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/fe30crru.png  used on input line 512.
-(pdftex.def)             Requested size: 202.18575pt x 250.90538pt.
-<chapters/background_austenitic_steels_in_nuclear/images/fe40crru.png, id=4389,
- 397.485pt x 465.99094pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/fe40crru.png Grap
-hic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/fe40crru.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/fe40crru.png  used on input line 515.
-(pdftex.def)             Requested size: 202.18575pt x 237.04073pt.
-
-[40]
-<chapters/background_austenitic_steels_in_nuclear/images/pgmfailure.png, id=440
-9, 465.99094pt x 314.67563pt>
-File: chapters/background_austenitic_steels_in_nuclear/images/pgmfailure.png Gr
+ [37 <./chapters/austenitic_steels_in_nuclear/images/water_radiolysis.png (PNG 
+copy)>]
+<chapters/austenitic_steels_in_nuclear/images/igscc_nickel_alloy600.png, id=432
+0, 1158.3275pt x 825.0825pt>
+File: chapters/austenitic_steels_in_nuclear/images/igscc_nickel_alloy600.png Gr
 aphic file (type png)
-<use chapters/background_austenitic_steels_in_nuclear/images/pgmfailure.png>
-Package pdftex.def Info: chapters/background_austenitic_steels_in_nuclear/image
-s/pgmfailure.png  used on input line 527.
+<use chapters/austenitic_steels_in_nuclear/images/igscc_nickel_alloy600.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/igscc_nic
+kel_alloy600.png  used on input line 414.
+(pdftex.def)             Requested size: 199.16928pt x 141.86105pt.
+<chapters/austenitic_steels_in_nuclear/images/fecrnialloys.png, id=4324, 572.89
+032pt x 424.58624pt>
+File: chapters/austenitic_steels_in_nuclear/images/fecrnialloys.png Graphic fil
+e (type png)
+<use chapters/austenitic_steels_in_nuclear/images/fecrnialloys.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/fecrniall
+oys.png  used on input line 426.
+(pdftex.def)             Requested size: 178.00371pt x 131.92487pt.
+<chapters/austenitic_steels_in_nuclear/images/tgscc_igscc_vs_nickel.png, id=432
+5, 1158.3275pt x 825.0825pt>
+File: chapters/austenitic_steels_in_nuclear/images/tgscc_igscc_vs_nickel.png Gr
+aphic file (type png)
+<use chapters/austenitic_steels_in_nuclear/images/tgscc_igscc_vs_nickel.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/tgscc_igs
+cc_vs_nickel.png  used on input line 434.
+(pdftex.def)             Requested size: 178.00371pt x 126.79115pt.
+ [38 <./chapters/austenitic_steels_in_nuclear/images/igscc_nickel_alloy600.png>
+] [39 <./chapters/austenitic_steels_in_nuclear/images/fecrnialloys.png (PNG cop
+y)> <./chapters/austenitic_steels_in_nuclear/images/tgscc_igscc_vs_nickel.png>]
+<chapters/austenitic_steels_in_nuclear/images/fe30crru.png, id=4388, 374.90062p
+t x 465.23813pt>
+File: chapters/austenitic_steels_in_nuclear/images/fe30crru.png Graphic file (t
+ype png)
+<use chapters/austenitic_steels_in_nuclear/images/fe30crru.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/fe30crru.
+png  used on input line 512.
+(pdftex.def)             Requested size: 202.18575pt x 250.90538pt.
+<chapters/austenitic_steels_in_nuclear/images/fe40crru.png, id=4389, 397.485pt 
+x 465.99094pt>
+File: chapters/austenitic_steels_in_nuclear/images/fe40crru.png Graphic file (t
+ype png)
+<use chapters/austenitic_steels_in_nuclear/images/fe40crru.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/fe40crru.
+png  used on input line 515.
+(pdftex.def)             Requested size: 202.18575pt x 237.04073pt.
+ [40]
+<chapters/austenitic_steels_in_nuclear/images/pgmfailure.png, id=4409, 465.9909
+4pt x 314.67563pt>
+File: chapters/austenitic_steels_in_nuclear/images/pgmfailure.png Graphic file 
+(type png)
+<use chapters/austenitic_steels_in_nuclear/images/pgmfailure.png>
+Package pdftex.def Info: chapters/austenitic_steels_in_nuclear/images/pgmfailur
+e.png  used on input line 527.
 (pdftex.def)             Requested size: 239.43127pt x 161.68283pt.
- [41 <./chapters/background_austenitic_steels_in_nuclear/images/fe30crru.png (P
-NG copy)> <./chapters/background_austenitic_steels_in_nuclear/images/fe40crru.p
-ng (PNG copy)> <./chapters/background_austenitic_steels_in_nuclear/images/pgmfa
-ilure.png (PNG copy)>]
+ [41 <./chapters/austenitic_steels_in_nuclear/images/fe30crru.png (PNG copy)> <
+./chapters/austenitic_steels_in_nuclear/images/fe40crru.png (PNG copy)> <./chap
+ters/austenitic_steels_in_nuclear/images/pgmfailure.png (PNG copy)>]
 
 LaTeX Warning: Reference `section:pgmactivity' on page 42 undefined on input li
 ne 566.
@@ -3812,11 +3798,11 @@ ission.png  used on input line 223.
  [47 <./chapters/background_activity/images/spallation.png (PNG copy)>]
 Package epstopdf Info: Source file: <chapters/background_activity/plots/npd_xs/
 fe56_ni58_xs.eps>
-(epstopdf)                    date: 2022-07-16 11:02:05
+(epstopdf)                    date: 2022-07-16 11:07:10
 (epstopdf)                    size: 400931 bytes
 (epstopdf)             Output file: <chapters/background_activity/plots/npd_xs/
 fe56_ni58_xs-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:02:15
+(epstopdf)                    date: 2022-07-16 11:07:20
 (epstopdf)                    size: 110231 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/background_activi
 ty/plots/npd_xs/fe56_ni58_xs-eps-converted-to.pdf chapters/background_activity/
@@ -3866,11 +3852,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [54] [55] [56]
 Package epstopdf Info: Source file: <chapters/background_activity/plots/fe_13Me
 V.eps>
-(epstopdf)                    date: 2022-07-16 11:02:05
+(epstopdf)                    date: 2022-07-16 11:07:10
 (epstopdf)                    size: 723637 bytes
 (epstopdf)             Output file: <chapters/background_activity/plots/fe_13Me
 V-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-16 11:02:16
+(epstopdf)                    date: 2022-07-16 11:07:21
 (epstopdf)                    size: 800169 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapters/background_activi
 ty/plots/fe_13MeV-eps-converted-to.pdf chapters/background_activity/plots/fe_13
@@ -6236,7 +6222,7 @@ chapters/future_work/plots/al_surface_energy-eps-converted-to.pdf>]) [197]
 
 
 ] [203]
-<glossary/images/wsc.png, id=9750, 220.825pt x 260.975pt>
+<glossary/images/wsc.png, id=9749, 220.825pt x 260.975pt>
 File: glossary/images/wsc.png Graphic file (type png)
 <use glossary/images/wsc.png>
 Package pdftex.def Info: glossary/images/wsc.png  used on input line 149.
@@ -6309,7 +6295,7 @@ Overfull \hbox (2.33186pt too wide) in paragraph at lines 42--43
 mis-sion (or elec-tron cap-ture) through to Vanadium-
  []
 
-<appendix/activity_equation/decay_paths/24cr49_decay.png, id=10651, 629.35126pt
+<appendix/activity_equation/decay_paths/24cr49_decay.png, id=10650, 629.35126pt
  x 395.4775pt>
 File: appendix/activity_equation/decay_paths/24cr49_decay.png Graphic file (typ
 e png)
@@ -6324,7 +6310,7 @@ Underfull \vbox (badness 10000) detected at line 99
 [231
 
  <./appendix/activity_equation/decay_paths/24cr49_decay.png>]
-<appendix/activity_equation/decay_paths/28ni66_decay.png, id=10661, 679.53876pt
+<appendix/activity_equation/decay_paths/28ni66_decay.png, id=10660, 679.53876pt
  x 420.57124pt>
 File: appendix/activity_equation/decay_paths/28ni66_decay.png Graphic file (typ
 e png)
@@ -6339,7 +6325,7 @@ Underfull \vbox (badness 10000) detected at line 167
 [232
 
  <./appendix/activity_equation/decay_paths/28ni66_decay.png>]
-<appendix/activity_equation/decay_paths/55cs125_decay.png, id=10672, 699.61375p
+<appendix/activity_equation/decay_paths/55cs125_decay.png, id=10671, 699.61375p
 t x 430.60875pt>
 File: appendix/activity_equation/decay_paths/55cs125_decay.png Graphic file (ty
 pe png)
@@ -6354,7 +6340,7 @@ Underfull \vbox (badness 10000) detected at line 251
 [233
 
  <./appendix/activity_equation/decay_paths/55cs125_decay.png>]
-<appendix/activity_equation/decay_paths/83bi213_decay.png, id=10682, 759.83875p
+<appendix/activity_equation/decay_paths/83bi213_decay.png, id=10681, 759.83875p
 t x 460.72125pt>
 File: appendix/activity_equation/decay_paths/83bi213_decay.png Graphic file (ty
 pe png)
@@ -6369,7 +6355,7 @@ Underfull \vbox (badness 10000) detected at line 343
 [234
 
  <./appendix/activity_equation/decay_paths/83bi213_decay.png>]
-<appendix/activity_equation/decay_paths/84po216_decay.png, id=10692, 629.35126p
+<appendix/activity_equation/decay_paths/84po216_decay.png, id=10691, 629.35126p
 t x 395.4775pt>
 File: appendix/activity_equation/decay_paths/84po216_decay.png Graphic file (ty
 pe png)
@@ -6384,7 +6370,7 @@ Underfull \vbox (badness 10000) detected at line 451
 [235
 
  <./appendix/activity_equation/decay_paths/84po216_decay.png>]
-<appendix/activity_equation/decay_paths/86rn218_decay.png, id=10702, 714.67pt x
+<appendix/activity_equation/decay_paths/86rn218_decay.png, id=10701, 714.67pt x
  594.22pt>
 File: appendix/activity_equation/decay_paths/86rn218_decay.png Graphic file (ty
 pe png)
@@ -6409,7 +6395,7 @@ Appendix C.
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10722, 597.50829pt x 796.67737pt>
+<appendix/activity_code/published.pdf, id=10721, 597.50829pt x 796.67737pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf>
 Package pdftex.def Info: appendix/activity_code/published.pdf  used on input li
@@ -6432,7 +6418,7 @@ lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10725, page=1, 597.50829pt x 796.6773
+<appendix/activity_code/published.pdf, id=10724, page=1, 597.50829pt x 796.6773
 7pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf, page 1>
@@ -6465,7 +6451,7 @@ nput line 18.
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10787, page=2, 597.50829pt x 796.6773
+<appendix/activity_code/published.pdf, id=10786, page=2, 597.50829pt x 796.6773
 7pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf, page 2>
@@ -6486,7 +6472,7 @@ nput line 18.
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10811, page=3, 597.50829pt x 796.6773
+<appendix/activity_code/published.pdf, id=10810, page=3, 597.50829pt x 796.6773
 7pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf, page 3>
@@ -6507,7 +6493,7 @@ nput line 18.
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10820, page=4, 597.50829pt x 796.6773
+<appendix/activity_code/published.pdf, id=10819, page=4, 597.50829pt x 796.6773
 7pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf, page 4>
@@ -6528,7 +6514,7 @@ nput line 18.
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10832, page=5, 597.50829pt x 796.6773
+<appendix/activity_code/published.pdf, id=10831, page=5, 597.50829pt x 796.6773
 7pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf, page 5>
@@ -6549,7 +6535,7 @@ nput line 18.
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10842, page=6, 597.50829pt x 796.6773
+<appendix/activity_code/published.pdf, id=10841, page=6, 597.50829pt x 796.6773
 7pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf, page 6>
@@ -6570,7 +6556,7 @@ nput line 18.
 
 pdfTeX warning: pdflatex (file ./appendix/activity_code/published.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendix/activity_code/published.pdf, id=10867, page=7, 597.50829pt x 796.6773
+<appendix/activity_code/published.pdf, id=10866, page=7, 597.50829pt x 796.6773
 7pt>
 File: appendix/activity_code/published.pdf Graphic file (type pdf)
 <use appendix/activity_code/published.pdf, page 7>
@@ -6588,7 +6574,7 @@ Package pdftex.def Info: appendix/activity_code/published.pdf , page7 used on i
 nput line 18.
 (pdftex.def)             Requested size: 537.75249pt x 717.00302pt.
 [245 <./appendix/activity_code/published.pdf>] [246]
-<appendix/activity_code/activity_v1_manual.pdf, id=10877, 597.50829pt x 845.047
+<appendix/activity_code/activity_v1_manual.pdf, id=10876, 597.50829pt x 845.047
 1pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf>
@@ -6600,7 +6586,7 @@ File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf  used on
  input line 35.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<appendix/activity_code/activity_v1_manual.pdf, id=10880, page=1, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10879, page=1, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 1>
@@ -6630,7 +6616,7 @@ used on input line 35.
  [247
 
  <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10898, page=2, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10897, page=2, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 2>
@@ -6648,7 +6634,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page2
 used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [248 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10908, page=3, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10907, page=3, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 3>
@@ -6666,7 +6652,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page3
 used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [249 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10914, page=4, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10913, page=4, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 4>
@@ -6684,7 +6670,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page4
 used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [250 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10919, page=5, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10918, page=5, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 5>
@@ -6702,7 +6688,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page5
 used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [251 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10929, page=6, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10928, page=6, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 6>
@@ -6720,7 +6706,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page6
 used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [252 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10957, page=7, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10956, page=7, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 7>
@@ -6739,7 +6725,7 @@ used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
 
 [253 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10979, page=8, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10978, page=8, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 8>
@@ -6757,7 +6743,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page8
 used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [254 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10984, page=9, 597.50829pt x
+<appendix/activity_code/activity_v1_manual.pdf, id=10983, page=9, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 9>
@@ -6775,7 +6761,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page9
 used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [255 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=10990, page=10, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=10989, page=10, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 10>
@@ -6793,7 +6779,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page10
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [256 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11005, page=11, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11004, page=11, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 11>
@@ -6811,7 +6797,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page11
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [257 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11010, page=12, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11009, page=12, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 12>
@@ -6829,7 +6815,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page12
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [258 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11021, page=13, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11020, page=13, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 13>
@@ -6847,7 +6833,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page13
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [259 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11027, page=14, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11026, page=14, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 14>
@@ -6866,7 +6852,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page14
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
 
 [260 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11032, page=15, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11031, page=15, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 15>
@@ -6884,7 +6870,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page15
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [261 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11041, page=16, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11040, page=16, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 16>
@@ -6902,7 +6888,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page16
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [262 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11052, page=17, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11050, page=17, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 17>
@@ -6920,7 +6906,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page17
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [263 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11060, page=18, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11059, page=18, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 18>
@@ -6938,7 +6924,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page18
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [264 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11065, page=19, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11064, page=19, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 19>
@@ -6956,7 +6942,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page19
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [265 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11086, page=20, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11085, page=20, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 20>
@@ -6974,7 +6960,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page20
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [266 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11091, page=21, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11090, page=21, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 21>
@@ -6993,7 +6979,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page21
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
 
 [267 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11097, page=22, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11096, page=22, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 22>
@@ -7011,7 +6997,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page22
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [268 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11102, page=23, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11101, page=23, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 23>
@@ -7029,7 +7015,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page23
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [269 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11107, page=24, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11106, page=24, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 24>
@@ -7047,7 +7033,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page24
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [270 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11112, page=25, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11111, page=25, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 25>
@@ -7065,7 +7051,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page25
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [271 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11117, page=26, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11116, page=26, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 26>
@@ -7083,7 +7069,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page26
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [272 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11122, page=27, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11121, page=27, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 27>
@@ -7101,7 +7087,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page27
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [273 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11128, page=28, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11127, page=28, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 28>
@@ -7120,7 +7106,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page28
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
 
 [274 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11133, page=29, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11132, page=29, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 29>
@@ -7138,7 +7124,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page29
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [275 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11138, page=30, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11137, page=30, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 30>
@@ -7156,7 +7142,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page30
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [276 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11143, page=31, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11142, page=31, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 31>
@@ -7174,7 +7160,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page31
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [277 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11148, page=32, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11147, page=32, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 32>
@@ -7192,7 +7178,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page32
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [278 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v1_manual.pdf, id=11153, page=33, 597.50829pt 
+<appendix/activity_code/activity_v1_manual.pdf, id=11152, page=33, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v1_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v1_manual.pdf, page 33>
@@ -7210,7 +7196,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v1_manual.pdf , page33
  used on input line 35.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [279 <./appendix/activity_code/activity_v1_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11174, 597.50829pt x 845.047
+<appendix/activity_code/activity_v2_manual.pdf, id=11173, 597.50829pt x 845.047
 1pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf>
@@ -7222,7 +7208,7 @@ File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf  used on
  input line 51.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<appendix/activity_code/activity_v2_manual.pdf, id=11177, page=1, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11176, page=1, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 1>
@@ -7251,7 +7237,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page1
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [281 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11195, page=2, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11194, page=2, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 2>
@@ -7269,7 +7255,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page2
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [282 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11203, page=3, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11202, page=3, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 3>
@@ -7287,7 +7273,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page3
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [283 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11208, page=4, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11207, page=4, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 4>
@@ -7305,7 +7291,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page4
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [284 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11216, page=5, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11215, page=5, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 5>
@@ -7323,7 +7309,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page5
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [285 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11224, page=6, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11223, page=6, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 6>
@@ -7341,7 +7327,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page6
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [286 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11231, page=7, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11230, page=7, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 7>
@@ -7359,7 +7345,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page7
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [287 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11246, page=8, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11245, page=8, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 8>
@@ -7377,7 +7363,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page8
 used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [288 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11294, page=9, 597.50829pt x
+<appendix/activity_code/activity_v2_manual.pdf, id=11293, page=9, 597.50829pt x
  845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 9>
@@ -7396,7 +7382,7 @@ used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
 
 [289 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11377, page=10, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11376, page=10, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 10>
@@ -7414,7 +7400,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page10
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [290 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11485, page=11, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11484, page=11, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 11>
@@ -7432,7 +7418,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page11
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [291 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11491, page=12, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11490, page=12, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 12>
@@ -7450,7 +7436,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page12
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [292 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11501, page=13, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11500, page=13, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 13>
@@ -7468,7 +7454,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page13
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [293 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11506, page=14, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11505, page=14, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 14>
@@ -7486,7 +7472,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page14
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [294 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11511, page=15, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11510, page=15, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 15>
@@ -7504,7 +7490,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page15
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [295 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11537, page=16, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11536, page=16, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 16>
@@ -7523,7 +7509,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page16
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
 
 [296 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11545, page=17, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11544, page=17, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 17>
@@ -7541,7 +7527,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page17
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [297 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11555, page=18, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11553, page=18, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 18>
@@ -7559,7 +7545,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page18
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [298 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11560, page=19, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11559, page=19, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 19>
@@ -7577,7 +7563,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page19
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [299 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11565, page=20, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11564, page=20, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 20>
@@ -7595,7 +7581,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page20
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [300 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11576, page=21, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11575, page=21, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 21>
@@ -7613,7 +7599,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page21
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [301 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11581, page=22, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11580, page=22, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 22>
@@ -7631,7 +7617,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page22
  used on input line 51.
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
  [302 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11586, page=23, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11585, page=23, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 23>
@@ -7650,7 +7636,7 @@ Package pdftex.def Info: appendix/activity_code/activity_v2_manual.pdf , page23
 (pdftex.def)             Requested size: 537.75249pt x 760.53537pt.
 
 [303 <./appendix/activity_code/activity_v2_manual.pdf>]
-<appendix/activity_code/activity_v2_manual.pdf, id=11592, page=24, 597.50829pt 
+<appendix/activity_code/activity_v2_manual.pdf, id=11591, page=24, 597.50829pt 
 x 845.0471pt>
 File: appendix/activity_code/activity_v2_manual.pdf Graphic file (type pdf)
 <use appendix/activity_code/activity_v2_manual.pdf, page 24>
@@ -7776,7 +7762,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-activity/0001_3-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-activity/0001_3-eps-con
-verted-to.pdf, id=12524, 578.16pt x 433.62pt>
+verted-to.pdf, id=12523, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-activity/0001_3-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-activity/0001_3-eps
@@ -7803,7 +7789,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-activity/0020_60-eps-converted-to.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-activity/0020_60-eps-co
-nverted-to.pdf, id=12525, 578.16pt x 433.62pt>
+nverted-to.pdf, id=12524, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-activity/0020_60-e
 ps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-activity/0020_60-ep
@@ -7830,7 +7816,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-activity/0100_300-eps-converted-to.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-activity/0100_300-eps-c
-onverted-to.pdf, id=12526, 578.16pt x 433.62pt>
+onverted-to.pdf, id=12525, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-activity/0100_300-
 eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-activity/0100_300-e
@@ -7857,7 +7843,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-activity/0166_86001-eps-converted-to.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-activity/0166_86001-eps
--converted-to.pdf, id=12527, 578.16pt x 433.62pt>
+-converted-to.pdf, id=12526, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-activity/0166_8600
 1-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-activity/0166_86001
@@ -7884,7 +7870,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-activity/0233_173000-eps-converted-to.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-activity/0233_173000-ep
-s-converted-to.pdf, id=12528, 578.16pt x 433.62pt>
+s-converted-to.pdf, id=12527, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-activity/0233_1730
 00-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-activity/0233_17300
@@ -7911,7 +7897,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-activity/0300_260000-eps-converted-to.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-activity/0300_260000-ep
-s-converted-to.pdf, id=12529, 578.16pt x 433.62pt>
+s-converted-to.pdf, id=12528, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-activity/0300_2600
 00-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-activity/0300_26000
@@ -7968,7 +7954,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-energy/0020_60-eps-converted-to.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-energy/0020_60-eps-conv
-erted-to.pdf, id=12881, 578.16pt x 433.62pt>
+erted-to.pdf, id=12880, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-energy/0020_60-eps
 -converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-energy/0020_60-eps-
@@ -8035,7 +8021,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 residual-energy/0233_173000-eps-converted-to.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/residual-energy/0233_173000-eps-
-converted-to.pdf, id=12882, 578.16pt x 433.62pt>
+converted-to.pdf, id=12881, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/residual-energy/0233_173000
 -eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/residual-energy/0233_173000-
@@ -8087,7 +8073,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-activity/0001_3-eps-converted-to.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-activity/0001_3-eps-conve
-rted-to.pdf, id=13008, 578.16pt x 433.62pt>
+rted-to.pdf, id=13007, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-activity/0001_3-eps-
 converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-activity/0001_3-eps-c
@@ -8114,7 +8100,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-activity/0020_60-eps-converted-to.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-activity/0020_60-eps-conv
-erted-to.pdf, id=13009, 578.16pt x 433.62pt>
+erted-to.pdf, id=13008, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-activity/0020_60-eps
 -converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-activity/0020_60-eps-
@@ -8141,7 +8127,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-activity/0100_300-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-activity/0100_300-eps-con
-verted-to.pdf, id=13010, 578.16pt x 433.62pt>
+verted-to.pdf, id=13009, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-activity/0100_300-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-activity/0100_300-eps
@@ -8168,7 +8154,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-activity/0166_86001-eps-converted-to.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-activity/0166_86001-eps-c
-onverted-to.pdf, id=13011, 578.16pt x 433.62pt>
+onverted-to.pdf, id=13010, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-activity/0166_86001-
 eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-activity/0166_86001-e
@@ -8195,7 +8181,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-activity/0233_173000-eps-converted-to.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-activity/0233_173000-eps-
-converted-to.pdf, id=13012, 578.16pt x 433.62pt>
+converted-to.pdf, id=13011, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-activity/0233_173000
 -eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-activity/0233_173000-
@@ -8222,7 +8208,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-activity/0300_260000-eps-converted-to.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-activity/0300_260000-eps-
-converted-to.pdf, id=13013, 578.16pt x 433.62pt>
+converted-to.pdf, id=13012, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-activity/0300_260000
 -eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-activity/0300_260000-
@@ -8259,7 +8245,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-energy/0001_3-eps-converted-to.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-energy/0001_3-eps-convert
-ed-to.pdf, id=13284, 578.16pt x 433.62pt>
+ed-to.pdf, id=13283, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-energy/0001_3-eps-co
 nverted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-energy/0001_3-eps-con
@@ -8286,7 +8272,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-energy/0020_60-eps-converted-to.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-energy/0020_60-eps-conver
-ted-to.pdf, id=13285, 578.16pt x 433.62pt>
+ted-to.pdf, id=13284, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-energy/0020_60-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-energy/0020_60-eps-co
@@ -8313,7 +8299,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-energy/0100_300-eps-converted-to.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-energy/0100_300-eps-conve
-rted-to.pdf, id=13286, 578.16pt x 433.62pt>
+rted-to.pdf, id=13285, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-energy/0100_300-eps-
 converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-energy/0100_300-eps-c
@@ -8340,7 +8326,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-energy/0166_86001-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-energy/0166_86001-eps-con
-verted-to.pdf, id=13287, 578.16pt x 433.62pt>
+verted-to.pdf, id=13286, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-energy/0166_86001-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-energy/0166_86001-eps
@@ -8367,7 +8353,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-energy/0233_173000-eps-converted-to.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-energy/0233_173000-eps-co
-nverted-to.pdf, id=13288, 578.16pt x 433.62pt>
+nverted-to.pdf, id=13287, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-energy/0233_173000-e
 ps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-energy/0233_173000-ep
@@ -8394,7 +8380,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe-activity-v2/
 target-energy/0300_260000-eps-converted-to.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe-activity-v2/target-energy/0300_260000-eps-co
-nverted-to.pdf, id=13289, 578.16pt x 433.62pt>
+nverted-to.pdf, id=13288, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe-activity-v2/target-energy/0300_260000-e
 ps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe-activity-v2/target-energy/0300_260000-ep
@@ -8434,7 +8420,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/totals/total_activity-eps-converted-to.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/totals/total_activity-eps-
-converted-to.pdf, id=13753, 578.16pt x 433.62pt>
+converted-to.pdf, id=13752, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/totals/total_activity
 -eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/totals/total_activity-
@@ -8462,7 +8448,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/totals/total_gamma_power_mw-eps-converted-to.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/totals/total_gamma_power_m
-w-eps-converted-to.pdf, id=13754, 578.16pt x 433.62pt>
+w-eps-converted-to.pdf, id=13753, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/totals/total_gamma_po
 wer_mw-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/totals/total_gamma_pow
@@ -8494,7 +8480,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/target-activity/0100_1500-eps-converted-to.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/target-activity/0100_1500-
-eps-converted-to.pdf, id=13828, 578.16pt x 433.62pt>
+eps-converted-to.pdf, id=13827, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/target-activity/0100_
 1500-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/target-activity/0100_1
@@ -8522,7 +8508,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/target-activity/0400_260700-eps-converted-to.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/target-activity/0400_26070
-0-eps-converted-to.pdf, id=13829, 578.16pt x 433.62pt>
+0-eps-converted-to.pdf, id=13828, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/target-activity/0400_
 260700-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/target-activity/0400_2
@@ -8555,7 +8541,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/residual-activity/0100_1500-eps-converted-to.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/residual-activity/0100_150
-0-eps-converted-to.pdf, id=13921, 578.16pt x 433.62pt>
+0-eps-converted-to.pdf, id=13920, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/residual-activity/010
 0_1500-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/residual-activity/0100
@@ -8583,7 +8569,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/residual-activity/0400_260700-eps-converted-to.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/residual-activity/0400_260
-700-eps-converted-to.pdf, id=13922, 578.16pt x 433.62pt>
+700-eps-converted-to.pdf, id=13921, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/residual-activity/040
 0_260700-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/residual-activity/0400
@@ -8611,7 +8597,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/residual-gamma-energy/0100_1500-eps-converted-to.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/residual-gamma-energy/0100
-_1500-eps-converted-to.pdf, id=13923, 578.16pt x 433.62pt>
+_1500-eps-converted-to.pdf, id=13922, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/residual-gamma-energy
 /0100_1500-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/residual-gamma-energy/
@@ -8639,7 +8625,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/residual-gamma-energy/0400_260700-eps-converted-to.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/residual-gamma-energy/0400
-_260700-eps-converted-to.pdf, id=13924, 578.16pt x 433.62pt>
+_260700-eps-converted-to.pdf, id=13923, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/residual-gamma-energy
 /0400_260700-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/residual-gamma-energy/
@@ -8674,7 +8660,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/gammas/0100_1500-eps-converted-to.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/gammas/0100_1500-eps-conve
-rted-to.pdf, id=14138, 578.16pt x 433.62pt>
+rted-to.pdf, id=14137, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/gammas/0100_1500-eps-
 converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/gammas/0100_1500-eps-c
@@ -8701,7 +8687,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/mo-john-hewett/
 thick/gammas/0400_260700-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/mo-john-hewett/thick/gammas/0400_260700-eps-con
-verted-to.pdf, id=14139, 578.16pt x 433.62pt>
+verted-to.pdf, id=14138, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/mo-john-hewett/thick/gammas/0400_260700-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/mo-john-hewett/thick/gammas/0400_260700-eps
@@ -8760,7 +8746,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/by_is
 otope/05MeV_all_radioactive_isotopes-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/by_isotope/05MeV_all_radioactive_isot
-opes-eps-converted-to.pdf, id=14229, 578.16pt x 433.62pt>
+opes-eps-converted-to.pdf, id=14228, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/by_isotope/05MeV_all_radioactive
 _isotopes-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/by_isotope/05MeV_all_radioactive_
@@ -8787,7 +8773,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/05MeV_0400_17712000-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/05MeV_0400_17712000-eps-con
-verted-to.pdf, id=14230, 578.16pt x 433.62pt>
+verted-to.pdf, id=14229, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/05MeV_0400_17712000-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/05MeV_0400_17712000-eps
@@ -8814,7 +8800,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/05MeV_0500_18316800-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/05MeV_0500_18316800-eps-con
-verted-to.pdf, id=14231, 578.16pt x 433.62pt>
+verted-to.pdf, id=14230, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/05MeV_0500_18316800-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/05MeV_0500_18316800-eps
@@ -8848,7 +8834,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/by_is
 otope/10MeV_all_radioactive_isotopes-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/by_isotope/10MeV_all_radioactive_isot
-opes-eps-converted-to.pdf, id=14387, 578.16pt x 433.62pt>
+opes-eps-converted-to.pdf, id=14386, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/by_isotope/10MeV_all_radioactive
 _isotopes-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/by_isotope/10MeV_all_radioactive_
@@ -8875,7 +8861,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/10MeV_0400_11577600-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/10MeV_0400_11577600-eps-con
-verted-to.pdf, id=14388, 578.16pt x 433.62pt>
+verted-to.pdf, id=14387, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/10MeV_0400_11577600-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/10MeV_0400_11577600-eps
@@ -8902,7 +8888,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/10MeV_0500_12182400-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/10MeV_0500_12182400-eps-con
-verted-to.pdf, id=14389, 578.16pt x 433.62pt>
+verted-to.pdf, id=14388, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/10MeV_0500_12182400-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/10MeV_0500_12182400-eps
@@ -8936,7 +8922,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/by_is
 otope/15MeV_all_radioactive_isotopes-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/by_isotope/15MeV_all_radioactive_isot
-opes-eps-converted-to.pdf, id=14532, 578.16pt x 433.62pt>
+opes-eps-converted-to.pdf, id=14531, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/by_isotope/15MeV_all_radioactive
 _isotopes-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/by_isotope/15MeV_all_radioactive_
@@ -8963,7 +8949,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/15MeV_0400_13392000-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/15MeV_0400_13392000-eps-con
-verted-to.pdf, id=14533, 578.16pt x 433.62pt>
+verted-to.pdf, id=14532, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/15MeV_0400_13392000-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/15MeV_0400_13392000-eps
@@ -8990,7 +8976,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/15MeV_0500_13996800-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/15MeV_0500_13996800-eps-con
-verted-to.pdf, id=14534, 578.16pt x 433.62pt>
+verted-to.pdf, id=14533, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/15MeV_0500_13996800-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/15MeV_0500_13996800-eps
@@ -9024,7 +9010,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/by_is
 otope/20MeV_all_radioactive_isotopes-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/by_isotope/20MeV_all_radioactive_isot
-opes-eps-converted-to.pdf, id=14683, 578.16pt x 433.62pt>
+opes-eps-converted-to.pdf, id=14682, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/by_isotope/20MeV_all_radioactive
 _isotopes-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/by_isotope/20MeV_all_radioactive_
@@ -9051,7 +9037,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/20MeV_0400_28771200-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/20MeV_0400_28771200-eps-con
-verted-to.pdf, id=14684, 578.16pt x 433.62pt>
+verted-to.pdf, id=14683, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/20MeV_0400_28771200-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/20MeV_0400_28771200-eps
@@ -9078,7 +9064,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/20MeV_0500_29376000-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/20MeV_0500_29376000-eps-con
-verted-to.pdf, id=14685, 578.16pt x 433.62pt>
+verted-to.pdf, id=14684, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/20MeV_0500_29376000-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/20MeV_0500_29376000-eps
@@ -9112,7 +9098,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/by_is
 otope/25MeV_all_radioactive_isotopes-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/by_isotope/25MeV_all_radioactive_isot
-opes-eps-converted-to.pdf, id=14839, 578.16pt x 433.62pt>
+opes-eps-converted-to.pdf, id=14838, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/by_isotope/25MeV_all_radioactive
 _isotopes-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/by_isotope/25MeV_all_radioactive_
@@ -9139,7 +9125,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/25MeV_0400_33782400-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/25MeV_0400_33782400-eps-con
-verted-to.pdf, id=14840, 578.16pt x 433.62pt>
+verted-to.pdf, id=14839, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/25MeV_0400_33782400-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/25MeV_0400_33782400-eps
@@ -9166,7 +9152,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/25MeV_0500_34387200-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/25MeV_0500_34387200-eps-con
-verted-to.pdf, id=14841, 578.16pt x 433.62pt>
+verted-to.pdf, id=14840, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/25MeV_0500_34387200-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/25MeV_0500_34387200-eps
@@ -9200,7 +9186,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/by_is
 otope/30MeV_all_radioactive_isotopes-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/by_isotope/30MeV_all_radioactive_isot
-opes-eps-converted-to.pdf, id=15000, 578.16pt x 433.62pt>
+opes-eps-converted-to.pdf, id=14999, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/by_isotope/30MeV_all_radioactive
 _isotopes-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/by_isotope/30MeV_all_radioactive_
@@ -9227,7 +9213,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/30MeV_0400_53312850-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/30MeV_0400_53312850-eps-con
-verted-to.pdf, id=15001, 578.16pt x 433.62pt>
+verted-to.pdf, id=15000, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/30MeV_0400_53312850-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/30MeV_0400_53312850-eps
@@ -9254,7 +9240,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_activity_code/fe_100dpa/endof
 beam/30MeV_0500_53917650-eps-converted-to.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 <chapters/results_activity_code/fe_100dpa/endofbeam/30MeV_0500_53917650-eps-con
-verted-to.pdf, id=15002, 578.16pt x 433.62pt>
+verted-to.pdf, id=15001, 578.16pt x 433.62pt>
 File: chapters/results_activity_code/fe_100dpa/endofbeam/30MeV_0500_53917650-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_activity_code/fe_100dpa/endofbeam/30MeV_0500_53917650-eps
@@ -9273,67 +9259,67 @@ Appendix G.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 6.
 
-<appendix/srim_data/12MeV.png, id=15162, 999.735pt x 810.02625pt>
+<appendix/srim_data/12MeV.png, id=15161, 999.735pt x 810.02625pt>
 File: appendix/srim_data/12MeV.png Graphic file (type png)
 <use appendix/srim_data/12MeV.png>
 Package pdftex.def Info: appendix/srim_data/12MeV.png  used on input line 11.
 (pdftex.def)             Requested size: 142.26378pt x 115.26926pt.
-<appendix/srim_data/14MeV.png, id=15163, 119.9682pt x 97.5645pt>
+<appendix/srim_data/14MeV.png, id=15162, 119.9682pt x 97.5645pt>
 File: appendix/srim_data/14MeV.png Graphic file (type png)
 <use appendix/srim_data/14MeV.png>
 Package pdftex.def Info: appendix/srim_data/14MeV.png  used on input line 12.
 (pdftex.def)             Requested size: 142.26378pt x 115.71014pt.
-<appendix/srim_data/16MeV.png, id=15164, 998.73125pt x 813.0375pt>
+<appendix/srim_data/16MeV.png, id=15163, 998.73125pt x 813.0375pt>
 File: appendix/srim_data/16MeV.png Graphic file (type png)
 <use appendix/srim_data/16MeV.png>
 Package pdftex.def Info: appendix/srim_data/16MeV.png  used on input line 13.
 (pdftex.def)             Requested size: 142.26378pt x 115.80942pt.
-<appendix/srim_data/18MeV.png, id=15165, 119.84775pt x 97.5645pt>
+<appendix/srim_data/18MeV.png, id=15164, 119.84775pt x 97.5645pt>
 File: appendix/srim_data/18MeV.png Graphic file (type png)
 <use appendix/srim_data/18MeV.png>
 Package pdftex.def Info: appendix/srim_data/18MeV.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 115.81584pt.
-<appendix/srim_data/20MeV.png, id=15166, 999.735pt x 814.04124pt>
+<appendix/srim_data/20MeV.png, id=15165, 999.735pt x 814.04124pt>
 File: appendix/srim_data/20MeV.png Graphic file (type png)
 <use appendix/srim_data/20MeV.png>
 Package pdftex.def Info: appendix/srim_data/20MeV.png  used on input line 23.
 (pdftex.def)             Requested size: 142.26378pt x 115.8406pt.
-<appendix/srim_data/22MeV.png, id=15167, 119.7273pt x 97.5645pt>
+<appendix/srim_data/22MeV.png, id=15166, 119.7273pt x 97.5645pt>
 File: appendix/srim_data/22MeV.png Graphic file (type png)
 <use appendix/srim_data/22MeV.png>
 Package pdftex.def Info: appendix/srim_data/22MeV.png  used on input line 24.
 (pdftex.def)             Requested size: 142.26378pt x 115.93643pt.
-<appendix/srim_data/24MeV.png, id=15168, 998.73125pt x 812.03375pt>
+<appendix/srim_data/24MeV.png, id=15167, 998.73125pt x 812.03375pt>
 File: appendix/srim_data/24MeV.png Graphic file (type png)
 <use appendix/srim_data/24MeV.png>
 Package pdftex.def Info: appendix/srim_data/24MeV.png  used on input line 33.
 (pdftex.def)             Requested size: 142.26378pt x 115.66644pt.
-<appendix/srim_data/26MeV.png, id=15169, 119.7273pt x 97.8054pt>
+<appendix/srim_data/26MeV.png, id=15168, 119.7273pt x 97.8054pt>
 File: appendix/srim_data/26MeV.png Graphic file (type png)
 <use appendix/srim_data/26MeV.png>
 Package pdftex.def Info: appendix/srim_data/26MeV.png  used on input line 34.
 (pdftex.def)             Requested size: 142.26378pt x 116.2227pt.
-<appendix/srim_data/28MeV.png, id=15170, 120.2091pt x 97.5645pt>
+<appendix/srim_data/28MeV.png, id=15169, 120.2091pt x 97.5645pt>
 File: appendix/srim_data/28MeV.png Graphic file (type png)
 <use appendix/srim_data/28MeV.png>
 Package pdftex.def Info: appendix/srim_data/28MeV.png  used on input line 35.
 (pdftex.def)             Requested size: 142.26378pt x 115.46898pt.
-<appendix/srim_data/30MeV.png, id=15171, 120.2091pt x 97.92586pt>
+<appendix/srim_data/30MeV.png, id=15170, 120.2091pt x 97.92586pt>
 File: appendix/srim_data/30MeV.png Graphic file (type png)
 <use appendix/srim_data/30MeV.png>
 Package pdftex.def Info: appendix/srim_data/30MeV.png  used on input line 44.
 (pdftex.def)             Requested size: 142.26378pt x 115.89667pt.
-<appendix/srim_data/32MeV.png, id=15172, 119.9682pt x 97.20316pt>
+<appendix/srim_data/32MeV.png, id=15171, 119.9682pt x 97.20316pt>
 File: appendix/srim_data/32MeV.png Graphic file (type png)
 <use appendix/srim_data/32MeV.png>
 Package pdftex.def Info: appendix/srim_data/32MeV.png  used on input line 45.
 (pdftex.def)             Requested size: 142.26378pt x 115.28162pt.
-<appendix/srim_data/34MeV.png, id=15173, 119.9682pt x 96.96225pt>
+<appendix/srim_data/34MeV.png, id=15172, 119.9682pt x 96.96225pt>
 File: appendix/srim_data/34MeV.png Graphic file (type png)
 <use appendix/srim_data/34MeV.png>
 Package pdftex.def Info: appendix/srim_data/34MeV.png  used on input line 46.
 (pdftex.def)             Requested size: 142.26378pt x 114.9959pt.
-<appendix/srim_data/36MeV.png, id=15174, 119.7273pt x 96.96225pt>
+<appendix/srim_data/36MeV.png, id=15173, 119.7273pt x 96.96225pt>
 File: appendix/srim_data/36MeV.png Graphic file (type png)
 <use appendix/srim_data/36MeV.png>
 Package pdftex.def Info: appendix/srim_data/36MeV.png  used on input line 55.
@@ -9420,7 +9406,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_dft_reference_db/qeconverge/a
 l_ecut_convergence_ry-eps-converted-to.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
 <chapters/results_dft_reference_db/qeconverge/al_ecut_convergence_ry-eps-conver
-ted-to.pdf, id=15310, 867.24pt x 650.43pt>
+ted-to.pdf, id=15309, 867.24pt x 650.43pt>
 File: chapters/results_dft_reference_db/qeconverge/al_ecut_convergence_ry-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use chapters/results_dft_reference_db/qeconverge/al_ecut_convergence_ry-eps-co
@@ -9452,7 +9438,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_dft_reference_db/qeconverge/a
 l_interpolated_summary_colour-eps-converted-to.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 <chapters/results_dft_reference_db/qeconverge/al_interpolated_summary_colour-ep
-s-converted-to.pdf, id=15377, 867.24pt x 650.43pt>
+s-converted-to.pdf, id=15376, 867.24pt x 650.43pt>
 File: chapters/results_dft_reference_db/qeconverge/al_interpolated_summary_colo
 ur-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_dft_reference_db/qeconverge/al_interpolated_summary_colou
@@ -9481,7 +9467,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_dft_reference_db/qeconverge/f
 e_nomag_ecut_convergence_ry-eps-converted-to.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
 <chapters/results_dft_reference_db/qeconverge/fe_nomag_ecut_convergence_ry-eps-
-converted-to.pdf, id=15435, 867.24pt x 650.43pt>
+converted-to.pdf, id=15434, 867.24pt x 650.43pt>
 File: chapters/results_dft_reference_db/qeconverge/fe_nomag_ecut_convergence_ry
 -eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_dft_reference_db/qeconverge/fe_nomag_ecut_convergence_ry-
@@ -9514,7 +9500,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_dft_reference_db/qeconverge/f
 e_nomag_interpolated_summary_colour-eps-converted-to.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <chapters/results_dft_reference_db/qeconverge/fe_nomag_interpolated_summary_col
-our-eps-converted-to.pdf, id=15501, 867.24pt x 650.43pt>
+our-eps-converted-to.pdf, id=15500, 867.24pt x 650.43pt>
 File: chapters/results_dft_reference_db/qeconverge/fe_nomag_interpolated_summar
 y_colour-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_dft_reference_db/qeconverge/fe_nomag_interpolated_summary
@@ -9543,7 +9529,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_dft_reference_db/qeconverge/p
 d_ecut_convergence_ry-eps-converted-to.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
 <chapters/results_dft_reference_db/qeconverge/pd_ecut_convergence_ry-eps-conver
-ted-to.pdf, id=15556, 867.24pt x 650.43pt>
+ted-to.pdf, id=15555, 867.24pt x 650.43pt>
 File: chapters/results_dft_reference_db/qeconverge/pd_ecut_convergence_ry-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use chapters/results_dft_reference_db/qeconverge/pd_ecut_convergence_ry-eps-co
@@ -9575,7 +9561,7 @@ pdfTeX warning: pdflatex (file ./chapters/results_dft_reference_db/qeconverge/p
 d_interpolated_summary_colour-eps-converted-to.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 <chapters/results_dft_reference_db/qeconverge/pd_interpolated_summary_colour-ep
-s-converted-to.pdf, id=15622, 867.24pt x 650.43pt>
+s-converted-to.pdf, id=15621, 867.24pt x 650.43pt>
 File: chapters/results_dft_reference_db/qeconverge/pd_interpolated_summary_colo
 ur-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_dft_reference_db/qeconverge/pd_interpolated_summary_colou
@@ -9636,7 +9622,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/fccal/eos-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<appendix/dft_property_calculations/fccal/eos-eps-converted-to.pdf, id=15687, 8
+<appendix/dft_property_calculations/fccal/eos-eps-converted-to.pdf, id=15686, 8
 67.24pt x 650.43pt>
 File: appendix/dft_property_calculations/fccal/eos-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -9662,7 +9648,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/fccal/ec-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<appendix/dft_property_calculations/fccal/ec-eps-converted-to.pdf, id=15688, 86
+<appendix/dft_property_calculations/fccal/ec-eps-converted-to.pdf, id=15687, 86
 7.24pt x 650.43pt>
 File: appendix/dft_property_calculations/fccal/ec-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -9700,7 +9686,7 @@ pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/bccfenomag/
 eos-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
 version <1.5> allowed
 <appendix/dft_property_calculations/bccfenomag/eos-eps-converted-to.pdf, id=158
-59, 867.24pt x 650.43pt>
+58, 867.24pt x 650.43pt>
 File: appendix/dft_property_calculations/bccfenomag/eos-eps-converted-to.pdf Gr
 aphic file (type pdf)
 <use appendix/dft_property_calculations/bccfenomag/eos-eps-converted-to.pdf>
@@ -9725,8 +9711,8 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/bccfenomag/
 ec-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most v
 ersion <1.5> allowed
-<appendix/dft_property_calculations/bccfenomag/ec-eps-converted-to.pdf, id=1586
-0, 867.24pt x 650.43pt>
+<appendix/dft_property_calculations/bccfenomag/ec-eps-converted-to.pdf, id=1585
+9, 867.24pt x 650.43pt>
 File: appendix/dft_property_calculations/bccfenomag/ec-eps-converted-to.pdf Gra
 phic file (type pdf)
 <use appendix/dft_property_calculations/bccfenomag/ec-eps-converted-to.pdf>
@@ -9759,7 +9745,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/bccfe/eos-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<appendix/dft_property_calculations/bccfe/eos-eps-converted-to.pdf, id=16081, 8
+<appendix/dft_property_calculations/bccfe/eos-eps-converted-to.pdf, id=16080, 8
 67.24pt x 650.43pt>
 File: appendix/dft_property_calculations/bccfe/eos-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -9785,7 +9771,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/bccfe/ec-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<appendix/dft_property_calculations/bccfe/ec-eps-converted-to.pdf, id=16082, 86
+<appendix/dft_property_calculations/bccfe/ec-eps-converted-to.pdf, id=16081, 86
 7.24pt x 650.43pt>
 File: appendix/dft_property_calculations/bccfe/ec-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -9826,7 +9812,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/fccfe/eos-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<appendix/dft_property_calculations/fccfe/eos-eps-converted-to.pdf, id=16311, 8
+<appendix/dft_property_calculations/fccfe/eos-eps-converted-to.pdf, id=16310, 8
 67.24pt x 650.43pt>
 File: appendix/dft_property_calculations/fccfe/eos-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -9852,7 +9838,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/fccfe/ec-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<appendix/dft_property_calculations/fccfe/ec-eps-converted-to.pdf, id=16312, 86
+<appendix/dft_property_calculations/fccfe/ec-eps-converted-to.pdf, id=16311, 86
 7.24pt x 650.43pt>
 File: appendix/dft_property_calculations/fccfe/ec-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -9887,7 +9873,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/fccpd/eos-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<appendix/dft_property_calculations/fccpd/eos-eps-converted-to.pdf, id=16531, 8
+<appendix/dft_property_calculations/fccpd/eos-eps-converted-to.pdf, id=16530, 8
 67.24pt x 650.43pt>
 File: appendix/dft_property_calculations/fccpd/eos-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -9913,7 +9899,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/dft_property_calculations/fccpd/ec-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<appendix/dft_property_calculations/fccpd/ec-eps-converted-to.pdf, id=16532, 86
+<appendix/dft_property_calculations/fccpd/ec-eps-converted-to.pdf, id=16531, 86
 7.24pt x 650.43pt>
 File: appendix/dft_property_calculations/fccpd/ec-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -9963,7 +9949,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Al_sh
 eng/equation_of_state_bp_fcc-eps-converted-to.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Al_sheng/equation_of_state_bp_fcc-eps
--converted-to.pdf, id=16904, 867.24pt x 650.43pt>
+-converted-to.pdf, id=16903, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Al_sheng/equation_of_state_bp_fc
 c-eps-converted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Al_sheng/equation_of_state_bp_fcc
@@ -9990,7 +9976,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Al_sh
 eng/rose_plot_bp_fcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Al_sheng/rose_plot_bp_fcc-eps-convert
-ed-to.pdf, id=16905, 867.24pt x 650.43pt>
+ed-to.pdf, id=16904, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Al_sheng/rose_plot_bp_fcc-eps-co
 nverted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Al_sheng/rose_plot_bp_fcc-eps-con
@@ -10022,7 +10008,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Al_sh
 eng/equation_of_state_bp_bcc-eps-converted-to.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Al_sheng/equation_of_state_bp_bcc-eps
--converted-to.pdf, id=17002, 867.24pt x 650.43pt>
+-converted-to.pdf, id=17001, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Al_sheng/equation_of_state_bp_bc
 c-eps-converted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Al_sheng/equation_of_state_bp_bcc
@@ -10049,7 +10035,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Al_sh
 eng/rose_plot_bp_bcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Al_sheng/rose_plot_bp_bcc-eps-convert
-ed-to.pdf, id=17003, 867.24pt x 650.43pt>
+ed-to.pdf, id=17002, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Al_sheng/rose_plot_bp_bcc-eps-co
 nverted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Al_sheng/rose_plot_bp_bcc-eps-con
@@ -10076,7 +10062,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Fe_mh
 sasa/equation_of_state_bp_bcc-eps-converted-to.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Fe_mhsasa/equation_of_state_bp_bcc-ep
-s-converted-to.pdf, id=17005, 867.24pt x 650.43pt>
+s-converted-to.pdf, id=17004, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Fe_mhsasa/equation_of_state_bp_b
 cc-eps-converted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Fe_mhsasa/equation_of_state_bp_bc
@@ -10103,7 +10089,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Fe_mh
 sasa/rose_plot_bp_bcc-eps-converted-to.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Fe_mhsasa/rose_plot_bp_bcc-eps-conver
-ted-to.pdf, id=17006, 867.24pt x 650.43pt>
+ted-to.pdf, id=17005, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Fe_mhsasa/rose_plot_bp_bcc-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Fe_mhsasa/rose_plot_bp_bcc-eps-co
@@ -10130,7 +10116,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Fe_mh
 sasa/equation_of_state_bp_fcc-eps-converted-to.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Fe_mhsasa/equation_of_state_bp_fcc-ep
-s-converted-to.pdf, id=17007, 867.24pt x 650.43pt>
+s-converted-to.pdf, id=17006, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Fe_mhsasa/equation_of_state_bp_f
 cc-eps-converted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Fe_mhsasa/equation_of_state_bp_fc
@@ -10157,7 +10143,7 @@ pdfTeX warning: pdflatex (file ./appendix/transferability/transferability/Fe_mh
 sasa/rose_plot_bp_fcc-eps-converted-to.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
 <appendix/transferability/transferability/Fe_mhsasa/rose_plot_bp_fcc-eps-conver
-ted-to.pdf, id=17008, 867.24pt x 650.43pt>
+ted-to.pdf, id=17007, 867.24pt x 650.43pt>
 File: appendix/transferability/transferability/Fe_mhsasa/rose_plot_bp_fcc-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use appendix/transferability/transferability/Fe_mhsasa/rose_plot_bp_fcc-eps-co
@@ -10292,7 +10278,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/ackland_mendelev_pair
 -eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
 sion <1.5> allowed
-<appendix/functions/plots/ackland_mendelev_pair-eps-converted-to.pdf, id=19092,
+<appendix/functions/plots/ackland_mendelev_pair-eps-converted-to.pdf, id=19091,
  578.16pt x 433.62pt>
 File: appendix/functions/plots/ackland_mendelev_pair-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -10322,7 +10308,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/buckingham-eps-conver
 ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<appendix/functions/plots/buckingham-eps-converted-to.pdf, id=19102, 578.16pt x
+<appendix/functions/plots/buckingham-eps-converted-to.pdf, id=19101, 578.16pt x
  433.62pt>
 File: appendix/functions/plots/buckingham-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -10350,7 +10336,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/cubic_knot_spline-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<appendix/functions/plots/cubic_knot_spline-eps-converted-to.pdf, id=19183, 578
+<appendix/functions/plots/cubic_knot_spline-eps-converted-to.pdf, id=19182, 578
 .16pt x 433.62pt>
 File: appendix/functions/plots/cubic_knot_spline-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -10377,7 +10363,7 @@ pdfTeX warning: pdflatex (file ./appendix/functions/plots/cubic_knot_spline_fix
 ed_end-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mo
 st version <1.5> allowed
 <appendix/functions/plots/cubic_knot_spline_fixed_end-eps-converted-to.pdf, id=
-19184, 578.16pt x 433.62pt>
+19183, 578.16pt x 433.62pt>
 File: appendix/functions/plots/cubic_knot_spline_fixed_end-eps-converted-to.pdf
  Graphic file (type pdf)
 <use appendix/functions/plots/cubic_knot_spline_fixed_end-eps-converted-to.pdf>
@@ -10408,7 +10394,7 @@ pdfTeX warning: pdflatex (file ./appendix/functions/plots/cubic_knot_spline_fix
 ed_end_pair-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.5> allowed
 <appendix/functions/plots/cubic_knot_spline_fixed_end_pair-eps-converted-to.pdf
-, id=19238, 578.16pt x 433.62pt>
+, id=19237, 578.16pt x 433.62pt>
 File: appendix/functions/plots/cubic_knot_spline_fixed_end_pair-eps-converted-t
 o.pdf Graphic file (type pdf)
 <use appendix/functions/plots/cubic_knot_spline_fixed_end_pair-eps-converted-to
@@ -10438,7 +10424,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/cubic_spline-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<appendix/functions/plots/cubic_spline-eps-converted-to.pdf, id=19290, 578.16pt
+<appendix/functions/plots/cubic_spline-eps-converted-to.pdf, id=19289, 578.16pt
  x 433.62pt>
 File: appendix/functions/plots/cubic_spline-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -10469,7 +10455,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/cubic_spline_zbl-eps-
 converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
 <1.5> allowed
-<appendix/functions/plots/cubic_spline_zbl-eps-converted-to.pdf, id=19339, 578.
+<appendix/functions/plots/cubic_spline_zbl-eps-converted-to.pdf, id=19338, 578.
 16pt x 433.62pt>
 File: appendix/functions/plots/cubic_spline_zbl-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -10499,7 +10485,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/cubic_spline_zbl_2-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<appendix/functions/plots/cubic_spline_zbl_2-eps-converted-to.pdf, id=19383, 57
+<appendix/functions/plots/cubic_spline_zbl_2-eps-converted-to.pdf, id=19382, 57
 8.16pt x 433.62pt>
 File: appendix/functions/plots/cubic_spline_zbl_2-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -10525,7 +10511,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/embedding_a-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<appendix/functions/plots/embedding_a-eps-converted-to.pdf, id=19466, 578.16pt 
+<appendix/functions/plots/embedding_a-eps-converted-to.pdf, id=19465, 578.16pt 
 x 433.62pt>
 File: appendix/functions/plots/embedding_a-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -10549,7 +10535,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/embedding_b-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<appendix/functions/plots/embedding_b-eps-converted-to.pdf, id=19467, 578.16pt 
+<appendix/functions/plots/embedding_b-eps-converted-to.pdf, id=19466, 578.16pt 
 x 433.62pt>
 File: appendix/functions/plots/embedding_b-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -10575,7 +10561,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/embedding_c-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<appendix/functions/plots/embedding_c-eps-converted-to.pdf, id=19555, 578.16pt 
+<appendix/functions/plots/embedding_c-eps-converted-to.pdf, id=19554, 578.16pt 
 x 433.62pt>
 File: appendix/functions/plots/embedding_c-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -10599,7 +10585,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/embedding_d-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<appendix/functions/plots/embedding_d-eps-converted-to.pdf, id=19556, 578.16pt 
+<appendix/functions/plots/embedding_d-eps-converted-to.pdf, id=19555, 578.16pt 
 x 433.62pt>
 File: appendix/functions/plots/embedding_d-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -10627,7 +10613,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/embedding_e-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<appendix/functions/plots/embedding_e-eps-converted-to.pdf, id=19597, 578.16pt 
+<appendix/functions/plots/embedding_e-eps-converted-to.pdf, id=19596, 578.16pt 
 x 433.62pt>
 File: appendix/functions/plots/embedding_e-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -10653,7 +10639,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/embedding_f-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<appendix/functions/plots/embedding_f-eps-converted-to.pdf, id=19670, 578.16pt 
+<appendix/functions/plots/embedding_f-eps-converted-to.pdf, id=19669, 578.16pt 
 x 433.62pt>
 File: appendix/functions/plots/embedding_f-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -10677,7 +10663,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/embedding_g-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<appendix/functions/plots/embedding_g-eps-converted-to.pdf, id=19671, 578.16pt 
+<appendix/functions/plots/embedding_g-eps-converted-to.pdf, id=19670, 578.16pt 
 x 433.62pt>
 File: appendix/functions/plots/embedding_g-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -10704,7 +10690,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/lennard_jones-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<appendix/functions/plots/lennard_jones-eps-converted-to.pdf, id=19739, 578.16p
+<appendix/functions/plots/lennard_jones-eps-converted-to.pdf, id=19738, 578.16p
 t x 433.62pt>
 File: appendix/functions/plots/lennard_jones-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -10728,7 +10714,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/morse-eps-converted-t
 o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<appendix/functions/plots/morse-eps-converted-to.pdf, id=19740, 578.16pt x 433.
+<appendix/functions/plots/morse-eps-converted-to.pdf, id=19739, 578.16pt x 433.
 62pt>
 File: appendix/functions/plots/morse-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -10756,7 +10742,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/slater_4s-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<appendix/functions/plots/slater_4s-eps-converted-to.pdf, id=19788, 578.16pt x 
+<appendix/functions/plots/slater_4s-eps-converted-to.pdf, id=19787, 578.16pt x 
 433.62pt>
 File: appendix/functions/plots/slater_4s-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -10782,7 +10768,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/zbl-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<appendix/functions/plots/zbl-eps-converted-to.pdf, id=19858, 578.16pt x 433.62
+<appendix/functions/plots/zbl-eps-converted-to.pdf, id=19857, 578.16pt x 433.62
 pt>
 File: appendix/functions/plots/zbl-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -10806,7 +10792,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./appendix/functions/plots/zero-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<appendix/functions/plots/zero-eps-converted-to.pdf, id=19859, 578.16pt x 433.6
+<appendix/functions/plots/zero-eps-converted-to.pdf, id=19858, 578.16pt x 433.6
 2pt>
 File: appendix/functions/plots/zero-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -10875,7 +10861,7 @@ sults_potential_fitting/fepd_potential/equation_of_state_bp_1.eps>
 (epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/equation_of_state_bp_1-eps-c
-onverted-to.pdf, id=20414, 578.16pt x 433.62pt>
+onverted-to.pdf, id=20413, 578.16pt x 433.62pt>
 File: chapters/results_potential_fitting/fepd_potential/equation_of_state_bp_1-
 eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/equation_of_state_bp_1-e
@@ -10901,7 +10887,7 @@ lts_potential_fitting/fepd_potential/elastic_strains_bp_1.eps>
 (epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/elastic_strains_bp_1-eps-con
-verted-to.pdf, id=20466, 867.24pt x 650.43pt>
+verted-to.pdf, id=20465, 867.24pt x 650.43pt>
 File: chapters/results_potential_fitting/fepd_potential/elastic_strains_bp_1-ep
 s-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/elastic_strains_bp_1-eps
@@ -10932,7 +10918,7 @@ ults_potential_fitting/fepd_potential/msp_c11_c12_plot_bp_1.eps>
 (epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/msp_c11_c12_plot_bp_1-eps-co
-nverted-to.pdf, id=20467, 578.16pt x 433.62pt>
+nverted-to.pdf, id=20466, 578.16pt x 433.62pt>
 File: chapters/results_potential_fitting/fepd_potential/msp_c11_c12_plot_bp_1-e
 ps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/msp_c11_c12_plot_bp_1-ep
@@ -10954,7 +10940,7 @@ _potential_fitting/fepd_potential/msp_c44_plot_bp_1.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/msp_c44_plot_bp_1-eps-conver
-ted-to.pdf, id=20468, 578.16pt x 433.62pt>
+ted-to.pdf, id=20467, 578.16pt x 433.62pt>
 File: chapters/results_potential_fitting/fepd_potential/msp_c44_plot_bp_1-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/msp_c44_plot_bp_1-eps-co
@@ -11000,7 +10986,7 @@ ps>
 (epstopdf)             \includegraphics on input line 155.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/potential_known_energy_fit_s
-et-eps-converted-to.pdf, id=20608, 578.16pt x 433.62pt>
+et-eps-converted-to.pdf, id=20607, 578.16pt x 433.62pt>
 File: chapters/results_potential_fitting/fepd_potential/potential_known_energy_
 fit_set-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/potential_known_energy_f
@@ -11023,7 +11009,7 @@ apters/results_potential_fitting/fepd_potential/potential_known_energy_full_set
 (epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/potential_known_energy_full_
-set-eps-converted-to.pdf, id=20609, 578.16pt x 433.62pt>
+set-eps-converted-to.pdf, id=20608, 578.16pt x 433.62pt>
 File: chapters/results_potential_fitting/fepd_potential/potential_known_energy_
 full_set-eps-converted-to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/potential_known_energy_f
@@ -11050,7 +11036,7 @@ _potential_fitting/fepd_potential/fe_surface_energy.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/fe_surface_energy-eps-conver
-ted-to.pdf, id=20707, 578.16pt x 433.62pt>
+ted-to.pdf, id=20706, 578.16pt x 433.62pt>
 File: chapters/results_potential_fitting/fepd_potential/fe_surface_energy-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/fe_surface_energy-eps-co
@@ -11077,7 +11063,7 @@ al_fitting/fepd_potential/fefe_pair.eps>
 (epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/fefe_pair-eps-converted-to.p
-df, id=20761, 462.52798pt x 346.89601pt>
+df, id=20760, 462.52798pt x 346.89601pt>
 File: chapters/results_potential_fitting/fepd_potential/fefe_pair-eps-converted
 -to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/fefe_pair-eps-converted-
@@ -11099,7 +11085,7 @@ al_fitting/fepd_potential/fepd_pair.eps>
 (epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/fepd_pair-eps-converted-to.p
-df, id=20762, 462.52798pt x 346.89601pt>
+df, id=20761, 462.52798pt x 346.89601pt>
 File: chapters/results_potential_fitting/fepd_potential/fepd_pair-eps-converted
 -to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/fepd_pair-eps-converted-
@@ -11121,7 +11107,7 @@ al_fitting/fepd_potential/pdpd_pair.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/pdpd_pair-eps-converted-to.p
-df, id=20763, 462.52798pt x 346.89601pt>
+df, id=20762, 462.52798pt x 346.89601pt>
 File: chapters/results_potential_fitting/fepd_potential/pdpd_pair-eps-converted
 -to.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/pdpd_pair-eps-converted-
@@ -11143,7 +11129,7 @@ _fitting/fepd_potential/fe_dens.eps>
 (epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/fe_dens-eps-converted-to.pdf
-, id=20764, 462.52798pt x 346.89601pt>
+, id=20763, 462.52798pt x 346.89601pt>
 File: chapters/results_potential_fitting/fepd_potential/fe_dens-eps-converted-t
 o.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/fe_dens-eps-converted-to
@@ -11165,7 +11151,7 @@ _fitting/fepd_potential/fe_embe.eps>
 (epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/fe_embe-eps-converted-to.pdf
-, id=20765, 462.52798pt x 346.89601pt>
+, id=20764, 462.52798pt x 346.89601pt>
 File: chapters/results_potential_fitting/fepd_potential/fe_embe-eps-converted-t
 o.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/fe_embe-eps-converted-to
@@ -11187,7 +11173,7 @@ _fitting/fepd_potential/pd_dens.eps>
 (epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/pd_dens-eps-converted-to.pdf
-, id=20766, 462.52798pt x 346.89601pt>
+, id=20765, 462.52798pt x 346.89601pt>
 File: chapters/results_potential_fitting/fepd_potential/pd_dens-eps-converted-t
 o.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/pd_dens-eps-converted-to
@@ -11209,7 +11195,7 @@ _fitting/fepd_potential/pd_embe.eps>
 (epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 <chapters/results_potential_fitting/fepd_potential/pd_embe-eps-converted-to.pdf
-, id=20767, 462.52798pt x 346.89601pt>
+, id=20766, 462.52798pt x 346.89601pt>
 File: chapters/results_potential_fitting/fepd_potential/pd_embe-eps-converted-t
 o.pdf Graphic file (type pdf)
 <use chapters/results_potential_fitting/fepd_potential/pd_embe-eps-converted-to
@@ -11260,11 +11246,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
 (./contents/contents.aux) (./contents/figures.aux) (./contents/tables.aux)
 (./chapters/introduction/introduction.aux)
 (./chapters/consequences_of_ionizing_radiation/consequences_of_ionizing_radiati
-on.aux) (./chapters/background_austenitic_steels_in_nuclear/bcc.aux)
-(./chapters/background_austenitic_steels_in_nuclear/fcc.aux)
-(./chapters/background_austenitic_steels_in_nuclear/fct.aux)
-(./chapters/background_austenitic_steels_in_nuclear/background_austenitic_steel
-s_in_nuclear.aux) (./chapters/background_activity/background_activity.aux)
+on.aux) (./chapters/austenitic_steels_in_nuclear/bcc.aux)
+(./chapters/austenitic_steels_in_nuclear/fcc.aux)
+(./chapters/austenitic_steels_in_nuclear/fct.aux)
+(./chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.aux)
+(./chapters/background_activity/background_activity.aux)
 (./chapters/background_potential_fitting/background_potential_fitting.aux)
 (./chapters/methodology_activity/methodology_activity.aux)
 (./chapters/results_activity_code/activity_code.aux)
@@ -11278,7 +11264,7 @@ s_in_nuclear.aux) (./chapters/background_activity/background_activity.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E9C61B0509F5046A075178D21A29E3A3;34042.
+(rerunfilecheck)             Checksum: 714937DDE46B8FEBBF469D9D595460B9;34040.
 
 
 LaTeX Warning: There were undefined references.
@@ -11298,8 +11284,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
  73580 strings out of 481239
- 1629144 string characters out of 5920377
- 2956707 words of memory out of 5000000
+ 1627351 string characters out of 5920377
+ 2956708 words of memory out of 5000000
  80298 multiletter control sequences out of 15000+600000
  546877 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -11339,10 +11325,10 @@ sbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/txfonts/txmia.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/zapfding/uzdr.pfb>
-Output written on main.pdf (508 pages, 26880296 bytes).
+Output written on main.pdf (508 pages, 26880225 bytes).
 PDF statistics:
- 22368 PDF objects out of 26593 (max. 8388607)
- 14960 compressed objects within 150 object streams
+ 22367 PDF objects out of 26593 (max. 8388607)
+ 14959 compressed objects within 150 object streams
  6744 named destinations out of 7423 (max. 500000)
  5260 words of extra memory for PDF output out of 10000 (max. 10000000)
 
