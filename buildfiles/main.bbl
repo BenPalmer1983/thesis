@@ -5239,6 +5239,15 @@
     \field{type}{ONLINE}
   \endentry
 
+  \entry{harwellva08}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Harwell VA08 Minimizer}
+    \verb{url}
+    \verb https://www.hsl.rl.ac.uk/archive/specs/va08.pdf
+    \endverb
+    \field{type}{ONLINE}
+  \endentry
+
   \entry{mendelevruau}{article}{}
     \name{author}{3}{}{%
       {{hash=FA}{%
@@ -5273,15 +5282,6 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{J. Appl. Phys.}
     \field{year}{2008}
-  \endentry
-
-  \entry{harwellva08}{online}{}
-    \field{labeltitlesource}{title}
-    \field{title}{Harwell VA08 Minimizer}
-    \verb{url}
-    \verb https://www.hsl.rl.ac.uk/archive/specs/va08.pdf
-    \endverb
-    \field{type}{ONLINE}
   \endentry
 
   \entry{simanneal}{article}{}

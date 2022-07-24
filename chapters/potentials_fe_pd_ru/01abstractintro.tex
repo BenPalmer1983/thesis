@@ -1,0 +1,197 @@
+\begin{changemargin}{1.0cm}{1.0cm}
+\abstractpreamble{The aim of this part of my work is to derived an interatomic potential for Fe-Pd and Fe-Ru that are suitable for modelling both radiation damage and a change in concentration of \acrshort{pgm}s at the grain boundary.\\  
+\\
+Experimental data exists for the bulk properties of \acrshort{bcc} Fe, \acrshort{fcc} Pd and \acrshort{hcp} Ru, but the \acrshort{fcc} structure of austenitic steels necessitates the computation of bulk properties, energies and forces of this structure.  \acrshort{dft} is the method used to perform these calculations.\\
+\\
+The parameters required for Quantum Espresso, the selected \acrshort{dft} code, are converged for each element and those that give a reasonable degree of accuracy, balance against execution time, are selected.  A computer code was developed to automate the convergence process and calculation of bulk properties.\\
+\\
+The computed properties, as well as a range of atomic configurations, for a reference database that is used to fit the potentials to.  A computer code was developed to carry out the fitting to this database. }
+\end{changemargin}
+
+
+
+\section{Introduction}
+
+While computer technology has advanced almost in accordance with Moore's law, the calculations involved to approximately simulate simple structures with Quantum Mechanics are barely accessible.  Ideally, crystal structures with several hundred atoms, containing Fe, Cr, and Ni with Ru or Pd would have been used to derive a potential describing all combinations of elements.  
+
+The computer used did not have the resources required for such calculations, and so the model was simplified to either Fe-Pd or Fe-Ru.  The ferromagentism and antiferromagnetism of Fe and Cr were explored using collinear spin \acrshort{dft} calculations.  Due to the improvement in modelling given by including magnetism, all calculations for the reference database were collinear spin.
+
+A number of computer codes were developed to automate processes.  QECONVERGE creates input files and calls PWscf to converge parameters used in this work (section \ref{code:qeconverge}).  QEEOS also creates input files for PWscf but computes bulk properties such as the equation of state, bulk modulus and elastic constants (section(\ref{code:qeeos}).
+
+\subsection{Interatomic Potential Fitting}
+
+The potentials in this work are fitted to both experimental data and DFT data.  As the purpose of these potentials is to provide a way to model Palladium and Ruthenium, and determine whether or not they migrate to the surface, appropriate atomic configurations are included in the fitting process.
+
+The work may be broken into three main parts.  The first is devoted to using DFT to generate the required data, the second is the development of a computer program for fitting the potential, and the third is finally fitting the potential.  An overview of this process is given in figure \ref{fig:workflowpotfit}.
+
+The process follows aspects of previous work.  The force matching method of Ercolessi and Adams\cite{forcematchingmethod} and its application within Brommer's PotFit code\cite{pbrommer} (and it's subsequent extension by Sheng\cite{shengeam}) impacted this work greatly.  The exact fitting methods used by Bonny and spline type functions used throughout work on Iron alloys by Ackland, Mendelev, Hepburn and more helped to fix on a specific form of the functions and functional used here.
+
+%\begin{landscape}
+\begin{figure}[ht] 
+\resizebox{0.9\linewidth}{!}{
+\tikzstyle{decisionb} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+
+\begin{tikzpicture}[node distance = 2cm, auto,rotate=90, transform shape]
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Setup 
+    \node [block] (exp) {Collate experimental properties};
+    \node [block, below of=exp] (ppchoice) {Choose or generate PPs};
+    \node [block, below of=ppchoice] (ecut) {Converge ecutwfc and ecutrho};
+    \node [block, below of=ecut] (kpoints) {Converge k-points and choose smearing};
+    \node [decisionb, below of=kpoints] (stop1) {More config sizes?};
+    \node [block, below of=stop1, yshift=-0.5cm] (dfttest) {Test the settings};
+    \node [decisionb, below of=dfttest] (stop2) {Continue with these settings?};
+    % lines
+    \path [line] (exp) -- (ppchoice);
+    \path [line] (ppchoice) -- (ecut);  
+    \path [line] (ecut) -- (kpoints); 
+    \path [line] (kpoints) -- (stop1);   
+    \coordinate[left of=stop1] (stop1a);
+    \coordinate[left of=kpoints] (stop1b);
+    \path [line] (stop1) -| node {yes}  ([xshift=-0.8cm]stop1a) -- ([xshift=-0.8cm]stop1b)  --  (kpoints); 
+    \path [line] (stop1) -- (dfttest);  
+    \coordinate[left of=stop2] (stop2a);
+    \coordinate[left of=ppchoice] (stop2b);
+    \path [line] (stop2) -| node {no}  ([xshift=-1.8cm]stop2a) -- ([xshift=-1.8cm]stop2b)  --  (ppchoice);
+    \path [line] (dfttest) -- (stop2);  
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=exp, node distance=5.5cm] (top1);
+    \node [block, below of=top1] (relax) {Relax pure element crystal};
+    \node [block, below of=relax] (eos) {Compute BM EoS};
+    \node [block, below of=eos] (ec) {Compute Elastic Constants};
+    \node [block, below of=ec] (random) {Randomly perturbed configs};
+    \node [block, below of=random] (surface) {Surface configs};
+    \node [decisionb, below of=surface] (stop3) {All elements complete?};
+    % lines
+    \coordinate[right of=stop2] (stop2c);
+    \coordinate[right of=exp] (stop2d);
+    \path [line] (stop2) -| node[yshift=-0.2cm] {yes}  ([xshift=0.5cm]stop2c) -- ([xshift=0.5cm]stop2d)  --  (top1)  --  (relax);
+    \path [line] (relax) -- (eos);  
+    \path [line] (eos) -- (ec);  
+    \path [line] (ec) -- (random);  
+    \path [line] (random) -- (surface);  
+    \path [line] (surface) -- (stop3);  
+    \coordinate[left of=stop3] (stop3a);
+    \coordinate[left of=relax] (stop3b);
+    \path [line] (stop3) -| node {no}  ([xshift=-0.3cm]stop3a) -- ([xshift=-0.3cm]stop3b)  --  (relax);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=top1, node distance=5.5cm] (top2);
+    \node [block, below of=top2] (alloy) {Binary Alloy calculations};
+    \node [block, below of=alloy] (alloyrelax) {Relax};
+    \node [block, below of=alloyrelax] (alloybulk) {Bulk};
+    \node [block, below of=alloybulk] (alloyrand) {Randomly perturbed configs};
+    \node [block, below of=alloyrand] (alloysurface) {Surface configs};
+    \node [decisionb, below of=alloysurface] (stop4) {All pairs complete?};
+    % lines
+    \coordinate[right of=stop3] (stop3c);
+    \coordinate[right of=top1] (stop3d);
+    \path [line] (stop3) -| node[yshift=-0.2cm] {yes}  ([xshift=0.5cm]stop3c) -- ([xshift=0.5cm]stop3d)  --  (top2)  --  (alloy);
+    \path [line] (alloy) -- (alloyrelax); 
+    \path [line] (alloyrelax) -- (alloybulk); 
+    \path [line] (alloybulk) -- (alloyrand); 
+    \path [line] (alloyrand) -- (alloysurface); 
+    \path [line] (alloysurface) -- (stop4); 
+    \coordinate[left of=stop4] (stop4a);
+    \coordinate[left of=alloyrelax] (stop4b);
+    \path [line] (stop4) -| node {no}  ([xshift=-0.3cm]stop4a) -- ([xshift=-0.3cm]stop4b)  --  (alloyrelax);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=top2, node distance=5.5cm] (top3);
+    \node [block, below of=top3] (fit) {Pure element fitting};
+    \node [block, below of=fit] (fitform) {Choose EAM function form};
+    \node [block, below of=fitform] (fitstart) {Choose starting parameters};
+    \node [block, below of=fitstart] (fitbp) {Fit to bulk properties};
+    \node [block, below of=fitbp] (fitefs) {Introduce EFS configs};
+    \node [block, below of=fitefs] (fittest) {Test Potential};
+    % lines
+    \path [line] (fit) -- (fitform); 
+    \path [line] (fitform) -- (fitstart); 
+    \path [line] (fitstart) -- (fitbp); 
+    \path [line] (fitbp) -- (fitefs); 
+    \path [line] (fitefs) -- (fittest); 
+    \coordinate[right of=stop4] (stop4c);
+    \coordinate[right of=top2] (stop4d);
+    \path [line] (stop4) -| node[yshift=-0.2cm] {yes}  ([xshift=0.5cm]stop4c) -- ([xshift=0.5cm]stop4d)  --  (top3)  --  (fit);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % DFT Calculations 
+    \coordinate[right of=top3, node distance=5.5cm] (top4);
+    \node [block, below of=top4] (fitimprov) {Improve fit}; 
+    \node [decisionb, below of=fitimprov, yshift=0.5cm] (stop5) {All alements done?};
+    \node [block, below of=stop5, yshift=-1.1cm] (gauge) {Effective gauge transformations}; 
+    \node [block, below of=gauge] (crosspair) {Fit alloy cross pair potentials}; 
+    \node [block, below of=crosspair] (lammpsdpoly) {Save as LAMMPS \& DLPOLY}; 
+    \node [block, below of=lammpsdpoly] (finaltest) {Test alloy potential}; 
+    % lines
+    \path [line] (fitimprov) -- (stop5);
+    \path [line] (stop5) --  node {yes} (gauge);
+    \path [line] (gauge) -- (crosspair);
+    \path [line] (crosspair) -- (lammpsdpoly);  
+    \path [line] (lammpsdpoly) -- (finaltest);    
+    \coordinate[right of=fittest] (fittesta);
+    \coordinate[right of=top3] (fittestb);
+    \path [line] (fittest) -|  ([xshift=0.5cm]fittesta) -- ([xshift=0.5cm]fittestb)  --  (top4)  --  (fitimprov);
+    \coordinate[left of=stop5] (stop5a);
+    \coordinate[left of=finaltest] (stop5b);
+    \path [line] (stop5) -| node[yshift=-0.2cm, xshift=0.9cm] {no}  ([xshift=-0.5cm]stop5a)   --  ([xshift=-0.5cm]stop5b)  --  ([xshift=-5.5cm]stop5b)  --  ([xshift=-5.5cm, yshift=11.6cm]stop5b) -- (fit);
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{tikzpicture}  
+}
+
+\caption{Work flow used to fit potentials}  
+\label{fig:workflowpotfit}
+\end{figure}
+%\end{landscape}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  Experimental Data
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Existing Experimental \& DFT Bulk Property Data}
+
+The bulk properties for Fe (\acrshort{bcc}) and Pd are available on several websites and in published work.  The lattice parameter, bulk modulus and elastic constants are available for Fe BCC and Pd FCC, but as pure Fe FCC is theoretical under normal conditions, this is computed here using \acrshort{dft}.
+
+
+A large amount of computing power is required to run the \acrshort{dft} calculations.  If the input parameters are not accurate enough to begin with, it will either take a long time for the \acrshort{dft} calculation to run, or it will fail to converge completely.  The lattice parameter for each element, using the density of that pure element in its state under normal conditions, is predicted for that element either for both the FCC and BCC structures (table \ref{table:predictedlattice}).
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c c c c c c}
+\hline\hline
+Element & Atomic Mass & Density kg/m\textsuperscript{3} & Atoms/m\textsuperscript{3} & FCC (Bohr/Angstrom) & BCC (Bohr/Angstrom) \\
+\hline\hline
+Al \cite{webelementsal}    & 26.98  &  2700   &  $6.02 \times 10^{28}$    & 7.66/4.05    & 6.08/3.22   \\ 
+Cr \cite{webelementsfe}    & 52.00  &  7140   &  $8.27 \times 10^{28}$    & 6.89/3.64    & 5.47/2.89   \\ 
+Fe \cite{webelementsfe}    & 55.84  &  7874   &  $8.47 \times 10^{28}$    & 6.83/3.61    & 5.42/2.87   \\ 
+Ni \cite{webelementsni}    & 58.69  &  8908   &  $9.09 \times 10^{28}$    & 6.67/3.53    & 5.30/2.80   \\ 
+Ru \cite{webelementsru}    & 101.07 &  12270  &  $7.42 \times 10^{28}$    & 7.14/3.78    & 5.67/3.00   \\ 
+Pd \cite{webelementspd}    & 106.42 &  12023  &  $6.83 \times 10^{28}$    & 7.34/3.88    & 5.83/3.08   \\ 
+\hline\hline
+\end{tabular}
+\end{center}
+\caption{Predicted lattice parameters based on the density, atomic number and type of structure}
+\label{table:predictedlattice}
+\end{table}
+
+Aluminium appears here because it has a simpler electronic structure and no magnetic properties to complicate the DFT calculations.  These calculations for Aluminium complete much faster than for the other elements listed, so it was used throughout to develop and test the computer codes created.
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+#FILE              feru_pair.pot
+#LABEL             Fe Ru
+#F_ON true
+#F_TYPE            PAIR            ! PAIR DENS EMBE
+#F_GROUP
+#R_CUT              6.5
+#FIX               false
+
+#FILE              fefe_pair.pot
+#LABEL             Fe Fe
+#F_ON true
+#F_TYPE            PAIR            ! PAIR DENS EMBE
+#F_GROUP
+#R_CUT              6.5
+#FIX               false
+
+#FILE              fe_dens.pot
+#LABEL             Fe
+#F_ON true
+#F_TYPE            DENS            ! PAIR DENS EMBE
+#F_GROUP           1
+#R_CUT             6.5
+#FIX               false
+
+#FILE              fe_embe.pot
+#LABEL             Fe
+#F_ON true
+#F_TYPE            EMBE            ! PAIR DENS EMBE
+#F_GROUP           1
+#FIX               false
+
+#FILE              ruru_pair.pot
+#LABEL             Ru Ru
+#F_ON true
+#F_TYPE            PAIR            ! PAIR DENS EMBE
+#F_GROUP
+#R_CUT              6.5
+#FIX               false
+
+#FILE              ru_dens.pot
+#LABEL             Ru
+#F_ON true
+#F_TYPE            DENS            ! PAIR DENS EMBE
+#F_GROUP           1
+#R_CUT             6.5
+#FIX               false
+
+#FILE              ru_embe.pot
+#LABEL             Ru
+#F_ON true
+#F_TYPE            EMBE            ! PAIR DENS EMBE
+#F_GROUP           1
+#FIX               false
+
+
