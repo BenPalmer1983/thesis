@@ -173,17 +173,17 @@ There were a number of options available when choosing certain parameters, such 
 The full potentials are available from https://github.com/BenPalmer1983/fepd\_feru\_potential and is ready to use with \acrshort{lammps}.  The functions for pure iron are the same for both potentials and give the same bulk properties, but the binary potentials and of course those for pure Ru and Pd differ from one another.
 
 \begin{figure}[htb]
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.48\textwidth}
   \centering
   \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/fepd_potential/eos/rose_plot_bp_0.eps}  
   \caption{BCC Iron}
-  \label{fig:sub-first}
+  \label{fig:rose-vinet-bcc-fe}
 \end{subfigure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.48\textwidth}
   \centering
   \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/fepd_potential/eos/rose_plot_bp_1.eps}  
   \caption{FCC Iron}
-  \label{fig:sub-first}
+  \label{fig:rose-vinet-fcc-fe}
 \end{subfigure}
 \label{fig:fe-rosevinet}
 \caption{Rose-Vinet plots for Iron}
@@ -192,17 +192,17 @@ The full potentials are available from https://github.com/BenPalmer1983/fepd\_fe
 Both the Birch-Murnaghan and Rose-Vinet equation of states were used to fit the potentials, and these are useful for fitting the bulk modulus (Birch-Murnaghan) and behaviour of the potential over a wider range of values for the lattice parameter (Rose-Vinet). The Rose-Vinet fit for Fe is given in figure \ref{fig:fe-rosevinet} for both the \acrshort{fcc} and \acrshort{bcc} structures.
 
 \begin{figure}[htb]
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.48\textwidth}
   \centering
   \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/fepd_potential/eos/rose_plot_bp_2.eps}  
   \caption{FCC Palladium}
-  \label{fig:sub-first}
+  \label{fig:rose-vinet-fcc-pd}
 \end{subfigure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.48\textwidth}
   \centering
   \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/feru_potential/eos/rose_plot_bp_2.eps}  
   \caption{FCC Ruthenium}
-  \label{fig:sub-first}
+  \label{fig:rose-vinet-fcc-ru}
 \end{subfigure}
 \label{fig:rupd-rosevinet}
 \caption{Rose-Vinet plots for Palladium and Ruthenium}
@@ -211,13 +211,13 @@ Both the Birch-Murnaghan and Rose-Vinet equation of states were used to fit the 
 The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet} for just \acrshort{fcc} structures.  The potentials were then used to calculate the energies predicted by \acrshort{dft} and how well these fit, for both potentials, are given in figure \ref{fig:fepd-feru-fit}.
 
 \begin{figure}[htb]
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.48\textwidth}
   \centering
   \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/fepd_potential/potential_known_energy_full_set.eps} 
   \caption{Fe-Pd}
   \label{fig:fepd-fit}
 \end{subfigure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.48\textwidth}
   \centering
   \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/feru_potential/potential_known_energy_full_set.eps} 
   \caption{Fe-Ru}
@@ -227,13 +227,13 @@ The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet
 \caption{How well the potentials recreate \acrshort{dft} values}
 \end{figure}
 
-There has been very limited testing of the potentials with \acrshort{lammps} in order to verify that the output files are readable by the molecular dynamics code.  The code successfully reads in both potentials and was able to run a rudimentary simulation of Fe-Pd and Fe-Ru.  An single frame from a trial simulation of a 32,000 atom cube, made of 99\% Fe and 1\% Pd, is given in figure \ref{fig:fepd-lammps-trial}.
-
 \begin{figure}[htb]
 \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/lammps/fepd_fct_cube_particle.png} 
 \label{fig:fepd-lammps-trial}
 \caption{LAMMPS modelled cube like Fe-Pd particle}
 \end{figure}
+
+There has been very limited testing of the potentials with \acrshort{lammps} in order to verify that the output files are readable by the molecular dynamics code.  The code successfully reads in both potentials and was able to run a rudimentary simulation of Fe-Pd and Fe-Ru.  An single frame from a trial simulation of a 32,000 atom cube, made of 99\% Fe and 1\% Pd, is given in figure \ref{fig:fepd-lammps-trial}.
 
 There is certainly room for improvement and this will be discussed in more detail in chapter \ref{chapter:conclusions}.  More data relating to the potentials is given in appendix \ref{chapter:appendix-fepdpotential} and \ref{chapter:appendix-ferupotential} and these detail the bulk properties of the potentials and compare how well they fit to the \acrshort{dft} computed values to which they are fit.
 
