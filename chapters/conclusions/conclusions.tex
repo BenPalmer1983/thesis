@@ -67,29 +67,29 @@ The first version of the Activity code was replaced by a second version that use
 
 \subsection{Iron Irradiation}
 
-During the experimental stage of this work it was determined that the isotope to focus on would be Cobalt-55 and the associated 931keV peak it generates would be the peak to measure.  The equipment was calibrated specifically for the purpose of measuring this gamma.  If this is the case then the value predicted by the Activity V2 computer code is in good agreement (table \ref{table:activityResultsCompared}). 
+During the experimental stage of this work it was determined that the isotope to focus on would be ${}^{55}_{27} Co$ and the associated 931keV peak it generates would be the peak to measure.  The equipment was calibrated specifically for the purpose of measuring this gamma.  If this is the case then the value predicted by the Activity V2 computer code is in good agreement (table \ref{table:activityResultsCompared}). 
 
-However, the second version of the Activity code collates and displays data more clearly than the first version.  It is clear that there should also be a nearby 935KeV gamma from the decay of Manganese-52.  The sum of these nearby gammas is predicted to be almost 120kBq and, if both peaks were tallied in the experimental work due to the energy resolution of the detector, the predicted value is three times that of the measured value of 44kBq.
+However, the second version of the Activity code collates and displays data more clearly than the first version.  It is clear that there should also be a nearby 935KeV gamma from the decay of ${}^{52}_{25}Mn$.  The sum of these nearby gammas is predicted to be almost 120kBq and, if both peaks were tallied in the experimental work due to the energy resolution of the detector, the predicted value is three times that of the measured value of 44kBq.
 
 It is quite possible that the code is giving a value three times larger than expected and reasons for this will be discussed below.
 
 
 \subsection{Molybdenum Irradiation}
 
-Similar to the results discussed for Iron, the activity results computed for Molybdenum have positive and negative attributes.  There are gaps in the available cross section data, but the most prominent gammas are predicted by the computer code.  The radioactivity computed is too high, but for each of the five peaks measured by experiment, the values are out by a similar factor.
+Similar to the results discussed for Fe, the activity results computed for Molybdenum have positive and negative attributes.  There are gaps in the available cross section data, but the most prominent gammas are predicted by the computer code.  The radioactivity computed is too high, but for each of the five peaks measured by experiment, the values are out by a similar factor.
 
 
 \subsection{Beam Flux Reduction and Gamma Attenuation}
 
 The cross section data used in the second version has been checked for a number of cases against EXFOR data and is in good agreement with this.  Certain data for reactions is missing in particular those of observationally stable and isotopes with extremely long isotopes.
 
-Thin foils are ideal to compare experimental results to the data files and activity code as ions will not lose a great deal of energy travelling though such a shallow target.  However, the much thicker targets used here for Iron and Molybdenum reduce ion energies significantly if not completely.
+Thin foils are ideal to compare experimental results to the data files and activity code as ions will not lose a great deal of energy travelling though such a shallow target.  However, the much thicker targets used here for Fe and Mo reduce ion energies significantly if not completely.
 
-It could be argued that as ions pass through the target the energy and intensity of the beam decreases, and this is not modelled with the activity code.  By imagining the target as thin laminae perpendicular to the beam it is easy to consider that the ions will enter the first layer and lose those that react with target atoms.  As the beam enters the next lamina it will have a lower energy and a lower intensity.
+It could be argued that as ions pass through the target the energy and intensity of the beam decreases, and this is not modelled with the activity code.  By imagining the target as thin laminae perpendicular to the beam it is easy to consider that the ions will enter the first layer and lose those that react with target atoms.  As the beam enters the next lamina it will have a lower energy, either due to electronic stopping or deflection by nuclear collisions, and a lower intensity as a proportion of the protons will be absorbed.
 
-The change in energy is accounted for by virtue of the \acrshort{srim} exyz ion trajectory file but how the beam intensity decreases is not.  How many ions are captured through nuclear reactions and is it a significant percentage of the total number of ions?  Particles and residuals were calculated to be produced at a rate of approximately $6\times10^{10}$ per second for the Iron target and $7\times10^{10}$ per second for the thick Molybdenum target.  The beam rates were $3 \times 10^{12}$ and $3 \times 10^{13}$ protons per second respectively and so, even if the estimate that a proton was removed for each reaction the beams would only lose 2\% and 0.3\% of their intensity due to transmutation reactions.
+The change in energy is accounted for in the code through the \acrshort{srim} exyz ion trajectory file but how the beam intensity decreases is not.  How many ions are captured through nuclear reactions and is it a significant percentage of the total number of ions?  Particles and residuals were calculated to be produced at a rate of approximately $6\times10^{10}$ per second for the Fe target and $7\times10^{10}$ per second for the thick Mo target.  The beam rates were $3 \times 10^{12}$ and $3 \times 10^{13}$ protons per second respectively and so, even if the estimate that a proton was removed for each reaction the beams would only lose 2\% and 0.3\% of their intensity due to transmutation reactions.
 
-Another possibility for the over estimate in prediction is the attenuation of gammas travelling through the target material to the detector.  This was discussed in the work of my colleague\cite{johnhewett} and the inhomogeneous distribution of radioactive material in the Molybdenum target was discussed in this work (section \ref{section:estimatingmoactivity}).  Calculations using the \acrshort{nist} attenuation coefficient for Molybdenum show that 500keV gammas have their intensity reduced to 91\% through a 1.0cm target.  The intensity of 1MeV gammas is reduced to just 94\% through the same target.
+Another possibility for the over estimate in prediction is the attenuation of gammas travelling through the target material to the detector.  This was discussed in the work of my colleague\cite{johnhewett} and the inhomogeneous distribution of radioactive material in the Mo target was discussed in this work (section \ref{section:estimatingmoactivity}).  Calculations using the \acrshort{nist} attenuation coefficient for Mo show that 500keV gammas have their intensity reduced to 91\% through a 1.0cm target.  The intensity of 1MeV gammas is reduced to just 94\% through the same target.
 
 The reduction through loss of ions due to reactions and attenuation of gammas does not explain the increase in predicted activity.  There may be another reason behind this, or there may be issues with the experimental work.
 
@@ -104,10 +104,6 @@ Ideally a range of target materials of varying thicknesses would be irradiated w
 
 
 
-
-
-
-
 \subsection{100DPA Activity Predictions}
 
 Using dose rates calculated with \acrshort{srim}, the code was used to predict how radioactive Fe would become at a dose rate of 100DPA.  It assumes the beam source is the Scanditronix MC40 using protons at maximum current for an uninterrupted duration of 134-391 days.  In the worst case scenario, 25MeV protons result in over 20 grays per hour if irradiated to the required damage dose.  However, by reducing the beam energy to 15MeV radioactivity of the target is reduced by a factor of 1,000.  It may be reduced further by lowering the energy to 5 or 10MeV, but for a 0.5mm piece of steel, the ions would not have enough energy to pass through and the damage would be disproportionately concentrated in the top 100-250 microns.
@@ -118,52 +114,44 @@ The modified Bateman equation as derived is an original contribution to knowledg
 
 
 
-\section{Iron-Palladium Potential}
+\section{Derived Potentials}
 
-\subsection{Restricting the Potential to Iron-Palladium}
+\subsection{Restricting Potentials to Binary Alloys}
 
-It would be too complex a task to develop an interatomic potential that includes Fe, Pd, Cr, Ni and any other elements that make up a typical sample of austenitic stainless steel; Fe and Pd are the starting point, with the possibility of adding more elements to the potential in the future.
+It would be too complex a task to develop an interatomic potential that includes Fe, Pd, Ru, Cr, Ni and any other elements that make up a typical sample of austenitic stainless steel.  The binary alloy potentials for Fe-Pd and Fe-Ru are a starting point to with the possibility of adding more elements to the potential in the future.
 
-Pd exists in the \acrshort{fcc} state at normal conditions, but Fe is \acrshort{bcc}.  The relatively high percentage of Ni in the steel stabilises the austenitic \acrshort{fcc} structure.  The bulk properties, such as the lattice parameter, bulk modulus, elastic constants and so forth, are experimentally known for Pd.  As Fe doesn't exist in the gamma phase at normal conditions, \acrshort{dft} calculations were used to find the bulk properties of gamma Fe.
+Austenitic steels have a \acrshort{fcc} structure and this is why the potentials were trained with a higher weighting to \acrshort{fcc} configurations.  As only Pd exists under normal conditions in this state, the properties for all three elements were computed using \acrshort{dft}.
+
 
 \subsection{Collinear Spin \acrshort{dft}}
 
 With most models, there will be a trade off between simplicity, accuracy and the computational cost of the model.  The parameters that had the largest impact on how long a \acrshort{dft} calculation will take to compute are the planewave energy cutoff and number of k-points used to integrate the Brillouin zone.  These should be reduced as much as possible, while keeping the energy and force results within a tolerance determined by the user.
 
-A choice in the complexity of the calculation also had to be decided upon, and this was whether to use a non-spin, collinear spin or non-colinear spin calculation.  Pure Fe under normal conditions has a \acrshort{bcc} structure and energetically favours a ferromagnetic configuration.  Cr also has a \acrshort{bcc} structure under normal conditions, but it's optimum structure magnetically is antiferromagnetic.  Gamma phase Fe (\acrshort{fcc}) is also antiferromagnetic, and so it will be important to include magnetism in the \acrshort{dft} calculations.
+A choice in the complexity of the calculation also had to be decided upon, and this was whether to use a non-spin, collinear spin or non-collinear spin calculation.  Examples of room temperature ferromagnetic and antiferromagnetic materials, Fe and Cr respectively, were investigated with \acrshort{dft} using both non-spin and collinear spin.  These calculations showed that when magnetism is ignored the optimum structure for Fe is \acrshort{fcc}, but when the spin of unpaired electrons is accounted for \acrshort{dft} then correctly predicts the optimum structure as \acrshort{bcc}.  Similarly when spin polarized \acrshort{dft} calculations are performed for Cr the optimum state is shown to be \acrshort{bcc}, as expected.  It was therefore deemed necessary to use these more computationally intensive calculations.
 
-The options in increasing complexity, and computational time, are:
+\subsection{Automated Convergence Calculations}
 
-\begin{itemize}
-\item non-magnetic
-\item collinear - suitable for high symmetry, ferromagnetic/antiferromagnetic
-\item non-collinear - spin may not be aligned in the same direction
-\end{itemize}
-
-For the Fe and Pd calculations, collinear spin was used and the starting configurations of the atoms were set up in accordance with the known configurations i.e. \acrshort{bcc} Fe was configured such that the spins were aligned in the same direction, and \acrshort{fcc} were set up in an antiferromagnetic setting.  The collinear \acrshort{dft} calculations showed that Fe \acrshort{fcc}, where magnetism is taken into account, is slightly tetragonal with the atoms arranged in a \acrshort{fct} structure.
-
-A Python (QECONVERGE) code was developed to automatically converge the aformentioned parameters.  Whilst automation worked well for the planewave cutoff parameters the choice of smearing type, the amount of smearing and number k-points was more difficult to automate.  It was more useful to select a range of k-point values and smearing values and produce 2D force and energy plots so the user could make a decision based on these and choose the parameters that best suit their requirements.
+A Python code (QECONVERGE) was developed to automatically converge the aforementioned parameters.  Whilst automation worked well for the planewave cutoff parameters the choice of smearing type, the amount of smearing and number k-points was more difficult to automate.  It was more useful to select a range of k-point values and smearing values and produce 2D force and energy plots so the user could make a decision based on these and choose the parameters that best suit their requirements.
 
 During testing, a much larger number of k-points were needed for the predicted properties of Aluminium to replicate the known properties reasonably well.  Unfortunately, the number of k-points used for Fe and Pd was constrained by the amount of time and the RAM available on the compute nodes.  Ideally, more k-points would have been used, but this was not possible.
 
 
+\subsection{Bulk Property Calculations}
 
-\subsection{Bulk Properties of Orthorhombic \acrshort{fcc} Iron}
-
-As pure Fe does not exist in its gamma phase at room temperature, \acrshort{dft} calculations were used in place of experimental data.  As eluded to in the previous section, collinear spin \acrshort{dft} was selected.  Although a smaller number of k-points were used, the calculation lasted for approximately 30 days from start to end.
+As discussed in the previous section, spin polarised \acrshort{dft} were used for all first principles calculations in this work.  Although a smaller number of k-points were used than would have been desired, the calculations required to compute these properties continued for more than a month.
 
 Rather that calculate the input files manually, a program was created to automate this process (QE\_EOS).  It was designed to cache input and output files for the \acrshort{dft} program, PWscf, such that it would load an output file from the cache if it had already successfully run, to reduce the calculation time.
 
-The relaxed (energy minimised) shape of the antiferromagnetic \acrshort{fcc} Fe was not cubic, but orthorhombic.  The equation of state calculation is specifically for a cubic crystal, but the elastic constants were calculated for the orthorhombic crystal.  From the 9 calculated elastic constants the melting point, bulk modulus, shear modulus and Young's modulus were calculated (section \ref{section:fccferesults} and appendix \ref{section:fefccappendix}).  The resulting structure was stable and were well within a magnitude of the known values for \acrshort{bcc} Fe.  These data are an original contribution to science.
+In the case of Fe, the relaxed (energy minimised) shape of the antiferromagnetic \acrshort{fcc} Fe was not cubic, but orthorhombic.  The equation of state calculation is specifically for a cubic crystal, but the elastic constants were calculated for the orthorhombic crystal.  From the 9 calculated elastic constants the melting point, bulk modulus, shear modulus and Young's modulus were calculated (section \ref{section:fccferesults} and appendix \ref{section:fefccappendix}).  The resulting structure was stable and were well within a magnitude of the known values for \acrshort{bcc} Fe.  These data are an original contribution to science.  The properties were also computed for Pd and Ru and were used in the derivation of interatomic potentials.
 
 
+\subsection{Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}
 
-\subsection{Palladium-Iron Configurations as Fitting Data}
+To be able to fit the Fe-Pd and Fe-Ru potentials, the bulk properties were computed and a range of other configurations were generated.  A number had atoms randomly perturbed from their perfect positions, others represented slabs, defects and so on.
 
-To be able to fit the Fe-Pd potentials, the bulk properties of both pure \acrshort{fcc} Fe and \acrshort{fcc} Pd were either calculated or taken from experimental values.  The potentials were then trained to fit this data.  As well as this, a number of configurations of Fe, Pd and Fe-Pd were generated with their atoms slightly displaced from their lattice positions.  This would gave a wider range of atom separations and force values for the fitting program to use.
+The energy and force data were entirely from first-principles calculations, and ideally there would have been more configurations and computed with a higher number of k-points.  In addition, a wider range of vacancies, interstitials and mixing concentrations would have been desirable.  Unfortunately many of the configurations failed to converge, and this was particularly prevalent where the atom configurations were far from the perfect crystal, and even more so when multiple elements were used in a calculation.
 
-The force data were entirely from first-principles calculations, and ideally there would have been more configurations and computed with a higher number of k-points.  In addition, a wider range of vacancies, interstitials and mixing concentrations would have been desirable. The atomic percentage on Pd or Ru doped is half a percent which would be better represented with a one \acrshort{pgm} atom in a 4x4x4 \acrshort{fcc} 256 atom supercell rather than the 32 atom cells used, but again this was a constraint imposed by computational resources.
-
+The atomic percentage on Pd or Ru doped is half a percent which would be better represented with a one \acrshort{pgm} atom in a 4x4x4 \acrshort{fcc} 256 atom supercell rather than the 32 atom cells used, but again this was a constraint imposed by computational resources.
 
 
 \subsection{Iron-Palladium Potential}

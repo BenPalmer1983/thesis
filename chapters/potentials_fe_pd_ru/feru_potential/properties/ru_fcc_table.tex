@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline\hline
+Property & \multicolumn{3}{c}{DFT Computed} & \multicolumn{3}{c}{This Potential} \\
+\hline\hline
+$a_0$ (angs)         & \multicolumn{3}{c}{3.81}   & \multicolumn{3}{c}{3.79} \\
+Basis            & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} \\
+$E_{coh}$ (eV)           & \multicolumn{3}{c}{-6.62}  & \multicolumn{3}{c}{-6.61} \\
+$B_0$ (GPa)              & \multicolumn{3}{c}{307.8(a) 303.3(b)}  & \multicolumn{3}{c}{331.1(a) 320.4(b)} \\
+Stiff.1 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 471.5 & 219.1 & 219.2 & 0 & 0 & 0 \\ 219.1 & 471.5 & 219.2 & 0 & 0 & 0 \\ 219.2 & 219.2 & 471.7 & 0 & 0 & 0 \\ 0 & 0 & 0 & 245.0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 245.0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 245.0 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 368.3 & 296.5 & 296.5 & 0 & 0 & 0 \\ 296.5 & 368.3 & 296.5 & 0 & 0 & 0 \\ 296.5 & 296.5 & 368.3 & 0 & 0 & 0 \\ 0 & 0 & 0 & 104.0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 104.0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 104.0 \end{bmatrix}$} \\
+Stiff.2 (GPa) & \multicolumn{3}{c}{}   & \multicolumn{3}{c}{$\begin{bmatrix} 375.0 & 309.2 & 309.2 & 0 & 0 & 0 \\ 309.2 & 375.0 & 309.2 & 0 & 0 & 0 \\ 309.2 & 309.2 & 375.0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 97.5 & 0 & 0 \\ 0 & 0 & 0 & 0 & 97.5 & 0 \\ 0 & 0 & 0 & 0 & 0 & 97.5 \end{bmatrix}$} \\
+\hline\hline
+\end{tabular}%
+}
+\caption{The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state.  The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite{dfttisiravindran} and in stiffness (2) by Mehl et al\cite{mehlsp}\cite{elasticpropertiesmehl}.}
+\end{table}

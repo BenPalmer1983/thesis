@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline\hline
+Property & \multicolumn{3}{c}{DFT Computed} & \multicolumn{3}{c}{This Potential} \\
+\hline\hline
+$a_0$ (angs)         & \multicolumn{3}{c}{3.93}   & \multicolumn{3}{c}{3.89} \\
+Basis            & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} \\
+$E_{coh}$ (eV)           & \multicolumn{3}{c}{-3.91}  & \multicolumn{3}{c}{-3.78} \\
+$B_0$ (GPa)              & \multicolumn{3}{c}{184.4(a) 173.7(b)}  & \multicolumn{3}{c}{165.0(a) 156.0(b)} \\
+Stiff.1 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 218.5 & 151.4 & 151.4 & 0 & 0 & 0 \\ 151.4 & 218.5 & 151.3 & 0 & 0 & 0 \\ 151.4 & 151.3 & 218.4 & 0 & 0 & 0 \\ 0 & 0 & 0 & 80.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 80.3 & 0 \\ 0 & 0 & 0 & 0 & 0 & 80.2 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 187.1 & 140.3 & 140.3 & 0 & 0 & 0 \\ 140.3 & 187.1 & 140.3 & 0 & 0 & 0 \\ 140.3 & 140.3 & 187.1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 68.0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 68.0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 68.0 \end{bmatrix}$} \\
+Stiff.2 (GPa) & \multicolumn{3}{c}{}   & \multicolumn{3}{c}{$\begin{bmatrix} 191.1 & 152.0 & 152.0 & 0 & 0 & 0 \\ 152.0 & 191.1 & 152.0 & 0 & 0 & 0 \\ 152.0 & 152.0 & 191.1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 58.8 & 0 & 0 \\ 0 & 0 & 0 & 0 & 58.8 & 0 \\ 0 & 0 & 0 & 0 & 0 & 58.8 \end{bmatrix}$} \\
+\hline\hline
+\end{tabular}%
+}
+\caption{The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state.  The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite{dfttisiravindran} and in stiffness (2) by Mehl et al\cite{mehlsp}\cite{elasticpropertiesmehl}.}
+\label{table:fepd-pdfcc-dftvspotential}
+\end{table}

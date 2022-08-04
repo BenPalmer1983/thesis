@@ -270,43 +270,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.13}{\ignorespaces DIRAC calculated radial electron density for Palladium\relax }}{178}{figure.caption.243}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Rose-Vinet plots for Iron\relax }}{180}{figure.caption.246}%
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Rose-Vinet plots for Iron\relax }}{181}{figure.caption.247}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Rose-Vinet plots for Palladium and Ruthenium\relax }}{180}{figure.caption.247}%
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Rose-Vinet plots for Palladium and Ruthenium\relax }}{181}{figure.caption.248}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.16}{\ignorespaces How well the potentials recreate \acrshort {dft} values\relax }}{181}{figure.caption.248}%
+\contentsline {figure}{\numberline {7.16}{\ignorespaces How well the potentials recreate \acrshort {dft} values\relax }}{181}{figure.caption.249}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.17}{\ignorespaces LAMMPS modelled cube like Fe-Pd particle\relax }}{181}{figure.caption.249}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv1coh} and \ref {fepdv1se}\relax }}{189}{figure.caption.250}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv2coh} and \ref {fepdv2se}\relax }}{190}{figure.caption.251}%
+\contentsline {figure}{\numberline {7.17}{\ignorespaces LAMMPS modelled cube like Fe-Pd particle\relax }}{182}{figure.caption.250}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces DFT Aluminium Cohesive Energy\relax }}{193}{figure.caption.252}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv1coh} and \ref {fepdv1se}\relax }}{190}{figure.caption.251}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.2}{\ignorespaces DFT Aluminium Surface Energy\relax }}{193}{figure.caption.252}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Cohesive energy and surface energy plots - detailed plots in the appendix \ref {fepdv2coh} and \ref {fepdv2se}\relax }}{191}{figure.caption.252}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces DFT Aluminium Cohesive Energy\relax }}{194}{figure.caption.253}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Decay path for Chromium-49 \cite {jeff311}\relax }}{228}{figure.caption.260}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Decay path for Nickel-66 \cite {jeff311}\relax }}{229}{figure.caption.262}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Decay path for Caesium-125 \cite {jeff311}\relax }}{230}{figure.caption.264}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{231}{figure.caption.266}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{232}{figure.caption.268}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.6}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{233}{figure.caption.270}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces DFT Aluminium Surface Energy\relax }}{194}{figure.caption.253}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -314,125 +296,17 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Residual isotope activity by isotope at 3 seconds into irradiation\relax }}{320}{figure.caption.273}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Decay path for Chromium-49 \cite {jeff311}\relax }}{229}{figure.caption.261}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Residual isotope activity by isotope at 60 seconds into irradiation\relax }}{320}{figure.caption.274}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Decay path for Nickel-66 \cite {jeff311}\relax }}{230}{figure.caption.263}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.3}{\ignorespaces Residual isotope activity by isotope at 300 seconds into irradiation - end of irradiation\relax }}{321}{figure.caption.275}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Decay path for Caesium-125 \cite {jeff311}\relax }}{231}{figure.caption.265}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.4}{\ignorespaces Residual isotope activity by isotope at 1 day, with approximately 1 day of cooling\relax }}{321}{figure.caption.276}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{232}{figure.caption.267}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Residual isotope activity by isotope at 2 days, with approximately 2 days of cooling\relax }}{322}{figure.caption.277}%
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{233}{figure.caption.269}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.6}{\ignorespaces Residual isotope activity by isotope at approximately 3 days, with approximately 3 days of cooling\relax }}{322}{figure.caption.278}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.7}{\ignorespaces Gamma activity by isotope at 3 seconds into irradiation\relax }}{323}{figure.caption.279}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.8}{\ignorespaces Gamma activity by isotope at 60 seconds into irradiation\relax }}{323}{figure.caption.280}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.9}{\ignorespaces Gamma activity by isotope at 300 seconds into irradiation\relax }}{324}{figure.caption.281}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.10}{\ignorespaces Gamma activity by isotope with approximately 1 day of cooling\relax }}{324}{figure.caption.282}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.11}{\ignorespaces Gamma activity by isotope with approximately 2 days of cooling\relax }}{325}{figure.caption.283}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.12}{\ignorespaces Gamma activity by isotope with approximately 3 days of cooling\relax }}{325}{figure.caption.284}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.13}{\ignorespaces Isotope activity contribution by target isotope at 3 seconds into irradiation\relax }}{326}{figure.caption.285}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.14}{\ignorespaces Isotope activity contribution by target isotope at 60 seconds into irradiation\relax }}{326}{figure.caption.286}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.15}{\ignorespaces Isotope activity contribution by target isotope at 300 seconds into irradiation\relax }}{327}{figure.caption.287}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.16}{\ignorespaces Isotope activity contribution by target isotope with approximately 1 day of cooling\relax }}{327}{figure.caption.288}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.17}{\ignorespaces Isotope activity contribution by target isotope with approximately 2 days of cooling\relax }}{328}{figure.caption.289}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.18}{\ignorespaces Isotope activity contribution by target isotope with approximately 3 days of cooling\relax }}{328}{figure.caption.290}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.19}{\ignorespaces Gamma activity contribution by target isotope at 3 seconds into irradiation\relax }}{329}{figure.caption.291}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.20}{\ignorespaces Gamma activity contribution by target isotope at 60 seconds into irradiation\relax }}{329}{figure.caption.292}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.21}{\ignorespaces Gamma activity contribution by target isotope at 300 seconds into irradiation\relax }}{330}{figure.caption.293}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.22}{\ignorespaces Gamma activity contribution by target isotope with approximately 1 day of cooling\relax }}{330}{figure.caption.294}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.23}{\ignorespaces Gamma activity contribution by target isotope with approximately 2 days of cooling\relax }}{331}{figure.caption.295}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.24}{\ignorespaces Gamma activity contribution by target isotope with approximately 3 days of cooling\relax }}{331}{figure.caption.296}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.25}{\ignorespaces Total activity over time\relax }}{336}{figure.caption.298}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.26}{\ignorespaces Total gamma power output over time\relax }}{336}{figure.caption.299}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.27}{\ignorespaces Radioactive decay from residual isotopes tallied by target isotope - end of beam (1,500 seconds)\relax }}{337}{figure.caption.300}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.28}{\ignorespaces Radioactive decay from residual isotopes tallied by target isotope - 3 days after irradiation\relax }}{337}{figure.caption.301}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.29}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - end of beam (1,500 seconds)\relax }}{338}{figure.caption.302}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.30}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - 3 days after irradiation\relax }}{338}{figure.caption.303}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.31}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - end of beam (1,500 seconds)\relax }}{339}{figure.caption.304}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.32}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - 3 days after irradiation\relax }}{339}{figure.caption.305}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.33}{\ignorespaces Predicted gamma lines - end of beam (1,500 seconds)\relax }}{340}{figure.caption.306}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {E.34}{\ignorespaces Predicted gamma lines - 3 days after irradiation\relax }}{340}{figure.caption.307}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Cooling measured by gamma power for iron samples irradiated to 100DPA at a range of proton energies\relax }}{342}{figure.caption.309}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.2}{\ignorespaces Residual isotope activity over time with 5MeV protons\relax }}{343}{figure.caption.310}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.3}{\ignorespaces Residual isotope gamma output at the end of irradiation with 5MeV protons\relax }}{343}{figure.caption.311}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.4}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{344}{figure.caption.312}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.5}{\ignorespaces Residual isotope activity over time with 10MeV protons\relax }}{345}{figure.caption.313}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.6}{\ignorespaces Residual isotope gamma output at the end of irradiation with 10MeV protons\relax }}{345}{figure.caption.314}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.7}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{346}{figure.caption.315}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.8}{\ignorespaces Residual isotope activity over time with 15MeV protons\relax }}{347}{figure.caption.316}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.9}{\ignorespaces Residual isotope gamma output at the end of irradiation with 15MeV protons\relax }}{347}{figure.caption.317}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.10}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{348}{figure.caption.318}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.11}{\ignorespaces Residual isotope activity over time with 20MeV protons\relax }}{349}{figure.caption.319}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.12}{\ignorespaces Residual isotope gamma output at the end of irradiation with 20MeV protons\relax }}{349}{figure.caption.320}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.13}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{350}{figure.caption.321}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.14}{\ignorespaces Residual isotope activity over time with 25MeV protons\relax }}{351}{figure.caption.322}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.15}{\ignorespaces Residual isotope gamma output at the end of irradiation with 25MeV protons\relax }}{351}{figure.caption.323}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.16}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{352}{figure.caption.324}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.17}{\ignorespaces Residual isotope activity over time with 30MeV protons\relax }}{353}{figure.caption.325}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.18}{\ignorespaces Residual isotope gamma output at the end of irradiation with 30MeV protons\relax }}{353}{figure.caption.326}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {F.19}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{354}{figure.caption.327}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {G.1}{\ignorespaces SRIM trajectories for 12MeV, 14MeV and 16MeV protons in iron\relax }}{355}{figure.caption.328}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {G.2}{\ignorespaces SRIM trajectories for 18MeV, 20MeV and 22MeV protons in iron\relax }}{355}{figure.caption.329}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {G.3}{\ignorespaces SRIM trajectories for 24MeV, 26MeV and 28MeV protons in iron\relax }}{355}{figure.caption.330}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {G.4}{\ignorespaces SRIM trajectories for 30MeV, 32MeV and 34MeV protons in iron\relax }}{356}{figure.caption.331}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {G.5}{\ignorespaces SRIM trajectories for 36MeV protons in iron\relax }}{356}{figure.caption.332}%
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Decay path for Bismuth-213 \cite {jeff311}\relax }}{234}{figure.caption.271}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -440,162 +314,288 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Residual isotope activity by isotope at 3 seconds into irradiation\relax }}{321}{figure.caption.274}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {K.1}{\ignorespaces Ecutwfc and Ecutrho convergence for aluminium (energy and force)\relax }}{372}{figure.caption.345}%
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Residual isotope activity by isotope at 60 seconds into irradiation\relax }}{321}{figure.caption.275}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {K.2}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - alluminium\relax }}{373}{figure.caption.346}%
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Residual isotope activity by isotope at 300 seconds into irradiation - end of irradiation\relax }}{322}{figure.caption.276}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {K.3}{\ignorespaces Ecutwfc and Ecutrho convergence for iron (energy and force)\relax }}{374}{figure.caption.347}%
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Residual isotope activity by isotope at 1 day, with approximately 1 day of cooling\relax }}{322}{figure.caption.277}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {K.4}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - iron\relax }}{375}{figure.caption.348}%
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Residual isotope activity by isotope at 2 days, with approximately 2 days of cooling\relax }}{323}{figure.caption.278}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {K.5}{\ignorespaces Ecutwfc and Ecutrho convergence for palladium (energy and force)\relax }}{376}{figure.caption.349}%
+\contentsline {figure}{\numberline {E.6}{\ignorespaces Residual isotope activity by isotope at approximately 3 days, with approximately 3 days of cooling\relax }}{323}{figure.caption.279}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {K.6}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - palladium\relax }}{377}{figure.caption.350}%
+\contentsline {figure}{\numberline {E.7}{\ignorespaces Gamma activity by isotope at 3 seconds into irradiation\relax }}{324}{figure.caption.280}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.8}{\ignorespaces Gamma activity by isotope at 60 seconds into irradiation\relax }}{324}{figure.caption.281}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.9}{\ignorespaces Gamma activity by isotope at 300 seconds into irradiation\relax }}{325}{figure.caption.282}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.1}{\ignorespaces Aluminium FCC equation of state plot\relax }}{380}{figure.caption.352}%
+\contentsline {figure}{\numberline {E.10}{\ignorespaces Gamma activity by isotope with approximately 1 day of cooling\relax }}{325}{figure.caption.283}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.2}{\ignorespaces Aluminium FCC elastic constants plot\relax }}{380}{figure.caption.352}%
+\contentsline {figure}{\numberline {E.11}{\ignorespaces Gamma activity by isotope with approximately 2 days of cooling\relax }}{326}{figure.caption.284}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.3}{\ignorespaces Iron BCC equation of state plot\relax }}{383}{figure.caption.354}%
+\contentsline {figure}{\numberline {E.12}{\ignorespaces Gamma activity by isotope with approximately 3 days of cooling\relax }}{326}{figure.caption.285}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.4}{\ignorespaces Iron BCC elastic constants plot\relax }}{383}{figure.caption.354}%
+\contentsline {figure}{\numberline {E.13}{\ignorespaces Isotope activity contribution by target isotope at 3 seconds into irradiation\relax }}{327}{figure.caption.286}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.5}{\ignorespaces Iron BCC (magnetic) equation of state plot\relax }}{387}{figure.caption.356}%
+\contentsline {figure}{\numberline {E.14}{\ignorespaces Isotope activity contribution by target isotope at 60 seconds into irradiation\relax }}{327}{figure.caption.287}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.6}{\ignorespaces Iron BCC (magnetic) elastic constants plot\relax }}{387}{figure.caption.356}%
+\contentsline {figure}{\numberline {E.15}{\ignorespaces Isotope activity contribution by target isotope at 300 seconds into irradiation\relax }}{328}{figure.caption.288}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.7}{\ignorespaces Iron FCC (magnetic) equation of state plot\relax }}{392}{figure.caption.359}%
+\contentsline {figure}{\numberline {E.16}{\ignorespaces Isotope activity contribution by target isotope with approximately 1 day of cooling\relax }}{328}{figure.caption.289}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.8}{\ignorespaces Iron FCC (magnetic) elastic constants plot\relax }}{392}{figure.caption.359}%
+\contentsline {figure}{\numberline {E.17}{\ignorespaces Isotope activity contribution by target isotope with approximately 2 days of cooling\relax }}{329}{figure.caption.290}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.9}{\ignorespaces Palladium FCC equation of state plot\relax }}{396}{figure.caption.362}%
+\contentsline {figure}{\numberline {E.18}{\ignorespaces Isotope activity contribution by target isotope with approximately 3 days of cooling\relax }}{329}{figure.caption.291}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {M.10}{\ignorespaces Palladium FCC elastic constants plot\relax }}{396}{figure.caption.362}%
+\contentsline {figure}{\numberline {E.19}{\ignorespaces Gamma activity contribution by target isotope at 3 seconds into irradiation\relax }}{330}{figure.caption.292}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.20}{\ignorespaces Gamma activity contribution by target isotope at 60 seconds into irradiation\relax }}{330}{figure.caption.293}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.1}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{405}{figure.caption.366}%
+\contentsline {figure}{\numberline {E.21}{\ignorespaces Gamma activity contribution by target isotope at 300 seconds into irradiation\relax }}{331}{figure.caption.294}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.2}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{405}{figure.caption.367}%
+\contentsline {figure}{\numberline {E.22}{\ignorespaces Gamma activity contribution by target isotope with approximately 1 day of cooling\relax }}{331}{figure.caption.295}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.3}{\ignorespaces Birch Murnaghan equation of state for BCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{407}{figure.caption.368}%
+\contentsline {figure}{\numberline {E.23}{\ignorespaces Gamma activity contribution by target isotope with approximately 2 days of cooling\relax }}{332}{figure.caption.296}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.4}{\ignorespaces Rose-Vinet equation of state for BCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{407}{figure.caption.369}%
+\contentsline {figure}{\numberline {E.24}{\ignorespaces Gamma activity contribution by target isotope with approximately 3 days of cooling\relax }}{332}{figure.caption.297}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.5}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{408}{figure.caption.370}%
+\contentsline {figure}{\numberline {E.25}{\ignorespaces Total activity over time\relax }}{337}{figure.caption.299}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.6}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{408}{figure.caption.371}%
+\contentsline {figure}{\numberline {E.26}{\ignorespaces Total gamma power output over time\relax }}{337}{figure.caption.300}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.7}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{409}{figure.caption.372}%
+\contentsline {figure}{\numberline {E.27}{\ignorespaces Radioactive decay from residual isotopes tallied by target isotope - end of beam (1,500 seconds)\relax }}{338}{figure.caption.301}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.8}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{409}{figure.caption.373}%
+\contentsline {figure}{\numberline {E.28}{\ignorespaces Radioactive decay from residual isotopes tallied by target isotope - 3 days after irradiation\relax }}{338}{figure.caption.302}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.9}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{410}{figure.caption.374}%
+\contentsline {figure}{\numberline {E.29}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - end of beam (1,500 seconds)\relax }}{339}{figure.caption.303}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.10}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{410}{figure.caption.375}%
+\contentsline {figure}{\numberline {E.30}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - 3 days after irradiation\relax }}{339}{figure.caption.304}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.11}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{411}{figure.caption.376}%
+\contentsline {figure}{\numberline {E.31}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - end of beam (1,500 seconds)\relax }}{340}{figure.caption.305}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {N.12}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{411}{figure.caption.377}%
+\contentsline {figure}{\numberline {E.32}{\ignorespaces Radioactive decay from residual isotopes tallied by residual isotope - 3 days after irradiation\relax }}{340}{figure.caption.306}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.33}{\ignorespaces Predicted gamma lines - end of beam (1,500 seconds)\relax }}{341}{figure.caption.307}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.1}{\ignorespaces Ackland Mendelev Pair\relax }}{446}{figure.caption.387}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.2}{\ignorespaces Buckingham Potential\relax }}{446}{figure.caption.388}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.3}{\ignorespaces Cubic Knot Spline\relax }}{447}{figure.caption.389}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.4}{\ignorespaces Cubic Knot Spline Fixed End\relax }}{448}{figure.caption.390}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.5}{\ignorespaces Cubic Knot Spline Fixed End Pair\relax }}{449}{figure.caption.391}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.6}{\ignorespaces Ackland Embedding\relax }}{450}{figure.caption.392}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.7}{\ignorespaces Ackland Embedding\relax }}{451}{figure.caption.393}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.8}{\ignorespaces Ackland Embedding\relax }}{451}{figure.caption.394}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.9}{\ignorespaces Embedding A\relax }}{452}{figure.caption.395}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.10}{\ignorespaces Embedding B\relax }}{452}{figure.caption.396}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.11}{\ignorespaces Embedding C\relax }}{453}{figure.caption.397}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.12}{\ignorespaces Embedding D\relax }}{454}{figure.caption.398}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.13}{\ignorespaces Ackland Embedding\relax }}{454}{figure.caption.399}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.14}{\ignorespaces Embedding F Function Plot\relax }}{455}{figure.caption.400}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.15}{\ignorespaces Embedding G Function Plot\relax }}{455}{figure.caption.401}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.16}{\ignorespaces Lennard-Jones\relax }}{456}{figure.caption.402}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.17}{\ignorespaces Morse\relax }}{457}{figure.caption.403}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.18}{\ignorespaces Quadratic Density\relax }}{457}{figure.caption.404}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.19}{\ignorespaces ZBL\relax }}{458}{figure.caption.405}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {Q.20}{\ignorespaces Zero\relax }}{459}{figure.caption.406}%
+\contentsline {figure}{\numberline {E.34}{\ignorespaces Predicted gamma lines - 3 days after irradiation\relax }}{341}{figure.caption.308}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Cooling measured by gamma power for iron samples irradiated to 100DPA at a range of proton energies\relax }}{343}{figure.caption.310}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.2}{\ignorespaces Residual isotope activity over time with 5MeV protons\relax }}{344}{figure.caption.311}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.3}{\ignorespaces Residual isotope gamma output at the end of irradiation with 5MeV protons\relax }}{344}{figure.caption.312}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.4}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{345}{figure.caption.313}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.5}{\ignorespaces Residual isotope activity over time with 10MeV protons\relax }}{346}{figure.caption.314}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.6}{\ignorespaces Residual isotope gamma output at the end of irradiation with 10MeV protons\relax }}{346}{figure.caption.315}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.7}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{347}{figure.caption.316}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.8}{\ignorespaces Residual isotope activity over time with 15MeV protons\relax }}{348}{figure.caption.317}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.9}{\ignorespaces Residual isotope gamma output at the end of irradiation with 15MeV protons\relax }}{348}{figure.caption.318}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.10}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{349}{figure.caption.319}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.11}{\ignorespaces Residual isotope activity over time with 20MeV protons\relax }}{350}{figure.caption.320}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.12}{\ignorespaces Residual isotope gamma output at the end of irradiation with 20MeV protons\relax }}{350}{figure.caption.321}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.13}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{351}{figure.caption.322}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.14}{\ignorespaces Residual isotope activity over time with 25MeV protons\relax }}{352}{figure.caption.323}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.15}{\ignorespaces Residual isotope gamma output at the end of irradiation with 25MeV protons\relax }}{352}{figure.caption.324}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.16}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{353}{figure.caption.325}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.17}{\ignorespaces Residual isotope activity over time with 30MeV protons\relax }}{354}{figure.caption.326}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.18}{\ignorespaces Residual isotope gamma output at the end of irradiation with 30MeV protons\relax }}{354}{figure.caption.327}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.19}{\ignorespaces Residual isotope gamma output after 1 week of cooling\relax }}{355}{figure.caption.328}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.1}{\ignorespaces Binary Alloy Potential for Fe-Pd\relax }}{469}{figure.caption.407}%
+\contentsline {figure}{\numberline {G.1}{\ignorespaces SRIM trajectories for 12MeV, 14MeV and 16MeV protons in iron\relax }}{356}{figure.caption.329}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.3}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{470}{figure.caption.409}%
+\contentsline {figure}{\numberline {G.2}{\ignorespaces SRIM trajectories for 18MeV, 20MeV and 22MeV protons in iron\relax }}{356}{figure.caption.330}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.4}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{471}{figure.caption.413}%
+\contentsline {figure}{\numberline {G.3}{\ignorespaces SRIM trajectories for 24MeV, 26MeV and 28MeV protons in iron\relax }}{356}{figure.caption.331}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.5}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Fe\relax }}{472}{figure.caption.415}%
+\contentsline {figure}{\numberline {G.4}{\ignorespaces SRIM trajectories for 30MeV, 32MeV and 34MeV protons in iron\relax }}{357}{figure.caption.332}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.6}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{472}{figure.caption.416}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.7}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{473}{figure.caption.419}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.8}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Pd\relax }}{474}{figure.caption.421}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.9}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{474}{figure.caption.422}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.10}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{475}{figure.caption.425}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.11}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Pd\relax }}{476}{figure.caption.427}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {S.12}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{476}{figure.caption.428}%
+\contentsline {figure}{\numberline {G.5}{\ignorespaces SRIM trajectories for 36MeV protons in iron\relax }}{357}{figure.caption.333}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.1}{\ignorespaces Binary Alloy Potential for Fe-Ru\relax }}{478}{figure.caption.429}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.3}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{479}{figure.caption.431}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.4}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{480}{figure.caption.435}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.5}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Fe\relax }}{481}{figure.caption.437}%
+\contentsline {figure}{\numberline {K.1}{\ignorespaces Ecutwfc and Ecutrho convergence for aluminium (energy and force)\relax }}{373}{figure.caption.346}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.6}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{481}{figure.caption.438}%
+\contentsline {figure}{\numberline {K.2}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - alluminium\relax }}{374}{figure.caption.347}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.7}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{482}{figure.caption.441}%
+\contentsline {figure}{\numberline {K.3}{\ignorespaces Ecutwfc and Ecutrho convergence for iron (energy and force)\relax }}{375}{figure.caption.348}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.8}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Ru\relax }}{483}{figure.caption.443}%
+\contentsline {figure}{\numberline {K.4}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - iron\relax }}{376}{figure.caption.349}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.9}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{483}{figure.caption.444}%
+\contentsline {figure}{\numberline {K.5}{\ignorespaces Ecutwfc and Ecutrho convergence for palladium (energy and force)\relax }}{377}{figure.caption.350}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.10}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{484}{figure.caption.447}%
+\contentsline {figure}{\numberline {K.6}{\ignorespaces 2D density map - force and energy convergence with k-points and smearing - palladium\relax }}{378}{figure.caption.351}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.11}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Ru\relax }}{485}{figure.caption.449}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {T.12}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{485}{figure.caption.450}%
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.1}{\ignorespaces Aluminium FCC equation of state plot\relax }}{381}{figure.caption.353}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.2}{\ignorespaces Aluminium FCC elastic constants plot\relax }}{381}{figure.caption.353}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.3}{\ignorespaces Iron BCC equation of state plot\relax }}{384}{figure.caption.355}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.4}{\ignorespaces Iron BCC elastic constants plot\relax }}{384}{figure.caption.355}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.5}{\ignorespaces Iron BCC (magnetic) equation of state plot\relax }}{388}{figure.caption.357}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.6}{\ignorespaces Iron BCC (magnetic) elastic constants plot\relax }}{388}{figure.caption.357}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.7}{\ignorespaces Iron FCC (magnetic) equation of state plot\relax }}{393}{figure.caption.360}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.8}{\ignorespaces Iron FCC (magnetic) elastic constants plot\relax }}{393}{figure.caption.360}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.9}{\ignorespaces Palladium FCC equation of state plot\relax }}{397}{figure.caption.363}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {M.10}{\ignorespaces Palladium FCC elastic constants plot\relax }}{397}{figure.caption.363}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.1}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{406}{figure.caption.367}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.2}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{406}{figure.caption.368}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.3}{\ignorespaces Birch Murnaghan equation of state for BCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{408}{figure.caption.369}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.4}{\ignorespaces Rose-Vinet equation of state for BCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{408}{figure.caption.370}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.5}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{409}{figure.caption.371}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.6}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{409}{figure.caption.372}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.7}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{410}{figure.caption.373}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.8}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{410}{figure.caption.374}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.9}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{411}{figure.caption.375}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.10}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{411}{figure.caption.376}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.11}{\ignorespaces Birch Murnaghan equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{412}{figure.caption.377}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {N.12}{\ignorespaces Rose-Vinet equation of state for FCC Aluminium - comparison of experimental data to the Sheng Al potential\relax }}{412}{figure.caption.378}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.1}{\ignorespaces Ackland Mendelev Pair\relax }}{447}{figure.caption.388}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.2}{\ignorespaces Buckingham Potential\relax }}{447}{figure.caption.389}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.3}{\ignorespaces Cubic Knot Spline\relax }}{448}{figure.caption.390}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.4}{\ignorespaces Cubic Knot Spline Fixed End\relax }}{449}{figure.caption.391}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.5}{\ignorespaces Cubic Knot Spline Fixed End Pair\relax }}{450}{figure.caption.392}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.6}{\ignorespaces Ackland Embedding\relax }}{451}{figure.caption.393}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.7}{\ignorespaces Ackland Embedding\relax }}{452}{figure.caption.394}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.8}{\ignorespaces Ackland Embedding\relax }}{452}{figure.caption.395}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.9}{\ignorespaces Embedding A\relax }}{453}{figure.caption.396}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.10}{\ignorespaces Embedding B\relax }}{453}{figure.caption.397}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.11}{\ignorespaces Embedding C\relax }}{454}{figure.caption.398}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.12}{\ignorespaces Embedding D\relax }}{455}{figure.caption.399}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.13}{\ignorespaces Ackland Embedding\relax }}{455}{figure.caption.400}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.14}{\ignorespaces Embedding F Function Plot\relax }}{456}{figure.caption.401}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.15}{\ignorespaces Embedding G Function Plot\relax }}{456}{figure.caption.402}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.16}{\ignorespaces Lennard-Jones\relax }}{457}{figure.caption.403}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.17}{\ignorespaces Morse\relax }}{458}{figure.caption.404}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.18}{\ignorespaces Quadratic Density\relax }}{458}{figure.caption.405}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.19}{\ignorespaces ZBL\relax }}{459}{figure.caption.406}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {Q.20}{\ignorespaces Zero\relax }}{460}{figure.caption.407}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.1}{\ignorespaces Binary Alloy Potential for Fe-Pd\relax }}{470}{figure.caption.408}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.3}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{471}{figure.caption.410}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.4}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{472}{figure.caption.414}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.5}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Fe\relax }}{473}{figure.caption.416}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.6}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{473}{figure.caption.417}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.7}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{474}{figure.caption.420}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.8}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Pd\relax }}{475}{figure.caption.422}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.9}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{475}{figure.caption.423}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.10}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{476}{figure.caption.426}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.11}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Pd\relax }}{477}{figure.caption.428}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {S.12}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Pd\relax }}{477}{figure.caption.429}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.1}{\ignorespaces Binary Alloy Potential for Fe-Ru\relax }}{479}{figure.caption.430}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.3}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{480}{figure.caption.432}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.4}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{481}{figure.caption.436}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.5}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Fe\relax }}{482}{figure.caption.438}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.6}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{482}{figure.caption.439}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.7}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{483}{figure.caption.442}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.8}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Ru\relax }}{484}{figure.caption.444}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.9}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{484}{figure.caption.445}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.10}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{485}{figure.caption.448}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.11}{\ignorespaces Ravindran et al\cite {dfttisiravindran} distortion-energy plots for \acrshort {fcc} Ru\relax }}{486}{figure.caption.450}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.12}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Ru\relax }}{486}{figure.caption.451}%

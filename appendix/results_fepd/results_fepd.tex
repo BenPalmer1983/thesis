@@ -134,23 +134,7 @@ The \acrshort{dft} computed surface energy, as the slab forms from the increased
 
 \subsubsection{Bulk Property Values}
 
-\begin{table}[ht]
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{lcccccc}
-\hline\hline
-Property & \multicolumn{3}{c}{DFT Computed} & \multicolumn{3}{c}{This Potential} \\
-\hline\hline
-$a_0$ (angs)         & \multicolumn{3}{c}{3.42}   & \multicolumn{3}{c}{3.43} \\
-Basis            & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.05 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.05 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} \\
-$E_{coh}$ (eV)           & \multicolumn{3}{c}{-4.26}  & \multicolumn{3}{c}{-4.27} \\
-$B_0$ (GPa)              & \multicolumn{3}{c}{226.0}  & \multicolumn{3}{c}{297.2} \\
-Stiff.1 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 364.6 & 141.6 & 233.8 & 0 & 0 & 0 \\ 141.6 & 298.7 & 130.40 & 0 & 0 & 0 \\ 233.8 & 130.4 & 364.6 & 0 & 0 & 0 \\ 0 & 0 & 0 & 186.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 266.8 & 0 \\ 0 & 0 & 0 & 0 & 0 & 186.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 354.89 &  239.78 & 278.15 & 0 & 0 & 0 \\ 239.78 & 348.39 & 239.78 & 0 & 0 & 0 \\ 278.15 & 239.78 & 354.89 & 0 & 0 & 0 \\ 0 & 0 & 0 & 164.38 & 0 & 0 \\ 0 & 0 & 0 & 0 & 208.83 & 0 \\ 0 & 0 & 0 & 0 & 0 & 164.38 \end{bmatrix}$} \\
-Stiff.2 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 364.6 & 141.6 & 233.8 & 0 & 0 & 0 \\ 141.6 & 298.7 & 130.40 & 0 & 0 & 0 \\ 233.8 & 130.4 & 364.6 & 0 & 0 & 0 \\ 0 & 0 & 0 & 186.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 266.8 & 0 \\ 0 & 0 & 0 & 0 & 0 & 186.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 370.46 & 260.55 & 260.55 & 0 & 0 & 0 \\ 260.55 & 370.46 & 260.55 & 0 & 0 & 0 \\ 260.55 & 260.55 & 370.46 & 0 & 0 & 0 \\ 0 & 0 & 0 & 187.87 & 0 & 0 \\ 0 & 0 & 0 & 0 & 187.87 & 0 \\ 0 & 0 & 0 & 0 & 0 & 187.87 \end{bmatrix}$} \\
-\hline\hline
-\end{tabular}
-\caption{The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state.  The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite{dfttisiravindran} and in stiffness (2) by Mehl et al\cite{mehlsp}\cite{elasticpropertiesmehl}.}
-\label{table:fepd-fefcc-dftvspotential}
-\end{table}
+\input{chapters/potentials_fe_pd_ru/fepd_potential/properties/fe_fcc_table}
 
 
 \subsubsection{Equation of State Plots}
@@ -216,23 +200,7 @@ Both the Birch-Murnaghan and Rose-Vinet equation of states are used in the fitti
 \FloatBarrier
 \subsection{Palladium FCC}
 
-\begin{table}[ht]
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{lcccccc}
-\hline\hline
-Property & \multicolumn{3}{c}{DFT Computed} & \multicolumn{3}{c}{This Potential} \\
-\hline\hline
-$a_0$ (angs)         & \multicolumn{3}{c}{3.93}   & \multicolumn{3}{c}{3.94} \\
-Basis            & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} \\
-$E_{coh}$ (eV)           & \multicolumn{3}{c}{-4.316}  & \multicolumn{3}{c}{-4.159} \\
-$B_0$ (GPa)              & \multicolumn{3}{c}{170.0}  & \multicolumn{3}{c}{253.0} \\
-Stiff.1 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 243.0 & 145.0 & 145.0 & 0 & 0 & 0 \\ 145.0 & 243.0 & 145.0 & 0 & 0 & 0 \\ 145.0 & 145.0 & 243.0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 116.0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 116.0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 116.0 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 214.54 & 242.49 & 242.49 & 0 & 0 & 0 \\ 242.49 & 214.54 & 242.49 & 0 & 0 & 0 \\ 242.49 & 242.49 & 214.54 & 0 & 0 & 0 \\ 0 & 0 & 0 & 178.94 & 0 & 0 \\ 0 & 0 & 0 & 0 & 178.94 & 0 \\ 0 & 0 & 0 & 0 & 0 & 178.94 \end{bmatrix}$} \\
-Stiff.2 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 243.0 & 145.0 & 145.0 & 0 & 0 & 0 \\ 145.0 & 243.0 & 145.0 & 0 & 0 & 0 \\ 145.0 & 145.0 & 243.0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 116.0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 116.0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 116.0 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 240.70 & 259.10 & 259.10 & 0 & 0 & 0 \\ 259.10 & 240.70 & 259.10 & 0 & 0 & 0 \\ 259.10 & 259.10 & 240.70 & 0 & 0 & 0 \\ 0 & 0 & 0 & 164.19 & 0 & 0 \\ 0 & 0 & 0 & 0 & 164.19 & 0 \\ 0 & 0 & 0 & 0 & 0 & 164.19 \end{bmatrix}$} \\
-\hline\hline
-\end{tabular}
-\caption{The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state.  The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite{dfttisiravindran} and in stiffness (2) by Mehl et al\cite{mehlsp}\cite{elasticpropertiesmehl}.}
-\label{table:fepd-pdfcc-dftvspotential}
-\end{table}
+\input{chapters/potentials_fe_pd_ru/fepd_potential/properties/pd_fcc_table}
 
 
 
@@ -296,24 +264,7 @@ Both the Birch-Murnaghan and Rose-Vinet equation of states are used in the fitti
 \subsection{Iron BCC}
 
 
-\begin{table}[ht]
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{lcccccc}
-\hline\hline
-Property & \multicolumn{3}{c}{DFT Computed} & \multicolumn{3}{c}{This Potential} \\
-\hline\hline
-$a_0$ (angs)         & \multicolumn{3}{c}{2.86}   & \multicolumn{3}{c}{2.77} \\
-Basis            & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} & \multicolumn{3}{c}{$\begin{bmatrix} 1.0 & 0.0 & 0.0 \\ 0.0 & 1.0 & 0.0 \\ 0.0 & 0.0 & 1.0  \end{bmatrix}$} \\
-$E_{coh}$ (eV)           & \multicolumn{3}{c}{-3.91}  & \multicolumn{3}{c}{--3.92} \\
-$B_0$ (GPa)              & \multicolumn{3}{c}{184.0}  & \multicolumn{3}{c}{172.3} \\
-Stiff.1 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 218.5 & 151.4 & 151.4 & 0 & 0 & 0 \\ 151.4 & 218.5 & 151.4 & 0 & 0 & 0 \\ 151.4 & 151.4 & 218.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 80.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 80.3 & 0 \\ 0 & 0 & 0 & 0 & 0 & 80.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 193.52 & 142.54 & 142.54 & 0 & 0 & 0 \\ 142.54 & 193.52 & 142.54 & 0 & 0 & 0 \\ 142.54 & 142.54 & 193.52 & 0 & 0 & 0 \\ 0 & 0 & 0 & 70.86 & 0 & 0 \\ 0 & 0 & 0 & 0 & 70.86 & 0 \\ 0 & 0 & 0 & 0 & 0 & 70.86 \end{bmatrix}$} \\
-Stiff.2 (GPa) & \multicolumn{3}{c}{$\begin{bmatrix} 218.5 & 151.4 & 151.4 & 0 & 0 & 0 \\ 151.4 & 218.5 & 151.4 & 0 & 0 & 0 \\ 151.4 & 151.4 & 218.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 80.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 80.3 & 0 \\ 0 & 0 & 0 & 0 & 0 & 80.3 \end{bmatrix}$}   & \multicolumn{3}{c}{$\begin{bmatrix} 206.76 & 155.09 & 155.09 & 0 & 0 & 0 \\ 155.09 & 206.76 & 155.09 & 0 & 0 & 0 \\ 155.09 & 155.09 & 206.76 & 0 & 0 & 0 \\ 0 & 0 & 0 & 71.77 & 0 & 0 \\ 0 & 0 & 0 & 0 & 71.77 & 0 \\ 0 & 0 & 0 & 0 & 0 & 71.77 \end{bmatrix}$} \\
-\hline\hline
-\end{tabular}
-\caption{The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state.  The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite{dfttisiravindran} and in stiffness (2) by Mehl et al\cite{mehlsp}\cite{elasticpropertiesmehl}.}
-\label{table:fepd-febcc-dftvspotential}
-\end{table}
-
+\input{chapters/potentials_fe_pd_ru/fepd_potential/properties/fe_bcc_table}
 
 
 \subsubsection{Equation of State Plots}

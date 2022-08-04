@@ -102,73 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7.17}{\ignorespaces Applying the Sheng Al potential, developed for FCC crystals, to the BCC structure. Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.\relax }}{177}{table.caption.242}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces Useful Laplace transforms\relax }}{213}{table.caption.259}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.2}{\ignorespaces \relax }}{228}{table.caption.261}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.4}{\ignorespaces \relax }}{229}{table.caption.263}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.6}{\ignorespaces \relax }}{230}{table.caption.265}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.8}{\ignorespaces \relax }}{231}{table.caption.267}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.10}{\ignorespaces \relax }}{232}{table.caption.269}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.12}{\ignorespaces \relax }}{234}{table.caption.271}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {E.1}{\ignorespaces \relax }}{315}{table.caption.272}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {E.2}{\ignorespaces \relax }}{332}{table.caption.297}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {E.3}{\ignorespaces \relax }}{341}{table.caption.308}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {H.1}{\ignorespaces \relax }}{357}{table.caption.333}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {H.2}{\ignorespaces \relax }}{358}{table.caption.334}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {H.3}{\ignorespaces \relax }}{359}{table.caption.335}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {H.4}{\ignorespaces \relax }}{359}{table.caption.336}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.1}{\ignorespaces \relax }}{362}{table.caption.337}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.2}{\ignorespaces \relax }}{363}{table.caption.338}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.3}{\ignorespaces \relax }}{363}{table.caption.339}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.4}{\ignorespaces \relax }}{364}{table.caption.340}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.5}{\ignorespaces Calculation of elastic constants using the equation of state, a volume conserving orthorhombic strain and volume conserving monoclinic strain.\cite {elasticpropertiesmehl}\cite {mehlsp}\relax }}{364}{table.caption.341}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.6}{\ignorespaces Calculation of orthorhombic elastic constants by Ravindran et al.\cite {dfttisiravindran}\relax }}{365}{table.caption.342}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.7}{\ignorespaces Calculation of elastic constants for a cubic crystal\cite {orthonisi}\relax }}{366}{table.caption.343}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {I.8}{\ignorespaces Calculation of elastic constants for a cubic crystal\cite {orthonisi}, $u = (1-\sigma ^2)^{-\frac {1}{3}}$\relax }}{367}{table.caption.344}%
+\contentsline {table}{\numberline {7.18}{\ignorespaces A summary of bulk properties from these potentials and \relax }}{180}{table.caption.246}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -178,25 +112,93 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.1}{\ignorespaces Aluminium DFT settings\relax }}{380}{table.caption.351}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Useful Laplace transforms\relax }}{214}{table.caption.260}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.2}{\ignorespaces FCC Aluminium: Experimental Values vs \acrshort {dft} Calculated Variables\relax }}{382}{table.caption.353}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.3}{\ignorespaces Iron DFT settings\relax }}{387}{table.caption.355}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces \relax }}{229}{table.caption.262}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.4}{\ignorespaces BCC Iron: Experimental Values vs DFT Calculated Variables\relax }}{391}{table.caption.357}%
+\contentsline {table}{\numberline {B.4}{\ignorespaces \relax }}{230}{table.caption.264}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.5}{\ignorespaces Iron DFT settings\relax }}{392}{table.caption.358}%
+\contentsline {table}{\numberline {B.6}{\ignorespaces \relax }}{231}{table.caption.266}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.6}{\ignorespaces Iron FCC: DFT Calculated Properties\relax }}{395}{table.caption.360}%
+\contentsline {table}{\numberline {B.8}{\ignorespaces \relax }}{232}{table.caption.268}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.7}{\ignorespaces Palladium DFT settings\relax }}{396}{table.caption.361}%
+\contentsline {table}{\numberline {B.10}{\ignorespaces \relax }}{233}{table.caption.270}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.8}{\ignorespaces FCC Palladium: Experimental Values vs DFT Calculated Properties\relax }}{399}{table.caption.363}%
+\contentsline {table}{\numberline {B.12}{\ignorespaces \relax }}{235}{table.caption.272}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.9}{\ignorespaces Ruthenium DFT settings\relax }}{400}{table.caption.364}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {M.10}{\ignorespaces Ruthenium FCC: DFT Calculated Properties\relax }}{403}{table.caption.365}%
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {E.1}{\ignorespaces \relax }}{316}{table.caption.273}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {E.2}{\ignorespaces \relax }}{333}{table.caption.298}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {E.3}{\ignorespaces \relax }}{342}{table.caption.309}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.1}{\ignorespaces \relax }}{358}{table.caption.334}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.2}{\ignorespaces \relax }}{359}{table.caption.335}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.3}{\ignorespaces \relax }}{360}{table.caption.336}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {H.4}{\ignorespaces \relax }}{360}{table.caption.337}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.1}{\ignorespaces \relax }}{363}{table.caption.338}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.2}{\ignorespaces \relax }}{364}{table.caption.339}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.3}{\ignorespaces \relax }}{364}{table.caption.340}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.4}{\ignorespaces \relax }}{365}{table.caption.341}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.5}{\ignorespaces Calculation of elastic constants using the equation of state, a volume conserving orthorhombic strain and volume conserving monoclinic strain.\cite {elasticpropertiesmehl}\cite {mehlsp}\relax }}{365}{table.caption.342}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.6}{\ignorespaces Calculation of orthorhombic elastic constants by Ravindran et al.\cite {dfttisiravindran}\relax }}{366}{table.caption.343}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.7}{\ignorespaces Calculation of elastic constants for a cubic crystal\cite {orthonisi}\relax }}{367}{table.caption.344}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {I.8}{\ignorespaces Calculation of elastic constants for a cubic crystal\cite {orthonisi}, $u = (1-\sigma ^2)^{-\frac {1}{3}}$\relax }}{368}{table.caption.345}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.1}{\ignorespaces Aluminium DFT settings\relax }}{381}{table.caption.352}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.2}{\ignorespaces FCC Aluminium: Experimental Values vs \acrshort {dft} Calculated Variables\relax }}{383}{table.caption.354}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.3}{\ignorespaces Iron DFT settings\relax }}{388}{table.caption.356}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.4}{\ignorespaces BCC Iron: Experimental Values vs DFT Calculated Variables\relax }}{392}{table.caption.358}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.5}{\ignorespaces Iron DFT settings\relax }}{393}{table.caption.359}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.6}{\ignorespaces Iron FCC: DFT Calculated Properties\relax }}{396}{table.caption.361}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.7}{\ignorespaces Palladium DFT settings\relax }}{397}{table.caption.362}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.8}{\ignorespaces FCC Palladium: Experimental Values vs DFT Calculated Properties\relax }}{400}{table.caption.364}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.9}{\ignorespaces Ruthenium DFT settings\relax }}{401}{table.caption.365}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {M.10}{\ignorespaces Ruthenium FCC: DFT Calculated Properties\relax }}{404}{table.caption.366}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -210,16 +212,16 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {S.1}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{471}{table.caption.411}%
+\contentsline {table}{\numberline {S.1}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{472}{table.caption.412}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {S.2}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{473}{table.caption.417}%
+\contentsline {table}{\numberline {S.2}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{474}{table.caption.418}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {S.3}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{475}{table.caption.423}%
+\contentsline {table}{\numberline {S.3}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{476}{table.caption.424}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {T.1}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{480}{table.caption.433}%
+\contentsline {table}{\numberline {T.1}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{481}{table.caption.434}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {T.2}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{482}{table.caption.439}%
+\contentsline {table}{\numberline {T.2}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{483}{table.caption.440}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {T.3}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{484}{table.caption.445}%
+\contentsline {table}{\numberline {T.3}{\ignorespaces The lattice parameter, cohesive energy and bulk modulus were determined by fitting the Birch-Murnaghan equation of state. The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and the average Reuss and Voight Bulk Moduldus (b). The elastic constants computed for the potential in stiffness (1) were computed using the method by Ravindran et al\cite {dfttisiravindran} and in stiffness (2) by Mehl et al\cite {mehlsp}\cite {elasticpropertiesmehl}.\relax }}{485}{table.caption.446}%
