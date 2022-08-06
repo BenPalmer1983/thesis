@@ -2980,7 +2980,7 @@
     \field{year}{1993}
   \endentry
 
-  \entry{DftTiSiRavindran}{article}{}
+  \entry{dftrfkj}{article}{}
     \name{author}{4}{}{%
       {{hash=RP}{%
          family={Ravindran},
@@ -3014,7 +3014,7 @@
     \field{issue}{9}
     \field{pages}{4891\bibrangedash 4904}
     \field{title}{Density functional theory for calculation of elastic
-  properties of orthorhombic crystals - applications to TiSi2}
+  properties of orthorhombic crystals applications to TiSi2}
     \field{volume}{84}
     \field{type}{ARTICLE}
     \field{journaltitle}{Journal of Applied Physics}
@@ -5246,6 +5246,27 @@
     \verb https://www.hsl.rl.ac.uk/archive/specs/va08.pdf
     \endverb
     \field{type}{ONLINE}
+  \endentry
+
+  \entry{lammpseamformat}{online}{}
+    \name{author}{1}{}{%
+      {{hash=OC}{%
+         family={O'Brien},
+         familyi={O\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OC1}
+    \strng{fullhash}{OC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Formatting EAM Potentials}
+    \verb{url}
+    \verb https://sites.google.com/a/ncsu.edu/cjobrien/tutorials-and-guides/eam
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2021}
   \endentry
 
   \entry{mendelevruau}{article}{}

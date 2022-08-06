@@ -263,31 +263,13 @@ Additional optimisation functions have been used by importing the SciPy module i
 
 
 
-
-
 \subsubsection{Minimising Runtime}
-
-
-
-
-
-
-
-
-
-
 
 When fitting a potential, for each trial set of functions, the program must calculate the energy, forces and stress for each of the configurations and tens or hundreds of energy only calculations for the equation of state and elastic constant calculations.  Python is a well used programming language in many areas of Science and it has the benefits of many modern languages.  For certain specific tasks, it is slow in comparison to Fortran.
 
-The energy, stress and force calculations were programmed in Fortran and use OpenMP to calculate the many configurations in parallel.  On a single thread, the fitting process could take weeks, but on a 20 core node the calculation time was reduced to under a couple of days.
+The energy, stress and force calculations were programmed in Fortran and use OpenMP to improve the calculation speed.  This could be improved further by processing batches of configurations in parallel, but this isn't currently implemented.  For now, a seed is picked so multiple instances can be run in parallel to give multiple optimised potentials to choose from.
 
-not relevant
-
-The first version of the code used tabulated potentials, and this removed the task of programming different functions (and the wide range of complexities amongst those functions) and replaced it with a quick search and interpolation of tabulated data.  However, the final version was developed to use and fit with analytic potentials.  Several of the optional functions, including the knot-to-knot spline function, drastically increased the computational time.  
-
-The bulk property module in particular uses configurations with atoms in regular places, with there being a small set of unique atom separation values.  Rather than generate tabulated data for each function, to then interpolate, the input and output values are cached.  Once the value is calculated, it is quickly retrieved for subsequent calculations with the same input value.  The has increased computation speed of the analytic potentials to a speed similar to using tabulated functions.
-
-In the current version, only analytic potentials are available for fitting.  There are several subroutines ready if tabulated functions are reintroduced.  These subroutines use Lagrange polynomials to interpolate values of the function (eq. \ref{eq:eqLagrangeDataSet} \ref{eq:eqLagrangePolynomialNew}).
+The code optimises analytic potentials, but a number of the functions available are complicated and require the evaluation of many functions in order to give an output.  To speed up the calculation, the user has the option to convert the analytic potentials to tabulated versions and these are interpolated using Lagrange polynomials (eq. \ref{eq:eqLagrangeDataSet} \ref{eq:eqLagrangePolynomialNew}).
 
 \begin{equation}
 \begin{split}
@@ -304,9 +286,7 @@ p_n (x) = \sum _{i=0} ^n y_i L(i, x)
 \label{eq:eqLagrangePolynomialNew}
 \end{equation}
 
-There are typically hundreds or thousands of data points, so to interpolate, the closest few points are used.  Throughout the computer code four point interpolation was the preferred method, to balance computational speed with a well fitting polynomial.  
-
-The gradient of the potential functions are also computed using Lagrange polynomials (eq. \ref{eq:eqLagrangePolynomialNew}).
+There are typically hundreds or thousands of data points, so to interpolate, the closest few points are used.  The gradient of the potential functions are also computed using Lagrange polynomials (eq. \ref{eq:eqLagrangePolynomialNew}).
 
 %% Sample hybrid function
 \begin{equation}
@@ -329,14 +309,14 @@ In order to create a potential for an alloy an effective gauge transform, as des
 
 \subsubsection{LAMMPS Format}
 
-
+\acrshort{lammps} is a popular molecular dynamics code and the EAMPA code outputs potentials in its own format as well as the \acrshort{lammps} format.  The structure of the file depends on the number of elements and there are a number of caveats to note including the pair potentials being stored in the file as the value multiplied by the distance, in angstrom\cite{lammpseamformat}.
 
 
 
 
 \subsection{Verifying Energy and Force Calculations with LAMMPS}
 
-Many of the calculations depend on the energies computed as well as accurate computation of the forces.  \acrshort{lammps} is a widely used molecular dynamics code and many potentials already exists in the format required for \acrshort{lammps}.
+Many of the calculations depend on the energies computed as well as accurate computation of the forces.  \acrshort{lammps} is a widely used molecular dynamics code and many potentials already exists in the format required for \acrshort{lammps}.  The energies and forces computed by the EAMPA code were compared for a number of configurations and potentials against the energies and forces computed by \acrshort{lammps} to validate the code developed here.  The results between the two codes agreed.
 
 
 

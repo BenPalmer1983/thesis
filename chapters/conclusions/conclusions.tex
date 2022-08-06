@@ -154,73 +154,21 @@ The energy and force data were entirely from first-principles calculations, and 
 The atomic percentage on Pd or Ru doped is half a percent which would be better represented with a one \acrshort{pgm} atom in a 4x4x4 \acrshort{fcc} 256 atom supercell rather than the 32 atom cells used, but again this was a constraint imposed by computational resources.
 
 
-\subsection{Iron-Palladium Potential}
+\subsection{Iron-Palladium and Iron-Ruthenium Potentials}
 
-The first derived Fe-Pd potential reproduces the properties of the material with a minimum error of 0.0\% for the cohesive energy for both Fe and Pd, and a maximum error of 8\% for the bulk modulus of Fe.
+Both potentials have had minimal testing using the molecular dynamics package \acrshort{lammps}.  In each case \acrshort{lammps} was able to read in the potential and run a simulation with a Nose-Hoover thermostat.  When given a relaxed start point, the simulations were well behaved.
 
-The cohesive energy and surface energy plots have a number of irregular bumps (fig \ref{fig:v1plots}), and it is hard to say whether or not these are correct without also computing them using \acrshort{dft}.
+As the relaxed structure from \acrshort{dft} calculations for Fe was \acrshort{fct}, the structure is not symmetric and a directional potential would better represent the increased lattice parameter in the y axis (figure \ref{fig:ironfccantiferromagnetic}).  
 
-\begin{figure}[ht] 
-  \centering
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_1/fe_cohesive_energy.eps} 
-  \end{minipage}%%
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_1/pd_cohesive_energy_zoom.eps} 
-  \end{minipage}%%
+The individual potentials reproduce the bulk properties, as calculated by \acrshort{dft}, reasonably well with the lattice parameters and cohesive energies being within a few percent.  The poorest properties in the fitting process were the elastic constants, in particular the $C_{44}$ value for Ru.  These could be improved by running the code for a longer time period.
 
-  \centering
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_1/fe_surface_energy.eps} 
-  \end{minipage}%%
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_1/pd_surface_energy.eps} 
-  \end{minipage}%%
-	\caption{Cohesive energy and surface energy plots - detailed plots in the appendix \ref{fepdv1coh} and \ref{fepdv1se}}  
-\label{fig:v1plots}
-\end{figure}
-\FloatBarrier
+The Rose-Vinet equation of state for each pure element fits well and takes on a shape that would be expected, with an increase in energy where the lattice parameter is reduced, a minimum where the relaxed lattice parameter is and a reduction in energy to zero as the atoms are pulled further and further apart.  Where the creation of a slab with two surfaces is modelled, the predicted energies for each pure element match well with the \acrshort{dft} energies.  Out of the three elements, Ru fits least well as far as the formation of a slab is concerned with a consistent energy difference of at lease 0.05eV.
 
-The second derived Fe-Pd potential reproduces the properties of the material with a minimum error of 0.0\% for the cohesive energy of Pd and the $C_{22}$ elastic constant for Fe, and a maximum error of 4.8\% for the bulk modulus of Fe.
-
-Despite having a better fit to the properties of the material used, the cohesive energy and surface energy plots are less well behaved than those in the first version (fig. \ref{fig:v2plots}).  The optimisation algorithms blindly fit potentials to the data available, and it is apparent that more \acrshort{dft} computed energies are required for a variety of configurations, including splitting the bulk into two surfaces and expanding atoms from bulk into isolated atoms.
-
-\begin{figure}[ht] 
-  \centering
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_2/fe_cohesive_energy.eps} 
-  \end{minipage}%%
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_2/pd_cohesive_energy_zoom.eps} 
-  \end{minipage}%%
-
-  \centering
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_2/fe_surface_energy.eps} 
-  \end{minipage}%%
-  \begin{minipage}[b]{0.4\linewidth}
-    \centering
-    \includegraphics[width=.98\linewidth]{chapters/potentials_fe_pd_ru/pot_fepd_fcc_2/pd_surface_energy.eps} 
-  \end{minipage}%%
-	\caption{Cohesive energy and surface energy plots - detailed plots in the appendix \ref{fepdv2coh} and \ref{fepdv2se}}  
-\label{fig:v2plots}
-\end{figure}
-\FloatBarrier
-
-The non-cubic geometry of antiferromagnetic \acrshort{fcc} Fe also suggests that the energy surface should be considered in all three planes, both with \acrshort{dft} and in the fitting process.
-
-
+Overall, both of the potentials reproduce the energies calculated using \acrshort{dft} well across a range of configurations.  There is definitely room to improve and build upon these potentials given more time.
 
 \subsection{Original Contribution}
 
-The fitting code is an original contribution as it allows the fitting of metal potentials in the form of the \acrlong{eam} and \acrlong{2beam} to \acrshort{dft} data and bulk properties.  Other similar codes do exist, such as FitPot and PotFit, but at the time of developing my code the PotFit did not have the ability to fit analytic potentials (although, this feature is now available) and does not have, in its available form, the ability to fit the potential to the bulk properties of the material (although the Sheng version did have this ability).  The code developed here may be modified in the future to add surface energy and point defect energies as data to fit to.  It would require the addition of a geometry relaxation subroutine to optimise the atom locations as the basis vectors change. 
+The fitting code is an original contribution as it allows the fitting of metal potentials in the form of the \acrlong{eam} and \acrlong{2beam} to \acrshort{dft} data and bulk properties.  Other similar codes do exist, such as FitPot and PotFit, but at the time of developing my code the PotFit did not have the ability to fit analytic potentials (although, this feature is now available) and does not have, in its available form, the ability to fit the potential to the bulk properties of the material (although the Sheng version did have this ability).  The code developed here may be modified in the future to add more features and properties to fit potentials to. 
 
 
 

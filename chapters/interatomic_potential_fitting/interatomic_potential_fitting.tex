@@ -432,12 +432,12 @@ The \acrshort{dft} work here includes Pd and Fe.  The natural arrangement of Pd 
 \end{equation}
 
 
-Once the relaxed crystal basis vectors and atom positions have been determined for the orthorhombic crystal, nine strains are applied to the crystal \cite{DftTiSiRavindran} in order to calculate the nine independent elastic constants.
+Once the relaxed crystal basis vectors and atom positions have been determined for the orthorhombic crystal, nine strains are applied to the crystal \cite{dftrfkj} in order to calculate the nine independent elastic constants.
 
 
 \FloatBarrier
 
-As a strain is applied to a crystal its energy can change.  The volume may also change, although it may be held constant.  The relationship between the energy and the strain $\sigma$ may be represented as a Taylor expansion of the internal energy in powers of the strain tensor\cite{DftTiSiRavindran}.  The equation used by Ravindran et al is in a slightly different notation to that used by Mehl\cite{elasticpropertiesmehl}.  It includes a constant $xi$ to account for the symmetry of $\sigma$ and the use of Voigt notation.
+As a strain is applied to a crystal its energy can change.  The volume may also change, although it may be held constant.  The relationship between the energy and the strain $\sigma$ may be represented as a Taylor expansion of the internal energy in powers of the strain tensor\cite{dftrfkj}.  The equation used by Ravindran et al is in a slightly different notation to that used by Mehl\cite{elasticpropertiesmehl}.  It includes a constant $xi$ to account for the symmetry of $\sigma$ and the use of Voigt notation.
 
 \begin{equation}
   \begin{split}
@@ -753,7 +753,7 @@ p_{c} = C_{12} - C_{44}  \text{Cauchy Pressure}
 \end{equation}
 
 
-For an orthorhombic crystal, the Voigt bulk modulus (eq. \ref{eq:bulkVoight}) and Reuss bulk modulus (eq. \ref{eq:bulkReuss}) may be calculated from the stiffness and compliance matrix respectively.  These two values are then averaged to give the bulk modulus (eq. \ref{eq:bulkReussVoigt})\cite{DftTiSiRavindran}.
+For an orthorhombic crystal, the Voigt bulk modulus (eq. \ref{eq:bulkVoight}) and Reuss bulk modulus (eq. \ref{eq:bulkReuss}) may be calculated from the stiffness and compliance matrix respectively.  These two values are then averaged to give the bulk modulus (eq. \ref{eq:bulkReussVoigt})\cite{dftrfkj}.
 
 \begin{equation}
 \begin{split}
@@ -778,7 +778,7 @@ B = 0.5(B_V + B_R)
 
 Calculation by this method is particularly useful for this work, where the \acrshort{fcc} iron crystal is orthorhombic, and not cubic (section \ref{section:fcc-iron}).
 
-Elastic constants are also used to calculate the shear modulus $G$.  Where the crystal is cubic, there are several elastic constants that can be used (eq. \ref{eq:shearModulus})\cite{DftTiSiRavindran}.  Both the Voigt (eq. \ref{eq:shearVoigt}) and Reuss (eq. \ref{eq:shearVoigt}) values are calculated and averaged to give the value of $G$ (eq. \ref{eq:shearReussVoigt}).  
+Elastic constants are also used to calculate the shear modulus $G$.  Where the crystal is cubic, there are several elastic constants that can be used (eq. \ref{eq:shearModulus})\cite{dftrfkj}.  Both the Voigt (eq. \ref{eq:shearVoigt}) and Reuss (eq. \ref{eq:shearVoigt}) values are calculated and averaged to give the value of $G$ (eq. \ref{eq:shearReussVoigt}).  
 
 \begin{equation}
 \begin{split}
@@ -2070,7 +2070,7 @@ It is through \acrshort{dft} that the first principles energy, stress and force 
 \FloatBarrier
 \subsection{Motivation For Using \acrshort{dft} In This Work}
 
-The use of interatomic potentials bridges the gap between the quantum scale and macroscopic scale.  In order to develop these potentials either measurements or calculated values are needed for forces, energies and stresses.  \acrshort{dft} is a convenient choice and has been used to fit potentials and calculate crystal properties many times (Sheng et al\cite{shengeam}, Mehl et al.\cite{mehlsp} Connetable and Thomes,\cite{orthonisi} Ravindran et al\cite{dfttisiravindran}, Hepburn and Ackland\cite{hepburnfec} and more.
+The use of interatomic potentials bridges the gap between the quantum scale and macroscopic scale.  In order to develop these potentials either measurements or calculated values are needed for forces, energies and stresses.  \acrshort{dft} is a convenient choice and has been used to fit potentials and calculate crystal properties many times (Sheng et al\cite{shengeam}, Mehl et al.\cite{mehlsp} Connetable and Thomes,\cite{orthonisi} Ravindran et al\cite{dftrfkj}, Hepburn and Ackland\cite{hepburnfec} and more.
 
 
 \FloatBarrier
@@ -3081,11 +3081,11 @@ $C_{23}$/GPa & 86.0 & 95.1 & 105.5 \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Experimental vs \acrshort{lsda} vs \acrshort{gga} for $TiSi_2$\cite{DftTiSiRavindran}}
+\caption{Experimental vs \acrshort{lsda} vs \acrshort{gga} for $TiSi_2$\cite{dftrfkj}}
 \label{table:ldaggatisi2}
 \end{table}
 
-In the case of the compound Titanium Disilicide, $TiSi_2$, \acrshort{gga} is in better agreement, overall, with experiment than \acrshort{lda}, although several values are better predicted by the latter.  As shown in table \ref{table:ldaggatisi2}, the data shows that \acrshort{lda} is within 1.26\% of the experimental lattice parameters, 6.16\% of the experimental bulk modulus and 18.3\% the value of the experimental elastic constants; several of these were particularly poor, with an almost 45\% disagreement.  On the other hand, \acrshort{gga} is within 0.66\% of the experimental lattice parameters, 3.62\% of the experimental bulk modulus and 14.97\% the value of the experimental elastic constants\cite{DftTiSiRavindran}.
+In the case of the compound Titanium Disilicide, $TiSi_2$, \acrshort{gga} is in better agreement, overall, with experiment than \acrshort{lda}, although several values are better predicted by the latter.  As shown in table \ref{table:ldaggatisi2}, the data shows that \acrshort{lda} is within 1.26\% of the experimental lattice parameters, 6.16\% of the experimental bulk modulus and 18.3\% the value of the experimental elastic constants; several of these were particularly poor, with an almost 45\% disagreement.  On the other hand, \acrshort{gga} is within 0.66\% of the experimental lattice parameters, 3.62\% of the experimental bulk modulus and 14.97\% the value of the experimental elastic constants\cite{dftrfkj}.
 
 Lanthanum aluminate ($LaAlO_3$) has also been studied using \acrshort{dft}, but this material is better modelled (to reproduce lattice parameters and bulk modulus) with either \acrshort{lda} or a specific form of \acrshort{gga}, the \acrfull{pbesol} potential.  The \acrshort{pbesol} is a revised \acrshort{pbe} functional designed to better reproduce lattice parameters for solids, as shown in table \ref{table:ldaggalaal03}.
 

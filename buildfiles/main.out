@@ -185,40 +185,40 @@
 \BOOKMARK [1][-]{section.7.6}{Application of the EAMPA Code}{chapter.7}% 185
 \BOOKMARK [2][-]{subsection.7.6.1}{Potential Transferability}{section.7.6}% 186
 \BOOKMARK [2][-]{subsection.7.6.2}{Fitting Potentials with EAMPA}{section.7.6}% 187
-\BOOKMARK [2][-]{subsection.7.6.3}{Choice of Function and Functional}{section.7.6}% 188
-\BOOKMARK [2][-]{subsection.7.6.4}{Searching Parameter Space}{section.7.6}% 189
-\BOOKMARK [2][-]{subsection.7.6.5}{Iron-Palladium and Iron-Ruthenium Potentials}{section.7.6}% 190
-\BOOKMARK [1][-]{section.7.7}{DL\137POLY Contribution}{chapter.7}% 191
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 192
-\BOOKMARK [1][-]{section.8.1}{Inter Granular Stress Corrosion Cracking}{chapter.8}% 193
-\BOOKMARK [1][-]{section.8.2}{Predicting Ion Induced Radioactivity}{chapter.8}% 194
-\BOOKMARK [2][-]{subsection.8.2.1}{Modified Equation}{section.8.2}% 195
-\BOOKMARK [2][-]{subsection.8.2.2}{Activity Code}{section.8.2}% 196
-\BOOKMARK [2][-]{subsection.8.2.3}{Iron Irradiation}{section.8.2}% 197
-\BOOKMARK [2][-]{subsection.8.2.4}{Molybdenum Irradiation}{section.8.2}% 198
-\BOOKMARK [2][-]{subsection.8.2.5}{Beam Flux Reduction and Gamma Attenuation}{section.8.2}% 199
-\BOOKMARK [2][-]{subsection.8.2.6}{More Experimental Data Required}{section.8.2}% 200
-\BOOKMARK [2][-]{subsection.8.2.7}{100DPA Activity Predictions}{section.8.2}% 201
-\BOOKMARK [2][-]{subsection.8.2.8}{Original Contribution}{section.8.2}% 202
-\BOOKMARK [1][-]{section.8.3}{Derived Potentials}{chapter.8}% 203
-\BOOKMARK [2][-]{subsection.8.3.1}{Restricting Potentials to Binary Alloys}{section.8.3}% 204
-\BOOKMARK [2][-]{subsection.8.3.2}{Collinear Spin dft}{section.8.3}% 205
-\BOOKMARK [2][-]{subsection.8.3.3}{Automated Convergence Calculations}{section.8.3}% 206
-\BOOKMARK [2][-]{subsection.8.3.4}{Bulk Property Calculations}{section.8.3}% 207
-\BOOKMARK [2][-]{subsection.8.3.5}{Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}{section.8.3}% 208
-\BOOKMARK [2][-]{subsection.8.3.6}{Iron-Palladium Potential}{section.8.3}% 209
-\BOOKMARK [2][-]{subsection.8.3.7}{Original Contribution}{section.8.3}% 210
-\BOOKMARK [1][-]{section.8.4}{Two-Band EAM Contribution to DL-Poly}{chapter.8}% 211
-\BOOKMARK [0][-]{chapter.9}{Future Work}{}% 212
-\BOOKMARK [1][-]{section.9.1}{Activity Code}{chapter.9}% 213
-\BOOKMARK [2][-]{subsection.9.1.1}{Experimental Activity Readings for Ion Irradiated Targets}{section.9.1}% 214
-\BOOKMARK [2][-]{subsection.9.1.2}{Code Improvements}{section.9.1}% 215
-\BOOKMARK [1][-]{section.9.2}{Potential Fitting and MD Simulations}{chapter.9}% 216
-\BOOKMARK [2][-]{subsection.9.2.1}{Larger Supercells}{section.9.2}% 217
-\BOOKMARK [2][-]{subsection.9.2.2}{Properties of Fe-Pd Alloy}{section.9.2}% 218
-\BOOKMARK [2][-]{subsection.9.2.3}{Improved Fitting: Surface Energy, Cohesive Energy and Defects}{section.9.2}% 219
-\BOOKMARK [2][-]{subsection.9.2.4}{Improved Potential: Non-Isotropic Structure}{section.9.2}% 220
-\BOOKMARK [2][-]{subsection.9.2.5}{Improved Potential: Fe-Ni-Cr-Pd}{section.9.2}% 221
+\BOOKMARK [2][-]{subsection.7.6.3}{Iron-Palladium and Iron-Ruthenium Potentials}{section.7.6}% 188
+\BOOKMARK [1][-]{section.7.7}{DL\137POLY Contribution}{chapter.7}% 189
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 190
+\BOOKMARK [1][-]{section.8.1}{Inter Granular Stress Corrosion Cracking}{chapter.8}% 191
+\BOOKMARK [1][-]{section.8.2}{Predicting Ion Induced Radioactivity}{chapter.8}% 192
+\BOOKMARK [2][-]{subsection.8.2.1}{Modified Equation}{section.8.2}% 193
+\BOOKMARK [2][-]{subsection.8.2.2}{Activity Code}{section.8.2}% 194
+\BOOKMARK [2][-]{subsection.8.2.3}{Iron Irradiation}{section.8.2}% 195
+\BOOKMARK [2][-]{subsection.8.2.4}{Molybdenum Irradiation}{section.8.2}% 196
+\BOOKMARK [2][-]{subsection.8.2.5}{Beam Flux Reduction and Gamma Attenuation}{section.8.2}% 197
+\BOOKMARK [2][-]{subsection.8.2.6}{More Experimental Data Required}{section.8.2}% 198
+\BOOKMARK [2][-]{subsection.8.2.7}{100DPA Activity Predictions}{section.8.2}% 199
+\BOOKMARK [2][-]{subsection.8.2.8}{Original Contribution}{section.8.2}% 200
+\BOOKMARK [1][-]{section.8.3}{Derived Potentials}{chapter.8}% 201
+\BOOKMARK [2][-]{subsection.8.3.1}{Restricting Potentials to Binary Alloys}{section.8.3}% 202
+\BOOKMARK [2][-]{subsection.8.3.2}{Collinear Spin dft}{section.8.3}% 203
+\BOOKMARK [2][-]{subsection.8.3.3}{Automated Convergence Calculations}{section.8.3}% 204
+\BOOKMARK [2][-]{subsection.8.3.4}{Bulk Property Calculations}{section.8.3}% 205
+\BOOKMARK [2][-]{subsection.8.3.5}{Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}{section.8.3}% 206
+\BOOKMARK [2][-]{subsection.8.3.6}{Iron-Palladium and Iron-Ruthenium Potentials}{section.8.3}% 207
+\BOOKMARK [2][-]{subsection.8.3.7}{Original Contribution}{section.8.3}% 208
+\BOOKMARK [1][-]{section.8.4}{Two-Band EAM Contribution to DL-Poly}{chapter.8}% 209
+\BOOKMARK [0][-]{chapter.9}{Future Work}{}% 210
+\BOOKMARK [1][-]{section.9.1}{Activity Code}{chapter.9}% 211
+\BOOKMARK [2][-]{subsection.9.1.1}{Experimental Activity Readings for Ion Irradiated Targets}{section.9.1}% 212
+\BOOKMARK [2][-]{subsection.9.1.2}{Code Improvements}{section.9.1}% 213
+\BOOKMARK [1][-]{section.9.2}{Potential Fitting and MD Simulations}{chapter.9}% 214
+\BOOKMARK [2][-]{subsection.9.2.1}{Larger Supercells}{section.9.2}% 215
+\BOOKMARK [2][-]{subsection.9.2.2}{Alloy Bulk Properties}{section.9.2}% 216
+\BOOKMARK [2][-]{subsection.9.2.3}{Defects}{section.9.2}% 217
+\BOOKMARK [2][-]{subsection.9.2.4}{MEAM for FCC Iron}{section.9.2}% 218
+\BOOKMARK [2][-]{subsection.9.2.5}{Improved Potential: Fe-Ni-Cr-Pd}{section.9.2}% 219
+\BOOKMARK [2][-]{subsection.9.2.6}{PKA Cascade Trials in LAMMPS or DL\137POLY}{section.9.2}% 220
+\BOOKMARK [2][-]{subsection.9.2.7}{Radiation Induced Segregation Trials}{section.9.2}% 221
 \BOOKMARK [0][-]{chapter.10}{Acknowledgements}{}% 222
 \BOOKMARK [0][-]{section*.259}{Appendices}{}% 223
 \BOOKMARK [0][-]{appendix.a.A}{Useful Laplace Transforms}{}% 224
@@ -376,8 +376,8 @@
 \BOOKMARK [2][-]{subsection.a.Q.2.17}{Slater 4S \(Squared\)}{section.a.Q.2}% 376
 \BOOKMARK [2][-]{subsection.a.Q.2.18}{ZBL}{section.a.Q.2}% 377
 \BOOKMARK [2][-]{subsection.a.Q.2.19}{Zero}{section.a.Q.2}% 378
-\BOOKMARK [0][-]{appendix.a.R}{Contribution to the DLPOLY Source Code}{}% 379
-\BOOKMARK [1][-]{section.a.R.1}{Contribution to DLPOLY 4.04}{appendix.a.R}% 380
+\BOOKMARK [0][-]{appendix.a.R}{Fe-Pd and Fe-Ru Structures}{}% 379
+\BOOKMARK [1][-]{section.a.R.1}{Potential vs DFT}{appendix.a.R}% 380
 \BOOKMARK [0][-]{appendix.a.S}{Fe-Pd Potential}{}% 381
 \BOOKMARK [1][-]{section.a.S.1}{Tabulated Potential}{appendix.a.S}% 382
 \BOOKMARK [1][-]{section.a.S.2}{Potential Function Plots}{appendix.a.S}% 383
@@ -394,3 +394,5 @@
 \BOOKMARK [2][-]{subsection.a.T.4.1}{Iron FCC}{section.a.T.4}% 394
 \BOOKMARK [2][-]{subsection.a.T.4.2}{Ruthenium FCC}{section.a.T.4}% 395
 \BOOKMARK [2][-]{subsection.a.T.4.3}{Iron BCC}{section.a.T.4}% 396
+\BOOKMARK [0][-]{appendix.a.U}{Contribution to the DLPOLY Source Code}{}% 397
+\BOOKMARK [1][-]{section.a.U.1}{Contribution to DLPOLY 4.04}{appendix.a.U}% 398
