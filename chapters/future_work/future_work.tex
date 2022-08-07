@@ -2,7 +2,9 @@
 \label{chapter:futurework}
 
 \begin{changemargin}{1.0cm}{1.0cm} 
-\abstractpreamble{At a certain point, work on various codes developed in this work, as well as the resulting Fe-Pd potential(s) had to stop, but there are a number of improvements that could be made given more time.}
+\abstractpreamble{During the development of the Activity code, a number of simplifications were made.  In future, some of these could be examined more closely to determine how much impact the simplifications have on the end result.  Other simplifications could also be applied, again once their significance has been determined, in order to make the calculation less computationally expensive.\\
+\\
+Two potentials were developed in this work, but they have not been used for the purpose they were created for.  There is room to improve these potentials by providing better fitting data and by continuing the fitting process for longer.  They need to be tested in terms of their ability to model damage cascades and then put into practice using either \acrshort{md} or \acrshort{akmc}.}
 \end{changemargin}
 
 
@@ -19,7 +21,7 @@ To validate the code further, a range of pure targets and alloys would be irradi
 
 A number of improvements could be made to the code.  While Python is a popular language, and a feature rich one, there are still benefits in using a language such as Fortran.  This is especially true when coupled with OpenMP.  There certainly are parts of the code that could be improved by using F2PY to decrease runtime.
 
-All versions of the code have relied on data from SRIM.  It might be useful to integrate or build an ion transport class so a calculation may be run once, rather than having to first generate the transport data on one platform and run the Activity code on another.  
+All versions of the code have relied on data from \acrshort{srim}.  It might be useful to integrate or build an ion transport class so a calculation may be run once, rather than having to first generate the transport data on one platform and run the Activity code on another.  
 
 It should also be investigated whether or not a history of many particles is needed.  There are already average energy stopping tables.  If there is little difference in calculated activity when using the histories of a thousand ions and energy stopping tables, then the stopping tables should be used.  It would remove the need to generate the ion history, which in itself is a long process, and it would speed up the computation of target activity.
 
@@ -27,7 +29,11 @@ The energy range of cross section values and particle types could be extended to
 
 Currently the code does not take into account 511KeV gammas created by the annihilation of positrons from beta+ decay or pair production from higher energy photons.  This will affect the calculations during irradiation and during the cooling period.  Where the transmuted nuclei is left in an excited state due to the energy difference, the gammas that will be released are not yet accounted for.  This is more important during irradiation and may not need to be considered providing there is adequate shielding whilst the target is in the ion beam.
 
+As the target becomes thicker, the orientation of the irradiated target to the end user handling it will become more important.  Incorporating this into the end calculation to display the gamma fluence radially in 2 dimensions from the target would help the user position themselves relative to the irradiated face of the target to minimise the dose received.
 
+Whilst the target is being irradiated, there will be a high number of gammas as well as other radiation such as neutrons, protons, electrons and other light ions.  It has always been assumed that this process will be carried out behind adequate shielding as it is only a danger when the proton beam is on.  When out of the beam the primary concern to a person nearby the target are the gammas released by radioactive decay.  There may also be reasons to consider the amount of beta and alpha radiation emitted by the target, although this might only be a concern if the target is to be machined, releasing ingestible radioactive dust, or handled without protection where the beta particles will be in a position to travel through skin.  Ideally, both these circumstances would be avoided, but the utility could be added to the code.
+
+More features could be added including a choice of dose units and whether or not the dose is calculated for a given volume of space or for a given person with certain parameters.
 
 
 

@@ -48,20 +48,20 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 32522 items from 5000.
+Reallocated field_info (elt_size=8) to 32661 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: share/bib/thesis2022.bib
-I was expecting a `,' or a `}'---line 899 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 910 of file share/bib/thesis2022.bib
  :  
  :  url          = {https://www.materialssquare.com/blog/5-short-but-important-calculation-of-a-single-atom},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 908 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 919 of file share/bib/thesis2022.bib
  :  
  :  url          = {https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2686 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 2697 of file share/bib/thesis2022.bib
  : 
  : %%##################################################
 (Error may have been on previous line)
@@ -73,10 +73,10 @@ Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 
 Here's how much of BibTeX's memory you used:
- Cites:               196 out of 750
- Fields:            27243 out of 32522
- Hash table:       199115 out of 200000
- Strings:            2106 out of 200000
- Free string pool:  36845 out of 65000
+ Cites:               197 out of 750
+ Fields:            27382 out of 32661
+ Hash table:       199114 out of 200000
+ Strings:            2109 out of 200000
+ Free string pool:  36982 out of 65000
  Wizard functions:   6365 out of 9000
 (There were 4 error messages)

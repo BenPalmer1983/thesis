@@ -5305,6 +5305,26 @@
     \field{year}{2008}
   \endentry
 
+  \entry{typesofelasticstrain}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MIT},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Constitutive Equations}
+    \verb{url}
+    \verb http://web.mit.edu/16.20/homepage/3_Constitutive/Constitutive_files/m
+    \verb odule_3_with_solutions.pdf
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2020}
+  \endentry
+
   \entry{simanneal}{article}{}
     \name{author}{3}{}{%
       {{hash=KS}{%

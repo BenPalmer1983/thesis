@@ -147,252 +147,254 @@
 \BOOKMARK [2][-]{subsection.6.7.2}{Estimating the Activity of Proton Irradiated Molybdenum}{section.6.7}% 147
 \BOOKMARK [2][-]{subsection.6.7.3}{Simulated Proton Irradiated Molybdenum}{section.6.7}% 148
 \BOOKMARK [1][-]{section.6.8}{Proton Irradiated Molybdenum Doped Steel}{chapter.6}% 149
-\BOOKMARK [0][-]{chapter.7}{Potentials for Fe, Ru, Pd}{}% 150
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 151
-\BOOKMARK [2][-]{subsection.7.1.1}{Interatomic Potential Fitting}{section.7.1}% 152
-\BOOKMARK [2][-]{subsection.7.1.2}{Existing Experimental \046 DFT Bulk Property Data}{section.7.1}% 153
-\BOOKMARK [1][-]{section.7.2}{DFT Settings}{chapter.7}% 154
-\BOOKMARK [2][-]{subsection.7.2.1}{Quantum Espresso}{section.7.2}% 155
-\BOOKMARK [2][-]{subsection.7.2.2}{Pseudopotential Selection}{section.7.2}% 156
-\BOOKMARK [2][-]{subsection.7.2.3}{Smearing Type}{section.7.2}% 157
-\BOOKMARK [2][-]{subsection.7.2.4}{Parameter Convergence}{section.7.2}% 158
-\BOOKMARK [2][-]{subsection.7.2.5}{QECONVERGE Python Code}{section.7.2}% 159
-\BOOKMARK [2][-]{subsection.7.2.6}{DFT Parameter Convergence}{section.7.2}% 160
-\BOOKMARK [1][-]{section.7.3}{DFT Results}{chapter.7}% 161
-\BOOKMARK [2][-]{subsection.7.3.1}{QEEOS Python Program}{section.7.3}% 162
-\BOOKMARK [2][-]{subsection.7.3.2}{DFT Calculations of Bulk Properties}{section.7.3}% 163
-\BOOKMARK [2][-]{subsection.7.3.3}{Relaxed Crystal Calculations}{section.7.3}% 164
-\BOOKMARK [2][-]{subsection.7.3.4}{Elastic Constants}{section.7.3}% 165
-\BOOKMARK [2][-]{subsection.7.3.5}{Calibrating the Cohesive Energies}{section.7.3}% 166
-\BOOKMARK [2][-]{subsection.7.3.6}{DFT Reference Database}{section.7.3}% 167
-\BOOKMARK [2][-]{subsection.7.3.7}{Pure Element Defects}{section.7.3}% 168
-\BOOKMARK [2][-]{subsection.7.3.8}{Alloy Atom Positions for Pd and Ru}{section.7.3}% 169
-\BOOKMARK [2][-]{subsection.7.3.9}{Configurations with Randomised Positions}{section.7.3}% 170
-\BOOKMARK [2][-]{subsection.7.3.10}{Surface Energy Calculations}{section.7.3}% 171
-\BOOKMARK [2][-]{subsection.7.3.11}{Defects in Fe-Pd and Fe-Ru Alloys}{section.7.3}% 172
-\BOOKMARK [1][-]{section.7.4}{Issues to Overcome}{chapter.7}% 173
-\BOOKMARK [2][-]{subsection.7.4.1}{Insufficient Memory}{section.7.4}% 174
-\BOOKMARK [2][-]{subsection.7.4.2}{Scratch Restrictions}{section.7.4}% 175
-\BOOKMARK [2][-]{subsection.7.4.3}{Caching Repeat Calculations}{section.7.4}% 176
-\BOOKMARK [2][-]{subsection.7.4.4}{Not Straying Too Far From Reality}{section.7.4}% 177
-\BOOKMARK [2][-]{subsection.7.4.5}{Adjustment of DFT Parameters}{section.7.4}% 178
-\BOOKMARK [2][-]{subsection.7.4.6}{Trial Parameters for Iron with and Octahedral Defect}{section.7.4}% 179
-\BOOKMARK [1][-]{section.7.5}{EAMPA}{chapter.7}% 180
-\BOOKMARK [2][-]{subsection.7.5.1}{Introduction}{section.7.5}% 181
-\BOOKMARK [2][-]{subsection.7.5.2}{Potentials}{section.7.5}% 182
-\BOOKMARK [2][-]{subsection.7.5.3}{Calculations}{section.7.5}% 183
-\BOOKMARK [2][-]{subsection.7.5.4}{Verifying Energy and Force Calculations with LAMMPS}{section.7.5}% 184
-\BOOKMARK [1][-]{section.7.6}{Application of the EAMPA Code}{chapter.7}% 185
-\BOOKMARK [2][-]{subsection.7.6.1}{Potential Transferability}{section.7.6}% 186
-\BOOKMARK [2][-]{subsection.7.6.2}{Fitting Potentials with EAMPA}{section.7.6}% 187
-\BOOKMARK [2][-]{subsection.7.6.3}{Iron-Palladium and Iron-Ruthenium Potentials}{section.7.6}% 188
-\BOOKMARK [1][-]{section.7.7}{DL\137POLY Contribution}{chapter.7}% 189
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 190
-\BOOKMARK [1][-]{section.8.1}{Inter Granular Stress Corrosion Cracking}{chapter.8}% 191
-\BOOKMARK [1][-]{section.8.2}{Predicting Ion Induced Radioactivity}{chapter.8}% 192
-\BOOKMARK [2][-]{subsection.8.2.1}{Modified Equation}{section.8.2}% 193
-\BOOKMARK [2][-]{subsection.8.2.2}{Activity Code}{section.8.2}% 194
-\BOOKMARK [2][-]{subsection.8.2.3}{Iron Irradiation}{section.8.2}% 195
-\BOOKMARK [2][-]{subsection.8.2.4}{Molybdenum Irradiation}{section.8.2}% 196
-\BOOKMARK [2][-]{subsection.8.2.5}{Beam Flux Reduction and Gamma Attenuation}{section.8.2}% 197
-\BOOKMARK [2][-]{subsection.8.2.6}{More Experimental Data Required}{section.8.2}% 198
-\BOOKMARK [2][-]{subsection.8.2.7}{100DPA Activity Predictions}{section.8.2}% 199
-\BOOKMARK [2][-]{subsection.8.2.8}{Original Contribution}{section.8.2}% 200
-\BOOKMARK [1][-]{section.8.3}{Derived Potentials}{chapter.8}% 201
-\BOOKMARK [2][-]{subsection.8.3.1}{Restricting Potentials to Binary Alloys}{section.8.3}% 202
-\BOOKMARK [2][-]{subsection.8.3.2}{Collinear Spin dft}{section.8.3}% 203
-\BOOKMARK [2][-]{subsection.8.3.3}{Automated Convergence Calculations}{section.8.3}% 204
-\BOOKMARK [2][-]{subsection.8.3.4}{Bulk Property Calculations}{section.8.3}% 205
-\BOOKMARK [2][-]{subsection.8.3.5}{Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}{section.8.3}% 206
-\BOOKMARK [2][-]{subsection.8.3.6}{Iron-Palladium and Iron-Ruthenium Potentials}{section.8.3}% 207
-\BOOKMARK [2][-]{subsection.8.3.7}{Original Contribution}{section.8.3}% 208
-\BOOKMARK [1][-]{section.8.4}{Two-Band EAM Contribution to DL-Poly}{chapter.8}% 209
-\BOOKMARK [0][-]{chapter.9}{Future Work}{}% 210
-\BOOKMARK [1][-]{section.9.1}{Activity Code}{chapter.9}% 211
-\BOOKMARK [2][-]{subsection.9.1.1}{Experimental Activity Readings for Ion Irradiated Targets}{section.9.1}% 212
-\BOOKMARK [2][-]{subsection.9.1.2}{Code Improvements}{section.9.1}% 213
-\BOOKMARK [1][-]{section.9.2}{Potential Fitting and MD Simulations}{chapter.9}% 214
-\BOOKMARK [2][-]{subsection.9.2.1}{Larger Supercells}{section.9.2}% 215
-\BOOKMARK [2][-]{subsection.9.2.2}{Alloy Bulk Properties}{section.9.2}% 216
-\BOOKMARK [2][-]{subsection.9.2.3}{Defects}{section.9.2}% 217
-\BOOKMARK [2][-]{subsection.9.2.4}{MEAM for FCC Iron}{section.9.2}% 218
-\BOOKMARK [2][-]{subsection.9.2.5}{Improved Potential: Fe-Ni-Cr-Pd}{section.9.2}% 219
-\BOOKMARK [2][-]{subsection.9.2.6}{PKA Cascade Trials in LAMMPS or DL\137POLY}{section.9.2}% 220
-\BOOKMARK [2][-]{subsection.9.2.7}{Radiation Induced Segregation Trials}{section.9.2}% 221
-\BOOKMARK [0][-]{chapter.10}{Acknowledgements}{}% 222
-\BOOKMARK [0][-]{section*.259}{Appendices}{}% 223
-\BOOKMARK [0][-]{appendix.a.A}{Useful Laplace Transforms}{}% 224
-\BOOKMARK [1][-]{section.a.A.1}{Table of Transforms}{appendix.a.A}% 225
-\BOOKMARK [1][-]{section.a.A.2}{Decay with a Source Term}{appendix.a.A}% 226
-\BOOKMARK [0][-]{appendix.a.B}{Activity Equation in Python: decay class}{}% 227
-\BOOKMARK [1][-]{section.a.B.1}{Full Source Code}{appendix.a.B}% 228
-\BOOKMARK [1][-]{section.a.B.2}{Highlighted Code}{appendix.a.B}% 229
-\BOOKMARK [1][-]{section.a.B.3}{Activity Equation Testing}{appendix.a.B}% 230
-\BOOKMARK [2][-]{subsection.a.B.3.1}{Numeric Fortran Code}{section.a.B.3}% 231
-\BOOKMARK [2][-]{subsection.a.B.3.2}{Chromium-49}{section.a.B.3}% 232
-\BOOKMARK [2][-]{subsection.a.B.3.3}{Nickel-66}{section.a.B.3}% 233
-\BOOKMARK [2][-]{subsection.a.B.3.4}{Caesium-125}{section.a.B.3}% 234
-\BOOKMARK [2][-]{subsection.a.B.3.5}{Bismuth-213}{section.a.B.3}% 235
-\BOOKMARK [2][-]{subsection.a.B.3.6}{Polonium-216}{section.a.B.3}% 236
-\BOOKMARK [2][-]{subsection.a.B.3.7}{Radon-218}{section.a.B.3}% 237
-\BOOKMARK [0][-]{appendix.a.C}{Activity Code}{}% 238
-\BOOKMARK [1][-]{section.a.C.1}{Activity V1}{appendix.a.C}% 239
-\BOOKMARK [2][-]{subsection.a.C.1.1}{Paper published in Computer Physics Communications}{section.a.C.1}% 240
-\BOOKMARK [2][-]{subsection.a.C.1.2}{Accompanying Manual}{section.a.C.1}% 241
-\BOOKMARK [1][-]{section.a.C.2}{Activity V2}{appendix.a.C}% 242
-\BOOKMARK [2][-]{subsection.a.C.2.1}{Accompanying Manual}{section.a.C.2}% 243
-\BOOKMARK [0][-]{appendix.a.D}{Activity V1 Full Results}{}% 244
-\BOOKMARK [1][-]{section.a.D.1}{36MeV Proton Irradiated Iron}{appendix.a.D}% 245
-\BOOKMARK [0][-]{appendix.a.E}{Activity V2 Full Results}{}% 246
-\BOOKMARK [1][-]{section.a.E.1}{36MeV Proton Irradiated Iron}{appendix.a.E}% 247
-\BOOKMARK [2][-]{subsection.a.E.1.1}{Calculation Settings}{section.a.E.1}% 248
-\BOOKMARK [2][-]{subsection.a.E.1.2}{Results File}{section.a.E.1}% 249
-\BOOKMARK [2][-]{subsection.a.E.1.3}{Activity Tallied by Residual Isotope}{section.a.E.1}% 250
-\BOOKMARK [2][-]{subsection.a.E.1.4}{Gamma Output Tallied by Residual Isotope}{section.a.E.1}% 251
-\BOOKMARK [2][-]{subsection.a.E.1.5}{Activity Tallied by Target Isotope}{section.a.E.1}% 252
-\BOOKMARK [2][-]{subsection.a.E.1.6}{Gamma Output Tallied by Target Isotope}{section.a.E.1}% 253
-\BOOKMARK [1][-]{section.a.E.2}{13MeV Proton Irradiated Molybdenum}{appendix.a.E}% 254
-\BOOKMARK [2][-]{subsection.a.E.2.1}{Calculation Settings}{section.a.E.2}% 255
-\BOOKMARK [2][-]{subsection.a.E.2.2}{Results}{section.a.E.2}% 256
-\BOOKMARK [2][-]{subsection.a.E.2.3}{Total Decay Rates Over Time}{section.a.E.2}% 257
-\BOOKMARK [2][-]{subsection.a.E.2.4}{Residual Activity Tallied by Target Isotope}{section.a.E.2}% 258
-\BOOKMARK [2][-]{subsection.a.E.2.5}{Residual Activity Tallied by Residual Isotope}{section.a.E.2}% 259
-\BOOKMARK [2][-]{subsection.a.E.2.6}{Residual Gamma Energy Tallied by Residual Isotope}{section.a.E.2}% 260
-\BOOKMARK [2][-]{subsection.a.E.2.7}{Gamma Lines}{section.a.E.2}% 261
-\BOOKMARK [1][-]{section.a.E.3}{13MeV Proton Irradiated Molybdenum}{appendix.a.E}% 262
-\BOOKMARK [2][-]{subsection.a.E.3.1}{Calculation Settings}{section.a.E.3}% 263
-\BOOKMARK [0][-]{appendix.a.F}{Iron Activity: Irradiated to 100DPA}{}% 264
-\BOOKMARK [1][-]{section.a.F.1}{Activity vs Beam Energy}{appendix.a.F}% 265
-\BOOKMARK [2][-]{subsection.a.F.1.1}{5MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 266
-\BOOKMARK [2][-]{subsection.a.F.1.2}{10MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 267
-\BOOKMARK [2][-]{subsection.a.F.1.3}{15MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 268
-\BOOKMARK [2][-]{subsection.a.F.1.4}{20MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 269
-\BOOKMARK [2][-]{subsection.a.F.1.5}{25MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 270
-\BOOKMARK [2][-]{subsection.a.F.1.6}{30MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 271
-\BOOKMARK [0][-]{appendix.a.G}{SRIM Results}{}% 272
-\BOOKMARK [1][-]{subsection.a.G.0.1}{Ion paths through an iron sample}{appendix.a.G}% 273
-\BOOKMARK [0][-]{appendix.a.H}{Crystal Structures}{}% 274
-\BOOKMARK [1][-]{section.a.H.1}{Common Cubic Structures}{appendix.a.H}% 275
-\BOOKMARK [2][-]{subsection.a.H.1.1}{Simple Cubic}{section.a.H.1}% 276
-\BOOKMARK [2][-]{subsection.a.H.1.2}{Body Centered Cubic}{section.a.H.1}% 277
-\BOOKMARK [2][-]{subsection.a.H.1.3}{Face Centered Cubic}{section.a.H.1}% 278
-\BOOKMARK [2][-]{subsection.a.H.1.4}{Zincblende}{section.a.H.1}% 279
-\BOOKMARK [1][-]{section.a.H.2}{FCC Defects}{appendix.a.H}% 280
-\BOOKMARK [2][-]{subsection.a.H.2.1}{Dumbbell <100>}{section.a.H.2}% 281
-\BOOKMARK [2][-]{subsection.a.H.2.2}{Dumbbell <110>}{section.a.H.2}% 282
-\BOOKMARK [2][-]{subsection.a.H.2.3}{Dumbbell <111>}{section.a.H.2}% 283
-\BOOKMARK [2][-]{subsection.a.H.2.4}{Crowdion}{section.a.H.2}% 284
-\BOOKMARK [2][-]{subsection.a.H.2.5}{Octahedral Interstitial}{section.a.H.2}% 285
-\BOOKMARK [2][-]{subsection.a.H.2.6}{Tetrahedral Interstitial}{section.a.H.2}% 286
-\BOOKMARK [0][-]{appendix.a.I}{Elastic Constants}{}% 287
-\BOOKMARK [1][-]{section.a.I.1}{Elastic Constant Matrices}{appendix.a.I}% 288
-\BOOKMARK [1][-]{section.a.I.2}{Sets of Strains Applied to Calculate Elastic Constants}{appendix.a.I}% 289
-\BOOKMARK [2][-]{subsection.a.I.2.1}{Cubic Crystals - Mehl, Singh, Klein and Papaconstantopoulos 1993}{section.a.I.2}% 290
-\BOOKMARK [2][-]{subsection.a.I.2.2}{Orthorhombic Crystals - Ravindran, Fast, Korzhavyi and Johansson}{section.a.I.2}% 291
-\BOOKMARK [2][-]{subsection.a.I.2.3}{Cubic Crystals - Connetable and Thomas 2009}{section.a.I.2}% 292
-\BOOKMARK [2][-]{subsection.a.I.2.4}{Orthorhombic Crystals - Connetable and Thomas 2009}{section.a.I.2}% 293
-\BOOKMARK [0][-]{appendix.a.J}{PBE Functional}{}% 294
-\BOOKMARK [0][-]{appendix.a.K}{DFT Convergence Plots}{}% 295
-\BOOKMARK [0][-]{appendix.a.L}{QEEOS}{}% 296
-\BOOKMARK [0][-]{appendix.a.M}{DFT Calculated Properties}{}% 297
-\BOOKMARK [1][-]{section.a.M.1}{QEEOS}{appendix.a.M}% 298
-\BOOKMARK [1][-]{section.a.M.2}{FCC Aluminium}{appendix.a.M}% 299
-\BOOKMARK [2][-]{subsection.a.M.2.1}{DFT Settings for PWscf}{section.a.M.2}% 300
-\BOOKMARK [2][-]{subsection.a.M.2.2}{Resulting Plots}{section.a.M.2}% 301
-\BOOKMARK [2][-]{subsection.a.M.2.3}{Aluminium FCC Results File}{section.a.M.2}% 302
-\BOOKMARK [2][-]{subsection.a.M.2.4}{Known and Calculated Values}{section.a.M.2}% 303
-\BOOKMARK [1][-]{section.a.M.3}{BCC Iron [No Magnetism]}{appendix.a.M}% 304
-\BOOKMARK [2][-]{subsection.a.M.3.1}{Major DFT Settings}{section.a.M.3}% 305
-\BOOKMARK [2][-]{subsection.a.M.3.2}{Equation of State and Elastic Constants}{section.a.M.3}% 306
-\BOOKMARK [2][-]{subsection.a.M.3.3}{Iron BCC Results File}{section.a.M.3}% 307
-\BOOKMARK [1][-]{section.a.M.4}{BCC Iron [Ferromagnetic]}{appendix.a.M}% 308
-\BOOKMARK [2][-]{subsection.a.M.4.1}{Major DFT Settings}{section.a.M.4}% 309
-\BOOKMARK [2][-]{subsection.a.M.4.2}{Equation of State and Elastic Constants}{section.a.M.4}% 310
-\BOOKMARK [2][-]{subsection.a.M.4.3}{Iron Ferromagnetic BCC Results File}{section.a.M.4}% 311
-\BOOKMARK [2][-]{subsection.a.M.4.4}{Known and Calculated Results}{section.a.M.4}% 312
-\BOOKMARK [1][-]{section.a.M.5}{FCC Iron [Antiferromagnetic]}{appendix.a.M}% 313
-\BOOKMARK [2][-]{subsection.a.M.5.1}{Major DFT Settings}{section.a.M.5}% 314
-\BOOKMARK [2][-]{subsection.a.M.5.2}{Equation of State and Elastic Constants}{section.a.M.5}% 315
-\BOOKMARK [2][-]{subsection.a.M.5.3}{Iron FCC Results File}{section.a.M.5}% 316
-\BOOKMARK [1][-]{section.a.M.6}{FCC Palladium}{appendix.a.M}% 317
-\BOOKMARK [2][-]{subsection.a.M.6.1}{Major DFT Settings}{section.a.M.6}% 318
-\BOOKMARK [2][-]{subsection.a.M.6.2}{Equation of State and Elastic Constants}{section.a.M.6}% 319
-\BOOKMARK [2][-]{subsection.a.M.6.3}{Palladium FCC Results File}{section.a.M.6}% 320
-\BOOKMARK [2][-]{subsection.a.M.6.4}{Known and Calculated Values}{section.a.M.6}% 321
-\BOOKMARK [1][-]{section.a.M.7}{FCC Ruthenium}{appendix.a.M}% 322
-\BOOKMARK [2][-]{subsection.a.M.7.1}{Major DFT Settings}{section.a.M.7}% 323
-\BOOKMARK [2][-]{subsection.a.M.7.2}{Equation of State and Elastic Constants}{section.a.M.7}% 324
-\BOOKMARK [2][-]{subsection.a.M.7.3}{Ruthenium FCC Results File}{section.a.M.7}% 325
-\BOOKMARK [2][-]{subsection.a.M.7.4}{Calculated Results}{section.a.M.7}% 326
-\BOOKMARK [0][-]{appendix.a.N}{Transferability of Interatomic Potentials}{}% 327
-\BOOKMARK [1][-]{section.a.N.1}{Sheng Aluminium Potential}{appendix.a.N}% 328
-\BOOKMARK [2][-]{subsection.a.N.1.1}{FCC Structure}{section.a.N.1}% 329
-\BOOKMARK [2][-]{subsection.a.N.1.2}{BCC Structure}{section.a.N.1}% 330
-\BOOKMARK [1][-]{section.a.N.2}{Mendelev et al 2003 Iron Potential}{appendix.a.N}% 331
-\BOOKMARK [2][-]{subsection.a.N.2.1}{BCC Structure}{section.a.N.2}% 332
-\BOOKMARK [2][-]{subsection.a.N.2.2}{FCC Structure}{section.a.N.2}% 333
-\BOOKMARK [1][-]{section.a.N.3}{Ackland et al 1997 Iron Potential}{appendix.a.N}% 334
-\BOOKMARK [2][-]{subsection.a.N.3.1}{BCC Structure}{section.a.N.3}% 335
-\BOOKMARK [2][-]{subsection.a.N.3.2}{FCC Structure}{section.a.N.3}% 336
-\BOOKMARK [0][-]{appendix.a.O}{Optimization}{}% 337
-\BOOKMARK [1][-]{section.a.O.1}{Optimization}{appendix.a.O}% 338
-\BOOKMARK [2][-]{subsection.a.O.1.1}{Introduction}{section.a.O.1}% 339
-\BOOKMARK [2][-]{subsection.a.O.1.2}{Continuous and Discrete Optimization}{section.a.O.1}% 340
-\BOOKMARK [2][-]{subsection.a.O.1.3}{Constrained and Unconstrained Optimization}{section.a.O.1}% 341
-\BOOKMARK [2][-]{subsection.a.O.1.4}{Global and Local Optimization}{section.a.O.1}% 342
-\BOOKMARK [2][-]{subsection.a.O.1.5}{Global Optimization Algorithms}{section.a.O.1}% 343
-\BOOKMARK [2][-]{subsection.a.O.1.6}{Local Optimization Algorithms}{section.a.O.1}% 344
-\BOOKMARK [0][-]{appendix.a.P}{EAMPA Code}{}% 345
-\BOOKMARK [1][-]{section.a.P.1}{Energy, Force, and Stress Subroutine}{appendix.a.P}% 346
-\BOOKMARK [1][-]{section.a.P.2}{Bulk Properties: Add Configuration Subroutine}{appendix.a.P}% 347
-\BOOKMARK [1][-]{section.a.P.3}{Main fitting class}{appendix.a.P}% 348
-\BOOKMARK [1][-]{section.a.P.4}{Cubic Splines}{appendix.a.P}% 349
-\BOOKMARK [1][-]{section.a.P.5}{Spline Subroutine for the Cubic Knot Spline}{appendix.a.P}% 350
-\BOOKMARK [1][-]{section.a.P.6}{ZBL with Cubic Knot Spline}{appendix.a.P}% 351
-\BOOKMARK [1][-]{section.a.P.7}{Simulated Annealing}{appendix.a.P}% 352
-\BOOKMARK [1][-]{section.a.P.8}{Genetic Algorithm}{appendix.a.P}% 353
-\BOOKMARK [1][-]{section.a.P.9}{Gradient Descent}{appendix.a.P}% 354
-\BOOKMARK [1][-]{section.a.P.10}{Interpolation}{appendix.a.P}% 355
-\BOOKMARK [1][-]{section.a.P.11}{Interpolation \(Gradient\)}{appendix.a.P}% 356
-\BOOKMARK [0][-]{appendix.a.Q}{Potential Functions}{}% 357
-\BOOKMARK [1][-]{section.a.Q.1}{Introduction}{appendix.a.Q}% 358
-\BOOKMARK [1][-]{section.a.Q.2}{Functions}{appendix.a.Q}% 359
-\BOOKMARK [2][-]{subsection.a.Q.2.1}{Ackland-Mendelev Pair}{section.a.Q.2}% 360
-\BOOKMARK [2][-]{subsection.a.Q.2.2}{Buckingham}{section.a.Q.2}% 361
-\BOOKMARK [2][-]{subsection.a.Q.2.3}{Cubic Knot Spline}{section.a.Q.2}% 362
-\BOOKMARK [2][-]{subsection.a.Q.2.4}{Cubic Knot Spline Fixed End}{section.a.Q.2}% 363
-\BOOKMARK [2][-]{subsection.a.Q.2.5}{Cubic Knot Spline Fixed End Pair}{section.a.Q.2}% 364
-\BOOKMARK [2][-]{subsection.a.Q.2.6}{Cubic Splines}{section.a.Q.2}% 365
-\BOOKMARK [2][-]{subsection.a.Q.2.7}{Cubic Spline Plus ZBL}{section.a.Q.2}% 366
-\BOOKMARK [2][-]{subsection.a.Q.2.8}{Embedding A - Finnis Sinclair}{section.a.Q.2}% 367
-\BOOKMARK [2][-]{subsection.a.Q.2.9}{Embedding B - Mendelev}{section.a.Q.2}% 368
-\BOOKMARK [2][-]{subsection.a.Q.2.10}{Embedding C}{section.a.Q.2}% 369
-\BOOKMARK [2][-]{subsection.a.Q.2.11}{Embedding D - Ackland-Mendelev}{section.a.Q.2}% 370
-\BOOKMARK [2][-]{subsection.a.Q.2.12}{Embedding E}{section.a.Q.2}% 371
-\BOOKMARK [2][-]{subsection.a.Q.2.13}{Embedding F}{section.a.Q.2}% 372
-\BOOKMARK [2][-]{subsection.a.Q.2.14}{Embedding G}{section.a.Q.2}% 373
-\BOOKMARK [2][-]{subsection.a.Q.2.15}{Lennard-Jones}{section.a.Q.2}% 374
-\BOOKMARK [2][-]{subsection.a.Q.2.16}{Morse}{section.a.Q.2}% 375
-\BOOKMARK [2][-]{subsection.a.Q.2.17}{Slater 4S \(Squared\)}{section.a.Q.2}% 376
-\BOOKMARK [2][-]{subsection.a.Q.2.18}{ZBL}{section.a.Q.2}% 377
-\BOOKMARK [2][-]{subsection.a.Q.2.19}{Zero}{section.a.Q.2}% 378
-\BOOKMARK [0][-]{appendix.a.R}{Fe-Pd and Fe-Ru Structures}{}% 379
-\BOOKMARK [1][-]{section.a.R.1}{Potential vs DFT}{appendix.a.R}% 380
-\BOOKMARK [0][-]{appendix.a.S}{Fe-Pd Potential}{}% 381
-\BOOKMARK [1][-]{section.a.S.1}{Tabulated Potential}{appendix.a.S}% 382
-\BOOKMARK [1][-]{section.a.S.2}{Potential Function Plots}{appendix.a.S}% 383
-\BOOKMARK [1][-]{section.a.S.3}{Potential vs DFT}{appendix.a.S}% 384
-\BOOKMARK [1][-]{section.a.S.4}{Bulk Properties}{appendix.a.S}% 385
-\BOOKMARK [2][-]{subsection.a.S.4.1}{Iron FCC}{section.a.S.4}% 386
-\BOOKMARK [2][-]{subsection.a.S.4.2}{Palladium FCC}{section.a.S.4}% 387
-\BOOKMARK [2][-]{subsection.a.S.4.3}{Iron BCC}{section.a.S.4}% 388
-\BOOKMARK [0][-]{appendix.a.T}{Fe-Ru Potential}{}% 389
-\BOOKMARK [1][-]{section.a.T.1}{Tabulated Potential}{appendix.a.T}% 390
-\BOOKMARK [1][-]{section.a.T.2}{Potential Function Plots}{appendix.a.T}% 391
-\BOOKMARK [1][-]{section.a.T.3}{Potential vs DFT}{appendix.a.T}% 392
-\BOOKMARK [1][-]{section.a.T.4}{Bulk Properties}{appendix.a.T}% 393
-\BOOKMARK [2][-]{subsection.a.T.4.1}{Iron FCC}{section.a.T.4}% 394
-\BOOKMARK [2][-]{subsection.a.T.4.2}{Ruthenium FCC}{section.a.T.4}% 395
-\BOOKMARK [2][-]{subsection.a.T.4.3}{Iron BCC}{section.a.T.4}% 396
-\BOOKMARK [0][-]{appendix.a.U}{Contribution to the DLPOLY Source Code}{}% 397
-\BOOKMARK [1][-]{section.a.U.1}{Contribution to DLPOLY 4.04}{appendix.a.U}% 398
+\BOOKMARK [1][-]{section.6.9}{Media Accessible via GitHub}{chapter.6}% 150
+\BOOKMARK [0][-]{chapter.7}{Potentials for Fe, Ru, Pd}{}% 151
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 152
+\BOOKMARK [2][-]{subsection.7.1.1}{Interatomic Potential Fitting}{section.7.1}% 153
+\BOOKMARK [2][-]{subsection.7.1.2}{Existing Experimental \046 DFT Bulk Property Data}{section.7.1}% 154
+\BOOKMARK [1][-]{section.7.2}{DFT Settings}{chapter.7}% 155
+\BOOKMARK [2][-]{subsection.7.2.1}{Quantum Espresso}{section.7.2}% 156
+\BOOKMARK [2][-]{subsection.7.2.2}{Pseudopotential Selection}{section.7.2}% 157
+\BOOKMARK [2][-]{subsection.7.2.3}{Smearing Type}{section.7.2}% 158
+\BOOKMARK [2][-]{subsection.7.2.4}{Parameter Convergence}{section.7.2}% 159
+\BOOKMARK [2][-]{subsection.7.2.5}{QECONVERGE Python Code}{section.7.2}% 160
+\BOOKMARK [2][-]{subsection.7.2.6}{DFT Parameter Convergence}{section.7.2}% 161
+\BOOKMARK [1][-]{section.7.3}{DFT Results}{chapter.7}% 162
+\BOOKMARK [2][-]{subsection.7.3.1}{QEEOS Python Program}{section.7.3}% 163
+\BOOKMARK [2][-]{subsection.7.3.2}{DFT Calculations of Bulk Properties}{section.7.3}% 164
+\BOOKMARK [2][-]{subsection.7.3.3}{Relaxed Crystal Calculations}{section.7.3}% 165
+\BOOKMARK [2][-]{subsection.7.3.4}{Elastic Constants}{section.7.3}% 166
+\BOOKMARK [2][-]{subsection.7.3.5}{Calibrating the Cohesive Energies}{section.7.3}% 167
+\BOOKMARK [2][-]{subsection.7.3.6}{DFT Reference Database}{section.7.3}% 168
+\BOOKMARK [2][-]{subsection.7.3.7}{Pure Element Defects}{section.7.3}% 169
+\BOOKMARK [2][-]{subsection.7.3.8}{Alloy Atom Positions for Pd and Ru}{section.7.3}% 170
+\BOOKMARK [2][-]{subsection.7.3.9}{Configurations with Randomised Positions}{section.7.3}% 171
+\BOOKMARK [2][-]{subsection.7.3.10}{Surface Energy Calculations}{section.7.3}% 172
+\BOOKMARK [2][-]{subsection.7.3.11}{Defects in Fe-Pd and Fe-Ru Alloys}{section.7.3}% 173
+\BOOKMARK [1][-]{section.7.4}{Issues to Overcome}{chapter.7}% 174
+\BOOKMARK [2][-]{subsection.7.4.1}{Insufficient Memory}{section.7.4}% 175
+\BOOKMARK [2][-]{subsection.7.4.2}{Scratch Restrictions}{section.7.4}% 176
+\BOOKMARK [2][-]{subsection.7.4.3}{Caching Repeat Calculations}{section.7.4}% 177
+\BOOKMARK [2][-]{subsection.7.4.4}{Not Straying Too Far From Reality}{section.7.4}% 178
+\BOOKMARK [2][-]{subsection.7.4.5}{Adjustment of DFT Parameters}{section.7.4}% 179
+\BOOKMARK [2][-]{subsection.7.4.6}{Trial Parameters for Iron with and Octahedral Defect}{section.7.4}% 180
+\BOOKMARK [1][-]{section.7.5}{EAMPA}{chapter.7}% 181
+\BOOKMARK [2][-]{subsection.7.5.1}{Introduction}{section.7.5}% 182
+\BOOKMARK [2][-]{subsection.7.5.2}{Potentials}{section.7.5}% 183
+\BOOKMARK [2][-]{subsection.7.5.3}{Calculations}{section.7.5}% 184
+\BOOKMARK [2][-]{subsection.7.5.4}{Verifying Energy and Force Calculations with LAMMPS}{section.7.5}% 185
+\BOOKMARK [1][-]{section.7.6}{Application of the EAMPA Code}{chapter.7}% 186
+\BOOKMARK [2][-]{subsection.7.6.1}{Potential Transferability}{section.7.6}% 187
+\BOOKMARK [2][-]{subsection.7.6.2}{Fitting Potentials with EAMPA}{section.7.6}% 188
+\BOOKMARK [2][-]{subsection.7.6.3}{Iron-Palladium and Iron-Ruthenium Potentials}{section.7.6}% 189
+\BOOKMARK [1][-]{section.7.7}{DL\137POLY Contribution}{chapter.7}% 190
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 191
+\BOOKMARK [1][-]{section.8.1}{Inter Granular Stress Corrosion Cracking}{chapter.8}% 192
+\BOOKMARK [1][-]{section.8.2}{Predicting Ion Induced Radioactivity}{chapter.8}% 193
+\BOOKMARK [2][-]{subsection.8.2.1}{Modified Equation}{section.8.2}% 194
+\BOOKMARK [2][-]{subsection.8.2.2}{Activity Code}{section.8.2}% 195
+\BOOKMARK [2][-]{subsection.8.2.3}{Iron Irradiation}{section.8.2}% 196
+\BOOKMARK [2][-]{subsection.8.2.4}{Molybdenum Irradiation}{section.8.2}% 197
+\BOOKMARK [2][-]{subsection.8.2.5}{Beam Flux Reduction and Gamma Attenuation}{section.8.2}% 198
+\BOOKMARK [2][-]{subsection.8.2.6}{More Experimental Data Required}{section.8.2}% 199
+\BOOKMARK [2][-]{subsection.8.2.7}{100DPA Activity Predictions}{section.8.2}% 200
+\BOOKMARK [2][-]{subsection.8.2.8}{Original Contribution}{section.8.2}% 201
+\BOOKMARK [1][-]{section.8.3}{Derived Potentials}{chapter.8}% 202
+\BOOKMARK [2][-]{subsection.8.3.1}{Restricting Potentials to Binary Alloys}{section.8.3}% 203
+\BOOKMARK [2][-]{subsection.8.3.2}{Collinear Spin dft}{section.8.3}% 204
+\BOOKMARK [2][-]{subsection.8.3.3}{Automated Convergence Calculations}{section.8.3}% 205
+\BOOKMARK [2][-]{subsection.8.3.4}{Bulk Property Calculations}{section.8.3}% 206
+\BOOKMARK [2][-]{subsection.8.3.5}{Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}{section.8.3}% 207
+\BOOKMARK [2][-]{subsection.8.3.6}{Iron-Palladium and Iron-Ruthenium Potentials}{section.8.3}% 208
+\BOOKMARK [2][-]{subsection.8.3.7}{Original Contribution}{section.8.3}% 209
+\BOOKMARK [1][-]{section.8.4}{Two-Band EAM Contribution to DL-Poly}{chapter.8}% 210
+\BOOKMARK [0][-]{chapter.9}{Future Work}{}% 211
+\BOOKMARK [1][-]{section.9.1}{Activity Code}{chapter.9}% 212
+\BOOKMARK [2][-]{subsection.9.1.1}{Experimental Activity Readings for Ion Irradiated Targets}{section.9.1}% 213
+\BOOKMARK [2][-]{subsection.9.1.2}{Code Improvements}{section.9.1}% 214
+\BOOKMARK [1][-]{section.9.2}{Potential Fitting and MD Simulations}{chapter.9}% 215
+\BOOKMARK [2][-]{subsection.9.2.1}{Larger Supercells}{section.9.2}% 216
+\BOOKMARK [2][-]{subsection.9.2.2}{Alloy Bulk Properties}{section.9.2}% 217
+\BOOKMARK [2][-]{subsection.9.2.3}{Defects}{section.9.2}% 218
+\BOOKMARK [2][-]{subsection.9.2.4}{MEAM for FCC Iron}{section.9.2}% 219
+\BOOKMARK [2][-]{subsection.9.2.5}{Improved Potential: Fe-Ni-Cr-Pd}{section.9.2}% 220
+\BOOKMARK [2][-]{subsection.9.2.6}{PKA Cascade Trials in LAMMPS or DL\137POLY}{section.9.2}% 221
+\BOOKMARK [2][-]{subsection.9.2.7}{Radiation Induced Segregation Trials}{section.9.2}% 222
+\BOOKMARK [0][-]{chapter.10}{Acknowledgements}{}% 223
+\BOOKMARK [0][-]{section*.259}{Appendices}{}% 224
+\BOOKMARK [0][-]{appendix.a.A}{Useful Laplace Transforms}{}% 225
+\BOOKMARK [1][-]{section.a.A.1}{Table of Transforms}{appendix.a.A}% 226
+\BOOKMARK [1][-]{section.a.A.2}{Decay with a Source Term}{appendix.a.A}% 227
+\BOOKMARK [0][-]{appendix.a.B}{Activity Equation in Python: decay class}{}% 228
+\BOOKMARK [1][-]{section.a.B.1}{Full Source Code}{appendix.a.B}% 229
+\BOOKMARK [1][-]{section.a.B.2}{Highlighted Code}{appendix.a.B}% 230
+\BOOKMARK [1][-]{section.a.B.3}{Activity Equation Testing}{appendix.a.B}% 231
+\BOOKMARK [2][-]{subsection.a.B.3.1}{Numeric Fortran Code}{section.a.B.3}% 232
+\BOOKMARK [2][-]{subsection.a.B.3.2}{Chromium-49}{section.a.B.3}% 233
+\BOOKMARK [2][-]{subsection.a.B.3.3}{Nickel-66}{section.a.B.3}% 234
+\BOOKMARK [2][-]{subsection.a.B.3.4}{Caesium-125}{section.a.B.3}% 235
+\BOOKMARK [2][-]{subsection.a.B.3.5}{Bismuth-213}{section.a.B.3}% 236
+\BOOKMARK [2][-]{subsection.a.B.3.6}{Polonium-216}{section.a.B.3}% 237
+\BOOKMARK [2][-]{subsection.a.B.3.7}{Radon-218}{section.a.B.3}% 238
+\BOOKMARK [0][-]{appendix.a.C}{Activity Code}{}% 239
+\BOOKMARK [1][-]{section.a.C.1}{Activity V1}{appendix.a.C}% 240
+\BOOKMARK [2][-]{subsection.a.C.1.1}{Paper published in Computer Physics Communications}{section.a.C.1}% 241
+\BOOKMARK [2][-]{subsection.a.C.1.2}{Accompanying Manual}{section.a.C.1}% 242
+\BOOKMARK [1][-]{section.a.C.2}{Activity V2}{appendix.a.C}% 243
+\BOOKMARK [2][-]{subsection.a.C.2.1}{Accompanying Manual}{section.a.C.2}% 244
+\BOOKMARK [0][-]{appendix.a.D}{Activity V1 Full Results}{}% 245
+\BOOKMARK [1][-]{section.a.D.1}{36MeV Proton Irradiated Iron}{appendix.a.D}% 246
+\BOOKMARK [0][-]{appendix.a.E}{Activity V2 Full Results}{}% 247
+\BOOKMARK [1][-]{section.a.E.1}{36MeV Proton Irradiated Iron}{appendix.a.E}% 248
+\BOOKMARK [2][-]{subsection.a.E.1.1}{Calculation Settings}{section.a.E.1}% 249
+\BOOKMARK [2][-]{subsection.a.E.1.2}{Results File}{section.a.E.1}% 250
+\BOOKMARK [2][-]{subsection.a.E.1.3}{Activity Tallied by Residual Isotope}{section.a.E.1}% 251
+\BOOKMARK [2][-]{subsection.a.E.1.4}{Gamma Output Tallied by Residual Isotope}{section.a.E.1}% 252
+\BOOKMARK [2][-]{subsection.a.E.1.5}{Activity Tallied by Target Isotope}{section.a.E.1}% 253
+\BOOKMARK [2][-]{subsection.a.E.1.6}{Gamma Output Tallied by Target Isotope}{section.a.E.1}% 254
+\BOOKMARK [1][-]{section.a.E.2}{13MeV Proton Irradiated Molybdenum}{appendix.a.E}% 255
+\BOOKMARK [2][-]{subsection.a.E.2.1}{Calculation Settings}{section.a.E.2}% 256
+\BOOKMARK [2][-]{subsection.a.E.2.2}{Results}{section.a.E.2}% 257
+\BOOKMARK [2][-]{subsection.a.E.2.3}{Total Decay Rates Over Time}{section.a.E.2}% 258
+\BOOKMARK [2][-]{subsection.a.E.2.4}{Residual Activity Tallied by Target Isotope}{section.a.E.2}% 259
+\BOOKMARK [2][-]{subsection.a.E.2.5}{Residual Activity Tallied by Residual Isotope}{section.a.E.2}% 260
+\BOOKMARK [2][-]{subsection.a.E.2.6}{Residual Gamma Energy Tallied by Residual Isotope}{section.a.E.2}% 261
+\BOOKMARK [2][-]{subsection.a.E.2.7}{Gamma Lines}{section.a.E.2}% 262
+\BOOKMARK [1][-]{section.a.E.3}{13MeV Proton Irradiated Steel}{appendix.a.E}% 263
+\BOOKMARK [2][-]{subsection.a.E.3.1}{Calculation Settings}{section.a.E.3}% 264
+\BOOKMARK [2][-]{subsection.a.E.3.2}{Results}{section.a.E.3}% 265
+\BOOKMARK [0][-]{appendix.a.F}{Iron Activity: Irradiated to 100DPA}{}% 266
+\BOOKMARK [1][-]{section.a.F.1}{Activity vs Beam Energy}{appendix.a.F}% 267
+\BOOKMARK [2][-]{subsection.a.F.1.1}{5MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 268
+\BOOKMARK [2][-]{subsection.a.F.1.2}{10MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 269
+\BOOKMARK [2][-]{subsection.a.F.1.3}{15MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 270
+\BOOKMARK [2][-]{subsection.a.F.1.4}{20MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 271
+\BOOKMARK [2][-]{subsection.a.F.1.5}{25MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 272
+\BOOKMARK [2][-]{subsection.a.F.1.6}{30MeV Proton Beam - 60 microamp 100DPA}{section.a.F.1}% 273
+\BOOKMARK [0][-]{appendix.a.G}{SRIM Results}{}% 274
+\BOOKMARK [1][-]{subsection.a.G.0.1}{Ion paths through an iron sample}{appendix.a.G}% 275
+\BOOKMARK [0][-]{appendix.a.H}{Crystal Structures}{}% 276
+\BOOKMARK [1][-]{section.a.H.1}{Common Cubic Structures}{appendix.a.H}% 277
+\BOOKMARK [2][-]{subsection.a.H.1.1}{Simple Cubic}{section.a.H.1}% 278
+\BOOKMARK [2][-]{subsection.a.H.1.2}{Body Centered Cubic}{section.a.H.1}% 279
+\BOOKMARK [2][-]{subsection.a.H.1.3}{Face Centered Cubic}{section.a.H.1}% 280
+\BOOKMARK [2][-]{subsection.a.H.1.4}{Zincblende}{section.a.H.1}% 281
+\BOOKMARK [1][-]{section.a.H.2}{FCC Defects}{appendix.a.H}% 282
+\BOOKMARK [2][-]{subsection.a.H.2.1}{Dumbbell <100>}{section.a.H.2}% 283
+\BOOKMARK [2][-]{subsection.a.H.2.2}{Dumbbell <110>}{section.a.H.2}% 284
+\BOOKMARK [2][-]{subsection.a.H.2.3}{Dumbbell <111>}{section.a.H.2}% 285
+\BOOKMARK [2][-]{subsection.a.H.2.4}{Crowdion}{section.a.H.2}% 286
+\BOOKMARK [2][-]{subsection.a.H.2.5}{Octahedral Interstitial}{section.a.H.2}% 287
+\BOOKMARK [2][-]{subsection.a.H.2.6}{Tetrahedral Interstitial}{section.a.H.2}% 288
+\BOOKMARK [0][-]{appendix.a.I}{Elastic Constants}{}% 289
+\BOOKMARK [1][-]{section.a.I.1}{Elastic Constant Matrices}{appendix.a.I}% 290
+\BOOKMARK [1][-]{section.a.I.2}{Sets of Strains Applied to Calculate Elastic Constants}{appendix.a.I}% 291
+\BOOKMARK [2][-]{subsection.a.I.2.1}{Cubic Crystals - Mehl, Singh, Klein and Papaconstantopoulos 1993}{section.a.I.2}% 292
+\BOOKMARK [2][-]{subsection.a.I.2.2}{Orthorhombic Crystals - Ravindran, Fast, Korzhavyi and Johansson}{section.a.I.2}% 293
+\BOOKMARK [2][-]{subsection.a.I.2.3}{Cubic Crystals - Connetable and Thomas 2009}{section.a.I.2}% 294
+\BOOKMARK [2][-]{subsection.a.I.2.4}{Orthorhombic Crystals - Connetable and Thomas 2009}{section.a.I.2}% 295
+\BOOKMARK [0][-]{appendix.a.J}{PBE Functional}{}% 296
+\BOOKMARK [0][-]{appendix.a.K}{DFT Convergence Plots}{}% 297
+\BOOKMARK [0][-]{appendix.a.L}{QEEOS}{}% 298
+\BOOKMARK [0][-]{appendix.a.M}{DFT Calculated Properties}{}% 299
+\BOOKMARK [1][-]{section.a.M.1}{QEEOS}{appendix.a.M}% 300
+\BOOKMARK [1][-]{section.a.M.2}{FCC Aluminium}{appendix.a.M}% 301
+\BOOKMARK [2][-]{subsection.a.M.2.1}{DFT Settings for PWscf}{section.a.M.2}% 302
+\BOOKMARK [2][-]{subsection.a.M.2.2}{Resulting Plots}{section.a.M.2}% 303
+\BOOKMARK [2][-]{subsection.a.M.2.3}{Aluminium FCC Results File}{section.a.M.2}% 304
+\BOOKMARK [2][-]{subsection.a.M.2.4}{Known and Calculated Values}{section.a.M.2}% 305
+\BOOKMARK [1][-]{section.a.M.3}{BCC Iron [No Magnetism]}{appendix.a.M}% 306
+\BOOKMARK [2][-]{subsection.a.M.3.1}{Major DFT Settings}{section.a.M.3}% 307
+\BOOKMARK [2][-]{subsection.a.M.3.2}{Equation of State and Elastic Constants}{section.a.M.3}% 308
+\BOOKMARK [2][-]{subsection.a.M.3.3}{Iron BCC Results File}{section.a.M.3}% 309
+\BOOKMARK [1][-]{section.a.M.4}{BCC Iron [Ferromagnetic]}{appendix.a.M}% 310
+\BOOKMARK [2][-]{subsection.a.M.4.1}{Major DFT Settings}{section.a.M.4}% 311
+\BOOKMARK [2][-]{subsection.a.M.4.2}{Equation of State and Elastic Constants}{section.a.M.4}% 312
+\BOOKMARK [2][-]{subsection.a.M.4.3}{Iron Ferromagnetic BCC Results File}{section.a.M.4}% 313
+\BOOKMARK [2][-]{subsection.a.M.4.4}{Known and Calculated Results}{section.a.M.4}% 314
+\BOOKMARK [1][-]{section.a.M.5}{FCC Iron [Antiferromagnetic]}{appendix.a.M}% 315
+\BOOKMARK [2][-]{subsection.a.M.5.1}{Major DFT Settings}{section.a.M.5}% 316
+\BOOKMARK [2][-]{subsection.a.M.5.2}{Equation of State and Elastic Constants}{section.a.M.5}% 317
+\BOOKMARK [2][-]{subsection.a.M.5.3}{Iron FCC Results File}{section.a.M.5}% 318
+\BOOKMARK [1][-]{section.a.M.6}{FCC Palladium}{appendix.a.M}% 319
+\BOOKMARK [2][-]{subsection.a.M.6.1}{Major DFT Settings}{section.a.M.6}% 320
+\BOOKMARK [2][-]{subsection.a.M.6.2}{Equation of State and Elastic Constants}{section.a.M.6}% 321
+\BOOKMARK [2][-]{subsection.a.M.6.3}{Palladium FCC Results File}{section.a.M.6}% 322
+\BOOKMARK [2][-]{subsection.a.M.6.4}{Known and Calculated Values}{section.a.M.6}% 323
+\BOOKMARK [1][-]{section.a.M.7}{FCC Ruthenium}{appendix.a.M}% 324
+\BOOKMARK [2][-]{subsection.a.M.7.1}{Major DFT Settings}{section.a.M.7}% 325
+\BOOKMARK [2][-]{subsection.a.M.7.2}{Equation of State and Elastic Constants}{section.a.M.7}% 326
+\BOOKMARK [2][-]{subsection.a.M.7.3}{Ruthenium FCC Results File}{section.a.M.7}% 327
+\BOOKMARK [2][-]{subsection.a.M.7.4}{Calculated Results}{section.a.M.7}% 328
+\BOOKMARK [0][-]{appendix.a.N}{Transferability of Interatomic Potentials}{}% 329
+\BOOKMARK [1][-]{section.a.N.1}{Sheng Aluminium Potential}{appendix.a.N}% 330
+\BOOKMARK [2][-]{subsection.a.N.1.1}{FCC Structure}{section.a.N.1}% 331
+\BOOKMARK [2][-]{subsection.a.N.1.2}{BCC Structure}{section.a.N.1}% 332
+\BOOKMARK [1][-]{section.a.N.2}{Mendelev et al 2003 Iron Potential}{appendix.a.N}% 333
+\BOOKMARK [2][-]{subsection.a.N.2.1}{BCC Structure}{section.a.N.2}% 334
+\BOOKMARK [2][-]{subsection.a.N.2.2}{FCC Structure}{section.a.N.2}% 335
+\BOOKMARK [1][-]{section.a.N.3}{Ackland et al 1997 Iron Potential}{appendix.a.N}% 336
+\BOOKMARK [2][-]{subsection.a.N.3.1}{BCC Structure}{section.a.N.3}% 337
+\BOOKMARK [2][-]{subsection.a.N.3.2}{FCC Structure}{section.a.N.3}% 338
+\BOOKMARK [0][-]{appendix.a.O}{Optimization}{}% 339
+\BOOKMARK [1][-]{section.a.O.1}{Optimization}{appendix.a.O}% 340
+\BOOKMARK [2][-]{subsection.a.O.1.1}{Introduction}{section.a.O.1}% 341
+\BOOKMARK [2][-]{subsection.a.O.1.2}{Continuous and Discrete Optimization}{section.a.O.1}% 342
+\BOOKMARK [2][-]{subsection.a.O.1.3}{Constrained and Unconstrained Optimization}{section.a.O.1}% 343
+\BOOKMARK [2][-]{subsection.a.O.1.4}{Global and Local Optimization}{section.a.O.1}% 344
+\BOOKMARK [2][-]{subsection.a.O.1.5}{Global Optimization Algorithms}{section.a.O.1}% 345
+\BOOKMARK [2][-]{subsection.a.O.1.6}{Local Optimization Algorithms}{section.a.O.1}% 346
+\BOOKMARK [0][-]{appendix.a.P}{EAMPA Code}{}% 347
+\BOOKMARK [1][-]{section.a.P.1}{Energy, Force, and Stress Subroutine}{appendix.a.P}% 348
+\BOOKMARK [1][-]{section.a.P.2}{Bulk Properties: Add Configuration Subroutine}{appendix.a.P}% 349
+\BOOKMARK [1][-]{section.a.P.3}{Main fitting class}{appendix.a.P}% 350
+\BOOKMARK [1][-]{section.a.P.4}{Cubic Splines}{appendix.a.P}% 351
+\BOOKMARK [1][-]{section.a.P.5}{Spline Subroutine for the Cubic Knot Spline}{appendix.a.P}% 352
+\BOOKMARK [1][-]{section.a.P.6}{ZBL with Cubic Knot Spline}{appendix.a.P}% 353
+\BOOKMARK [1][-]{section.a.P.7}{Simulated Annealing}{appendix.a.P}% 354
+\BOOKMARK [1][-]{section.a.P.8}{Genetic Algorithm}{appendix.a.P}% 355
+\BOOKMARK [1][-]{section.a.P.9}{Gradient Descent}{appendix.a.P}% 356
+\BOOKMARK [1][-]{section.a.P.10}{Interpolation}{appendix.a.P}% 357
+\BOOKMARK [1][-]{section.a.P.11}{Interpolation \(Gradient\)}{appendix.a.P}% 358
+\BOOKMARK [0][-]{appendix.a.Q}{Potential Functions}{}% 359
+\BOOKMARK [1][-]{section.a.Q.1}{Introduction}{appendix.a.Q}% 360
+\BOOKMARK [1][-]{section.a.Q.2}{Functions}{appendix.a.Q}% 361
+\BOOKMARK [2][-]{subsection.a.Q.2.1}{Ackland-Mendelev Pair}{section.a.Q.2}% 362
+\BOOKMARK [2][-]{subsection.a.Q.2.2}{Buckingham}{section.a.Q.2}% 363
+\BOOKMARK [2][-]{subsection.a.Q.2.3}{Cubic Knot Spline}{section.a.Q.2}% 364
+\BOOKMARK [2][-]{subsection.a.Q.2.4}{Cubic Knot Spline Fixed End}{section.a.Q.2}% 365
+\BOOKMARK [2][-]{subsection.a.Q.2.5}{Cubic Knot Spline Fixed End Pair}{section.a.Q.2}% 366
+\BOOKMARK [2][-]{subsection.a.Q.2.6}{Cubic Splines}{section.a.Q.2}% 367
+\BOOKMARK [2][-]{subsection.a.Q.2.7}{Cubic Spline Plus ZBL}{section.a.Q.2}% 368
+\BOOKMARK [2][-]{subsection.a.Q.2.8}{Embedding A - Finnis Sinclair}{section.a.Q.2}% 369
+\BOOKMARK [2][-]{subsection.a.Q.2.9}{Embedding B - Mendelev}{section.a.Q.2}% 370
+\BOOKMARK [2][-]{subsection.a.Q.2.10}{Embedding C}{section.a.Q.2}% 371
+\BOOKMARK [2][-]{subsection.a.Q.2.11}{Embedding D - Ackland-Mendelev}{section.a.Q.2}% 372
+\BOOKMARK [2][-]{subsection.a.Q.2.12}{Embedding E}{section.a.Q.2}% 373
+\BOOKMARK [2][-]{subsection.a.Q.2.13}{Embedding F}{section.a.Q.2}% 374
+\BOOKMARK [2][-]{subsection.a.Q.2.14}{Embedding G}{section.a.Q.2}% 375
+\BOOKMARK [2][-]{subsection.a.Q.2.15}{Lennard-Jones}{section.a.Q.2}% 376
+\BOOKMARK [2][-]{subsection.a.Q.2.16}{Morse}{section.a.Q.2}% 377
+\BOOKMARK [2][-]{subsection.a.Q.2.17}{Slater 4S \(Squared\)}{section.a.Q.2}% 378
+\BOOKMARK [2][-]{subsection.a.Q.2.18}{ZBL}{section.a.Q.2}% 379
+\BOOKMARK [2][-]{subsection.a.Q.2.19}{Zero}{section.a.Q.2}% 380
+\BOOKMARK [0][-]{appendix.a.R}{Fe-Pd and Fe-Ru Structures}{}% 381
+\BOOKMARK [1][-]{section.a.R.1}{Potential vs DFT}{appendix.a.R}% 382
+\BOOKMARK [0][-]{appendix.a.S}{Fe-Pd Potential}{}% 383
+\BOOKMARK [1][-]{section.a.S.1}{Tabulated Potential}{appendix.a.S}% 384
+\BOOKMARK [1][-]{section.a.S.2}{Potential Function Plots}{appendix.a.S}% 385
+\BOOKMARK [1][-]{section.a.S.3}{Potential vs DFT}{appendix.a.S}% 386
+\BOOKMARK [1][-]{section.a.S.4}{Bulk Properties}{appendix.a.S}% 387
+\BOOKMARK [2][-]{subsection.a.S.4.1}{Iron FCC}{section.a.S.4}% 388
+\BOOKMARK [2][-]{subsection.a.S.4.2}{Palladium FCC}{section.a.S.4}% 389
+\BOOKMARK [2][-]{subsection.a.S.4.3}{Iron BCC}{section.a.S.4}% 390
+\BOOKMARK [0][-]{appendix.a.T}{Fe-Ru Potential}{}% 391
+\BOOKMARK [1][-]{section.a.T.1}{Tabulated Potential}{appendix.a.T}% 392
+\BOOKMARK [1][-]{section.a.T.2}{Potential Function Plots}{appendix.a.T}% 393
+\BOOKMARK [1][-]{section.a.T.3}{Potential vs DFT}{appendix.a.T}% 394
+\BOOKMARK [1][-]{section.a.T.4}{Bulk Properties}{appendix.a.T}% 395
+\BOOKMARK [2][-]{subsection.a.T.4.1}{Iron FCC}{section.a.T.4}% 396
+\BOOKMARK [2][-]{subsection.a.T.4.2}{Ruthenium FCC}{section.a.T.4}% 397
+\BOOKMARK [2][-]{subsection.a.T.4.3}{Iron BCC}{section.a.T.4}% 398
+\BOOKMARK [0][-]{appendix.a.U}{Contribution to the DLPOLY Source Code}{}% 399
+\BOOKMARK [1][-]{section.a.U.1}{Contribution to DLPOLY 4.04}{appendix.a.U}% 400

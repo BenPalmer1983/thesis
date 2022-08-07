@@ -6,7 +6,7 @@
 		\setentrycounter[]{page}\glsnumberformat{33}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{35}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{39\delimN 40}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{192}}}%
+		\setentrycounter[]{page}\glsnumberformat{193}}}%
 \glossentry{316SS}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{30}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{36}\delimN 
@@ -78,7 +78,7 @@
 		\setentrycounter[]{page}\glsnumberformat{102\delimR 104}}}\glsgroupskip
 \glsgroupheading{L}\relax \glsresetentrylist %
 \glossentry{ld50}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{26}}}\glsgroupskip
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossentry{matrixdiagonalization}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{108}}}%
