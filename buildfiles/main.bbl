@@ -527,6 +527,23 @@
     \field{year}{2013}
   \endentry
 
+  \entry{atomicaccidents}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MJA}{%
+         family={Mahaffey},
+         familyi={M\bibinitperiod},
+         given={James\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJA1}
+    \strng{fullhash}{MJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Atomic Accidents}
+    \field{type}{BOOK}
+  \endentry
+
   \entry{advancedbiomass}{book}{}
     \name{author}{3}{}{%
       {{hash=HS}{%
@@ -911,6 +928,57 @@
     \field{title}{Fundamentals of Radiation Dosimetry}
     \field{type}{BOOK}
     \field{year}{1985}
+  \endentry
+
+  \entry{lethaldose1}{online}{}
+    \name{author}{1}{}{%
+      {{hash=AUHS}{%
+         family={Agency},
+         familyi={A\bibinitperiod},
+         given={UK\bibnamedelima Health\bibnamedelima Security},
+         giveni={U\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AUHS1}
+    \strng{fullhash}{AUHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Comparison of doses from sources of exposure}
+    \verb{url}
+    \verb https://www.gov.uk/government/publications/ionising-radiation-dose-co
+    \verb mparisons/ionising-radiation-dose-comparisons
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2020}
+  \endentry
+
+  \entry{lethaldose2}{online}{}
+    \name{author}{2}{}{%
+      {{hash=fDCC}{%
+         prefix={for},
+         prefixi={f\bibinitperiod},
+         family={Disease\bibnamedelima Control},
+         familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Centers},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=P}{%
+         family={Prevention},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DCCfP1}
+    \strng{fullhash}{DCCfP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Acute Radiation Syndrome: A Fact Sheet for Clinicians}
+    \verb{url}
+    \verb https://www.cdc.gov/nceh/radiation/emergencies/arsphysicianfactsheet.
+    \verb htm
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2020}
   \endentry
 
   \entry{ionisingradiationregulations}{online}{}
@@ -4612,6 +4680,84 @@
     \field{title}{Solid State Basics}
     \field{type}{BOOK}
     \field{year}{2013}
+  \endentry
+
+  \entry{spindft1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BUV}{%
+         family={Barth},
+         familyi={B\bibinitperiod},
+         given={U\bibnamedelima Von},
+         giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=HL}{%
+         family={Hedin},
+         familyi={H\bibinitperiod},
+         given={L},
+         giveni={L},
+      }}%
+    }
+    \strng{namehash}{BUVHL1}
+    \strng{fullhash}{BUVHL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A local exchange-correlation potential for the spin polarized
+  case}
+    \field{volume}{5}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Journal of Physics C Solid State Physics}
+    \field{year}{1972}
+  \endentry
+
+  \entry{spindft2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IEAP}{%
+         family={III},
+         familyi={I\bibinitperiod},
+         given={Edward A.\bibnamedelima Pluhar},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+      {{hash=UCA}{%
+         family={Ullrich},
+         familyi={U\bibinitperiod},
+         given={Carsten\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IEAPUCA1}
+    \strng{fullhash}{IEAPUCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{12-15 September 2019}
+    \field{title}{Exchange-correlation magnetic fields in
+  spin-density-functional theory}
+    \field{volume}{100}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{2019}
+  \endentry
+
+  \entry{spindft4}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BG}{%
+         family={Bihlmayer},
+         familyi={B\bibinitperiod},
+         given={Gustav},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BG1}
+    \strng{fullhash}{BG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Magnetism in Density Functional Theory}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.563.8752&rep
+    \verb =rep1&type=pdf
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2020}
   \endentry
 
   \entry{stehfest}{article}{}

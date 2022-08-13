@@ -2,7 +2,11 @@
 \label{chap:backgroundsources}
 
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{There are a wide range of radiation sources and types of ionising radiation.  They interact differently with matter, depending on the type of radiation and its energy.  Damage may be caused with the radiation transferring energy directly to the target.  The target may be transmuted or the surrounding, for example the creation of Cobalt-60 in steel in the nuclear industry.  The environment may be changed chemically, and one example of this is the radiolysis of water.}
+\abstractpreamble{Ionizing radiation takes on a number of forms and may be damaging to both materials and organic life.  The various radiations interact differently with matter and cause damage in different ways.\\
+\\
+Radiation may interact directly with matter.  In the case of materials this could mean creating a damage cascade that displaces atoms from their lattice sites.  For organic life, this might mean the damage of strands of \acrshort{dna} leading to the death of a cell or problems when the cell tries to replicate.  Radiation may also change the environment and an example of this is the radiolysis of water.  This change in water chemistry can affect both materials and organic life.\\
+\\
+The amount of damage components in a reactor must withstand are measured in terms of displacements per atom.  Dose to organic life, in particular humans, is measured in a variety of units including Gy, Si and REM.  Determining the amount of dose in each case can be a complicated process, but it is needed to ensure safety of workers and correct testing of materials.}
 \end{changemargin}
 
 
@@ -19,7 +23,7 @@
 
 \subsection{Introduction}
 
-There are three types of radiation that are useful to discuss in this work, neutrons, ions and Ggammas, and two of these (neutrons and protons) are of particular interest in this work.  Each of these are capable of ionizing the atoms they interact with, given sufficient energy.  Higher energy and momentum radiation it is able to directly damage materials, or the \acrshort{dna} structure of organic life, that it interacts with.  Lower momentum ionizing radiation may change the water chemistry of the environment or within the cells of organic lifeforms that is detrimental to life.
+There are three types of radiation that are useful to discuss in this work: neutrons, ions and gammas, and two of these (neutrons and protons) are of particular interest in this work.  Each of these are capable of ionizing the atoms they interact with, given sufficient energy.  Higher energy and momentum radiation it is able to directly damage materials or the \acrshort{dna} structure of organic life that it interacts with.  Lower momentum ionizing radiation may change the water chemistry of the environment or within the cells of organic lifeforms that is detrimental to life.
 
 
 
@@ -29,7 +33,7 @@ Charged particles interact with matter through the Coulomb interaction.  As a ch
 
 Ions may also lose kinetic energy to the nucleus of an atom through elastic scattering and, where the atom is in a crystal structure, through knocking atoms in the material out of their lattice positions.  Inelastic scattering is also a possibility, leaving the target nucleus in an excited state.
 
-Knock on atoms and electrons with enough kinetic energy that have been removed from atoms (delta rays), continue the irradiation of the material while they have the kinetic energy available to do so.
+Knock on atoms and electrons with enough kinetic energy that have been removed from atoms (delta rays), continue the irradiation of the material whilst they have the kinetic energy available to do so.
 
 A large proportion of the energy of a charged projectile is lost to the electrons of the target material.  There is a chance, depending on the energy and type of charged projectile (and the cross section of the target nucleus), that the charged particle will overcome the coulomb potential and be captured by the nucleus.
 
@@ -67,13 +71,11 @@ Relativistic & $>20$ MeV & $>6.1 \times 10^{7}$ & $< 6.5 \times 10^{-5}$\\
 \label{table:neutronenergies}
 \end{table}
 
-The nuclear force holds nuclei together by exchanging pions.  It is 137 times stronger than the electromagnetic force, but because of the mass of the pion (approximately 130-140MeV) it only acts over a short range of approximately 1fm.  The nuclear force is attractive but has a short-range repulsive core.
+The nuclear force holds nuclei together by exchanging pions and the types of interactions are shown in figure \ref{fig:pninteractions}.  It is 137 times stronger than the electromagnetic force, but because of the mass of the pion (approximately 130-140MeV) it only acts over a short range of approximately 1fm.  The nuclear force is attractive but has a short-range repulsive core.
 
-
-\begin{figure}
+\begin{figure}[htb]
 \centering
-\begin{minipage}{.30\textwidth}
-\centering
+\begin{subfigure}{0.32\textwidth}
 \begin{tikzpicture}
   \begin{feynman}
     \vertex (a) {\(p\)};
@@ -93,9 +95,8 @@ The nuclear force holds nuclei together by exchanging pions.  It is 137 times st
 \end{tikzpicture}
 \caption{Direct interaction p-p\cite{pionexchange}}
 \label{fig:pppion}
-\end{minipage}
-\begin{minipage}{.30\textwidth}
-\centering
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
 \begin{tikzpicture}
   \begin{feynman}
     \vertex (a) {\(p\)};
@@ -115,9 +116,8 @@ The nuclear force holds nuclei together by exchanging pions.  It is 137 times st
 \end{tikzpicture}
 \caption{Direct interaction p-n\cite{pionexchange}}
 \label{fig:pnpion}
-\end{minipage}
-\begin{minipage}{.30\textwidth}
-\centering
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
 \begin{tikzpicture}
   \begin{feynman}
     \vertex (a) {\(n\)};
@@ -137,13 +137,9 @@ The nuclear force holds nuclei together by exchanging pions.  It is 137 times st
 \end{tikzpicture}
 \caption{Direct interaction n-n\cite{pionexchange}}
 \label{fig:nnpion}
-\end{minipage}
-\end{figure}
+\end{subfigure}
 
-
-\begin{figure}
-\centering
-\begin{minipage}{.30\textwidth}
+\begin{subfigure}{.32\textwidth}
 \centering
 \begin{tikzpicture}
   \begin{feynman}
@@ -164,8 +160,8 @@ The nuclear force holds nuclei together by exchanging pions.  It is 137 times st
 \end{tikzpicture}
 \caption{Exchange interaction n-p\cite{pionexchange}}
 \label{fig:pppion}
-\end{minipage}
-\begin{minipage}{.30\textwidth}
+\end{subfigure}
+\begin{subfigure}{.32\textwidth}
 \centering
 \begin{tikzpicture}
   \begin{feynman}
@@ -186,7 +182,9 @@ The nuclear force holds nuclei together by exchanging pions.  It is 137 times st
 \end{tikzpicture}
 \caption{Exchange interaction p-n\cite{pionexchange}}
 \label{fig:pnpion}
-\end{minipage}
+\end{subfigure}
+\caption{Proton and neutron interactions}
+\label{fig:pninteractions}
 \end{figure}
 
 For nuclear reaction and damage calculations, the interaction of neutrons with matter is represented by a cross section (section \ref{section:nuclearxs}).  Cross sections are used to calculate the probability of a certain interaction occurring and are dependent upon the target nucleus, how much of the material the pass through and the energy of the neutron.
@@ -309,7 +307,7 @@ Photons of sufficient energy interact with and eject electrons from the surface 
 
 \subsubsection{Coherent Scattering}
 
-Lower energy, non-ionizing photons, have insufficient energy to eject electrons (fig. \ref{fig:coherentscattering}).  Coherent scattering is the interaction in which photons change direction, scattering, without losing energy. 
+Lower energy, non-ionizing photons, have insufficient energy to eject electrons (fig. \ref{fig:coherentscattering}).  Coherent scattering is the interaction in which photons change direction, scattering, without losing energy.  This is also known as Rayleigh scattering.
 
 
 \begin{figure}[h]
@@ -338,7 +336,7 @@ Lower energy, non-ionizing photons, have insufficient energy to eject electrons 
 
 \subsubsection{Gamma Attenuation}
 
-Whilst an infinite amount of material is required to reduce the intensity of gammas to zero, they may be reduced by a significant amount with dense material.  Lead, Uranium and other dense materials with a large number of electrons per unit volume are ideal.
+Whilst an infinite amount of material is required to reduce the intensity of gammas to zero, they may be reduced by a significant amount with dense material.  Lead, Uranium and other high density elements with a large number of electrons per unit volume are ideal.
 
 \begin{equation}
 \begin{split}
@@ -472,13 +470,13 @@ Both the type of radiation and the type of tissue determine how much of an impac
 
 In this work the primary types of radiation considered in this work are neutrons, protons and gammas.  The materials damage will be predominantly due to neutrons, protons and cascade atoms.  Damage to humans will be primarily due to gamma rays. 
 
-It is assumed the process causing the damage is screened from humans and that this radiation will no longer be present when the irradiated targets are being handled.  It is also assumed that and beta and alphas will also be screen with the main source of irradiation that poses a threat to humans being gammas.  For this reason more focus will be given to the effect of gammas on humans.
+It is assumed the process causing the material damage is screened from humans and that this radiation will no longer be present when the proton or neutron irradiated targets are being handled.  It is also assumed that betas and alphas will also be screened during handling with the main source of irradiation that poses a threat to humans being gammas.  For this reason more focus will be given to the effect of gammas on humans.
 
 
 
 \subsection{Reference Levels of Radiation}
 
-Although a sievert is only one joule per kg, because of the nature of the damage cause by ionising radiation, safe levels are measured in millisieverts per year.  The annual upper limit for the general public is just .  A dose of just 5 Sieverts is enough to kill 50\% of people within 1 month (table \ref{table:dosecomparison}). 
+Although a sievert is only one joule per kg, because of the nature of the damage caused by ionising radiation, safe levels are measured in millisieverts per year.  The annual upper limit for the general public is just 1 mSv per year.  A dose of just 5 Sieverts is enough to kill 50\% of people within 1 month (table \ref{table:dosecomparison}). 
 
 \begin{table}[h]
 \begin{center}
@@ -494,11 +492,14 @@ UK average annual dose (background) &  2.7 \\
 Whole bodt CT scan & 10 \\
 Nuclear industry employee annual exposure limit & 20 \\
 Acute radiation effects & 1,000 \\
+50\% lethal dose within 60 dyas & 2,500-5,000 \\
 50\% lethal dose within 1 month & 5,000 \\
+100\% lethal dose within 2 weeks & 10,000 \\
+100\% lethal dose within 3 days & 50,000 \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Irradiation dose comparison in mSv}
+\caption{Irradiation dose comparison in mSv\cite{lethaldose1}\cite{lethaldose2}}
 \label{table:dosecomparison}
 \end{table}
 

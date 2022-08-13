@@ -19,7 +19,7 @@ A level-1 auxilliary file: chapters/austenitic_steels_in_nuclear/austenitic_stee
 A level-1 auxilliary file: chapters/isotope_activation_and_radioactive_decay/isotope_activation_and_radioactive_decay.aux
 A level-1 auxilliary file: chapters/interatomic_potential_fitting/interatomic_potential_fitting.aux
 Case mismatch error between cite keys localtfraczkowski and localtfRaczkowski
----line 849 of file main.aux
+---line 864 of file main.aux
  : \citation{localtfraczkowski
  :                            }
 I'm skipping whatever remains of this command
@@ -48,20 +48,20 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 32661 items from 5000.
+Reallocated field_info (elt_size=8) to 33495 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: share/bib/thesis2022.bib
-I was expecting a `,' or a `}'---line 910 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 932 of file share/bib/thesis2022.bib
  :  
  :  url          = {https://www.materialssquare.com/blog/5-short-but-important-calculation-of-a-single-atom},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 919 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 941 of file share/bib/thesis2022.bib
  :  
  :  url          = {https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2697 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 2773 of file share/bib/thesis2022.bib
  : 
  : %%##################################################
 (Error may have been on previous line)
@@ -73,10 +73,10 @@ Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 
 Here's how much of BibTeX's memory you used:
- Cites:               197 out of 750
- Fields:            27382 out of 32661
- Hash table:       199114 out of 200000
- Strings:            2109 out of 200000
- Free string pool:  36982 out of 65000
+ Cites:               203 out of 750
+ Fields:            28216 out of 33495
+ Hash table:       199107 out of 200000
+ Strings:            2132 out of 200000
+ Free string pool:  37825 out of 65000
  Wizard functions:   6365 out of 9000
 (There were 4 error messages)

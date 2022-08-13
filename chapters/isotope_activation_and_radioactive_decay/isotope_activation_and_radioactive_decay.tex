@@ -1,13 +1,14 @@
 \chapter[Isotope Activation and Radioactive Decay]{Isotope Activation and Radioactive Decay}
 
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{Where proton or deuteron radiation is used to emulate neutron damage, there is still an associated risk of transmuting atoms in the target material, creating radioactive isotopes.  An equation was derived to calculate the radioactivity of each element in the decay chain.  It takes into account a source term for each isotope in the decay chain, as well as any branching factors.\\
+\abstractpreamble{Proton sources are more readily available and are less costly than high flux neutron sources.  In terms of particles per second the University of Birmingham cyclotron is able to dose a target with up to $5.85 \times 10^{14}$ protons $cm^{-2}s^{-1}$ with the \acrlong{hfir} able to generate $2.3 \times 10^{15}$ neutrons $cm^{-2}s^{-1}$.\\
 \\
-Once derived, the equation was used in a computer code that, coupled with cross section data from the \acrshort{tendl} library and ion transport data from the \acrshort{srim} ion transport code, predicts the radioactivity of a sample (chapter \ref{chapter:resultsactivitycode}).}
+Where proton or deuteron radiation is used to emulate neutron damage, there still exists an accompanying risk from transmuting atoms in the target material to radioactive isotopes.  The probability of a reaction is arrived at using past experimental work and use of the \acrlong{omp} and these exist now as \acrshort{endf}s.\\
+\\
+The Bateman equations were derived in the early 1900s and may be used to calculate the activity of an isotope, and a chain of daughter isotopes, at time t.  The transport of ions through a target may be modelled using the ion transport codes \acrshort{trim} and \acrshort{srim}.\\
+\\
+The Bateman equation is developed further and is coupled with the aforementioned cross section data and ion transport codes into a new code called Acivity, and this is discussed in chapter \ref{chapter:activitycode}.}
 \end{changemargin}
-
-
-
 
 
 
@@ -40,17 +41,17 @@ The University of Birmingham cyclotron is more compact.  The protons it accelera
 \begin{table}[h]
 \begin{center}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{c c c c c c}
+\begin{tabular}{c c c c}
 \hline\hline
-Projectile & Energy (MeV) & Maximum Current (micro A) \\
+Projectile & Energy (MeV) & Maximum Current (micro A) & Projectiles $cm^{-2} s{-1}$\\
 \hline\hline 
-proton & 8-40 & 60 \\
-deuteron & 8-40 & 30 \\
-$He^{2+}$ & 8-53 & 30 \\
+proton & 8-40 & 60 & $5.85 \times 10^{14}$  \\
+deuteron & 8-40 & 30 & $2.93 \times 10^{14}$  \\
+$He^{2+}$ & 8-53 & 30 & $2.93 \times 10^{14}$ \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{University of Birmingham Cyclotron Ion Beams}
+\caption{University of Birmingham Cyclotron Ion Beams.  The projectiles per area is based on a 0.8cmx0.8cm beam aperture.}
 \label{table:mc40projectiles}
 \end{table}
 
