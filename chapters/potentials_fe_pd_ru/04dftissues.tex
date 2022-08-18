@@ -1,8 +1,8 @@
 
-
+\FloatBarrier
 \section[Issues to Overcome]{DFT Errors, Convergence Failures and Repeat Calculations}
 
-short intro
+A number of issues were encountered throughout this work when putting \acrshort{dft} into practice.  These are explored in this section in order to explain why certain calculations weren't performed.  They are also listed to serve as a reminder of what to try and avoid in future if the potentials are developed further and more \acrshort{dft} calculations are required.
 
 \subsection{Insufficient Memory}
 
@@ -13,13 +13,13 @@ The DFT calculations are performed on a supercomputer with many processors and m
 \item OpenMPI/MPICH - many processes, each with it's own memory
 \end{itemize}
 
-Whilst some favourable results have been shown using a hybrid of OpenMP and OpenMPI, it was more straightforward to use in OpenMPI mode only in this work.  Unfortunately, the amount of memory per process overwhelmed the computing nodes for certain calculation.  The job script was modified to reserve entire nodes and all the memory on each node, but to only use the cores on one of the two processors to halve the processes per node, but double the memory per process.  It was quicker to do this than wait in the high memory queue on BlueBEAR, where the memory per process would be perhaps double than that required.
+Whilst some favourable results have been shown using a hybrid of OpenMP and OpenMPI, it was more straightforward to use in OpenMPI mode only in this work.  Unfortunately, the amount of memory per process overwhelmed the computing nodes for certain calculations as each process requires an a copy of the data held in memory.  The job script was modified to reserve entire nodes and all the memory on each node, but to only use the cores on one of the two processors to halve the processes per node, but double the memory per process.  It was quicker to do this than wait in the high memory queue on BlueBEAR, where the memory per process would be perhaps double than that required.
 
 \subsection{Scratch Restrictions}
 
 When the calculations first started, the scratch space was located on a large shared space on the BlueBEAR computer.  Over time the drive space quota was restricted and the scratch was relocated to individual nodes.  There were few issues with less complex calculations as the \acrshort{scf} temporary data was several GB in size with the scratch space on each node being approximately 120GB.  Once a batch of collinear iron calculations had been submitted to the job queue, they would quickly fill the scratch drive and the job would terminate after just a few calculations, as the node had run out of scratch drive space.
 
-\begin{lstlisting}[style=sPseudo,caption={Sbatch file},label={listing:sbatchfile}]
+\begin{lstlisting}[style=sBash,caption={Sbatch file},label={listing:sbatchfile}]
 #!/bin/bash
 #
 #SBATCH --job-name=feforfit
@@ -56,7 +56,7 @@ export PWSCF_SCRIPT=/rds/homes/b/bxp912/apps/qe-6.3/bin/pw.sh
 python /rds/homes/b/bxp912/apps/python/qeforfit.py input.in > results.txt
 \end{lstlisting}
 
-\begin{lstlisting}[style=sPseudo,caption={Wrapper file},label={listing:wrapperfile}]
+\begin{lstlisting}[style=sBash,caption={Wrapper file},label={listing:wrapperfile}]
 #!/bin/bash
 rm -R $PWSCF_SCRATCH/*
 mpirun -n $1 $PWSCF_BIN -in $2  > $3 
@@ -67,14 +67,7 @@ As the convergence and equation of state/elastic constant python programs automa
 
 \subsection{Caching Repeat Calculations}
 
-Several of the programs required many hundreds of DFT calculations.  At first, if an error was encountered and the program had to start from scratch, computation time would be wasted.  To solve this, a directory was set to cache input and output files for PWscf.  A hash would be generated from the input file and this would be used as the cache file name.  If a calculation was successful, it would save the input and output file.  In future, if the same calculation was submitted again, the cached file would be returned.  The cache could be copied from BlueBEAR to other computers to save on repeat submission to the BlueBEAR job scheduler.
-
-
-\subsection{Not Straying Too Far From Reality}
-
-It is important to provide the calculation with reasonable and realistic configurations and settings.  Where a pure element such as Aluminium, Iron or Platinum was being investigated, the known experimental lattice parameters were used as a starting point (table \ref{table:predictedlattice} and table \ref{table:computedlattice}).  If the parameters were too far from these values, for example inputting a lattice parameter of either 2 or 8 angs for Aluminium rather than 4, as a starting approximation, the DFT calculation might struggle to relax the structure, or to even successfully run or converge a calculation.
-
-The FCC Iron structure lattice parameter was estimated from the density of FCC steel, and the lattice parameter for alloys could similarly be estimated within a reasonable margin to use as a start point for the calculation.
+Several of the programs required many hundreds of DFT calculations.  At first, if an error was encountered and the program had to start from scratch, computation time would be wasted.  To solve this, a directory was set to cache input and output files for PWscf.  A hash would be generated from the input file and this would be used as the cache file name.  If a calculation was successful, it would save the input and output file.  In future, if the same calculation was submitted again, the cached file would be returned.  The cache could be copied between BlueBEAR and other computers to save on repeat submission to the BlueBEAR job scheduler.
 
 
 
@@ -106,7 +99,15 @@ There are a selection of mixing modes available in PWscf, giving a choice of Tho
 
 For calculations with defects the local-TF setting was used and for equation of state and elastic constant calculations, where the distribution of atoms is more homogeneous, plain Broyden mixing was used.  In most circumstances the mixing factor (mixing\_beta) was reduced to 0.1.  This wasn't always the case, and for certain defect calculations the default value of 0.3 proved to be the more efficient choice.
 
-One other important parameter, that primarily affects geometry and position relaxation calculations (VC-RELAX), was the convergence threshold for the SCF calculations (conv\_thr).  The default value is $1.0\times 10^{-6}$ Ry and this was sufficient for SCF calculations and most VC-RELAX calculations.  Several relaxation calculations failed to converge and, at the suggestion of authors of Quantum Epresso, the threshold was reduced to $1.0\times 10^{-7}$ Ry.  This would lead to a longer time to compute the first geometry optimisation step.  As this result affects future steps the success of convergence for subsequent steps and the time taken to complete the optimisation was reduced. 
+One other important parameter, that primarily affects geometry and position relaxation calculations (VC-RELAX), was the convergence threshold for the \acrshort{scf} calculations (conv\_thr).  The default value is $1.0\times 10^{-6}$ Ry and this was sufficient for \acrshort{scf} calculations and most VC-RELAX calculations.  Several relaxation calculations failed to converge and, at the suggestion of authors of Quantum Espresso, the threshold was reduced to $1.0\times 10^{-7}$ Ry.  This would lead to a longer time to compute the first geometry optimisation step.  The result from the first \acrshort{scf} cycle affects the convergence of subsequent steps and with the better starting point the time taken to complete the geometry relaxation was reduced and the chance of success was increased.
+
+
+
+\subsection{Not Straying Too Far From Reality}
+
+It is important to provide the calculation with reasonable and realistic configurations and settings.  Where a pure element such as Aluminium, Iron or Platinum was being investigated, the known experimental lattice parameters were used as a starting point (table \ref{table:predictedlattice} and table \ref{table:computedlattice}).  If the parameters were too far from these values, for example inputting a lattice parameter of either 2 or 8 angs for Aluminium rather than 4, as a starting approximation, the DFT calculation might struggle to relax the structure, or to even successfully run or converge a calculation.
+
+The FCC Iron structure lattice parameter was estimated from the density of FCC steel, and the lattice parameter for alloys could similarly be estimated within a reasonable margin to use as a start point for the calculation.
 
 
 

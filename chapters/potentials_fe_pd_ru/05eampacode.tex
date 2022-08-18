@@ -1,19 +1,22 @@
-
+\FloatBarrier
 \section[EAMPA]{EAMPA: Potential Analysis and Fitting Code}
 \label{code:eampa}
 
 \subsection{Introduction}
 
 
-A python-fortran based computer code was developed to analyse interatomic potentials and fit their parameters to bulk properties and DFT calculated forces and energies.  It has been designed to take advantage of both Fortran and Python.  Fortran is used to compute the neighbour lists, energies, stresses and forces, and Python is used to read and write data, produce plots and control the potential fitting.  This allows the use of custom optimization subroutines as well as the use of those included in the SciPy module.  Highlights from the code are discussed in the results (section \ref{code:eampa}) and the appendix of this work (appendix \ref{chapter:appendix-eampa}).
+A python-fortran based computer code was developed to analyse interatomic potentials and fit their parameters to bulk properties and DFT calculated forces and energies.  It was designed to take advantage of both Fortran and Python.  Fortran is used to compute the neighbour lists, energies, stresses and forces, and Python is used to read and write data, produce plots and control the potential fitting.  This allowed the use of custom optimization subroutines as well as the use of those included in the SciPy module.  Highlights from the code are discussed in this section and the appendix of this work (appendix \ref{chapter:appendix-eampa}).
 
-It currently has the following features:
+The latest version of the code has the following features:
 
 \begin{itemize}
 \item calculate energy, forces and stress of an ensemble of atoms 
 \item calculate bulk properties of a potential for pure \acrshort{bcc} of \acrshort{fcc} structures
-\item fit parameters using simulated annealing, genetic algorithm, Nealder-Meade, Levenberg-Marquardt, BFGS
-\item  
+\item relaxation of the lattice parameter 
+\item relaxation of the cell geometry along with the lattice parameter
+\item fitting on analytic potential parameters using simulated annealing, genetic algorithm, Nealder-Meade, Levenberg-Marquardt, BFGS
+\item effective gauge transforms of pure element potentials
+\item creation of potential files in other formats (tabulated, LAMMPS etc)
 \end{itemize}
 
 The source code and instructions on how to use the program are available to download from GitHub.
@@ -31,9 +34,7 @@ https://github.com/BenPalmer1983/eampa
 
 The code has been designed specifically for many body potentials.  These include \acrlong{fs},  \acrlong{eam}, \acrlong{2beam} but not the \acrlong{meam}.  It may be reduced to pair potentials only by setting the density function and embedding functional to \enquote{zero} (see appendix \ref{chapter:potentialfunctions} for function details).  
 
-The function types available for pair, density and embedding are listed in the appendix (\ref{chapter:potentialfunctions}).  More function types may be easily added by editing the Fortran fnc module and recompiling the efs and bp modules.
-
-Most of the functions are basic mathematical functions that use built in operators and functions.  Several are more complex, such as the cubic spline, quintic spline and knot-to-knot splines.
+The function types available for pair, density and embedding are listed in the appendix (\ref{chapter:potentialfunctions}).  More function types may be easily added by editing the module in the Fortran code that defines each function.  Most of the functions are basic mathematical functions that use built in operators and functions.  Several are more complex, such as the cubic spline, quintic spline and knot-to-knot splines.
 
 
 \subsubsection{Cubic and Quintic Splines}
@@ -111,37 +112,34 @@ The calculations involved in this code centre around the calculation of energy o
 
 \subsubsection{Energy, Force and Stress Calculations}
 
-A potential and configuration of atoms may be loaded into the program in a number of ways.  Python passes this data to the atom Fortran module.  This computes the neighbour list and this is passed back to the Python program where it is stored for later use.
+A potential and configuration of atoms may be loaded into the program in a number of ways.  Python passes this data to the atom Fortran module and then computes the neighbour list before it is passed back to the Python program where it is stored for later use.
 
-There are a number of functions that allow the potential as well as atom configurations (and neighbour lists) to be updated.  These are handled in Python, but the calculations are carried out in the Fortran atom module, that then passes the results back to Python.
+There are a number of functions that allow the potential as well as atom configurations (and neighbour lists) to be updated.  These are handled in Python, but the calculations are carried out in the Fortran atom module, that then passes the results back to Python.  One example of such a function is where the position of the atoms is changed and the neighbour list is updated without a full recalculation.
 
-The energy, forces and stresses may be computed for a range of configurations or a single configuration.  This process starts in Python, but the heavy lifting is once again completed using the Fortran module.  The method used is discussed in section \ref{section:backgroundenergyforcestress} and the subroutine used is included in the appendix (section \ref{section:appendixenergyforcestress}).
+The energy, forces and stresses may be computed for a range of configurations or a single configuration.  This process starts in Python, but the calculations are once again completed using the Fortran module.  The method used is discussed in section \ref{section:backgroundenergyforcestress} and the subroutine used is included in the appendix (section \ref{section:appendixenergyforcestress}).
 
 
 \subsubsection{Geometry and Coordinate Optimisation}
 
-Once a configuration is loaded into the program, it can be relaxed using a variety of techniques.  The lattice parameter may be relaxed using the built in \acrshort{bfgs} or \acrshort{cg} minimizers.  The same functions may be used to relax the simulation cell.  Where the coordinates of the atoms are relaxed, a damped molecular dynamics subroutine is called from the Fortran module that computes the forces on the atoms and moves them accordingly.  This has been more successful than using built in minimizers, where no gradient data is passed, but a more promising approach might be to include the VA08 subroutine from the Harwell archives\cite{harwellva08}.  This is the same subroutine used in the Bonny potential fitting code\cite{bonnyfecr}.
+Once a configuration is loaded into the program, it can be relaxed using a variety of techniques.  The lattice parameter may be relaxed using the built in \acrshort{bfgs} or \acrshort{cg} minimizers and the same functions may be used to relax the simulation cell.  Where the coordinates of the atoms are relaxed, a damped molecular dynamics subroutine is called from the Fortran module that computes the forces on the atoms and moves them accordingly.  This has been more successful than using built in minimizers, where no gradient data is passed, but a more promising approach might be to include the VA08 subroutine from the Harwell archives\cite{harwellva08}.  This is the same subroutine used in the Bonny potential fitting code\cite{bonnyfecr}.
 
 
 
 \subsubsection{Bulk Property Calculations}
 
-The bulk property calculations rely on the calculation of energy of a number of configurations where specific strains
+The bulk property calculations rely on the calculation of the energy of a number of configurations where specific strains have been applied to the perfect relaxed crystal.  The methods used are discussed in chapter \ref{chap:backgroundfitting} and the subroutine that creates the configurations, with which the module calculates the energies used to plot the equation of state and other distortions, is included in appendix \ref{chapter:appendix-eampa}.
 
-
-The bulk property calculations are also performed in Python using a library created with F2PY.  In order to speed up the calculation, the equation of state and elastic constant configurations use the known lattice parameter set by the user.  The methods used are discussed in chapter \ref{chap:backgroundfitting} and the subroutine that creates the configurations, with which the module calculates the energies used to plot the equation of state and other distortions, is included in the appendix \ref{section:appendixbpaddconfiguration}.
+The Python code creates the configurations with the strains applied and the Fortran subroutines are called to compute the energies.  Once the values are collected, the bulk properties are calculated in Python and any required plots are created.
 
 
 \subsubsection{RSS - How Well The Potential Fits Experimental \& DFT Data}
 
-The fitting process measures how well a potential fits the data when the initial parameters are given and every time a new set of parameters are proposed.  They are weighted and computed in the efs and bp modules.  They are the \acrfull{rss} of the differences between calculated energies, forces, stress, lattice parameter, cohesive energy, bulk modulus and elastic constants and the known values.  The sum of these values measures how well the potential fits.
+The fitting process measures how well a potential fits the data when the initial parameters are given and every time a new set of parameters are proposed.  The user assigns weights to configurations and the parameters the potential is being fit to.  The Python code calculates the \acrfull{rss} of the differences between calculated energies, forces, stress, lattice parameter, cohesive energy, bulk modulus and elastic constants and the known values.  The sum of these values measures how well the potential fits.
 
 
-\subsubsection{Analytic Potential Fitting}
+%\subsubsection{Analytic Potential Fitting}
 
-In earlier versions, the code used tabulated potentials only.  Any analytic potentials were converted to tabulated.  This was for two reasons: the functions could be easily exported and used by other codes that may not have the same analytic functions, and interpolation between tabulated data was faster to compute the value and gradient of a function at a certain point than several of the analytic functions (in particular the knot-to-knot splines).  
 
-A negative aspect is that, whilst the pair and density functions have a fixed range (from 0 to the cutoff radius), the range for the embedding functional depends on the density function, and the range of densities computed at each atom location.  Rather than compute this first, I re-wrote the code to use analytic functions only, with the option of outputting as a tabulated function for use in other programs.  A number of Python scripts were created to fit pre-existing tabulated potential functions into analytic functions to use as a starting point for the fitting procedure.
 
 \subsubsection{Overview of the Potential Fitting Process}
 
@@ -152,28 +150,25 @@ The step by step flow of the program while fitting parameters of a potential is 
 \begin{enumerate}
 \item Read input files
 \item Load Fortran Modules
-\item Load potentials into Python and Fortran
-\item Load configurations into Python and Fortran
-\item Allocate memory
-\item Create neighbour list for all configurations
-\item Create eos and ec configurations and neighbour lists
+\item Load potentials into Python
+\item Load configurations into Python
+\item Create neighbour list configurations in Fortran and save to Python
 \item Begin fitting loop in Python
 \item Loop starts - loop through potential function parameters
 \begin{enumerate}
-\item Update potential and load parameters to Fortran modules
+\item Update potential in Python
+\item Create tabulated version of functions
+\item Run calculations in Fortran
 \item Loop starts - loop through configurations
 \begin{enumerate}
 \item Calculate energy, force, stress using pre-calculated neighbour lists
 \end{enumerate}
 \item End loop
-\item Loop starts - bulk property calculations for each pure element
-\begin{enumerate}
-\item Calculate eos and ec values and bulk properties using pre-calculated neighbour lists
-\end{enumerate}
-\item End loop
-\item Calculate rss between these values and known/dft
+\item Save energies, forces and stresses back to Python
+\item Compute bulk properties from the energies in Python
+\item Calculate the RSS between the potential computed and know values
 \item Save parameters if best
-\item Make new parameters
+\item Make next set of parameters
 \end{enumerate}
 \item End loop
 \item Output results
@@ -184,19 +179,19 @@ Once the fitting process has completed, the best set of parameters are stored fo
 
 
 
-
 \subsubsection{Simulated Annealing}
 
-The simulated annealing algorithm was considered for optimisation, and may be implemented as an option in the future.  The algorithm looks for better solutions and replaces the current value with better values.  It also accepts worse solutions with a probability that decreases with \enquote{temperature}.  Similar to the way atoms find optimal positions by annealing and cooling, the algorithm starts with a high temperature and it reduces this temperature over time.  It is used to search for the global optimum.
+The simulated annealing algorithm is implemented in the code and is an option available to the user for fitting.  The algorithm looks for better solutions and replaces the current value with better values.  It also accepts worse solutions with a probability that decreases with \enquote{temperature}.  Similar to the way atoms find optimal positions by annealing and cooling, the algorithm starts with a high temperature and it reduces this temperature over time.  It is used to search for the global optimum.
 
-The algorithm used is given in the appendix (section \ref{section:simulatedannealing}).
+The algorithm is discussed in greater detail in appendix \ref{section:optsimulatedannealing}.  The implementation used in the EAMPA code is included in appendix \ref{section:simulatedannealing}.
+
 
 
 
 
 \subsubsection{Genetic Algorithm}
 
-The global optimum is searched for using a genetic algorithm.  The user chooses the parameters for the algorithm and it attempts to search for the optimum parameters to fit the potential functions to the data.
+The global optimum may be searched for using a genetic algorithm.  The user chooses the parameters for the algorithm and it attempts to search for the optimum parameters to fit the potential functions to the data.
 
 The user settings include the following:
 
@@ -204,11 +199,12 @@ The user settings include the following:
 \item population size
 \item \enquote{fresh} (new randomly generated) parameters
 \item number of generations
-\item number of extinction events
-\item how often the top solutions are enhanced with linesearch and gradient descent
+\item how often the best results are enhanced with a chosen local optimization algorithm
+%\item number of extinction events
+%\item how often the top solutions are enhanced with linesearch and gradient descent
 \end{itemize}
 
-The subroutine that breeds the parameters randomly combines the parameters from two parent solutions to create two children parameter sets.  The parents are either both from the existing pool of solutions, or a parent from the existing pool with a parent from a fresh set, and the fresh set of parameters changes with each generation (fig. \ref{fig:gabreedevent}).
+The function that breeds the parameters randomly combines the parameters from two parent solutions to create two children parameter sets.  The parents are either both from the existing pool of solutions, or a parent from the existing pool with a parent from a fresh set, and the fresh set of parameters changes with each generation (fig. \ref{fig:gabreedevent}).
 
 \begin{figure}[h]
   \begin{center}
@@ -224,9 +220,7 @@ During the breed event, the program will check whether or not the two children a
 
 Every now and then an extinction event will occur that kills off any poor solutions and replaces them with variations of the better solutions.  The user controls the frequency of the extinction event and the probability that a solution will be removed.
 
-Top solutions are enhanced, at a frequency picked by the user, using a local optimisation algorithm: line-search and gradient descent.  It does require many calculations and adds a substantial amount of time to the procedure, but it uses the gradient of solutions to find more optimal solutions more efficiently that randomly generated or bred solutions.
-
-The algorithm used is given in the appendix (section \ref{section:geneticalgorithm}).
+Top solutions are enhanced, at a frequency picked by the user, using a local optimisation algorithm: line-search and gradient descent.  It does require many calculations and adds a substantial amount of time to the procedure, but it uses the gradient of solutions to find more optimal solutions more efficiently that randomly generated or bred solutions.  The algorithm used is given in appendix \ref{section:geneticalgorithm} and is also discussed in appendix \ref{section:optgeneticalgorithm}.
 
 
 \subsubsection{Newton Gauss Optimisation}
@@ -256,7 +250,7 @@ The Levenberg-Marquardt algorithm is similar to the Newton-Gauss method, but the
 
 \subsubsection{Python SciPy Optimization Functions}
 
-Additional optimisation functions have been used by importing the SciPy module into the program, and these may be used in conjunction with those listed above.  Several have been used including the bin-hopping, Nealder-Meade and \acrshort{bfgs}.  The bin-hopping was unreliable and crashed on a number of occasions, so I used the simulated annealing and genetic algorithms programmed specifically for this work.  The Nealder-Meade and \acrshort{bfgs} were both used following the run of global optimisation and increased the efficiency of improving the parameters.
+Additional optimisation functions have been used by importing the SciPy module into the program, and these may be used in conjunction with those listed above.  Several have been used including the bin-hopping, Nealder-Meade and \acrshort{bfgs}.  The bin-hopping was unreliable and crashed on a number of occasions, and preference in this work was given to simulated annealing and genetic algorithms for global parameter searches.  The Nealder-Meade and \acrshort{bfgs} were both used following the run of global optimisation and increased the efficiency of improving the parameters.
 
 
 

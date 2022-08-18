@@ -1,22 +1,22 @@
 \begin{changemargin}{1.0cm}{1.0cm}
 \abstractpreamble{The aim of this part of my work is to derived an interatomic potential for Fe-Pd and Fe-Ru that are suitable for modelling both radiation damage and a change in concentration of \acrshort{pgm}s at the grain boundary.\\  
 \\
-Experimental data exists for the bulk properties of \acrshort{bcc} Fe, \acrshort{fcc} Pd and \acrshort{hcp} Ru, but the \acrshort{fcc} structure of austenitic steels necessitates the computation of bulk properties, energies and forces of this structure.  \acrshort{dft} is the method used to perform these calculations.\\
+Experimental data exists for the bulk properties of \acrshort{bcc} Fe, \acrshort{fcc} Pd and \acrshort{hcp} Ru, but the \acrshort{fcc} structure of austenitic steels necessitates the computation of bulk properties, energies and forces of pure iron with this structure.  \acrshort{dft} is the method used to perform these calculations.\\
 \\
-The parameters required for Quantum Espresso, the selected \acrshort{dft} code, are converged for each element and those that give a reasonable degree of accuracy, balance against execution time, are selected.  A computer code was developed to automate the convergence process and calculation of bulk properties.\\
+The parameters required for Quantum Espresso, the selected \acrshort{dft} code, are converged for each element and those that give a reasonable degree of accuracy, balanced against execution time, are used throughout the remainder of this work.  A computer code was developed to automate the convergence process (QECONVERGE) and for the calculation of bulk properties (QEEOS).\\
 \\
-The computed properties, as well as a range of atomic configurations, for a reference database that is used to fit the potentials to.  A computer code was developed to carry out the fitting to this database. }
+The computed properties, as well as a range of atomic configurations, for a reference database that is used to fit the potentials to.  A computer code, EAMPA, was developed to carry out the fitting to this database and this resulted in two binary allow potentials: Fe-Pd and Fe-Pd, trained on bulk property data and energy force data for \acrshort{fcc} structures.}
 \end{changemargin}
 
 
 
 \section{Introduction}
 
-While computer technology has advanced almost in accordance with Moore's law, the calculations involved to approximately simulate simple structures with Quantum Mechanics are barely accessible.  Ideally, crystal structures with several hundred atoms, containing Fe, Cr, and Ni with Ru or Pd would have been used to derive a potential describing all combinations of elements.  
+While computer technology has advanced almost in accordance with Moore's law, the calculations involved to approximately simulate simple structures with Quantum Mechanics are barely accessible.  Ideally, crystal structures with several hundred atoms, containing Fe, Cr, and Ni with Ru or Pd would have been used in this work to derive a potential describing all combinations of elements.  
 
-The computer used did not have the resources required for such calculations, and so the model was simplified to either Fe-Pd or Fe-Ru.  The ferromagentism and antiferromagnetism of Fe and Cr were explored using collinear spin \acrshort{dft} calculations.  Due to the improvement in modelling given by including magnetism, all calculations for the reference database were collinear spin.
+The computer used did not have the resources required for such calculations, and so the model was simplified to either Fe-Pd or Fe-Ru and pure elements only.  The ferromagentism and antiferromagnetism of Fe and Cr were explored using collinear spin \acrshort{dft} calculations.  Due to the improvement in modelling given by including magnetism, all calculations for the reference database were collinear spin.
 
-A number of computer codes were developed to automate processes.  QECONVERGE creates input files and calls PWscf to converge parameters used in this work (section \ref{code:qeconverge}).  QEEOS also creates input files for PWscf but computes bulk properties such as the equation of state, bulk modulus and elastic constants (section(\ref{code:qeeos}).
+A number of computer codes were developed to automate processes.  QECONVERGE creates input files and calls PWscf to converge parameters used in this work (section \ref{code:qeconverge}).  QEEOS also creates input files for PWscf but computes bulk properties such as the equation of state, bulk modulus and elastic constants, see appendix \ref{chapter:qeeosappendix}.
 
 \subsection{Interatomic Potential Fitting}
 

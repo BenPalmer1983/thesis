@@ -1,13 +1,13 @@
-
+\FloatBarrier
 \section[DFT Results]{DFT Reference Database and Bulk Properties}
 
-intro
+The potentials in this work were designed for austenitic stainless steel and the properties of the individual elements in the \acrshort{fcc} structure were computed using \acrshort{dft}.  This is due to the bulk properties only being available experimentally for \acrshort{fcc} \Gls{Pd}.  A database of atom configurations along with atom positions, energy, forces and stresses was also compiled using \acrshort{dft} calculations.
 
 
 \subsection{QEEOS Python Program}
 \label{section:qeeospyprog}
 
-A Python code, QEEOS, (section \ref{code:qeeos}) has been developed to calculate bulk properties of a structure using the \acrshort{dft} code Quantum Espresso.  It is able to fit the equation of state for a cubic structure, and elastic constants for orthorhombic structures (which includes the subset of cubic structures).  
+A Python code, QEEOS, has been developed to calculate bulk properties of a structure using the \acrshort{dft} code Quantum Espresso.  It is able to fit the equation of state for a cubic structure, and elastic constants for orthorhombic structures (which includes the subset of cubic structures).  
 
 A code was developed to automate the process of calculating the equation of state and elastic constants of a material using Quantum Espresso.  It requires an input file and a starting PWscf input file.  
 
@@ -20,8 +20,9 @@ A code was developed to automate the process of calculating the equation of stat
 
 The source code and instructions on how to use the program are available to download from GitHub.
 
-https://github.com/BenPalmer1983/qe\_eos
+https://github.com/BenPalmer1983/qeeos
 
+The readme file along with a number of the functions used in the code are included in appendix \ref{chapter:qeeosappendix}.
 
 
 \subsection{DFT Calculations of Bulk Properties}
@@ -30,12 +31,12 @@ Although experimental data does exist for several of the structures, it was deci
 
 Experimental data is not available for \acrshort{fcc} Fe and \acrshort{fcc} Ru and so it was essential to compute these.  Although spin collinear equations were used throughout, it was particularly important for these settings to be used for Fe.  The relaxation step allowed for a relaxation of the atom positions, the basis vector and lattice parameter.  This gave cubic structures for Ru and Pd but a tetragonal structure for Fe.
 
-The bulk property calculations were automated with the QEEOS code and this applied the preprogrammed nine strains, as discussed in section \ref{section:calcelasticconstants}, and the results are discussed in chapter \ref{chap:resultsdftdb}. 
+The bulk property calculations were automated with the QEEOS code and this applied the preprogrammed nine strains, as discussed in section \ref{section:calcelasticconstants}, and the results are discussed here. 
 
 
 \subsection{Relaxed Crystal Calculations}
 
-The cohesive energy is an important value in relation to the interatomic potential.  The energies calculated by \acrshort{dft} code depend on many factors including the energy under which plane-wave are cut-off, the degauss value, k-point settings and the \acrshort{scf} convergence parameters.  What is more important in the \acrshort{dft} calculations is the difference in energy between calculations.  As the cohesive energy is known, a \acrshort{dft} calculation may be performed for each species of atom to determine the relaxed energy.  This value may then be used to calibrate other \acrshort{dft} calculations, so they are given relative to the energy of each atom spaced infinitely far from one another, with a binding energy of 0eV.  The relaxed energies, the settings used to calculate them and the adjustment to convert them to the \enquote{real} energies are given in table \ref{table:relaxedenergies}.
+The cohesive energy is an important value in relation to the interatomic potential.  The energies calculated by \acrshort{dft} code depend on many factors including the energy under which plane-wave are cut-off, the degauss value, k-point settings and the \acrshort{scf} convergence parameters.  What is more important in the \acrshort{dft} calculations is the difference in energy between calculations.  As the experimental cohesive energy is known for certain elements, a \acrshort{dft} calculation may be performed for each species of atom to determine the relaxed energy.  This value may then be used to calibrate other \acrshort{dft} calculations, so they are given relative to the energy of each atom spaced infinitely far from one another, with a binding energy of 0eV.  The relaxed energies, the settings used to calculate them and the adjustment to convert them to the \enquote{real} energies are given in table \ref{table:relaxedenergies}.
 
 \clearpage
 \begin{landscape}
@@ -78,7 +79,7 @@ $U_{yx}$                   & 0.000           & 0.000            & 0.000         
 \clearpage
 
 
-The configuration for Fe has been referred to throughout this work as \acrshort{fcc}, but the relaxed collinear spin-polarized \acrshort{dft} calculation predicts that the structure is slightly \acrfull{fct}.  The optimal magnetic setting is antiferromagnetic (fig. \ref{graph:iron_bcc_fcc_eos}) and, with the spin aligned in the z-direction, the y-axis of the unit cell is approximately 5\% larger than the x and z axis.
+The configuration for Fe has been referred to throughout this work as \acrshort{fcc}, but the relaxed collinear spin-polarized \acrshort{dft} calculation predicts that the structure is slightly \acrfull{fct}.  The optimal magnetic setting is antiferromagnetic and, with the spin aligned in the z-direction, the y-axis of the unit cell is approximately 5\% larger than the x and z axis.
 
 \begin{figure}[ht] 
   \centering
@@ -125,12 +126,15 @@ With collinear spin enabled, the structure is stable.  The lattice parameter is 
 \subsubsection{FCC Iron}
 \label{section:fccferesults}
 
-The gamma phase of pure iron does not exist for experimental measurements to be made, and the results here will be used to fit the FCC iron potential in chapter \ref{chap:resultsfitting}.  The settings used for the calculations are given in table \ref{table:fefccdftsettings}. 
+The gamma phase of pure iron does not exist for experimental measurements to be made, and the results here will be used to fit the FCC iron potential in section \ref{section:eampause}.  The settings used for the calculations are given in table \ref{table:fefccdftsettings}. 
 
 The structure is stable under the orthorhombic stability conditions given in section \ref{section:stabilityconditions}.  Whilst there are no experimental measurements to check against, the values are sane when compared to the other calculations performed here (table \ref{table:fefccexperimentaldft}).  The $C_{44}$, $C_{55}$ and $C_{66}$ values are slightly large when compared with those for \acrshort{bcc}, but further \acrshort{dft} calculations would need to be performed to investigate this.  
 
-\begin{table}[ht]
+The results computed here are summarised in table \ref{table:feinputparameters} and these are used by the EAMPA code in section \ref{section:eampause} to fit the potential for pure \Gls{Fe}.
+
+\begin{table}[h]
 \renewcommand{\arraystretch}{1.2}
+\centering
 \begin{tabular}{lccc}
 \hline\hline
 Property & \multicolumn{3}{c}{Value used in potential fitting} \\
@@ -148,13 +152,9 @@ Poisson Ratio $\eta$  & \multicolumn{3}{c}{0.23}   \\
 Elastic Constants     & $\begin{bmatrix} 364.6 & 141.6 & 233.8 & 0 & 0 & 0 \\ 141.6 & 298.7 & 130.4 & 0 & 0 & 0 \\ 233.8 & 130.4 & 364.6 & 0 & 0 & 0 \\ 0 & 0 & 0 & 186.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 266.8 & 0 \\ 0 & 0 & 0 & 0 & 0 & 186.3 \end{bmatrix}$ \\
 \hline\hline
 \end{tabular}
-\caption{Fe input parameters for fitting}
+\caption{DFT computed FCC Fe parameters for fitting the potentials in this work}
 \label{table:feinputparameters}
 \end{table}
-
-
-
-
 
 
 
@@ -166,8 +166,11 @@ The equation of state and elastic constants were calculated for \acrshort{fcc} P
 
 There is a good agreement between the computed and experimental values for Pd, without the need to move from non-spin to collinear spin calculations (table \ref{table:pdexperimentaldft}).  However, in the alloy calculations the  presence of Fe will dictate the necessity for collinear spin.  The \acrshort{rss} measurement of fit between the values was $4.12 \times 10^3$.
 
-\begin{table}[ht]
+The results computed here are summarised in table \ref{table:pdinputparameters} and these are used by the EAMPA code in section \ref{section:eampause} to fit the potential for pure \Gls{Pd}.
+
+\begin{table}[h]
 \renewcommand{\arraystretch}{1.2}
+\centering
 \begin{tabular}{lccc}
 \hline\hline
 Property & \multicolumn{3}{c}{Value used in potential fitting} \\
@@ -182,7 +185,7 @@ $B_0$                 & \multicolumn{3}{c}{184.4 GPA \cite{semiempiricalpots}}  
 Elastic Constants     & $\begin{bmatrix} 218.5 & 151.4 & 151.4 & 0 & 0 & 0 \\ 151.4 & 218.5 & 151.4 & 0 & 0 & 0 \\ 151.4 & 151.4 & 218.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 80.3 & 0 & 0 \\ 0 & 0 & 0 & 0 & 80.3 & 0 \\ 0 & 0 & 0 & 0 & 0 & 80.3 \end{bmatrix}$ \\
 \hline\hline
 \end{tabular}
-\caption{Pd input parameters for fitting}
+\caption{DFT computed FCC Pd parameters for fitting the potentials in this work}
 \label{table:pdinputparameters}
 \end{table}
 
@@ -194,13 +197,13 @@ Elastic Constants     & $\begin{bmatrix} 218.5 & 151.4 & 151.4 & 0 & 0 & 0 \\ 15
 \subsubsection{FCC Ruthenium}
 \label{section:fccferesults}
 
-
 Ruthenium at standard conditions exists as \acrlong{hcp}, but as this work is focused on \acrshort{fcc} steel doped with \acrshort{pgm}s, the properties are computed for \acrshort{fcc} Ruthenium.  The settings used for the calculations are given in table \ref{table:rufccdftsettings}. 
 
+The results computed here are summarised in table \ref{table:ruinputparameters} and these are used by the EAMPA code in section \ref{section:eampause} to fit the potential for pure \Gls{Ru}.
 
-
-\begin{table}[ht]
+\begin{table}[h]
 \renewcommand{\arraystretch}{1.2}
+\centering
 \begin{tabular}{lccc}
 \hline\hline
 Property & \multicolumn{3}{c}{Value used in potential fitting} \\
@@ -215,10 +218,9 @@ $B_0$                 & \multicolumn{3}{c}{307.8 GPA \cite{semiempiricalpots}}  
 Elastic Constants     & $\begin{bmatrix} 471.5 & 219.1 & 219.1 & 0 & 0 & 0 \\ 219.1 & 471.5 & 219.1 & 0 & 0 & 0 \\ 219.1 & 219.1 & 471.5 & 0 & 0 & 0 \\ 0 & 0 & 0 & 245.0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 245.0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 245.0 \end{bmatrix}$ \\
 \hline\hline
 \end{tabular}
-\caption{Pd input parameters for fitting}
+\caption{DFT computed FCC Ru parameters for fitting the potentials in this work}
 \label{table:ruinputparameters}
 \end{table}
-
 
 
 
@@ -279,48 +281,49 @@ Ru      & HCP  & -431.6742014  & -110507.45936537 & -6.74 \\
 \label{table:calculatedoffset}
 \end{table}
 
-
+There were significant differences between the calculated cohesive energy, taking the difference between the isolated and bulk energies, and the experimentally known energies.  Rather than use these all the \acrshort{dft} energies in the remainder of this work were recalculated using the relaxed \acrshort{dft} energy and the known cohesive energy.  This was to ensure the potentials were trained towards the known cohesive energies.
 
 
 
 \subsection[DFT Reference Database]{Compiling a DFT Reference Database}
 
 
-A database of configurations generated by \acrshort{dft} was compiled for Iron, Palladium, Ruthenium with alloys of Iron-Palladium and Iron-Ruthenium.  The potentials are derived for \acrshort{fcc} Iron and so these configurations were also \acrshort{fcc}.
+A database of configurations generated by \acrshort{dft} was compiled for Iron, Palladium, Ruthenium with alloys of Iron-Palladium and Iron-Ruthenium.  The potentials are derived for \acrshort{fcc} Iron and so more weighting was given to configurations that were also of this structure.
 
 The QEEOS code was used to compute the bulk properties and in doing so it created PWscf input files and processed the output files.  These output files are saved but the program and are as valid to use in the reference database as any.  In total the database has over 600 configurations for Fe-Pd and almost 600 for Fe-Ru.  
 
 \begin{figure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.49\textwidth}
   \centering
-  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_fe_neighbours.eps}  
-  \caption{Single atom, 256 atoms in total}
-  \label{fig:sub-first}
+  \includegraphics[width=.99\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_fe_neighbours.eps}  
+  \caption{Fe database}
+  \label{fig:fedb}
 \end{subfigure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.49\textwidth}
   \centering
-  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_pd_neighbours.eps}  
-  \caption{Multiple atoms, 256 atoms in total}
-  \label{fig:sub-first}
+  \includegraphics[width=.99\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_pd_neighbours.eps}  
+  \caption{Pd database}
+  \label{fig:pddb}
 \end{subfigure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.49\textwidth}
   \centering
-  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_ru_neighbours.eps}  
-  \caption{Multiple atoms, 256 atoms in total}
-  \label{fig:sub-first}
+  \includegraphics[width=.99\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_ru_neighbours.eps}  
+  \caption{Ru database}
+  \label{fig:rudb}
 \end{subfigure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.49\textwidth}
   \centering
-  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_fepd_neighbours.eps}  
-  \caption{Multiple atoms, 256 atoms in total}
-  \label{fig:sub-first}
+  \includegraphics[width=.99\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_fepd_neighbours.eps}  
+  \caption{Fe-Pd database}
+  \label{fig:fepddb}
 \end{subfigure}
-\begin{subfigure}{.32\textwidth}
+\begin{subfigure}{.49\textwidth}
   \centering
-  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_feru_neighbours.eps}  
-  \caption{Multiple atoms, 256 atoms in total}
-  \label{fig:sub-first}
+  \includegraphics[width=.99\linewidth]{chapters/potentials_fe_pd_ru/neighbour_distances/db_feru_neighbours.eps}  
+  \caption{Fe-Ru database}
+  \label{fig:ferudb}
 \end{subfigure}
+\caption{Neighbouring atom separations and their frequency over 5 subsections of the \acrshort{dft} reference database}
 \label{fig:dbneighbourseparations}
 \end{figure}
 
@@ -330,7 +333,7 @@ All the configurations in this work are \acrshort{fcc} structure crystals.  The 
 
 This program also automated the computation of equation of state, bulk modulus and elastic constants.  A 32 atom supercell was used for each pure element where the bulk properties were computed.  Ideally a large supercell or a larger number of k-points would have been used but throughout this work the number of processor cores per node ranged from 20-72 and this along with time constraints limits complexity of the calculations.
 
-The data output from the QEEOS code forms a part of the reference database that is discussed in chapter \ref{chap:resultsdftdb}.
+The data output from the QEEOS code forms a part of the reference database that is discussed in chapter \ref{chap:resultsdftdb}.  A number of configurations used to make up this database are given in appendix \ref{chapter:appendix-fepd-feru-structures}.
 
 
 
@@ -372,6 +375,7 @@ The stainless steel being studied is to be doped with 1\% or less of a \acrlong{
   \caption{Multiple atoms, 256 atoms in total}
   \label{fig:sub-first}
 \end{subfigure}
+\caption{Binary alloy configurations with less than 2\% \acrshort{pgm}s}
 \label{fig:binaryalloyconfigurationsbulk}
 \end{figure}
 
@@ -383,7 +387,7 @@ Most of the configurations were prepared using the relaxed \acrshort{fct} struct
 
 Many of the atom configurations generated up to this point are symmetric and, whilst they have a variety of energies and stresses to use for fitting, the forces on the atoms are almost balanced and are small or none.  A large set of configurations with positions perturbed slightly from the exact lattice position are created.
 
-Rather than use a linear random distribution a Gaussian distribution is used.  Some atoms had a larger perturbation but the majority are be slightly closer to the exact position, as would be expected with this type of distribution.  The maximum amount of perturbation was selected randomly between a minimum and maximum value.  
+Rather than use a linear random distribution a Gaussian distribution is used.  The majority of the atoms are closer to the exact crystal position but a minority are further and further away, as would be expected with this type of distribution.  The maximum amount of perturbation was selected randomly between a minimum and maximum value.  The effect on the calculation by making these perturbations was to increase the energy of the system as the maximum perturbation amount was increased, as can be seen in figure \ref{fig:pwheatal}.
 
 \begin{figure}[h]
 \begin{center}
@@ -393,9 +397,9 @@ Rather than use a linear random distribution a Gaussian distribution is used.  S
 \end{center}
 \end{figure}
 
-As the amount at which the atoms are perturbed increases, the energy and total force between the atoms increases.  If the disturbance increases too much, it will likely be useless for our needs as it would be beyond the temperatures relevant to this work, and it may also cause the \acrshort{scf} calculations to fail.
+As the amount at which the atoms are perturbed increases, the total force between the atoms also increases.  If the disturbance increased too much, it will likely be useless for our needs as it would be beyond the temperatures relevant to this work, and it may also cause the \acrshort{scf} calculations to fail.  When these calculations were processed the maximum perturbation being too large was the primary factor that caused PWscf to fail.
 
-In the case of the alloy configurations, the randomised positions were loaded into the files.  In all cases convergence failed.  As perturbed atom positions had already been computed for Fe a new set of input files were created holding the Fe atoms in their perfect locations.  The added Pd and Ru atoms were then perturbed slightly from their perfect position within the lattice in order to compute forces and energies at slightly different positions.
+In the case of the alloy configurations, the randomised positions were loaded into the files.  In all cases convergence failed.  As perturbed atom positions had already been computed for \acrshort{Fe} a new set of input files were created holding the Fe atoms in their perfect locations.  The added \acrshort{Pd} and \acrshort{Ru} atoms were then perturbed slightly from their perfect position within the lattice in order to compute forces and energies at slightly different positions.  Perhaps with more time and refined settings alloys with non-perfect atom positions could be calculated, but this would need to be investigated.
 
 
 \FloatBarrier
@@ -426,7 +430,7 @@ One key aspect of this work is to determine whether or not either Pd or Ru are d
 \label{fig:binaryalloyconfigurationsslab}
 \end{figure}
 
-A set of 32 atom configurations are used where the separation between the two facing surfaces is varied.  Several more 128 atom configurations are also prepared for the three pure elements.  To investigate the effect of a small addition of either Ru or Pd in the alloy a slab of Fe was prepared with Ru or Pd either within the slab, at the surface or on the surface (figure \ref{fig:binaryalloyconfigurationsslab}).  These examples were then added into the reference database used to fit the binary potentials.
+A set of 32 atom configurations were used where the separation between the two facing surfaces is varied.  Several more 128 atom configurations were also prepared for the three pure elements.  To investigate the effect of a small addition of either Ru or Pd in the alloy a slab of Fe was prepared with Ru or Pd either within the slab, at the surface or on the surface (figure \ref{fig:binaryalloyconfigurationsslab}).  These examples were then added into the reference database used to fit the binary potentials.
 
 
 

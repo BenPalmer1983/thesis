@@ -1,3 +1,4 @@
+\FloatBarrier
 \section[DFT Settings]{Selected DFT Code, Pseudopotentials and Parameters}
 
 
@@ -5,29 +6,29 @@
 
 There are a choice of several different \acrshort{dft} programs to choose from, including VASP, Siesta and Quantum Espresso.  The open source Quantum Espresso includes the PWscf binary that solves electronic structure calculations with plane wave pseudopotentials.  It calculates the total energy of a system as well as the forces between atoms and the stress on the simulation box.  
 
-As the calculations contain Iron, it is important to take into account the magnetism caused by the filling of the d-shell.  PWscf gives three modes: non-magnetic, collinear spin and non-collinear spin.  
+As the calculations contain Iron, it is important to take into account the magnetism caused by the unpaired filling of the d-shell.  PWscf gives three modes: non-magnetic, collinear spin and non-collinear spin.  
 
 
 
 \subsection{Pseudopotential Selection}
 
-The pseudopotentials were downloaded from the Quantum Espresso PSLibrary with url:
+The pseudopotentials were downloaded from the Quantum Espresso PSLibrary with \acrshort{url}:
 
 http://www.quantum-espresso.org/pseudopotentials/pslibrary 
 
-There are several categories of pseudopotential available.  The pseudopotentials may be fully relativistic or not.  The DFT calculations in this work will be non-spin or collinear spin and the element with the largest number of electrons will be Palladium, with electrons in the s, p, d shells.  There will be no elements used in this work with f shell electrons, so a non-relativistic pseudopotential will be used for each element.
+There are several categories of pseudopotential available.  The pseudopotentials may be fully relativistic or not.  The \acrshort{dft} calculations in this work will be non-spin or collinear spin and the element with the largest number of electrons will be Palladium, with electrons in the s, p, d shells.  There will be no elements used in this work with f shell electrons, so a non-relativistic pseudopotential will be used for each element.
 
 There are a number of choices of exchange-correlation functional, depending on the element:
 
 \begin{itemize}
-\item pz: Perdew-Zunger (LDA)
-\item vwn: Vosko-Wilk-Nusair (LDA)
-\item pbe: Perdew-Burke-Ernzerhof (GGA)
-\item blyp: Becke-Lee-Yang-Parr (BLYP)
+\item pz: Perdew-Zunger (\acrshort{lda})
+\item vwn: Vosko-Wilk-Nusair (\acrshort{lda})
+\item pbe: Perdew-Burke-Ernzerhof (\acrshort{gga})
+\item blyp: Becke-Lee-Yang-Parr (\acrshort{blyp})
 \item pw91: Perdew-Wang 91 gradient-corrected 
 \end{itemize}
 
-In the literature, LDA and BLYP are used for organic DFT calculations.  LDA and GGA type pseudopotentials have been used to model solids and, in particular, the GGA type have been used to study metals as they are more reliable at calculating parameters such as $a_0$ (see section \ref{section:ggavslsda}).  Several elements were tested to compare the results of LDA and GGA pseudopotentials to the experimental values for the lattice parameter of each.
+In the literature, \acrshort{lda} and \acrshort{blyp} are used for organic \acrshort{dft} calculations.  \acrshort{lda} and \acrshort{gga} type pseudopotentials have been used to model solids and, in particular, the \acrshort{gga} type have been used to study metals as they are more reliable at calculating parameters such as $a_0$ (see section \ref{section:ggavslsda}).  Several elements were tested to compare the results of \acrshort{lda} and \acrshort{gga} pseudopotentials to the experimental values for the lattice parameter of each.
 
 The settings used were:
 
@@ -92,17 +93,17 @@ Functions such as the Gaussian and Fermi-Dirac are not cold smearing, and will c
 
 \subsection{Parameter Convergence}
 
-The energy cutoff, charge density, k-point and smearing values must be selected carefully for any similar DFT calculation.  There is a balancing act between the accuracy of the result of a particular calculation and computational time.  This will also vary with the pseudopotential, complexity of the electron configuration of the atoms, whether or not the calculation is with or without spin, and so on.
+The energy cutoff, charge density, k-point and smearing values must be selected carefully for any similar \acrshort{dft} calculation.  There is a balancing act between the accuracy of the result of a particular calculation and computational time.  This will also vary with the pseudopotential, complexity of the electron configuration of the atoms, whether or not the calculation is with or without spin, and so on.
 
 The pseudopotentials and smearing type have already been selected, and the first set of calculations will not include magnetism.  The parameters must work well with high symmetry geometries, such as a BCC or FCC crystal with the atoms in their exact position, but also where the atoms have been slightly perturbed from their exact position in the lattice.
 
 \subsubsection{Ecutwfc and Ecutrho}
 
-A primitive FCC or BCC is created and the atoms are slightly perturbed, breaking symmetry but also putting forces on each atom within the cell.  A reasonably high number of k-points are used and the smearing value should be low, but the k-point values in particular will depend upon the computing resources you have available.
+A primitive FCC or BCC is created and the atoms are slightly perturbed, breaking symmetry but also putting forces on each atom within the cell.  A reasonably high number of k-points are used and the smearing value should be low, but the k-point values in particular will depend upon the computing resources available.
 
-Pick a low ecutwfc and set the ecutrho equal to four times the value of the ecutwfc.  Depending on the pseudopotential, the calculation may fail because the values are too small.  If this is the case, continue increasing the value in small (perhaps 5Ry) increments until the calculation runs successfully.
+Select a low ecutwfc and set the ecutrho equal to four times the value of the ecutwfc.  Depending on the pseudopotential, the calculation may fail because the values are too small.  If this is the case, continue increasing the value in 5Ry increments until the calculation runs successfully.
 
-Next, continue to increase the ecutwfc value whilst increasing the value of ecutrho such that $ecutrho = 4 \times ecutwfc$ in steady increments (5Ry).  Once the calculated force and energy per 1Ry increment fall below a threshold set by the user, the values have converged.  In this work, the convergence values were:
+Continue to increase the ecutwfc value whilst increasing the value of ecutrho such that $ecutrho = 4 \times ecutwfc$ in steady increments (5Ry).  Once the calculated force and energy per 1Ry increment fall below a threshold set by the user, the values have converged.  In this work, the convergence values were:
 
 \begin{itemize}
 \item Energy convergence per 1Ry: $1.0 \times 10^{-6}$ Ry ($1.36 \times 10^{-5}$ eV)
@@ -111,7 +112,7 @@ Next, continue to increase the ecutwfc value whilst increasing the value of ecut
 
 At this point, it may be possible to reduce the ecutrho value further while remaining within this convergence threshold, so the ecutwfc value is held fixed while the ecutrho value is reduced in steps of 5Ry.
 
-Finally, attempt to reduce the value of ecutwfc further in 1Ry steps while holding the ecutrho value steady for as long as the convergence value remains within the set threshold.
+An attempt is made to reduce the value of ecutwfc further in 1Ry steps while holding the ecutrho value steady for as long as the convergence value remains within the set threshold.
 
 \subsubsection{K-Points and Smearing Value}
 
@@ -133,7 +134,7 @@ A 2D plot of energy and force values as a function of number of k-points and sme
 \subsection{QECONVERGE Python Code}
 \label{code:qeconverge}
 
-The process requires the creation of many input files, and manually editing these files is time consuming and vulnerable to human error. Over 100 input files may be required to converge the ecutwfc and ecutrho values, with a further 50-100 required to generate the 2D k-point and smearing plots.  A python code, QECONVERGE, was developed to automate this process and plot the results automatically for the user (section \ref{code:qeconverge}).
+The convergence process requires the creation of many input files, and manually editing these files is time consuming and vulnerable to human error. Over 100 input files may be required to converge the ecutwfc and ecutrho values, with a further 50-100 required to generate the 2D k-point and smearing plots.  A python code, QECONVERGE, was developed to automate this process and plot the results automatically for the user (section \ref{chapter:qeconvergeappendix}).
 
 The program reads an input file into memory, and this contains the settings for the convergence run.  A template PWscf input file is also loaded, and this will detail any required PWscf settings, such as the pseudopotentials, atom species and so on.  
 
@@ -197,7 +198,7 @@ Al.pbesol-n-kjpaw\_psl.1.0.0 & Al & 4.01 & 79.0 \\
 
 \FloatBarrier 
 
-The following pseudo-potential files were used for each element:
+The following pseudopotential files were used for each element:
 
 \begin{itemize}
 \item Aluminium: a plane wave GGA potential Pd.pbe-spn-kjpaw\_psl.1.0.0.UPF
@@ -207,11 +208,11 @@ The following pseudo-potential files were used for each element:
 \item Ruthenium: a plane wave GGA potential Ru.pbe-spn-kjpaw\_psl.1.0.0.UPF
 \end{itemize}
 
-For each pseudo-potential, the ecutwfc, ecutrho and kpoint and degauss settings were converged.  Ideally, the k-points settings would have been increased, but doing so would have been prohibitive due to the amount of time taken to perform each calculation.
+For each pseudopotential, the ecutwfc, ecutrho and kpoint and degauss settings were converged.  Ideally, the k-points settings would have been increased, but doing so would have been prohibitive due to the amount of time taken to perform each calculation.
 
-By the time calculations were being executed for a 32 atom supercell, one node of 20 processor cores would run for several days up to a week or more, requiring the calculation to be submitted to the job queue multiple times.  Al is also considered in the results section, as it is a simpler atom to run trial calculations with, and to compare to experimental results.
+By the time calculations were being executed for a 32 atom supercell, one node of 20 processor cores would run for several days up to a week or more, requiring the calculation to be submitted to the job queue multiple times.  \Gls{Al} is also considered in the results section, as it is a simpler atom to run trial calculations with, and to compare to experimental results.
 
-The relaxed crystal lattice parameters were calculated for Fe, Cr, Pd and Ru.  Cr will not be used in either the Fe-Pd or Fe-Ru fitting calculations.  However, there is a large increase in computation time between non-spin and collinear spin calculations.  The ferromagnetic structure of BCC Fe, antiferromagnetic structure of FCC Fe and BCC Cr were investigated. 
+The relaxed crystal lattice parameters were calculated for \Gls{Fe}, \Gls{Cr}, \Gls{Pd} and \Gls{Ru}.  Cr will not be used in either the Fe-Pd or Fe-Ru fitting calculations.  However, there is a large increase in computation time between non-spin and collinear spin calculations and the ferromagnetic structure of BCC Fe as well as the antiferromagnetic structure of FCC Fe and BCC Cr were investigated. 
 
 \FloatBarrier
 \begin{figure}[h]
@@ -229,7 +230,7 @@ The relaxed crystal lattice parameters were calculated for Fe, Cr, Pd and Ru.  C
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{c c c c c c}
 \hline\hline
-Description & $A_0$ (ang) & $V_0$ (bohr3) & $B_0$ (GPA) & $E_0$ (Ry) (DFT Only) \\
+Description & $A_0$ (ang) & $V_0$ (bohr3) & $B_0$ (GPA) & $E_0$ (Ry) (\acrshort{dft} Only) \\
 \hline\hline
 Exp. & 2.91 & 83.23 & 160 & - \\
 AFM & 2.86 & 78.77 & 217 & -248.2216 \\
@@ -245,15 +246,15 @@ No Mag & 2.85 & 78.102 & 267 & -248.2214 \\
 
 The equation of state was calculated for Chromium BCC in three ways: (1) with magnetism switched off, (2) atoms set in a ferromagnetic configuration (collinear, all in the same direction), (3) atoms set in an antiferromagnetic configuration (collinear, atoms in the same cell with spin in opposing directions).  
 
-The DFT calculated values for the bulk modulus were larger than expected, but the antiferromagnetic calculation was much closer to the experimental value (table \ref{table:crproperties}).  The $E_0$ values do not reflect the actual energies, but show the relative calculated values.  The antiferromagnetic configuration gives the lowest, optimum, energy (fig. \ref{fig:chromiumeos}).
+The \acrshort{dft} calculated values for the bulk modulus were larger than expected, but the antiferromagnetic calculation was much closer to the experimental value (table \ref{table:crproperties}).  The $E_0$ values do not reflect the actual energies, but show the relative calculated values.  The antiferromagnetic configuration gives the lowest, optimum, energy (fig. \ref{fig:chromiumeos}).
 
 \FloatBarrier
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.45]{chapters/potentials_fe_pd_ru/qeeos_plots/fe-mag/iron_eos_comparison.eps}
 \caption{Equation of state fit through data points for Iron BCC (no magnetism, ferromagnetic) and Iron FCC (no magnetism and antiferromagnetic)}
-\end{center}
 \label{fig:iron_bcc_fcc_eos}
+\end{center}
 \end{figure}
 \FloatBarrier
 
@@ -263,20 +264,24 @@ The DFT calculated values for the bulk modulus were larger than expected, but th
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{c c c c c c}
 \hline\hline
-Description & A0 (ang) & V0 ($bohr^3$) & B0 (GPA) & E0 (Ry) (DFT Only) \\
+Description & A0 (ang) & V0 ($bohr^3$) & B0 (GPA) & E0 per atom (Ry) (\acrshort{dft} Only) \\
 \hline\hline
-Exp. & 2.86 & 79.01 & 170 & - \\
-No Mag & 2.77 & 71.53 & 286 & -329.23 \\
-FM & 2.82 & 75.9 & 239 & -329.26 \\
-AFM & (failed) & (failed) & (failed) & (failed) \\
+BCC Exp. & 2.86 & 79.01 & 170 & - \\
+BCC No Mag & 2.77 & 71.53 & 286 & -329.23 \\
+BCC FM & 2.82 & 75.9 & 239 & -329.26 \\
+BCC AFM & (failed) & (failed) & (failed) & (failed) \\
+FCC Exp. & (none) & (none) & (none) & (none) \\
+FCC No Mag & 3.43 & 69.59 & 286 & -329.25 \\
+FCC FM & (failed) & (failed) & (failed) & (failed) \\
+FCC AFM & 3.42 & 73.11 & 226 & -329.26 \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{\acrshort{bcc} Iron properties with and without collinear spin}
+\caption{\acrshort{bcc} and \acrshort{fcc} Iron properties with and without collinear spin}
 \label{table:feproperties}
 \end{table}
 
-In the case of Iron, both BCC and FCC configurations were used.  The antiferromagnetic configurations for both BCC and FCC failed in that the SCF calculations failed to converge.  As expected, the optimal configuration was BCC with ferromagnetism, and second to this was FCC with ferromagnetism.
+In the case of Iron, both BCC and FCC configurations were used.  The antiferromagnetic calculation for \acrshort{bcc} \Gls{Fe} and ferromagnetic calculation for \acrshort{fcc} \Gls{Fe} failed in that either the SCF calculations failed to converge or there were other issues.  As expected, the optimal configuration was BCC with ferromagnetism, and second to this was FCC with antiferromagnetism.
 
 Despite the increase in computational time, and other demands on resources such as scratch space and RAM per node, it was clear that collinear spin calculations were required for iron.  The lattice parameter value was within 2\% of the experimental value with the BCC structure set in a ferromagnetic state.  Whilst the bulk modulus is only within 41\% of the experimental value, this is an improvement over the non magnetic calculation that was almost 70\% away from the experimental bulk modulus (table \ref{table:feproperties}, figure \ref{fig:iron_bcc_fcc_eos}).
 
@@ -296,7 +301,7 @@ Fe/Pd/Ru & PBE KJPAW & 71 & 431 & Gamma & 0.04 & 128-256 \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{DFT Settings - pseudo-potentials, ecutwfc, ecutrho, k-points, smearing}
+\caption{\acrshort{dft} Settings - pseudopotentials, ecutwfc, ecutrho, k-points, smearing}
 \label{table:dftsettingsa}
 \end{table}
 \FloatBarrier
@@ -321,7 +326,7 @@ mixing\_mode & plain (local-TF for defects or randomised configurations) \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{DFT Settings - other settings}
+\caption{\acrshort{dft} Settings - other settings}
 \label{table:dftsettingsb}
 \end{table}
 

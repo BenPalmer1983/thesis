@@ -6,14 +6,15 @@
 		\setentrycounter[]{page}\glsnumberformat{34}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{37}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{40\delimN 41}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{197}}}%
+		\setentrycounter[]{page}\glsnumberformat{198}}}%
 \glossentry{316SS}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{37}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{40\delimN 41}}}\glsgroupskip
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossentry{Al}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{85}}}%
+		\setentrycounter[]{page}\glsnumberformat{85}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{155}}}%
 \glossentry{allotrope}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{30}}}%
 \glossentry{antiferromagnetic}{\glossaryentrynumbers{\relax 
@@ -26,7 +27,7 @@
 \glossentry{blochtheorem}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{102}}}%
 \glossentry{bohrmagneton}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{162}}}%
+		\setentrycounter[]{page}\glsnumberformat{161}}}%
 \glossentry{brillouinzone}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{102}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
@@ -36,12 +37,14 @@
 		\setentrycounter[]{page}\glsnumberformat{79}}}%
 \glossentry{Co}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{118}}}%
+		\setentrycounter[]{page}\glsnumberformat{118}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{133}}}%
 \glossentry{Cr}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1\delimN 2}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{29}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{78\delimN 79}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{118}}}%
+		\setentrycounter[]{page}\glsnumberformat{118}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{155}}}%
 \glossentry{Cs}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{76\delimR 78}}}%
 \glossentry{Cu}{\glossaryentrynumbers{\relax 
@@ -58,7 +61,13 @@
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{29}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{78}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{117\delimN 118}}}%
+		\setentrycounter[]{page}\glsnumberformat{117\delimN 118}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{141}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{147}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{155}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{157}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{162}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{169}}}%
 \glossentry{fermienergy}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{102}}}%
 \glossentry{fermion}{\glossaryentrynumbers{\relax 
@@ -102,7 +111,9 @@
 \glossentry{Mo}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{29}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{35}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{35}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{144\delimR 147}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{191}}}\glsgroupskip
 \glsgroupheading{N}\relax \glsresetentrylist %
 \glossentry{neeltemp}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{79}}}%
@@ -114,7 +125,7 @@
 \glossentry{O}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{36}}}%
 \glossentry{obsstable}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{144}}}%
+		\setentrycounter[]{page}\glsnumberformat{143}}}%
 \glossentry{orthorhombic}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{62}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
@@ -126,7 +137,11 @@
 		\setentrycounter[]{page}\glsnumberformat{118}}}%
 \glossentry{Pd}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{41}}}%
+		\setentrycounter[]{page}\glsnumberformat{41}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{155}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{158}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{163}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{169}}}%
 \glossentry{planewave}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{102}}}%
 \glossentry{proofstrength}{\glossaryentrynumbers{\relax 
@@ -142,7 +157,10 @@
 		\setentrycounter[]{page}\glsnumberformat{23}}}%
 \glossentry{Ru}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{41}}}%
+		\setentrycounter[]{page}\glsnumberformat{41}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{155}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{164}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{169}}}%
 \glossentry{rutherford}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{22}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
@@ -153,6 +171,8 @@
 \glossentry{supercritical}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{11}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
+\glossentry{Tc}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{145}}}%
 \glossentry{Th}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{12}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
