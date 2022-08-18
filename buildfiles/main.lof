@@ -46,7 +46,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Dependency of absorption and attenuation of photons in soft tissue as a function of photon energy\relax }}{26}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Interstitials in the cascades of 10keV, 20keV and 40keV displacement cascades \cite {stollerdamage1996}\relax }}{28}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Interstitials in the cascades of 10keV, 20keV and 40keV \acrshort {pka} displacement cascades \cite {stollerdamage1996}\relax }}{28}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -58,59 +58,57 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces \acrshort {fcc} structure of austenitic stainless steel\relax }}{30}{figure.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Expected DPA during component life time and operating temperatures\cite {genIVstrucmat}\relax }}{32}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Expected \acrshort {dpa} during component life time and operating temperatures\cite {genIVstrucmat}\relax }}{32}{figure.caption.57}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Scattering angle probability of neutrons\relax }}{33}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Energy transfer as a from a neutron dependant on target mass\relax }}{33}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Recoil energies for neutrons at 102keV, 1.02MeV, 10.1MeV and 14.1MeV\cite {pkaenergyspectra}\relax }}{33}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Recoil energies for neutrons at 102keV, 1.02MeV, 10.1MeV and 14.1MeV\cite {pkaenergyspectra}\relax }}{34}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Depletion of cr, fe and enrichment of ni at the surface\cite {johnstonris}\relax }}{35}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Concentration profile after 46\acrshort {dpa} irradiation with 75 keV Ni ions\cite {marwickris}\relax }}{35}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Temperature and \acrshort {dpa} dependence of \acrshort {ris}\cite {risokamoto}\relax }}{35}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Temperature and \acrshort {dpa} dependence of \acrshort {ris}\cite {risokamoto}\relax }}{36}{figure.caption.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Formation of chromium precipitates at the grain boundary \cite {rolledalloys}\relax }}{36}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Formation of chromium precipitates at the grain boundary \cite {rolledalloys}\relax }}{37}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Sensitization of an alloy: chromium carbide precipitation \cite {ssina}\relax }}{36}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Sensitization of an alloy: chromium carbide precipitation \cite {ssina}\relax }}{37}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Changing water chemistry: radiolysis of water\cite {waterradiolysis}\relax }}{37}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Changing water chemistry: radiolysis of water\cite {waterradiolysis}\relax }}{38}{figure.caption.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Three requirements for \acrshort {igscc} to occur\relax }}{38}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Three requirements for \acrshort {igscc} to occur\relax }}{39}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Inter Granular Stress Corrosion Cracking in Nickel Alloy\cite {staehlecoriou}\relax }}{38}{figure.caption.65}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Inter Granular Stress Corrosion Cracking in Nickel Alloy\cite {staehlecoriou}\relax }}{39}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Alloy choices for early LWRs\relax }}{39}{figure.caption.66}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Nickel, IGSCC and TGSCC\relax }}{39}{figure.caption.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Addition of Ru to Fe30Cr and Fe40Cr steels - open current corrosion potential variation with time in 10\% sulphuric acid\cite {potgieter1994}\relax }}{41}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Addition of Ru to Fe30Cr and Fe40Cr steels - open current corrosion potential variation with time in 10\% sulphuric acid\cite {potgieter1994}\relax }}{42}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Failure times for 304SS, Pd doped 304SS (with and without Mn) and Ru doped 304SS in polythionic acid at ambient temperature\cite {scrstainless}\relax }}{41}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Failure times for 304SS, Pd doped 304SS (with and without Mn) and Ru doped 304SS in polythionic acid at ambient temperature\cite {scrstainless}\relax }}{42}{figure.caption.68}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A cross section of the \acrshort {hfir} \cite {hfirornl}\relax }}{45}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \acrlong {hfir}\relax }}{46}{figure.caption.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Neutron Flux in the \acrshort {hfir} while at 85MW \cite {hfiruserguide}\relax }}{45}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \acrshort {nbsr} building layout\cite {nbsrhistory}\relax }}{47}{figure.caption.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \acrshort {nbsr} building layout\cite {nbsrhistory}\relax }}{47}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of a neutron spallation source where high energy ions collide with heavy atoms\cite {spallationsource}\relax }}{47}{figure.caption.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces An example of a neutron spallation source where high energy ions collide with heavy atoms\cite {spallationsource}\relax }}{48}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Neutron Spectra from the Fission of U235\cite {leachmanneutrons}\relax }}{49}{figure.caption.77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Neutron Spectra from the Fission of U235\cite {leachmanneutrons}\relax }}{49}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Neutron, proton and deuteron cross sections for Fe56 and Ni58\relax }}{49}{figure.caption.78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Neutron, proton and deuteron cross sections for Fe56 and Ni58\relax }}{49}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces TALYS work flow \cite {talysmanual}\relax }}{52}{figure.caption.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces TALYS work flow \cite {talysmanual}\relax }}{52}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces TALYS Fe54-Co55 cross section comparison with experiment \cite {tendlfeco}\relax }}{53}{figure.caption.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces TALYS Fe54-Co55 cross section comparison with experiment \cite {tendlfeco}\relax }}{53}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces An example decay chain from an unstable parent isotope, through unstable daughter isotopes ending with a stable daughter isotope.\relax }}{56}{figure.caption.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces An example decay chain from an unstable parent isotope, through unstable daughter isotopes ending with a stable daughter isotope.\relax }}{56}{figure.caption.88}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces One hundred simulated 13MeV proton energy loss curves in Fe simulated with SRIM \cite {srim}\relax }}{58}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces One hundred simulated 13MeV proton energy loss curves in Fe simulated with SRIM \cite {srim}\relax }}{58}{figure.caption.89}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -130,43 +128,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Polynomial knot to knot spline\relax }}{80}{figure.caption.114}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Damage in \acrshort {mox} (LAMMPS)\cite {moxlammpsdamage}\relax }}{86}{figure.caption.117}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Damage in \acrshort {mox} (LAMMPS)\cite {moxlammpsdamage}\relax }}{85}{figure.caption.117}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Sputtering of plutonium oxide (LAMMPS)\cite {pusputtering}\relax }}{86}{figure.caption.117}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Sputtering of plutonium oxide (LAMMPS)\cite {pusputtering}\relax }}{85}{figure.caption.117}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.11}{\ignorespaces 5keV cascade (MOLDY)\cite {pkamoldy}\relax }}{86}{figure.caption.118}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.12}{\ignorespaces 20keV cascade (MOLDY)\cite {pkamoldy}\relax }}{86}{figure.caption.118}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces 100keV cascade after 50ps in TiO2 (DL\_POLY)\cite {dlpolyradiationdamage}\relax }}{87}{figure.caption.119}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces 100keV cascade after 50ps in TiO2 (DL\_POLY)\cite {dlpolyradiationdamage}\relax }}{86}{figure.caption.119}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Neighbouring atom count dependant upon lattice parameter and cutoff radius\relax }}{88}{figure.caption.121}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.15}{\ignorespaces A 2D representation of atoms in simulation box with a halo of atoms at the boundary\relax }}{88}{figure.caption.122}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Partitioning in \acrshort {lammps}\cite {lammpsdd}\relax }}{90}{figure.caption.123}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Partitioning in \acrshort {lammps}\cite {lammpsdd}\relax }}{89}{figure.caption.123}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Damage cascade: 500kev iron projectiles into an iron target calculated with SRIM\relax }}{94}{figure.caption.128}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Damage cascade: 500kev iron projectiles into an iron target calculated with SRIM\relax }}{93}{figure.caption.128}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Common approximations used to enable \acrshort {dft} calculations\relax }}{96}{figure.caption.133}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Common approximations used to enable \acrshort {dft} calculations\relax }}{95}{figure.caption.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces A useful, albeit incorrect, way of visualising an "infinite" chain of atoms in 1D\relax }}{100}{figure.caption.136}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces A useful, albeit incorrect, way of visualising an "infinite" chain of atoms in 1D\relax }}{99}{figure.caption.136}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces A 2D example of a translation by an integer multiple of the unit cell from the origin unit cell\relax }}{100}{figure.caption.136}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces A 2D example of a translation by an integer multiple of the unit cell from the origin unit cell\relax }}{99}{figure.caption.136}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces BCC Wigner Seitz Cell and \acrshort {bz} \cite {fccbccreciprocal}\relax }}{101}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces BCC Wigner Seitz Cell and \acrshort {bz} \cite {fccbccreciprocal}\relax }}{100}{figure.caption.137}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces FCC Wigner Seitz Cell and \acrshort {bz} \cite {fccbccreciprocal}\relax }}{101}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces FCC Wigner Seitz Cell and \acrshort {bz} \cite {fccbccreciprocal}\relax }}{100}{figure.caption.137}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Charge density FCC aluminium xy plane at $z=0.0 a_0$\relax }}{103}{figure.caption.138}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Charge density FCC aluminium xy plane at $z=0.0 a_0$\relax }}{102}{figure.caption.138}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Charge density FCC aluminium xy plane at $z=0.5 a_0$\relax }}{103}{figure.caption.138}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Charge density FCC aluminium xy plane at $z=0.5 a_0$\relax }}{102}{figure.caption.138}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.25}{\ignorespaces \Acrshort {scf} algorithm for Quantum Espresso\relax }}{105}{figure.caption.139}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.26}{\ignorespaces Replacing the complex potentials with a pseudopotential\cite {ppselloni}\relax }}{107}{figure.caption.140}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Successes and failures of the \acrshort {gga} functional\cite {ldaggaperdew}\relax }}{110}{figure.caption.145}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Successes and failures of the \acrshort {gga} functional\cite {ldaggaperdew}\relax }}{109}{figure.caption.145}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.28}{\ignorespaces Energy gap between valence and conduction bands\cite {bandgapshyperphysics}\relax }}{112}{figure.caption.149}%
 \defcounter {refsection}{0}\relax 

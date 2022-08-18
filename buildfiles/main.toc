@@ -124,43 +124,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.4}Swelling}{34}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Radiation Induced Segregation}{34}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.5}Radiation Induced Segregation}{35}{subsection.3.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Corrosion Resistance}{36}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Passive Film Protection of Chromium}{36}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}\Gls {sensitization} and Passive Film Removal}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}\Gls {sensitization} and Passive Film Removal}{37}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Addition of Molybdenum}{36}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Addition of Molybdenum}{37}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}IASCC}{37}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}IGSCC}{37}{section.3.5}%
+\contentsline {section}{\numberline {3.5}IGSCC}{38}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}IGSCC in Light Water Reactors}{39}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.1}IGSCC in Light Water Reactors}{40}{subsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}IGSCC and Advanced Gas-cooled Reactors}{39}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.2}IGSCC and Advanced Gas-cooled Reactors}{40}{subsection.3.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.6}SS in Gen III+ and Gen IV}{40}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Addition of PGMs}{40}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Addition of PGMs}{41}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Isotope Activation and Radioactive Decay}{43}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Isotope Activation and Radioactive Decay}{44}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Ion Sources}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Ion Sources}{44}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}\acrshort {linac}}{43}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}\acrshort {linac}}{44}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Cyclotron}{44}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Cyclotron}{45}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Synchrotron}{44}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Synchrotron}{45}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Neutron Sources}{45}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Neutron Sources}{46}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}High-Flux Neutron Reactors}{45}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}High-Flux Neutron Reactors}{46}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrlong {hfir}, Oak Ridge}{45}{subsubsection*.71}%
+\contentsline {subsubsection}{\acrlong {hfir}, Oak Ridge}{46}{subsubsection*.71}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{NIST Center for Neutron Research}{46}{subsubsection*.73}%
 \defcounter {refsection}{0}\relax 
@@ -292,19 +292,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Computing Total Energy}{90}{subsubsection*.124}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Computing Forces on Atoms}{91}{subsubsection*.125}%
+\contentsline {subsubsection}{Computing Forces on Atoms}{90}{subsubsection*.125}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Computing Stress}{91}{subsubsection*.126}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Pseudo Code for the Energy, Force and Stress Subroutine}{91}{subsubsection*.127}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.4}Velocity Verlet Algorithm}{93}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.4}Velocity Verlet Algorithm}{92}{subsection.5.5.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.5.5}Selecting a Time Scale}{93}{subsection.5.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Existing Potential Fitting Programs}{93}{section.5.6}%
+\contentsline {section}{\numberline {5.6}Existing Potential Fitting Programs}{94}{section.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bonny Quadratic Program Fitting}{93}{subsubsection*.129}%
+\contentsline {subsubsection}{Bonny Quadratic Program Fitting}{94}{subsubsection*.129}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Hepburn FitPot}{94}{subsubsection*.130}%
 \defcounter {refsection}{0}\relax 
@@ -312,7 +312,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Sheng Modified PotFit}{94}{subsubsection*.132}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Density Functional Theory}{95}{section.5.7}%
+\contentsline {section}{\numberline {5.7}Density Functional Theory}{94}{section.5.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7.1}Motivation For Using \acrshort {dft} In This Work}{95}{subsection.5.7.1}%
 \defcounter {refsection}{0}\relax 
@@ -320,29 +320,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7.3}\acrlong {tise}}{95}{subsection.5.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.4}Many Body \acrshort {tise}}{97}{subsection.5.7.4}%
+\contentsline {subsection}{\numberline {5.7.4}Many Body \acrshort {tise}}{96}{subsection.5.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.5}Born-Oppenheimer}{98}{subsection.5.7.5}%
+\contentsline {subsection}{\numberline {5.7.5}Born-Oppenheimer}{97}{subsection.5.7.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7.6}Crystals, Reciprocal Space and Bloch Theorem}{98}{subsection.5.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bloch Theorem}{99}{subsubsection*.135}%
+\contentsline {subsubsection}{Bloch Theorem}{98}{subsubsection*.135}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.7}\Acrlong {hk} Theorem}{102}{subsection.5.7.7}%
+\contentsline {subsection}{\numberline {5.7.7}\Acrlong {hk} Theorem}{101}{subsection.5.7.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.8}Kohn-Sham Equations}{104}{subsection.5.7.8}%
+\contentsline {subsection}{\numberline {5.7.8}Kohn-Sham Equations}{103}{subsection.5.7.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.9}Self-Consistent Solution}{105}{subsection.5.7.9}%
+\contentsline {subsection}{\numberline {5.7.9}Self-Consistent Solution}{104}{subsection.5.7.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.10}Exchange-Correlation Energy}{106}{subsection.5.7.10}%
+\contentsline {subsection}{\numberline {5.7.10}Exchange-Correlation Energy}{105}{subsection.5.7.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.11}Pseudopotentials}{107}{subsection.5.7.11}%
+\contentsline {subsection}{\numberline {5.7.11}Pseudopotentials}{106}{subsection.5.7.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {lda}}{108}{subsubsection*.141}%
+\contentsline {subsubsection}{\acrshort {lda}}{107}{subsubsection*.141}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {lsda}}{108}{subsubsection*.142}%
+\contentsline {subsubsection}{\acrshort {lsda}}{107}{subsubsection*.142}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {gga}}{109}{subsubsection*.143}%
+\contentsline {subsubsection}{\acrshort {gga}}{108}{subsubsection*.143}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\acrshort {lsda} vs \acrshort {gga} Potentials}{109}{subsubsection*.144}%
 \defcounter {refsection}{0}\relax 
@@ -350,7 +350,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7.13}Brief History of Magnetism}{114}{subsection.5.7.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.14}Magnetism: Moving Charges and Spin}{115}{subsection.5.7.14}%
+\contentsline {subsection}{\numberline {5.7.14}Magnetism: Moving Charges and Spin}{114}{subsection.5.7.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7.15}Ferromagnetism, Antiferromagnetism and Hund's Rule}{115}{subsection.5.7.15}%
 \defcounter {refsection}{0}\relax 

@@ -18,11 +18,6 @@ A level-1 auxilliary file: chapters/austenitic_steels_in_nuclear/fct.aux
 A level-1 auxilliary file: chapters/austenitic_steels_in_nuclear/austenitic_steels_in_nuclear.aux
 A level-1 auxilliary file: chapters/isotope_activation_and_radioactive_decay/isotope_activation_and_radioactive_decay.aux
 A level-1 auxilliary file: chapters/interatomic_potential_fitting/interatomic_potential_fitting.aux
-Case mismatch error between cite keys localtfraczkowski and localtfRaczkowski
----line 864 of file main.aux
- : \citation{localtfraczkowski
- :                            }
-I'm skipping whatever remains of this command
 A level-1 auxilliary file: chapters/activity_code/activity_code_design_and_implementation.aux
 A level-1 auxilliary file: chapters/potentials_fe_pd_ru/potentials_fe_pd_ru.aux
 A level-1 auxilliary file: chapters/conclusions/conclusions.aux
@@ -48,7 +43,7 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 33495 items from 5000.
+Reallocated field_info (elt_size=8) to 33634 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: share/bib/thesis2022.bib
 I was expecting a `,' or a `}'---line 932 of file share/bib/thesis2022.bib
@@ -73,10 +68,10 @@ Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 
 Here's how much of BibTeX's memory you used:
- Cites:               203 out of 750
- Fields:            28216 out of 33495
- Hash table:       199107 out of 200000
+ Cites:               204 out of 750
+ Fields:            28355 out of 33634
+ Hash table:       199105 out of 200000
  Strings:            2132 out of 200000
- Free string pool:  37825 out of 65000
+ Free string pool:  37793 out of 65000
  Wizard functions:   6365 out of 9000
-(There were 4 error messages)
+(There were 3 error messages)

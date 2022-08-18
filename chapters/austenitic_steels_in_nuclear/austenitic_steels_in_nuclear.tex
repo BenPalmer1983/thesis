@@ -26,13 +26,13 @@
 
 \subsection{Introduction}
 
-Stainless steel is a relatively new material, having first been developed and refined from the 1800s to the early 1900s, then being defined as a steel with at least 10.5\% Cr in 1911.  The addition of Cr to this level causes the formation of a passive protective layer of chromium oxide.  
+Stainless steel is a relatively new material, having first been developed and refined from the 1800s to the early 1900s, then being defined as a steel with at least 10.5\% \Gls{Cr} in 1911.  The addition of \Gls{Cr} to this level causes the formation of a passive protective layer of chromium oxide.  
 
-Fe is alloyed with Cr, Nickel and Carbon in varying quantities to make Stainless Steel.  Depending on the application, other elements, such as Molybdenum, may be added to enhance the properties of the steel.
+\Gls{Fe} is alloyed with \Gls{Cr}, \Gls{Ni} and \Gls{C} in varying quantities to make Stainless Steel.  Depending on the application, other elements, such as \Gls{Mo}, may be added to enhance the properties of the steel.
 
 \subsection{Grades of Stainless Steel}
 
-While the criteria that qualifies an alloy as Stainless Steel is containing Fe, \Gls{C} and at least 10.5\% Cr, there are many grades that have variety of properties and atomic structures.  The composition influences the structure, resistance to corrosion, yield strength, whether it is magnetic or not, and more.
+While the criteria that qualifies an alloy as Stainless Steel is containing Fe, \Gls{C} and at least 10.5\% Cr, there are many grades that have a variety of properties and atomic structures.  The composition influences the structure and other properties such as resistance to corrosion, yield strength, creep resistance and whether the steel is magnetic or not.
 
 Both Fe and Cr are \acrshort{bcc} at standard temperatures and pressures, but adding austenite stabilisers such as Ni, Mn or C, the structure of the steel can be altered from \acrshort{bcc} to \acrshort{fcc}.  Balancing the proportion of these elements changes the phase of the steel, and this may be represented as a Schaeffler diagram (fig. \ref{fig:FeCrNiSchaeffler}) or a ternary phase diagram (fig. \ref{fig:FeCrNi-PhaseDiagram}).
 
@@ -80,9 +80,9 @@ At room temperatures and pressures, Fe exists in the alpha phase, which is a \ac
 \label{fig:steelfcc}
 \end{figure} 
 
-Austenite is a \acrshort{fcc} \gls{allotrope} of Fe (fig \ref{fig:steelfcc}), and austenitic stainless steels are useful in many applications, including a structural material for nuclear plant components, due to their resistance to corrosion.  In addition to 10.5 wt\% or more Cr they require an austenite stabilising element such as carbon and/or nickel to be added.  
+Austenite is a \acrshort{fcc} \gls{allotrope} of Fe (fig \ref{fig:steelfcc}), and austenitic stainless steels are useful in many applications, including a structural material for nuclear plant components, due to their resistance to corrosion.  In addition to 10.5 wt\% or more Cr they require an austenite stabilising element to be added.  
 
-Two examples of such steels are \acrshort{asme} codes 304 and 316.  Both have a high Cr content, in the region of 18-20\%, which is in excess of the minimum passive film requirement of around 10-11\%.  The natural structure of such an Fe Cr alloy would be \acrshort{bcc}, however 304 and 316 Steels contain Nickel (approximately 8\% and 10\% respectively) which is an austenite stabiliser, and this is responsible for the \acrshort{fcc} structure of the steel.  The 316 grade contains a minimum of 2\% Mo to improve its resistance to corrosion.
+Two examples of such steels are \acrshort{asme} codes 304 and 316.  Both have a high Cr content, in the region of 18-20\%, which is in excess of the minimum passive film requirement of around 10-11\%.  The natural structure of such an Fe-Cr alloy would be \acrshort{bcc}, however 304 and 316 Steels contain Ni (approximately 8\% and 10\% respectively) which stabilises the austenite phase and is responsible for the \acrshort{fcc} structure of the steel.  The 316 grade contains a minimum of 2\% Mo to improve its resistance to corrosion.
 
 Ferritic and martensitic have a better resistance to thermal or swelling shock than austenitic \cite{bccfenimodel}, but the corrosion resistance of austenitic steels is a deciding factor when choosing a steel for an application where corrosion resistance is important.
 
@@ -97,7 +97,7 @@ Martensitic stainless steels have a \acrshort{fcc} structure at high temperature
 \begin{center}
 \begin{tabular}{c c c c c c c}
 \hline\hline
-Grade & Code & \acrshort{hrb} & \Gls{proofstrength} (MPa) & UTS (MPa) & Density ($kgm^3$) & E (GPa) \\
+Grade & Code & \acrshort{hrb} & \Gls{proofstrength} (MPa) & \acrshort{uts} (MPa) & Density ($kgm^3$) & E (GPa) \\
 \hline\hline
 Austenitic      & 304 & 80 & 230 & 540-750  & 7900 & 200 \\
 Austenitic      & 316 & 79 & 240 & 530-680  & 8000 & 200 \\
@@ -109,7 +109,7 @@ Martensitic     & 420 & 95 & 345 & 700      & 7700 & 215 \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Common grades of ferritic, austenitic, duplex and martensitic stainless steel and their properties.  Hardness using the \acrshort{hrb}, \gls{ultimatetensilestrength} (UTS) and \Gls{youngsmodulus} E.}
+\caption{Common grades of ferritic, austenitic, duplex and martensitic stainless steel and their properties.  Hardness using the \acrshort{hrb}, \gls{ultimatetensilestrength} (\acrshort{uts}) and \Gls{youngsmodulus} E.}
 \label{table:steelproperties}
 \end{table}
 
@@ -137,25 +137,36 @@ Due to their excellent strength and corrosion resistance, austenitic steels have
 
 Fission fragments carry away the majority of the energy released during fission, with an approximate energy of 170MeV per 235U fission event.  The fragments are large and have a highly charged positive nucleus that stops rapidly due to the Coulomb interaction with the nuclei of surrounding atoms.  Electrons released by beta decay travel a greater distance; they lose energy by interacting with electrons, but may also knock atoms out of place.  Neutrons travel further still and lose energy by interacting directly with the nuclei of the surrounding material.
 
-When an incoming projectile hits an atom (the \acrfull{pka}), it is knocked out of its place and loses energy by colliding with other atoms and to the electrons in the metal.  Depending on the energy of the \acrshort{pka}, this causes a damage cascade.  Atoms knocked out of their regular position in the crystal lattice leave vacancies behind.  The displaced atoms either recombine with vacancies, become interstitial atoms or diffuse to defect sinks.  A number of complex problems arise as a result of this damage, and this can take many years and high damage doses to appear.
+When an incoming projectile hits an atom, the \acrfull{pka}, it is knocked out of its place and loses energy by colliding with other atoms and to the electrons in the metal.  Depending on the energy of the \acrshort{pka}, this causes a damage cascade.  Atoms knocked out of their regular position in the crystal lattice leave vacancies behind.  The displaced atoms either recombine with vacancies, become interstitial atoms or diffuse to defect sinks.  
+
+The damage event has four main phases over a short period of time\cite{gswasdamage}:
+
+\begin{itemize}
+\item \acrshort{pka} creation ($~ 10^{-18}s$)
+\item cascade and thermal spike ($~ 10^{-13}s$)
+\item quench ($~ 10^{-11}s$)
+\item annealing and defect migration ($~ 10^{-9}s$)
+\end{itemize}
+
+These individual damage events happen over a very small time length, but a number of complex problems arise as a result of this damage over time.  This can take many years and high damage doses to manifest.
 
 
 \subsection{Damage Rates}
 \FloatBarrier
 
-The safety of a Nuclear reactor is the primary concern; it must generate power, but it must be safe.  It must also be cost efficient.  \acrshort{gen2} \acrshort{pwr} fuel assembles were expected to withstand several DPA\cite{genIVstrucmat}.  In \acrshort{bwr}s the materials are designed to be irradiated by $10^{22} n/cm^2/s$, experiencing approximately 7 \acrshort{dpa} over the lifetime of the components\cite{lightwaterallenbusby}.  Components in \acrshort{pwr}s are irradiated by up to $10^{22} n cm^{-2} s^{-1}$, and are expected to operate up to an irradiation dose of 70 dpa\cite{lightwaterallenbusby}.  To remain cost efficient, components in \acrshort{gen4} reactors will be expected to operate safely up to even higher doses or irradiation damage (fig \ref{fig:genIVdpa}).  Components in sodium-cooled fast reactors will be expected to withstand up to 200 DPA over their lifetime to meet the requirements of cost effectiveness and durability\cite{genIVstrucmat}.
+The safety of a Nuclear reactor is the primary concern; it must generate power, but it must be safe.  It must also be cost efficient.  \acrshort{gen2} \acrshort{pwr} fuel assembles were expected to withstand several \acrshort{dpa}\cite{genIVstrucmat}.  In \acrshort{bwr}s the materials are designed to be irradiated by a total fluence of $10^{22} n cm^{-2}$, experiencing approximately 7 \acrshort{dpa} over the lifetime of the components\cite{lightwaterallenbusby}.  Components in \acrshort{pwr}s are irradiated by up to a total fluence of $10^{23} n cm^{-2}$, and are expected to operate up to an irradiation dose of 70 \acrshort{dpa}\cite{lightwaterallenbusby}.  To remain cost efficient, components in \acrshort{gen4} reactors will be expected to operate safely up to even higher doses or irradiation damage (fig \ref{fig:genIVdpa}).  Components in sodium-cooled fast reactors will be expected to withstand up to 200 \acrshort{dpa} over their lifetime to meet the requirements of cost effectiveness and durability\cite{genIVstrucmat}.
 
 
 \begin{figure}[h]
   \begin{center}
     \includegraphics[scale=0.55]{chapters/austenitic_steels_in_nuclear/images/dpagenIV.png}
-    \caption{Expected DPA during component life time and operating temperatures\cite{genIVstrucmat}}
+    \caption{Expected \acrshort{dpa} during component life time and operating temperatures\cite{genIVstrucmat}}
     \label{fig:genIVdpa}
   \end{center}
 \end{figure}
 \FloatBarrier
 
-Neutrons released during the fission of U235 range from 0 to 14 MeV (fig \ref{fig:neutronfissionspectra}), and the energy transferred to a target atom depends on the scattering angle of the neutron and the mass of the target nucleus.  
+Neutrons released during the fission of ${}^{235}_{92}U$ range from 0 to 14 MeV (fig \ref{fig:neutronfissionspectra}), and the energy transferred to a target atom depends on the scattering angle of the neutron and the mass of the target nucleus.  
 
 \begin{equation}
 \begin{split}
@@ -225,7 +236,7 @@ The diffusion of atoms within an alloy has an impact on the characteristics of t
 
 The melting temperature range of 304 and 316 stainless steel are approximatelyh 1695-1722K and 1644-1672K respectively.  \acrshort{gen2} reactors, such as Sizewell B, have an operating temperature of several hundred degrees centigrade.  The inlet temperature for the Sizewell B PWR reactor is 566K\cite{sizewellbtemp} and the outlet temperature is 597K\cite{sizewellbtemp}.  Operating at approximately 35\% the melting point of the steel this is, unfortunately, a good temperature for \acrfull{ris} to occur.
 
-The \acrfull{ke} concerns the diffusion of one material into another and vice versa at an interface.  In the original experiment performed by Kirkendall and Smigelskas, brass (\Gls{Cu} and Zn) was sandwiched between \Gls{Cu} and left at a temperature of over 1050K for almost two months.  Using Mo as a marker, it was discovered that Zn diffused out of the brass faster than the copper diffused into the brass.  The flux of atoms results in a flux defects and a shrink in volume of brass\cite{gswasike}.
+The \acrfull{ke} concerns the diffusion of one material into another and vice versa at an interface.  In the original experiment performed by Kirkendall and Smigelskas, brass (\Gls{Cu} and Zn) was sandwiched between \Gls{Cu} and left at a temperature of over 1050K for almost two months.  Using \Gls{Mo} as a marker, it was discovered that \Gls{Zn} diffused out of the brass faster than the \Gls{Cu} diffused into the brass.  The flux of atoms results in a flux of defects into and a shrink in volume of the brass\cite{gswasike}.
 
 The \acrfull{ike} is driven by an external force, such as irradiation.  Irradiation of the material causes a flux of defects and, inverse to the \acrshort{ke}, this causes a flux of atoms.  For an austenitic stainless steel the diffusion coefficients in order of size are $D_{Cr} > D_{Fe} > D_{Ni}$\cite{risfecrni}, so Cr will diffuse away from grain boundaries and other sinks, followed by Fe.  As Ni is slowest to diffuse, this will be enriched.  An additional mechanism that is thought to contribute to \acrshort{ris} is interstitial flux where undersized atoms as interstitials are preferential\cite{risfecrni}.
 
@@ -302,9 +313,9 @@ The underlying mechanisms of \acrshort{ris} are dependent on both the temperatur
 
 \subsection{Passive Film Protection of Chromium}
 
-The addition of Cr improves the resistance of stainless steel to corrosion by orders of magnitude.  A very thin passive oxide layer, 20-30 angstroms in width, forms when the surface is exposed to an environment containing oxygen.  The protective layer is self repairing and, if the surface is damaged, the oxide layer reforms in the presence of oxygen.
+The addition of Cr improves the resistance of stainless steel to corrosion by orders of magnitude.  A very thin passive oxide layer, 20-30 angstroms in width, forms when the surface is exposed to an environment containing \Gls{O}.  The protective layer is self repairing and as such, if the surface is damaged, the oxide layer reforms in the presence of \Gls{O}.
 
-When the steel is in an environment containing oxygen, electrons within the metal tunnel through the surface.  As an oxidizing agent, the nearby oxygen atoms readily accept the electrons.  A strong electric field forms between positive ions within in the metal and the negatively charged oxygen atoms \cite{medicalmetals133}.  
+When the steel is in an environment containing \Gls{O}, electrons within the metal tunnel through the surface.  As an oxidizing agent, the nearby \Gls{O} atoms readily accept the electrons.  A strong electric field forms between positive ions within in the metal and the negatively charged \Gls{O} atoms \cite{medicalmetals133}.  
 
 Fe at the surface of the forming oxide layer is preferentially dissolved away over Cr \cite{kirchheimcc} and Cr ions within the oxide layer have a lower mobility than Fe ions \cite{kirchheimpassive}.  Ni remains in place within the alloy, and this leads to an enrichment of chromium oxide in the passive layer.  Once the layer is thick enough to reduce the electric field across it, the formation of the layer stops.  As mentioned previously, this is at a layer thickness of 2-3nm for stainless steel.
 
@@ -384,14 +395,17 @@ Damage due to irradiation was first identified in high stress stainless steel co
 Irradiation of water causes the radiolysis of water, changing the chemistry of water and creating hydrogen, radicals and other ions that increase the corrosiveness of the environment (fig \ref{fig:radiolysisofwater}).  The radiation also damages the material directly, changing its properties.  A form of \acrshort{iascc} to which high nickel alloys, including austenitic steels, are particularly susceptible to is \acrlong{igscc}.
 
 
+\FloatBarrier
 
 \section[IGSCC]{Inter Granular Stress Corrosion Cracking}
 
 Stress corrosion cracking may be trans granular (through the grains) or inter granular, at the grain boundary.  \acrshort{igscc} is a particularly prominent failure mechanism for austenitic stainless steels.  For \acrshort{igscc} to occur, there must be a material that is susceptible to this form of cracking, an environment that is corrosive to the material as well as stress (fig. \ref{fig:igsccrequirements}).  
 
+Stress may come from a high pressure environment or residual stresses due to welding.  In a nuclear reactor the atomic structure may be under stress due to damage caused by neutrons passing through the steel, or due to the swelling of the steel on the macroscopic scale.  If Cr is depleted at the grain boundary, protection to corrosion due to the passive layer is lost.  This, coupled with the knowledge that austenitic stainless steels are susceptible to \acrshort{igscc}, completes the three requirements and, over time, components of this material in these conditions will eventually fail to \acrshort{igscc}.
+
 \begin{figure}
   \begin{center}
-\begin{tikzpicture}[scale=0.70]
+\begin{tikzpicture}[scale=0.60]
 \draw (4.5,5.0) circle [radius=3.4];
 \draw (2.5,0.8) circle [radius=3.4];
 \draw (6.5,0.8) circle [radius=3.4];
@@ -404,8 +418,6 @@ Stress corrosion cracking may be trans granular (through the grains) or inter gr
 \label{fig:igsccrequirements}
 \end{center}
 \end{figure}
-
-Stress may come from a high pressure environment or residual stresses due to welding.  In a nuclear reactor the atomic structure may be under stress due to damage caused by neutrons passing through the steel, or due to the swelling of the steel on the macroscopic scale.  If Cr is depleted at the grain boundary, protection to corrosion due to the passive layer is lost.  This, coupled with the knowledge that austenitic stainless steels are susceptible to \acrshort{igscc}, completes the three requirements and, over time, components of this material in these conditions will eventually fail to \acrshort{igscc}.
 
 \acrshort{igscc} has not only been a defect in stainless steel.  High Ni content alloys, such as Alloy 600 (Inconel:  Ni-72, Cr-17, Fe-10),  have been known to suffer from \acrshort{igscc} since the very early days of nuclear energy, in particular with the prototype S1W reactor, prototype for the first nuclear powered submarine, the USS Nautilus.
 
@@ -453,16 +465,7 @@ Higher nickel content steels such as the 600 series alloys are used in \acrshort
 \FloatBarrier
 \subsection{IGSCC and Advanced Gas-cooled Reactors}
 
-The first generation of nuclear reactors in the UK were Magnox type reactors.  They used un enriched Uranium 0.7\% U235 as fuel which was contained within magnesium oxide cladding due to its low absorption cross section.  A major drawback was the relatively low operating temperature of $630K$.
-
-Carnot's theorem shows that the maximum amount of energy from an engine is dependent on the difference between the hot and cold reservoirs (section \ref{section:carnottheorem}).  The ambient temperature of the power station will vary a small amount with the seasons.  The practical way to improve the maximum possible efficiency is to increase the engine (reactor) temperature.
-
-\begin{equation}
-\begin{split}
-\eta_{max} = 1 - \frac{T_c}{T_h}
-\text{where the temperature is measured in absolute units}
-\end{split}
-\end{equation}
+A major drawback of the first generation Magnox reactors was their relatively low operating temperature of $630K$.  Carnot's theorem shows that the maximum amount of energy from an engine is dependent on the difference between the hot and cold reservoirs (section \ref{section:carnottheorem}).  The ambient temperature of the power station will vary a small amount with the seasons.  The practical way to improve the maximum possible efficiency is to increase the engine (reactor) temperature.
 
 \acrshort{agr}s were designed to run at much higher temperatures of $920K$.  By increasing the temperature, the maximum possible thermal efficiency was increased from just over 50 percent to almost 70 percent.  To withstand higher temperatures, the magnesium oxide cladding used in the earlier Magnox reactors was replaced with stainless steel.  To counteract the higher neutron absorption cross section of the cladding, the fuel was enriched up to 3.5\% $\text{U}^{235}$.
 
@@ -489,7 +492,7 @@ The perforated upper core plate, between the reactor core and the inlet/outlet/c
 
 \acrshort{gen4} designs also include the use of austenitic stainless steels.  Experimental fast reactors in many countries, including the US, UK, Japan, France, India and China have used either \gls{304SS}, \gls{316SS} or both in their construction.
 
-Austenitic steels are more corrosion resistant than ferritic or martensitic steels.  The do expand more as a result of being irradiated, but they are stronger at higher temperatures.  Many of the \acrshort{gen4} reactors operate at much higher temperatures than existing reactors and the components will be expected to resist higher doses of radiation damage throughout their lifetime.
+Austenitic steels are more corrosion resistant than ferritic or martensitic steels.  They do expand more as a result of being irradiated, but they are stronger at higher temperatures.  Many of the \acrshort{gen4} reactors operate at much higher temperatures than existing reactors and the components will be expected to resist higher doses of radiation damage throughout their lifetime.
 
 \acrshort{gfr}s are expected to use austenitic steels.  Due to their chemical compatibility with sodium they are also expected to be used in \acrshort{sfr}s.  As well as being used in the reactor core, these steels will also be used outside the core.  For example, \acrshort{sfr}s in France will use austenitic steels in the secondary circuit, primary pump, internal heat exchanger and more\cite{convsteelooc}.
 
@@ -563,7 +566,7 @@ Adding elements to metals, even in small amounts, may be problematic as certain 
 The addition of \acrshort{pgm}s alters the activity of the steel following neutron irradiation and with just a 1\% addition there is an increase in activity comparable to that of the 10\% Ni transmuted to ${}^{65}Ni$.  This is due to reactions that create ${}^{105}Ru$, 
  ${}^{109}Pd$ and ${}^{197}Pt$ for Ru, Pd and Pt respectively (table \ref{table:304ssradioactive}).  
 
-With such small additions required for cathodic modification and the short half lives of the radioactive isotopes, there isn't a concern due to neutron activation over regular 304SS, and much less of a concern than that of 304SS containing Mn. More data computed using the \acrshort{tendl} library is available in appendix \ref{section:pgmactivity}.
+With such small additions required for cathodic modification and the short half lives of the radioactive isotopes, there isn't a concern due to neutron activation over regular 304SS, and much less of a concern than that of 304SS containing Mn. 
 
 
 

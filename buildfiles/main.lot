@@ -18,13 +18,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Common grades of ferritic, austenitic, duplex and martensitic stainless steel and their properties. Hardness using the \acrshort {hrb}, \gls {ultimatetensilestrength} (UTS) and \Gls {youngsmodulus} E.\relax }}{31}{table.caption.56}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Common grades of ferritic, austenitic, duplex and martensitic stainless steel and their properties. Hardness using the \acrshort {hrb}, \gls {ultimatetensilestrength} (\acrshort {uts}) and \Gls {youngsmodulus} E.\relax }}{31}{table.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Radioactive products and their half lives for \acrshort {pgm} doped 304SS\relax }}{42}{table.caption.69}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Radioactive products and their half lives for \acrshort {pgm} doped 304SS\relax }}{43}{table.caption.69}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces University of Birmingham Cyclotron Ion Beams. The projectiles per area is based on a 0.8cmx0.8cm beam aperture.\relax }}{44}{table.caption.70}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces University of Birmingham Cyclotron Ion Beams. The projectiles per area is based on a 0.8cmx0.8cm beam aperture.\relax }}{45}{table.caption.70}%
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {4.2}{\ignorespaces Examples of neutron sources, energies and flux, with the MC-40 as a reference for protons\relax }}{48}{table.caption.76}%
 \defcounter {refsection}{0}\relax 
@@ -36,13 +36,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {5.3}{\ignorespaces Caesium 2BEAM parameters\relax }}{76}{table.caption.110}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Bravais lattice vector length and angle relationships\relax }}{99}{table.caption.134}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Bravais lattice vector length and angle relationships\relax }}{98}{table.caption.134}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} for $TiSi_2$\cite {dftrfkj}\relax }}{111}{table.caption.146}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} for $TiSi_2$\cite {dftrfkj}\relax }}{109}{table.caption.146}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.6}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} vs \acrshort {gga} PBESOL for $LaAlO_3$\cite {laalo3gga}\relax }}{111}{table.caption.147}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} vs \acrshort {gga} PBESOL for $LaAlO_3$\cite {laalo3gga}\relax }}{110}{table.caption.147}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.7}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} - the \acrshort {dft} values were computed with a PWscf\cite {quantumespresso} using a 2x2x2 cell, 7x7x7 kpoints and ecutwfc=50\relax }}{112}{table.caption.148}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Experimental vs \acrshort {lsda} vs \acrshort {gga} - the \acrshort {dft} values were computed with a PWscf\cite {quantumespresso} using a 2x2x2 cell, 7x7x7 kpoints and ecutwfc=50\relax }}{110}{table.caption.148}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

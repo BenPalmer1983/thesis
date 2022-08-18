@@ -1171,6 +1171,25 @@
     \field{year}{2011}
   \endentry
 
+  \entry{gswasdamage}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WGS}{%
+         family={Was},
+         familyi={W\bibinitperiod},
+         given={G.\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WGS1}
+    \strng{fullhash}{WGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{140}
+    \field{title}{Fundamentals of Radiation Materials Science}
+    \field{type}{BOOK}
+    \field{year}{2007}
+  \endentry
+
   \entry{genIVstrucmat}{book}{}
     \name{author}{2}{}{%
       {{hash=SJL}{%
@@ -4146,7 +4165,7 @@
     \field{year}{1996}
   \endentry
 
-  \entry{localtfRaczkowski}{article}{}
+  \entry{localtf}{article}{}
     \name{author}{3}{}{%
       {{hash=RD}{%
          family={Raczkowski},
@@ -4171,8 +4190,8 @@
     \strng{fullhash}{RDCAWLW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Thomas-Fermi charge mixing for obtaining self-consistency in
-  density functional calculations}
+    \field{title}{Thomas Fermi charge mixing for obtaining self consistency in
+  DF calculations}
     \field{volume}{64}
     \field{type}{ARTICLE}
     \field{journaltitle}{Physical Review B}

@@ -3,9 +3,9 @@
 \begin{changemargin}{1.0cm}{1.0cm}
 \abstractpreamble{Proton sources are more readily available and are less costly than high flux neutron sources.  In terms of particles per second the University of Birmingham cyclotron is able to dose a target with up to $5.85 \times 10^{14}$ protons $cm^{-2}s^{-1}$ with the \acrlong{hfir} able to generate $2.3 \times 10^{15}$ neutrons $cm^{-2}s^{-1}$.\\
 \\
-Where proton or deuteron radiation is used to emulate neutron damage, there still exists an accompanying risk from transmuting atoms in the target material to radioactive isotopes.  The probability of a reaction is arrived at using past experimental work and use of the \acrlong{omp} and these exist now as \acrshort{endf}s.\\
+Where proton or deuteron radiation is used to emulate neutron damage, there still exists an accompanying risk from transmuting atoms in the target material to radioactive isotopes.  The probability of a reaction is arrived at using past experimental work and use of the \acrlong{omp}.  The data for these reactions exist now as \acrshort{endf}s.\\
 \\
-The Bateman equations were derived in the early 1900s and may be used to calculate the activity of an isotope, and a chain of daughter isotopes, at time t.  The transport of ions through a target may be modelled using the ion transport codes \acrshort{trim} and \acrshort{srim}.\\
+The Bateman equation for radioactive decay was derived in the early 1900s and may be used to calculate the activity of an isotope, and a chain of daughter isotopes, at time t.  The transport of ions through a target may be modelled using the ion transport codes \acrshort{trim} and \acrshort{srim}.\\
 \\
 The Bateman equation is developed further and is coupled with the aforementioned cross section data and ion transport codes into a new code called Acivity, and this is discussed in chapter \ref{chapter:activitycode}.}
 \end{changemargin}
@@ -106,26 +106,27 @@ There are 250 or so research reactors in 55 countries \cite{researchreactorstats
 \FloatBarrier
 \subsubsection{\acrlong{hfir}, Oak Ridge}
 
-The \acrlong{hfir}, at the \acrlong{ornl} in America, is an 85MW research reactor that provides testing space within the reactor as well as a number of neutron beam lines.  The reactor uses highly enriched Uranium as its fuel source and is scheduled to operate at 100\% capacity for 161 days per year, in cycles of approximately 23 days.  A 30cm surround of Beryllium is used to reflect neutrons, and in the reactor core there is a high flux of thermal neutrons at a rate of $2.3 \times 10^{15}$ neutrons $cm^{-2} s^{-1}$\cite{hfirornluserguide}.
+The \acrlong{hfir}, at the \acrlong{ornl} in America, is an 85MW research reactor that provides testing space within the reactor as well as a number of neutron beam lines (figure \ref{fig:hfir}).  The reactor uses highly enriched Uranium as its fuel source and is scheduled to operate at 100\% capacity for 161 days per year, in cycles of approximately 23 days.  A 30cm surround of Beryllium is used to reflect neutrons, and in the reactor core there is a high flux of thermal neutrons at a rate of $2.3 \times 10^{15}$ neutrons $cm^{-2} s^{-1}$\cite{hfirornluserguide}.
 
 
-\begin{figure}[tbp]
-  \begin{minipage}[b]{0.49\linewidth}
-  \begin{center}
+\begin{figure}[htb]
+\centering
+\begin{subfigure}{.44\textwidth}
+  \centering
     \includegraphics[width=.98\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/hfir-cross-sections.jpg}
     \captionsetup{font={it}}
-    \caption{A cross section of the \acrshort{hfir} \cite{hfirornl}}
+    \caption{A cross section of the reactor\cite{hfirornl}}
     \label{fig:hfirxs}
-  \end{center}
-  \end{minipage}
-  \begin{minipage}[b]{0.49\linewidth}
-  \begin{center}
+\end{subfigure}
+\begin{subfigure}{.44\textwidth}
+  \centering
     \includegraphics[width=.98\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/hfirneutronflux.png}
     \captionsetup{font={it}}
-    \caption{Neutron Flux in the \acrshort{hfir} while at 85MW \cite{hfiruserguide}}
+    \caption{Neutron flux in the reactor at 85MW\cite{hfiruserguide}}
     \label{fig:hfirflux}
-  \end{center}
-  \end{minipage}
+\end{subfigure}
+\caption{\acrlong{hfir}}
+\label{fig:hfir}
 \end{figure}
 
 
@@ -150,15 +151,15 @@ The \acrlong{nbs} Reactor (fig. \ref{fig:nbsrbeamlines}) was designed as a resea
 \FloatBarrier
 \subsection{Spallation}
 
-Neutrons cause fission in nuclear reactors, but spallation sources require protons and high mass targets.  The energy of the protons required is a magnitude greater than that of the Scanditronix MC-40 Cyclotron at the University of Birmingham, with spallation source accelerators having a range from 500MeV to over 1GeV.  
+Neutrons result from fission in nuclear reactors, but spallation sources require protons and high mass targets to generate neutrons.  The energy of the protons required is a magnitude greater than that of the Scanditronix MC-40 Cyclotron at the University of Birmingham, with spallation source accelerators having a range from 500MeV to over 1GeV.  
 
 ISIS is a neutron spallation source located in Harwell, Oxford.  Protons are accelerated in a \acrshort{linac} to 0.37c before being fed into a 163m circumference synchrotron.  The protons are then accelerated to 0.84c before being projected, in bunches, at a tungsten target.  The impact with the tungsten releases neutrons\cite{isisneutronsource}.
 
-\acrlong{ornl} also has a neutron spallation source, the \acrshort{sns}.  A \acrshort{linac} accelerates a negatively charged proton (a hydrogen atom with two electrons) up to just below 0.9c.  It is stripped of the electrons and enters an accumulation ring as a proton.  More protons are accumulated until the beam in the accumulator is diverted at a mercury target.  The collision between the mercury target and the protons releases approximately 20 neutrons per collision, and these neutrons pass through beam lines to the experiments. 
+\acrlong{ornl} also has a neutron spallation source, the \acrshort{sns} (figure \ref{fig:ornlspallationsource}).  A \acrshort{linac} accelerates a negatively charged proton (a hydrogen atom with two electrons) up to just below 0.9c.  It is stripped of the electrons and enters an accumulation ring as a proton.  More protons are accumulated until the beam in the accumulator is diverted at a mercury target.  The collision between the mercury target and the protons releases approximately 20 neutrons per collision, and these neutrons pass through beam lines to the experiments . 
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=.70\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/spallation.png}
+    \includegraphics[width=.50\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/spallation.png}
     \captionsetup{font={it}}
     \caption{An example of a neutron spallation source where high energy ions collide with heavy atoms\cite{spallationsource}}
     \label{fig:ornlspallationsource}
@@ -187,13 +188,13 @@ The source creates a pulse of neutrons from the 50 ton mercury target 60 times p
 \hline\hline
 Source & Cost & Projectile & Flux/Current & Energy \\
 \hline\hline
-Scanditronix MC-40 & £1 million & Proton & $3.7 \times 10^14$ & 8-40MeV \\
-\acrshort{hfir}\cite{hfiruserguide} &  & Neutron & $3.0 \times 10^15$ & Full Spectrum \\
-HFIR\cite{hfiruserguide} &  & Thermal Neutron & Over $2.0 \times 10^15$ & Thermal \\
+Scanditronix MC-40 & £1 million & Proton & $3.7 \times 10^{14}$ & 8-40MeV \\
+\acrshort{hfir}\cite{hfiruserguide} &  & Neutron & $3.0 \times 10^{15}$ & Full Spectrum \\
+HFIR\cite{hfiruserguide} &  & Thermal Neutron & Over $2.0 \times 10^{15}$ & Thermal \\
 HFIR\cite{hfiruserguide} &  & Fast Neutron & $2.0 \times 10^{15}$ & ${}> 0.111MeV$ \\
 HFIR\cite{hfiruserguide} &  & Fast Neutron & $1.0 \times 10^{15}$ & ${}> 0.821MeV$ \\
 \acrshort{sns}\cite{spallationsourceflux} & \$1.4 billion & Neutron & Average $1.2 \times 10^{13}$ & Full Spectrum \\
-ISIS spallation source\cite{spallationsourceflux} & & Neutron & Average $4.0 \times 10^13$ & Full Spectrum \\
+ISIS spallation source\cite{spallationsourceflux} & & Neutron & Average $4.0 \times 10^{13}$ & Full Spectrum \\
 \hline\hline
 \end{tabular}
 \end{center}
@@ -249,7 +250,7 @@ It is expensive to arrange the irradiation of target materials by high energy ne
   \end{center}
 \end{figure}
 
-The Activity code discussed in this work was developed to calculate the activity of a target material irradiated by a proton beam.  It has been developed in Fortran and uses data from the TENDL-2013 proton cross section database, \acrshort{srim} ion transport code and \acrlong{nds} radioactive decay database.  A second version was also developed using Python and a more recent \acrshort{tendl} database.
+The Activity code discussed in this work was developed to calculate the activity of a target material irradiated by a proton beam.  It has been developed in Python and uses data from the TALYS and TENDL proton cross section databases, \acrshort{srim} ion transport code and \acrlong{nds} radioactive decay database.  It is discussed in greater detail in chapter \ref{chapter:activitycode}. 
 
 
 \FloatBarrier
@@ -276,7 +277,7 @@ V_{Coloumb} = \frac{e^2}{4 \pi \epsilon_{0}} \frac{Z_1 Z_2}{r_{1} + r_{2}}
 \end{equation}
 
 \begin{equation}
-r = r_{0} A^{1/3} \text{ where} r_0 = 1.2 \times 10^{-15}m
+r = r_{0} A^{1/3} \text{ where } r_0 = 1.2 \times 10^{-15}m
 \label{eq:nuclearsize}
 \end{equation}
 
@@ -368,7 +369,7 @@ The Talys code has potentials for protons and neutrons, but it also has potentia
   \end{center}
 \end{figure}
 
-Comparing experimental data to the Talys data for $Fe54(p, \gamma)Co55$ shows good agreement between 1MeV and 10MeV\ref{fig:Fe54-Co55}.  There was insufficient experimental data from this source, but the Talys generated data ranges from micro eV up to 100MeV+ (fig. \ref{fig:Fe54-Co55}).
+Comparing experimental data to the Talys data for $Fe54(p, \gamma)Co55$ shows good agreement between 1MeV and 10MeV\ref{fig:Fe54-Co55}.  There was insufficient experimental data from this source, but the Talys generated data ranges from micro eV up to 100MeV+ (figure \ref{fig:Fe54-Co55}).
 
 
 \FloatBarrier
@@ -409,7 +410,7 @@ The Proton Activation Data File was released in 2007 and contained nuclear react
 
 \subsubsection{TENDL 2019 Data Files}
 
-The cross section data for protons and neutrons is available to download in \acrshort{endf} format files.  The data files used by this work are \acrshort{tendl} data files, and these are created by a combination of different nuclear models and experimental data.  The \acrshort{tendl} nuclear reaction simulation code provides the calculated data.
+The cross section data for protons and neutrons is available to download in \acrshort{endf} format files.  The data sources used by this work are the Talys code and \acrshort{tendl} data files, and these are created by a combination of different nuclear models and experimental data.  The \acrshort{tendl} nuclear reaction simulation code provides the calculated data.
 
 The nuclear reaction files are rather large, and they all follow a standard format.
 
@@ -474,15 +475,17 @@ As a radioactive isotope is created by reactions between target atoms and projec
 For a single isotope:
 
 \begin{equation}
-\omega = \frac{J}{Q} \cdot n_{\rho} \cdot \sigma \cdot 10^{-28} \delta t
+\begin{split}
+\omega = \frac{J}{Q} \cdot n_{\rho} \cdot \sigma \cdot 10^{-28} \delta t \\
 \frac{dN}{dt} = \omega - \lambda N, N(0) = N_0
+\end{split}
 \end{equation}
 
 This equation may be solved using Laplace transforms (appendix \ref{chapter:usefullaplacetransforms}) and this will be explored in more detail in section \ref{section:laplaceequations}.  The solution for a single isotope that has a starting amount $N_0$, a decay constant $\lambda$ and a creation rate of $\omega$ is given in eq. \ref{eq:decayequationoneisotope}.
 
 \begin{equation}
 \begin{split}
-N(t) = \frac{\omega}{\lambda} + \left(N_{0} - \frac{\omega}{\lambda} \right) \exp(-\lambda t) \\
+N(t) = \frac{\omega}{\lambda} + \left(N_{0} - \frac{\omega}{\lambda} \right) \exp(-\lambda t)
 \end{split}
 \label{eq:decayequationoneisotope}
 \end{equation}
@@ -552,16 +555,7 @@ N_{n}(t) = \sum_{i=1}^{i=n} \left( \left( \prod_{j=i}^{j=n-1} \lambda_{(ij+1)}\r
 
 When a radioactive isotope decays, there may be more than one mode of decay, and this leads to branching factors.  Pb-214 only decays via beta decay to Bi-214, giving a branching factor of 1.0, whereas Bi-214 has a 99.979\% chance of decaying to Po-214 by beta decay and a 0.021\% of emitting an alpha particle and decaying to Tl-210 (branching factors of 0.99979 and 0.00021 respectively) \cite{jeff311}.
 
-When a target material is irradiated, there is a source term for transmuted nuclei due to the irradiation.  The daughter isotopes of these transmuted isotopes will also be affected by the irradiation and will transmute further, giving a source term for each daughter isotope as a result of the irradiation.  Sources for each isotope in the decay chain, and branching factors between a parent isotope and its daughter isotope/s must be accounted for.
-
-
-
-
-
-%\subsection{Cross Section Dependence on Energy and Target Thickness}
-
-
-
+When a target material is irradiated, there is a source term for transmuted nuclei due to the irradiation.  The daughter isotopes of these transmuted isotopes will also be affected by the irradiation and will transmute further, giving a source term for each daughter isotope as a result of the irradiation.  Sources for each isotope in the decay chain, and branching factors between a parent isotope and its daughter isotope/s must be accounted for.  This is addressed in chapter \ref{chapter:activitycode}.
 
 
 
@@ -574,7 +568,7 @@ A package of ion transport codes, \acrshort{srim}, is freely available to downlo
 
 \acrshort{trim} does not take into account the structure of a target.  It may be layered in the calculation perpendicular to the beam, but beyond that the target is treated as amorphous.  It will give the same result for BCC iron as it would for FCC iron, providing the density remains the same.  The density and whether or not the target layer is a gas or solid are options that must be configured when setting up a calculation.  Each ion history is tracked through the same target; the target never changes.  \acrshort{trim} is ignorant to the structure and therefore damage to the structure that would accumulate over time, and to any swelling and change in composition or density.
 
-The interaction of the ion with the target material is split into two parts: nuclear loss and electronic loss.  The ion is tracked through the target until either its energy drops below a set threshold (10eV) or it leaves the target (fig \ref{fig:fe13traj}).  The code then moves on to the next ion history.
+The interaction of the ion with the target material is split into two parts: nuclear loss and electronic loss.  The ion is tracked through the target until either its energy drops below a set threshold (10eV) or it leaves the target (figure \ref{fig:fe13traj}).  The code then moves on to the next ion history.
 
 In a projectile-nucleon interaction, the magic formula (eq. \ref{eq:magicformula})\cite{srimbook} is used to determine the scattering angle $\Theta$ of the ion and target nucleus, as well as the amount of energy transferred.  The azimuthal angle is selected randomly by multiplying $2\pi$ by a random float $[0.0, 1.0]$.
 
@@ -636,7 +630,7 @@ The target damage is a combination of the incoming ion, the primary knock on ato
   \end{center}
 \end{figure}
 
-One file that \acrshort{srim} creates is of importance to the Activity code, and that is the trajectory file that contains the energy and x,y,z co-ordinate data points for simulated ions moving through matter.  Figure \ref{fig:fe13traj} shows the trajectory of one hundred 13MeV protons entering and passing through an Iron target, and it is this set of data points (together with the cross section database) that the Activity code uses to calculate the reaction rates for the transmutation of nuclei in the target.  At higher energies, the ions slow as they lose energy due to electronic stopping, but as the ion energy drops the mechanism of loss through nuclear collisions becomes important.  The spreading of ion depths at lower energies is a result of the higher momentum transfer during nuclear collisions, as can be seen in Figure \ref{fig:fe13traj}.
+One file that \acrshort{srim} creates is of importance to the Activity code, and that is the trajectory file that contains the energy and x,y,z co-ordinate data points for simulated ions moving through matter.  Figure \ref{fig:fe13traj} shows the trajectory of one hundred 13MeV protons entering and passing through an Iron target, and it is this set of data points (together with the cross section database) that the Activity code uses to calculate the reaction rates for the transmutation of nuclei in the target.  At higher energies, the ions slow as they lose energy due to electronic stopping, but as the ion energy drops the mechanism of loss through nuclear collisions becomes important.  The spreading of ion depths at lower energies is a result of the higher momentum transfer during nuclear collisions.
 
 
 

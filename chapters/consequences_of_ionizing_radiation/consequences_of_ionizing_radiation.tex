@@ -507,11 +507,11 @@ The regulations on ionising radiation\cite{ionisingradiationregulations} also sp
 
 \subsection{Levels of Radioactivity from Neutron Irradiated Components}
 
-In work by Rodenas and Verdu a MCNP5 simulated neutron flux environment and a thermal flux of $2.5 \times 10^7 n/cm^2 s$ a stainless steel cylinder (20mm diameter and 70mm depth) was irradiated for 10 hours\cite{radionuclides}.  The sample was composed of 65\% Fe, 19\% Cr, 2.0\% Mn, 1.0\% Si by weight as well are small amounts of C, Ti, P and S.  After 10 minutes cooling, it was calculated to have an activity of over $1.0 \times 10^7$ Bq and, by several orders of magnitude, it was predominantly due to the creation of Mn\textsuperscript{56}.  
+In work by Rodenas and Verdu a MCNP5 simulated neutron flux environment and a thermal flux of $2.5 \times 10^7 n/cm^2 s$ a stainless steel cylinder (20mm diameter and 70mm depth) was irradiated for 10 hours\cite{radionuclides}.  The sample was composed of 65\% Fe, 19\% Cr, 2.0\% Mn, 1.0\% Si by weight as well are small amounts of C, Ti, P and S.  After 10 minutes cooling, it was calculated to have an activity of over $1.0 \times 10^7$ Bq and, by several orders of magnitude, it was predominantly due to the creation of ${}^{56}_{25}Mn$.  
 
-The maximum cross section of Mn\textsuperscript{55} (n, $\gamma$) Mn\textsuperscript{56} is 2.0 barns and the estimated reaction rate at this flux is just over $2.0 \times 10^6$.  As the half life of Mn\textsuperscript{56} is short compared to the irradiation time (a half life of 2.5 hours) the creation rate of Mn \textsuperscript{56} and decay rate equalise, saturating the sample with Mn \textsuperscript{56}.
+The maximum cross section of ${}^{55}_{25}Mn$ (n, $\gamma$) ${}^{56}_{25}Mn$ is 2.0 barns and the estimated reaction rate at this flux is just over $2.0 \times 10^6$.  As the half life of${}^{56}_{25}Mn$ is short compared to the irradiation time (a half life of 2.5 hours) the creation rate of Mn \textsuperscript{56} and decay rate equalise, saturating the sample with this isotope.
 
-A simple neutron activation code was developed, which will be discussed in more detail in this work, and the predicted Mn\textsuperscript{56} activity vs time was calculated (fig. \ref{fig:mn56activity}).  The overall gamma dose, for 1 minute of exposure to an 80kg person standing 2m from the source was also calculated (fig. \ref{fig:neutron_irradiated_steel_dose1}).  The calculated activity for Mn \textsuperscript{56} was less than that predicted by Rodenas and Verdu \cite{radionuclides}, but it was within an order of magnitude.  It predicts a total activity after cooling of $2.3\times10^6$ Bq with almost 90\% of this due to Mn\textsuperscript{56}.
+A simple neutron activation code was developed, which will be discussed in more detail in this work, and the predicted Mn\textsuperscript{56} activity vs time was calculated (fig. \ref{fig:mn56activity}).  The overall gamma dose, for 1 minute of exposure to an 80kg person standing 2m from the source was also calculated (fig. \ref{fig:neutron_irradiated_steel_dose1}).  The calculated activity for Mn \textsuperscript{56} was less than that predicted by Rodenas and Verdu \cite{radionuclides}, but it was within an order of magnitude.  It predicts a total activity after cooling of $2.3\times10^6$ Bq with almost 90\% of this due to ${}^{56}_{25}Mn$.
 
 The flux in the within the flux trap of the HFIR is much higher, with high energy neutrons having a flux of $1.0 \time 10^{14}$ neutrons per cm squared per second (fig. \ref{fig:hfir_neutron_flux}).  A second calculation was performed for this increased flux, also irradiated over 10 hours (fig. \ref{fig:neutron_irradiated_steel_dose2}).  The total activity increased from $2.3\times10^6$ Bq to $7.1\times10^{12}$ Bq and the overall dose per minute was much higher, between 40 and 50 milligrey per minute over the first hour of cooling.  These are dangerous levels of radiation.
 
@@ -562,7 +562,7 @@ Life evolved on Earth from single cell to multicelled organisms such as humans. 
 
 DNA is a polymer that is carefully constructed from six components.  Stretched out, it is approximately 2m in length and approximately 25 angstrom wide, and it is neatly contained within the cell nucleus which is on average just 6 microns across.  The structure of DNA is the well known double helix.  The sides of the helix are made from alternating sugars and phosphates, while the \enquote{rungs} of the ladder like structure are pairs of either thymine and adenine or cytosine and guanine.  These pairs are covalently bonded to the sugar-phosphate sides, and by hydrogen bonds to each other.
 
-Mitosis is the part of the cell cycle where the DNA within the nucleus is replicated and the cell splits into two.  There are repair mechanisms, but if the DNA beyond repair, the cell may die through apoptosis, or it may replicate in an uncontrolled way leading to cancer.
+Mitosis is the part of the cell cycle where the DNA within the nucleus is replicated and the cell splits into two.  There are repair mechanisms, but if the DNA is beyond repair, the cell may die through apoptosis, or it may replicate in an uncontrolled way leading to cancer.
 
 Direct damage is caused when ionising radiation alters or destroys sections of DNA through a direct collision, for example a neutron colliding with and knocking out an atom in the DNA strand.
 
@@ -577,15 +577,15 @@ Our cells are predominantly water, so there is a higher probability of the radia
 
 How gamma rays interact with tissue is highly dependent upon the energy of the photons, as shown in figure \ref{fig:softtissueattenuation}.  This damage caused by radiation results in either deterministic effects or stochastic effects.  
 
-Where there's a minor exposure to radiation, the damage caused to cells and DNA may lead to cancer later in life, or it may cause issues that are inherited from the irradiated person.  These are stochastic effects as there's a chance they could happen, but it's not certain.
+Where there's a minor exposure to radiation, the damage caused to cells and DNA may lead to cancer later in life, or it may cause issues that are inherited from the irradiated person.  These are stochastic effects as there is a chance they could happen, but it is not a certainty.
 
 Deterministic effects are due to larger doses where cells are severely damaged.  There's much less chance involved and the effects will be reproduced if multiple people are exposed.  Up to a certain dose, there is still a chance that a person would survive, but the point where the chance of death is 50\% is the \gls{ld50}, and for radiation the dose is 5Sv (table \ref{table:dosecomparison}).
 
-The body relies heavily on three type of blood cell: erythrocytes (red cells), leukocytes (white cells) and thrombocytes (platelets).  These are produced from stem cells within bone marrow and in the course of a day billions are replaced in the body.  Large doses of radiation destroy the cells quicker than they can be produced and this leads to death.  
+The body relies heavily on three types of blood cell: erythrocytes (red cells), leukocytes (white cells) and thrombocytes (platelets).  These are produced from stem cells within bone marrow and in the course of a day billions are replaced in the body.  Large doses of radiation destroy the cells quicker than they can be produced and this leads to death.  
 
 The lens of the eye is very sensitive to radiation and cataracts can be created by gamma rays.  Radiation can also cause damage to the gut including removal of the lining, bleeding and death.  These are examples of deterministic  effects.
 
-Whilst it is difficult to determine the effects of radiation, particularly for stochastic effects where the effect is heavily dependent on chance, this work on calculating activity of proton irradiated targets aims to give the user a predicted activity and dose value with associated assumptions and caveats.  It is then down to the user to apply the resulting data to the situation and evaluate any health consequences.
+Whilst it is difficult to predict the effects of radiation, particularly for stochastic effects where the effect is heavily dependent on chance, this work on calculating activity of proton irradiated targets aims to give the user a predicted activity and dose value with associated assumptions and caveats.  It is then down to the user to apply the resulting data to the situation and evaluate any health consequences.
 
 
 
@@ -601,8 +601,6 @@ Whilst it is difficult to determine the effects of radiation, particularly for s
 \section{Damage Cascades in Metals}
 
 When a metal is damaged by radiation, there are microscopic defects created and removed in a very short space of time.  The result of many months or years of damage is complex and will be discussed in more detail in chapter \ref{chap:backgroundsteels}.
-
-The cohesive energy of atoms are measured in eV (table. \ref{table:cohesiveexamples}), whereas the energy of incoming neutrons or fission fragments are measured in MeV.  Radiation in the form of electrons, protons and heavy ions will lose energy to electrons in the target as they pass through.  They may also lose energy to atoms within the lattice, knocking that atom out of place and creating a \acrshort{pka}.  Due to its neutral charge and magnetic moment, neutrons have a very weak interaction with charged particles.  They primarily lose energy directly with the nucleus of atoms within the target, also creating a \acrshort{pka}.
 
 \begin{table}[h]
 \begin{center}
@@ -623,7 +621,7 @@ Zirconium & -6.32 \\
 \label{table:cohesiveexamples}
 \end{table}
 
-The \acrshort{pka}s create a damage cascade, and their mean recoil energy is dependent upon the energy and type of radiation.  After each cascade, there will be a period of time where the material quenches, with a recombination of some interstitials and vacancies.  The \acrshort{pka} creation and cascade thermal spike cover a time range of $10^{-18}$s to $10^{-13}$s, with the quenching phase lasting in the region of $10^{-11}$s.  However, the cumulative effect of radiation damage on a component within a reactor core may only become apparent after months or years.
+The cohesive energy of atoms are measured in eV (table. \ref{table:cohesiveexamples}), whereas the energy of incoming neutrons or fission fragments are measured in MeV and \acrshort{pka}s having energies in the keV range.  Radiation in the form of electrons, protons and heavy ions will lose energy to electrons in the target as they pass through.  They may also lose energy to atoms within the lattice, knocking that atom out of place and creating a \acrshort{pka}.  Due to its neutral charge and magnetic moment, neutrons have a very weak interaction with charged particles.  They primarily lose energy directly with the nucleus of atoms within the target, also creating a \acrshort{pka}.
 
 \begin{table}[h]
 \begin{center}
@@ -642,14 +640,17 @@ Projectile & Mean Recoil Energy \\
 \caption{Average recoil energy of Nickel \acrshort{pka}s\cite{gswas}}
 \end{table}
 
-The immediate aftermath of interstitials created three damage cascades is shown in fig. \ref{stollerdamage}.  Damage cascades have been the subject of a number of studies and due to their short time scale and complexity, involving thousands to millions of atoms, are studied with computer simulations.
+The \acrshort{pka}s create a damage cascade, and their mean recoil energy is dependent upon the energy and type of radiation.  After each cascade, there will be a period of time where the material quenches, with a recombination of some interstitials and vacancies.  The \acrshort{pka} creation and cascade thermal spike cover a time range of $10^{-18}$s to $10^{-13}$s, with the quenching phase lasting in the region of $10^{-11}$s.  However, the cumulative effect of radiation damage on a component within a reactor core may only become apparent after months or years.
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=.4\linewidth]{chapters/consequences_of_ionizing_radiation/images/stoller1996damage.png}
-    \caption{Interstitials in the cascades of 10keV, 20keV and 40keV displacement cascades \cite{stollerdamage1996}}
+    \caption{Interstitials in the cascades of 10keV, 20keV and 40keV \acrshort{pka} displacement cascades \cite{stollerdamage1996}}
     \label{fig:stollerdamage}
   \end{center}
 \end{figure}
+
+The immediate aftermath of interstitials created three damage cascades is shown in fig. \ref{fig:stollerdamage}\cite{stollerdamage1996}.  Damage cascades have been the subject of a number of studies and due to their short time scale and complexity, involving thousands to millions of atoms, are studied with computer simulations.
+
 
 
