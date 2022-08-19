@@ -1,11 +1,12 @@
 \chapter{Conclusions}
+\label{chapter:conclusions}
 
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{It is known that Cr provides protection to stainless steel through a passive protective layer, but this becomes ineffective to protect the steel under irradiation as Cr is depleted from the grain boundary.  \Acrlong{pgm}s also provide a mechanism to protect steel from corrosion, and experimentation or simulations may be used to investigate whether they can maintain high enough concentrations at the surface to continue to protect the steel against corrosion under irradiation.  If either of the two chosen \acrshort{pgm}s, Pd or Ru, are depleted at the grain boundary under irradiation as well as depletion of Cr, the steel will become susceptible to corrosion.  \\
+\abstractpreamble{It is known that Cr provides protection to stainless steel through a passive protective layer, but this becomes ineffective to protect the steel under irradiation as Cr is depleted from the grain boundary.  \Acrlong{pgm}s also provide a mechanism to protect steel from corrosion, and experimentation or simulations may be used to investigate whether they can maintain high enough concentrations at the surface to continue to protect the steel against corrosion under irradiation.  If either of the two chosen \acrshort{pgm}s, Pd or Ru, are depleted at the grain boundary under irradiation along with the depletion of Cr, the steel will become susceptible to corrosion.  \\
 \\
-Experimental testing is cheaper, more controllable and more rapid at causing damage in a targeted volume if an ion beam is used rather than a neutron source.  Either source will cause the target material to become radioactive.  It is important to be able to calculate how radioactive, and how long after irradiation (to the desired damage, in DPA) it will be until the material is safe to be handled.\\
+Experimental testing is cheaper, more controllable and more rapid at causing damage in a targeted volume if an ion beam is used rather than a neutron source.  Either source will cause the target material to become radioactive.  It is important to be able to calculate how radioactive, and how long after irradiation (to the desired damage, in DPA) it will be until the material is safe to be handled.  This work allows the prediction of the activation of irradiated targets through the Activity code and modified Bateman equations.\\
 \\
-Computer simulations to simulate radiation damage will be much too large and complex for first-principles calculations.  Damage cascades require thousands of atoms and typical damage rates take years to reach in practice.  Simulations will need to use either classical molecular dynamics or kinetic monte carlo to encapsulate the much larger volumes of atoms, to contain the atoms effected by the damage cascade, and to represent the grain boundary.  This requires the derivation of an appropriate interatomic potential using experimental data and first-principles data where it is not available, or where it is either impossible or impractical to measure.}
+Computer simulations to model radiation damage will be much too large and complex for first-principles calculations.  Damage cascades require thousands to millions of atoms and typical damage rates take years to reach in practice.  Simulations will need to use either classical molecular dynamics or \acrfull{akmc} to encapsulate the much larger volumes of atoms, to contain the atoms effected by the damage cascade, and to represent the grain boundary.  This requires the derivation of an appropriate interatomic potential using experimental data and first-principles data where it is not available, or where it is either impossible or impractical to measure.  Binary potentials for Fe-Ru and Fe-Pd have been developed in this work as a step towards this goal.}
 \end{changemargin}
 
 
@@ -15,7 +16,7 @@ Computer simulations to simulate radiation damage will be much too large and com
 
 \section{Inter Granular Stress Corrosion Cracking}
 
-Austenitic stainless steel is particularly susceptible to inter granular stress corrosion cracking.  It has good properties, including a good resistance to corrosion due to its high Cr and Ni content.  Under irradiation, the Cr at grain boundaries is depleted with the formation of Cr carbides.  Three requirements for inter granular stress corrosion cracking to occur are:
+Austenitic stainless steel is particularly susceptible to inter granular stress corrosion cracking.  It has good properties, including a good resistance to corrosion due to its high Cr and Ni content.  Under irradiation, the Cr at grain boundaries is depleted with the formation of Cr carbides.  There is also segregation due to the inverse Kirkendall effect, driven by the radiation, that preferentially depletes \Gls{Cr} leaving \Gls{Fe} and \Gls{Ni}. Three requirements for inter granular stress corrosion cracking to occur are:
 
 \begin{itemize}
 \item a susceptible material (austenitic stainless steel)
@@ -23,9 +24,9 @@ Austenitic stainless steel is particularly susceptible to inter granular stress 
 \item a corrosive environment (radiolysis of water)
 \end{itemize}
 
-The passive Cr layer, under normal conditions, protects the steel from corrosion.  The steel is made up from small grains, and the surface of these grains of crystalline metal are where the protective layer covers.  During irradiation, Cr is depleted, forming Cr carbides between the grain boundaries.  As the percentage of Cr drops, the surface becomes prone to corrosion.
+The passive Cr layer, under normal conditions, protects the steel from corrosion.  The steel is made up from small grains, and the surface of these grains of crystalline metal are where the protective layer covers.  As the percentage of Cr drops below the threshold required for formation of the passive protective layer the surface becomes prone to corrosion.
 
-Small quantities of platinum group metals may be added to a steel to also increase the corrosion resistance of the steel.  Platinum group metals are rare and much more costly that Fe, Ni, Cr.  Where irradiation is not present, it has been shown experimentally that the benefit due to Pd is lost due to the formation of Pd-Mn nanoparticles, where Mn is present in the steel, although no such particles are present when Pd was replaced by Ru.  Pd does provide corrosion protection via cathodic modification when Mn is reduced to very small amounts as it no longer forms Pd-Mn precipitates during sensitisation.  The outstanding question is whether or not Pd or Ru are depleted, enriched or are unaffected at the grain boundary when under irradiation.
+Small quantities of \acrshort{pgm}s may be added to a steel to also increase its corrosion resistance.  \Acrshort{pgm}s are rare and much more costly that Fe, Ni, Cr.  Where irradiation is not present, it has been shown experimentally that the benefit due to Pd is lost due to the formation of Pd-Mn nanoparticles, where Mn is present in the steel, although no such particles are present when Pd was replaced by Ru.  Pd does provide corrosion protection via cathodic modification when Mn is reduced to very small amounts as it no longer forms Pd-Mn precipitates during sensitisation.  The outstanding question is whether or not Pd or Ru are depleted, enriched or are unaffected at the grain boundary when under irradiation.
 
 
 
@@ -35,7 +36,7 @@ Small quantities of platinum group metals may be added to a steel to also increa
 
 \section{Predicting Ion Induced Radioactivity}
 
-Testing a material inside a nuclear reactor is an expensive experiment.  There are many more ion sources around the world than high flux neutron sources, and ion beams are easier to direct due to the charge of the ion versus the neutral charge of the neutron.  The ion energies required to create similar sized damage cascades in the material are high enough to also have a chance of transmuting the target nuclei.  These transmuted nuclei are most likely going to be radioactive.  To reach damage dose levels comparable to a component in a \acrshort{gen4} reactor by the end of its life (up to 200 \acrshort{dpa}), the target material will become dangerously radioactive. 
+Testing a material inside a nuclear reactor is an expensive experiment.  There are many more ion sources around the world than high flux neutron sources, and ion beams are easier to direct due to the charge of the ion versus the neutral charge of the neutron.  The ion energies required to create similar sized damage cascades in the material are high enough to also have a chance of transmuting the target nuclei.  These transmuted nuclei are highly likely to be left in an excited state and will either be metastable or radioactive.  To reach damage dose levels comparable to a component in a \acrshort{gen4} reactor by the end of its life (up to 200 \acrshort{dpa}), the target material will become dangerously radioactive. 
 
 Bateman's equation may be used to calculate the amount of an isotope in a decay chain of several isotopes, and thus how radioactive an isotope would be after a certain time.  Major modifications were required to be made to the equation to also include branching factors and source rates for isotopes generated by an ion beam.
 
@@ -43,7 +44,7 @@ Bateman's equation may be used to calculate the amount of an isotope in a decay 
 
 Whilst the equation was first tackled by solving the differential equations head on, it became obvious that using Laplace transforms would be the logical choice; this was also the route Bateman followed when deriving the original equations.  Once transformed, a numerical algorithm (Gaver-Stehfest) was programmed and used to solve, with some success.  
 
-The numeric method is not an exact solution, and the errors incurred often resulted in negative amounts of an isotope, and this was unacceptable.  More progress was made towards solving the problem analytically, and by using partial fractions, obviating the need for a numerical method. 
+The numeric method is not an exact solution, and the errors incurred often resulted in negative amounts of an isotope, and this was unacceptable.  More progress was made towards solving the problem analytically, and this was achieved by using partial fractions, obviating the need for a numerical method. 
 
 The analytic solution was tested against a simple numeric solver and the results were in good agreement between the modified equation and numeric solutions (appendix \ref{section:decaypo216numeric}).
 
@@ -52,8 +53,8 @@ The analytic solution was tested against a simple numeric solver and the results
 The Activity code was created to automate the process of calculating the activity of an ion irradiated target.  The program:
 
 \begin{itemize}
-\item reads in simulation details (target composition, thickness, duration etc)
-\item reads in ion cross section data from the \acrshort{tendl} database
+\item reads in simulation settings (target composition, thickness, duration etc)
+\item reads in ion cross section data from the Talys database
 \item processes \acrshort{srim} exyz data points
 \item calculates the amount of each isotope by the end of the simulation
 \item calculates the activity of each isotope and the dose that an average human would be exposed to
@@ -69,7 +70,7 @@ The first version of the Activity code was replaced by a second version that use
 
 During the experimental stage of this work it was determined that the isotope to focus on would be ${}^{55}_{27} Co$ and the associated 931keV peak it generates would be the peak to measure.  The equipment was calibrated specifically for the purpose of measuring this gamma.  If this is the case then the value predicted by the Activity V2 computer code is in good agreement (table \ref{table:activityResultsCompared}). 
 
-However, the second version of the Activity code collates and displays data more clearly than the first version.  It is clear that there should also be a nearby 935KeV gamma from the decay of ${}^{52}_{25}Mn$.  The sum of these nearby gammas is predicted to be almost 120kBq and, if both peaks were tallied in the experimental work due to the energy resolution of the detector, the predicted value is three times that of the measured value of 44kBq.
+The Activity code collates and displays data generated from the cross section database and JEFF 3.3 decay data file.  It is clear that there should also be a nearby 935KeV gamma from the decay of ${}^{52}_{25}Mn$.  The sum of these nearby gammas is predicted to be almost 120kBq and, if both peaks were tallied in the experimental work due to the energy resolution of the detector, the predicted value is three times that of the measured value of 44kBq.
 
 It is quite possible that the code is giving a value three times larger than expected and reasons for this will be discussed below.
 
@@ -77,18 +78,18 @@ It is quite possible that the code is giving a value three times larger than exp
 \subsection{Molybdenum Irradiation}
 \label{section:moirradiation}
 
-Similar to the results discussed for Fe, the activity results computed for \Gls{Mo} have positive and negative attributes.  There are gaps in the available cross section data, but the most prominent gammas are predicted by the computer code.  The radioactivity computed is too high, but for each of the five peaks measured by experiment, the values are out by a similar factor.
+Similar to the results discussed for Fe, the activity results computed for \Gls{Mo} have positive and negative attributes.  There are gaps in the available cross section data, but the most prominent gammas are predicted by the computer code.  The radioactivity computed is too high, but for each of the five peaks measured by experiment, the values are out by a similar factor of approximately 7-9, depending on the peak.
 
 
 \subsection{Beam Flux Reduction and Gamma Attenuation}
 
-The cross section data used in the second version has been checked for a number of cases against EXFOR data and is in good agreement with this.  Certain data for reactions is missing in particular those of observationally stable and isotopes with extremely long isotopes.
+The Talys derived cross section data used by the Activity code has been checked for a number of cases against EXFOR data and is in good agreement with this.  Certain data for reactions is missing in particular those of observationally stable and isotopes with extremely long lived isotopes, but this would have a minimal impact due to how low the radioactivity would be.
 
-Thin foils are ideal to compare experimental results to the data files and activity code as ions will not lose a great deal of energy travelling though such a shallow target.  However, the much thicker targets used here for Fe and Mo reduce ion energies significantly if not completely.
+Thin foils are ideal to compare experimental results to the data files and activity code as ions will not lose a great deal of energy travelling though such a shallow target.  However, the much thicker targets used here for Fe and Mo reduce ion energies significantly, if not completely.
 
-It could be argued that as ions pass through the target the energy and intensity of the beam decreases, and this is not modelled with the activity code.  By imagining the target as thin laminae perpendicular to the beam it is easy to consider that the ions will enter the first layer and lose those that react with target atoms.  As the beam enters the next lamina it will have a lower energy, either due to electronic stopping or deflection by nuclear collisions, and a lower intensity as a proportion of the protons will be absorbed.
+It could be argued that as ions pass through the target the energy and intensity of the beam decreases, and this is not currently modelled with the activity code.  By imagining the target as thin laminae perpendicular to the beam it is easy to consider that the ions will enter the first layer and lose those that react with target atoms.  As the beam enters the next lamina it will have a lower energy, either due to electronic stopping or deflection by nuclear collisions, and a lower intensity as a proportion of the protons will be absorbed.
 
-The change in energy is accounted for in the code through the \acrshort{srim} exyz ion trajectory file but how the beam intensity decreases is not.  How many ions are captured through nuclear reactions and is it a significant percentage of the total number of ions?  Particles and residuals were calculated to be produced at a rate of approximately $6\times10^{10}$ per second for the Fe target and $7\times10^{10}$ per second for the thick Mo target.  The beam rates were $3 \times 10^{12}$ and $3 \times 10^{13}$ protons per second respectively and so, even if the estimate that a proton was removed for each reaction the beams would only lose 2\% and 0.3\% of their intensity due to transmutation reactions.
+The change in energy is accounted for in the code through the \acrshort{srim} exyz ion trajectory file but how the beam intensity decreases is not.  It is important to approximate how many ions are captured through nuclear reactions and whether it is a significant percentage of the total number of ions.  Particles and residuals were calculated to be produced at a rate of approximately $6\times10^{10}$ per second for the Fe target and $7\times10^{10}$ per second for the thick Mo target.  The beam rates were $3 \times 10^{12}$ and $3 \times 10^{13}$ protons per second respectively and so, even if the estimate that a proton was removed for each reaction the beams would only lose 2\% and 0.3\% of their intensity due to transmutation reactions.
 
 Another possibility for the over estimate in prediction is the attenuation of gammas travelling through the target material to the detector.  This was discussed in the work of my colleague\cite{johnhewett} and the inhomogeneous distribution of radioactive material in the Mo target was discussed in this work (section \ref{section:estimatingmoactivity}).  Calculations using the \acrshort{nist} attenuation coefficient for Mo show that 500keV gammas have their intensity reduced to 91\% through a 1.0cm target.  The intensity of 1MeV gammas is reduced to just 94\% through the same target.
 
@@ -101,17 +102,17 @@ I have not had a great deal of experience practically measuring gammas, and I wo
 
 In past experimental work discussed in section \ref{section:exfordata}, thin foils were used to measure reaction probabilities, and this data influences models such as TALYS.  In some two out of the three examples reviewed, the data beam energy was degraded using a stack of foils perpendicular to the beam, with those closest to the aperture receiving the highest energy protons.  It is hard to imagine whether foils stacked in this way would be much different to a solid target of the same thickness, but this should be tested experimentally.
 
-Ideally a range of target materials of varying thicknesses would be irradiated with protons of energies ranging up to the limit of the cyclotron, perhaps 60MeV, and the Gamma spectra of each measured at set times after irradiation.  This data would be compared to the gamma lines predicted by the activity code to help give a better understanding of the accuracy of the code.
+Ideally a range of target materials of varying thicknesses would be irradiated with protons of energies ranging up to the limit of the cyclotron, perhaps 60MeV, and the Gamma spectra of each measured at set times after irradiation.  This data would be compared to the gamma lines predicted by the Activity code to help give a better understanding of the accuracy of the code.
 
 
 
 \subsection{100DPA Activity Predictions}
 
-Using dose rates calculated with \acrshort{srim}, the code was used to predict how radioactive Fe would become at a dose rate of 100DPA.  It assumes the beam source is the Scanditronix MC40 using protons at maximum current for an uninterrupted duration of 134-391 days.  In the worst case scenario, 25MeV protons result in over 20 grays per hour if irradiated to the required damage dose.  However, by reducing the beam energy to 15MeV radioactivity of the target is reduced by a factor of 1,000.  It may be reduced further by lowering the energy to 5 or 10MeV, but for a 0.5mm piece of steel, the ions would not have enough energy to pass through and the damage would be disproportionately concentrated in the top 100-250 microns.
+Using dose rates calculated with \acrshort{srim}, the Activity code was used to predict how radioactive Fe would become at a dose rate of 100DPA.  It assumes the beam source is the Scanditronix MC40 using protons at maximum current for an uninterrupted duration of 134-391 days.  In the worst case scenario, 25MeV protons result in over 20 Gys per hour if irradiated to the required damage dose, and this level of dose would be extremely dangerous and probably fatal if exposed to for half an hour.  However, by reducing the beam energy to 15MeV radioactivity of the target is reduced by a factor of 1,000.  It may be reduced further by lowering the energy to 5MeV or 10MeV, but for a 0.5mm piece of steel at these energies the ions would not have enough energy to pass through and the damage would be disproportionately concentrated in the top 100-250 microns of the target.
 
 \subsection{Original Contribution}
 
-The modified Bateman equation as derived is an original contribution to knowledge.  The activity code is also an original contribution, and its use shows how adjusting beam parameters will reduce the amount of radioactive material created and the risk to those handling irradiated samples.
+The modified Bateman equation as derived is an original contribution to knowledge.  The Activity code is also an original contribution, and its use shows how adjusting beam parameters will reduce the amount of radioactive material created and the risk to those handling irradiated samples.  It is also a useful tool to highlight problematic isotopes and reactions of interest within a complicated material.
 
 
 
@@ -128,7 +129,10 @@ Austenitic steels have a \acrshort{fcc} structure and this is why the potentials
 
 With most models, there will be a trade off between simplicity, accuracy and the computational cost of the model.  The parameters that had the largest impact on how long a \acrshort{dft} calculation will take to compute are the planewave energy cutoff and number of k-points used to integrate the Brillouin zone.  These should be reduced as much as possible, while keeping the energy and force results within a tolerance determined by the user.
 
-A choice in the complexity of the calculation also had to be decided upon, and this was whether to use a non-spin, collinear spin or non-collinear spin calculation.  Examples of room temperature ferromagnetic and antiferromagnetic materials, Fe and Cr respectively, were investigated with \acrshort{dft} using both non-spin and collinear spin.  These calculations showed that when magnetism is ignored the optimum structure for Fe is \acrshort{fcc}, but when the spin of unpaired electrons is accounted for \acrshort{dft} then correctly predicts the optimum structure as \acrshort{bcc}.  Similarly when spin polarized \acrshort{dft} calculations are performed for Cr the optimum state is shown to be \acrshort{bcc}, as expected.  It was therefore deemed necessary to use these more computationally intensive calculations.
+A choice in the complexity of the calculation also had to be decided upon, and this was whether to use a non-spin, collinear spin or non-collinear spin calculation.  Examples of room temperature ferromagnetic and antiferromagnetic materials, Fe and Cr respectively, were investigated with \acrshort{dft} using both non-spin and collinear spin.  These calculations showed that when magnetism is ignored the optimum structure for Fe is \acrshort{fcc}, but when the spin of unpaired electrons is accounted for \acrshort{dft} then correctly predicts the optimum structure as ferromagnetic \acrshort{bcc}.  Similarly when spin polarized \acrshort{dft} calculations are performed for Cr the optimum state is shown to be antiferromagnetic \acrshort{bcc}, as expected.  It was therefore deemed necessary to use these more computationally intensive calculations.
+
+Non-collinear spin was not considered as it would increase the resources required further and would possibly require the testing of suitable pseudopotentials.  The collinear calculations were adequate for modelling bulk \Gls{Fe}, but there could be merit in using non-collinear spin calculations in the future due to the local effects individual doped \acrshort{pgm} atoms may have plus investigating the effect of a surface on the alignment of atoms nearby.
+
 
 \subsection{Automated Convergence Calculations}
 
@@ -141,7 +145,7 @@ During testing, a much larger number of k-points were needed for the predicted p
 
 As discussed in the previous section, spin polarised \acrshort{dft} were used for all first principles calculations in this work.  Although a smaller number of k-points were used than would have been desired, the calculations required to compute these properties continued for more than a month.
 
-Rather that calculate the input files manually, a program was created to automate this process (QE\_EOS).  It was designed to cache input and output files for the \acrshort{dft} program, PWscf, such that it would load an output file from the cache if it had already successfully run, to reduce the calculation time.
+Rather that calculate the input files manually, a program was created to automate this process (QEEOS).  It was designed to cache input and output files for the \acrshort{dft} program, PWscf, such that it would load an output file from the cache if it had already successfully run, to reduce the calculation time.
 
 In the case of Fe, the relaxed (energy minimised) shape of the antiferromagnetic \acrshort{fcc} Fe was not cubic, but orthorhombic.  The equation of state calculation is specifically for a cubic crystal, but the elastic constants were calculated for the orthorhombic crystal.  From the 9 calculated elastic constants the melting point, bulk modulus, shear modulus and Young's modulus were calculated (section \ref{section:fccferesults} and appendix \ref{section:fefccappendix}).  The resulting structure was stable and were well within a magnitude of the known values for \acrshort{bcc} Fe.  These data are an original contribution to science.  The properties were also computed for Pd and Ru and were used in the derivation of interatomic potentials.
 
@@ -150,18 +154,18 @@ In the case of Fe, the relaxed (energy minimised) shape of the antiferromagnetic
 
 To be able to fit the Fe-Pd and Fe-Ru potentials, the bulk properties were computed and a range of other configurations were generated.  A number had atoms randomly perturbed from their perfect positions, others represented slabs, defects and so on.
 
-The energy and force data were entirely from first-principles calculations, and ideally there would have been more configurations and computed with a higher number of k-points.  In addition, a wider range of vacancies, interstitials and mixing concentrations would have been desirable.  Unfortunately many of the configurations failed to converge, and this was particularly prevalent where the atom configurations were far from the perfect crystal, and even more so when multiple elements were used in a calculation.
+The energy and force data were entirely from first-principles calculations, and ideally there would have been more configurations and computed with a higher number of k-points as well as a reduction in the smearing value, if possible.  In addition, a wider range of vacancies, interstitials and mixing concentrations would have been desirable.  Unfortunately many of the configurations failed to converge, and this was particularly prevalent where the atom configurations were far from the perfect crystal, and even more so when multiple elements were used in a calculation.
 
-The atomic percentage on Pd or Ru doped is half a percent which would be better represented with a one \acrshort{pgm} atom in a 4x4x4 \acrshort{fcc} 256 atom supercell rather than the 32 atom cells used, but again this was a constraint imposed by computational resources.
+The atomic percentage on Pd or Ru doped is half a percent which would be better represented with a one \acrshort{pgm} atom in a 4x4x4 \acrshort{fcc} 256 atom supercell rather than the 32 atom cells used, but again this was a constraint imposed by computational resources and this lead to the majority of the calculations being performed on 32 atom supercells, with relatively few 256 atom supercells.
 
 
 \subsection{Iron-Palladium and Iron-Ruthenium Potentials}
 
-Both potentials have had minimal testing using the molecular dynamics package \acrshort{lammps}.  In each case \acrshort{lammps} was able to read in the potential and run a simulation with a Nose-Hoover thermostat.  When given a relaxed start point, the simulations were well behaved.
+Both potentials have had minimal testing using the molecular dynamics package \acrshort{lammps}.  In each case \acrshort{lammps} was able to read in the potential and run a simulation with a Nose-Hoover thermostat.  When given a relaxed start point, the simulations were well behaved either as a nano cube particle surrounded by a vacuum or as the bulk material represented by a cube subject to \acrshort{pbc}s.
 
-As the relaxed structure from \acrshort{dft} calculations for Fe was \acrshort{fct}, the structure is not symmetric and a directional potential would better represent the increased lattice parameter in the y axis (figure \ref{fig:ironfccantiferromagnetic}).  
+As the relaxed structure from \acrshort{dft} calculations for Fe was \acrshort{fct}, the structure is not symmetric and a directional potential would better represent the increased lattice parameter in the y axis (figure \ref{fig:ironfccantiferromagnetic}).  One possibility would be to replace the \acrshort{eam} potential with a \acrshort{meam}, but this is discussed further in section \ref{section:futuremeam}.
 
-The individual potentials reproduce the bulk properties, as calculated by \acrshort{dft}, reasonably well with the lattice parameters and cohesive energies being within a few percent.  The poorest properties in the fitting process were the elastic constants, in particular the $C_{44}$ value for Ru.  These could be improved by running the code for a longer time period.
+The individual potentials reproduce the bulk properties, as calculated by \acrshort{dft}, reasonably well with the lattice parameters and cohesive energies being within a few percent of the experimental values.  The poorest properties in the fitting process were the elastic constants, in particular the $C_{44}$ value for \Gls{Ru}.  These could be improved by running the code for a longer time period.
 
 The Rose-Vinet equation of state for each pure element fits well and takes on a shape that would be expected, with an increase in energy where the lattice parameter is reduced, a minimum where the relaxed lattice parameter is and a reduction in energy to zero as the atoms are pulled further and further apart.  Where the creation of a slab with two surfaces is modelled, the predicted energies for each pure element match well with the \acrshort{dft} energies.  Out of the three elements, Ru fits least well as far as the formation of a slab is concerned with a consistent energy difference of at lease 0.05eV.
 
@@ -169,7 +173,7 @@ Overall, both of the potentials reproduce the energies calculated using \acrshor
 
 \subsection{Original Contribution}
 
-The fitting code is an original contribution as it allows the fitting of metal potentials in the form of the \acrlong{eam} and \acrlong{2beam} to \acrshort{dft} data and bulk properties.  Other similar codes do exist, such as FitPot and PotFit, but at the time of developing my code the PotFit did not have the ability to fit analytic potentials (although, this feature is now available) and does not have, in its available form, the ability to fit the potential to the bulk properties of the material (although the Sheng version did have this ability).  The code developed here may be modified in the future to add more features and properties to fit potentials to. 
+The fitting code is an original contribution as it allows the fitting of metal potentials in the form of the \acrlong{eam} and \acrlong{2beam} to \acrshort{dft} data and bulk properties.  Other similar codes do exist, such as FitPot and PotFit, but at the time of developing the EAMPA code, PotFit did not have the ability to fit analytic potentials (although, this feature is now available) and does not have, in its available form, the ability to fit the potential to the bulk properties of the material (although the Sheng version did have this ability).  The code developed here may be modified in the future to add more features and properties to fit potentials to. 
 
 
 

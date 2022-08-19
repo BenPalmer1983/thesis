@@ -356,7 +356,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7.16}Collinear and Non-Collinear DFT Calculations}{116}{subsection.5.7.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Activity Code}{118}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Predicting Activation}{118}{chapter.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Introduction}{118}{section.6.1}%
 \defcounter {refsection}{0}\relax 
@@ -524,13 +524,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Levenberg-Marquardt Optimisation}{177}{subsubsection*.232}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Python SciPy Optimization Functions}{177}{subsubsection*.233}%
+\contentsline {subsubsection}{Python SciPy Optimization Functions}{178}{subsubsection*.233}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Minimising Runtime}{178}{subsubsection*.234}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Effective Gauge Transforms}{178}{subsubsection*.235}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{LAMMPS Format}{178}{subsubsection*.236}%
+\contentsline {subsubsection}{LAMMPS Format}{179}{subsubsection*.236}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.5.4}Verifying Energy and Force Calculations with LAMMPS}{179}{subsection.7.5.4}%
 \defcounter {refsection}{0}\relax 
@@ -548,7 +548,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Reference Database}{182}{subsubsection*.243}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Potentials}{182}{subsubsection*.244}%
+\contentsline {subsubsection}{Potentials}{183}{subsubsection*.244}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.7}DL\_POLY Contribution}{186}{section.7.7}%
 \defcounter {refsection}{0}\relax 
@@ -572,7 +572,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2.7}100DPA Activity Predictions}{190}{subsection.8.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.8}Original Contribution}{190}{subsection.8.2.8}%
+\contentsline {subsection}{\numberline {8.2.8}Original Contribution}{191}{subsection.8.2.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.3}Derived Potentials}{191}{section.8.3}%
 \defcounter {refsection}{0}\relax 
@@ -582,13 +582,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.3.3}Automated Convergence Calculations}{191}{subsection.8.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.4}Bulk Property Calculations}{191}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.4}Bulk Property Calculations}{192}{subsection.8.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.3.5}Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}{192}{subsection.8.3.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.3.6}Iron-Palladium and Iron-Ruthenium Potentials}{192}{subsection.8.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.7}Original Contribution}{192}{subsection.8.3.7}%
+\contentsline {subsection}{\numberline {8.3.7}Original Contribution}{193}{subsection.8.3.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.4}Two-Band EAM Contribution to DL-Poly}{193}{section.8.4}%
 \defcounter {refsection}{0}\relax 
@@ -830,7 +830,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {N.7.4}Calculated Results}{436}{subsection.a.N.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {O}Transferability of Interatomic Potentials}{437}{appendix.a.O}%
+\contentsline {chapter}{\numberline {O}Transferability}{437}{appendix.a.O}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {O.1}Sheng Aluminium Potential}{437}{section.a.O.1}%
 \defcounter {refsection}{0}\relax 

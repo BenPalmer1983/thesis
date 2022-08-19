@@ -3,6 +3,7 @@
 \label{section:eampause}
 
 \subsection[Potential Transferability]{Investigating the Transferability of Existing Potentials}
+\label{section:transferability}
 
 There are currently a number of \acrshort{eam} Iron potentials, as well as a \acrshort{meam} potential for Fe-Pd.  Several pure element potentials also exist for Ruthenium and Palladium.  Whilst it would be convenient to have a one size fits all potential, this is not the case.  Taking the Ruthenium potential as an example, in work that required the reproduction of stacking fault and surface energy of the element, the existing potentials were inadequate and a new potential was developed\cite{mendelevruau}.
 
@@ -79,15 +80,15 @@ This investigation into existing potentials shows that whilst some of the proper
 
 \subsection{Fitting Potentials with EAMPA}
 
-The fitting process was computationally intensive and utilised nodes on the University of Birmingham BlueBEAR computer.  At the time of writing, the code was able to fit energy, forces and bulk properties.  I was not convinced that the computation of stress in EAMPA and in PWscf were identical and so throughout I set the weighting of stress to zero.
+The fitting process was computationally intensive and utilised nodes on the University of Birmingham BlueBEAR computer.  At the time of writing, the code was able to fit energy, forces and bulk properties.  Whether the method with which the stress is calculated in PWscf was the same as that used in the EAMPA code was unclear.  As a result it is suggested to set the weighting of stress to zero.
 
 \subsubsection{Choice of Function and Functional}
 
 A number of functions and functionals have been used previously and these are discussed in detail in chapter \ref{chap:backgroundfitting}.  Several were used to attempt to fit the potentials, but eventually the cubic splines and tight binding type functional, as used by Mendelev, Ackland, Bonny et al, were selected.
 
-Initially, I looked to the computer program DIRAC for the density function, as it computes the radial electron density distribution (figure \ref{fig:dirac-fe-density-plot} and figure \ref{fig:dirac-fe-density-plot}).  Unfortunately, as may be expected, there were a number of issues in using the density distribution of a single atom.  The atomic separation for both iron and palladium, for a relaxed crystal, begins at approximately 2-2.5 angstrom, but most of the electrons, from all shells, are distributed much closer.  The plot does not take into consideration the valence electrons shared in the crystal, bonding the metal atoms together.
+Initially, the computer program DIRAC was used to generate the density function, as it computes the radial electron density distribution, as seen in figure \ref{fig:dirac-fe-density-plot} and figure \ref{fig:dirac-fe-density-plot}.  Unfortunately, as may be expected, there were a number of issues in using the density distribution of a single atom.  The atomic separation for both \Gls{Fe} and \Gls{Pd}, for a relaxed crystal, begins at approximately 2-2.5 angstrom, but most of the electrons, from all shells, are distributed much closer.  The plot does not take into consideration the valence electrons shared in the crystal, bonding the metal atoms together.
 
-From the point of view of the potential, the pair potential will dominate at small separations due to the \acrshort{zbl} function.  The density function will be important at separations of 2 angstrom up to the cutoff radius (5-6 angstrom).  For this reason, the idea to use the DIRAC computed densities was abandoned in favour of a cubic spline.
+From the point of view of the potential, the pair potential will dominate at small separations due to the \acrshort{zbl} function.  The density function will be important at separations of 2 angstrom up to the cutoff radius (5-6 angstrom).  For this reason, in addition to moving away from attempting to represent the underlying physics, the idea to use the DIRAC computed densities was abandoned in favour of a cubic spline.
 
 \begin{figure}[htb]
 \minipage{0.49\textwidth}
@@ -108,7 +109,7 @@ From the point of view of the potential, the pair potential will dominate at sma
 \endminipage
 \end{figure}
 
-One interesting feature that Bonny used in his code was to add a hard core spline to the pair potential with a positive coefficient.  This was to ensure that at small separations, say below 1.5-1.8 angstrom, the atoms would repel.  The cubic spline used in this work for the density also has a fixed positive coefficient to help stop negative densities for small separations.  This is dependent on the number of cubic splines used, and is a feature that can be turned off in the EAMPA code.
+One interesting feature that Bonny used in his code was to add a hard core spline to the pair potential with a positive coefficient.  This was to ensure that at small separations, say below 1.5-1.8 angstrom, the atoms would repel.  The cubic spline used in this work for the density also has a parameter as a positive coefficient in order to stop negative densities for small separations.  This is dependent on the number of cubic splines used, and is a feature that can be turned off in the EAMPA code.
 
 A cubic spline was also used for the pair potential, and as with Bonny's code, this had a hard core potential but in addition to this a \acrshort{zbl} core was added to the entire potential to ensure the exponential increase in energy as modelled with the \acrshort{zbl} function.  This was to ensure the potential would both model the material when out of a radiation field, where the atoms are several angstrom apart, but also able to capture a damage cascade where the separation drops and the \acrshort{zbl} becomes the dominant feature, over both the pair cubic spline and the embedding functional.
 
@@ -138,14 +139,7 @@ At the start of the fitting process all available configurations were used, but 
 
 Once the pure potentials for Fe, Pd and Ru were determined, they each underwent an effective gauge transform, with the transform being that used by Bonny et al\cite{bonnyfecr}\cite{bonnymalerba}.  Due to this transform, they were converted from analytic potentials to numeric.  
 
-The fixed numeric functions were then used in the binary alloy fitting where the only parameters adjusted are those for the cross pair potential.  The searching method was similar to that used for the pure elements, but the configurations were changed to those containing both species of atom.  The bulk property fitting was also removed as this fitting was only applicable to the pure elements.
-
-
-
-
-
-
-
+The fixed numeric functions were then used in the binary alloy fitting where the only parameters adjusted are those for the cross pair potential.  The searching method was similar to that used for the pure elements, but the configurations were changed to those containing both species of atom.  The pure element configurations were removed as these potential functions were now fixed.  The bulk property fitting was also turned off as this fitting was only applicable to the pure elements and had no affect on the cross species potential.
 
 
 
@@ -160,7 +154,7 @@ The fixed numeric functions were then used in the binary alloy fitting where the
 
 \subsubsection{Reference Database}
 
-The database of reference configurations was used to derive this potential.  It was designed for \acrshort{fcc} Fe rather than \acrshort{bcc} Fe, and this is one point that distinguishes this potential from those that already exist.
+The database of reference configurations was used to derive this potential.  It was designed for \acrshort{fcc} Fe rather than \acrshort{bcc} Fe, and this is one point that distinguishes this potential from those that already exist.  As discussed in section \ref{section:transferability} a potential developed for one application isn't necessarily transferable to another.
 
 There were a number of options available when choosing certain parameters, such as using \acrshort{dft} to compute cohesive energies based on relaxed and isolated configurations, or to extrapolate based on known energies.  The choices made are listed below and these apply to both the Fe-Pd and Fe-Ru potential.
 
@@ -169,16 +163,16 @@ There were a number of options available when choosing certain parameters, such 
 \item all bulk property values are those computed using \acrshort{dft}
 \end{itemize}
 
-During the fitting process, there was a desire to have a reasonably good fit to bulk property values as well as the defect configurations, perturbed atom configurations and so on.  Weights were applied to the bulk properties as a whole and individually to the property, such as lattice parameter, cohesive energy and so on.  They were also applied to the reference configurations as a whole and to individual configurations.
+During the fitting process, there was a desire to have a reasonably good fit to bulk property values as well as the defect configurations, perturbed atom configurations and so on.  Weights were applied to the bulk properties as a whole and individually to the property, such as lattice parameter, cohesive energy and so on.  They were also applied to the reference configurations as a whole and to individual configurations. 
 
-The potentials for Pd and Ru were fit only to their \acrshort{fcc} structures and more weight was given to the lattice parameter and cohesive energy.  As the \acrshort{dft} computations had been carried out for \acrshort{bcc} Fe, these were also used to fit the potential for Fe, but a much lower weighting was given to this than the \acrshort{fcc} structure.  Again, more weight was given to the lattice parameter and cohesive energy than for other properties.
+The potentials for \Gls{Pd} and \Gls{Ru} were fit only to their \acrshort{fcc} structures and more weight was given to the lattice parameter and cohesive energy.  As the \acrshort{dft} computations had already been carried out for \acrshort{bcc} \Gls{Fe}, these were also used to fit the potential for \Gls{Fe}, but a much lower weighting was given to these than the \acrshort{fcc} structure.  Again, more weight was given to the lattice parameter and cohesive energy than for other properties.
 
-There were many configurations available, but given the reason for the potential is to model a surface, more weight was given to the bulk and slab/surface configurations than defects and other distorted configurations.
+There were many configurations available, but given the reason for the potential is to model \acrshort{pgm}s on or near the surface of a grain of steel, more weight was given to the bulk and slab/surface configurations than defects and other distorted configurations.
  
 \FloatBarrier
 \subsubsection{Potentials}
 
-The full potentials are available from https://github.com/BenPalmer1983/fepd\_feru\_potential and they are ready to use with \acrshort{lammps}.  The functions for pure iron are the same for both potentials and give the same bulk properties, but the binary potentials and of course those for pure Ru and Pd differ from one another.  
+The full potentials are available from https://github.com/BenPalmer1983/fepd\_feru\_potential and they are ready to use with \acrshort{lammps}.  The functions for pure \Gls{Fe} are the same for both potentials and give the same bulk properties, but the binary potentials and of course those for pure \Gls{Ru} and \Gls{Pd} differ from one another.  
 
 \begin{table}[ht]
 \renewcommand{\arraystretch}{1.2}
@@ -231,8 +225,8 @@ A summary of the properties is given in table \ref{table:fefccresults}.  This da
   \caption{FCC Iron}
   \label{fig:rose-vinet-fcc-fe}
 \end{subfigure}
-\label{fig:fe-rosevinet}
 \caption{Rose-Vinet plots for Iron}
+\label{fig:fe-rosevinet}
 \end{figure}
 
 Both the Birch-Murnaghan and Rose-Vinet equation of states were used to fit the potentials, and these are useful for fitting the bulk modulus (Birch-Murnaghan) and behaviour of the potential over a wider range of values for the lattice parameter (Rose-Vinet). The Rose-Vinet fit for Fe is given in figure \ref{fig:fe-rosevinet} for both the \acrshort{fcc} and \acrshort{bcc} structures.
@@ -250,8 +244,8 @@ Both the Birch-Murnaghan and Rose-Vinet equation of states were used to fit the 
   \caption{FCC Ruthenium}
   \label{fig:rose-vinet-fcc-ru}
 \end{subfigure}
-\label{fig:rupd-rosevinet}
 \caption{Rose-Vinet plots for Palladium and Ruthenium}
+\label{fig:rupd-rosevinet}
 \end{figure}
 
 The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet} for just \acrshort{fcc} structures.  The potentials were then used to calculate the energies predicted by \acrshort{dft} and how well these fit, for both potentials, are given in figure \ref{fig:fepd-feru-fit}.
@@ -269,8 +263,8 @@ The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet
   \caption{Fe-Ru}
   \label{fig:feru-fit}
 \end{subfigure}
+\caption{Plotting how well the potentials reproduce \acrshort{dft} energy values}
 \label{fig:fepd-feru-fit}
-\caption{How well the potentials recreate \acrshort{dft} values}
 \end{figure}
 
 
@@ -300,8 +294,8 @@ The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet
   \caption{Ru}
   \label{fig:feru-ru-surface}
 \end{subfigure}
+\caption{Energy plotted as both a slab and two surfaces begin to form.  The plots give the energies predicted by \acrshort{dft} and computed using the potentials from this work.}
 \label{fig:fepd-feru-surface}
-\caption{Energy as a slab and two surfaces form, both \acrshort{dft} computed and these potentials}
 \end{figure}
 
 
@@ -310,8 +304,8 @@ There has been very limited testing of the potentials with \acrshort{lammps} in 
 
 \begin{figure}[htb]
 \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/lammps/fepd_fct_cube_particle.png} 
-\label{fig:fepd-lammps-trial}
 \caption{LAMMPS modelled cube like Fe-Pd particle}
+\label{fig:fepd-lammps-trial}
 \end{figure}
 
 There is certainly room for improvement and this will be discussed in more detail in chapter \ref{chapter:conclusions}.  More data relating to the potentials is given in appendix \ref{chapter:appendix-fepdpotential} and \ref{chapter:appendix-ferupotential} and these detail the bulk properties of the potentials and compare how well they fit to the \acrshort{dft} computed values to which they are fit.

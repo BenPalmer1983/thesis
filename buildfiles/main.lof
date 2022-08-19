@@ -266,9 +266,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.15}{\ignorespaces Rose-Vinet plots for Palladium and Ruthenium\relax }}{184}{figure.caption.247}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.16}{\ignorespaces How well the potentials recreate \acrshort {dft} values\relax }}{184}{figure.caption.248}%
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Plotting how well the potentials reproduce \acrshort {dft} energy values\relax }}{184}{figure.caption.248}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.17}{\ignorespaces Energy as a slab and two surfaces form, both \acrshort {dft} computed and these potentials\relax }}{185}{figure.caption.249}%
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Energy plotted as both a slab and two surfaces begin to form. The plots give the energies predicted by \acrshort {dft} and computed using the potentials from this work.\relax }}{185}{figure.caption.249}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.18}{\ignorespaces LAMMPS modelled cube like Fe-Pd particle\relax }}{185}{figure.caption.250}%
 \defcounter {refsection}{0}\relax 
@@ -554,6 +554,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {T.1}{\ignorespaces Binary Alloy Potential for Fe-Pd\relax }}{503}{figure.caption.410}%
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {T.2}{\ignorespaces Fe-Pd - a measure of how well the potential fits to first principles calculations\relax }}{504}{figure.caption.411}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {T.3}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{504}{figure.caption.412}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {T.4}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{505}{figure.caption.416}%
@@ -577,6 +579,8 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {U.1}{\ignorespaces Binary Alloy Potential for Fe-Ru\relax }}{512}{figure.caption.432}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {U.2}{\ignorespaces Fe-Ru - a measure of how well the potential fits to first principles calculations\relax }}{513}{figure.caption.433}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {U.3}{\ignorespaces Equation of State plots from this potential for \acrshort {fcc} Fe\relax }}{513}{figure.caption.434}%
 \defcounter {refsection}{0}\relax 

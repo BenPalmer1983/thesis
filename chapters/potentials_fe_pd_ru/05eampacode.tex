@@ -131,6 +131,10 @@ The bulk property calculations rely on the calculation of the energy of a number
 
 The Python code creates the configurations with the strains applied and the Fortran subroutines are called to compute the energies.  Once the values are collected, the bulk properties are calculated in Python and any required plots are created.
 
+As part of the calculation process the optimum (relaxed) lattice parameter is first calculated for the potential.  Either a \acrshort{bfgs} or \acrshort{cg} minimizer is used.  The basis vectors are fixed by the user, although there could be the option in the future to allow the basis vectors to also be adjusted.  In this work the basis vectors of \acrshort{fcc} \Gls{Fe} were fixed as the tetragonal determined by \acrshort{dft} in the input file for EAMPA.  
+
+During the fitting process, each time the potential is varied, the lattice parameter and bulk properties need to be recalculated.  To save time the neighbour list is only calculated once, and the atom separations are recalculated based on the initial list, the recalculated lattice parameter and basis vectors.
+
 
 \subsubsection{RSS - How Well The Potential Fits Experimental \& DFT Data}
 
