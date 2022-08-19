@@ -509,17 +509,27 @@ The regulations on ionising radiation\cite{ionisingradiationregulations} also sp
 
 In work by Rodenas and Verdu a MCNP5 simulated neutron flux environment and a thermal flux of $2.5 \times 10^7 n/cm^2 s$ a stainless steel cylinder (20mm diameter and 70mm depth) was irradiated for 10 hours\cite{radionuclides}.  The sample was composed of 65\% Fe, 19\% Cr, 2.0\% Mn, 1.0\% Si by weight as well are small amounts of C, Ti, P and S.  After 10 minutes cooling, it was calculated to have an activity of over $1.0 \times 10^7$ Bq and, by several orders of magnitude, it was predominantly due to the creation of ${}^{56}_{25}Mn$.  
 
-The maximum cross section of ${}^{55}_{25}Mn$ (n, $\gamma$) ${}^{56}_{25}Mn$ is 2.0 barns and the estimated reaction rate at this flux is just over $2.0 \times 10^6$.  As the half life of${}^{56}_{25}Mn$ is short compared to the irradiation time (a half life of 2.5 hours) the creation rate of Mn \textsuperscript{56} and decay rate equalise, saturating the sample with this isotope.
+The maximum cross section of ${}^{55}_{25}Mn$ (n, $\gamma$) ${}^{56}_{25}Mn$ is 2.0 barns and the estimated reaction rate at this flux is just over $2.0 \times 10^6$.  As the half life of ${}^{56}_{25}Mn$ is short compared to the irradiation time (a half life of 2.5 hours) the creation rate of Mn \textsuperscript{56} and decay rate equalise, saturating the sample with this isotope.
 
-A simple neutron activation code was developed, which will be discussed in more detail in this work, and the predicted Mn\textsuperscript{56} activity vs time was calculated (fig. \ref{fig:mn56activity}).  The overall gamma dose, for 1 minute of exposure to an 80kg person standing 2m from the source was also calculated (fig. \ref{fig:neutron_irradiated_steel_dose1}).  The calculated activity for Mn \textsuperscript{56} was less than that predicted by Rodenas and Verdu \cite{radionuclides}, but it was within an order of magnitude.  It predicts a total activity after cooling of $2.3\times10^6$ Bq with almost 90\% of this due to ${}^{56}_{25}Mn$.
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\linewidth]{chapters/consequences_of_ionizing_radiation/images/HFIR_neutron_spectra_guide.png}
+    \captionsetup{font={it}}
+    \caption{High Flux Isotope Reactor Neutron Flux}
+    \label{fig:hfir_neutron_flux}
+  \end{center}
+\end{figure}
 
-The flux in the within the flux trap of the HFIR is much higher, with high energy neutrons having a flux of $1.0 \time 10^{14}$ neutrons per cm squared per second (fig. \ref{fig:hfir_neutron_flux}).  A second calculation was performed for this increased flux, also irradiated over 10 hours (fig. \ref{fig:neutron_irradiated_steel_dose2}).  The total activity increased from $2.3\times10^6$ Bq to $7.1\times10^{12}$ Bq and the overall dose per minute was much higher, between 40 and 50 milligrey per minute over the first hour of cooling.  These are dangerous levels of radiation.
+A simple neutron activation code was developed and the predicted ${}^{56}_{25}Mn$ activity vs time was calculated.  The overall gamma dose, for 1 minute of exposure to an 80kg person standing 2m from the source was also calculated.  The calculated activity for ${}^{56}_{25}Mn$ was less than that predicted by Rodenas and Verdu \cite{radionuclides}, but it was within an order of magnitude.  It predicts a total activity after cooling of $2.3\times10^6$ Bq with almost 90\% of this due to ${}^{56}_{25}Mn$.
 
+The flux in the within the flux trap of the \acrshort{hfir} is much higher, with high energy neutrons having a flux of $1.0 \time 10^{14}$ neutrons per cm squared per second (fig. \ref{fig:hfir_neutron_flux}).  A second calculation was performed for this increased flux, also irradiated over 10 hours.  The total activity increased from $2.3\times10^6$ Bq to $7.1\times10^{12}$ Bq and the overall dose per minute was much higher, between 40 and 50 milligrey per minute over the first hour of cooling.  These are dangerous levels of radiation.
+
+\begin{comment}
 \begin{figure}
   \begin{center}
     \includegraphics[width=10.0cm]{chapters/consequences_of_ionizing_radiation/neutron_plots/1/25_Mn_56_activity.eps}
     \captionsetup{font={it}}
-    \caption{Predicted Mn 56 activity after neutron irradiation}
+    \caption{Predicted ${}^{56}_{25}Mn$ activity after neutron irradiation}
     \label{fig:mn56activity}
   \end{center}
 \end{figure}
@@ -532,18 +542,12 @@ The flux in the within the flux trap of the HFIR is much higher, with high energ
     \label{fig:neutron_irradiated_steel_dose1}
   \end{center}
 \end{figure}
+\end{comment}
 
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=10.0cm]{chapters/consequences_of_ionizing_radiation/images/HFIR_neutron_spectra_guide.png}
-    \captionsetup{font={it}}
-    \caption{High Flux Isotope Reactor Neutron Flux}
-    \label{fig:hfir_neutron_flux}
-  \end{center}
-\end{figure}
 
 
+\begin{comment}
 \begin{figure}
   \begin{center}
     \includegraphics[width=10.0cm]{chapters/consequences_of_ionizing_radiation/neutron_plots/2/gamma_dose.eps}
@@ -552,6 +556,7 @@ The flux in the within the flux trap of the HFIR is much higher, with high energ
     \label{fig:neutron_irradiated_steel_dose2}
   \end{center}
 \end{figure}
+\end{comment}
 
 
 \FloatBarrier
@@ -570,7 +575,7 @@ Our cells are predominantly water, so there is a higher probability of the radia
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.5\linewidth]{chapters/consequences_of_ionizing_radiation/tissue/soft_tissue_gamma_attenuation.eps}
+\includegraphics[width=0.75\linewidth]{chapters/consequences_of_ionizing_radiation/tissue/soft_tissue_gamma_attenuation.eps}
 \caption{Dependency of absorption and attenuation of photons in soft tissue as a function of photon energy}
 \label{fig:softtissueattenuation}
 \end{figure}

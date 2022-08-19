@@ -330,7 +330,7 @@ The decay equations were programmed as a class in python (appendix \ref{section:
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.7\linewidth]{chapters/activity_code/84po216/84Po216_path.png}
+    \includegraphics[width=0.6\linewidth]{chapters/activity_code/84po216/84Po216_path1.png}
     \caption{Decay path of Polonium-216}
     \label{fig:DecayPathPo216}
   \end{center}
@@ -404,28 +404,34 @@ Due to a variation in range of energies in the existing cross section data files
 
 \begin{figure}[htb]
 \centering
-\begin{subfigure}{0.49\textwidth}
+\begin{subfigure}{0.9\textwidth}
   \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/tendl_2009_p_fe56.png}
   \caption{TENDL-2009 cross sections}
   \label{fig:xsdata-tendl2009}
-\end{subfigure}\hfil % <-- added
-\begin{subfigure}{0.49\textwidth}
+\end{subfigure}
+\begin{subfigure}{0.9\textwidth}
   \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/tendl_2019_p_fe56.png}
   \caption{TENDL-2019 cross sections}
   \label{fig:xsdata-tendl2019}
 \end{subfigure}
-\begin{subfigure}{0.49\textwidth}
+\caption{Data from pre-existing TENDL files for $({}^{56}_{26}Fe, p)$ reactions}
+\label{fig:xsdata-particle}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\begin{subfigure}{0.9\textwidth}
   \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/rxs_p_26056_all.eps}
   \caption{TALYS generated residual cross sections}
   \label{fig:xsdata-residual}
-\end{subfigure}\hfil % <-- added
-\begin{subfigure}{0.49\textwidth}
+\end{subfigure}
+\begin{subfigure}{0.9\textwidth}
   \includegraphics[width=\linewidth]{chapters/activity_code/tendl-fe56/pxs_p_26056_all.eps}
   \caption{TALYS generated particle cross sections}
   \label{fig:activity-v2-residual-6}
 \end{subfigure}
-\caption{Cross sections for $({}^{56}_{26}Fe, p)$ reactions}
-\label{fig:xsdata-particle}
+\caption{Data from TALYS generated files for $({}^{56}_{26}Fe, p)$ reactions}
+\label{fig:xsdata-particle2}
 \end{figure}
 
 A set of proton reaction cross section data files already exist and are updated every few years.  The type and range of data changes between versions of the file.  For example, the \acrshort{tendl}-2014 version contains only elastic and (z,anything) files for (p,Fe56).  The \acrshort{tendl}-2009 file contains a wider ranger of reactions and under 50 data points span the energy range from 0MeV to 200MeV.  The 2019 version contains even more reactions but spans a much shorter energy range, 0MeV to 28MeV, with cross sections given at just under 60 energy points.
@@ -434,7 +440,7 @@ The cyclotron used in the experimental work has an energy range up to 40MeV for 
 
 Limitations of the TALYS code caused the calculations to be processed in batches of either 400 or 600 points.  The data was collated and processed resulting in a datafile of particle production reactions and residual production reactions.  This is accessible through a stand-alone python class that is also a part of the Activity V2 code.
 
-The residual reactions are grouped by target isotope and then by residual isotope, whereas the particle cross sections are grouped by target isotope then particle type.  The computed values are plotted for all available reactions and all residuals for ${}^{56}_{26}Fe$ reactions with protons (figure \ref{fig:xsdata-particle}) and these show a good agreement, although there is a more detailed set of residual isotopes for the generated cross sections.
+The residual reactions are grouped by target isotope and then by residual isotope, whereas the particle cross sections are grouped by target isotope then particle type.  The computed values are plotted for all available reactions and all residuals for ${}^{56}_{26}Fe$ reactions with protons (figures \ref{fig:xsdata-particle1} and \ref{fig:xsdata-particle2}) and these show a good agreement, although there is a more detailed set of residual isotopes for the generated cross sections.
 
 \FloatBarrier
 \begin{lstlisting}[style=sOutputFile,caption={Status report from TALYS database code},label={listing:talysstatus}]
@@ -625,7 +631,7 @@ ${}^{55}_{27} Co$ is a relatively short lived isotope with a half life of 17.5 h
 \FloatBarrier
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.5\linewidth]{chapters/activity_code/fe-co55/Co55_decay_path.png}
+    \includegraphics[width=0.8\linewidth]{chapters/activity_code/fe-co55/Co55_decay_path.png}
     \caption{Decay path of Cobalt-55}
     \label{fig:DecayPathCo55}
   \end{center}
@@ -1110,7 +1116,7 @@ After three days of cooling almost 67\% of the decays are due to the ground stat
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.5\linewidth]{chapters/activity_code/mo-john-hewett/thick/plot_gammas/gammas.eps}
+\includegraphics[width=0.75\linewidth]{chapters/activity_code/mo-john-hewett/thick/plot_gammas/gammas.eps}
 \caption{Comparison of Gamma peaks from experiment, a simple estimate and the Activity code.}
 \label{fig:mogammacomparison}
 \end{figure}

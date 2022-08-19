@@ -181,7 +181,7 @@ In the method of steepest decent an initial value is selected and the gradient a
   \label{eq:steepestdescent}
 \end{equation}
 
-The conjugate gradient method is similar
+The conjugate gradient method is similar.
 
 \begin{equation}
   \begin{split}
@@ -192,8 +192,20 @@ The conjugate gradient method is similar
   \beta_{(i+1)} = \frac{r^{T}_{(i+1)} r_{(i+1)}} {r^{T}_{(i)} r_{(i)}} \\
   d_{(i + 1)} = r_{(i + 1)} + \beta_{(i+1)} d_{(i)}\\
   \end{split}
-  \label{eq:conjugategradient}
+  \label{eq:bfgshessian}
 \end{equation}
 
 
-\subsubsection{\acrfull{bfgs}}
+\subsubsection{Broyden Fletcher Goldfarb Shanno}
+
+The \acrshort{bfgs} method is a Quazi-Newton method where the Hessian is approximated in eq. \ref{eq:bfgshessian}\cite{nocedalwright1}.
+
+\begin{equation}
+  \begin{split}
+  \vec{B}_{k+1} = \vec{B}_{k} - \frac{B_{k}S_{k}S_{k}^{T}B_k}{S_{k}^{T} B_k S_k} + \frac{y_k y_k^T}{y_k^T s_k} 
+  \end{split}
+  \label{eq:bfgshessian}
+\end{equation}
+
+This optimzation method is implemented in SciPy in Python along with a number of other methods listed here.
+

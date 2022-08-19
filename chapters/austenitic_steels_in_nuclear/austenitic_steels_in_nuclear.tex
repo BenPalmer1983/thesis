@@ -59,6 +59,7 @@ Both Fe and Cr are \acrshort{bcc} at standard temperatures and pressures, but ad
 
 
 \begin{figure}[ht]
+\centering
 \begin{tikzpicture}[scale=0.40]
 \printtikzcrystalbcc{}
 \end{tikzpicture} 
@@ -73,6 +74,7 @@ At room temperatures and pressures, Fe exists in the alpha phase, which is a \ac
 \subsubsection{Austenitic Stainless Steel}
 
 \begin{figure}[ht]
+\centering
 \begin{tikzpicture}[scale=0.40]
 \printtikzcrystalfcc{}
 \end{tikzpicture} 
@@ -159,7 +161,7 @@ The safety of a Nuclear reactor is the primary concern; it must generate power, 
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.55]{chapters/austenitic_steels_in_nuclear/images/dpagenIV.png}
+    \includegraphics[scale=0.60]{chapters/austenitic_steels_in_nuclear/images/dpagenIV.png}
     \caption{Expected \acrshort{dpa} during component life time and operating temperatures\cite{genIVstrucmat}}
     \label{fig:genIVdpa}
   \end{center}
@@ -178,17 +180,17 @@ E_N = E_n \left(1 - \frac{(1+\alpha) + (1 - \alpha) cos \theta_C}{2}\right)
 
 \begin{figure}
 \centering
-\begin{minipage}{.46\textwidth}
+\begin{minipage}{.49\textwidth}
 \centering
-\includegraphics[width=.9\linewidth]{chapters/austenitic_steels_in_nuclear/plots/scattering_angle.eps}
+\includegraphics[width=.97\linewidth]{chapters/austenitic_steels_in_nuclear/plots/scattering_angle.eps}
 \caption{Scattering angle probability of neutrons}
 \label{fig:scatteringangle}
 \end{minipage}
-\begin{minipage}{.05\textwidth}
+\begin{minipage}{.01\textwidth}
 \end{minipage}
-\begin{minipage}{.46\textwidth}
+\begin{minipage}{.49\textwidth}
 \centering
-\includegraphics[width=.9\linewidth]{chapters/austenitic_steels_in_nuclear/plots/nuclei_mass.eps}
+\includegraphics[width=.97\linewidth]{chapters/austenitic_steels_in_nuclear/plots/nuclei_mass.eps}
 \caption{Energy transfer as a from a neutron dependant on target mass}
 \label{fig:energytransfer}
 \end{minipage}
@@ -196,7 +198,10 @@ E_N = E_n \left(1 - \frac{(1+\alpha) + (1 - \alpha) cos \theta_C}{2}\right)
 
 In a collision, the amount of energy transferred to a target atom will depend on both the scattering angle of neutron recoiling from the target and the mass of the target nucleus.  If the neutron does not change direction, a small amount of energy will be transferred, but if it bounces back at 180 degrees it will transfer the maximum amount of energy.  A neutron will lose more energy per collision with light atoms (hydrogen, helium, carbon), but much less energy per collision with larger atoms (iron, molybdenum, lead).
 
-\begin{figure}[h]
+
+The energy of Fe \acrshort{pka}s as a result of neutron irradiation has been calculated for an Fe target\cite{pkaenergyspectra} (fig. \ref{fig:neutronironrecoil}), and those created by 1MeV neutrons may have an energy up to 100keV.  As nuclear reactions are also possible between the neutrons and the target nuclei, there is an inelastic $(n,n) {}^{56}Fe$ channel as well as other elastic scattering channels where the post collision particles are different to the pre collision particles (fig. \ref{fig:ferecoilchannels}).
+
+\begin{figure}[ht]
   \begin{center}
     \includegraphics[width=.65\linewidth]{chapters/austenitic_steels_in_nuclear/images/neutronrecoils.png}
     \caption{Recoil energies for neutrons at 102keV, 1.02MeV, 10.1MeV and 14.1MeV\cite{pkaenergyspectra}}
@@ -204,9 +209,6 @@ In a collision, the amount of energy transferred to a target atom will depend on
   \end{center}
 \end{figure}
 \FloatBarrier
-
-
-The energy of Fe \acrshort{pka}s as a result of neutron irradiation has been calculated for an Fe target\cite{pkaenergyspectra} (fig. \ref{fig:neutronironrecoil}), and those created by 1MeV neutrons may have an energy up to 100keV.  As nuclear reactions are also possible between the neutrons and the target nuclei, there is an inelastic $(n,n) {}^{56}Fe$ channel as well as other elastic scattering channels where the post collision particles are different to the pre collision particles (fig. \ref{fig:ferecoilchannels}).
 
 
 
@@ -240,7 +242,7 @@ The \acrfull{ke} concerns the diffusion of one material into another and vice ve
 
 The \acrfull{ike} is driven by an external force, such as irradiation.  Irradiation of the material causes a flux of defects and, inverse to the \acrshort{ke}, this causes a flux of atoms.  For an austenitic stainless steel the diffusion coefficients in order of size are $D_{Cr} > D_{Fe} > D_{Ni}$\cite{risfecrni}, so Cr will diffuse away from grain boundaries and other sinks, followed by Fe.  As Ni is slowest to diffuse, this will be enriched.  An additional mechanism that is thought to contribute to \acrshort{ris} is interstitial flux where undersized atoms as interstitials are preferential\cite{risfecrni}.
 
-\begin{figure}
+\begin{figure}[ht]
 \centering
 \begin{minipage}{.46\textwidth}
 \centering
@@ -511,11 +513,11 @@ The increased corrosion resistance is dependant upon the amount of \acrshort{pgm
 
 \begin{figure}
 \centering
-\begin{minipage}{.44\textwidth}
-\includegraphics[width=.95\linewidth]{chapters/austenitic_steels_in_nuclear/images/fe30crru.png}
+\begin{minipage}{.47\textwidth}
+\includegraphics[width=.97\linewidth]{chapters/austenitic_steels_in_nuclear/images/fe30crru.png}
 \end{minipage}
-\begin{minipage}{.44\textwidth}
-\includegraphics[width=.95\linewidth]{chapters/austenitic_steels_in_nuclear/images/fe40crru.png}
+\begin{minipage}{.47\textwidth}
+\includegraphics[width=.97\linewidth]{chapters/austenitic_steels_in_nuclear/images/fe40crru.png}
 \end{minipage}
 \caption{Addition of Ru to Fe30Cr and Fe40Cr steels - open current corrosion potential variation with time in 10\% sulphuric acid\cite{potgieter1994}}
 \label{fig:ruadditions}
@@ -525,9 +527,9 @@ It was found that an addition of 0.15\% \Gls{Ru} (out of a selection of 0\%, 0.0
 
 \begin{figure}
 \centering
-\begin{minipage}{.50\textwidth}
+\begin{minipage}{.80\linewidth}
 \centering
-    \includegraphics[width=.99\linewidth]{chapters/austenitic_steels_in_nuclear/images/pgmfailure.png}
+    \includegraphics[width=.95\linewidth]{chapters/austenitic_steels_in_nuclear/images/pgmfailure.png}
     \caption{Failure times for 304SS, Pd doped 304SS (with and without Mn) and Ru doped 304SS in polythionic acid at ambient temperature\cite{scrstainless}}
     \label{fig:pgmfailuretimes}
 \end{minipage}
