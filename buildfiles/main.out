@@ -357,41 +357,31 @@
 \BOOKMARK [0][-]{appendix.a.R}{Potential Functions}{}% 357
 \BOOKMARK [1][-]{section.a.R.1}{Introduction}{appendix.a.R}% 358
 \BOOKMARK [1][-]{section.a.R.2}{Functions}{appendix.a.R}% 359
-\BOOKMARK [2][-]{subsection.a.R.2.1}{Ackland-Mendelev Pair}{section.a.R.2}% 360
+\BOOKMARK [2][-]{subsection.a.R.2.1}{Ackland Embedding}{section.a.R.2}% 360
 \BOOKMARK [2][-]{subsection.a.R.2.2}{Buckingham}{section.a.R.2}% 361
-\BOOKMARK [2][-]{subsection.a.R.2.3}{Cubic Knot Spline}{section.a.R.2}% 362
-\BOOKMARK [2][-]{subsection.a.R.2.4}{Cubic Knot Spline Fixed End}{section.a.R.2}% 363
-\BOOKMARK [2][-]{subsection.a.R.2.5}{Cubic Knot Spline Fixed End Pair}{section.a.R.2}% 364
-\BOOKMARK [2][-]{subsection.a.R.2.6}{Cubic Splines}{section.a.R.2}% 365
-\BOOKMARK [2][-]{subsection.a.R.2.7}{Cubic Spline Plus ZBL}{section.a.R.2}% 366
-\BOOKMARK [2][-]{subsection.a.R.2.8}{Embedding A - Finnis Sinclair}{section.a.R.2}% 367
-\BOOKMARK [2][-]{subsection.a.R.2.9}{Embedding B - Mendelev}{section.a.R.2}% 368
-\BOOKMARK [2][-]{subsection.a.R.2.10}{Embedding C}{section.a.R.2}% 369
-\BOOKMARK [2][-]{subsection.a.R.2.11}{Embedding D - Ackland-Mendelev}{section.a.R.2}% 370
-\BOOKMARK [2][-]{subsection.a.R.2.12}{Embedding E}{section.a.R.2}% 371
-\BOOKMARK [2][-]{subsection.a.R.2.13}{Embedding F}{section.a.R.2}% 372
-\BOOKMARK [2][-]{subsection.a.R.2.14}{Embedding G}{section.a.R.2}% 373
-\BOOKMARK [2][-]{subsection.a.R.2.15}{Lennard-Jones}{section.a.R.2}% 374
-\BOOKMARK [2][-]{subsection.a.R.2.16}{Morse}{section.a.R.2}% 375
-\BOOKMARK [2][-]{subsection.a.R.2.17}{Slater 4S \(Squared\)}{section.a.R.2}% 376
-\BOOKMARK [2][-]{subsection.a.R.2.18}{ZBL}{section.a.R.2}% 377
-\BOOKMARK [2][-]{subsection.a.R.2.19}{Zero}{section.a.R.2}% 378
-\BOOKMARK [0][-]{appendix.a.S}{Fe-Pd and Fe-Ru Structures}{}% 379
-\BOOKMARK [0][-]{appendix.a.T}{Fe-Pd Potential}{}% 380
-\BOOKMARK [1][-]{section.a.T.1}{Tabulated Potential}{appendix.a.T}% 381
-\BOOKMARK [1][-]{section.a.T.2}{Potential Function Plots}{appendix.a.T}% 382
-\BOOKMARK [1][-]{section.a.T.3}{Potential vs DFT}{appendix.a.T}% 383
-\BOOKMARK [1][-]{section.a.T.4}{Bulk Properties}{appendix.a.T}% 384
-\BOOKMARK [2][-]{subsection.a.T.4.1}{Iron FCC}{section.a.T.4}% 385
-\BOOKMARK [2][-]{subsection.a.T.4.2}{Palladium FCC}{section.a.T.4}% 386
-\BOOKMARK [2][-]{subsection.a.T.4.3}{Iron BCC}{section.a.T.4}% 387
-\BOOKMARK [0][-]{appendix.a.U}{Fe-Ru Potential}{}% 388
-\BOOKMARK [1][-]{section.a.U.1}{Tabulated Potential}{appendix.a.U}% 389
-\BOOKMARK [1][-]{section.a.U.2}{Potential Function Plots}{appendix.a.U}% 390
-\BOOKMARK [1][-]{section.a.U.3}{Potential vs DFT}{appendix.a.U}% 391
-\BOOKMARK [1][-]{section.a.U.4}{Bulk Properties}{appendix.a.U}% 392
-\BOOKMARK [2][-]{subsection.a.U.4.1}{Iron FCC}{section.a.U.4}% 393
-\BOOKMARK [2][-]{subsection.a.U.4.2}{Ruthenium FCC}{section.a.U.4}% 394
-\BOOKMARK [2][-]{subsection.a.U.4.3}{Iron BCC}{section.a.U.4}% 395
-\BOOKMARK [0][-]{appendix.a.V}{Contribution to the DLPOLY Source Code}{}% 396
-\BOOKMARK [1][-]{section.a.V.1}{Contribution to DLPOLY 4.04}{appendix.a.V}% 397
+\BOOKMARK [2][-]{subsection.a.R.2.3}{Lennard Jones}{section.a.R.2}% 362
+\BOOKMARK [2][-]{subsection.a.R.2.4}{Mishin Density}{section.a.R.2}% 363
+\BOOKMARK [2][-]{subsection.a.R.2.5}{Morse}{section.a.R.2}% 364
+\BOOKMARK [2][-]{subsection.a.R.2.6}{Polynomial Embedding}{section.a.R.2}% 365
+\BOOKMARK [2][-]{subsection.a.R.2.7}{Spline}{section.a.R.2}% 366
+\BOOKMARK [2][-]{subsection.a.R.2.8}{Slater 4s}{section.a.R.2}% 367
+\BOOKMARK [2][-]{subsection.a.R.2.9}{Zero}{section.a.R.2}% 368
+\BOOKMARK [0][-]{appendix.a.S}{Fe-Pd and Fe-Ru Structures}{}% 369
+\BOOKMARK [0][-]{appendix.a.T}{Fe-Pd Potential}{}% 370
+\BOOKMARK [1][-]{section.a.T.1}{Tabulated Potential}{appendix.a.T}% 371
+\BOOKMARK [1][-]{section.a.T.2}{Potential Function Plots}{appendix.a.T}% 372
+\BOOKMARK [1][-]{section.a.T.3}{Potential vs DFT}{appendix.a.T}% 373
+\BOOKMARK [1][-]{section.a.T.4}{Bulk Properties}{appendix.a.T}% 374
+\BOOKMARK [2][-]{subsection.a.T.4.1}{Iron FCC}{section.a.T.4}% 375
+\BOOKMARK [2][-]{subsection.a.T.4.2}{Palladium FCC}{section.a.T.4}% 376
+\BOOKMARK [2][-]{subsection.a.T.4.3}{Iron BCC}{section.a.T.4}% 377
+\BOOKMARK [0][-]{appendix.a.U}{Fe-Ru Potential}{}% 378
+\BOOKMARK [1][-]{section.a.U.1}{Tabulated Potential}{appendix.a.U}% 379
+\BOOKMARK [1][-]{section.a.U.2}{Potential Function Plots}{appendix.a.U}% 380
+\BOOKMARK [1][-]{section.a.U.3}{Potential vs DFT}{appendix.a.U}% 381
+\BOOKMARK [1][-]{section.a.U.4}{Bulk Properties}{appendix.a.U}% 382
+\BOOKMARK [2][-]{subsection.a.U.4.1}{Iron FCC}{section.a.U.4}% 383
+\BOOKMARK [2][-]{subsection.a.U.4.2}{Ruthenium FCC}{section.a.U.4}% 384
+\BOOKMARK [2][-]{subsection.a.U.4.3}{Iron BCC}{section.a.U.4}% 385
+\BOOKMARK [0][-]{appendix.a.V}{Contribution to the DLPOLY Source Code}{}% 386
+\BOOKMARK [1][-]{section.a.V.1}{Contribution to DLPOLY 4.04}{appendix.a.V}% 387

@@ -908,106 +908,86 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {R.2}Functions}{486}{section.a.R.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.1}Ackland-Mendelev Pair}{486}{subsection.a.R.2.1}%
+\contentsline {subsection}{\numberline {R.2.1}Ackland Embedding}{486}{subsection.a.R.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {R.2.2}Buckingham}{487}{subsection.a.R.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.3}Cubic Knot Spline}{488}{subsection.a.R.2.3}%
+\contentsline {subsection}{\numberline {R.2.3}Lennard Jones}{488}{subsection.a.R.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.4}Cubic Knot Spline Fixed End}{488}{subsection.a.R.2.4}%
+\contentsline {subsection}{\numberline {R.2.4}Mishin Density}{489}{subsection.a.R.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.5}Cubic Knot Spline Fixed End Pair}{489}{subsection.a.R.2.5}%
+\contentsline {subsection}{\numberline {R.2.5}Morse}{491}{subsection.a.R.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.6}Cubic Splines}{490}{subsection.a.R.2.6}%
+\contentsline {subsection}{\numberline {R.2.6}Polynomial Embedding}{492}{subsection.a.R.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.7}Cubic Spline Plus ZBL}{491}{subsection.a.R.2.7}%
+\contentsline {subsection}{\numberline {R.2.7}Spline}{493}{subsection.a.R.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.8}Embedding A - Finnis Sinclair}{492}{subsection.a.R.2.8}%
+\contentsline {subsection}{\numberline {R.2.8}Slater 4s}{496}{subsection.a.R.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.9}Embedding B - Mendelev}{493}{subsection.a.R.2.9}%
+\contentsline {subsection}{\numberline {R.2.9}Zero}{498}{subsection.a.R.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.10}Embedding C}{494}{subsection.a.R.2.10}%
+\contentsline {chapter}{\numberline {S}Fe-Pd and Fe-Ru Structures}{500}{appendix.a.S}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.11}Embedding D - Ackland-Mendelev}{494}{subsection.a.R.2.11}%
+\contentsline {chapter}{\numberline {T}Fe-Pd Potential}{503}{appendix.a.T}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.12}Embedding E}{495}{subsection.a.R.2.12}%
+\contentsline {section}{\numberline {T.1}Tabulated Potential}{503}{section.a.T.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.13}Embedding F}{495}{subsection.a.R.2.13}%
+\contentsline {section}{\numberline {T.2}Potential Function Plots}{504}{section.a.T.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.14}Embedding G}{496}{subsection.a.R.2.14}%
+\contentsline {section}{\numberline {T.3}Potential vs DFT}{505}{section.a.T.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.15}Lennard-Jones}{497}{subsection.a.R.2.15}%
+\contentsline {section}{\numberline {T.4}Bulk Properties}{506}{section.a.T.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.16}Morse}{497}{subsection.a.R.2.16}%
+\contentsline {subsection}{\numberline {T.4.1}Iron FCC}{506}{subsection.a.T.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.17}Slater 4S (Squared)}{498}{subsection.a.R.2.17}%
+\contentsline {subsubsection}{Bulk Property Values}{506}{subsubsection*.401}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.18}ZBL}{499}{subsection.a.R.2.18}%
+\contentsline {subsubsection}{Equation of State Plots}{506}{subsubsection*.403}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.19}Zero}{499}{subsection.a.R.2.19}%
+\contentsline {subsubsection}{Elastic Constant Plots}{507}{subsubsection*.405}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {S}Fe-Pd and Fe-Ru Structures}{501}{appendix.a.S}%
+\contentsline {subsection}{\numberline {T.4.2}Palladium FCC}{508}{subsection.a.T.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {T}Fe-Pd Potential}{504}{appendix.a.T}%
+\contentsline {subsubsection}{Equation of State Plots}{508}{subsubsection*.409}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.1}Tabulated Potential}{504}{section.a.T.1}%
+\contentsline {subsubsection}{Elastic Constant Plots}{509}{subsubsection*.411}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.2}Potential Function Plots}{505}{section.a.T.2}%
+\contentsline {subsection}{\numberline {T.4.3}Iron BCC}{510}{subsection.a.T.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.3}Potential vs DFT}{506}{section.a.T.3}%
+\contentsline {subsubsection}{Equation of State Plots}{510}{subsubsection*.415}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.4}Bulk Properties}{507}{section.a.T.4}%
+\contentsline {subsubsection}{Elastic Constant Plots}{511}{subsubsection*.417}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {T.4.1}Iron FCC}{507}{subsection.a.T.4.1}%
+\contentsline {chapter}{\numberline {U}Fe-Ru Potential}{512}{appendix.a.U}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bulk Property Values}{507}{subsubsection*.412}%
+\contentsline {section}{\numberline {U.1}Tabulated Potential}{512}{section.a.U.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{507}{subsubsection*.414}%
+\contentsline {section}{\numberline {U.2}Potential Function Plots}{513}{section.a.U.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{508}{subsubsection*.416}%
+\contentsline {section}{\numberline {U.3}Potential vs DFT}{514}{section.a.U.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {T.4.2}Palladium FCC}{509}{subsection.a.T.4.2}%
+\contentsline {section}{\numberline {U.4}Bulk Properties}{515}{section.a.U.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{509}{subsubsection*.420}%
+\contentsline {subsection}{\numberline {U.4.1}Iron FCC}{515}{subsection.a.U.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{510}{subsubsection*.422}%
+\contentsline {subsubsection}{Bulk Property Values}{515}{subsubsection*.423}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {T.4.3}Iron BCC}{511}{subsection.a.T.4.3}%
+\contentsline {subsubsection}{Equation of State Plots}{515}{subsubsection*.425}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{511}{subsubsection*.426}%
+\contentsline {subsubsection}{Elastic Constant Plots}{516}{subsubsection*.427}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{512}{subsubsection*.428}%
+\contentsline {subsection}{\numberline {U.4.2}Ruthenium FCC}{517}{subsection.a.U.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {U}Fe-Ru Potential}{513}{appendix.a.U}%
+\contentsline {subsubsection}{Equation of State Plots}{517}{subsubsection*.431}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.1}Tabulated Potential}{513}{section.a.U.1}%
+\contentsline {subsubsection}{Elastic Constant Plots}{518}{subsubsection*.433}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.2}Potential Function Plots}{514}{section.a.U.2}%
+\contentsline {subsection}{\numberline {U.4.3}Iron BCC}{519}{subsection.a.U.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.3}Potential vs DFT}{515}{section.a.U.3}%
+\contentsline {subsubsection}{Equation of State Plots}{519}{subsubsection*.437}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.4}Bulk Properties}{516}{section.a.U.4}%
+\contentsline {subsubsection}{Elastic Constant Plots}{520}{subsubsection*.439}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {U.4.1}Iron FCC}{516}{subsection.a.U.4.1}%
+\contentsline {chapter}{\numberline {V}Contribution to the DLPOLY Source Code}{521}{appendix.a.V}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bulk Property Values}{516}{subsubsection*.434}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{516}{subsubsection*.436}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{517}{subsubsection*.438}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {U.4.2}Ruthenium FCC}{518}{subsection.a.U.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{518}{subsubsection*.442}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{519}{subsubsection*.444}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {U.4.3}Iron BCC}{520}{subsection.a.U.4.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{520}{subsubsection*.448}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{521}{subsubsection*.450}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {V}Contribution to the DLPOLY Source Code}{522}{appendix.a.V}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {V.1}Contribution to DLPOLY 4.04}{522}{section.a.V.1}%
+\contentsline {section}{\numberline {V.1}Contribution to DLPOLY 4.04}{521}{section.a.V.1}%
