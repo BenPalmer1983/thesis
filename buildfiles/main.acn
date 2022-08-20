@@ -25,6 +25,10 @@
 \glossaryentry{TISE?\glossentry{tise}|setentrycounter[]{page}\glsnumberformat}{v}
 \glossaryentry{HK?\glossentry{hk}|setentrycounter[]{page}\glsnumberformat}{v}
 \glossaryentry{DFT?\glossentry{dft}|setentrycounter[]{page}\glsnumberformat}{viii}
+\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{xiv}
+\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{xiv}
+\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{xiv}
+\glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{xiv}
 \glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{xiv}
 \glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{xiv}
 \glossaryentry{BCC?\glossentry{bcc}|setentrycounter[]{page}\glsnumberformat}{xiv}
@@ -109,8 +113,12 @@
 \glossaryentry{IGSCC?\glossentry{igscc}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{Gen IV?\glossentry{gen4}|setentrycounter[]{page}\glsnumberformat}{3}
 \glossaryentry{UK?\glossentry{uk}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{Gen II?\glossentry{gen2}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{Gen II?\glossentry{gen2}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{4}
 \glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{4}
 \glossaryentry{BWR?\glossentry{bwr}|setentrycounter[]{page}\glsnumberformat}{4}
 \glossaryentry{VVER?\glossentry{vver}|setentrycounter[]{page}\glsnumberformat}{4}
@@ -126,12 +134,12 @@
 \glossaryentry{Gen II+?\glossentry{gen2+}|setentrycounter[]{page}\glsnumberformat}{4}
 \glossaryentry{Gen III+?\glossentry{gen3+}|setentrycounter[]{page}\glsnumberformat}{4}
 \glossaryentry{Gen IV?\glossentry{gen4}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{Gen III?\glossentry{gen3}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{ABWR?\glossentry{abwr}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{ABWR?\glossentry{abwr}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{Gen III?\glossentry{gen3}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{HPR?\glossentry{hpr}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{Gen III?\glossentry{gen3}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{ABWR?\glossentry{abwr}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{ABWR?\glossentry{abwr}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{Gen III?\glossentry{gen3}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{HPR?\glossentry{hpr}|setentrycounter[]{page}\glsnumberformat}{5}
 \glossaryentry{Gen III+?\glossentry{gen3+}|setentrycounter[]{page}\glsnumberformat}{5}
 \glossaryentry{Gen II+?\glossentry{gen2+}|setentrycounter[]{page}\glsnumberformat}{5}
 \glossaryentry{Gen III?\glossentry{gen3}|setentrycounter[]{page}\glsnumberformat}{5}
@@ -139,7 +147,7 @@
 \glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{5}
 \glossaryentry{CCGT?\glossentry{ccgt}|setentrycounter[]{page}\glsnumberformat}{6}
 \glossaryentry{CCGT?\glossentry{ccgt}|setentrycounter[]{page}\glsnumberformat}{6}
-\glossaryentry{CCGT?\glossentry{ccgt}|setentrycounter[]{page}\glsnumberformat}{7}
+\glossaryentry{CCGT?\glossentry{ccgt}|setentrycounter[]{page}\glsnumberformat}{6}
 \glossaryentry{EPR?\glossentry{epr}|setentrycounter[]{page}\glsnumberformat}{7}
 \glossaryentry{EPR?\glossentry{epr}|setentrycounter[]{page}\glsnumberformat}{7}
 \glossaryentry{ABWR?\glossentry{abwr}|setentrycounter[]{page}\glsnumberformat}{7}
@@ -152,26 +160,26 @@
 \glossaryentry{EPR?\glossentry{epr}|setentrycounter[]{page}\glsnumberformat}{7}
 \glossaryentry{EPR?\glossentry{epr}|setentrycounter[]{page}\glsnumberformat}{7}
 \glossaryentry{EPR?\glossentry{epr}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{EPR?\glossentry{epr}|setentrycounter[]{page}\glsnumberformat}{7}
+\glossaryentry{EPR?\glossentry{epr}|setentrycounter[]{page}\glsnumberformat}{8}
 \glossaryentry{Gen IV?\glossentry{gen4}|setentrycounter[]{page}\glsnumberformat}{9}
 \glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{9}
 \glossaryentry{AGR?\glossentry{agr}|setentrycounter[]{page}\glsnumberformat}{9}
 \glossaryentry{Gen IV?\glossentry{gen4}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{LFR?\glossentry{lfr}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{LFR?\glossentry{lfr}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{SFR?\glossentry{sfr}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{SFR?\glossentry{sfr}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{LFR?\glossentry{lfr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{LFR?\glossentry{lfr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{SFR?\glossentry{sfr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{SFR?\glossentry{sfr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{ELSY?\glossentry{elsy}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{ELSY?\glossentry{elsy}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{VHTR?\glossentry{vhtr}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{CCGT?\glossentry{ccgt}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{VHTR?\glossentry{vhtr}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{VHTR?\glossentry{vhtr}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{PBR?\glossentry{pbr}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{PBR?\glossentry{pbr}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{VHTR?\glossentry{vhtr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{PBR?\glossentry{pbr}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{PBR?\glossentry{pbr}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{VHTR?\glossentry{vhtr}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{GFR?\glossentry{gfr}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{GFR?\glossentry{gfr}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{GFR?\glossentry{gfr}|setentrycounter[]{page}\glsnumberformat}{11}
@@ -186,9 +194,9 @@
 \glossaryentry{SFR?\glossentry{sfr}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{LFR?\glossentry{lfr}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{SFR?\glossentry{sfr}|setentrycounter[]{page}\glsnumberformat}{11}
-\glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{11}
-\glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{11}
-\glossaryentry{BWR?\glossentry{bwr}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{PWR?\glossentry{pwr}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{BWR?\glossentry{bwr}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{SCWR?\glossentry{scwr}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{Gen IV?\glossentry{gen4}|setentrycounter[]{page}\glsnumberformat}{12}
@@ -201,14 +209,14 @@
 \glossaryentry{MSR?\glossentry{msr}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{TRISO?\glossentry{triso}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{TRISO?\glossentry{triso}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{ITER?\glossentry{iter}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{ITER?\glossentry{iter}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{ITER?\glossentry{iter}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{ITER?\glossentry{iter}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{Gen III+?\glossentry{gen3+}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{Gen IV?\glossentry{gen4}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{DPA?\glossentry{dpa}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{15}
@@ -218,10 +226,10 @@
 \glossaryentry{BCC?\glossentry{bcc}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{PKA?\glossentry{pka}|setentrycounter[]{page}\glsnumberformat}{15}
-\glossaryentry{ZBL?\glossentry{zbl}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{ZBL?\glossentry{zbl}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{EAM?\glossentry{eam}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{EAM?\glossentry{eam}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{ZBL?\glossentry{zbl}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{ZBL?\glossentry{zbl}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{EAM?\glossentry{eam}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{EAM?\glossentry{eam}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{DFT?\glossentry{dft}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{DFT?\glossentry{dft}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{DFT?\glossentry{dft}|setentrycounter[]{page}\glsnumberformat}{16}
