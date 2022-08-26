@@ -146,27 +146,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{gen4}{online}{}
-    \name{author}{1}{}{%
-      {{hash=KH}{%
-         family={Khartabil},
-         familyi={K\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KH1}
-    \strng{fullhash}{KH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Gen-4 Reactors}
-    \verb{url}
-    \verb http://www.gen-4.org/GIF/About/documents/25-Session2-3-Khartabil.pdf
-    \endverb
-    \field{type}{ONLINE}
-    \field{year}{2013}
-  \endentry
-
   \entry{ftnppcost}{online}{}
     \name{author}{1}{}{%
       {{hash=TF}{%
@@ -233,29 +212,6 @@
     \endverb
     \field{type}{ONLINE}
     \field{year}{2020}
-  \endentry
-
-  \entry{ocw01}{online}{}
-    \name{author}{1}{}{%
-      {{hash=CMO}{%
-         family={Courseware},
-         familyi={C\bibinitperiod},
-         given={MIT\bibnamedelima Open},
-         giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CMO1}
-    \strng{fullhash}{CMO1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Engineering of Nuclear Systems - Lecture 6A}
-    \verb{url}
-    \verb http://ocw.mit.edu/courses/nuclear-engineering/22-06-engineering-of-n
-    \verb uclear-systems-fall-2010/lectures-and-readings/MIT22\%5F06F10\%5Flec0
-    \verb 6a.pdf
-    \endverb
-    \field{type}{ONLINE}
-    \field{year}{2013}
   \endentry
 
   \entry{elasticprofecr}{article}{}
@@ -575,6 +531,29 @@
     \field{year}{2016}
   \endentry
 
+  \entry{ocw01}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CMO}{%
+         family={Courseware},
+         familyi={C\bibinitperiod},
+         given={MIT\bibnamedelima Open},
+         giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMO1}
+    \strng{fullhash}{CMO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Engineering of Nuclear Systems - Lecture 6A}
+    \verb{url}
+    \verb http://ocw.mit.edu/courses/nuclear-engineering/22-06-engineering-of-n
+    \verb uclear-systems-fall-2010/lectures-and-readings/MIT22\%5F06F10\%5Flec0
+    \verb 6a.pdf
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2013}
+  \endentry
+
   \entry{ocw02}{online}{}
     \name{author}{1}{}{%
       {{hash=CMO}{%
@@ -593,6 +572,27 @@
     \verb http://ocw.mit.edu/courses/nuclear-engineering/22-06-engineering-of-n
     \verb uclear-systems-fall-2010/lectures-and-readings/MIT22\%5F06F10\%5Flec0
     \verb 6b.pdf
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2013}
+  \endentry
+
+  \entry{gen4}{online}{}
+    \name{author}{1}{}{%
+      {{hash=KH}{%
+         family={Khartabil},
+         familyi={K\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KH1}
+    \strng{fullhash}{KH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Gen-4 Reactors}
+    \verb{url}
+    \verb http://www.gen-4.org/GIF/About/documents/25-Session2-3-Khartabil.pdf
     \endverb
     \field{type}{ONLINE}
     \field{year}{2013}
@@ -3139,95 +3139,6 @@
     \field{year}{1994}
   \endentry
 
-  \entry{acklandec}{online}{}
-    \name{author}{3}{}{%
-      {{hash=KBB}{%
-         family={Karki},
-         familyi={K\bibinitperiod},
-         given={B\bibnamedelima B},
-         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=AGJ}{%
-         family={Ackland},
-         familyi={A\bibinitperiod},
-         given={G\bibnamedelima J},
-         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=CJ}{%
-         family={Crain},
-         familyi={C\bibinitperiod},
-         given={J},
-         giveni={J},
-      }}%
-    }
-    \strng{namehash}{KBBAGJCJ1}
-    \strng{fullhash}{KBBAGJCJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Elastic instabilities in crystals from ab initio
-  stress–strain relations}
-    \verb{url}
-    \verb http://www.homepages.ed.ac.uk/gja/karki1.pdf
-    \endverb
-    \field{type}{ONLINE}
-    \field{year}{2013}
-  \endentry
-
-  \entry{ghoshstability}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GG}{%
-         family={Ghosh},
-         familyi={G\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GG1}
-    \strng{fullhash}{GG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{A first-principles study of cementite (Fe3C) and its alloyed
-  counterparts: Elastic constants, elastic anisotropies, and isotropic elastic
-  moduli}
-    \field{volume}{5}
-    \field{type}{ARTICLE}
-    \field{journaltitle}{AIP Advances}
-    \field{year}{2015}
-  \endentry
-
-  \entry{ElasticMeltingTemp}{article}{}
-    \name{author}{3}{}{%
-      {{hash=FME}{%
-         family={Fine},
-         familyi={F\bibinitperiod},
-         given={M.\bibnamedelima E.},
-         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=BLD}{%
-         family={Brown},
-         familyi={B\bibinitperiod},
-         given={L.\bibnamedelima D.},
-         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=MHL}{%
-         family={Marcus},
-         familyi={M\bibinitperiod},
-         given={H.\bibnamedelima L.},
-         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FMEBLDMHL1}
-    \strng{fullhash}{FMEBLDMHL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{951\bibrangedash 956}
-    \field{title}{Elastic Constants Versus Melting Temperature in Metals}
-    \field{volume}{18}
-    \field{type}{ARTICLE}
-    \field{journaltitle}{Scripta Metallurgica}
-    \field{year}{1984}
-  \endentry
-
   \entry{finnissinclair}{article}{}
     \name{author}{2}{}{%
       {{hash=FMW}{%
@@ -3762,57 +3673,6 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Nuclear Instruments and Methods in Physics Research B}
     \field{year}{2012}
-  \endentry
-
-  \entry{dlpolymanual}{book}{}
-    \name{author}{2}{}{%
-      {{hash=I}{%
-         family={I.T.Todorov},
-         familyi={I\bibinitperiod},
-      }}%
-      {{hash=SW}{%
-         family={Smith},
-         familyi={S\bibinitperiod},
-         given={W.},
-         giveni={W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ISW1}
-    \strng{fullhash}{ISW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{issue}{4.08}
-    \field{title}{The DL\_POLY\_4 User Manual}
-    \field{type}{BOOK}
-    \field{year}{2016}
-  \endentry
-
-  \entry{lammpsdd}{online}{}
-    \field{labeltitlesource}{title}
-    \field{title}{LAMMPS - Partitioning}
-    \verb{url}
-    \verb https://docs.lammps.org/Developer_par_part.html
-    \endverb
-    \field{type}{ONLINE}
-  \endentry
-
-  \entry{wikivirialstress}{online}{}
-    \name{author}{1}{}{%
-      {{hash=W}{%
-         family={Wikipedia},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{W1}
-    \strng{fullhash}{W1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Virial Stress}
-    \verb{url}
-    \verb https://en.wikipedia.org/wiki/Virial\%5Fstress
-    \endverb
-    \field{type}{ONLINE}
-    \field{year}{2016}
   \endentry
 
   \entry{hepburnfec}{article}{}
@@ -5490,6 +5350,95 @@
     \field{year}{2020}
   \endentry
 
+  \entry{acklandec}{online}{}
+    \name{author}{3}{}{%
+      {{hash=KBB}{%
+         family={Karki},
+         familyi={K\bibinitperiod},
+         given={B\bibnamedelima B},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=AGJ}{%
+         family={Ackland},
+         familyi={A\bibinitperiod},
+         given={G\bibnamedelima J},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Crain},
+         familyi={C\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+    }
+    \strng{namehash}{KBBAGJCJ1}
+    \strng{fullhash}{KBBAGJCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Elastic instabilities in crystals from ab initio
+  stress–strain relations}
+    \verb{url}
+    \verb http://www.homepages.ed.ac.uk/gja/karki1.pdf
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2013}
+  \endentry
+
+  \entry{ghoshstability}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GG}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GG1}
+    \strng{fullhash}{GG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A first-principles study of cementite (Fe3C) and its alloyed
+  counterparts: Elastic constants, elastic anisotropies, and isotropic elastic
+  moduli}
+    \field{volume}{5}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{AIP Advances}
+    \field{year}{2015}
+  \endentry
+
+  \entry{ElasticMeltingTemp}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FME}{%
+         family={Fine},
+         familyi={F\bibinitperiod},
+         given={M.\bibnamedelima E.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=BLD}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={L.\bibnamedelima D.},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MHL}{%
+         family={Marcus},
+         familyi={M\bibinitperiod},
+         given={H.\bibnamedelima L.},
+         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FMEBLDMHL1}
+    \strng{fullhash}{FMEBLDMHL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{951\bibrangedash 956}
+    \field{title}{Elastic Constants Versus Melting Temperature in Metals}
+    \field{volume}{18}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Scripta Metallurgica}
+    \field{year}{1984}
+  \endentry
+
   \entry{simanneal}{article}{}
     \name{author}{3}{}{%
       {{hash=KS}{%
@@ -5580,6 +5529,57 @@
     \endverb
     \field{type}{ONLINE}
     \field{year}{1994}
+  \endentry
+
+  \entry{dlpolymanual}{book}{}
+    \name{author}{2}{}{%
+      {{hash=I}{%
+         family={I.T.Todorov},
+         familyi={I\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ISW1}
+    \strng{fullhash}{ISW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{4.08}
+    \field{title}{The DL\_POLY\_4 User Manual}
+    \field{type}{BOOK}
+    \field{year}{2016}
+  \endentry
+
+  \entry{lammpsdd}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{LAMMPS - Partitioning}
+    \verb{url}
+    \verb https://docs.lammps.org/Developer_par_part.html
+    \endverb
+    \field{type}{ONLINE}
+  \endentry
+
+  \entry{wikivirialstress}{online}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Virial Stress}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Virial\%5Fstress
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2016}
   \endentry
 \enddatalist
 \endinput

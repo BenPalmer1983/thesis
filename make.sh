@@ -125,6 +125,8 @@ python3 share/python/wordcount.py main.tex
 
 pdftotext $output - | wc -w
 
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dQUIET -dBATCH -dPrinted=false -sOutputFile=thesis_small.pdf thesis.pdf
+
 echo "Run time:    "$runtime
 
 

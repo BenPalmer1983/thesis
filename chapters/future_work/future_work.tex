@@ -2,9 +2,7 @@
 \label{chapter:futurework}
 
 \begin{changemargin}{1.0cm}{1.0cm} 
-\abstractpreamble{During the development of the Activity code, a number of simplifications were made.  In future, some of these could be examined more closely to determine how much impact the simplifications have on the end result.  Other simplifications could also be applied, again once their significance has been determined, in order to make the calculation less computationally expensive.\\
-\\
-Two potentials were developed in this work, but they have not been used for the purpose they were created for.  There is room to improve these potentials by providing better fitting data and by continuing the fitting process for longer.  They need to be tested in terms of their ability to model damage cascades and then put into practice using either \acrshort{md} or \acrshort{akmc}.}
+\abstractpreamble{There are a number of improvements that could be made to the Activity code, but the suggestions need to be evaluated in terms of their benefits and computation time.  More experimental data is also required.  As for the potentials developed here, more time might be invested in both \acrshort{dft} calculations and fitting time.  Following this, the potentials must be evaluated using \acrshort{lammps} or DL\_POLY before being used to model grain boundaries.}
 \end{changemargin}
 
 
@@ -23,7 +21,7 @@ A number of improvements could be made to the code.  While Python is a popular l
 
 All versions of the code have relied on data from \acrshort{srim}.  It might be useful to integrate or build an ion transport class so a calculation may be run once, rather than having to first generate the transport data on one platform and run the Activity code on another.  
 
-It should also be investigated whether or not a history of many particles is even needed at all as there already exist average energy stopping tables.  If there is little difference in calculated activity when using the histories of a thousand ions and energy stopping tables, then the stopping tables should be used instead.  It would remove the need to generate the ion history, which in itself is a long process, and it would speed up the computation of target activity.
+It should also be investigated whether or not a history of many particles is even needed at all as there already exists average energy stopping tables.  If there is little difference in calculated activity when using the histories of a thousand ions and energy stopping tables, then the stopping tables should be used instead.  It would remove the need to generate the ion history, which in itself is a long process, and it would speed up the computation of target activity.
 
 The energy range of cross section values and particle types could be extended to higher energies and a wider range of particles including deuterons, tritons and helium ions.  This would require more time but would be useful in the case of the University of Birmingham cyclotron as it is capable of accelerating these particles as well as protons.
 

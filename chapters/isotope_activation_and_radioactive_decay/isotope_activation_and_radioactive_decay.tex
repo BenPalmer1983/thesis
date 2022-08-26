@@ -1,13 +1,9 @@
 \chapter[Isotope Activation and Radioactive Decay]{Isotope Activation and Radioactive Decay}
 
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{Proton sources are more readily available and are less costly than high flux neutron sources.  In terms of particles per second the University of Birmingham cyclotron is able to dose a target with up to $5.85 \times 10^{14}$ protons $cm^{-2}s^{-1}$ with the \acrlong{hfir} able to generate $2.3 \times 10^{15}$ neutrons $cm^{-2}s^{-1}$.\\
+\abstractpreamble{Using a proton source is an attractive alternative to neutron sources as they can generate similar damage doses at a much smaller cost.  Isotopes in a material may be transmuted through either neutron or ion irradiation, so this remains a concern.  The probability of transmutation is modelled using the \acrshort{omp} and this data is available in \acrshort{endf}.\\
 \\
-Where proton or deuteron radiation is used to emulate neutron damage, there still exists an accompanying risk from transmuting atoms in the target material to radioactive isotopes.  The probability of a reaction is arrived at using past experimental work and use of the \acrlong{omp}.  The data for these reactions exist now as \acrshort{endf}s.\\
-\\
-The Bateman equation for radioactive decay was derived in the early 1900s and may be used to calculate the activity of an isotope, and a chain of daughter isotopes, at time t.  The transport of ions through a target may be modelled using the ion transport codes \acrshort{trim} and \acrshort{srim}.\\
-\\
-The Bateman equation is developed further and is coupled with the aforementioned cross section data and ion transport codes into a new code called Acivity, and this is discussed in chapter \ref{chapter:activitycode}.}
+Radioactive isotopes take time to decay to safe levels, and the chain they follow may be complex.  Bateman developed an equation to model this.  This equation is developed further in chapter \ref{chapter:activitycode} resulting in a code called Activity.  This couples the new equation with cross section data and ion trajectories from \acrshort{trim} and \acrshort{srim}.}
 \end{changemargin}
 
 
@@ -307,7 +303,7 @@ The reaction rate is calculated from the microscopic cross section, using eq, \r
 \label{section:nuclearxs}
 \subsubsection{Reaction Cross Sections}
 
-The type of reaction for an individual reaction cannot be determined, but the probability of that reaction happening may be measured and future events predicted.  This data may be gathered experimentally, or it may be calculated using various models.
+The type of reaction for an individual event cannot be determined, but the probability of that reaction happening may be measured and future events predicted.  This data may be gathered experimentally, or it may be calculated using various models.
 
 
 \FloatBarrier
@@ -362,20 +358,20 @@ The Talys code has potentials for protons and neutrons, but it also has potentia
 
 \begin{figure}[tbp]
   \begin{center}
-    \includegraphics[width=.6\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/Fe54-Co55.png}
+    \includegraphics[width=.75\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/Fe54-Co55.png}
     \captionsetup{font={it}}
     \caption{TALYS Fe54-Co55 cross section comparison with experiment \cite{tendlfeco}}
     \label{fig:Fe54-Co55}
   \end{center}
 \end{figure}
 
-Comparing experimental data to the Talys data for $Fe54(p, \gamma)Co55$ shows good agreement between 1MeV and 10MeV\ref{fig:Fe54-Co55}.  There was insufficient experimental data from this source, but the Talys generated data ranges from micro eV up to 100MeV+ (figure \ref{fig:Fe54-Co55}).
+Comparing experimental data to the Talys data for $Fe54(p, \gamma)Co55$ shows good agreement between 1MeV and 10MeV.  There was insufficient experimental data from this source, but the Talys generated data ranges from micro eV up to 100MeV+, as seen in figure \ref{fig:Fe54-Co55}\cite{tendlfeco}.
 
 
 \FloatBarrier
-\subsubsection{PADF}
+\subsubsection{Proton Activation Data File}
 
-The Proton Activation Data File was released in 2007 and contained nuclear reaction data for 2355 target nuclei, ranging from Magnesium (12) to Radon (86) with proton energies up to 150MeV.  The file contains the sum of all individual reactions as well as certain yields, and the data was generated using the TALYS and ALICE/ASH codes, as well as experimental data from Exfor\cite{exforlink}.
+The \acrfull{padf} was released in 2007 and contained nuclear reaction data for 2355 target nuclei, ranging from Magnesium (12) to Radon (86) with proton energies up to 150MeV.  The file contains the sum of all individual reactions as well as certain yields, and the data was generated using the TALYS and ALICE/ASH codes, as well as experimental data from Exfor\cite{exforlink}.
 
 \begin{lstlisting}[style=sFortran,caption={A sample of the Iron-56 PADF data file}]
              Proton Activation Data File                           528 1451   12
@@ -515,7 +511,7 @@ The equation is useful in calculating (near to) the maximum possible activity of
 
 \subsection{Decay Constants: \acrfull{jeff} 3.3 Data File}
 
-\acrshort{jeff} 3.3 is an evaluated data file\cite{jeff311}, meaning it has been evaluated bu a relevant authority.  The quality of the data may affect the health of the public and industry workers, so it must be evaluated.  This particular file is managed by and available through the \acrfull{nea}.
+\acrshort{jeff} 3.3 is an evaluated data file\cite{jeff311}, meaning it has been evaluated by a relevant authority.  The quality of the data may affect the health of the public and industry workers, so it must be evaluated.  This particular file is managed by and available through the \acrfull{nea}.
 
 It is a collection of many data files.  Released in 2017, it also contains several files for incident gammas, protons, deuterons, tritons, helium-3 and alphas from the \acrshort{tendl} 2017 data file.
 

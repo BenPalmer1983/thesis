@@ -329,11 +329,11 @@ The QEEOS code was used to compute the bulk properties and in doing so it create
 
 The distribution of atom separations was measured across the database and these are plotted in figure \ref{fig:dbneighbourseparations}.  The full set is available to download from https://github.com/BenPalmer1983/fepd\_feru\_potential.
 
-All the configurations in this work are \acrshort{fcc} structure crystals.  The QEEOS program (section \ref{section:qeeospyprog} and \ref{code:qeeos}) was used to compute the relaxed lattice parameter and primitive cell basis vector.
+All the configurations in this work are \acrshort{fcc} structure crystals.  The QEEOS program, section \ref{section:qeeospyprog} and appendix \ref{chapter:qeeosappendix}, was used to compute the relaxed lattice parameter and primitive cell basis vector.
 
 This program also automated the computation of equation of state, bulk modulus and elastic constants.  A 32 atom supercell was used for each pure element where the bulk properties were computed.  Ideally a large supercell or a larger number of k-points would have been used but throughout this work the number of processor cores per node ranged from 20-72 and this along with time constraints limits complexity of the calculations.
 
-The data output from the QEEOS code forms a part of the reference database that is discussed in chapter \ref{chap:resultsdftdb}.  A number of configurations used to make up this database are given in appendix \ref{chapter:appendix-fepd-feru-structures}.
+The data output from the QEEOS code forms a part of the reference database.  A number of configurations used to make up this database are given in appendix \ref{chapter:appendix-fepd-feru-structures}.
 
 
 
@@ -341,7 +341,7 @@ The data output from the QEEOS code forms a part of the reference database that 
 
 \subsection{Pure Element Defects}
 
-The potentials are created to apply to \acrshort{fcc} Iron, Palladium, Ruthenium and alloys of Fe-Pd and Fe-Ru.  The configuration database will include several defects:
+The potentials are created to apply to \acrshort{fcc} Iron, Palladium, Ruthenium and alloys of Fe-Pd and Fe-Ru.  It was planned for the reference database to contain configuations with several defects:
 
 \begin{itemize}
 \item octahedral interstitial
@@ -353,7 +353,7 @@ The potentials are created to apply to \acrshort{fcc} Iron, Palladium, Ruthenium
 
 The configurations for these defects were estimated using the perfect crystal positions of 2x2x2 supercells containing 32 atoms.  The defect or vacancy was applied, in some cases changing the total number of atoms, and the defect position was estimated.
 
-A number of calculations, and the chance of a successful convergence in both the electronic state \acrshort{scf} calculation and relaxation calculation, were very sensitive on the input parameters.  Aluminium was not as sensitive and was used to relax the starting configuration.  This was then used as the starting point for either Fe, Pd or Ru.
+A number of calculations, and the chance of a successful convergence in both the electronic state \acrshort{scf} calculation and relaxation calculation, were very sensitive on the input parameters.  \Gls{Al} was not as sensitive and was used to relax the starting configuration.  The atom positions from the \Gls{Al} calculations were then used as the starting point for either Fe, Pd or Ru.
 
 Due to the periodic nature of these calculations, having only 32 atoms was not ideal as each defect cell would be very close to another.  Unfortunately, as stated a number of times, it was a constraint that was needed to be able to complete the work in a reasonable amount of time.
 
@@ -399,7 +399,7 @@ Rather than use a linear random distribution a Gaussian distribution is used.  T
 
 As the amount at which the atoms are perturbed increases, the total force between the atoms also increases.  If the disturbance increased too much, it will likely be useless for our needs as it would be beyond the temperatures relevant to this work, and it may also cause the \acrshort{scf} calculations to fail.  When these calculations were processed the maximum perturbation being too large was the primary factor that caused PWscf to fail.
 
-In the case of the alloy configurations, the randomised positions were loaded into the files.  In all cases convergence failed.  As perturbed atom positions had already been computed for \acrshort{Fe} a new set of input files were created holding the Fe atoms in their perfect locations.  The added \acrshort{Pd} and \acrshort{Ru} atoms were then perturbed slightly from their perfect position within the lattice in order to compute forces and energies at slightly different positions.  Perhaps with more time and refined settings alloys with non-perfect atom positions could be calculated, but this would need to be investigated.
+In the case of the alloy configurations, the randomised positions were loaded into the files.  In all cases convergence failed.  As perturbed atom positions had already been computed for \Gls{Fe} a new set of input files were created holding the \Gls{Fe} atoms in their perfect locations.  The added \Gls{Pd} and \Gls{Ru} atoms were then perturbed slightly from their perfect position within the lattice in order to compute forces and energies at slightly different positions.  Perhaps with more time and refined settings alloys with non-perfect atom positions could be calculated, but this would need to be investigated.
 
 
 \FloatBarrier
@@ -438,6 +438,22 @@ A set of 32 atom configurations were used where the separation between the two f
 \subsection{Defects in Fe-Pd and Fe-Ru Alloys}
 
 Attempts were made to compute simple defects in the alloy but the majority failed to converge, either in the electronic structure \acrshort{scf} iteration or a failure to relax geometrically that then lead to a \acrshort{scf} failure.  Rather than focus too much on this, more time was spent investigating Ru and Pd in a slab of Fe where the calculations were more successful.
+
+
+
+
+\FloatBarrier
+\subsection{DFT Errors, Convergence Failures and Repeat Calculations}
+
+A number of issues were encountered throughout this work when using \acrshort{dft}.  Most failures resulted from either a lack of computational resources or failure to converge due to inappropriate starting configurations or PWscf settings.  These are discussed in detail in appendix \ref{chap:appendixdfterrors} where solutions to a number of the problems are discussed.
+
+
+
+
+
+
+
+
 
 
 

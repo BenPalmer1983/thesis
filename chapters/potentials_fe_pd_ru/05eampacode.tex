@@ -32,72 +32,7 @@ https://github.com/BenPalmer1983/eampa
 
 \subsection{Potentials}
 
-The code has been designed specifically for many body potentials.  These include \acrlong{fs},  \acrlong{eam}, \acrlong{2beam} but not the \acrlong{meam}.  It may be reduced to pair potentials only by setting the density function and embedding functional to \enquote{zero} (see appendix \ref{chapter:potentialfunctions} for function details).  
-
-The function types available for pair, density and embedding are listed in the appendix (\ref{chapter:potentialfunctions}).  More function types may be easily added by editing the module in the Fortran code that defines each function.  Most of the functions are basic mathematical functions that use built in operators and functions.  Several are more complex, such as the cubic spline, quintic spline and knot-to-knot splines.
-
-
-\subsubsection{Cubic and Quintic Splines}
-
-These splines have been discussed in section \ref{section:backgroundpolynomialsplines}.  Several papers have previously used summed polynomial splines that employ the Heaviside-step function to cut off these functions at the desired points.  The cubic term, $(r - r_i)^3$, ensures the function and it's first and second derivatives equal zero and are continuous at the cutoff points.  
-
-\begin{equation}
-\begin{split}
-V(r) = \sum_i^N a_i (r - r_i)^3 H(r_i - r) \\
-\text{where } \\
-H(x) = \left\{ \begin{matrix} 0 & x<0 \\  1 & x >= 0 \end{matrix} \right . 
-\end{split}
-\label{eq:cubicSpline}
-\end{equation}
-
-This was implemented in Fortran so that an efficient vectorised version could be used by Python.  The Fortran code for the spline function is in the appendix \ref{section:appendixcubicspline}.
-
-
-\subsubsection{Knot to Knot Splines}
-
-A Fortran module was created for the knot-to-knot spline function.  It takes a set of knots and splines between the knots pair at a time using the x, y, y' values to construct a set of linear equations to solve. 
-
-\begin{equation}
-  \begin{split}
-    c_0 + c_1 x_A + c_2 {x_A}^2 + c_3 {x_A}^3 = f(x_A) \\
-    0 + c_1 + 2 c_2 {x_A} + 3 c_3 {x_A}^2 = f'(x_A) \\
-    c_0 + c_1 x_B + c_2 {x_B}^2 + c_3 {x_B}^3 = f(x_B) \\
-    0 + c_1 + 2 c_2 {x_B} + 3 c_3 {x_B}^2 = f'(x_B) 
-  \end{split}
-  \label{eq:eqSplineThreeEquations}
-\end{equation}
-
-
-\begin{equation}
-  \begin{split}
-    \begin{bmatrix}
-    1  &  x_A  &  {x_A}^2  &  {x_A}^3     \\
-    0  &  1    &  2 x_A    &  3 {x_A}^2   \\
-    1  &  x_B  &  {x_B}^2  &  {x_B}^3     \\
-    0  &  1    &  2 x_B    &  3 {x_B}^2
-    \end{bmatrix}
-    \begin{bmatrix}
-    c_0 \\
-    c_1 \\ 
-    c_2 \\ 
-    c_3
-    \end{bmatrix}
-    = 
-    \begin{bmatrix}
-    f(x_A) \\
-    f'(x_A) \\ 
-    f(x_B) \\ 
-    f'(x_B)
-    \end{bmatrix}
-  \end{split}
-  \label{eq:eqSplineThreeMatrix}
-\end{equation}
-
-
-A subroutine was created to calculate the coefficients for the 3rd order or 5th order polynomial to spline the two knots.  This subroutine and the remainder of the module are available to view and download on the GitHub repository for this project.  The Fortran code for a cubic and cubic with \acrshort{zbl} inner core knot-to-knot spline are included in the appendix (section \ref{section:appendixcubicknotspline} and section \ref{section:appendixcubicknotsplinezbl}).
-
-
-
+The code has been designed specifically for many body potentials.  The function types available for pair, density and embedding are listed in the appendix (\ref{chapter:potentialfunctions}).  More function types may be easily added by editing the module in the Fortran code that defines each function.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,9 +76,6 @@ During the fitting process, each time the potential is varied, the lattice param
 The fitting process measures how well a potential fits the data when the initial parameters are given and every time a new set of parameters are proposed.  The user assigns weights to configurations and the parameters the potential is being fit to.  The Python code calculates the \acrfull{rss} of the differences between calculated energies, forces, stress, lattice parameter, cohesive energy, bulk modulus and elastic constants and the known values.  The sum of these values measures how well the potential fits.
 
 
-%\subsubsection{Analytic Potential Fitting}
-
-
 
 \subsubsection{Overview of the Potential Fitting Process}
 
@@ -183,19 +115,13 @@ Once the fitting process has completed, the best set of parameters are stored fo
 
 
 
-\subsubsection{Simulated Annealing}
+\subsubsection{Global Optimization}
 
-The simulated annealing algorithm is implemented in the code and is an option available to the user for fitting.  The algorithm looks for better solutions and replaces the current value with better values.  It also accepts worse solutions with a probability that decreases with \enquote{temperature}.  Similar to the way atoms find optimal positions by annealing and cooling, the algorithm starts with a high temperature and it reduces this temperature over time.  It is used to search for the global optimum.
+The EAMPA code has two global optimization algorithms plus a number of other local and global optimization algorithms implemented through SciPy.  These are discussed in greater detail in appendix \ref{chapter:optimization}.
 
-The algorithm is discussed in greater detail in appendix \ref{section:optsimulatedannealing}.  The implementation used in the EAMPA code is included in appendix \ref{section:simulatedannealing}.
+The simulated annealing algorithm is implemented in the code and is an option available to the user for fitting.  The algorithm looks for better solutions and replaces the current value with better values.  It also accepts worse solutions with a probability that decreases with \enquote{temperature}.  
 
-
-
-
-
-\subsubsection{Genetic Algorithm}
-
-The global optimum may be searched for using a genetic algorithm.  The user chooses the parameters for the algorithm and it attempts to search for the optimum parameters to fit the potential functions to the data.
+A genetic algorithm has also been implements.  The user chooses the parameters for the algorithm and it attempts to search for the optimum parameters to fit the potential functions to the data.
 
 The user settings include the following:
 
@@ -204,8 +130,6 @@ The user settings include the following:
 \item \enquote{fresh} (new randomly generated) parameters
 \item number of generations
 \item how often the best results are enhanced with a chosen local optimization algorithm
-%\item number of extinction events
-%\item how often the top solutions are enhanced with linesearch and gradient descent
 \end{itemize}
 
 The function that breeds the parameters randomly combines the parameters from two parent solutions to create two children parameter sets.  The parents are either both from the existing pool of solutions, or a parent from the existing pool with a parent from a fresh set, and the fresh set of parameters changes with each generation (fig. \ref{fig:gabreedevent}).
@@ -218,46 +142,7 @@ The function that breeds the parameters randomly combines the parameters from tw
   \end{center}
 \end{figure}
 
-There is a chance that the child solutions will mutate slightly from the two parent combination, and this chance is set by the user.
-
-During the breed event, the program will check whether or not the two children already exist within the solution pool.  If they are allowed to also enter the pool, the solutions may quickly be filled with clones during the breeding process.  The breed event automatically forces any clones to be varied so they become a different and distinct solution.
-
-Every now and then an extinction event will occur that kills off any poor solutions and replaces them with variations of the better solutions.  The user controls the frequency of the extinction event and the probability that a solution will be removed.
-
-Top solutions are enhanced, at a frequency picked by the user, using a local optimisation algorithm: line-search and gradient descent.  It does require many calculations and adds a substantial amount of time to the procedure, but it uses the gradient of solutions to find more optimal solutions more efficiently that randomly generated or bred solutions.  The algorithm used is given in appendix \ref{section:geneticalgorithm} and is also discussed in appendix \ref{section:optgeneticalgorithm}.
-
-
-\subsubsection{Newton Gauss Optimisation}
-
-The Newton Gauss optimisation estimates the second order derivatives matrix, the Hessian, by multiplying the Jacobian and its transpose.  It is not yet implemented in the code, but may be in the future.  The algorithm is used to find a local optimum, but it can be unstable or return errors.
-
-\begin{equation}
-\begin{split}
-\vec{J}^{T} \vec{J} \vec{p} = \vec{J}^{T} \vec{r} \\
-\vec{r} = \vec{y} - f(\vec{x}, \vec{p})
-\end{split}
-\label{eq:eqNewtonGauss}
-\end{equation}
-
-\subsubsection{Levenberg-Marquardt Optimisation}
-
-The Levenberg-Marquardt algorithm is similar to the Newton-Gauss method, but the estimate for the Hessian does not need to be calculated for each loop of the algorithm.  The parameter, $\lambda$, is changed and the Hessian is updated periodically.  This is not yet implemented in the code, but may be added in the future.
-
-\begin{equation}
-\begin{split}
-\left( \vec{J}^{T} \vec{W} \vec{J} + \lambda diag\left( \vec{J}^{T} \vec{W} \vec{J} \right) \right) \vec{p} = {\left(\vec{J}^{T} \vec{W} \vec{r} \right)} \\
-\vec{r} = \vec{y} - f(\vec{x}, \vec{p})
-\end{split}
-\label{eq:eqLevenbergMarquardt}
-\end{equation}
-
-
-\subsubsection{Python SciPy Optimization Functions}
-
-Additional optimisation functions have been used by importing the SciPy module into the program, and these may be used in conjunction with those listed above.  Several have been used including the bin-hopping, Nealder-Meade and \acrshort{bfgs}.  The bin-hopping was unreliable and crashed on a number of occasions, and preference in this work was given to simulated annealing and genetic algorithms for global parameter searches.  The Nealder-Meade and \acrshort{bfgs} were both used following the run of global optimisation and increased the efficiency of improving the parameters.
-
-
-
+There is a chance that the child solutions will mutate slightly from the two parent combination, and there is also a guard that prevents cloning of solutions.  A random selection of the best parameter sets are enhanced periodically using a local optimization method (\acrshort{cg}, \acrshort{bfgs}) and these are introduced to the pool of parameters.
 
 
 

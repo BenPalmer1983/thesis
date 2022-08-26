@@ -6,12 +6,6 @@
 New materials are required to withstand the extreme conditions in and around the core of these reactors.  Austenitic stainless steels have been an important structural material in the industry, and may continue to be so, providing the problem of \acrfull{igscc} can be addressed.  Doping these steels with \acrfull{pgm}s has been seen to reduce \acrshort{igscc}, but the effects on corrosion resistance are unknown for these steels when irradiated by a radiation field.}
 \end{changemargin}
 
- 
-%Notes:
-%brief history of nuclear power
-%discuss neutron spectra focussing on u-235 fission
-%what materials are used in nuclear power - considerations (damage, transmutation, costs, other environmental factors)
-%focus on austenitic stainless steels
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -22,20 +16,18 @@ New materials are required to withstand the extreme conditions in and around the
 
 \section{Motivation}
 
-I have often questioned the motivation behind this work, and at times it has been a challenge to see the wood through the trees.  To help me focus throughout I would restate the motivation and objectives to myself.
-
 Mass produced steels are not perfect repeating crystals, but are made up of small grains.  \Gls{Cr} is added to steel to make stainless steel, and this is more resistant to corroding than steel.  When steel is in a nuclear reactor, it will have to perform under extreme conditions, such as:
 
 \begin{itemize}
 \item high temperatures
 \item strain cause by high pressures and radiation induced swelling
 \item radiation damage and strains resulting from this damage
-\item a changing environment, for example radiolysis of water and transmutation of isotope due to radiation
+\item a changing environment (radiolysis, isotope transmutation)
 \item corrosive environments while in the reactor
 \item corrosive environments out of the reactor (e.g. fuel cladding in storage)
 \end{itemize}
 
-Radiation damages the steel in a number of ways, including directly knocking atoms out of their place within the lattice structure of the crystalline grains that make up the steel as well as changing the isotopes that make up the steel into new isotopes.  An example of the latter is a neutron reacting with an \Gls{Fe} atom, transmuting it into a \Gls{Co} atom.
+Radiation damages the steel in a number of ways including directly knocking atoms out of place within the lattice, changing the environment (e.g. radiolysis) and transmuting isotopes.  An example of the latter is a neutron transmuting an \Gls{Fe} atom into a \Gls{Co} atom.
 
 In time, the radiation damage causes the percentage of Cr at the surface of the grains to drop, and as it falls the steel loses its protection from corrosion at the boundary between the grains it is made of.  
 
@@ -47,7 +39,7 @@ The materials must be tested before being used in a nuclear reactor.  One way to
 
 The damage that protons cause to a sample is not precisely the same as that cause by neutrons, but it is a cheaper alternative and is a trade-off between the cost and results.  One side effect that proton irradiation shares with neutron irradiation is the creation of radioactive waste.  
 
-The first part of this work investigates exactly how radioactive a samples becomes when irradiated with a proton beam.  An existing set of equations, named after Mathematician Harry Bateman, were modified and a computer program was created to perform the calculation.  The user inputs the constituent elements that make up the material, the ratio of these elements, and the irradiation settings.  The program then estimates how radioactive the sample will be and the predicted gamma energies.
+The first part of this work investigates exactly how radioactive a samples becomes when irradiated with a proton beam.  An existing equation, named after Mathematician Harry Bateman, was modified and a computer program was created to perform the calculation.  The user inputs the constituent elements that make up the material, the ratio of these elements, and the irradiation settings.  The program then estimates how radioactive the sample will be and the predicted gamma energies.
 
 
 \subsection{Part 2: Iron-Palladium and Iron-Ruthenium Potential}
@@ -83,7 +75,7 @@ The primary fuel of commercial nuclear power stations since those first built in
   \end{center}
 \end{figure}
 
-Natural U contains a small percentage of fissile ${}^{235}_{92}U$ (0.7\%) with the rest being its heavier isotope, ${}^{238}_{92}U$.  This heavier isotope is \gls{fissionable}, but its fission cross section is much lower than ${}^{235}_{92}U$ (fig. \ref{figure:u235u238fissionxs}).  Many of the design considerations for reactors in operation revolve around the amount of ${}^{235}_{92}U$ there is in the fuel and having a sufficient flux of thermal neutrons passing through the fuel to sustain a reaction.
+Natural U contains a small percentage of fissile ${}^{235}_{92}U$ (0.7\%) with the rest being its heavier isotope, ${}^{238}_{92}U$.  This heavier isotope is \gls{fissionable}, but its thermal fission cross section is much lower than ${}^{235}_{92}U$ (fig. \ref{figure:u235u238fissionxs}).  Many of the design considerations for reactors in operation revolve around the amount of ${}^{235}_{92}U$ there is in the fuel and having a sufficient flux of thermal neutrons passing through the fuel to sustain a reaction.
 
 A number of \acrshort{gen4} designs use the fast neutron spectrum to fission ${}^{238}_{92}U$ and other fuels such as ${}^{232}_{90}Th$ to generate energy and breed other fissile isotopes (${}^{233}_{92}U$).  By moving away from ${}^{235}_{92}U$, this increases the potential fuel stockpile, but also brings its own set of challenges.
 
@@ -129,7 +121,7 @@ This generation of reactor was designed to exceed the service life of the previo
 
 \section{An Approaching Energy Gap for the UK}
 
-Since Calder Hall, the first commercial nuclear power plant, opened in 1956, the demand on electrical power generation in the UK has tripled (fig \ref{fig:electricityusagesuk}).  There is now a reliance on cheap and clean power from nuclear reactors as these provide a quarter of our electricity.  There are sixteen reactors operational in the UK:  the Magnox reactor at Wylfa and the fourteen \acrshort{agr} reactors are due to be decommissioned by 2023\cite{gen4}, and the remaining \acrshort{pwr} reactor, Sizewell B, is expected to remain operational until 2035\cite{gen4}.
+Since Calder Hall, the first commercial nuclear power plant, opened in 1956, the demand on electrical power generation in the UK has tripled (fig \ref{fig:electricityusagesuk}).  There is now a reliance on cheap and clean power from nuclear reactors as these have provided a quarter of our electricity until recently.
 
 \begin{figure}[tbp]
   \begin{center}
@@ -173,29 +165,6 @@ As a species, we have used combustion of chemicals to generate heat for thousand
 Future designs may help to tackle the problematic waste generated in the past, and by using fertile material to produce fissionable elements other than ${}^{235}_{92}U$, the amount of fuel available to reactors will increase. 
 
 
-
-
-\subsection{Planned and Under Construction in the UK}
-
-
-Several sites have been acquired with the aim of building new nuclear power stations in the UK.  There are five sites and three reactor designs\cite{ocw01}:
-
-\begin{itemize}
-\item Hinkley Point: two Areva \acrshort{epr}s (EDF Energy), Hinkley Point C under construction
-\item Sizewell: two Areva \acrshort{epr}s (EDF Energy)
-\item Wylfa: 2-3 Hitachi \acrshort{abwr}s (Horizon Nuclear Power)
-\item Oldbury: 2-3 Hitachi \acrshort{abwr}s (Horizon Nuclear Power)
-\item Sellafield: 3 Westinghouse AP1000s (NuGeneration)
-\ldots 
-\end{itemize}
-
-Two \acrshort{gen3+} reactors are under construction in the UK: Hinkley Point C 1 and C 2.  These reactors are Areva NP designed \acrshort{gen3+} \acrshort{epr}s, which are \acrshort{pwr}s, and the proposed opening years are 2025 and 2026 respectively.  
-
-There are also plans to construct a third plant at Sizewell that, if accepted, will be an \acrshort{epr} reactor.  Sizewell C will join the decommissioned Sizewell A and operational Sizewell B, that may operate until 2055.
-
-
-
-
 \subsection{Proposed Generation III+ Nuclear Power Plant Designs}
 
 
@@ -210,9 +179,7 @@ There are two \acrshort{epr} reactors planned for the proposed Sizewell C power 
 
 \subsubsection{Westinghouse AP1000}
 
-The 1.1GW Westinghouse AP1000 design is a pressurised water reactor with two primary loops transferring heat from the reactors to heat exchangers.  An enriched $UO_2$ fuel, up to 5\% ${}^{235}_{92}U$, is clad in Zirlo (a proprietary \Gls{Zr} alloy).  
-
-Zirlo is an alternative cladding material to 316 stainless steel, and as a cladding material is absorbs fewer neutrons that steel cladding.  
+The 1.1GW Westinghouse AP1000 design is a pressurised water reactor with two primary loops transferring heat from the reactors to heat exchangers.  An enriched $UO_2$ fuel, up to 5\% ${}^{235}_{92}U$, is clad in Zirlo (a proprietary \Gls{Zr} alloy).  Zirlo is an alternative cladding material to 316 stainless steel, and as a cladding material is absorbs fewer neutrons that steel cladding.  The inlet temperature is $552.55K$ and the outlet temperature is $597.85K$ which is close to the temperature range of the \acrshort{epr}.  The composition of the control rod absorber material includes 304 stainless steel.
 
 \begin{table}[h]
 \begin{center}
@@ -231,7 +198,7 @@ Poisson's Ratio        & 0.30 \cite{elasticprofecr}   & 0.35 \cite{crystengcommz
 \caption{Bulk, shear, Young's modulus comparison: Zirlo and austenitic stainless steel }
 \end{table}
 
-The inlet temperature is $552.55K$ and the outlet temperature is $597.85K$ which is close to the temperature range of the \acrshort{epr}.  The composition of the control rod absorber material includes 304 stainless steel.
+
 
 
 
@@ -260,7 +227,7 @@ The selection of known materials, and the development of new materials, will pla
 \subsubsection{Carnot's Theorem}
 \label{section:carnottheorem}
 
-Whatever the motivation, whether it is to increase profits or to supply energy at greater amounts and for less cost to the consumer, increasing the efficiency of usefully using energy is critical.  Solar panels are continually being improved to edge closer to their theoretical limit and wind turbines are being constructed larger and with more advanced materials to extract as much energy from the wind as possible.
+Whatever the motivation, whether it is to increase profits or to supply energy at greater amounts and for less cost to the consumer, increasing the efficiency of energy production is critical.  Solar panels are continually being improved to edge closer to their theoretical limit and wind turbines are being constructed larger and with more advanced materials to extract as much energy from the wind as possible.
 
 In the same way, power plants that use heat are constantly being developed to improve efficiency.  In the nineteenth century Carnot showed that the maximum possible efficiency of a heat engine is determined by the difference in temperature between the heat reservoirs.\cite{carnottheorem}
 
@@ -296,11 +263,11 @@ Natural U contains 0.7\% ${}^{235}_{92}U$ and 99.3\% ${}^{238}_{92}U$\cite{urani
 
 Fast neutron reactors have been tested and used since the 1950s, and there are several \acrshort{gen4} reactor designs based on this approach.  Given the much larger percentage of ${}^{238}_{92}U$ in natural U, Fast Neutron Reactors have a larger stockpile of fuel.  They also breed fissile isotopes, ${}^{239}_{94}Pu$ and ${}^{241}_{94}Pu$.  This has its advantages and disadvantages.  The advantage is clear, as it produces fissile fuel as it runs, but the creation of fissile materials is a concern as these isotopes could be used in nuclear weapons.
 
-\subsubsection{Lead-cooled Fast Reactors}
+\subsubsection[Lead-cooled Fast Reactors]{\acrlong{lfr}}
 
 Light elements such as the hydrogen in water molecules, or carbon in a graphite stack, allow neutrons to efficiently lose energy.  When neutrons scatter inelastically with heavier elements, such as lead, they lose a much smaller percentage of their energy (figure \ref{fig:inelasticscattering}).
 
-The \acrfull{lfr} uses lead as the coolant.  Lead has a low reaction cross section and, because of its mass relative to a neutron, the kinetic energy lost in collisions is low, keeping more neutrons in the fast energy group.  As the coolant is a liquid, and the boiling point of lead is over $1,970K$, the system will run at atmospheric pressures and any problems associated with void formation due to boiling is removed.  The molten lead will act as a gamma shield and it will be chemically less reactive than the coolant in a \acrfull{sfr} or \acrfull{scwr}.
+The \acrfull{lfr} uses lead as the coolant.  Lead has a low reaction cross section and, because of its mass relative to a neutron, the kinetic energy lost in collisions is low, keeping more neutrons in the fast energy group.  As the coolant is a liquid, and the boiling point of lead is over $1,970K$, the system will run at atmospheric pressures and any problems associated with void formation due to boiling are removed.  The molten lead will act as a gamma shield and it will be chemically less reactive than the coolant in a \acrfull{sfr} or \acrfull{scwr}.
 
 There are several disadvantages to using lead as a coolant.  The melting point of lead is $600K$, so the reactor would need to be heated first for the coolant to become a liquid.  This also restricts the lowest temperature and thus the maximum efficiency possible that may be extracted from the system without the coolant forming a solid.  The density of lead also poses a problem for the structure needed to support the reactor.
 
@@ -317,7 +284,7 @@ There are several disadvantages to using lead as a coolant.  The melting point o
 
 
 \FloatBarrier
-\subsubsection{\acrshort{vhtr}}
+\subsubsection[Very-High-Temperature Reactors]{\acrlong{vhtr}}
 
 Traditional nuclear power plants, as well as coal and the secondary cycle of \acrshort{ccgt} plants, boil water to drive turbines.  \acrfull{vhtr} designs use thermal neutrons and a fissile fuels.  Designs plan to have outlet temperatures of up to $1,270K$\cite{genivgifvhtr}.  With a helium coolant, there are several options.
 
@@ -340,7 +307,7 @@ Hydrogen may be extracted from high temperature water either by a thermo-chemica
 The \acrfull{pbr} is a type of \acrshort{vhtr} where spherical fuel pellets are held in a hopper shaped reactor.  Temperatures within the core may reach $1,770K$, and this will pose a challenge for materials scientists.
 
 \FloatBarrier
-\subsubsection{\acrshort{gfr}}
+\subsubsection[Gas-Cooled Fast Reactors]{\acrlong{gfr}}
 
 The \acrfull{gfr} design is similar to the \acrshort{vhtr}, but rather than use thermal neutrons, it will use fast neutrons.  The design will use a ceramic core and have outlet temperatures up to $1120K$.  This will give similar options to the \acrshort{vhtr} where high temperatures would be used to assist in the production of hydrogen, or it would be used to power a turbine with a secondary steam powered circuit similar to that of a \acrshort{ccgt}.
 
@@ -348,7 +315,7 @@ There are challenges ahead, including the development and testing of advanced ma
 
 
 \FloatBarrier
-\subsubsection{\acrshort{sfr}}
+\subsubsection[Sodium-Cooled Fast Reactors]{\acrlong{sfr}}
 
 Memories of small amounts of sodium, kept under oil in school chemistry labs, being carefully cut and prepared ahead of a violent reaction with water, probably come to mind at the first mention of an \acrfull{sfr}.  It may not be the first choice of an element to use as a coolant, but it does have advantages.  In fact Admiral Rickover once remarked \enquote{if the oceans were filled with liquid sodium, then some crazy scientist would want to build a water-cooled reactor} when the idea of a sodium cooled reactor in a submarine was proposed\cite{atomicaccidents}.
 
@@ -359,7 +326,7 @@ There have been several \acrshort{sfr}s built and operated using this technology
 
 
 
-\subsubsection{\acrshort{scwr}}
+\subsubsection[Super Critical Water Reactors]{\acrlong{scwr}}
 
 At 647K and a pressure of 22.1MPa (approximately 218 atmospheres), water becomes \gls{supercritical} (fig. \ref{fig:waterphasespressuretemp}) and at this point it is neither a liquid or a gas\cite{advancedbiomass}.  The current generation \acrshort{pwr} and \acrshort{bwr} operate at approximately $501-598K$ at 15.2MPa\cite{ocw01} and $551-560K$ at 7.1MPa\cite{ocw02} respectively.
 
@@ -379,7 +346,7 @@ There are side effects to using supercritical water.  It is an oxidant and is no
 
 
 \FloatBarrier
-\subsubsection{\acrlong{msr}}
+\subsubsection[Molten Salt Reactors]{\acrlong{msr}}
 
 \acrshort{msr}s have been operated for over 50 years.  Chemically, salts are very stable, and this has obvious safety benefits over reactors like the \acrshort{sfr}.  The coolants are fluoride salts that have high boiling points which gives the added safety protection of being able to operate at atmospheric pressure, unlike a \acrshort{pwr} where a pressure vessel is needed.
 
@@ -432,7 +399,7 @@ One fuel source for many of the \acrshort{gen3+} and \acrshort{gen4} reactors is
   \end{center}
 \end{figure}
 
-Thermal and slow/intermediate neutrons cause damage in their own particular way, as they are captured by and transmute the atoms within the target material.  Fast neutrons have enough energy to create a great deal of damage, whereby they transfer kinetic energy to an atom in the material that become the \acrfull{pka} in a cascade of atoms through the material.  Neutrons can travel deep into a material, creating many damage cascades through the material until they lose enough  energy or pass through the material completely.
+Thermal and slow/intermediate neutrons cause damage in their own particular way, as they are captured by and transmute the atoms within the target material.  Fast neutrons have enough energy to create a great deal of damage, whereby they transfer kinetic energy to an atom in the material that becomes the \acrfull{pka} in a cascade of atoms through the material.  Neutrons can travel deep into a material, creating many damage cascades throughout until they lose enough energy or pass through completely.
 
 \begin{figure}[htbp]
   \begin{center}
@@ -462,7 +429,7 @@ The intensity of neutron energies from the fission of ${}^{235}_{92}U$ peaks aro
 
 It is difficult to generate large fluxes of neutrons.  When we pick up a cup, press keys on a keyboard, they react because of the electromagnetic force.  Neutrons have no net charge, so they cannot be controlled in a similar way.  Nuclear reactors are the most common way to create large fluxes of neutrons.
 
-This an expensive method, and one that make be inconvenient as the sample being tested would need to be placed inside a reactor.  Rather than do this, ions may be used to replicate the damage cause by neutrons, but in a more controlled and accessible way.
+This an expensive method, and one that may be inconvenient as the sample being tested would need to be placed inside a reactor.  Rather than do this, ions may be used to replicate the damage cause by neutrons, but in a more controlled and accessible way.
 
 A major side effect from the process of nuclear fission is the creation of both radioactive fission fragments and radioactive isotopes within the components and structural material of the reactor.  Low energy protons are not captured as low energy neutrons would be, due to the opposing electromagnetic force between the proton and nucleus of the target atom.  Once the proton energies exceed a few MeV, they have sufficient energy to transmute target nuclei.
 
@@ -477,9 +444,9 @@ By virtue of detailed reaction cross section data files and decay data, the amou
 
 
 \FloatBarrier
-\section{Simulation Material Damage}
+\section{Simulated Material Damage}
 
-Irradiating and testing materials irradiated by both neutrons and protons have a number of drawbacks, including expensive facilities and the creation of radioactive waste.  Simulations may be used to help understand the processes on a mesoscopic scale and make predictions on how the material in question may behave inside a reactor under certain specified conditions.
+Irradiating and testing materials with both neutrons and protons has a number of drawbacks, including expensive facilities and the creation of radioactive waste.  Simulations may be used to help understand the processes on a mesoscopic scale and make predictions on how the materials in question may behave inside a reactor under certain conditions.
 
 Part of this work focuses on the damage of stainless steel by neutrons.  The damage process occurs on time scales and sizes too small to capture experimentally and play back to study.  The theories may not be sufficiently well understood, or are often unsolvable with current techniques.  Modelling helps bridge the gap between theory and experiment. 
 
@@ -553,11 +520,7 @@ There have been attempts to create potentials based on Physics, but the nuances 
 
 In quantum mechanics, the Schr\"{o}dinger equation and the wavefunction of a system describes all that can be known about that quantum system.  Unfortunately, it is very difficult to compute when there are just several electrons in the system.  Many atoms in a system makes this an impossible task with current technology.
 
-\acrfull{dft} replaces the many electron wavefunction with a single electron wavefunction.  Rather that use the positions of all the electrons, which would result in $3^n$ parameters, the charge density, which varies in space with just 3 parameters, is used.
-
-\acrshort{dft} allows for the calculation of the forces between atoms and the energy of that collection of atoms by replacing the many parameters to give the coordinates of many electrons with the three coordinates for the charge density.  From the forces the optimum (relaxed) basis vector and atom positions may be computed, and from the energy of multiple configurations other properties are computable (bulk modulus, elastic constants, etc).
-
-It is important to note that \acrshort{dft} is an exact method for ground state calculations, although in practice approximations do need to be made in order to solve problems.
+\acrfull{dft} replaces the many electron wavefunction with a single electron wavefunction.  Rather that use the positions of all the electrons, which would result in $3^n$ parameters, the charge density is used.  It is important to note that \acrshort{dft} is an exact method for ground state calculations, although in practice approximations do need to be made in order to solve problems.  This is discussed in detail in section \ref{section:dftbackground}.
 
 
 \subsection{Interatomic Potentials for Molecular Dynamics}

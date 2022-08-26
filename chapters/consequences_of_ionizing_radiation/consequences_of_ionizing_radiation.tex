@@ -2,11 +2,7 @@
 \label{chap:backgroundsources}
 
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{Ionizing radiation takes on a number of forms and may be damaging to both materials and organic life.  The various radiations interact differently with matter and cause damage in different ways.\\
-\\
-Radiation may interact directly with matter.  In the case of materials this could mean creating a damage cascade that displaces atoms from their lattice sites.  For organic life, this might mean the damage of strands of \acrshort{dna} leading to the death of a cell or problems when the cell tries to replicate.  Radiation may also change the environment and an example of this is the radiolysis of water.  This change in water chemistry can affect both materials and organic life.\\
-\\
-The amount of damage components in a reactor must withstand are measured in terms of displacements per atom.  Dose to organic life, in particular humans, is measured in a variety of units including Gy, Si and REM.  Determining the amount of dose in each case can be a complicated process, but it is needed to ensure safety of workers and correct testing of materials.}
+\abstractpreamble{This work is concerned with investigating the damage caused to components by ionizing radiation, whilst minimizing the risk to people from the same radiation.  In both cases the radiation can damage the component or cell directly or by changing the environment, for example the radiolysis of water.  The interactions of ionizing radiation and the units of measure are discussed here.}
 \end{changemargin}
 
 
@@ -23,7 +19,7 @@ The amount of damage components in a reactor must withstand are measured in term
 
 \subsection{Introduction}
 
-There are three types of radiation that are useful to discuss in this work: neutrons, ions and gammas, and two of these (neutrons and protons) are of particular interest in this work.  Each of these are capable of ionizing the atoms they interact with, given sufficient energy.  Higher energy and momentum radiation it is able to directly damage materials or the \acrshort{dna} structure of organic life that it interacts with.  Lower momentum ionizing radiation may change the water chemistry of the environment or within the cells of organic lifeforms that is detrimental to life.
+There are three types of radiation that are useful to discuss in this work: neutrons, ions and gammas, and two of these (neutrons and protons) are of particular interest here.  Each of these are capable of ionizing the atoms they interact with, given sufficient energy.  Higher energy and momentum radiation it is able to directly damage materials or the \acrshort{dna} structure of organic life that it interacts with.  Lower momentum ionizing radiation may change the water chemistry of the environment or within the cells of organic lifeforms that is detrimental to life.
 
 
 
@@ -187,9 +183,9 @@ The nuclear force holds nuclei together by exchanging pions and the types of int
 \label{fig:pninteractions}
 \end{figure}
 
-For nuclear reaction and damage calculations, the interaction of neutrons with matter is represented by a cross section (section \ref{section:nuclearxs}).  Cross sections are used to calculate the probability of a certain interaction occurring and are dependent upon the target nucleus, how much of the material the pass through and the energy of the neutron.
+For nuclear reaction and damage calculations, the interaction of neutrons with matter is represented by a cross section (section \ref{section:nuclearxs}).  Cross sections are used to calculate the probability of a certain interaction occurring and are dependent upon the target nucleus, how much of the material they pass through and the energy of the neutron.
 
-The attenuation of neutron radiation is therefore a complicated process.  A much larger thickness of shielding is required to stop neutrons, or at least bring them to thermal temperatures.  Not only this, but the thermalized neutrons must then be captured.  During this process various isotopes within the attenuating shielding will have been transmuted, possibly into radioactive isotopes.  As a rough estimate if a certain amoint of material will attenuate neutrons to 10\% their original flux, then the same amount of material will reduce the flux further to 1\%.  This is however an over simplification and computer codes such as \acrfull{mcnp} and TART more accurately model the transport of neutrons through materials. 
+The attenuation of neutron radiation is therefore a complicated process.  A much larger thickness of shielding is required to stop neutrons, or at least bring them to thermal temperatures.  Not only this, but the thermalized neutrons must then be captured.  During this process various isotopes within the attenuating shielding will have been transmuted, possibly into radioactive isotopes.  As a rough estimate if a certain amount of material will attenuate neutrons to 10\% their original flux, then the same amount of material will reduce the flux further to 1\%.  This is however an over simplification and computer codes such as \acrfull{mcnp} and TART more accurately model the transport of neutrons through materials. 
 
 
 
@@ -215,7 +211,7 @@ h f = (m_e + m_p) c^2 + T_e + T_p
 \end{split}
 \end{equation}
 
-The creation conserves energy and mass, with excess energy carried away as the kintetic energy of the particle pair.  The charge before the creation is zero, as the photon is neutral, and the charge after is also zero, with the -1 of the electron and +1 of the positron cancelling out.  Angular momentum is also conserved; the photon is a spin 1 Boson and, as electrons and positrons are Leptons they have half integer spin, adding up to 1.  Finally, momentum is not conserved in a vacuum, and this is why pair production occurs in the coulomb field of a nucleus.  The nucleus carries away excess momentum, fulfilling this conservation law (fig. \ref{fig:pairproduction}).
+The creation conserves energy and mass, with excess energy carried away as the kinetic energy of the particle pair.  The charge before the creation is zero, as the photon is neutral, and the charge after is also zero, with the -1 of the electron and +1 of the positron cancelling out.  Angular momentum is also conserved; the photon is a spin 1 Boson and, as electrons and positrons are Leptons they have half integer spin, adding up to 1.  Finally, momentum is not conserved in a vacuum, and this is why pair production occurs in the coulomb field of a nucleus.  The nucleus carries away excess momentum, fulfilling this conservation law (fig. \ref{fig:pairproduction}).
 
 \begin{figure}[h]
 \begin{center}
@@ -416,7 +412,7 @@ The reason for attributing a value to a radiation source is usually because we w
 
 Parameters most obvious to quantify radiation are the rate at which the particles are being created as well as the duration the equipment, material or person is exposed to that radiation. 
 
-The energy of the particles will determine the type of damage it is able to do.  We are regularly exposed to visible light with several hundred watts or more per square meter courtesy of the Sun.  The same power from a 1-2MeV gamma source would require far fewer photons, with a million visible light photons for every gamma, but the affect wouldn't be a gentle warming as it would be for sunlight, but a fatal dose of radiation.
+The energy of the particles will determine the type of damage it is able to do.  We are regularly exposed to visible light with several hundred watts or more per square meter from the Sun.  The same power from a 1-2MeV gamma source would require far fewer photons, with one gamma for every million visible light photons being enough.  The affect wouldn't be a gentle warming as it would be for sunlight, but a fatal dose of radiation.
 
 How far the radiation is able to travel is another factor as a certain dose may be received very close to the source, but reduced due to both spherical degradation and attenuation at a distance further away.  This is particularly relevant for charged particle radiation such as alphas and betas.
 
@@ -468,7 +464,7 @@ Both the type of radiation and the type of tissue determine how much of an impac
 \section{Effects of Radiation on Organics}
 \label{section:effectsofradiationorg}
 
-In this work the primary types of radiation considered in this work are neutrons, protons and gammas.  The materials damage will be predominantly due to neutrons, protons and cascade atoms.  Damage to humans will be primarily due to gamma rays. 
+In this work the primary types of radiation considered are neutrons, protons and gammas.  The materials damage will be predominantly due to neutrons, protons and cascade atoms.  Damage to humans will be primarily due to gamma rays. 
 
 It is assumed the process causing the material damage is screened from humans and that this radiation will no longer be present when the proton or neutron irradiated targets are being handled.  It is also assumed that betas and alphas will also be screened during handling with the main source of irradiation that poses a threat to humans being gammas.  For this reason more focus will be given to the effect of gammas on humans.
 
@@ -507,9 +503,7 @@ The regulations on ionising radiation\cite{ionisingradiationregulations} also sp
 
 \subsection{Levels of Radioactivity from Neutron Irradiated Components}
 
-In work by Rodenas and Verdu a MCNP5 simulated neutron flux environment and a thermal flux of $2.5 \times 10^7 n/cm^2 s$ a stainless steel cylinder (20mm diameter and 70mm depth) was irradiated for 10 hours\cite{radionuclides}.  The sample was composed of 65\% Fe, 19\% Cr, 2.0\% Mn, 1.0\% Si by weight as well are small amounts of C, Ti, P and S.  After 10 minutes cooling, it was calculated to have an activity of over $1.0 \times 10^7$ Bq and, by several orders of magnitude, it was predominantly due to the creation of ${}^{56}_{25}Mn$.  
-
-The maximum cross section of ${}^{55}_{25}Mn$ (n, $\gamma$) ${}^{56}_{25}Mn$ is 2.0 barns and the estimated reaction rate at this flux is just over $2.0 \times 10^6$.  As the half life of ${}^{56}_{25}Mn$ is short compared to the irradiation time (a half life of 2.5 hours) the creation rate of Mn \textsuperscript{56} and decay rate equalise, saturating the sample with this isotope.
+In work by Rodenas and Verdu a MCNP5 simulated neutron flux environment with a thermal flux of $2.5 \times 10^7 n/cm^2 s$ on a stainless steel cylinder (20mm diameter and 70mm depth) was modelled as though irradiated for 10 hours\cite{radionuclides}.  The sample was composed of 65\% Fe, 19\% Cr, 2.0\% Mn, 1.0\% Si by weight as well are small amounts of C, Ti, P and S.  After 10 minutes cooling, it was calculated to have an activity of over $1.0 \times 10^7$ Bq and, by several orders of magnitude, it was predominantly due to the creation of ${}^{56}_{25}Mn$.  
 
 \begin{figure}
   \begin{center}
@@ -520,52 +514,20 @@ The maximum cross section of ${}^{55}_{25}Mn$ (n, $\gamma$) ${}^{56}_{25}Mn$ is 
   \end{center}
 \end{figure}
 
-A simple neutron activation code was developed and the predicted ${}^{56}_{25}Mn$ activity vs time was calculated.  The overall gamma dose, for 1 minute of exposure to an 80kg person standing 2m from the source was also calculated.  The calculated activity for ${}^{56}_{25}Mn$ was less than that predicted by Rodenas and Verdu \cite{radionuclides}, but it was within an order of magnitude.  It predicts a total activity after cooling of $2.3\times10^6$ Bq with almost 90\% of this due to ${}^{56}_{25}Mn$.
+The maximum cross section of ${}^{55}_{25}Mn$ (n, $\gamma$) ${}^{56}_{25}Mn$ is 2.0 barns and the estimated reaction rate at this flux is just over $2.0 \times 10^6$.  As the half life of ${}^{56}_{25}Mn$ is short compared to the irradiation time (a half life of 2.5 hours) the creation rate of Mn \textsuperscript{56} and decay rate equalise, saturating the sample with this isotope.
 
-The flux in the within the flux trap of the \acrshort{hfir} is much higher, with high energy neutrons having a flux of $1.0 \time 10^{14}$ neutrons per cm squared per second (fig. \ref{fig:hfir_neutron_flux}).  A second calculation was performed for this increased flux, also irradiated over 10 hours.  The total activity increased from $2.3\times10^6$ Bq to $7.1\times10^{12}$ Bq and the overall dose per minute was much higher, between 40 and 50 milligrey per minute over the first hour of cooling.  These are dangerous levels of radiation.
+The flux in the within the flux trap of the \acrshort{hfir} is much higher, with high energy neutrons having a flux of $1.0 \times 10^{14}$ neutrons per cm squared per second (fig. \ref{fig:hfir_neutron_flux}).  With a seven fold increase in the magnitude of flux when compared to the \acrshort{mcnp} simulation, if the same component were irradiated inside the reactor, much higher levels of radioactivity would be achieved.  
 
-\begin{comment}
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=10.0cm]{chapters/consequences_of_ionizing_radiation/neutron_plots/1/25_Mn_56_activity.eps}
-    \captionsetup{font={it}}
-    \caption{Predicted ${}^{56}_{25}Mn$ activity after neutron irradiation}
-    \label{fig:mn56activity}
-  \end{center}
-\end{figure}
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=10.0cm]{chapters/consequences_of_ionizing_radiation/neutron_plots/1/gamma_dose.eps}
-    \captionsetup{font={it}}
-    \caption{Steel Irradiation Gamma Dose $2.5 \times 10^7$ neutrons per cm squared per second}
-    \label{fig:neutron_irradiated_steel_dose1}
-  \end{center}
-\end{figure}
-\end{comment}
-
-
-
-
-\begin{comment}
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=10.0cm]{chapters/consequences_of_ionizing_radiation/neutron_plots/2/gamma_dose.eps}
-    \captionsetup{font={it}}
-    \caption{Steel Irradiation Gamma Dose $1.0 \times 10^{14}$ neutrons per cm squared per second}
-    \label{fig:neutron_irradiated_steel_dose2}
-  \end{center}
-\end{figure}
-\end{comment}
+Immediately after being removed from the reactor, the radiation due to ${}^{56}_{25}Mn$ would be extremely hazardous.  Although this isotope does have a short half life, it would need to be investigated whether or not other longer lived radioactive isotopes exists within the target that would continue to be hazardous for longer.
 
 
 \FloatBarrier
 
-\subsubsection{Damage to Organics by Radiation}
+\subsection{Damage to Organics by Radiation}
 
-Life evolved on Earth from single cell to multicelled organisms such as humans.  Prokaryotic cells are single celled organisms that do not have a nucleus, an example being bacteria.  Our cells are eukarytic cells, and these have a nucleus that contains the genetic information.  Millions of cells die in our body every second, and our body replaces these by replicating living cells.  During the replication stage, the DNA within the nucleus is copied.    
+Life evolved on Earth from single cell to multicelled organisms such as humans.  Prokaryotic cells are single celled organisms that do not have a nucleus, an example being bacteria.  Our cells are eukarytic cells, and these have a nucleus that contains genetic information.  Millions of cells die in our body every second, and our body replaces these by replicating living cells.  During the replication stage, the DNA within the nucleus is copied.    
 
-DNA is a polymer that is carefully constructed from six components.  Stretched out, it is approximately 2m in length and approximately 25 angstrom wide, and it is neatly contained within the cell nucleus which is on average just 6 microns across.  The structure of DNA is the well known double helix.  The sides of the helix are made from alternating sugars and phosphates, while the \enquote{rungs} of the ladder like structure are pairs of either thymine and adenine or cytosine and guanine.  These pairs are covalently bonded to the sugar-phosphate sides, and by hydrogen bonds to each other.
+DNA is a polymer that is carefully constructed from six components.  Stretched out, it is approximately 2m in length, approximately 25 angstrom wide, and it is contained within the cell nucleus which is on average just 6 microns across.  The structure of DNA is the well known double helix.  The sides of the helix are made from alternating sugars and phosphates, while the \enquote{rungs} of the ladder like structure are pairs of either thymine and adenine or cytosine and guanine.  These pairs are covalently bonded to the sugar-phosphate sides, and by hydrogen bonds to each other.
 
 Mitosis is the part of the cell cycle where the DNA within the nucleus is replicated and the cell splits into two.  There are repair mechanisms, but if the DNA is beyond repair, the cell may die through apoptosis, or it may replicate in an uncontrolled way leading to cancer.
 
@@ -655,7 +617,7 @@ The \acrshort{pka}s create a damage cascade, and their mean recoil energy is dep
   \end{center}
 \end{figure}
 
-The immediate aftermath of interstitials created three damage cascades is shown in fig. \ref{fig:stollerdamage}\cite{stollerdamage1996}.  Damage cascades have been the subject of a number of studies and due to their short time scale and complexity, involving thousands to millions of atoms, are studied with computer simulations.
+The immediate aftermath of interstitials created three damage cascades is shown in figure \ref{fig:stollerdamage}\cite{stollerdamage1996}.  Damage cascades have been the subject of a number of studies and due to their short time scale and complexity, involving thousands to millions of atoms, are studied with computer simulations.
 
 
 

@@ -14,69 +14,67 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.2}Generation I Reactors}{3}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Generation II Reactors}{4}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Generation II Reactors}{3}{subsection.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}Generation III Reactors}{5}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.4}Generation III Reactors}{4}{subsection.1.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}An Approaching Energy Gap for the UK}{5}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Why choose Nuclear Power?}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}Why choose Nuclear Power?}{5}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Planned and Under Construction in the UK}{6}{subsection.1.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Proposed Generation III+ Nuclear Power Plant Designs}{7}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.2}Proposed Generation III+ Nuclear Power Plant Designs}{7}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Areva \acrshort {epr}}{7}{subsubsection*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Westinghouse AP1000}{8}{subsubsection*.9}%
+\contentsline {subsubsection}{Westinghouse AP1000}{7}{subsubsection*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.4}Generation IV}{8}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.3}Generation IV}{7}{subsection.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Goals of Generation IV Reactors}{8}{subsubsection*.11}%
+\contentsline {subsubsection}{Goals of Generation IV Reactors}{7}{subsubsection*.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Carnot's Theorem}{8}{subsubsection*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Fast Reactors}{9}{subsubsection*.13}%
+\contentsline {subsubsection}{Fast Reactors}{8}{subsubsection*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Lead-cooled Fast Reactors}{10}{subsubsection*.15}%
+\contentsline {subsubsection}{Lead-cooled Fast Reactors}{9}{subsubsection*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {vhtr}}{10}{subsubsection*.17}%
+\contentsline {subsubsection}{Very-High-Temperature Reactors}{10}{subsubsection*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {gfr}}{11}{subsubsection*.19}%
+\contentsline {subsubsection}{Gas-Cooled Fast Reactors}{12}{subsubsection*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {sfr}}{11}{subsubsection*.20}%
+\contentsline {subsubsection}{Sodium-Cooled Fast Reactors}{12}{subsubsection*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {scwr}}{12}{subsubsection*.21}%
+\contentsline {subsubsection}{Super Critical Water Reactors}{12}{subsubsection*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrlong {msr}}{12}{subsubsection*.23}%
+\contentsline {subsubsection}{Molten Salt Reactors}{13}{subsubsection*.23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Experimental Fusion Reactors}{13}{subsubsection*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Damage to Nuclear Core Components by Neutrons}{13}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Damage to Nuclear Core Components by Neutrons}{14}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Radiation Damage: Replacing Neutrons with Protons}{14}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Radiation Damage: Replacing Neutrons with Protons}{15}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Simulation Material Damage}{14}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Simulated Material Damage}{15}{section.1.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.6.1}Molecular Dynamics}{15}{subsection.1.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.2}Density Functional Theory}{16}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.2}Density Functional Theory}{17}{subsection.1.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.3}Interatomic Potentials for Molecular Dynamics}{16}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.3}Interatomic Potentials for Molecular Dynamics}{17}{subsection.1.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Consequences of Ionizing Radiation}{17}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Consequences of Ionizing Radiation}{18}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Radiation Types Relevant to This Work}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Radiation Types Relevant to This Work}{18}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Introduction}{17}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Introduction}{18}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Protons and other Ions}{17}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Protons and other Ions}{18}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Neutrons}{18}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Neutrons}{19}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}High Energy Photons}{19}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.4}High Energy Photons}{20}{subsection.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pair Production}{19}{subsubsection*.31}%
+\contentsline {subsubsection}{Pair Production}{20}{subsubsection*.31}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Compton Scattering}{20}{subsubsection*.33}%
 \defcounter {refsection}{0}\relax 
@@ -86,7 +84,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Gamma Attenuation}{21}{subsubsection*.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Microscopic and Macroscopic Cross Sections}{21}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Microscopic and Macroscopic Cross Sections}{22}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Quantifying Radiation and its Effects}{22}{section.2.3}%
 \defcounter {refsection}{0}\relax 
@@ -94,11 +92,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Reference Levels of Radiation}{23}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Levels of Radioactivity from Neutron Irradiated Components}{23}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Levels of Radioactivity from Neutron Irradiated Components}{24}{subsection.2.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Damage to Organics by Radiation}{24}{subsubsection*.42}%
+\contentsline {subsection}{\numberline {2.4.3}Damage to Organics by Radiation}{25}{subsection.2.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Damage Cascades in Metals}{25}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Damage Cascades in Metals}{26}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Austenitic Steels in Nuclear Power}{28}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -108,11 +106,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Grades of Stainless Steel}{28}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ferritic Stainless Steel}{28}{subsubsection*.48}%
+\contentsline {subsubsection}{Ferritic Stainless Steel}{28}{subsubsection*.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Austenitic Stainless Steel}{29}{subsubsection*.50}%
+\contentsline {subsubsection}{Austenitic Stainless Steel}{29}{subsubsection*.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Martensitic Stainless Steel}{30}{subsubsection*.52}%
+\contentsline {subsubsection}{Martensitic Stainless Steel}{30}{subsubsection*.51}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Use In Reactors}{30}{section.3.2}%
 \defcounter {refsection}{0}\relax 
@@ -152,17 +150,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}\acrshort {linac}}{43}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Cyclotron}{44}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Cyclotron}{43}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.3}Synchrotron}{44}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Neutron Sources}{45}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Neutron Sources}{44}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}High-Flux Neutron Reactors}{45}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}High-Flux Neutron Reactors}{44}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrlong {hfir}, Oak Ridge}{45}{subsubsection*.68}%
+\contentsline {subsubsection}{\acrlong {hfir}, Oak Ridge}{44}{subsubsection*.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{NIST Center for Neutron Research}{45}{subsubsection*.70}%
+\contentsline {subsubsection}{NIST Center for Neutron Research}{45}{subsubsection*.69}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Spallation}{46}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
@@ -174,21 +172,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.2}Transmutation of Nuclei by Neutrons and Protons}{49}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Neutron Activation}{49}{subsubsection*.76}%
+\contentsline {subsubsection}{Neutron Activation}{49}{subsubsection*.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Proton Activation}{49}{subsubsection*.77}%
+\contentsline {subsubsection}{Proton Activation}{49}{subsubsection*.76}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.3}Nuclear Reaction Cross Sections}{50}{subsection.4.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Reaction Cross Sections}{50}{subsubsection*.78}%
+\contentsline {subsubsection}{Reaction Cross Sections}{50}{subsubsection*.77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\Acrlong {exfor} Data File}{50}{subsubsection*.79}%
+\contentsline {subsubsection}{\Acrlong {exfor} Data File}{50}{subsubsection*.78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{TALYS and the Optical Model Potential}{50}{subsubsection*.80}%
+\contentsline {subsubsection}{TALYS and the Optical Model Potential}{50}{subsubsection*.79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PADF}{52}{subsubsection*.83}%
+\contentsline {subsubsection}{Proton Activation Data File}{52}{subsubsection*.82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{TENDL 2019 Data Files}{53}{subsubsection*.84}%
+\contentsline {subsubsection}{TENDL 2019 Data Files}{53}{subsubsection*.83}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.4}Radioactive Decay}{53}{subsection.4.4.4}%
 \defcounter {refsection}{0}\relax 
@@ -206,788 +204,780 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.1}Introduction}{58}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Simulating Materials on a Variety of Scales in Time and Space}{59}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Simulating Materials on a Variety of Scales in Time and Space}{58}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Properties of Crystals}{60}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Properties of Crystals}{59}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Introduction}{60}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Introduction}{59}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Equation of State}{60}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.2}Equation of State}{59}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bulk Modulus}{60}{subsubsection*.89}%
+\contentsline {subsubsection}{Bulk Modulus}{60}{subsubsection*.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Murnaghan Equation of State}{61}{subsubsection*.91}%
+\contentsline {subsubsection}{Murnaghan Equation of State}{60}{subsubsection*.90}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Birch-Murnaghan Equation of State}{61}{subsubsection*.92}%
+\contentsline {subsubsection}{Birch-Murnaghan Equation of State}{60}{subsubsection*.91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Rose-Vinet Equation of State}{62}{subsubsection*.93}%
+\contentsline {subsubsection}{Rose-Vinet Equation of State}{61}{subsubsection*.92}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Voigt Notation}{63}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.3}Voigt Notation}{62}{subsection.5.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Elastic Constants}{63}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.4}Elastic Constants}{62}{subsection.5.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.5}Calculating Elastic Constants for a Cubic Crystal}{64}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.5}Calculating Elastic Constants for a Cubic Crystal}{63}{subsection.5.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.6}Calculating Elastic Constants for Orthorhombic Crystal}{65}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.6}Calculating Elastic Constants for Orthorhombic Crystal}{64}{subsection.5.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.7}Stability Conditions}{67}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.7}Stability Conditions and Other Properties}{66}{subsection.5.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.8}Computing Values from Elastic Constants}{67}{subsection.5.2.8}%
+\contentsline {section}{\numberline {5.3}Choice of Function}{66}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.9}Correlation of Melting Temperature in Metals with Elastic Constants}{69}{subsection.5.2.9}%
+\contentsline {subsection}{\numberline {5.3.1}Introduction}{66}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Choice of Function}{70}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.2}Pair Potentials}{67}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Introduction}{70}{subsection.5.3.1}%
+\contentsline {subsubsection}{Lennard-Jones}{67}{subsubsection*.94}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Pair Potentials}{70}{subsection.5.3.2}%
+\contentsline {subsubsection}{Morse Potential}{67}{subsubsection*.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Lennard-Jones}{70}{subsubsection*.96}%
+\contentsline {subsubsection}{Buckingham Potential}{68}{subsubsection*.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Morse Potential}{71}{subsubsection*.98}%
+\contentsline {subsubsection}{\acrlong {zbl} Universal Potential Function}{69}{subsubsection*.100}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Buckingham Potential}{71}{subsubsection*.100}%
+\contentsline {subsection}{\numberline {5.3.3}Many Body Potentials}{69}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrlong {zbl} Universal Potential Function}{72}{subsubsection*.102}%
+\contentsline {subsubsection}{Finnis-Sinclair}{69}{subsubsection*.102}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Many Body Potentials}{73}{subsection.5.3.3}%
+\contentsline {subsubsection}{\Acrlong {eam}}{70}{subsubsection*.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Finnis-Sinclair}{73}{subsubsection*.104}%
+\contentsline {subsubsection}{\Acrlong {2beam}}{71}{subsubsection*.104}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\Acrlong {eam}}{73}{subsubsection*.105}%
+\contentsline {subsubsection}{\Acrlong {meam}}{74}{subsubsection*.106}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\Acrlong {2beam}}{74}{subsubsection*.106}%
+\contentsline {subsection}{\numberline {5.3.4}EAM and Two-Band EAM Functions}{75}{subsection.5.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\Acrlong {meam}}{77}{subsubsection*.108}%
+\contentsline {subsubsection}{Tending to Zero at the Cutoff Radius}{75}{subsubsection*.107}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Function Types used by EAM and Two-Band EAM}{78}{subsection.5.3.4}%
+\contentsline {subsubsection}{Collisions and Interatomic Potentials}{75}{subsubsection*.108}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Polynomial Splines}{78}{subsubsection*.109}%
+\contentsline {section}{\numberline {5.4}EAM Potential Fitting}{76}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Polynomial Knot to Knot Splines}{79}{subsubsection*.110}%
+\contentsline {subsection}{\numberline {5.4.1}Sacrificing Physical Elegance}{76}{subsection.5.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Tending to Zero at the Cutoff Radius}{81}{subsubsection*.112}%
+\contentsline {subsection}{\numberline {5.4.2}Exact Fitting to Parameters}{76}{subsection.5.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Collisions and Interatomic Potentials}{81}{subsubsection*.113}%
+\contentsline {subsection}{\numberline {5.4.3}Force Matching}{76}{subsection.5.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}EAM Potential Fitting}{81}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.4}Pair and Embedding Symmetry Transforms}{77}{subsection.5.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Sacrificing Physical Elegance}{81}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}Classical Molecular Dynamics}{78}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Exact Fitting to Parameters}{82}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.5.1}Introduction}{78}{subsection.5.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Force Matching}{82}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.5.2}Molecular Dynamics Codes}{78}{subsection.5.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.4}Pair and Embedding Symmetry Transforms}{83}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.5.3}Velocity Verlet Algorithm}{80}{subsection.5.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Classical Molecular Dynamics}{84}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Existing Potential Fitting Programs}{81}{section.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Introduction}{84}{subsection.5.5.1}%
+\contentsline {subsubsection}{Bonny Quadratic Program Fitting}{81}{subsubsection*.112}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Molecular Dynamics Codes}{84}{subsection.5.5.2}%
+\contentsline {subsubsection}{Hepburn FitPot}{81}{subsubsection*.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}Calculating Energy, Force and Stress}{86}{subsection.5.5.3}%
+\contentsline {subsubsection}{Brommer PotFit}{81}{subsubsection*.114}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Neighbour List}{86}{subsubsection*.117}%
+\contentsline {subsubsection}{Sheng Modified PotFit}{81}{subsubsection*.115}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Computing Total Energy}{89}{subsubsection*.121}%
+\contentsline {section}{\numberline {5.7}Density Functional Theory}{81}{section.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Computing Forces on Atoms}{89}{subsubsection*.122}%
+\contentsline {subsection}{\numberline {5.7.1}Motivation For Using \acrshort {dft} In This Work}{82}{subsection.5.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Computing Stress}{90}{subsubsection*.123}%
+\contentsline {subsection}{\numberline {5.7.2}Brief Overview of DFT}{82}{subsection.5.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pseudo Code for the Energy, Force and Stress Subroutine}{90}{subsubsection*.124}%
+\contentsline {subsection}{\numberline {5.7.3}\acrlong {tise}}{82}{subsection.5.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.4}Velocity Verlet Algorithm}{91}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.7.4}Many Body \acrshort {tise}}{83}{subsection.5.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.5}Selecting a Time Scale}{92}{subsection.5.5.5}%
+\contentsline {subsection}{\numberline {5.7.5}Born-Oppenheimer}{84}{subsection.5.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Existing Potential Fitting Programs}{93}{section.5.6}%
+\contentsline {subsection}{\numberline {5.7.6}Crystals, Reciprocal Space and Bloch Theorem}{85}{subsection.5.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bonny Quadratic Program Fitting}{93}{subsubsection*.126}%
+\contentsline {subsubsection}{Bloch Theorem}{85}{subsubsection*.118}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Hepburn FitPot}{93}{subsubsection*.127}%
+\contentsline {subsection}{\numberline {5.7.7}\Acrlong {hk} Theorem}{88}{subsection.5.7.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Brommer PotFit}{93}{subsubsection*.128}%
+\contentsline {subsection}{\numberline {5.7.8}Kohn-Sham Equations}{91}{subsection.5.7.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sheng Modified PotFit}{93}{subsubsection*.129}%
+\contentsline {subsection}{\numberline {5.7.9}Self-Consistent Solution}{91}{subsection.5.7.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Density Functional Theory}{93}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.10}Exchange-Correlation Energy}{92}{subsection.5.7.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.1}Motivation For Using \acrshort {dft} In This Work}{94}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.11}Pseudopotentials}{93}{subsection.5.7.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.2}Brief Overview of DFT}{94}{subsection.5.7.2}%
+\contentsline {subsubsection}{\acrshort {lda}}{94}{subsubsection*.125}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.3}\acrlong {tise}}{94}{subsection.5.7.3}%
+\contentsline {subsubsection}{\acrshort {lsda}}{95}{subsubsection*.126}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.4}Many Body \acrshort {tise}}{95}{subsection.5.7.4}%
+\contentsline {subsubsection}{\acrshort {gga}}{95}{subsubsection*.127}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.5}Born-Oppenheimer}{96}{subsection.5.7.5}%
+\contentsline {subsubsection}{\acrshort {lsda} vs \acrshort {gga} Potentials}{96}{subsubsection*.128}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.6}Crystals, Reciprocal Space and Bloch Theorem}{97}{subsection.5.7.6}%
+\contentsline {subsection}{\numberline {5.7.12}Ecut, K-Point Integration and Smearing}{97}{subsection.5.7.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bloch Theorem}{97}{subsubsection*.132}%
+\contentsline {subsection}{\numberline {5.7.13}Ferromagnetism, Antiferromagnetism and Hund's Rule}{101}{subsection.5.7.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.7}\Acrlong {hk} Theorem}{100}{subsection.5.7.7}%
+\contentsline {subsection}{\numberline {5.7.14}Collinear and Non-Collinear DFT Calculations}{102}{subsection.5.7.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.8}Kohn-Sham Equations}{103}{subsection.5.7.8}%
+\contentsline {chapter}{\numberline {6}Predicting Activation}{104}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.9}Self-Consistent Solution}{103}{subsection.5.7.9}%
+\contentsline {section}{\numberline {6.1}Introduction}{104}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.10}Exchange-Correlation Energy}{105}{subsection.5.7.10}%
+\contentsline {section}{\numberline {6.2}Activation by Ion Irradiation}{105}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.11}Pseudopotentials}{105}{subsection.5.7.11}%
+\contentsline {subsection}{\numberline {6.2.1}Laplace Transform}{105}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {lda}}{106}{subsubsection*.139}%
+\contentsline {subsection}{\numberline {6.2.2}Constructing the Differential Equations}{105}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {lsda}}{107}{subsubsection*.140}%
+\contentsline {subsection}{\numberline {6.2.3}Numerical Inversion of the Laplace Transform}{106}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {gga}}{107}{subsubsection*.141}%
+\contentsline {subsection}{\numberline {6.2.4}Analytic Solution by Partial Fraction Expansion}{107}{subsection.6.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrshort {lsda} vs \acrshort {gga} Potentials}{108}{subsubsection*.142}%
+\contentsline {subsection}{\numberline {6.2.5}Preference: Analytic over Numeric}{108}{subsection.6.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.12}Ecut, K-Point Integration and Smearing}{109}{subsection.5.7.12}%
+\contentsline {section}{\numberline {6.3}Activity Code}{109}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.13}Brief History of Magnetism}{113}{subsection.5.7.13}%
+\contentsline {subsection}{\numberline {6.3.1}Computer Code Development}{109}{subsection.6.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.14}Magnetism: Moving Charges and Spin}{114}{subsection.5.7.14}%
+\contentsline {subsection}{\numberline {6.3.2}Extended Bateman Equations}{109}{subsection.6.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.15}Ferromagnetism, Antiferromagnetism and Hund's Rule}{114}{subsection.5.7.15}%
+\contentsline {subsection}{\numberline {6.3.3}Talys Generated Proton Cross Section Database}{111}{subsection.6.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7.16}Collinear and Non-Collinear DFT Calculations}{115}{subsection.5.7.16}%
+\contentsline {subsection}{\numberline {6.3.4}Ion Trajectory Data}{114}{subsection.6.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Predicting Activation}{117}{chapter.6}%
+\contentsline {subsection}{\numberline {6.3.5}Activity Code Assumptions}{115}{subsection.6.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduction}{117}{section.6.1}%
+\contentsline {subsection}{\numberline {6.3.6}Foil Activation by Neutron Irradiation}{115}{subsection.6.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Activation by Ion Irradiation}{118}{section.6.2}%
+\contentsline {section}{\numberline {6.4}Simulating with SRIM - Iron}{115}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Laplace Transform}{118}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.5}Cyclotron Irradiated Iron}{115}{section.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Constructing the Differential Equations}{118}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.5.1}Cyclotron Beam Line}{115}{subsection.6.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Numerical Inversion of the Laplace Transform}{119}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.5.2}Creation of Cobalt-55}{118}{subsection.6.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.4}Analytic Solution by Partial Fraction Expansion}{120}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.5.3}Measurement of Sample Activity}{119}{subsection.6.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.5}Preference: Analytic over Numeric}{121}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.5.4}Prediction of Activity}{121}{subsection.6.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Activity Code}{122}{section.6.3}%
+\contentsline {subsection}{\numberline {6.5.5}Estimation of Cobalt-55 Radioactivity}{121}{subsection.6.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Computer Code Development}{122}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.5.6}Simulating Proton Irradiated Iron with Actvity V1}{123}{subsection.6.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Extended Bateman Equations}{122}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.5.7}Simulating Proton Irradiated Iron with Actvity V2}{123}{subsection.6.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}Talys Generated Proton Cross Section Database}{124}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.5.8}Comparing Experimental Results with Calculated Values}{126}{subsection.6.5.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.4}Ion Trajectory Data}{127}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.6}100DPA Predicted Activity}{126}{section.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.5}Activity Code Assumptions}{128}{subsection.6.3.5}%
+\contentsline {section}{\numberline {6.7}Proton Irradiated Molybdenum}{127}{section.6.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.6}Foil Activation by Neutron Irradiation}{128}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.7.1}Experimental Irradiation - Molybdenum}{128}{subsection.6.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Simulating with SRIM - Iron}{128}{section.6.4}%
+\contentsline {subsection}{\numberline {6.7.2}Estimating the Activity of Proton Irradiated Molybdenum}{128}{subsection.6.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Cyclotron Irradiated Iron}{128}{section.6.5}%
+\contentsline {subsection}{\numberline {6.7.3}Simulated Proton Irradiated Molybdenum}{130}{subsection.6.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.1}Cyclotron Beam Line}{128}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.8}Proton Irradiated Molybdenum Doped Steel}{132}{section.6.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.2}Creation of Cobalt-55}{131}{subsection.6.5.2}%
+\contentsline {section}{\numberline {6.9}Media Accessible via GitHub}{133}{section.6.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.3}Measurement of Sample Activity}{132}{subsection.6.5.3}%
+\contentsline {chapter}{\numberline {7}Potentials for Fe, Ru, Pd}{134}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.4}Prediction of Activity}{134}{subsection.6.5.4}%
+\contentsline {section}{\numberline {7.1}Introduction}{134}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.5}Estimation of Cobalt-55 Radioactivity}{134}{subsection.6.5.5}%
+\contentsline {subsection}{\numberline {7.1.1}Interatomic Potential Fitting}{134}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.6}Simulating Proton Irradiated Iron with Actvity V1}{136}{subsection.6.5.6}%
+\contentsline {subsection}{\numberline {7.1.2}Existing Experimental \& DFT Bulk Property Data}{135}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.7}Simulating Proton Irradiated Iron with Actvity V2}{136}{subsection.6.5.7}%
+\contentsline {section}{\numberline {7.2}DFT Settings}{137}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.8}Comparing Experimental Results with Calculated Values}{139}{subsection.6.5.8}%
+\contentsline {subsection}{\numberline {7.2.1}Quantum Espresso}{137}{subsection.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}100DPA Predicted Activity}{139}{section.6.6}%
+\contentsline {subsection}{\numberline {7.2.2}Pseudopotential Selection}{137}{subsection.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.7}Proton Irradiated Molybdenum}{140}{section.6.7}%
+\contentsline {subsection}{\numberline {7.2.3}Smearing Type}{138}{subsection.7.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7.1}Experimental Irradiation - Molybdenum}{141}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {7.2.4}Parameter Convergence}{138}{subsection.7.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7.2}Estimating the Activity of Proton Irradiated Molybdenum}{141}{subsection.6.7.2}%
+\contentsline {subsubsection}{Ecutwfc and Ecutrho}{139}{subsubsection*.178}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7.3}Simulated Proton Irradiated Molybdenum}{143}{subsection.6.7.3}%
+\contentsline {subsubsection}{K-Points and Smearing Value}{139}{subsubsection*.179}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.8}Proton Irradiated Molybdenum Doped Steel}{145}{section.6.8}%
+\contentsline {subsection}{\numberline {7.2.5}QECONVERGE Python Code}{139}{subsection.7.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.9}Media Accessible via GitHub}{146}{section.6.9}%
+\contentsline {subsection}{\numberline {7.2.6}DFT Parameter Convergence}{140}{subsection.7.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Potentials for Fe, Ru, Pd}{147}{chapter.7}%
+\contentsline {section}{\numberline {7.3}DFT Results}{144}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Introduction}{147}{section.7.1}%
+\contentsline {subsection}{\numberline {7.3.1}QEEOS Python Program}{144}{subsection.7.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Interatomic Potential Fitting}{148}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.3.2}DFT Calculations of Bulk Properties}{145}{subsection.7.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Existing Experimental \& DFT Bulk Property Data}{148}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.3.3}Relaxed Crystal Calculations}{145}{subsection.7.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}DFT Settings}{150}{section.7.2}%
+\contentsline {subsection}{\numberline {7.3.4}Elastic Constants}{147}{subsection.7.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Quantum Espresso}{150}{subsection.7.2.1}%
+\contentsline {subsubsection}{FCC Aluminium}{147}{subsubsection*.189}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Pseudopotential Selection}{150}{subsection.7.2.2}%
+\contentsline {subsubsection}{BCC Iron}{148}{subsubsection*.190}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.3}Smearing Type}{151}{subsection.7.2.3}%
+\contentsline {subsubsection}{FCC Iron}{148}{subsubsection*.191}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.4}Parameter Convergence}{151}{subsection.7.2.4}%
+\contentsline {subsubsection}{FCC Palladium}{149}{subsubsection*.193}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ecutwfc and Ecutrho}{152}{subsubsection*.192}%
+\contentsline {subsubsection}{FCC Ruthenium}{150}{subsubsection*.195}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{K-Points and Smearing Value}{152}{subsubsection*.193}%
+\contentsline {subsection}{\numberline {7.3.5}Calibrating the Cohesive Energies}{151}{subsection.7.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.5}QECONVERGE Python Code}{152}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.3.6}DFT Reference Database}{152}{subsection.7.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.6}DFT Parameter Convergence}{153}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.3.7}Pure Element Defects}{152}{subsection.7.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}DFT Results}{157}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.8}Alloy Atom Positions for Pd and Ru}{154}{subsection.7.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}QEEOS Python Program}{157}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.9}Configurations with Randomised Positions}{154}{subsection.7.3.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}DFT Calculations of Bulk Properties}{158}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.10}Surface Energy Calculations}{155}{subsection.7.3.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.3}Relaxed Crystal Calculations}{158}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.11}Defects in Fe-Pd and Fe-Ru Alloys}{156}{subsection.7.3.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.4}Elastic Constants}{160}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.12}DFT Errors, Convergence Failures and Repeat Calculations}{156}{subsection.7.3.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{FCC Aluminium}{160}{subsubsection*.203}%
+\contentsline {section}{\numberline {7.4}EAMPA}{156}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BCC Iron}{161}{subsubsection*.204}%
+\contentsline {subsection}{\numberline {7.4.1}Introduction}{156}{subsection.7.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{FCC Iron}{161}{subsubsection*.205}%
+\contentsline {subsection}{\numberline {7.4.2}Potentials}{157}{subsection.7.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{FCC Palladium}{162}{subsubsection*.207}%
+\contentsline {subsection}{\numberline {7.4.3}Calculations}{157}{subsection.7.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{FCC Ruthenium}{163}{subsubsection*.209}%
+\contentsline {subsubsection}{Energy, Force and Stress Calculations}{157}{subsubsection*.204}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.5}Calibrating the Cohesive Energies}{164}{subsection.7.3.5}%
+\contentsline {subsubsection}{Geometry and Coordinate Optimisation}{157}{subsubsection*.205}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.6}DFT Reference Database}{165}{subsection.7.3.6}%
+\contentsline {subsubsection}{Bulk Property Calculations}{157}{subsubsection*.206}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.7}Pure Element Defects}{165}{subsection.7.3.7}%
+\contentsline {subsubsection}{RSS - How Well The Potential Fits Experimental \& DFT Data}{158}{subsubsection*.207}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.8}Alloy Atom Positions for Pd and Ru}{167}{subsection.7.3.8}%
+\contentsline {subsubsection}{Overview of the Potential Fitting Process}{158}{subsubsection*.208}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.9}Configurations with Randomised Positions}{167}{subsection.7.3.9}%
+\contentsline {subsubsection}{Global Optimization}{159}{subsubsection*.209}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.10}Surface Energy Calculations}{168}{subsection.7.3.10}%
+\contentsline {subsubsection}{Minimising Runtime}{160}{subsubsection*.211}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.11}Defects in Fe-Pd and Fe-Ru Alloys}{169}{subsection.7.3.11}%
+\contentsline {subsubsection}{Effective Gauge Transforms}{160}{subsubsection*.212}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Issues to Overcome}{169}{section.7.4}%
+\contentsline {subsubsection}{LAMMPS Format}{160}{subsubsection*.213}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.1}Insufficient Memory}{169}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.4}Verifying Energy and Force Calculations with LAMMPS}{161}{subsection.7.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.2}Scratch Restrictions}{169}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}Application of the EAMPA Code}{161}{section.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.3}Caching Repeat Calculations}{170}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.5.1}Potential Transferability}{161}{subsection.7.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.4}Adjustment of DFT Parameters}{170}{subsection.7.4.4}%
+\contentsline {subsection}{\numberline {7.5.2}Fitting Potentials with EAMPA}{162}{subsection.7.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.5}Not Straying Too Far From Reality}{171}{subsection.7.4.5}%
+\contentsline {subsubsection}{Choice of Function and Functional}{162}{subsubsection*.217}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.6}Trial Parameters for Iron with and Octahedral Defect}{172}{subsection.7.4.6}%
+\contentsline {subsubsection}{Searching Parameter Space}{163}{subsubsection*.219}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}EAMPA}{173}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.3}Iron-Palladium and Iron-Ruthenium Potentials}{164}{subsection.7.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.1}Introduction}{173}{subsection.7.5.1}%
+\contentsline {subsubsection}{Reference Database}{164}{subsubsection*.220}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.2}Potentials}{173}{subsection.7.5.2}%
+\contentsline {subsubsection}{Potentials}{165}{subsubsection*.221}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cubic and Quintic Splines}{173}{subsubsection*.220}%
+\contentsline {section}{\numberline {7.6}DL\_POLY Contribution}{168}{section.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Knot to Knot Splines}{174}{subsubsection*.221}%
+\contentsline {chapter}{\numberline {8}Conclusions}{169}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.3}Calculations}{174}{subsection.7.5.3}%
+\contentsline {section}{\numberline {8.1}Inter Granular Stress Corrosion Cracking}{169}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Energy, Force and Stress Calculations}{174}{subsubsection*.222}%
+\contentsline {section}{\numberline {8.2}Predicting Ion Induced Radioactivity}{170}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Geometry and Coordinate Optimisation}{175}{subsubsection*.223}%
+\contentsline {subsection}{\numberline {8.2.1}Modified Equation}{170}{subsection.8.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bulk Property Calculations}{175}{subsubsection*.224}%
+\contentsline {subsection}{\numberline {8.2.2}Activity Code}{170}{subsection.8.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{RSS - How Well The Potential Fits Experimental \& DFT Data}{175}{subsubsection*.225}%
+\contentsline {subsection}{\numberline {8.2.3}Iron Irradiation}{171}{subsection.8.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Overview of the Potential Fitting Process}{175}{subsubsection*.226}%
+\contentsline {subsection}{\numberline {8.2.4}Molybdenum Irradiation}{171}{subsection.8.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Simulated Annealing}{176}{subsubsection*.227}%
+\contentsline {subsection}{\numberline {8.2.5}Beam Flux Reduction and Gamma Attenuation}{171}{subsection.8.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Genetic Algorithm}{177}{subsubsection*.228}%
+\contentsline {subsection}{\numberline {8.2.6}More Experimental Data Required}{172}{subsection.8.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Newton Gauss Optimisation}{177}{subsubsection*.230}%
+\contentsline {subsection}{\numberline {8.2.7}100DPA Activity Predictions}{172}{subsection.8.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Levenberg-Marquardt Optimisation}{178}{subsubsection*.231}%
+\contentsline {subsection}{\numberline {8.2.8}Original Contribution}{172}{subsection.8.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Python SciPy Optimization Functions}{178}{subsubsection*.232}%
+\contentsline {section}{\numberline {8.3}Derived Potentials}{173}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Minimising Runtime}{178}{subsubsection*.233}%
+\contentsline {subsection}{\numberline {8.3.1}Restricting Potentials to Binary Alloys}{173}{subsection.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Effective Gauge Transforms}{179}{subsubsection*.234}%
+\contentsline {subsection}{\numberline {8.3.2}Collinear Spin \acrshort {dft}}{173}{subsection.8.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{LAMMPS Format}{179}{subsubsection*.235}%
+\contentsline {subsection}{\numberline {8.3.3}Automated Convergence Calculations}{173}{subsection.8.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.5.4}Verifying Energy and Force Calculations with LAMMPS}{179}{subsection.7.5.4}%
+\contentsline {subsection}{\numberline {8.3.4}Bulk Property Calculations}{173}{subsection.8.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}Application of the EAMPA Code}{179}{section.7.6}%
+\contentsline {subsection}{\numberline {8.3.5}Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}{174}{subsection.8.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.1}Potential Transferability}{179}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {8.3.6}Iron-Palladium and Iron-Ruthenium Potentials}{174}{subsection.8.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.2}Fitting Potentials with EAMPA}{181}{subsection.7.6.2}%
+\contentsline {subsection}{\numberline {8.3.7}Original Contribution}{175}{subsection.8.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Choice of Function and Functional}{181}{subsubsection*.239}%
+\contentsline {section}{\numberline {8.4}Two-Band EAM Contribution to DL-Poly}{175}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Searching Parameter Space}{182}{subsubsection*.241}%
+\contentsline {chapter}{\numberline {9}Future Work}{176}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.3}Iron-Palladium and Iron-Ruthenium Potentials}{183}{subsection.7.6.3}%
+\contentsline {section}{\numberline {9.1}Activity Code}{176}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Reference Database}{183}{subsubsection*.242}%
+\contentsline {subsection}{\numberline {9.1.1}Experimental Activity Readings for Ion Irradiated Targets}{176}{subsection.9.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Potentials}{183}{subsubsection*.243}%
+\contentsline {subsection}{\numberline {9.1.2}Code Improvements}{176}{subsection.9.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.7}DL\_POLY Contribution}{187}{section.7.7}%
+\contentsline {section}{\numberline {9.2}Potential Fitting and MD Simulations}{177}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusions}{188}{chapter.8}%
+\contentsline {subsection}{\numberline {9.2.1}Larger Supercells}{177}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Inter Granular Stress Corrosion Cracking}{188}{section.8.1}%
+\contentsline {subsection}{\numberline {9.2.2}Alloy Bulk Properties}{177}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Predicting Ion Induced Radioactivity}{189}{section.8.2}%
+\contentsline {subsection}{\numberline {9.2.3}Defects}{178}{subsection.9.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}Modified Equation}{189}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {9.2.4}MEAM for FCC Iron}{178}{subsection.9.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Activity Code}{189}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {9.2.5}Improved Potential: Fe-Ni-Cr-Pd}{178}{subsection.9.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.3}Iron Irradiation}{190}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {9.2.6}PKA Cascade Trials in LAMMPS or DL\_POLY}{178}{subsection.9.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.4}Molybdenum Irradiation}{190}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {9.2.7}Radiation Induced Segregation Trials}{178}{subsection.9.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.5}Beam Flux Reduction and Gamma Attenuation}{190}{subsection.8.2.5}%
+\contentsline {chapter}{\numberline {10}Acknowledgements}{197}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.6}More Experimental Data Required}{191}{subsection.8.2.6}%
+\contentsline {chapter}{Appendices}{198}{section*.233}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.7}100DPA Activity Predictions}{191}{subsection.8.2.7}%
+\contentsline {chapter}{\numberline {A}Useful Laplace Transforms}{199}{appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.8}Original Contribution}{192}{subsection.8.2.8}%
+\contentsline {section}{\numberline {A.1}Table of Transforms}{199}{section.a.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Derived Potentials}{192}{section.8.3}%
+\contentsline {section}{\numberline {A.2}Decay with a Source Term}{199}{section.a.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.1}Restricting Potentials to Binary Alloys}{192}{subsection.8.3.1}%
+\contentsline {chapter}{\numberline {B}Activity Equation in Python: decay class}{201}{appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.2}Collinear Spin \acrshort {dft}}{192}{subsection.8.3.2}%
+\contentsline {section}{\numberline {B.1}Full Source Code}{201}{section.a.B.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.3}Automated Convergence Calculations}{192}{subsection.8.3.3}%
+\contentsline {section}{\numberline {B.2}Highlighted Code}{201}{section.a.B.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.4}Bulk Property Calculations}{193}{subsection.8.3.4}%
+\contentsline {section}{\numberline {B.3}Activity Equation Testing}{211}{section.a.B.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.5}Iron-Palladium and Iron-Ruthenium Configurations as Fitting Data}{193}{subsection.8.3.5}%
+\contentsline {subsection}{\numberline {B.3.1}Numeric Fortran Code}{211}{subsection.a.B.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.6}Iron-Palladium and Iron-Ruthenium Potentials}{193}{subsection.8.3.6}%
+\contentsline {subsection}{\numberline {B.3.2}Chromium-49}{214}{subsection.a.B.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.7}Original Contribution}{194}{subsection.8.3.7}%
+\contentsline {subsection}{\numberline {B.3.3}Nickel-66}{215}{subsection.a.B.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Two-Band EAM Contribution to DL-Poly}{194}{section.8.4}%
+\contentsline {subsection}{\numberline {B.3.4}Caesium-125}{216}{subsection.a.B.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Future Work}{195}{chapter.9}%
+\contentsline {subsection}{\numberline {B.3.5}Bismuth-213}{217}{subsection.a.B.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Activity Code}{195}{section.9.1}%
+\contentsline {subsection}{\numberline {B.3.6}Polonium-216}{218}{subsection.a.B.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Experimental Activity Readings for Ion Irradiated Targets}{195}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {B.3.7}Radon-218}{219}{subsection.a.B.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.2}Code Improvements}{195}{subsection.9.1.2}%
+\contentsline {chapter}{\numberline {C}Activity Code}{221}{appendix.a.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Potential Fitting and MD Simulations}{196}{section.9.2}%
+\contentsline {section}{\numberline {C.1}Activity V1}{221}{section.a.C.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}Larger Supercells}{196}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {C.1.1}Paper published in Computer Physics Communications}{221}{subsection.a.C.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}Alloy Bulk Properties}{196}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {C.1.2}Accompanying Manual}{229}{subsection.a.C.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.3}Defects}{197}{subsection.9.2.3}%
+\contentsline {section}{\numberline {C.2}Activity V2}{263}{section.a.C.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.4}MEAM for FCC Iron}{197}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {C.2.1}Accompanying Manual}{263}{subsection.a.C.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.5}Improved Potential: Fe-Ni-Cr-Pd}{197}{subsection.9.2.5}%
+\contentsline {chapter}{\numberline {D}Activity V1 Full Results}{288}{appendix.a.D}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.6}PKA Cascade Trials in LAMMPS or DL\_POLY}{197}{subsection.9.2.6}%
+\contentsline {section}{\numberline {D.1}36MeV Proton Irradiated Iron}{288}{section.a.D.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.7}Radiation Induced Segregation Trials}{197}{subsection.9.2.7}%
+\contentsline {chapter}{\numberline {E}Activity V2 Full Results}{300}{appendix.a.E}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Acknowledgements}{216}{chapter.10}%
+\contentsline {section}{\numberline {E.1}36MeV Proton Irradiated Iron}{301}{section.a.E.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{217}{section*.255}%
+\contentsline {subsection}{\numberline {E.1.1}Calculation Settings}{301}{subsection.a.E.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Useful Laplace Transforms}{218}{appendix.a.A}%
+\contentsline {subsection}{\numberline {E.1.2}Results File}{301}{subsection.a.E.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Table of Transforms}{218}{section.a.A.1}%
+\contentsline {subsection}{\numberline {E.1.3}Activity Tallied by Residual Isotope}{306}{subsection.a.E.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Decay with a Source Term}{218}{section.a.A.2}%
+\contentsline {subsection}{\numberline {E.1.4}Gamma Output Tallied by Residual Isotope}{309}{subsection.a.E.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Activity Equation in Python: decay class}{220}{appendix.a.B}%
+\contentsline {subsection}{\numberline {E.1.5}Activity Tallied by Target Isotope}{312}{subsection.a.E.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Full Source Code}{220}{section.a.B.1}%
+\contentsline {subsection}{\numberline {E.1.6}Gamma Output Tallied by Target Isotope}{315}{subsection.a.E.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}Highlighted Code}{220}{section.a.B.2}%
+\contentsline {section}{\numberline {E.2}13MeV Proton Irradiated Molybdenum}{318}{section.a.E.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Activity Equation Testing}{230}{section.a.B.3}%
+\contentsline {subsection}{\numberline {E.2.1}Calculation Settings}{318}{subsection.a.E.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.1}Numeric Fortran Code}{230}{subsection.a.B.3.1}%
+\contentsline {subsection}{\numberline {E.2.2}Results}{318}{subsection.a.E.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.2}Chromium-49}{233}{subsection.a.B.3.2}%
+\contentsline {subsection}{\numberline {E.2.3}Total Decay Rates Over Time}{322}{subsection.a.E.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.3}Nickel-66}{234}{subsection.a.B.3.3}%
+\contentsline {subsection}{\numberline {E.2.4}Residual Activity Tallied by Target Isotope}{323}{subsection.a.E.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.4}Caesium-125}{235}{subsection.a.B.3.4}%
+\contentsline {subsection}{\numberline {E.2.5}Residual Activity Tallied by Residual Isotope}{324}{subsection.a.E.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.5}Bismuth-213}{236}{subsection.a.B.3.5}%
+\contentsline {subsection}{\numberline {E.2.6}Residual Gamma Energy Tallied by Residual Isotope}{324}{subsection.a.E.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.6}Polonium-216}{237}{subsection.a.B.3.6}%
+\contentsline {subsection}{\numberline {E.2.7}Gamma Lines}{326}{subsection.a.E.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3.7}Radon-218}{238}{subsection.a.B.3.7}%
+\contentsline {section}{\numberline {E.3}13MeV Proton Irradiated Steel}{327}{section.a.E.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Activity Code}{240}{appendix.a.C}%
+\contentsline {subsection}{\numberline {E.3.1}Calculation Settings}{327}{subsection.a.E.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C.1}Activity V1}{240}{section.a.C.1}%
+\contentsline {subsection}{\numberline {E.3.2}Results}{327}{subsection.a.E.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.1}Paper published in Computer Physics Communications}{240}{subsection.a.C.1.1}%
+\contentsline {chapter}{\numberline {F}Iron Activity: Irradiated to 100DPA}{350}{appendix.a.F}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1.2}Accompanying Manual}{248}{subsection.a.C.1.2}%
+\contentsline {section}{\numberline {F.1}Activity vs Beam Energy}{350}{section.a.F.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C.2}Activity V2}{282}{section.a.C.2}%
+\contentsline {subsection}{\numberline {F.1.1}5MeV Proton Beam - 60 microamp 100DPA}{351}{subsection.a.F.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.2.1}Accompanying Manual}{282}{subsection.a.C.2.1}%
+\contentsline {subsection}{\numberline {F.1.2}10MeV Proton Beam - 60 microamp 100DPA}{353}{subsection.a.F.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Activity V1 Full Results}{307}{appendix.a.D}%
+\contentsline {subsection}{\numberline {F.1.3}15MeV Proton Beam - 60 microamp 100DPA}{355}{subsection.a.F.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D.1}36MeV Proton Irradiated Iron}{307}{section.a.D.1}%
+\contentsline {subsection}{\numberline {F.1.4}20MeV Proton Beam - 60 microamp 100DPA}{357}{subsection.a.F.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Activity V2 Full Results}{319}{appendix.a.E}%
+\contentsline {subsection}{\numberline {F.1.5}25MeV Proton Beam - 60 microamp 100DPA}{359}{subsection.a.F.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E.1}36MeV Proton Irradiated Iron}{320}{section.a.E.1}%
+\contentsline {subsection}{\numberline {F.1.6}30MeV Proton Beam - 60 microamp 100DPA}{361}{subsection.a.F.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1.1}Calculation Settings}{320}{subsection.a.E.1.1}%
+\contentsline {chapter}{\numberline {G}SRIM Results}{363}{appendix.a.G}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1.2}Results File}{320}{subsection.a.E.1.2}%
+\contentsline {subsection}{\numberline {G.0.1}Ion paths through an iron sample}{363}{subsection.a.G.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1.3}Activity Tallied by Residual Isotope}{325}{subsection.a.E.1.3}%
+\contentsline {chapter}{\numberline {H}Crystal Structures}{365}{appendix.a.H}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1.4}Gamma Output Tallied by Residual Isotope}{328}{subsection.a.E.1.4}%
+\contentsline {section}{\numberline {H.1}Common Cubic Structures}{365}{section.a.H.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1.5}Activity Tallied by Target Isotope}{331}{subsection.a.E.1.5}%
+\contentsline {subsection}{\numberline {H.1.1}Simple Cubic}{365}{subsection.a.H.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1.6}Gamma Output Tallied by Target Isotope}{334}{subsection.a.E.1.6}%
+\contentsline {subsection}{\numberline {H.1.2}Body Centered Cubic}{366}{subsection.a.H.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E.2}13MeV Proton Irradiated Molybdenum}{337}{section.a.E.2}%
+\contentsline {subsection}{\numberline {H.1.3}Face Centered Cubic}{366}{subsection.a.H.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2.1}Calculation Settings}{337}{subsection.a.E.2.1}%
+\contentsline {subsection}{\numberline {H.1.4}Zincblende}{367}{subsection.a.H.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2.2}Results}{337}{subsection.a.E.2.2}%
+\contentsline {section}{\numberline {H.2}FCC Defects}{368}{section.a.H.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2.3}Total Decay Rates Over Time}{341}{subsection.a.E.2.3}%
+\contentsline {subsection}{\numberline {H.2.1}Dumbbell $<100>$}{368}{subsection.a.H.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2.4}Residual Activity Tallied by Target Isotope}{342}{subsection.a.E.2.4}%
+\contentsline {subsection}{\numberline {H.2.2}Dumbbell $<110>$}{368}{subsection.a.H.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2.5}Residual Activity Tallied by Residual Isotope}{343}{subsection.a.E.2.5}%
+\contentsline {subsection}{\numberline {H.2.3}Dumbbell $<111>$}{368}{subsection.a.H.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2.6}Residual Gamma Energy Tallied by Residual Isotope}{343}{subsection.a.E.2.6}%
+\contentsline {subsection}{\numberline {H.2.4}Crowdion}{369}{subsection.a.H.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2.7}Gamma Lines}{345}{subsection.a.E.2.7}%
+\contentsline {subsection}{\numberline {H.2.5}Octahedral Interstitial}{369}{subsection.a.H.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E.3}13MeV Proton Irradiated Steel}{346}{section.a.E.3}%
+\contentsline {subsection}{\numberline {H.2.6}Tetrahedral Interstitial}{369}{subsection.a.H.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.3.1}Calculation Settings}{346}{subsection.a.E.3.1}%
+\contentsline {chapter}{\numberline {I}Elastic Constants}{370}{appendix.a.I}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.3.2}Results}{346}{subsection.a.E.3.2}%
+\contentsline {section}{\numberline {I.1}Elastic Constant Matrices}{370}{section.a.I.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {F}Iron Activity: Irradiated to 100DPA}{369}{appendix.a.F}%
+\contentsline {section}{\numberline {I.2}Sets of Strains Applied to Calculate Elastic Constants}{372}{section.a.I.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {F.1}Activity vs Beam Energy}{369}{section.a.F.1}%
+\contentsline {subsection}{\numberline {I.2.1}Cubic Crystals - Mehl, Singh, Klein and Papaconstantopoulos 1993}{372}{subsection.a.I.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1.1}5MeV Proton Beam - 60 microamp 100DPA}{370}{subsection.a.F.1.1}%
+\contentsline {subsection}{\numberline {I.2.2}Orthorhombic Crystals - Ravindran, Fast, Korzhavyi and Johansson}{373}{subsection.a.I.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1.2}10MeV Proton Beam - 60 microamp 100DPA}{372}{subsection.a.F.1.2}%
+\contentsline {subsection}{\numberline {I.2.3}Cubic Crystals - Connetable and Thomas 2009}{374}{subsection.a.I.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1.3}15MeV Proton Beam - 60 microamp 100DPA}{374}{subsection.a.F.1.3}%
+\contentsline {subsection}{\numberline {I.2.4}Orthorhombic Crystals - Connetable and Thomas 2009}{374}{subsection.a.I.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1.4}20MeV Proton Beam - 60 microamp 100DPA}{376}{subsection.a.F.1.4}%
+\contentsline {subsection}{\numberline {I.2.5}Stability Conditions}{374}{subsection.a.I.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1.5}25MeV Proton Beam - 60 microamp 100DPA}{378}{subsection.a.F.1.5}%
+\contentsline {section}{\numberline {I.3}Computing Values from Elastic Constants}{375}{section.a.I.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1.6}30MeV Proton Beam - 60 microamp 100DPA}{380}{subsection.a.F.1.6}%
+\contentsline {section}{\numberline {I.4}Correlation of Melting Temperature in Metals with Elastic Constants}{377}{section.a.I.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {G}SRIM Results}{382}{appendix.a.G}%
+\contentsline {chapter}{\numberline {J}PBE Functional}{378}{appendix.a.J}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {G.0.1}Ion paths through an iron sample}{382}{subsection.a.G.0.1}%
+\contentsline {chapter}{\numberline {K}QECONVERGE}{381}{appendix.a.K}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {H}Crystal Structures}{384}{appendix.a.H}%
+\contentsline {chapter}{\numberline {L}DFT Convergence Plots}{383}{appendix.a.L}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {H.1}Common Cubic Structures}{384}{section.a.H.1}%
+\contentsline {chapter}{\numberline {M}QEEOS}{390}{appendix.a.M}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.1.1}Simple Cubic}{384}{subsection.a.H.1.1}%
+\contentsline {chapter}{\numberline {N}DFT Calculated Properties}{396}{appendix.a.N}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.1.2}Body Centered Cubic}{385}{subsection.a.H.1.2}%
+\contentsline {section}{\numberline {N.1}QEEOS}{396}{section.a.N.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.1.3}Face Centered Cubic}{385}{subsection.a.H.1.3}%
+\contentsline {section}{\numberline {N.2}FCC Aluminium}{397}{section.a.N.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.1.4}Zincblende}{386}{subsection.a.H.1.4}%
+\contentsline {subsection}{\numberline {N.2.1}DFT Settings for PWscf}{397}{subsection.a.N.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {H.2}FCC Defects}{387}{section.a.H.2}%
+\contentsline {subsection}{\numberline {N.2.2}Resulting Plots}{397}{subsection.a.N.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.2.1}Dumbbell $<100>$}{387}{subsection.a.H.2.1}%
+\contentsline {subsection}{\numberline {N.2.3}Aluminium FCC Results File}{398}{subsection.a.N.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.2.2}Dumbbell $<110>$}{387}{subsection.a.H.2.2}%
+\contentsline {subsection}{\numberline {N.2.4}Known and Calculated Values}{399}{subsection.a.N.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.2.3}Dumbbell $<111>$}{387}{subsection.a.H.2.3}%
+\contentsline {section}{\numberline {N.3}BCC Iron [No Magnetism]}{400}{section.a.N.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.2.4}Crowdion}{388}{subsection.a.H.2.4}%
+\contentsline {subsection}{\numberline {N.3.1}Major DFT Settings}{400}{subsection.a.N.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.2.5}Octahedral Interstitial}{388}{subsection.a.H.2.5}%
+\contentsline {subsection}{\numberline {N.3.2}Equation of State and Elastic Constants}{400}{subsection.a.N.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {H.2.6}Tetrahedral Interstitial}{388}{subsection.a.H.2.6}%
+\contentsline {subsection}{\numberline {N.3.3}Iron BCC Results File}{401}{subsection.a.N.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {I}Elastic Constants}{389}{appendix.a.I}%
+\contentsline {section}{\numberline {N.4}BCC Iron [Ferromagnetic]}{404}{section.a.N.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {I.1}Elastic Constant Matrices}{389}{section.a.I.1}%
+\contentsline {subsection}{\numberline {N.4.1}Major DFT Settings}{404}{subsection.a.N.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {I.2}Sets of Strains Applied to Calculate Elastic Constants}{391}{section.a.I.2}%
+\contentsline {subsection}{\numberline {N.4.2}Equation of State and Elastic Constants}{404}{subsection.a.N.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {I.2.1}Cubic Crystals - Mehl, Singh, Klein and Papaconstantopoulos 1993}{391}{subsection.a.I.2.1}%
+\contentsline {subsection}{\numberline {N.4.3}Iron Ferromagnetic BCC Results File}{405}{subsection.a.N.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {I.2.2}Orthorhombic Crystals - Ravindran, Fast, Korzhavyi and Johansson}{392}{subsection.a.I.2.2}%
+\contentsline {subsection}{\numberline {N.4.4}Known and Calculated Results}{408}{subsection.a.N.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {I.2.3}Cubic Crystals - Connetable and Thomas 2009}{393}{subsection.a.I.2.3}%
+\contentsline {section}{\numberline {N.5}FCC Iron [Antiferromagnetic]}{409}{section.a.N.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {I.2.4}Orthorhombic Crystals - Connetable and Thomas 2009}{393}{subsection.a.I.2.4}%
+\contentsline {subsection}{\numberline {N.5.1}Major DFT Settings}{409}{subsection.a.N.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {J}PBE Functional}{395}{appendix.a.J}%
+\contentsline {subsection}{\numberline {N.5.2}Equation of State and Elastic Constants}{409}{subsection.a.N.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {K}QECONVERGE}{398}{appendix.a.K}%
+\contentsline {subsection}{\numberline {N.5.3}Iron FCC Results File}{410}{subsection.a.N.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {L}DFT Convergence Plots}{400}{appendix.a.L}%
+\contentsline {section}{\numberline {N.6}FCC Palladium}{413}{section.a.N.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {M}QEEOS}{407}{appendix.a.M}%
+\contentsline {subsection}{\numberline {N.6.1}Major DFT Settings}{413}{subsection.a.N.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {N}DFT Calculated Properties}{413}{appendix.a.N}%
+\contentsline {subsection}{\numberline {N.6.2}Equation of State and Elastic Constants}{413}{subsection.a.N.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N.1}QEEOS}{413}{section.a.N.1}%
+\contentsline {subsection}{\numberline {N.6.3}Palladium FCC Results File}{414}{subsection.a.N.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N.2}FCC Aluminium}{414}{section.a.N.2}%
+\contentsline {subsection}{\numberline {N.6.4}Known and Calculated Values}{416}{subsection.a.N.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.2.1}DFT Settings for PWscf}{414}{subsection.a.N.2.1}%
+\contentsline {section}{\numberline {N.7}FCC Ruthenium}{417}{section.a.N.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.2.2}Resulting Plots}{414}{subsection.a.N.2.2}%
+\contentsline {subsection}{\numberline {N.7.1}Major DFT Settings}{417}{subsection.a.N.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.2.3}Aluminium FCC Results File}{415}{subsection.a.N.2.3}%
+\contentsline {subsection}{\numberline {N.7.2}Equation of State and Elastic Constants}{417}{subsection.a.N.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.2.4}Known and Calculated Values}{416}{subsection.a.N.2.4}%
+\contentsline {subsection}{\numberline {N.7.3}Ruthenium FCC Results File}{418}{subsection.a.N.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N.3}BCC Iron [No Magnetism]}{417}{section.a.N.3}%
+\contentsline {subsection}{\numberline {N.7.4}Calculated Results}{420}{subsection.a.N.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.3.1}Major DFT Settings}{417}{subsection.a.N.3.1}%
+\contentsline {chapter}{\numberline {O}DFT Errors}{421}{appendix.a.O}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.3.2}Equation of State and Elastic Constants}{417}{subsection.a.N.3.2}%
+\contentsline {subsection}{\numberline {O.0.1}Insufficient Memory}{421}{subsection.a.O.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.3.3}Iron BCC Results File}{418}{subsection.a.N.3.3}%
+\contentsline {subsection}{\numberline {O.0.2}Scratch Restrictions}{421}{subsection.a.O.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N.4}BCC Iron [Ferromagnetic]}{421}{section.a.N.4}%
+\contentsline {subsection}{\numberline {O.0.3}Caching Repeat Calculations}{422}{subsection.a.O.0.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.4.1}Major DFT Settings}{421}{subsection.a.N.4.1}%
+\contentsline {subsection}{\numberline {O.0.4}Adjustment of DFT Parameters}{422}{subsection.a.O.0.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.4.2}Equation of State and Elastic Constants}{421}{subsection.a.N.4.2}%
+\contentsline {subsection}{\numberline {O.0.5}Not Straying Too Far From Reality}{423}{subsection.a.O.0.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.4.3}Iron Ferromagnetic BCC Results File}{422}{subsection.a.N.4.3}%
+\contentsline {subsection}{\numberline {O.0.6}Trial Parameters for Iron with and Octahedral Defect}{423}{subsection.a.O.0.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.4.4}Known and Calculated Results}{425}{subsection.a.N.4.4}%
+\contentsline {chapter}{\numberline {P}Transferability}{425}{appendix.a.P}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N.5}FCC Iron [Antiferromagnetic]}{426}{section.a.N.5}%
+\contentsline {section}{\numberline {P.1}Sheng Aluminium Potential}{425}{section.a.P.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.5.1}Major DFT Settings}{426}{subsection.a.N.5.1}%
+\contentsline {subsection}{\numberline {P.1.1}FCC Structure}{425}{subsection.a.P.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.5.2}Equation of State and Elastic Constants}{426}{subsection.a.N.5.2}%
+\contentsline {subsection}{\numberline {P.1.2}BCC Structure}{427}{subsection.a.P.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.5.3}Iron FCC Results File}{427}{subsection.a.N.5.3}%
+\contentsline {section}{\numberline {P.2}Mendelev et al 2003 Iron Potential}{427}{section.a.P.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N.6}FCC Palladium}{430}{section.a.N.6}%
+\contentsline {subsection}{\numberline {P.2.1}BCC Structure}{427}{subsection.a.P.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.6.1}Major DFT Settings}{430}{subsection.a.N.6.1}%
+\contentsline {subsection}{\numberline {P.2.2}FCC Structure}{427}{subsection.a.P.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.6.2}Equation of State and Elastic Constants}{430}{subsection.a.N.6.2}%
+\contentsline {section}{\numberline {P.3}Ackland et al 1997 Iron Potential}{427}{section.a.P.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.6.3}Palladium FCC Results File}{431}{subsection.a.N.6.3}%
+\contentsline {subsection}{\numberline {P.3.1}BCC Structure}{427}{subsection.a.P.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.6.4}Known and Calculated Values}{433}{subsection.a.N.6.4}%
+\contentsline {subsection}{\numberline {P.3.2}FCC Structure}{427}{subsection.a.P.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N.7}FCC Ruthenium}{434}{section.a.N.7}%
+\contentsline {chapter}{\numberline {Q}Optimization}{433}{appendix.a.Q}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.7.1}Major DFT Settings}{434}{subsection.a.N.7.1}%
+\contentsline {section}{\numberline {Q.1}Optimization}{433}{section.a.Q.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.7.2}Equation of State and Elastic Constants}{434}{subsection.a.N.7.2}%
+\contentsline {subsection}{\numberline {Q.1.1}Introduction}{433}{subsection.a.Q.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.7.3}Ruthenium FCC Results File}{435}{subsection.a.N.7.3}%
+\contentsline {subsection}{\numberline {Q.1.2}Continuous and Discrete Optimization}{433}{subsection.a.Q.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {N.7.4}Calculated Results}{437}{subsection.a.N.7.4}%
+\contentsline {subsection}{\numberline {Q.1.3}Constrained and Unconstrained Optimization}{433}{subsection.a.Q.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {O}Transferability}{438}{appendix.a.O}%
+\contentsline {subsection}{\numberline {Q.1.4}Global and Local Optimization}{434}{subsection.a.Q.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {O.1}Sheng Aluminium Potential}{438}{section.a.O.1}%
+\contentsline {subsection}{\numberline {Q.1.5}Global Optimization Algorithms}{434}{subsection.a.Q.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {O.1.1}FCC Structure}{438}{subsection.a.O.1.1}%
+\contentsline {subsubsection}{Simulated Annealing}{434}{subsubsection*.356}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {O.1.2}BCC Structure}{440}{subsection.a.O.1.2}%
+\contentsline {subsubsection}{Genetic Algorithm}{435}{subsubsection*.357}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {O.2}Mendelev et al 2003 Iron Potential}{440}{section.a.O.2}%
+\contentsline {subsubsection}{Basin-Hopping}{435}{subsubsection*.358}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {O.2.1}BCC Structure}{440}{subsection.a.O.2.1}%
+\contentsline {subsection}{\numberline {Q.1.6}Local Optimization Algorithms}{436}{subsection.a.Q.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {O.2.2}FCC Structure}{440}{subsection.a.O.2.2}%
+\contentsline {subsubsection}{\acrfull {qp}}{436}{subsubsection*.359}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {O.3}Ackland et al 1997 Iron Potential}{440}{section.a.O.3}%
+\contentsline {subsubsection}{Gradient Descent}{436}{subsubsection*.360}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {O.3.1}BCC Structure}{440}{subsection.a.O.3.1}%
+\contentsline {subsubsection}{\acrlong {ng}}{436}{subsubsection*.361}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {O.3.2}FCC Structure}{440}{subsection.a.O.3.2}%
+\contentsline {subsubsection}{Levenberg Marquardt}{437}{subsubsection*.362}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {P}Optimization}{446}{appendix.a.P}%
+\contentsline {subsubsection}{Conjugate Gradient}{437}{subsubsection*.363}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {P.1}Optimization}{446}{section.a.P.1}%
+\contentsline {subsubsection}{Broyden Fletcher Goldfarb Shanno}{437}{subsubsection*.364}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {P.1.1}Introduction}{446}{subsection.a.P.1.1}%
+\contentsline {subsubsection}{Python SciPy Optimization Functions}{438}{subsubsection*.365}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {P.1.2}Continuous and Discrete Optimization}{446}{subsection.a.P.1.2}%
+\contentsline {chapter}{\numberline {R}EFS Calculations}{439}{appendix.a.R}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {P.1.3}Constrained and Unconstrained Optimization}{446}{subsection.a.P.1.3}%
+\contentsline {subsection}{\numberline {R.0.1}Calculating Energy, Force and Stress}{439}{subsection.a.R.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {P.1.4}Global and Local Optimization}{447}{subsection.a.P.1.4}%
+\contentsline {subsubsection}{Neighbour List}{439}{subsubsection*.366}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {P.1.5}Global Optimization Algorithms}{447}{subsection.a.P.1.5}%
+\contentsline {subsubsection}{Computing Total Energy}{442}{subsubsection*.370}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Simulated Annealing}{447}{subsubsection*.375}%
+\contentsline {subsubsection}{Computing Forces on Atoms}{442}{subsubsection*.371}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Genetic Algorithm}{448}{subsubsection*.376}%
+\contentsline {subsubsection}{Computing Stress}{443}{subsubsection*.372}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Basin-Hopping}{448}{subsubsection*.377}%
+\contentsline {subsubsection}{Pseudo Code for the Energy, Force and Stress Subroutine}{443}{subsubsection*.373}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {P.1.6}Local Optimization Algorithms}{449}{subsection.a.P.1.6}%
+\contentsline {chapter}{\numberline {S}EAMPA Code}{445}{appendix.a.S}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrfull {qp}}{449}{subsubsection*.378}%
+\contentsline {section}{\numberline {S.1}Energy, Force, and Stress Subroutine}{445}{section.a.S.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Gradient Descent}{449}{subsubsection*.379}%
+\contentsline {section}{\numberline {S.2}Neighbour List Subroutine}{448}{section.a.S.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\acrlong {ng}}{449}{subsubsection*.380}%
+\contentsline {section}{\numberline {S.3}Fortran Programmed Functions}{450}{section.a.S.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Levenberg Marquardt}{450}{subsubsection*.381}%
+\contentsline {section}{\numberline {S.4}Main fitting class}{453}{section.a.S.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conjugate Gradient}{450}{subsubsection*.382}%
+\contentsline {section}{\numberline {S.5}Global Fitting Algorithms}{459}{section.a.S.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Broyden Fletcher Goldfarb Shanno}{450}{subsubsection*.383}%
+\contentsline {section}{\numberline {S.6}Bulk Properties}{465}{section.a.S.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {Q}EAMPA Code}{452}{appendix.a.Q}%
+\contentsline {section}{\numberline {S.7}Interpolation}{477}{section.a.S.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.1}Energy, Force, and Stress Subroutine}{452}{section.a.Q.1}%
+\contentsline {section}{\numberline {S.8}Interpolation (Gradient)}{477}{section.a.S.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.2}Neighbour List Subroutine}{455}{section.a.Q.2}%
+\contentsline {chapter}{\numberline {T}Potential Functions}{479}{appendix.a.T}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.3}Fortran Programmed Functions}{457}{section.a.Q.3}%
+\contentsline {section}{\numberline {T.1}Introduction}{479}{section.a.T.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.4}Main fitting class}{460}{section.a.Q.4}%
+\contentsline {section}{\numberline {T.2}Functions}{479}{section.a.T.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.5}Global Fitting Algorithms}{466}{section.a.Q.5}%
+\contentsline {subsection}{\numberline {T.2.1}Ackland Embedding}{479}{subsection.a.T.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.6}Bulk Properties}{472}{section.a.Q.6}%
+\contentsline {subsection}{\numberline {T.2.2}Buckingham}{480}{subsection.a.T.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.7}Interpolation}{484}{section.a.Q.7}%
+\contentsline {subsection}{\numberline {T.2.3}Lennard Jones}{481}{subsection.a.T.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Q.8}Interpolation (Gradient)}{484}{section.a.Q.8}%
+\contentsline {subsection}{\numberline {T.2.4}Mishin Density}{482}{subsection.a.T.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {R}Potential Functions}{486}{appendix.a.R}%
+\contentsline {subsection}{\numberline {T.2.5}Morse}{484}{subsection.a.T.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {R.1}Introduction}{486}{section.a.R.1}%
+\contentsline {subsection}{\numberline {T.2.6}Polynomial Embedding}{485}{subsection.a.T.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {R.2}Functions}{486}{section.a.R.2}%
+\contentsline {subsection}{\numberline {T.2.7}Spline}{486}{subsection.a.T.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.1}Ackland Embedding}{486}{subsection.a.R.2.1}%
+\contentsline {subsection}{\numberline {T.2.8}Slater 4s}{489}{subsection.a.T.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.2}Buckingham}{487}{subsection.a.R.2.2}%
+\contentsline {subsection}{\numberline {T.2.9}Zero}{491}{subsection.a.T.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.3}Lennard Jones}{488}{subsection.a.R.2.3}%
+\contentsline {section}{\numberline {T.3}Splines}{492}{section.a.T.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.4}Mishin Density}{489}{subsection.a.R.2.4}%
+\contentsline {subsubsection}{Polynomial Splines}{492}{subsubsection*.383}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.5}Morse}{491}{subsection.a.R.2.5}%
+\contentsline {subsubsection}{Polynomial Knot to Knot Splines}{492}{subsubsection*.384}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.6}Polynomial Embedding}{492}{subsection.a.R.2.6}%
+\contentsline {chapter}{\numberline {U}Fe-Pd and Fe-Ru Structures}{495}{appendix.a.U}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.7}Spline}{493}{subsection.a.R.2.7}%
+\contentsline {chapter}{\numberline {V}Fe-Pd Potential}{498}{appendix.a.V}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.8}Slater 4s}{496}{subsection.a.R.2.8}%
+\contentsline {section}{\numberline {V.1}Tabulated Potential}{498}{section.a.V.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {R.2.9}Zero}{498}{subsection.a.R.2.9}%
+\contentsline {section}{\numberline {V.2}Potential Function Plots}{499}{section.a.V.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {S}Fe-Pd and Fe-Ru Structures}{500}{appendix.a.S}%
+\contentsline {section}{\numberline {V.3}Potential vs DFT}{500}{section.a.V.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {T}Fe-Pd Potential}{503}{appendix.a.T}%
+\contentsline {section}{\numberline {V.4}Bulk Properties}{501}{section.a.V.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.1}Tabulated Potential}{503}{section.a.T.1}%
+\contentsline {subsection}{\numberline {V.4.1}Iron FCC}{501}{subsection.a.V.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.2}Potential Function Plots}{504}{section.a.T.2}%
+\contentsline {subsubsection}{Bulk Property Values}{501}{subsubsection*.394}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.3}Potential vs DFT}{505}{section.a.T.3}%
+\contentsline {subsubsection}{Equation of State Plots}{501}{subsubsection*.396}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {T.4}Bulk Properties}{506}{section.a.T.4}%
+\contentsline {subsubsection}{Elastic Constant Plots}{502}{subsubsection*.398}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {T.4.1}Iron FCC}{506}{subsection.a.T.4.1}%
+\contentsline {subsection}{\numberline {V.4.2}Palladium FCC}{503}{subsection.a.V.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bulk Property Values}{506}{subsubsection*.401}%
+\contentsline {subsubsection}{Equation of State Plots}{503}{subsubsection*.402}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{506}{subsubsection*.403}%
+\contentsline {subsubsection}{Elastic Constant Plots}{504}{subsubsection*.404}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{507}{subsubsection*.405}%
+\contentsline {subsection}{\numberline {V.4.3}Iron BCC}{505}{subsection.a.V.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {T.4.2}Palladium FCC}{508}{subsection.a.T.4.2}%
+\contentsline {subsubsection}{Equation of State Plots}{505}{subsubsection*.408}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{508}{subsubsection*.409}%
+\contentsline {subsubsection}{Elastic Constant Plots}{506}{subsubsection*.410}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{509}{subsubsection*.411}%
+\contentsline {chapter}{\numberline {W}Fe-Ru Potential}{507}{appendix.a.W}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {T.4.3}Iron BCC}{510}{subsection.a.T.4.3}%
+\contentsline {section}{\numberline {W.1}Tabulated Potential}{507}{section.a.W.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{510}{subsubsection*.415}%
+\contentsline {section}{\numberline {W.2}Potential Function Plots}{508}{section.a.W.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{511}{subsubsection*.417}%
+\contentsline {section}{\numberline {W.3}Potential vs DFT}{509}{section.a.W.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {U}Fe-Ru Potential}{512}{appendix.a.U}%
+\contentsline {section}{\numberline {W.4}Bulk Properties}{510}{section.a.W.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.1}Tabulated Potential}{512}{section.a.U.1}%
+\contentsline {subsection}{\numberline {W.4.1}Iron FCC}{510}{subsection.a.W.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.2}Potential Function Plots}{513}{section.a.U.2}%
+\contentsline {subsubsection}{Bulk Property Values}{510}{subsubsection*.416}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.3}Potential vs DFT}{514}{section.a.U.3}%
+\contentsline {subsubsection}{Equation of State Plots}{510}{subsubsection*.418}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {U.4}Bulk Properties}{515}{section.a.U.4}%
+\contentsline {subsubsection}{Elastic Constant Plots}{511}{subsubsection*.420}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {U.4.1}Iron FCC}{515}{subsection.a.U.4.1}%
+\contentsline {subsection}{\numberline {W.4.2}Ruthenium FCC}{512}{subsection.a.W.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Bulk Property Values}{515}{subsubsection*.423}%
+\contentsline {subsubsection}{Equation of State Plots}{512}{subsubsection*.424}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{515}{subsubsection*.425}%
+\contentsline {subsubsection}{Elastic Constant Plots}{513}{subsubsection*.426}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{516}{subsubsection*.427}%
+\contentsline {subsection}{\numberline {W.4.3}Iron BCC}{514}{subsection.a.W.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {U.4.2}Ruthenium FCC}{517}{subsection.a.U.4.2}%
+\contentsline {subsubsection}{Equation of State Plots}{514}{subsubsection*.430}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{517}{subsubsection*.431}%
+\contentsline {subsubsection}{Elastic Constant Plots}{515}{subsubsection*.432}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{518}{subsubsection*.433}%
+\contentsline {chapter}{\numberline {X}Contribution to the DLPOLY Source Code}{516}{appendix.a.X}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {U.4.3}Iron BCC}{519}{subsection.a.U.4.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equation of State Plots}{519}{subsubsection*.437}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Elastic Constant Plots}{520}{subsubsection*.439}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {V}Contribution to the DLPOLY Source Code}{521}{appendix.a.V}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {V.1}Contribution to DLPOLY 4.04}{521}{section.a.V.1}%
+\contentsline {section}{\numberline {X.1}Contribution to DLPOLY 4.04}{516}{section.a.X.1}%

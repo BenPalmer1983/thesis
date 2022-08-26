@@ -2,11 +2,11 @@
 \label{chapter:conclusions}
 
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{It is known that Cr provides protection to stainless steel through a passive protective layer, but this becomes ineffective to protect the steel under irradiation as Cr is depleted from the grain boundary.  \Acrlong{pgm}s also provide a mechanism to protect steel from corrosion, and experimentation or simulations may be used to investigate whether they can maintain high enough concentrations at the surface to continue to protect the steel against corrosion under irradiation.  If either of the two chosen \acrshort{pgm}s, Pd or Ru, are depleted at the grain boundary under irradiation along with the depletion of Cr, the steel will become susceptible to corrosion.  \\
+\abstractpreamble{A large enough addition of \Gls{Cr} to steel gives protection to corrosion through a passive protective layer.  This is depleted during irradiation, but the addition of \acrshort{pgm}s offers alternative protection providing they are not depleted as well.  A loss of protection leads to \acrshort{igscc}.\\
 \\
-Experimental testing is cheaper, more controllable and more rapid at causing damage in a targeted volume if an ion beam is used rather than a neutron source.  Either source will cause the target material to become radioactive.  It is important to be able to calculate how radioactive, and how long after irradiation (to the desired damage, in DPA) it will be until the material is safe to be handled.  This work allows the prediction of the activation of irradiated targets through the Activity code and modified Bateman equations.\\
+Ion irradiation provides an alternative method to neutron irradiation.  Equations and a code have been developed in this work to predict how radioactive ion irradiated targets become, and allows computing radioactivity at given ion energies and \acrshort{dpa}.\\
 \\
-Computer simulations to model radiation damage will be much too large and complex for first-principles calculations.  Damage cascades require thousands to millions of atoms and typical damage rates take years to reach in practice.  Simulations will need to use either classical molecular dynamics or \acrfull{akmc} to encapsulate the much larger volumes of atoms, to contain the atoms effected by the damage cascade, and to represent the grain boundary.  This requires the derivation of an appropriate interatomic potential using experimental data and first-principles data where it is not available, or where it is either impossible or impractical to measure.  Binary potentials for Fe-Ru and Fe-Pd have been developed in this work as a step towards this goal.}
+Interatomic potentials have been derived for Fe-Pd and Fe-Ru binary alloys in the \acrshort{fcc} structure.  They have had limited testing but are in \acrshort{lammps} format and are available to use.  This is a step towards the goal of modelling the grain boundary with \acrshort{md} or \acrshort{akmc}.}
 \end{changemargin}
 
 
@@ -60,7 +60,7 @@ The Activity code was created to automate the process of calculating the activit
 \item calculates the activity of each isotope and the dose that an average human would be exposed to
 \end{itemize}
 
-A number of simplifications are made to the model but it predicted the radioactivity of certain peaks reasonably well with a sample of proton irradiated pure Fe.  Given more time a range of alloys would also be irradiated by a proton beam and, once their activity is measured at several time intervals after irradiation, they would compared to the activity predicted by the Activity code.
+A number of simplifications were made to the model but it predicted the radioactivity of certain peaks reasonably well with a sample of proton irradiated pure Fe.  Given more time a range of alloys would also be irradiated by a proton beam and, once their activity is measured at several time intervals after irradiation, they would compared to the activity predicted by the Activity code.
 
 The first version of the Activity code was replaced by a second version that used Python rather than Fortran.  The first version was more cumbersome for new users and it crashed for certain isotope, and these problems were fixed in the new version.
 
@@ -167,13 +167,13 @@ As the relaxed structure from \acrshort{dft} calculations for Fe was \acrshort{f
 
 The individual potentials reproduce the bulk properties, as calculated by \acrshort{dft}, reasonably well with the lattice parameters and cohesive energies being within a few percent of the experimental values.  The poorest properties in the fitting process were the elastic constants, in particular the $C_{44}$ value for \Gls{Ru}.  These could be improved by running the code for a longer time period.
 
-The Rose-Vinet equation of state for each pure element fits well and takes on a shape that would be expected, with an increase in energy where the lattice parameter is reduced, a minimum where the relaxed lattice parameter is and a reduction in energy to zero as the atoms are pulled further and further apart.  Where the creation of a slab with two surfaces is modelled, the predicted energies for each pure element match well with the \acrshort{dft} energies.  Out of the three elements, Ru fits least well as far as the formation of a slab is concerned with a consistent energy difference of at lease 0.05eV.
+The Rose-Vinet equation of state for each pure element fits well and takes on a shape that would be expected, with an increase in energy where the lattice parameter is reduced, a minimum where the relaxed lattice parameter is and a reduction in energy to zero as the atoms are pulled further and further apart.  Where the creation of a slab with two surfaces is modelled, the predicted energies for each pure element match well with the \acrshort{dft} energies.  Out of the three elements, Ru fits least well as far as the formation of a slab is concerned with a consistent energy difference of at least 0.05eV.
 
 Overall, both of the potentials reproduce the energies calculated using \acrshort{dft} well across a range of configurations.  There is definitely room to improve and build upon these potentials given more time.
 
 \subsection{Original Contribution}
 
-The fitting code is an original contribution as it allows the fitting of metal potentials in the form of the \acrlong{eam} and \acrlong{2beam} to \acrshort{dft} data and bulk properties.  Other similar codes do exist, such as FitPot and PotFit, but at the time of developing the EAMPA code, PotFit did not have the ability to fit analytic potentials (although, this feature is now available) and does not have, in its available form, the ability to fit the potential to the bulk properties of the material (although the Sheng version did have this ability).  The code developed here may be modified in the future to add more features and properties to fit potentials to. 
+The fitting code is an original contribution as it allows the fitting of metal potentials in the form of the \acrlong{eam} and \acrlong{2beam} to \acrshort{dft} data and bulk properties.  Other similar codes do exist, such as FitPot and PotFit, but at the time of developing the EAMPA code, PotFit did not have the ability to fit analytic potentials (although, this feature is now available) and does not have, in its available form, the ability to fit the potential to the bulk properties of the material (although the Sheng version did have this ability).  The code developed here may be modified in the future to add more features and properties to fit potentials to.  The two potentials developed are also an original contribution due to the issues in transferability of existing potentials. 
 
 
 
