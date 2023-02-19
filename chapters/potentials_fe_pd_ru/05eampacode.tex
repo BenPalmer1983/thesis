@@ -163,13 +163,13 @@ D = \lbrace \left(x_0, y_0 \right) \left(x_1, y_1 \right) \left(x_2, y_2 \right)
 
 \begin{equation}
 \begin{split}
-p_n (x) = \sum _{i=0} ^n y_i L(i, x) 
+p_n (x) = \sum _{i=0} ^n y_i L(i, x)  \\
 \textnormal{where    } l(i, x) = \prod _{j=0 , j!=i} ^n (x - x_j)
 \end{split}
 \label{eq:eqLagrangePolynomialNew}
 \end{equation}
 
-There are typically hundreds or thousands of data points, so to interpolate, the closest few points are used.  The gradient of the potential functions are also computed using Lagrange polynomials (eq. \ref{eq:eqLagrangePolynomialNew}).
+There are typically hundreds or thousands of data points, so to interpolate, the closest few points are used.  The default number used in the code is 4 points.  The gradient of the potential functions are also computed using Lagrange polynomials (eq. \ref{eq:eqLagrangePolynomialNew}).
 
 %% Sample hybrid function
 \begin{equation}

@@ -1,12 +1,13 @@
 \FloatBarrier
 \section[DFT Settings]{Selected DFT Code, Pseudopotentials and Parameters}
+\label{section:dftsettings}
 
 
 \subsection{Quantum Espresso}
 
-There are a choice of several different \acrshort{dft} programs to choose from, including VASP, Siesta and Quantum Espresso.  The open source Quantum Espresso includes the PWscf binary that solves electronic structure calculations with plane wave pseudopotentials.  It calculates the total energy of a system as well as the forces between atoms and the stress on the simulation box.  
+There are a choice of several different \acrshort{dft} programs to choose from, including \acrshort{vasp}, Siesta, Castep, Abinit, and Quantum Espresso.  The open source Quantum Espresso includes the \acrshort{pwscf} binary that solves electronic structure calculations with plane wave pseudopotentials.  It calculates the total energy of a system as well as the forces between atoms and the stress on the simulation box.  
 
-As the calculations contain Iron, it is important to take into account the magnetism caused by the unpaired filling of the d-shell.  PWscf gives three modes: non-magnetic, collinear spin and non-collinear spin.  
+As the calculations contain Iron, it is important to take into account the magnetism caused by the unpaired filling of the d-shell.  \acrshort{pwscf} gives three modes: non-magnetic, collinear spin and non-collinear spin.  
 
 
 
@@ -33,12 +34,12 @@ In the literature, \acrshort{lda} and \acrshort{blyp} are used for organic \acrs
 The settings used were:
 
 \begin{itemize}
-\item ecutwfc: 71 
-\item ecutrho: 430 
+\item ecutwfc: 71 Ry 
+\item ecutrho: 430 Ry 
 \item k-points: 9 9 9 Monhurst-Pack grid offset
 \item smearing: 0.04 Ry Mazari-Vanderbilt cold smearing
 \item calculation type: non-polarised calculation
-\item pseudopotentials: PZ for LDA, PBE for GGA
+\item pseudopotentials: \acrshort{pz} for \acrshort{lda}, \acrshort{pbe} for \acrshort{gga}
 \end{itemize}
 
 \begin{table}[h]
@@ -58,18 +59,18 @@ Cu     & FCC  &  3.61  &  3.49  &  3.59   \\
 \label{table:computedlattice}
 \end{table}
 
-The computed results are given in table \ref{table:computedlattice}.  The simpler LDA pseudopotentials consistently underestimate the lattice parameter $a_0$ for the four metals tested, and on average they underestimate by 3\%.  The GGA calculations are within 1.5\% of the experimental value.
+The computed results are given in table \ref{table:computedlattice}.  The simpler \acrshort{lda} pseudopotentials consistently underestimate the lattice parameter $a_0$ for the four metals tested, and on average they underestimate by 3\%.  The \acrshort{gga} calculations are within 1.5\% of the experimental value.
 
 
 \subsection{Smearing Type}
 
-The material being studied here is a metal/metal alloy, and this has important consquences when setting up the calculation.  The conduction and valence bands overlap in a metal, and the fermi energy passes through this overlap. When the occupied states are summed, integrating over all k-points k\cite{marzarivanderbilt}, those bands that cross the Fermi energy will drop to zero.  There are two solutions used here to reduce this abrupt drop off: increase the number of k-points, or add a smearing to smooth the occupation function.  Previous work has given the following suggested smearing types and values as a start point.
+The material being studied here is a metal/metal alloy, and this has important consequences when setting up the calculation.  The conduction and valence bands overlap in a metal, and the Fermi energy passes through this overlap. When the occupied states are summed, integrating over all k-points k\cite{marzarivanderbilt}, those bands that cross the Fermi energy will drop to zero.  There are two solutions used here to reduce this abrupt drop off: increase the number of k-points, or add a smearing to smooth the occupation function.  Previous work has given the following suggested smearing types and values as a start point.
 
 \begin{itemize}
 \item Degauss values 0.01Ry Methessel-Paxton \cite{AdsorptionBR2}
 \item Fermi-Dirac 0.01eV (0.00074Ry) \cite{NaDiffusion}
 \item Marzari-Vanderbilt 0.01Ry \cite{ScBiandYBi}
-\item Degauss 0.03 + 0.05 \cite{CuandPd}
+\item Degauss 0.03 + 0.05 (no units or scheme given, but other units in article are Ry) \cite{CuandPd}
 \item Marzari-Vanderbilt 0.05Ry \cite{ecHeuslerAlloy}
 \end{itemize}
 
@@ -82,7 +83,7 @@ This suggests that a range between 0.01Ry to 0.05Ry should be investigated as a 
 \item Marzari-Vanderbilt
 \end{itemize}
 
-Functions such as the Gaussian and Fermi-Dirac are not cold smearing, and will converge to the wrong energy whereas the Mazari-Vanderbilt and Methfessel-Paxton are designed to reduce and heating whilst smearing the electron wavefunction.  An author of QuantumEspresso, N. Marzari, co-developed the cold smearing Marzari-Vanderbilt function, and this was selected as it had appeared a number of times in the literature and throughout the QuantumEspresso tutorials.  
+Functions such as the Gaussian and Fermi-Dirac are not cold smearing and will converge to the wrong energy whereas the Mazari-Vanderbilt and Methfessel-Paxton are designed to reduce artificially increasing the final energy whilst smearing the electron wavefunction.  An author of QuantumEspresso\cite{quantumespresso}, N. Marzari, co-developed the cold smearing Marzari-Vanderbilt function\cite{marzarithesis1}, and this was selected as it had appeared a number of times in the literature and throughout the QuantumEspresso tutorials.  
 
 
 
@@ -136,7 +137,9 @@ The convergence process requires the creation of many input files, and manually 
 
 The program reads an input file into memory, and this contains the settings for the convergence run.  A template PWscf input file is also loaded, and this will detail any required PWscf settings, such as the pseudopotentials, atom species and so on.  
 
-Once these files have been loaded, the first stage of the program runs to determine the ecutwfc and ecutrho values that are within the force and energy convergence thresholds provided by the user.  The program creates a crystal based on the settings, for example an FCC, BCC or SC crystal supercell.  The exact atomic positions are likely to be the optimal, relaxed, positions and so the overall forces on each atom will be zero.  The program randomly varies the atomic positions, and this results in a configuration with forces between the atoms.
+Once these files have been loaded, the first stage of the program runs to determine the ecutwfc and ecutrho values that are within the force and energy convergence thresholds provided by the user.  The program creates a crystal based on the settings, for example an FCC, BCC or SC crystal supercell.  The exact atomic positions are likely to be the optimal, relaxed, positions and so the overall forces on each atom will be zero.  
+
+The program randomly varies the atomic positions, and this results in a configuration with forces between the atoms.  The maximum amount each atom is perturbed from the exact lattice position is set in angstrom and is determined by the user.  The perturbation is this maximum multiplied by a random float (on the range 0.0 to 1.0) picked from a Gaussian distribution.  The random seed is set by the user to ensure repeatable calculations.  In this work, the maximum perturbation was set to 0.01 angstrom in order to avoid issues with \acrshort{scf} convergence within \acrshort{pwscf}. 
 
 The wfc value starts with the user defined ecutwfc starting value, and this is increased until the change in energy and force both converge to within the specified thresholds.  The ecutrho value is increased simultaneously, and is four times the ecutwfc value.  In the second stage, the ecutrho value is decreased and the ecutwfc value is fixed while the energy and force remain within their respective convergence thresholds.  Finally, the program attempts to decrease the ecutwfc value further.
 
@@ -144,7 +147,7 @@ Following the energy and charge density cutoff, the program then runs a number o
 
 The final part of the program is to help the user decide upon degauss and k-point values.  The converged ecutwfc and ecutrho values from the first part of the code are used, and the k-point start, end and increment amounts are set by the user, as is a list of smearing degauss values.  2D colour plots of force and energy convergence as smearing changes and k-point value changes are prepared and saved so the user may study these to determine the best combination for their application.
 
-The randomised atom positions use a seed that may be set in the input file.  This means that, although they are pseudo-rng generated, they are repeatable given the same random seed.  Every successful PWscf calculation is logged and saved.  If the program runs multiple times, the cached output files are used rather than recalculating every input file.
+As mentioned, the user sets the random seed.  This means that, although they are pseudo-rng generated, the convergence jobs are repeatable given the same random seed.  Every successful PWscf calculation is logged and saved.  If the program runs multiple times, the cached output files are used rather than recalculating every input file, and this saves the code from repeating calculations that have already been completed.
 
 The source code and instructions on how to use the program are available to download from GitHub.
 
@@ -166,7 +169,7 @@ https://github.com/BenPalmer1983/qeconverge
 
 Prior to generating a database of atom configurations, calculated forces, stresses and energies, key \acrshort{dft} settings needed to be selected and tested.  The Python code QECONVERGE was written then used to converge the ecutwfc, ecutrho, k-points and degauss smearing values for each of the pseudopotentials required.
   
-As discussed in previously (section \ref{section:backgroundpseudopotentials}) the \acrshort{gga} type pseudo-potential more reliably calculated the bulk properties of a material when compared to \acrshort{lda}/\acrshort{lsda}, and a copy of the earlier table is given in table \ref{table:ggavslsdacopy}.
+As discussed previously (section \ref{section:backgroundpseudopotentials}) the \acrshort{gga} type pseudo-potential more reliably calculated the bulk properties of a material when compared to \acrshort{lda}/\acrshort{lsda}, and a copy of the earlier table is given in table \ref{table:ggavslsdacopy}.
 
 \FloatBarrier 
 \begin{table}[h]
@@ -228,7 +231,7 @@ The relaxed crystal lattice parameters were calculated for \Gls{Fe}, \Gls{Cr}, \
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{c c c c c c}
 \hline\hline
-Description & $A_0$ (ang) & $V_0$ (bohr3) & $B_0$ (GPA) & $E_0$ (Ry) (\acrshort{dft} Only) \\
+Description & $A_0$ (ang) & $V_0$ ($\text{bohr}^3$) & $B_0$ (GPA) & $E_0$ (Ry) (\acrshort{dft} Only) \\
 \hline\hline
 Exp. & 2.91 & 83.23 & 160 & - \\
 AFM & 2.86 & 78.77 & 217 & -248.2216 \\
@@ -242,7 +245,7 @@ No Mag & 2.85 & 78.102 & 267 & -248.2214 \\
 \end{table}
 \FloatBarrier
 
-The equation of state was calculated for Chromium BCC in three ways: (1) with magnetism switched off, (2) atoms set in a ferromagnetic configuration (collinear, all in the same direction), (3) atoms set in an antiferromagnetic configuration (collinear, atoms in the same cell with spin in opposing directions).  
+The equation of state was calculated for Chromium \acrshort{bcc} in three ways: (1) with magnetism switched off, (2) atoms set in a ferromagnetic configuration (collinear, all in the same direction), (3) atoms set in an antiferromagnetic configuration (collinear, atoms in the same cell with spin in opposing directions).  
 
 The \acrshort{dft} calculated values for the bulk modulus were larger than expected, but the antiferromagnetic calculation was much closer to the experimental value (table \ref{table:crproperties}).  The $E_0$ values do not reflect the actual energies, but show the relative calculated values.  The antiferromagnetic configuration gives the lowest, optimum, energy (fig. \ref{fig:chromiumeos}).
 
@@ -250,7 +253,7 @@ The \acrshort{dft} calculated values for the bulk modulus were larger than expec
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.45]{chapters/potentials_fe_pd_ru/qeeos_plots/fe-mag/iron_eos_comparison.eps}
-\caption{Equation of state fit through data points for Iron BCC (no magnetism, ferromagnetic) and Iron FCC (no magnetism and antiferromagnetic)}
+\caption{Equation of state fit through data points for Iron \acrshort{bcc} (no magnetism, ferromagnetic) and Iron \acrshort{fcc} (no magnetism and antiferromagnetic)}
 \label{fig:iron_bcc_fcc_eos}
 \end{center}
 \end{figure}
@@ -262,7 +265,7 @@ The \acrshort{dft} calculated values for the bulk modulus were larger than expec
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{c c c c c c}
 \hline\hline
-Description & A0 (ang) & V0 ($bohr^3$) & B0 (GPA) & E0 per atom (Ry) (\acrshort{dft} Only) \\
+Description & A0 (ang) & V0 ($\text{bohr}^3$) & B0 (GPA) & $E_0$ per atom (Ry) (\acrshort{dft} Only) \\
 \hline\hline
 BCC Exp. & 2.86 & 79.01 & 170 & - \\
 BCC No Mag & 2.77 & 71.53 & 286 & -329.23 \\
@@ -279,19 +282,19 @@ FCC AFM & 3.42 & 73.11 & 226 & -329.26 \\
 \label{table:feproperties}
 \end{table}
 
-In the case of Iron, both BCC and FCC configurations were used.  The antiferromagnetic calculation for \acrshort{bcc} \Gls{Fe} and ferromagnetic calculation for \acrshort{fcc} \Gls{Fe} failed in that either the SCF calculations failed to converge or there were other issues.  As expected, the optimal configuration was BCC with ferromagnetism, and second to this was FCC with antiferromagnetism.
+In the case of Iron, both \acrshort{bcc} and \acrshort{fcc} configurations were used.  The antiferromagnetic calculation for \acrshort{bcc} \Gls{Fe} and ferromagnetic calculation for \acrshort{fcc} \Gls{Fe} failed in that either the \acrshort{scf} calculations failed to converge or there were other issues.  As expected, the optimal configuration was \acrshort{bcc} with ferromagnetism, and second to this was FCC with antiferromagnetism.
 
-Despite the increase in computational time, and other demands on resources such as scratch space and RAM per node, it was clear that collinear spin calculations were required for iron.  The lattice parameter value was within 2\% of the experimental value with the BCC structure set in a ferromagnetic state.  Whilst the bulk modulus is only within 41\% of the experimental value, this is an improvement over the non magnetic calculation that was almost 70\% away from the experimental bulk modulus (table \ref{table:feproperties}, figure \ref{fig:iron_bcc_fcc_eos}).
+Despite the increase in computational time, and other demands on resources such as scratch space and \acrshort{ram} per node, it was clear that collinear spin calculations were required for iron.  The lattice parameter value was within 2\% of the experimental value with the \acrshort{bcc} structure set in a ferromagnetic state.  Whilst the bulk modulus is only within 41\% of the experimental value, this is an improvement over the non magnetic calculation that was almost 70\% away from the experimental bulk modulus (table \ref{table:feproperties}, fig. \ref{fig:iron_bcc_fcc_eos}).
 
 
-The QECONVERGE program was used to suggest the parameters to use, given the convergence threshold of $1.0 \time 10^{-5} RY/Bohr$ for forces and $1.0 \time 10^{-6} RY$ for energy.
+The QECONVERGE program was used to suggest the parameters to use, given the convergence threshold of $1.0 \time 10^{-5}$ Ry/Bohr for forces and $1.0 \time 10^{-6}$ Ry for energy.
 
 \begin{table}[h]
 \begin{center}
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{c c c c c c c}
 \hline\hline
-Element & Pseudopotential & Ecutwfc & Ecutrho & K-points & Degauss & Atoms\\
+Element & Pseudopotential & Ecutwfc (Ry) & Ecutrho (Ry) & K-points & Degauss (Ry) & Atoms\\
 \hline\hline
 Al & Al PBE KJPAW & 50 & 200 & 11 & 0.04 & 32\\
 Fe/Pd/Ru & PBE KJPAW & 71 & 431 & 9 & 0.04 & 32 \\ 
@@ -315,16 +318,16 @@ The other settings used in PWscf throughout are listed in table \ref{table:dftse
 \hline\hline
 Parameter & Value \\
 \hline\hline
-etot\_conv\_thr & 0.0001 \\
-forc\_conv\_thr & 0.001 \\ 
-conv\_thr & $1.0 \times 10^{-8}$ to $1.0 \times 10^{-6}$ \\ 
-diagonalization & david \\ 
-mixing\_beta & 0.1 to 0.3 \\ 
-mixing\_mode & plain (local-TF for defects or randomised configurations) \\ 
+\gls{etotconvthr} & 0.0001 Ry \\
+\gls{forcconvthr} & 0.001 Ry/Bohr \\ 
+\gls{convthr} & $1.0 \times 10^{-8}$ to $1.0 \times 10^{-6}$ Ry \\ 
+\gls{diagonalization} & david (Davidson iterative diagonalization) \\ 
+\gls{mixingbeta} & 0.1 to 0.3 \\ 
+\gls{mixingmode} & plain (local-TF for defects or randomised configurations) \\ 
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{\acrshort{dft} Settings - other settings}
+\caption{\acrshort{dft} Settings - other parameters explicitly set in \acrshort{pwscf}}
 \label{table:dftsettingsb}
 \end{table}
 

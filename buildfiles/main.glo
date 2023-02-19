@@ -1,10 +1,11 @@
 \glossaryentry{sensitization?\glossentry{sensitization}|setentrycounter[]{page}\glsnumberformat}{iii}
+\glossaryentry{pi mesons?\glossentry{pimesons}|setentrycounter[]{page}\glsnumberformat}{xiv}
 \glossaryentry{Tc?\glossentry{Tc}|setentrycounter[]{page}\glsnumberformat}{xvii}
 \glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{xvii}
-\glossaryentry{ultimate tensile strength?\glossentry{ultimatetensilestrength}|setentrycounter[]{page}\glsnumberformat}{xxiii}
-\glossaryentry{Young's modulus?\glossentry{youngsmodulus}|setentrycounter[]{page}\glsnumberformat}{xxiii}
 \glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{xxiv}
 \glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{xxiv}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{xxiv}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{xxiv}
 \glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{Co?\glossentry{Co}|setentrycounter[]{page}\glsnumberformat}{1}
@@ -12,174 +13,205 @@
 \glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{2}
 \glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{2}
 \glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{U?\glossentry{U}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{fissile?\glossentry{fissile}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{fissionable?\glossentry{fissionable}|setentrycounter[]{page}\glsnumberformat}{2}
-\glossaryentry{Pu?\glossentry{Pu}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{Mn?\glossentry{Mn}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{Zr?\glossentry{Zr}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{eutectic?\glossentry{eutectic}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{supercritical?\glossentry{supercritical}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{Th?\glossentry{Th}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{W?\glossentry{W}|setentrycounter[]{page}\glsnumberformat}{15}
-\glossaryentry{barn?\glossentry{barn}|setentrycounter[]{page}\glsnumberformat}{22}
-\glossaryentry{mean free path?\glossentry{meanfreepath}|setentrycounter[]{page}\glsnumberformat}{22}
-\glossaryentry{Becquerel?\glossentry{becquerel}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{Curie?\glossentry{curie}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{Rutherford?\glossentry{rutherford}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{Becquerel?\glossentry{becquerel}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{Gray?\glossentry{gray}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{Rad?\glossentry{rad}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{Sievert?\glossentry{sievert}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{Rontgen Equivalent Man?\glossentry{rem}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{LD50?\glossentry{ld50}|setentrycounter[]{page}\glsnumberformat}{26}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{Zr?\glossentry{Zr}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{eutectic?\glossentry{eutectic}|setentrycounter[]{page}\glsnumberformat}{7}
+\glossaryentry{supercritical?\glossentry{supercritical}|setentrycounter[]{page}\glsnumberformat}{8}
+\glossaryentry{Th?\glossentry{Th}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{W?\glossentry{W}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{pi mesons?\glossentry{pimesons}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{TART?\glossentry{tart}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{barn?\glossentry{barn}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{mean free path?\glossentry{meanfreepath}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{Gray?\glossentry{gray}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{Rad?\glossentry{rad}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{Sievert?\glossentry{sievert}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{Rontgen Equivalent Man?\glossentry{rem}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{allotrope?\glossentry{allotrope}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{P?\glossentry{P}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{Cu?\glossentry{Cu}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{Cu?\glossentry{Cu}|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{allotrope?\glossentry{allotrope}|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{proof strength?\glossentry{proofstrength}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{ultimate tensile strength?\glossentry{ultimatetensilestrength}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Young's modulus?\glossentry{youngsmodulus}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{P?\glossentry{P}|setentrycounter[]{page}\glsnumberformat}{33}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{33}
-\glossaryentry{Cu?\glossentry{Cu}|setentrycounter[]{page}\glsnumberformat}{34}
-\glossaryentry{Cu?\glossentry{Cu}|setentrycounter[]{page}\glsnumberformat}{34}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{34}
-\glossaryentry{Zn?\glossentry{Zn}|setentrycounter[]{page}\glsnumberformat}{34}
-\glossaryentry{Cu?\glossentry{Cu}|setentrycounter[]{page}\glsnumberformat}{34}
-\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{sensitization?\glossentry{sensitization}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{sensitization?\glossentry{sensitization}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{35}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{36}
-\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{36}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{39}
-\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{39}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{39}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{39}
-\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{39}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{Ir?\glossentry{Ir}|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{Pt?\glossentry{Pt}|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{orthorhombic?\glossentry{orthorhombic}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{71}
-\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{71}
-\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{isostructural transformation?\glossentry{isostructuraltransformation}|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{enthalpy?\glossentry{enthalpy}|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{enthalpy?\glossentry{enthalpy}|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{antiferromagnetic?\glossentry{antiferromagnetic}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Neel temperature?\glossentry{neeltemp}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Neel temperature?\glossentry{neeltemp}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Cauchy pressure?\glossentry{cauchypressure}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Cauchy pressure?\glossentry{cauchypressure}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Neel temperature?\glossentry{neeltemp}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{antiferromagnetic?\glossentry{antiferromagnetic}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Cauchy pressure?\glossentry{cauchypressure}|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{77}
-\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{77}
-\glossaryentry{Hamiltonian?\glossentry{hamiltonian}|setentrycounter[]{page}\glsnumberformat}{83}
-\glossaryentry{wave function?\glossentry{wavefunction}|setentrycounter[]{page}\glsnumberformat}{83}
-\glossaryentry{plane wave?\glossentry{planewave}|setentrycounter[]{page}\glsnumberformat}{87}
-\glossaryentry{Bloch theorem?\glossentry{blochtheorem}|setentrycounter[]{page}\glsnumberformat}{87}
-\glossaryentry{Brillouin Zone?\glossentry{brillouinzone}|setentrycounter[]{page}\glsnumberformat}{87}
-\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{87}
-\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{87}
-\glossaryentry{Fermi energy?\glossentry{fermienergy}|setentrycounter[]{page}\glsnumberformat}{87}
-\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{91}
-\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{91}
-\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{91}
-\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{Pauli exclusion principle?\glossentry{pauliexp}|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{fermion?\glossentry{fermion}|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{valence electron?\glossentry{valenceelectron}|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{homogeneous electron gas?\glossentry{heg}|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{invar effect?\glossentry{invareffect}|setentrycounter[]{page}\glsnumberformat}{96}
-\glossaryentry{matrix diagonalization?\glossentry{matrixdiagonalization}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{Zn?\glossentry{Zn}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{Cu?\glossentry{Cu}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{O?\glossentry{O}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{sensitization?\glossentry{sensitization}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{sensitization?\glossentry{sensitization}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{C?\glossentry{C}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{316SS?\glossentry{316SS}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{Ir?\glossentry{Ir}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{Pt?\glossentry{Pt}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{orthorhombic?\glossentry{orthorhombic}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{isostructural transformation?\glossentry{isostructuraltransformation}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{Cs?\glossentry{Cs}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{enthalpy?\glossentry{enthalpy}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{enthalpy?\glossentry{enthalpy}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{antiferromagnetic?\glossentry{antiferromagnetic}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Neel temperature?\glossentry{neeltemp}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Neel temperature?\glossentry{neeltemp}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Cauchy pressure?\glossentry{cauchypressure}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Cauchy pressure?\glossentry{cauchypressure}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Neel temperature?\glossentry{neeltemp}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{antiferromagnetic?\glossentry{antiferromagnetic}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Cauchy pressure?\glossentry{cauchypressure}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{Hamiltonian?\glossentry{hamiltonian}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{wave function?\glossentry{wavefunction}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{plane wave?\glossentry{planewave}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{Bloch theorem?\glossentry{blochtheorem}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{Brillouin Zone?\glossentry{brillouinzone}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{Wigner-Seitz cell?\glossentry{wignerseitzcell}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{Fermi energy?\glossentry{fermienergy}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{Kohn-Sham equations?\glossentry{kohnshameq}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{Pauli exclusion principle?\glossentry{pauliexp}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{fermion?\glossentry{fermion}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{valence electron?\glossentry{valenceelectron}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{jellium?\glossentry{jellium}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{homogeneous electron gas?\glossentry{heg}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{invar effect?\glossentry{invareffect}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{matrix diagonalization?\glossentry{matrixdiagonalization}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{Co?\glossentry{Co}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{Pauli vector?\glossentry{paulivector}|setentrycounter[]{page}\glsnumberformat}{98}
 \glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{101}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{102}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{102}
-\glossaryentry{Co?\glossentry{Co}|setentrycounter[]{page}\glsnumberformat}{102}
-\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{102}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{102}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{102}
-\glossaryentry{Pauli vector?\glossentry{paulivector}|setentrycounter[]{page}\glsnumberformat}{103}
-\glossaryentry{Co?\glossentry{Co}|setentrycounter[]{page}\glsnumberformat}{119}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{127}
-\glossaryentry{observationally stable?\glossentry{obsstable}|setentrycounter[]{page}\glsnumberformat}{128}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{101}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{101}
+\glossaryentry{Co?\glossentry{Co}|setentrycounter[]{page}\glsnumberformat}{116}
+\glossaryentry{Co?\glossentry{Co}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{observationally stable?\glossentry{obsstable}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{127}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{127}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{127}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{127}
+\glossaryentry{Tc?\glossentry{Tc}|setentrycounter[]{page}\glsnumberformat}{128}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{128}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{128}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{129}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{130}
 \glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{Tc?\glossentry{Tc}|setentrycounter[]{page}\glsnumberformat}{131}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{131}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{131}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{132}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{131}
+\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{132}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{132}
 \glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{132}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{132}
-\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{141}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{141}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{141}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{132}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{132}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{132}
+\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{138}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{138}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{138}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{138}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{138}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{140}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{140}
+\glossaryentry{etot\_conv\_thr?\glossentry{etotconvthr}|setentrycounter[]{page}\glsnumberformat}{141}
+\glossaryentry{forc\_conv\_thr?\glossentry{forcconvthr}|setentrycounter[]{page}\glsnumberformat}{141}
+\glossaryentry{conv\_thr?\glossentry{convthr}|setentrycounter[]{page}\glsnumberformat}{141}
+\glossaryentry{diagonalization?\glossentry{diagonalization}|setentrycounter[]{page}\glsnumberformat}{141}
+\glossaryentry{mixing\_beta?\glossentry{mixingbeta}|setentrycounter[]{page}\glsnumberformat}{141}
+\glossaryentry{mixing\_mode?\glossentry{mixingmode}|setentrycounter[]{page}\glsnumberformat}{141}
 \glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{141}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{141}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{143}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{143}
-\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{144}
-\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{147}
-\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{147}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{148}
-\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{149}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{150}
-\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{154}
-\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{154}
+\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{144}
+\glossaryentry{Bohr magneton?\glossentry{bohrmagneton}|setentrycounter[]{page}\glsnumberformat}{144}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{145}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{146}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{147}
+\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{151}
+\glossaryentry{Al?\glossentry{Al}|setentrycounter[]{page}\glsnumberformat}{151}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{152}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{152}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{152}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{152}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{153}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{153}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{153}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{153}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{153}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{153}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{153}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{153}
 \glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{155}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{155}
-\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{155}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{155}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{158}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{160}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{160}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{162}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{162}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{162}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{162}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{162}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{162}
+\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{162}
 \glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{162}
 \glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{162}
-\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{164}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{164}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{164}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{164}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{165}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{165}
-\glossaryentry{Pd?\glossentry{Pd}|setentrycounter[]{page}\glsnumberformat}{165}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{169}
-\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{169}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{169}
-\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{169}
-\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{171}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{162}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{163}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{163}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{166}
+\glossaryentry{Cr?\glossentry{Cr}|setentrycounter[]{page}\glsnumberformat}{166}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{166}
+\glossaryentry{Ni?\glossentry{Ni}|setentrycounter[]{page}\glsnumberformat}{166}
+\glossaryentry{Mo?\glossentry{Mo}|setentrycounter[]{page}\glsnumberformat}{168}
+\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{170}
+\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{171}
 \glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{173}
-\glossaryentry{Ru?\glossentry{Ru}|setentrycounter[]{page}\glsnumberformat}{174}
-\glossaryentry{Fe?\glossentry{Fe}|setentrycounter[]{page}\glsnumberformat}{176}
-\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{178}
-\glossaryentry{Young's modulus?\glossentry{youngsmodulus}|setentrycounter[]{page}\glsnumberformat}{376}
+\glossaryentry{304SS?\glossentry{304SS}|setentrycounter[]{page}\glsnumberformat}{175}
+\glossaryentry{Young's modulus?\glossentry{youngsmodulus}|setentrycounter[]{page}\glsnumberformat}{373}

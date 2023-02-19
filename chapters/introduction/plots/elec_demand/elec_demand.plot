@@ -16,7 +16,7 @@
 # 4. ps - monochrome
 # set terminal postscript eps monochrome enhanced blacktext  size 8,6
 # set output "plot.eps"
-set terminal postscript eps monochrome enhanced blacktext  size 6.4,4.8
+set terminal postscript eps color enhanced blacktext  size 6.4,4.8
 set output "elec_demand.eps"
 #
 # Set multiple plot layout
@@ -47,7 +47,7 @@ set datafile separator ","
 #------------------
 # Plot 1
 #------------------
-set title "Electricity Demand UK: 1956-2013"
+set title "Electricity Demand UK: 1950-2021"
 set label 1 '' at graph 0.92,0.9 font ',8'
 set xlabel "Year"
 set ylabel "Electricity in Millions of Tonnes of Oil Equivalent"

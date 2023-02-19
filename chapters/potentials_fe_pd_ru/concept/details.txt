@@ -1,0 +1,3 @@
+101,373 atoms
+1fs timestep
+101,373 atoms

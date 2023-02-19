@@ -43,23 +43,57 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 33634 items from 5000.
+Reallocated field_info (elt_size=8) to 37804 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: share/bib/thesis2022.bib
-I was expecting a `,' or a `}'---line 932 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 1108 of file share/bib/thesis2022.bib
  :  
  :  url          = {https://www.materialssquare.com/blog/5-short-but-important-calculation-of-a-single-atom},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 941 of file share/bib/thesis2022.bib
+I was expecting a `,' or a `}'---line 1117 of file share/bib/thesis2022.bib
  :  
  :  url          = {https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 2773 of file share/bib/thesis2022.bib
- : 
- : %%##################################################
+I was expecting a `,' or a `}'---line 1126 of file share/bib/thesis2022.bib
+ :  
+ :  url          = {https://www.euronuclear.org/glossary/radiation-weighting-factors/},
 (Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1135 of file share/bib/thesis2022.bib
+ :  
+ :  url          = {https://journals.sagepub.com/doi/pdf/10.1177/ANIB_37_2-4},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1144 of file share/bib/thesis2022.bib
+ :  
+ :  url          = {https://mathworld.wolfram.com/BromwichIntegral.html},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1156 of file share/bib/thesis2022.bib
+ :  pages        = 32
+ :                   -46,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1170 of file share/bib/thesis2022.bib
+ :  pages        = 122
+ :                    -133,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1198 of file share/bib/thesis2022.bib
+ :  pages        = 77
+ :                   -137,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1211 of file share/bib/thesis2022.bib
+ :  volume       = 386
+ :                    -388,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1226 of file share/bib/thesis2022.bib
+ :  pages        = 2891
+ :                     -2897,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2938 of file share/bib/thesis2022.bib
+ : @article{buckpot
+ :                 ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "dfttisiravindran"
 Warning--I didn't find a database entry for "Fe_abch"
@@ -68,10 +102,10 @@ Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 
 Here's how much of BibTeX's memory you used:
- Cites:               204 out of 750
- Fields:            28355 out of 33634
- Hash table:       199105 out of 200000
- Strings:            2132 out of 200000
- Free string pool:  37793 out of 65000
+ Cites:               234 out of 750
+ Fields:            32525 out of 37804
+ Hash table:       199055 out of 200000
+ Strings:            2255 out of 200000
+ Free string pool:  41194 out of 65000
  Wizard functions:   6365 out of 9000
-(There were 3 error messages)
+(There were 11 error messages)

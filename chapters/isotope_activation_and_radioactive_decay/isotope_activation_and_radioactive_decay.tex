@@ -3,7 +3,10 @@
 \begin{changemargin}{1.0cm}{1.0cm}
 \abstractpreamble{Using a proton source is an attractive alternative to neutron sources as they can generate similar damage doses at a much smaller cost.  Isotopes in a material may be transmuted through either neutron or ion irradiation, so this remains a concern.  The probability of transmutation is modelled using the \acrshort{omp} and this data is available in \acrshort{endf}.\\
 \\
-Radioactive isotopes take time to decay to safe levels, and the chain they follow may be complex.  Bateman developed an equation to model this.  This equation is developed further in chapter \ref{chapter:activitycode} resulting in a code called Activity.  This couples the new equation with cross section data and ion trajectories from \acrshort{trim} and \acrshort{srim}.}
+Radioactive isotopes take time to decay to safe levels, and the chain they follow may be complex.  Bateman developed an equation to model this.  This equation is developed further in chapter \ref{chapter:activitycode} resulting in a code called Activity.  This couples the new equation with cross section data and ion trajectories from \acrshort{trim} and \acrshort{srim}.\\
+\\
+In this work radiation activation will be modelled and potentials developed to model radiation damage.  This chapter outlines experimental sources of ions and neutrons followed by a discussion of activation and the ion transport codes \acrshort{srim} and \acrshort{trim}.
+}
 \end{changemargin}
 
 
@@ -53,11 +56,24 @@ $He^{2+}$ & 8-53 & 30 & $2.93 \times 10^{14}$ \\
 
 The moderate size, energy range, availability and cost of these Cyclotrons make them ideal candidates for damaging targets with light ions, rather than neutrons from a neutron source.
 
-The Scanditronix MC40 is an isochronous cyclotron.  As the ions are accelerated to higher and higher velocities, the effects of special relativity become appreciable.
+
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=.50\linewidth]{chapters/isotope_activation_and_radioactive_decay/plots/relativistic/proton_energy.eps}
+\captionsetup{font={it}}
+\caption{A plot of relativistic and classical velocities for 0MeV - 1000MeV protons}
+\label{fig:relitavisticplot}
+\end{center}
+\end{figure}
+
+The Scanditronix MC40 is an isochronous cyclotron.  As the ions are accelerated to higher and higher velocities, the effects of special relativity become appreciable.  The relativistic velocity ($v$) is dependent upon the speed of light (c), the rest energy of the ion ($E_0$) and the kinetic energy of the particle ($E_t$).  The rest energy is defined by the rest mass ($m_0$) and the speed of light, although the particle rest masses are typically given in energies of MeV.  The difference between the classical and relativistic calculations is illustrated in fig. \ref{fig:relitavisticplot}.
 
 \begin{equation}
 \begin{split}
-v = c \sqrt{1 - \frac{{E_{rest}}^2}{{E_V}^2}}
+E_0 = m_0 c^2 \\
+E_T = m_0 c^2 \left[\frac{1}{\sqrt{1-\frac{v^2}{c^2}}} - 1 \right] \\
+\therefore v = c \sqrt{1 - \left(\frac{E_{0}}{E_t + E_{0}}\right)^2}
 \end{split}
 \label{eq:eqGammaFunction}
 \end{equation}
@@ -102,10 +118,10 @@ There are 250 or so research reactors in 55 countries \cite{researchreactorstats
 \FloatBarrier
 \subsubsection{\acrlong{hfir}, Oak Ridge}
 
-The \acrlong{hfir}, at the \acrlong{ornl} in America, is an 85MW research reactor that provides testing space within the reactor as well as a number of neutron beam lines (figure \ref{fig:hfir}).  The reactor uses highly enriched Uranium as its fuel source and is scheduled to operate at 100\% capacity for 161 days per year, in cycles of approximately 23 days.  A 30cm surround of Beryllium is used to reflect neutrons, and in the reactor core there is a high flux of thermal neutrons at a rate of $2.3 \times 10^{15}$ neutrons $cm^{-2} s^{-1}$\cite{hfirornluserguide}.
+The \acrlong{hfir}, at the \acrlong{ornl} in America, is an 85MW research reactor that provides testing space within the reactor as well as a number of neutron beam lines (fig. \ref{fig:hfir}).  The reactor uses highly enriched Uranium as its fuel source and is scheduled to operate at 100\% capacity for 161 days per year, in cycles of approximately 23 days.  A 30cm surround of Beryllium is used to reflect neutrons, and in the reactor core there is a high flux of thermal neutrons at a rate of $2.3 \times 10^{15}$ neutrons $cm^{-2} s^{-1}$\cite{hfirornluserguide}.
 
 
-\begin{figure}[htb]
+\begin{figure}[ht]
 \centering
 \begin{subfigure}{.44\textwidth}
   \centering
@@ -132,9 +148,9 @@ The \acrlong{hfir}, at the \acrlong{ornl} in America, is an 85MW research reacto
 
 The \acrlong{nbs} Reactor (fig. \ref{fig:nbsrbeamlines}) was designed as a research reactor with a power output of 40MW and a neutron flux of approximately $1.0 \times 10^{15}$ neutrons $cm^{-2} s^{-1}$.  It uses highly enriched Uranium as fuel and is both moderated and cooled by heavy water. 
 
-\begin{figure}
+\begin{figure}[ht]
 \begin{center}
-\includegraphics[width=.70\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/nbsr.png}
+\includegraphics[width=.65\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/nbsr.png}
 \captionsetup{font={it}}
 \caption{\acrshort{nbsr} building layout\cite{nbsrhistory}}
 \label{fig:nbsrbeamlines}
@@ -151,7 +167,7 @@ Neutrons result from fission in nuclear reactors, but spallation sources require
 
 ISIS is a neutron spallation source located in Harwell, Oxford.  Protons are accelerated in a \acrshort{linac} to 0.37c before being fed into a 163m circumference synchrotron.  The protons are then accelerated to 0.84c before being projected, in bunches, at a tungsten target.  The impact with the tungsten releases neutrons\cite{isisneutronsource}.
 
-\acrlong{ornl} also has a neutron spallation source, the \acrshort{sns} (figure \ref{fig:ornlspallationsource}).  A \acrshort{linac} accelerates a negatively charged proton (a hydrogen atom with two electrons) up to just below 0.9c.  It is stripped of the electrons and enters an accumulation ring as a proton.  More protons are accumulated until the beam in the accumulator is diverted at a mercury target.  The collision between the mercury target and the protons releases approximately 20 neutrons per collision, and these neutrons pass through beam lines to the experiments . 
+\acrlong{ornl} also has a neutron spallation source, the \acrshort{sns} (fig. \ref{fig:ornlspallationsource}).  A \acrshort{linac} accelerates a negatively charged proton (a hydrogen atom with two electrons) up to just below 0.9c.  It is stripped of the electrons and enters an accumulation ring as a proton.  More protons are accumulated until the beam in the accumulator is diverted at a mercury target.  The collision between the mercury target and the protons releases approximately 20 neutrons per collision, and these neutrons pass through beam lines to the experiments . 
 
 \begin{figure}
   \begin{center}
@@ -216,9 +232,9 @@ The compact proton source that is the cyclotron is compared to neutron sources. 
 
 Neutrons emitted during the fission of Uranium-235 have an energy spectra in the intermediate to fast range, with a peak at 1MeV, and a large proportion in the 1MeV to 10MeV range (fig. \ref{fig:u235neutronspectra}).  The higher energy neutrons are more of a concern to this work as higher energy neutrons, on colliding with atoms within the target material, cause large damage cascades.  
 
-\begin{figure}[tbp]
+\begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=.7\linewidth]{chapters/isotope_activation_and_radioactive_decay/plots/neutronspectrau235fission.png}
+    \includegraphics[width=.8\linewidth]{chapters/isotope_activation_and_radioactive_decay/plots/neutronspectrau235fission.png}
     \captionsetup{font={it}}
     \caption{Neutron Spectra from the Fission of U235\cite{leachmanneutrons}}
     \label{fig:u235neutronspectra}
@@ -231,22 +247,23 @@ As discussed earlier in this chapter, there are a number of methods available to
 
 \subsection{Ion Irradiation at the University of Birmingham}
 
-The Scanditronix MC-40 Cyclotron is used at the University of Birmingham to create a beam of protons or other light ions.  The energies of these ions are typically between 10 MeV and 60 MeV with beam currents ranging up to 50 microamps (3.1x10\textsuperscript{14} protons per second).  Target materials are irradiated by this cyclotron for a number of reasons, including purposely creating radioactive isotopes for the nearby Queen Elizabeth Hospital, investigating ion irradiation damage and emulating neutron irradiation.
+The University of Birmingham acquired a cyclotron in 2004\cite{bhamcyclotron}, the model being a Scanditronix MC-40.  It is capable of accelerating a range of light ions, to energies in the region of 10-60MeV and at currents up to 50 microamps.  In the case of protons, this is equivalent to $3.1 \times 10^{14}$ protons per second\cite{activitycpc}. 
 
-The Cyclotron is usually used to create radioactive isotopes for medical use, but an additional beam line has been devoted to material science investigations into radiation damage.  While the creation of radioactive isotopes is desired in some cases, material being tested for radiation damage should preferably have low levels of radioactivity.
+The Cyclotron has been used to provide a steady source of radioactive isotopes for medical applications, including ${}^{18}_9 F$ for \acrfull{pept}\cite{bhamcyclotron}.  A new beam line was added for materials testing, but for this application the creation of radioactive isotopes is an unwanted by-product of the materials damage research. 
 
-It is expensive to arrange the irradiation of target materials by high energy neutrons sources, whereas it is relatively inexpensive to irradiate using an ion beam on the MC-40 Cyclotron.  The energies can be controlled, and a set dose at a single energy, or a range of energies, can be precisely deposited into the target material.  The reaction cross section for neutrons also cover a much larger range including lower energy projectiles, something Coulomb repulsion reduces for ions (fig. \ref{fig:fe56ni58xs}).
+The use of neutron sources is typically expensive and the activation of atoms into radioactive isotopes is not impeded by the Coulomb barrier.  This is highlighted by cross section data for ${}^{56}_{26}Fe$ and ${}^{58}_{28}Ni$ in fig. \ref{fig:fe56ni58xs}.  The MC-40 Cyclotron is relatively inexpensive and allows materials research in a more controlled manner, given how the beam may be adjusted in terms of energy and flux as well as being focused onto a smaller area of material.
 
-\begin{figure}[tbp]
+
+\begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=.7\linewidth]{chapters/isotope_activation_and_radioactive_decay/plots/npd_xs/fe56_ni58_xs.eps}
+    \includegraphics[width=.9\linewidth]{chapters/isotope_activation_and_radioactive_decay/plots/npd_xs/fe56_ni58_xs.eps}
     \captionsetup{font={it}}
-    \caption{Neutron, proton and deuteron cross sections for Fe56 and Ni58}
+    \caption{Neutron, proton and deuteron cross sections for Fe56 and Ni58, plotted with data from the \acrshort{tendl} database\cite{tendl2009}}
     \label{fig:fe56ni58xs}
   \end{center}
 \end{figure}
 
-The Activity code discussed in this work was developed to calculate the activity of a target material irradiated by a proton beam.  It has been developed in Python and uses data from the TALYS and TENDL proton cross section databases, \acrshort{srim} ion transport code and \acrlong{nds} radioactive decay database.  It is discussed in greater detail in chapter \ref{chapter:activitycode}. 
+In chapter \ref{chapter:activitycode} the Activity code created in this work will be discussed.  It was developed to calculate the activity of targets irradiated by the Cyclotron.  It was originally developed in Fortran\cite{activitycpc} but was rewritten in Python.  Cross section data has been generated using the TALYS code, ion transport is carried out using \acrshort{srim} and the \acrshort{jeff} \cite{jeff311} nuclear data library is used for radioactive decay data.
 
 
 \FloatBarrier
@@ -265,15 +282,15 @@ The fission of Uranium-235 atoms results in neutrons with a varied spectrum of e
 \subsubsection{Proton Activation}
 \label{section:protonactivation}
 
-Considering a simplified nuclear potential well, energetic protons approaching a nucleus may overcome the Coulomb potential barrier.  They are captured by the nucleus and held within the potential well by the strong nuclear force.  The barrier between a proton and a target nucleus may be approximated using eq. \ref{eq:coulombbarrier}\cite{coulombhyperphysics} and eq. \ref{eq:nuclearsize}\cite{nuclearsizehyperphysics}.  Using these equations does neglect the probability of lower energy protons being captured via quantum tunnelling of the Coulomb barrier.
+Considering a simplified nuclear potential well, energetic protons approaching a nucleus may overcome the Coulomb potential barrier.  They are captured by the nucleus and held within the potential well by the strong nuclear force.  The barrier between a proton and a target nucleus may be approximated using eq. \ref{eq:coulombbarrier}\cite{coulombhyperphysics} and eq. \ref{eq:nuclearsize}\cite{nuclearsizehyperphysics}.  Using these equations does neglect the probability of lower energy protons being captured via quantum tunnelling of the Coulomb barrier.  These equations require the charge for the projectile ($Z_1$) and target ($Z_2$) and the nuclear radius for each ($r_1$ and $r_2$ respectively).  In order to approximate the nuclear radius using the Fermi model, the only dependency is the mass number ($A$).
 
 \begin{equation}
-V_{Coloumb} = \frac{e^2}{4 \pi \epsilon_{0}} \frac{Z_1 Z_2}{r_{1} + r_{2}}
+V_{Coloumb} = \frac{e^2}{4 \pi \epsilon_{0}} \frac{Z_1 Z_2}{(r_{1} + r_{2})}
 \label{eq:coulombbarrier}
 \end{equation}
 
 \begin{equation}
-r = r_{0} A^{1/3} \text{ where } r_0 = 1.2 \times 10^{-15}m
+r = r_{0} A^{1/3} \text{       where } r_0 = 1.2 \times 10^{-15}m
 \label{eq:nuclearsize}
 \end{equation}
 
@@ -295,7 +312,7 @@ The reaction rate is calculated from the microscopic cross section, using eq, \r
 \item $\delta t$	target thickness (m)
 \end{itemize}
 
-
+The barn (unit) is the standard cross section unit for nuclear physics.  As the number density and target thickness (or track length) are given in meters, barns are converted to square meters using the factor $10^{-28}$.
 
 
 
@@ -339,11 +356,11 @@ V = 0 r > R
 \label{eq:FeshbachPotential}
 \end{equation}
 
-The potential in equation \ref{eq:FeshbachPotential} has the parameters $R = 1.4 \times A^{\frac{1}{3}}$, $V_0 = 42MeV$ and $\zeta = 0.03$ where A is the atomic mass of the target atom.
+The potential in equation \ref{eq:FeshbachPotential} has the parameters $R = 1.45 \times A^{\frac{1}{3}}$, $V_0 = 42MeV$ and $\zeta = 0.03$ where A is the atomic mass of the target atom.  These parameters were fit to the experimental data available to Feshbach et al\cite{feshbach} with the only variable being the atomic mass\cite{hodgson1}.
 
 Considering the complexity of the system being modelled, this simple model was very successful.  Over the years since, the models used have become more complex and parameters used have been fit to an increasing amount of experimental data.
 
-The Talys code uses a range of models (figure \ref{fig:talysworkflow}).  These include the optical model which is solved using the \acrlong{ecis} (ECIS-06) code of Jacques Raynal, implemented as a subroutine within Talys, and this is accurate up to 180MeV\cite{talysmanual}.  Whilst the Talys code has been extended up to 1GeV, it is experimental in the 180MeV to 1GeV range.  Fortunately, this work only requires nuclear reaction cross section data up to approximately 100MeV as the current ion source under consideration produced ions with energies up to 60MeV.
+The TALYS code uses a range of models (fig. \ref{fig:talysworkflow}).  These include the optical model which is solved using the \acrlong{ecis} (ECIS-06) code of Jacques Raynal, implemented as a subroutine within TALYS, and this is accurate up to 180MeV\cite{talysmanual}.  Whilst the TALYS code has been extended up to 1GeV, it is experimental in the 180MeV to 1GeV range.  Fortunately, this work only requires nuclear reaction cross section data up to approximately 100MeV as the current ion source under consideration produced ions with energies up to 60MeV.
 
 \begin{figure}[tbp]
   \begin{center}
@@ -354,9 +371,9 @@ The Talys code uses a range of models (figure \ref{fig:talysworkflow}).  These i
   \end{center}
 \end{figure}
 
-The Talys code has potentials for protons and neutrons, but it also has potentials for deuterons, tritons, helium-3 and alpha particles.  The potentials are discussed in detail in the Talys manual\cite{talysmanual}.  This extension to heavier ions may be useful for this work as the University of Birmingham cyclotron is capable of accelerating deuterons and $He^{2+}$ ions.
+The TALYS code has potentials for protons and neutrons, but it also has potentials for deuterons, tritons, helium-3 and alpha particles.  The potentials are discussed in detail in the TALYS manual\cite{talysmanual}.  This extension to heavier ions may be useful for this work as the University of Birmingham cyclotron is capable of accelerating deuterons and $He^{2+}$ ions.
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=.75\linewidth]{chapters/isotope_activation_and_radioactive_decay/images/Fe54-Co55.png}
     \captionsetup{font={it}}
@@ -365,7 +382,7 @@ The Talys code has potentials for protons and neutrons, but it also has potentia
   \end{center}
 \end{figure}
 
-Comparing experimental data to the Talys data for $Fe54(p, \gamma)Co55$ shows good agreement between 1MeV and 10MeV.  There was insufficient experimental data from this source, but the Talys generated data ranges from micro eV up to 100MeV+, as seen in figure \ref{fig:Fe54-Co55}\cite{tendlfeco}.
+Comparing experimental data to the TALYS data for $Fe54(p, \gamma)Co55$ shows good agreement between 1MeV and 10MeV.  There was insufficient experimental data from this source, but the TALYS generated data ranges from micro eV up to 100MeV+, as seen in fig. \ref{fig:Fe54-Co55}\cite{tendlfeco}.
 
 
 \FloatBarrier
@@ -406,7 +423,7 @@ The \acrfull{padf} was released in 2007 and contained nuclear reaction data for 
 
 \subsubsection{TENDL 2019 Data Files}
 
-The cross section data for protons and neutrons is available to download in \acrshort{endf} format files.  The data sources used by this work are the Talys code and \acrshort{tendl} data files, and these are created by a combination of different nuclear models and experimental data.  The \acrshort{tendl} nuclear reaction simulation code provides the calculated data.
+The cross section data for protons and neutrons is available to download in \acrshort{endf} format files.  The data sources used by this work are the TALYS code and \acrshort{tendl} data files, and these are created by a combination of different nuclear models and experimental data.  The \acrshort{tendl} nuclear reaction simulation code provides the calculated data.
 
 The nuclear reaction files are rather large, and they all follow a standard format.
 
@@ -442,7 +459,7 @@ The nuclear reaction files are rather large, and they all follow a standard form
 
 \subsection{Radioactive Decay}
 
-Radioactive decay is the random change in nucleons or energy state of an unstable nucleus.  It is impossible to predict when a single nucleus will decay, but the decay of a collection of nuclei is statistical in nature.  The radioactivity and number of unstable nuclei at time t can be predicted using the decay constant, \textlambda, for the radioactive isotope.  This constant is defined as follows:
+Radioactive decay is the random change in nucleons or energy state of an unstable nucleus.  It is impossible to predict when a single nucleus will decay, but the decay of a collection of nuclei is statistical in nature.  The radioactivity and number of unstable nuclei at time (t) can be predicted using the decay constant (\textlambda) for the radioactive isotope.  This constant is defined as follows:
 
 \begin{equation}
 \lambda = - \frac{N'(t)}{N(t)}
@@ -468,13 +485,22 @@ A(t) = \lambda N(0) \exp(-t \lambda)
 
 As a radioactive isotope is created by reactions between target atoms and projectiles (protons, neutrons, deuterons) it will begin to decay.  The amount of the isotope will continue to increase until the decay rate equals the reaction rate for the creation of the isotope.
 
-For a single isotope:
+For a single isotope the production rate ($\omega$) is calculated using the ion current ($J$), the charge per ion ($Q$), the number density of atoms in the target ($n_{\rho}$), the reaction cross section ($\sigma$) and the track length ($\delta t$), as given in eq. \ref{eq:reactionrate}.  The units are amps and coulombs for the current and charge, whereas the cross section is in barns and the number density in atoms per cubic meter.  The track distance is measured in meters.  This necessitates the conversion from barns to square meters, hence the factor $10^{-28}$.
 
 \begin{equation}
 \begin{split}
-\omega = \frac{J}{Q} \cdot n_{\rho} \cdot \sigma \cdot 10^{-28} \delta t \\
+\omega = \frac{J}{Q} \cdot n_{\rho} \cdot \sigma \cdot 10^{-28} \delta t
+\end{split}
+\label{eq:reactionrate}
+\end{equation}
+
+The change in the amount of an isotope with time ($\frac{dN}{dt}$) is the source rate minus the loss rate ($\lambda N$) as given in eq. \ref{eq:isotopechange}.  This is given as the initial condition the starting amount $N_0$ at time $t = 0$.
+
+\begin{equation}
+\begin{split}
 \frac{dN}{dt} = \omega - \lambda N, N(0) = N_0
 \end{split}
+\label{eq:isotopechange}
 \end{equation}
 
 This equation may be solved using Laplace transforms (appendix \ref{chapter:usefullaplacetransforms}) and this will be explored in more detail in section \ref{section:laplaceequations}.  The solution for a single isotope that has a starting amount $N_0$, a decay constant $\lambda$ and a creation rate of $\omega$ is given in eq. \ref{eq:decayequationoneisotope}.
@@ -486,7 +512,7 @@ N(t) = \frac{\omega}{\lambda} + \left(N_{0} - \frac{\omega}{\lambda} \right) \ex
 \label{eq:decayequationoneisotope}
 \end{equation}
 
-The saturation activity may be computed as follows.  As t approaches infinity the exponential term tends towards zero due to the negative decay constant.  Replacing the exponential terms with zero and noting eq. \ref{eq:activityofanisotope} leaves a simple result to compute the saturation activity $A_{s}$ (eq. \ref{eq:saturationactivity}).  This is logical as, once saturated, the isotope will decay at the same rate as its source.
+The saturation activity may be computed as follows.  As t approaches infinity the exponential term tends towards zero due to the negative decay constant.  Replacing the exponential terms with zero and noting eq. \ref{eq:activityofanisotope} leaves a simple result to compute the saturation activity ($A_{s}$) (eq. \ref{eq:saturationactivity}).  This is logical as, once saturated, the isotope will decay at the same rate as its source.
 
 \begin{equation}
 \begin{split}
@@ -496,7 +522,7 @@ A_{s} = \lambda N_{s} = \omega \\
 \label{eq:saturationactivity}
 \end{equation}
 
-The saturation time is trickier to compute.  Mathematically the sample would never reach saturation, it would get ever closer as time elapsed.  Rather than compute this time (which would be meaningless) it is more useful to compute the time at which the saturation reaches a fraction, k, of the maximum saturation amount $N_{s}$.
+The saturation time lies on an asymptote, therefore the saturation time is undefined.  Rather than attempt to compute this time it is more useful to compute the time at which the saturation reaches a fraction (k) of the maximum saturation amount ($N_{s}$).
 
 \begin{equation}
 \begin{split}
@@ -515,7 +541,7 @@ The equation is useful in calculating (near to) the maximum possible activity of
 
 It is a collection of many data files.  Released in 2017, it also contains several files for incident gammas, protons, deuterons, tritons, helium-3 and alphas from the \acrshort{tendl} 2017 data file.
 
-The files that will be important for this work are the \acrshort{endf}-6 radioactive decay data files only.  The nuclear reaction cross section data will come from Talys and various iterations of the \acrshort{tendl} libraries.  The decay data held in the \acrshort{jeff} 3.3 file includes isotope data, masses, half lives, branching factors, continuous and discrete gamma data.
+The files that will be important for this work are the \acrshort{endf}-6 radioactive decay data files only.  The nuclear reaction cross section data will come from TALYS and various iterations of the \acrshort{tendl} libraries.  The decay data held in the \acrshort{jeff} 3.3 file includes isotope data, masses, half lives, branching factors, continuous and discrete gamma data.
 
 
 \subsection{Bateman Equation for Radioactive Decay}
@@ -542,12 +568,14 @@ The files that will be important for this work are the \acrshort{endf}-6 radioac
 \label{fig:decaychain}
 \end{figure}
 
-The English mathematician Harry Bateman derived an equation (eq. \ref{eq:bateman}) to calculate the amount of each isotope in a decay chain, illustrated in Figure \ref{fig:decaychain}, at time t.
+The English mathematician Harry Bateman derived an equation (eq. \ref{eq:bateman}\cite{bateman}\cite{batemanequation}) to calculate the amount of each isotope in a decay chain, illustrated in fig. \ref{fig:decaychain}, at time t.  $N$ is the isotope amount and $n$ denotes the nth isotope in that decay chain.  The decay constant ($\lambda$) is required for each isotope in the decay chain along with the starting amount for the first isotope in the decay chain ($N_1(0)$).
 
 \begin{equation}
-N_{n}(t) = \sum_{i=1}^{i=n} \left( \left( \prod_{j=i}^{j=n-1} \lambda_{(ij+1)}\right) \sum_{j=i}^{j=n} \left(\frac{N_{i0}\exp(-\lambda_{j}t)}{\prod_{p=i,p\neq j}^{p=n} (\lambda_{p} - \lambda_{j})}\right)\right)
+N_{n}(t) = \frac{N_1(0)}{\lambda_n} \sum_{i=1}^{n} \left[ \prod_{j=1, i\ne j}^{n} \frac{\lambda_j}{\lambda_j - \lambda_i}\right] \exp(-\lambda_i t) 
 \label{eq:bateman}
 \end{equation}
+
+This equation (eq. \ref{eq:bateman}) allows the user to calculate how much of each isotope there is expected to be at some time in the future, where each of the isotopes in the decay chain is decaying.
 
 When a radioactive isotope decays, there may be more than one mode of decay, and this leads to branching factors.  Pb-214 only decays via beta decay to Bi-214, giving a branching factor of 1.0, whereas Bi-214 has a 99.979\% chance of decaying to Po-214 by beta decay and a 0.021\% of emitting an alpha particle and decaying to Tl-210 (branching factors of 0.99979 and 0.00021 respectively) \cite{jeff311}.
 
@@ -564,31 +592,52 @@ A package of ion transport codes, \acrshort{srim}, is freely available to downlo
 
 \acrshort{trim} does not take into account the structure of a target.  It may be layered in the calculation perpendicular to the beam, but beyond that the target is treated as amorphous.  It will give the same result for BCC iron as it would for FCC iron, providing the density remains the same.  The density and whether or not the target layer is a gas or solid are options that must be configured when setting up a calculation.  Each ion history is tracked through the same target; the target never changes.  \acrshort{trim} is ignorant to the structure and therefore damage to the structure that would accumulate over time, and to any swelling and change in composition or density.
 
-The interaction of the ion with the target material is split into two parts: nuclear loss and electronic loss.  The ion is tracked through the target until either its energy drops below a set threshold (10eV) or it leaves the target (figure \ref{fig:fe13traj}).  The code then moves on to the next ion history.
+The interaction of the ion with the target material is split into two parts: nuclear loss and electronic loss.  The ion is tracked through the target until either its energy drops below a set threshold (10eV) or it leaves the target (fig \ref{fig:fe13traj}).  The code then moves on to the next ion history.
 
-In a projectile-nucleon interaction, the magic formula (eq. \ref{eq:magicformula})\cite{srimbook} is used to determine the scattering angle $\Theta$ of the ion and target nucleus, as well as the amount of energy transferred.  The azimuthal angle is selected randomly by multiplying $2\pi$ by a random float $[0.0, 1.0]$.
+In a projectile-nucleon interaction a number of equations were developed by Biersack et al\cite{srimbook} where a number of parameters are fit for the screened potential.  They are used to determine the scattering angle $\Theta$ of the ion and target nucleus, as well as the amount of energy transferred.  The azimuthal angle is selected randomly by multiplying $2\pi$ by a random float $[0.0, 1.0]$.
+
+The screening length ($a$) is dependent upon the charge of the projectile ($Z_1$) and that of the target ($Z_2$) (eq. \ref{eq:screeninglength}).
+
+\begin{equation}
+\begin{split}
+a = \frac{0.8853 a_0}{\left(Z_1^{\frac{2}{3}} + Z_2^{\frac{2}{3}}\right)}
+\end{split}
+\label{eq:screeninglength}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\epsilon \equiv \frac{a E_c}{Z_1 Z_2 e^{2}}
+\end{split}
+\label{eq:reducedenergy}
+\end{equation}
+
+The scattering angle ($\Theta$) is computed using eq. \ref{eq:magicformula1}.  It is dependent upon the screening length (eq. \ref{eq:screeninglength}) as well as the reduced energy ($\epsilon$) (eq. \ref{eq:reducedenergy}).  Five other parameters were fit ($C_1$ to $C_5$) by Biersack and these are given in eq. \ref{eq:magicformula2}.
 
 \begin{equation}
 \begin{split}
 cos \left(\frac{\Theta}{2}\right) = \frac{B + R_c + \Delta}{R_0 + R_C} \\
-B = \frac{p}{a} \\
-R_0 = \frac{r_0}{a} \\
-R_C = \frac{\rho}{a} \\
+\text{where } \\
+B = \frac{p}{a} \text{,    }  R_0 = \frac{r_0}{a} \text{,    }  R_C = \frac{\rho}{a} \\
 \Delta = A \frac{R_0 - B}{1 + G} \\
+\end{split}
+\label{eq:magicformula1}
+\end{equation}
+
+\begin{equation}
+\begin{split}
 A = 2 \alpha \epsilon B^\beta \\
 G = \gamma \left(\left(1+A^2\right)^{\frac{1}{2}}-A\right)^{-1} \\
-\alpha = 1 + C_1 \epsilon^{-\frac{1}{2}} \\
-\beta = \frac{C_2 + \epsilon^{\frac{1}{2}}}{C_3 + \epsilon^{\frac{1}{2}}} \\
-\gamma = \frac{C_4 + \epsilon^{\frac{1}{2}}}{C_5 + \epsilon^{\frac{1}{2}}} \\
+\alpha = 1 + C_1 \epsilon^{-\frac{1}{2}} \text{,    } \beta = \frac{C_2 + \epsilon^{\frac{1}{2}}}{C_3 + \epsilon^{\frac{1}{2}}} \text{,    } \gamma = \frac{C_4 + \epsilon^{\frac{1}{2}}}{C_5 + \epsilon^{\frac{1}{2}}} \\
 \text{where } p \text{ is the impact parameter} \\
 \text{where } a \text{ is the screening length} \\
 \text{where } r_0 \text{ is the distance of closest approach} \\
 \text{where } \epsilon \text{ is the reduced energy} 
 \end{split}
-\label{eq:magicformula}
+\label{eq:magicformula2}
 \end{equation}
 
-The potential between the projectile and target is calculated at the distance of closest approach, $r_0$.  It is a Coulomb type potential (eq. \ref{eq:interatomicpotential}) than includes the universal screening function (eq. \ref{eq:universalscreening}).  This potential will appear again, although occasionally with differing parameters, in chapter \ref{chap:backgroundfitting}.
+The potential between the projectile and target is calculated at the distance of closest approach, $r_0$.  It is a Coulomb type potential (eq. \ref{eq:interatomicpotential}) than includes the universal screening function (eq. \ref{eq:universalscreening})\cite{srimbook}.  This potential will appear again, although occasionally with differing parameters, in chapter \ref{chap:backgroundfitting}.  The parameters defined here in eq. \ref{eq:universalscreening} are those derived and published by Ziegler, Ziegler and Biersack in the 2015 \acrshort{srim} book\cite{srimbook}.
 
 \begin{equation}
 V(R) = \frac{Z_1 Z_2 e^2}{a R} \Phi(R)
@@ -596,7 +645,7 @@ V(R) = \frac{Z_1 Z_2 e^2}{a R} \Phi(R)
 \end{equation}
 
 \begin{equation}
-\Phi(R) = 0.1818 exp(-3.2 x) + 0.5099 exp(-0.9423 x) + 0.2802 exp(-0.4028 x) + 0.2817 exp(-0.2016 x)
+\Phi(R) = 0.1818 \exp(-3.2 x) + 0.5099 \exp(-0.9423 x) + 0.2802 \exp(-0.4028 x) + 0.2817 \exp(-0.2016 x)
 \label{eq:universalscreening}
 \end{equation}
 
@@ -626,7 +675,7 @@ The target damage is a combination of the incoming ion, the primary knock on ato
   \end{center}
 \end{figure}
 
-One file that \acrshort{srim} creates is of importance to the Activity code, and that is the trajectory file that contains the energy and x,y,z co-ordinate data points for simulated ions moving through matter.  Figure \ref{fig:fe13traj} shows the trajectory of one hundred 13MeV protons entering and passing through an Iron target, and it is this set of data points (together with the cross section database) that the Activity code uses to calculate the reaction rates for the transmutation of nuclei in the target.  At higher energies, the ions slow as they lose energy due to electronic stopping, but as the ion energy drops the mechanism of loss through nuclear collisions becomes important.  The spreading of ion depths at lower energies is a result of the higher momentum transfer during nuclear collisions.
+One file that \acrshort{srim} creates is of importance to the Activity code, and that is the trajectory file that contains the energy and x,y,z co-ordinate data points for simulated ions moving through matter.  Fig. \ref{fig:fe13traj} shows the trajectory of one hundred 13MeV protons entering and passing through an Iron target, and it is this set of data points (together with the cross section database) that the Activity code uses to calculate the reaction rates for the transmutation of nuclei in the target.  At higher energies, the ions slow as they lose energy due to electronic stopping, but as the ion energy drops the mechanism of loss through nuclear collisions becomes important.  The spreading of ion depths at lower energies is a result of the higher momentum transfer during nuclear collisions.
 
 
 

@@ -19,7 +19,7 @@
 
 \subsection{Introduction}
 
-There are three types of radiation that are useful to discuss in this work: neutrons, ions and gammas, and two of these (neutrons and protons) are of particular interest here.  Each of these are capable of ionizing the atoms they interact with, given sufficient energy.  Higher energy and momentum radiation it is able to directly damage materials or the \acrshort{dna} structure of organic life that it interacts with.  Lower momentum ionizing radiation may change the water chemistry of the environment or within the cells of organic lifeforms that is detrimental to life.
+There are three types of radiation that are useful to discuss in this work: neutrons, light ions and gamma rays.  Two of these in particular, neutrons and protons, are of particular interest here due to the damage they may cause.  Each of these are capable of ionizing the atoms they interact with, given sufficient energy.  Higher energy and momentum radiation it is able to directly damage materials or the \acrshort{dna} structure of organic life that it interacts with.  Lower momentum ionizing radiation may change the water chemistry of the environment or within the cells of organic lifeforms that is detrimental to life.
 
 
 
@@ -41,14 +41,14 @@ This may result in a stable nucleus or an unstable nucleus.  If it is unstable, 
 \subsection{Neutrons}
 
 
-Neutrons interact with matter differently to that of protons, ions and other atoms, as the neutron has no overall charge.  Neutrons do have a magnetic moment and experience a weak interaction with unpaired electrons by a dipole-dipole interaction.  Neutrons also interact with the nucleus of atoms, and this is dependant upon the target atom and the energy of the projectile neutron.  The energy of neutrons may be grouped as shown in table \ref{table:neutronenergies}, and as mentioned earlier, thermal neutrons are of interest to current reactor designs, and fast neutrons are of interest to several future designs.
+Neutrons interact with atoms in matter differently to that of protons, heavier ions and other atoms within the material, as the neutron has no overall charge.  Neutrons interact with the nucleus of atoms, and this is dependant upon the target atom and the energy of the projectile neutron.  The energy of neutrons may be grouped as shown in table \ref{table:neutronenergies}, and as mentioned earlier, thermal neutrons are of interest to current reactor designs, and fast neutrons are of interest to several future designs.
  
 \begin{table}[h]
 \begin{center}
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{c c c c}
 \hline\hline
-Name & Energy Range & Velocity/ms\textsuperscript{-1} & Wavelength Ang \\
+Name & Energy Range & Velocity (ms\textsuperscript{-1}) & Wavelength (angstrom) \\
 \hline\hline
 Cold & 0-0.025 eV & 0.0 - $2.2 \times 10^{3}$ &  $> 1.8$  \\
 Thermal & 0.025 eV & ~$2.2 \times 10^{3}$ &  1.8  \\
@@ -63,11 +63,11 @@ Relativistic & $>20$ MeV & $>6.1 \times 10^{7}$ & $< 6.5 \times 10^{-5}$\\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Neutron Categories by Energy Range \cite{njcarron}}
+\caption{Neutron categories by energy range \cite{njcarron}}
 \label{table:neutronenergies}
 \end{table}
 
-The nuclear force holds nuclei together by exchanging pions and the types of interactions are shown in figure \ref{fig:pninteractions}.  It is 137 times stronger than the electromagnetic force, but because of the mass of the pion (approximately 130-140MeV) it only acts over a short range of approximately 1fm.  The nuclear force is attractive but has a short-range repulsive core.
+The nuclear force holds nuclei together by exchanging pions and the types of interactions are shown in figure \ref{fig:pninteractions}.  It is 137 times stronger than the electromagnetic force, but because of the mass of the pion (approximately 130-140MeV) it only acts over a short range of approximately 1fm.  The nuclear force is attractive but has a short-range repulsive core.  It is this force that allows either a neutron or proton to be captured by a nucleus, although this system is much more complex.  This leads to activation of the material and the creation of radioactive isotopes.
 
 \begin{figure}[htb]
 \centering
@@ -179,36 +179,41 @@ The nuclear force holds nuclei together by exchanging pions and the types of int
 \caption{Exchange interaction p-n\cite{pionexchange}}
 \label{fig:pnpion}
 \end{subfigure}
-\caption{Proton and neutron interactions}
+\caption{Proton (p) and neutron (n) interactions with the exchange of virtual \gls{pimesons} ($\Pi^{0}$, $\Pi^{-}$, $\Pi^{+}$), carriers of the strong nuclear force, responsible for binding neutrons or protons to the nucleus during the activation of a material}
 \label{fig:pninteractions}
 \end{figure}
 
 For nuclear reaction and damage calculations, the interaction of neutrons with matter is represented by a cross section (section \ref{section:nuclearxs}).  Cross sections are used to calculate the probability of a certain interaction occurring and are dependent upon the target nucleus, how much of the material they pass through and the energy of the neutron.
 
-The attenuation of neutron radiation is therefore a complicated process.  A much larger thickness of shielding is required to stop neutrons, or at least bring them to thermal temperatures.  Not only this, but the thermalized neutrons must then be captured.  During this process various isotopes within the attenuating shielding will have been transmuted, possibly into radioactive isotopes.  As a rough estimate if a certain amount of material will attenuate neutrons to 10\% their original flux, then the same amount of material will reduce the flux further to 1\%.  This is however an over simplification and computer codes such as \acrfull{mcnp} and TART more accurately model the transport of neutrons through materials. 
+The attenuation of neutron radiation is therefore a complicated process.  A much larger thickness of shielding is required to stop neutrons, or at least bring them to thermal temperatures.  Not only this, but the thermalized neutrons must then be captured.  During this process various isotopes within the attenuating shielding will have been transmuted, possibly into radioactive isotopes.  As a rough estimate if a certain amount of material will attenuate neutrons to 10\% their original flux, then the same amount of material will reduce the flux further to 1\%.  This is however an over simplification and computer codes such as \acrfull{mcnp} and \gls{tart} more accurately model the transport of neutrons through materials. 
 
 
 
 \FloatBarrier
-\subsection{High Energy Photons}
+\subsection{Gamma Rays}
 
-The electromagnetic spectrum classifies photons based on their energy and/or source, but visible light, x-rays, gamma rays and so on are all the same elementary \enquote{particle}.  During the early years of Quantum Mechanics, the relationship between the energy and wavelength of a photon was discovered: the Planck-Einstein relation (eq. \ref{eq:planckeinstein}).
+The electromagnetic spectrum classifies photons based on their energy and/or source, but visible light, X-rays, gamma rays and so on are all the same elementary \enquote{particle}, the photon.  A constraint on gamma rays is that they originate from the decay of an excited nucleus and are typically more energetic than X-rays.  X-rays are photons created by electrons changing energy levels within an atom or by accelerating high energy charged particles. 
+
+During the early years of Quantum Mechanics, the relationship between the energy ($E$) and wavelength ($\lambda$) of a photon was discovered: the Planck-Einstein relation (eq. \ref{eq:planckeinstein}), where Planck's constant ($h$) is equal to $6.626 \times 10^{-34} m^2 kg s^{-1}$.  The frequency ($f$) is the inverse of the wavelength.
 
 \begin{equation}
 \begin{split}
-E = h f
+E = h f \text{   where   } f = \frac{1}{\lambda}
 \end{split}
 \label{eq:planckeinstein}
 \end{equation}
 
+At very high energies (10s-100s MeV) gamma rays interact predominantly through pair production.  At lower energy Compton scattering is the dominant interaction and it allows the gamma rays to lose momentum and energy in collisions with electrons.  Finally, for energies below 10keV-100keV, gamma rays lose energy through the photoelectric effect.
+
 \subsubsection{Pair Production}
 
-The energy of photons in the database used for this work ranges from 1keV up to almost 10MeV.  There are several ways high energy photons will interact with the atoms of a target material.  The rest mass of an electron is 511keV.  If the photon energy is greater than 1.02MeV, i.e. there is at least enough energy to create an electron and positron, there is a chance that the photon will create an electron-proton pair.  
+The energy of photons in the database used for this work ranges from 1keV up to almost 10MeV.  There are several ways high energy photons will interact with the atoms of a target material.  The rest mass of an electron is 511keV.  If the photon energy is greater than 1.02MeV, i.e. there is at least enough energy to create an electron and positron, there is a chance that the photon will create an electron-proton pair. The energy of the photon ($h f$) balanced by the electron mass ($m_e$), positron mass ($m_p$) and their kinetic energies ($T_e$, $T_p$) as shown in eq. \ref{eq:pairproduction}.
 
 \begin{equation}
 \begin{split}
 h f = (m_e + m_p) c^2 + T_e + T_p
 \end{split}
+\label{eq:pairproduction}
 \end{equation}
 
 The creation conserves energy and mass, with excess energy carried away as the kinetic energy of the particle pair.  The charge before the creation is zero, as the photon is neutral, and the charge after is also zero, with the -1 of the electron and +1 of the positron cancelling out.  Angular momentum is also conserved; the photon is a spin 1 Boson and, as electrons and positrons are Leptons they have half integer spin, adding up to 1.  Finally, momentum is not conserved in a vacuum, and this is why pair production occurs in the coulomb field of a nucleus.  The nucleus carries away excess momentum, fulfilling this conservation law (fig. \ref{fig:pairproduction}).
@@ -237,7 +242,7 @@ The creation conserves energy and mass, with excess energy carried away as the k
   \end{feynman}
 \end{tikzpicture}
 \end{center}
-\caption{Pair production Feynman diagram}
+\caption{Pair production Feynman diagram, the process responsible for 511keV and 1.022MeV gamma lines\cite{pairproductionfeynman}}
 \label{fig:pairproduction}
 \end{figure}
 
@@ -266,14 +271,14 @@ An incident photon with enough energy may interact with the electron of an atom,
   \end{feynman}
 \end{tikzpicture}
 \end{center}
-\caption{Compton Scattering Feynman diagram}
+\caption{Compton Scattering Feynman diagram - responsible for attenuation of gamma rays through a material\cite{comptonscatteringfeynman}}
 \label{fig:comptonscattering}
 \end{figure}
 
 
 \subsubsection{Photoelectric Effect}
 
-Photons of sufficient energy interact with and eject electrons from the surface of a metal (fig. \ref{fig:photoelectric}).  At lower energies, the photons have no effect on the electrons.  Ejected electrons have a maximum kinetic energy equal to the difference between the energy of the interacting photon and the workfunction, $T_{max} = h \nu - \phi$.
+Photons of sufficient energy interact with and eject electrons from the surface of a metal (fig. \ref{fig:photoelectric}).  At lower energies, the photons have no effect on the electrons.  Ejected electrons have a maximum kinetic energy ($T_{max}$) equal to the difference between the energy of the interacting photon and the workfunction ($\phi$), $T_{max} = h \nu - \phi$.
 
 \begin{figure}[h]
 \begin{center}
@@ -295,53 +300,53 @@ Photons of sufficient energy interact with and eject electrons from the surface 
   \end{feynman}
 \end{tikzpicture}
 \end{center}
-\caption{Photoelectric Effect Feynman diagram}
+\caption{Photoelectric Effect Feynman diagram - absorption of gamma rays through the transfer of energy to an orbital electron\cite{photoelectricfeynman}}
 \label{fig:photoelectric}
 \end{figure}
 
 
 
-\subsubsection{Coherent Scattering}
+%\subsubsection{Coherent Scattering}
+%
+%Lower energy, non-ionizing photons, have insufficient energy to eject electrons (fig. \ref{fig:coherentscattering}).  Coherent scattering is the interaction in which photons change direction, scattering, without losing energy.  This is also known as Rayleigh scattering.
 
-Lower energy, non-ionizing photons, have insufficient energy to eject electrons (fig. \ref{fig:coherentscattering}).  Coherent scattering is the interaction in which photons change direction, scattering, without losing energy.  This is also known as Rayleigh scattering.
 
-
-\begin{figure}[h]
-\begin{center}
-\begin{tikzpicture}
-  \begin{feynman}
-    \vertex (a) {\(\gamma\)};
-    \vertex [below right=of a] (b);
-    \vertex [right=of b] (c);
-    \vertex [below left=of b] (d) {\(Z^{+}\)};
-    \vertex [above right=of c] (e) {\(\gamma\)};
-    \vertex [below right=of c] (f) {\(Z^{+}\)};
-    \diagram* {
-      (a) -- [boson] (b),
-      (b) -- [fermion] (c),
-      (d) -- [fermion] (b),
-      (c) -- [boson] (e),
-      (c) -- [fermion] (f),
-    };
-  \end{feynman}
-\end{tikzpicture}
-\end{center}
-\caption{Coherent Scattering Feynman diagram}
-\label{fig:coherentscattering}
-\end{figure}
+%\begin{figure}[h]
+%\begin{center}
+%\begin{tikzpicture}
+%  \begin{feynman}
+%    \vertex (a) {\(\gamma\)};
+%    \vertex [below right=of a] (b);
+%    \vertex [right=of b] (c);
+%    \vertex [below left=of b] (d) {\(Z^{+}\)};
+%    \vertex [above right=of c] (e) {\(\gamma\)};
+%    \vertex [below right=of c] (f) {\(Z^{+}\)};
+%    \diagram* {
+%      (a) -- [boson] (b),
+%      (b) -- [fermion] (c),
+%      (d) -- [fermion] (b),
+%      (c) -- [boson] (e),
+%      (c) -- [fermion] (f),
+%    };
+%  \end{feynman}
+%\end{tikzpicture}
+%\end{center}
+%\caption{Coherent Scattering Feynman diagram}
+%\label{fig:coherentscattering}
+%\end{figure}
 
 \subsubsection{Gamma Attenuation}
 
-Whilst an infinite amount of material is required to reduce the intensity of gammas to zero, they may be reduced by a significant amount with dense material.  Lead, Uranium and other high density elements with a large number of electrons per unit volume are ideal.
+Whilst an infinite amount of material is required to reduce the intensity of gammas to zero, they may be reduced by a significant amount with dense material.  Lead, Uranium and other high density elements with a large number of electrons per unit volume are ideal.  As highlighted in the previous paragraphs, gamma rays lose energy in material through Compton Scattering and the Photoelectric Effect.
 
 \begin{equation}
 \begin{split}
-I(\mu/\rho(E), t) = I_0 exp\left(\frac{-\mu}{\rho}(E) \rho t \right)
+I(\mu/\rho(E), t) = I_0 \exp\left(-\frac{\mu}{\rho}(E) \rho t \right)
 \end{split}
 \label{eq:knollattenuation}
 \end{equation}
 
-The attenuation is dependent upon the thickness of the material , with a thicker material reducing the intensity of the gammas (eq. \ref{eq:knollattenuation}\cite{gknollattenuation}).  It is also dependent upon the mass attenuation coefficients that are in turn dependent upon the photon energy.  A table of attenuation coefficients are available for each element\cite{massattenuation}.
+The attenuation is dependent upon the thickness of the material ($t$) and its density ($\rho$), with a thicker and denser material reducing the intensity ($I$) of the gamma rays (eq. \ref{eq:knollattenuation}\cite{gknollattenuation}).  It is also dependent upon the initial intensity $I_0$ and the mass attenuation coefficients ($\frac{\mu}{\rho}$) that are in turn dependent upon the photon energy ($E$).  A table of attenuation coefficients is available for each element\cite{massattenuation}.
 
 
 
@@ -359,7 +364,7 @@ The attenuation is dependent upon the thickness of the material , with a thicker
 
 \section{Microscopic and Macroscopic Cross Sections}
 
-As discussed above there are a range of different ways in which matter interacts.  The probability that a certain interaction will happen, which may be a function of the target, projectile and projectile energy, is described with the microscopic cross section.  The total microscopic cross section is computed by summing all the individual reaction channels (eq. \ref{eq:totalmicroscopic})
+As discussed above there are a range of different ways in which matter interacts.  The probability that a certain interaction will happen, which may be a function of the target, projectile and projectile energy, is described with the microscopic cross section.  The total microscopic cross section, $\sigma_{total}$, is computed by summing all the individual reaction channels (eq. \ref{eq:totalmicroscopic})
 
 \begin{equation}
 \begin{split}
@@ -370,28 +375,21 @@ As discussed above there are a range of different ways in which matter interacts
 
 The cross section has units of area and is measured in \gls{barn}s.  When this area is multiplied by the target thickness and number density of the target, the fraction of projectiles that will react in this way is computed (see section \ref{section:protonactivation}).
 
-Multiplying the microscopic cross sections by the number density defines the macroscopic cross section, whether it be for an individual reaction type or the sum of them all.  This has units of atoms per meter and taking the inverse gives the \gls{meanfreepath} of the projectile in the target material.
+Multiplying the microscopic cross sections by the number density ($N_{d}$) defines the macroscopic cross section ($\Sigma_{total}$) (eq. \ref{eq:macroscopic}), whether it be for an individual reaction type or the sum of them all.  This has units of atoms per meter and taking the inverse gives the \gls{meanfreepath}, $\lambda$, of the projectile in the target material (eq. \ref{eq:meanfreepath}).
 
-\begin{minipage}[b]{0.49\linewidth}
-\begin{center}
 \begin{equation}
 \begin{split}
-\Sigma{total} = N_{d} \times \sigma_{total} \text{    } 
+\Sigma_{total} = N_{d} \times \sigma_{total}
 \end{split}
-\label{eq:totalmicroscopic}
+\label{eq:macroscopic}
 \end{equation}
-\end{center}
-\end{minipage}
-\begin{minipage}[b]{0.49\linewidth}
-\begin{center}
+
 \begin{equation}
 \begin{split}
-\lambda = \frac{1}{\Sigma}
+\lambda = \frac{1}{\Sigma_{total}}
 \end{split}
-\label{eq:totalmicroscopic}
+\label{eq:meanfreepath}
 \end{equation}
-\end{center}
-\end{minipage}
 
 The probabilities and associated libraries of a neutron, proton, deuteron and so on transmuting a target atom are discussed in more detail in section \ref{section:nuclearxs}.
 
@@ -412,6 +410,7 @@ The reason for attributing a value to a radiation source is usually because we w
 
 Parameters most obvious to quantify radiation are the rate at which the particles are being created as well as the duration the equipment, material or person is exposed to that radiation. 
 
+\begin{comment}
 The energy of the particles will determine the type of damage it is able to do.  We are regularly exposed to visible light with several hundred watts or more per square meter from the Sun.  The same power from a 1-2MeV gamma source would require far fewer photons, with one gamma for every million visible light photons being enough.  The affect wouldn't be a gentle warming as it would be for sunlight, but a fatal dose of radiation.
 
 How far the radiation is able to travel is another factor as a certain dose may be received very close to the source, but reduced due to both spherical degradation and attenuation at a distance further away.  This is particularly relevant for charged particle radiation such as alphas and betas.
@@ -424,27 +423,60 @@ The material, component or part of the body radiation passes through will also d
 
 
 Radioactivity, the number of decays per second, is measured in either \Gls{becquerel}, \Gls{curie} or \gls{rutherford}.  The Curie was based on the radioactivity of Radon-226, but for the most of this work, the unit of choice will be \gls{becquerel}.
+\end{comment}
 
-Fluence ($\phi$) is the measure of the total number of particles passing through an area (eq. \ref{eq:fluence}).  Whilst this is typically defined as the amount passing through a spherical area, the proton radiation that concerns this work is directional and it will be the planar fluence\cite{dosimetrygreening}.  The fluence rate is a measure of how many particles pass through a sphere (or plane where planar) per second.
+Fluence ($\phi$) is the measure of the total number of particles ($N$) passing through an area ($A$) (eq. \ref{eq:fluence}).  Whilst this is typically defined as the amount passing through a spherical area, the proton radiation that concerns this work is directional and it will be the planar fluence\cite{dosimetrygreening}.  The fluence rate, flux ($\dot{\phi}$), is a measure of how many particles pass through a sphere (or plane where planar) per second.
 
 \begin{equation}
 \begin{split}
-\phi = N/A \text{    } \dot{\phi} = \frac{d\phi}{dt} 
+\phi = N/A \\
+\dot{\phi} = \frac{d\phi}{dt} 
 \label{eq:fluence}
 \end{split}
 \end{equation}
 
-Absorbed dose is the amount of energy absorbed by a unit mass.  This will be the sum of the fluence and energies of each individual particle and will depend upon the proportion of that energy deposited in the target.  It is measured in the SI unit \gls{gray} although a historical unit is \gls{rad}, which is equal to 1 centigray.
+Absorbed dose (D) is the amount of energy absorbed by a unit mass.  This will be the sum of the fluence and energies of each individual particle and will depend upon the proportion of that energy deposited in the target.  It is measured in the SI unit \gls{gray} although a historical unit is \gls{rad}, which is equal to 1 centigray.
 
 \begin{equation}
 \begin{split}
-D_{equivalent} = W_{r} \times D_{absorbed} \\
-D_{equivalent} = W_{r} \times W_{t} \times D_{absorbed} \\
+H_T = \sum_R W_{r} \times D_{T,R} \\
+\label{eq:equivalentdose}
+\end{split}
+\end{equation}
+
+Both the type of radiation and the type of tissue determine how much of an impact that radiation has per unit energy per unit mass.  The equivalent dose ($H_T$) is calculated from the mean absorbed dose ($D_{T,R}$) weighted by the type of radiation (eq. \ref{eq:equivalentdose}\cite{icrp103}).  The radiation weights ($W_{r}$) are determined by the \acrfull{rbe} of the radiation type and may also be dependent on its energy.  Typical values are given in table \ref{table:radiationweighting}\cite{radiationweighting}.
+
+\begin{table}[h]
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c c c}
+\hline\hline
+Radiation & Energy & $W_R$ \\
+\hline\hline
+Photons & all & 1\\
+Electrons & all & 1\\
+Neutrons & Less than 10 keV & 5 \\
+Neutrons & 10 keV to 100 keV & 10 \\
+Neutrons & 100 keV to 2 MeV & 20 \\
+Neutrons & 2 MeV to 20 MeV & 10 \\
+Neutrons & More than 20 MeV & 5 \\
+\hline\hline
+\end{tabular}
+\end{center}
+\caption{Coarse radiation weighting factors\cite{radiationweighting}}
+\label{table:radiationweighting}
+\end{table}
+
+The type of tissue is similarly accounted for in order to compute the effective dose (E) and requires tissue weighting factors ($W_T$) (eq. \ref{eq:equivalenteffectivedose}\cite{radiationweighting}).
+
+\begin{equation}
+\begin{split}
+E = \sum_T W_T \sum_R W_{r} \times D_{T,R} \\
 \label{eq:equivalenteffectivedose}
 \end{split}
 \end{equation}
 
-Both the type of radiation and the type of tissue determine how much of an impact that radiation has per unit energy per unit mass.  Both the equivalent and effective (eq. \ref{eq:equivalenteffectivedose}) dose are measured in the Si unit \gls{sievert}, and historically they have been measured in \gls{rem} where the base unit is cGy rather than Gy.
+Both the equivalent and effective dose are measured in the Si unit \gls{sievert}, and historically they have been measured in \gls{rem} where the base unit is cGy rather than Gy.
 
 
 
@@ -461,6 +493,8 @@ Both the type of radiation and the type of tissue determine how much of an impac
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+
+\begin{comment}
 \section{Effects of Radiation on Organics}
 \label{section:effectsofradiationorg}
 
@@ -485,7 +519,7 @@ Dental X-ray & 0.005 \\
 Chest X-ray & 0.02 \\
 UK average annual dose limit for the public &  1.0 \\
 UK average annual dose (background) &  2.7 \\
-Whole bodt CT scan & 10 \\
+Whole body CT scan & 10 \\
 Nuclear industry employee annual exposure limit & 20 \\
 Acute radiation effects & 1,000 \\
 50\% lethal dose within 60 dyas & 2,500-5,000 \\
@@ -516,7 +550,7 @@ In work by Rodenas and Verdu a MCNP5 simulated neutron flux environment with a t
 
 The maximum cross section of ${}^{55}_{25}Mn$ (n, $\gamma$) ${}^{56}_{25}Mn$ is 2.0 barns and the estimated reaction rate at this flux is just over $2.0 \times 10^6$.  As the half life of ${}^{56}_{25}Mn$ is short compared to the irradiation time (a half life of 2.5 hours) the creation rate of Mn \textsuperscript{56} and decay rate equalise, saturating the sample with this isotope.
 
-The flux in the within the flux trap of the \acrshort{hfir} is much higher, with high energy neutrons having a flux of $1.0 \times 10^{14}$ neutrons per cm squared per second (fig. \ref{fig:hfir_neutron_flux}).  With a seven fold increase in the magnitude of flux when compared to the \acrshort{mcnp} simulation, if the same component were irradiated inside the reactor, much higher levels of radioactivity would be achieved.  
+The flux within the \enquote{flux trap} of the \acrshort{hfir} is much higher, with high energy neutrons passing through at a rate of $1.0 \times 10^{14}$ neutrons per cm squared per second (fig. \ref{fig:hfir_neutron_flux}).  With a seven fold increase in the magnitude of flux when compared to the \acrshort{mcnp} simulation, if the same component were irradiated inside the reactor, much higher levels of radioactivity would be achieved.  
 
 Immediately after being removed from the reactor, the radiation due to ${}^{56}_{25}Mn$ would be extremely hazardous.  Although this isotope does have a short half life, it would need to be investigated whether or not other longer lived radioactive isotopes exists within the target that would continue to be hazardous for longer.
 
@@ -553,7 +587,7 @@ The body relies heavily on three types of blood cell: erythrocytes (red cells), 
 The lens of the eye is very sensitive to radiation and cataracts can be created by gamma rays.  Radiation can also cause damage to the gut including removal of the lining, bleeding and death.  These are examples of deterministic  effects.
 
 Whilst it is difficult to predict the effects of radiation, particularly for stochastic effects where the effect is heavily dependent on chance, this work on calculating activity of proton irradiated targets aims to give the user a predicted activity and dose value with associated assumptions and caveats.  It is then down to the user to apply the resulting data to the situation and evaluate any health consequences.
-
+\end{comment}
 
 
 
@@ -567,7 +601,7 @@ Whilst it is difficult to predict the effects of radiation, particularly for sto
 
 \section{Damage Cascades in Metals}
 
-When a metal is damaged by radiation, there are microscopic defects created and removed in a very short space of time.  The result of many months or years of damage is complex and will be discussed in more detail in chapter \ref{chap:backgroundsteels}.
+When a metal is damaged by radiation microscopic defects are created and removed in a very short space of time.  The result of many months or years of damage is complex and will be discussed in more detail in chapter \ref{chap:backgroundsteels}.
 
 \begin{table}[h]
 \begin{center}
@@ -588,7 +622,7 @@ Zirconium & -6.32 \\
 \label{table:cohesiveexamples}
 \end{table}
 
-The cohesive energy of atoms are measured in eV (table. \ref{table:cohesiveexamples}), whereas the energy of incoming neutrons or fission fragments are measured in MeV and \acrshort{pka}s having energies in the keV range.  Radiation in the form of electrons, protons and heavy ions will lose energy to electrons in the target as they pass through.  They may also lose energy to atoms within the lattice, knocking that atom out of place and creating a \acrshort{pka}.  Due to its neutral charge and magnetic moment, neutrons have a very weak interaction with charged particles.  They primarily lose energy directly with the nucleus of atoms within the target, also creating a \acrshort{pka}.
+The energy of incoming neutrons, ions or fission fragments in a reactor and \acrshort{pka}s created by them are multiple orders of magnitude higher than the cohesive energies of atoms in the target material (table \ref{table:cohesiveexamples}).  Charged radiation will lose energy to electrons in the target and also directly with the nuclei of atoms, but neutrons will lose energy primarily in collisions with nuclei.  When an atom is knocked out of place by a projectile (a neutron, ion or fission fragment), it becomes a \acrshort{pka}. 
 
 \begin{table}[h]
 \begin{center}
@@ -605,19 +639,28 @@ Projectile & Mean Recoil Energy \\
 \end{tabular}
 \end{center}
 \caption{Average recoil energy of Nickel \acrshort{pka}s\cite{gswas}}
+\label{table:nirecoilenergy}
 \end{table}
 
-The \acrshort{pka}s create a damage cascade, and their mean recoil energy is dependent upon the energy and type of radiation.  After each cascade, there will be a period of time where the material quenches, with a recombination of some interstitials and vacancies.  The \acrshort{pka} creation and cascade thermal spike cover a time range of $10^{-18}$s to $10^{-13}$s, with the quenching phase lasting in the region of $10^{-11}$s.  However, the cumulative effect of radiation damage on a component within a reactor core may only become apparent after months or years.
+The \acrshort{pka}s create a damage cascade, and their mean recoil energy is dependent upon the energy and type of radiation.  G. S. Was\cite{gswas} gives examples of mean recoil energies for \gls{Ni} atoms (table \ref{table:nirecoilenergy}) and these show a range of three orders of magnitude between different forms of radiation of the same energy.  
+
+After each cascade, there will be a period of time where the material quenches, with a recombination of some interstitials and vacancies.  The \acrshort{pka} creation and cascade thermal spike cover a time range of $10^{-18}$s to $10^{-13}$s, with the quenching phase lasting in the region of $10^{-11}$s.  However, the cumulative effect of radiation damage on a component within a reactor core may only become apparent after months or years.
+
+Not all interstitials and vacancies recombine, but they may remain as separate interstitial vacancy pairs (Frenkel defects\cite{frenkel1}).  In a reactor the damage process repeats and constantly produces interstitials and vacancies.  These aggregate into prismatic loops\cite{prisloops2} and, as they cannot self-annihilate by glide\cite{prisloop3}, they remain in the material and continue to grow.
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=.4\linewidth]{chapters/consequences_of_ionizing_radiation/images/stoller1996damage.png}
-    \caption{Interstitials in the cascades of 10keV, 20keV and 40keV \acrshort{pka} displacement cascades \cite{stollerdamage1996}}
+    \caption{Interstitial formation in 10keV, 20keV and 40keV \acrshort{pka} displacement cascades and subcascades \cite{stollerdamage1996}.  Only interstitials resulting from the three \acrshort{pka}s are shown in the simulation cell.}
     \label{fig:stollerdamage}
   \end{center}
 \end{figure}
 
-The immediate aftermath of interstitials created three damage cascades is shown in figure \ref{fig:stollerdamage}\cite{stollerdamage1996}.  Damage cascades have been the subject of a number of studies and due to their short time scale and complexity, involving thousands to millions of atoms, are studied with computer simulations.
+Damage cascades have been the subject of a number of studies and due to their short time scale and complexity, involving thousands to millions of atoms, are studied with computer simulations.  Given the shorter stopping range of a charged atom, when compared with a neutron, \acrshort{pka}s with energies in the tens to hundreds of keV are now possible to model.
+
+The immediate aftermath of interstitials created three damage cascades is shown in figure \ref{fig:stollerdamage}\cite{stollerdamage1996}.  In this work by Stoller in the mid 1990s, it was possible to model such cascades with a \acrlong{fs} potential.  The supercell sizes ranged from 54,000 atoms for a 1.24keV \acrshort{pka} to 1,024,000 for a 61.3keV \acrshort{pka}.  Given the improvement in workstation computer power as well as petascale and exascale supercomputers today, the ability to capture the spatial aspect of a \acrshort{md} simulated damage cascade is assured.
+
+By creating new potentials (chapter \ref{chapter:potentialsfepdru}) there is the possibility of exploring \acrshort{ris} and the underlying defects and loops caused by radiation damage, in \acrshort{pgm} doped austenitic stainless steels.
 
 
 
