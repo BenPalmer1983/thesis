@@ -1,5 +1,6 @@
 \FloatBarrier
 \section[DFT Results]{DFT Reference Database and Bulk Properties}
+\label{section:dftrefdb}
 
 The potentials in this work were designed for austenitic stainless steel and the properties of the individual elements in the \acrshort{fcc} structure were computed using \acrshort{dft}.  This is due to the bulk properties only being available experimentally for \acrshort{fcc} \Gls{Pd}.  A database of atom configurations along with atom positions, energy, forces and stresses was also compiled using \acrshort{dft} calculations.
 
@@ -71,7 +72,7 @@ $U_{yx}$                   & 0.000           & 0.000            & 0.000         
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Relaxed energies calculated in Quantum Espresso}
+\caption{Relaxed energies calculated in Quantum Espresso - $U_{nn}$ is the entry in the 9 element matrix that represents the three basis vectors of the cell, where values not specified here are equal to zero.}
 \label{table:relaxedenergies}
 \end{table}
 
@@ -84,7 +85,7 @@ The configuration for Fe has been referred to throughout this work as \acrshort{
 \begin{figure}[ht] 
   \centering
   \includegraphics[width=.7\linewidth]{chapters/potentials_fe_pd_ru/images/fe-austenitic-mag.png} 
-  \caption{Magnetic alignment along the z-axis, antiferromagnetic Fe fcc}  
+  \caption{Magnetic alignment along the z-axis, antiferromagnetic Fe \acrshort{fcc}}  
   \label{fig:ironfccantiferromagnetic}
 \end{figure}
 
@@ -233,7 +234,7 @@ The settings of note used in these calculations were a configuration of just 1 i
 It was important to reduce the number of processor cores as too many would cause matrix decomposition errors for a low number of atoms, causing Quantum Espresso to crash.  An option to leverage more cores was to split the calculation into pools using the -npool input flag for PWscf, but this was not necessary for this set of calculations.
 
 
-The isolated and relaxed energy values were computed and from these values the cohesive energies were calculated (figure \ref{fig:isolatedatoms} and table \ref{table:calculatedcohesiveenergies}).  In doing so, it became apparent that there were errors of up to 12\% between the known values and those computed with \acrshort{dft}.
+The isolated and relaxed energy values were computed and from these values the cohesive energies were calculated (fig. \ref{fig:isolatedatoms} and table \ref{table:calculatedcohesiveenergies}).  In doing so, it became apparent that there were errors of up to 12\% between the known values and those computed with \acrshort{dft}.
 
 \begin{figure}[h]
 \begin{center}
@@ -323,11 +324,11 @@ The QEEOS code was used to compute the bulk properties and in doing so it create
   \caption{Fe-Ru database}
   \label{fig:ferudb}
 \end{subfigure}
-\caption{Neighbouring atom separations and their frequency over 5 subsections of the \acrshort{dft} reference database}
+\caption{Neighbouring atom separations and their frequency over 5 subsections of the \acrshort{dft} reference database.  The neighbour separation, in angstrom, runs along the x-axis.  The neighbour separations were sorted into 200 bins for each reference database, and the percentage each bin is filled runs along the y-axis.}
 \label{fig:dbneighbourseparations}
 \end{figure}
 
-The distribution of atom separations was measured across the database and these are plotted in figure \ref{fig:dbneighbourseparations}.  The full set is available to download from https://github.com/BenPalmer1983/fepd\_feru\_potential.
+The distribution of atom separations was measured across the database and these are plotted in fig. \ref{fig:dbneighbourseparations}.  The full set is available to download from https://github.com/BenPalmer1983/fepd\_feru\_potential.
 
 All the configurations in this work are \acrshort{fcc} structure crystals.  The QEEOS program, section \ref{section:qeeospyprog} and appendix \ref{chapter:qeeosappendix}, was used to compute the relaxed lattice parameter and primitive cell basis vector.
 
@@ -379,7 +380,7 @@ The stainless steel being studied is to be doped with 1\% or less of a \acrlong{
 \label{fig:binaryalloyconfigurationsbulk}
 \end{figure}
 
-Most of the configurations were prepared using the relaxed \acrshort{fct} structure computed for Fe.  One or more iron atoms were then replaced with either Pd or Ru.  The majority of calculations were carried out using the 32 atom configurations.  The larger 256 atom calculations were better suited to represent the low percentage of \acrshort{pgm} but were only computed using the gamma k-point (figure \ref{fig:binaryalloyconfigurationsbulk}).  This was another compromise in order to complete the calculations in time.
+Most of the configurations were prepared using the relaxed \acrshort{fct} structure computed for Fe.  One or more iron atoms were then replaced with either Pd or Ru.  The majority of calculations were carried out using the 32 atom configurations.  The larger 256 atom calculations were better suited to represent the low percentage of \acrshort{pgm} but were only computed using the gamma k-point (fig. \ref{fig:binaryalloyconfigurationsbulk}).  This was another compromise in order to complete the calculations in time.
 
 
 
@@ -387,7 +388,7 @@ Most of the configurations were prepared using the relaxed \acrshort{fct} struct
 
 Many of the atom configurations generated up to this point are symmetric and, whilst they have a variety of energies and stresses to use for fitting, the forces on the atoms are almost balanced and are small or none.  A large set of configurations with positions perturbed slightly from the exact lattice position are created.
 
-Rather than use a linear random distribution a Gaussian distribution is used.  The majority of the atoms are closer to the exact crystal position but a minority are further and further away, as would be expected with this type of distribution.  The maximum amount of perturbation was selected randomly between a minimum and maximum value.  The effect on the calculation by making these perturbations was to increase the energy of the system as the maximum perturbation amount was increased, as can be seen in figure \ref{fig:pwheatal}.
+Rather than use a linear random distribution a Gaussian distribution is used.  The majority of the atoms are closer to the exact crystal position but a minority are further and further away, as would be expected with this type of distribution.  The maximum amount of perturbation was selected randomly between a minimum and maximum value.  The effect on the calculation by making these perturbations was to increase the energy of the system as the maximum perturbation amount was increased, as can be seen in fig. \ref{fig:pwheatal}.
 
 \begin{figure}[h]
 \begin{center}
@@ -430,7 +431,7 @@ One key aspect of this work is to determine whether or not either Pd or Ru are d
 \label{fig:binaryalloyconfigurationsslab}
 \end{figure}
 
-A set of 32 atom configurations were used where the separation between the two facing surfaces is varied.  Several more 128 atom configurations were also prepared for the three pure elements.  To investigate the effect of a small addition of either Ru or Pd in the alloy a slab of Fe was prepared with Ru or Pd either within the slab, at the surface or on the surface (figure \ref{fig:binaryalloyconfigurationsslab}).  These examples were then added into the reference database used to fit the binary potentials.
+A set of 32 atom configurations were used where the separation between the two facing surfaces is varied.  Several more 128 atom configurations were also prepared for the three pure elements.  To investigate the effect of a small addition of either Ru or Pd in the alloy a slab of Fe was prepared with Ru or Pd either within the slab, at the surface or on the surface (fig. \ref{fig:binaryalloyconfigurationsslab}).  These examples were then added into the reference database used to fit the binary potentials.
 
 
 
@@ -448,6 +449,33 @@ Attempts were made to compute simple defects in the alloy but the majority faile
 A number of issues were encountered throughout this work when using \acrshort{dft}.  Most failures resulted from either a lack of computational resources or failure to converge due to inappropriate starting configurations or PWscf settings.  These are discussed in detail in appendix \ref{chap:appendixdfterrors} where solutions to a number of the problems are discussed.
 
 
+\FloatBarrier
+\subsection{Summary of Configurations Generated with DFT}
+
+The total number of configurations that resulted from the \acrshort{dft} work was a smaller set than desired.  Many of the defect calculations, particularly for \Gls{Fe}, failed to converge and were omitted from the database.  A summary of those included is listed in table \ref{table:configurationsused}.
+
+\begin{table}[h]
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c c c c c c}
+\hline\hline
+Configurations               & \Gls{Fe} & \Gls{Pd} & \Gls{Ru} & \Gls{Fe}\Gls{Pd} & \Gls{Fe}\Gls{Ru} \\
+\hline\hline
+FCC bulk 256 atom (perfect)  &  1       &  1       &  1       &  1               & 1                \\
+FCC slab 128 atom            &  1       &  2       &  2       & 15               & 15               \\
+FCC random 32 atom           & 50       & 55       & 61       & 28               & 13               \\ 
+FCC slab 32 atom             & 10       & 25       & 17       &  0               & 0                 \\   
+FCC EoS 32 atom              &  7       & 16       & 15       &  0               & 0                 \\
+FCC EC 32 atom               &  0       & 63       & 81       &  0               & 0                 \\                     
+FCC defects 32 atom          &  0       & 64       & 14       &  0               & 0                 \\   
+FCC bulk 256 atom (random)   &  1       &  1       &  1       & 27               & 47                \\ \hline\hline   
+Total                        & 70       &227       &192       & 44               & 76                \\ 
+\hline\hline
+\end{tabular}
+\end{center}
+\caption{A summary of the configurations used for fitting the interatomic potentials.  The Fe-Pd and Fe-Ru fitting also included the configurations for the pure elements, although they were not required when fitting the cross potential.  Random configurations include those with slightly perturbed atom positions as well as those with slightly perturbed lattice parameters.}
+\label{table:configurationsused}
+\end{table}
 
 
 

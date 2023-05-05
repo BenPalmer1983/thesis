@@ -1,24 +1,38 @@
 \begin{changemargin}{1.0cm}{1.0cm}
-\abstractpreamble{The aim of this section is to derive an interatomic potential for Fe-Pd and Fe-Ru that are suitable for modelling both radiation damage and a change in concentration of \acrshort{pgm}s at the grain boundary.  Two computer codes, QECONVERGE and QEEOS, were written to automate parameter convergence for PWscf and to calculate bulk properties.  These data join many other \acrshort{dft} calculations to form a reference database for fitting the potentials.  A fitting code EAMPA was developed and used to derived the two binary alloy potentials.}
+\abstractpreamble{The aim of this section is to derive an interatomic potential for Fe-Pd and Fe-Ru that are suitable for modelling both radiation damage and a change in concentration of \acrshort{pgm}s at the grain boundary.  Two computer codes, QECONVERGE and QEEOS, were written to automate parameter convergence for \acrshort{pwscf} and to calculate bulk properties.  These data join many other \acrshort{dft} calculations to form a reference database for fitting the potentials.  A fitting code \acrshort{eampa} was developed and used to derived the two binary alloy potentials.}
 \end{changemargin}
 
 
 
 \section{Introduction}
 
-While computer technology has advanced almost in accordance with Moore's law, the calculations involved to approximately simulate simple structures with Quantum Mechanics are barely accessible.  Ideally, crystal structures with several hundred atoms, containing Fe, Cr, and Ni with Ru or Pd would have been used in this work to derive a potential describing all combinations of elements.  
+\subsection{Motivation for Derivation of Potentials}
 
-The computer used did not have the resources required for such calculations, and so the model was simplified to either Fe-Pd or Fe-Ru and pure elements only.  The ferromagentism and antiferromagnetism of Fe and Cr were explored using collinear spin \acrshort{dft} calculations.  Due to the improvement in modelling given by including magnetism, all calculations for the reference database were collinear spin.
+Potentials exist for the pure elements \acrshort{bcc} \Gls{Fe}, \acrshort{fcc} \Gls{Pd}, \acrshort{hcp} \Gls{Ru} and binary alloy \Gls{Fe}-\Gls{Pd}.  The literature has shown that there is a need to craft potentials to reproduce desired features, such as bulk properties\cite{shengeamonline} or stacking fault energies\cite{mendelevruau}.  Transferability of potentials is also a known problem\cite{transferability} and those created for a particular model do not necessarily work when the model is changed.  Existing potentials for \acrshort{bcc} \Gls{Fe} and \acrshort{fcc} \Gls{Al} are used to compute the properties for \acrshort{fcc} \Gls{Fe} and \acrshort{bcc} \Gls{Al} in this work by comparing with \acrshort{dft} computed values in order to highlight this issue.
 
-A number of computer codes were developed to automate processes.  QECONVERGE creates input files and calls PWscf to converge parameters used in this work (section \ref{code:qeconverge}).  QEEOS also creates input files for PWscf but computes bulk properties such as the equation of state, bulk modulus and elastic constants, see appendix \ref{chapter:qeeosappendix}.
+The potentials developed here are fit to \acrshort{dft} data for \acrshort{fcc} \Gls{Fe}, due to the steel being austenitic, marking the first departure from existing potentials.  The intention is to create potentials to allow either \acrshort{md} or a combination of \acrshort{md} with \acrshort{akmc} to model radiation damage and how this affects the material at grain boundaries over long periods of time.  The potentials for each element require the capability to model the damage process, and so each has a \acrshort{zbl} potential that dominates over the embedding energy at small atom separations.
+
+Due to the damage the potentials are expected to model, the potentials were also fit to \acrshort{dft} computed forces and energies as a result of both defects and lattices with atoms perturbed from their perfect locations.  Finally, there was an effort to also fit to bulk properties and to the Rose-Vinet equation of state.  This was particularly important to ensure well behaved potentials where the lattice parameters were too small or large for \acrshort{dft} calculations to run and converge successfully.  The energy predicted by the Rose-Vinet equation of state for these lattice parameters added to the dataset.
+
+Several computer codes were developed.  These allowed the automated convergence of parameters for the \acrshort{dft} calculations and computation of the Birch-Murnaghan equation of state and elastic constants using QuantumEspresso.  A bespoke code was developed to fit \acrshort{eam} and \acrshort{2beam} potentials to this data.
+
+At this stage, the potentials are only binary alloys.  It would be desirable to extend these to include \Gls{Ni}, as its inclusion in the alloy causes the austenitic structure of the steel.  Following this, \Gls{Cr} should be included as it is another important alloying element responsible for the corrosion resistance of the steel.  This would perhaps necessitate moving from an \acrshort{eam} potential to a \acrshort{2beam} potential.  This would have been too complicated and time consuming to complete in this work, and the \acrshort{dft} calculations would have been too complex for the resources available.  Hence the restriction to binary alloys.
+
+The above highlights the need for \Gls{Fe}-\Gls{Pd} and \Gls{Fe}-\Gls{Ru} fit to \acrshort{fcc} \acrshort{dft} data for modelling radiation damage of austenitic steels doped with \acrshort{pgm}s, and this work fills that gap.  It also paves the way to more complex potentials required to better model radiation damage of austenitic stainless steels.
+
+
+
+\subsection{Summary of Chapter}
+
+The potentials require \acrshort{dft} generated force and energy data.  Similar to calibrating experimental equipment, the parameters used in the calculations are converged to ensure the desired accuracy whilst maintaining the feasibility of the calculations (\ref{section:dftsettings}).  A database including perfect, perturbed, distorted, defect, bulk and slab configurations is created (\ref{section:dftrefdb}).
+
+The development of a potential fitting code is discussed including methods used to help reduce the computational time (\ref{code:eampa}).  The choice of potential forms, \acrshort{dft} data used and how well the potentials fit the data are covered (\ref{section:eampause}).  The Rose-Vinet plots are compared, along with the \acrshort{dft} computed bulk properties and surface energies, to those created by these potentials.  Finally a contribution to the DL\_POLY \acrshort{md} is detailed (\ref{section:dlpoly}).
+
+
 
 \subsection{Interatomic Potential Fitting}
 
-The potentials in this work are fitted to both experimental data and DFT data.  As the purpose of these potentials is to provide a way to model Palladium and Ruthenium, and determine whether or not they migrate to the surface, appropriate atomic configurations are included in the fitting process.
-
-The work may be broken into three main parts.  The first is devoted to using DFT to generate the required data, the second is the development of a computer program for fitting the potential, and the third is finally fitting the potential.  An overview of this process is given in figure \ref{fig:workflowpotfit}.
-
-The process follows aspects of previous work.  The force matching method of Ercolessi and Adams\cite{forcematchingmethod} and its application within Brommer's PotFit code\cite{pbrommer} (and it's subsequent extension by Sheng\cite{shengeam}) impacted this work greatly.  The exact fitting methods used by Bonny and spline type functions used throughout work on Iron alloys by Ackland, Mendelev, Hepburn and more helped to fix on a specific form of the functions and functional used here.
+The process follows aspects of previous work.  The force matching method of Ercolessi and Adams\cite{forcematchingmethod} and its application within Brommer's PotFit code\cite{pbrommer} (and it's subsequent extension by Sheng\cite{shengeam}) impacted this work greatly.  The exact fitting methods used by Bonny and spline type functions used throughout work on Iron alloys by Ackland, Mendelev, Hepburn and more helped to fix on a specific form of the functions and functional used here.  The fitting process followed here is shown in fig. \ref{fig:workflowpotfit}.
 
 %\begin{landscape}
 \begin{figure}[ht] 
@@ -151,10 +165,7 @@ The process follows aspects of previous work.  The force matching method of Erco
 
 \subsection{Existing Experimental \& DFT Bulk Property Data}
 
-The bulk properties for Fe (\acrshort{bcc}) and Pd are available on several websites and in published work.  The lattice parameter, bulk modulus and elastic constants are available for Fe BCC and Pd FCC, but as pure Fe FCC is theoretical under normal conditions, this is computed here using \acrshort{dft}.
-
-
-A large amount of computing power is required to run the \acrshort{dft} calculations.  If the input parameters are not accurate enough to begin with, it will either take a long time for the \acrshort{dft} calculation to run, or it will fail to converge completely.  The lattice parameter for each element, using the density of that pure element in its state under normal conditions, is predicted for that element either for both the FCC and BCC structures (table \ref{table:predictedlattice}).
+The bulk properties for Fe (\acrshort{bcc}) and Pd are available on several websites and in published work.  The lattice parameter, bulk modulus and elastic constants are available for Fe \acrshort{bcc} and Pd \acrshort{fcc}, but as pure Fe \acrshort{fcc} is theoretical under normal conditions, this is computed here using \acrshort{dft}.
 
 \begin{table}[h]
 \begin{center}
@@ -174,18 +185,8 @@ Pd \cite{webelementspd}    & 106.42 &  12023  &  $6.83 \times 10^{28}$    & 7.34
 \caption{Predicted lattice parameters based on the density, atomic number and type of structure}
 \label{table:predictedlattice}
 \end{table}
+\FloatBarrier
+A large amount of computing power is required to run the \acrshort{dft} calculations.  If the input parameters are not accurate enough to begin with, it will either take a long time for the \acrshort{dft} calculation to run, or it will fail to converge completely.  The lattice parameter for each element, using the density of that pure element in its state under normal conditions, is predicted for that element either for both the FCC and BCC structures (table \ref{table:predictedlattice}).
 
-Aluminium appears here because it has a simpler electronic structure and no magnetic properties to complicate the DFT calculations.  These calculations for Aluminium complete much faster than for the other elements listed, so it was used throughout to develop and test the computer codes created.
-
-
-
-
-
-
-
-
-
-
-
-
+Aluminium appears here because it has a simpler electronic structure and no magnetic properties to complicate the \acrshort{dft} calculations.  These calculations for Aluminium complete much faster than for the other elements listed, so it was used throughout to develop and test the computer codes created.
 

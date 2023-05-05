@@ -45,7 +45,7 @@ $C_{44}$       &   116  &   114 (111)  &  186     &   86 (48)       \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Applying the Mendelev 2003 potential, developed for BCC crystals, to the FCC structure.  Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.}
+\caption{Applying the Mendelev 2003 potential\cite{femendelev}, developed for BCC crystals, to the FCC structure.  Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.}
 \label{table:femendelevtransferability}
 \end{table}
 
@@ -55,7 +55,7 @@ Finally the Ackland 1997 potential for Iron was tested.  This older potential gi
 \begin{center}
 \begin{tabular}{c c c c c}
 \hline\hline
-Property   & Fe BCC Exp. & Fe BCC Mendelev &  Fe FCC DFT & Fe FCC Mendelev \\
+Property   & Fe BCC Exp. & Fe BCC Ackland &  Fe FCC DFT & Fe FCC Ackland \\
 \hline\hline
 a0             &   2.86  &   2.87       &   3.42   &   3.62          \\
 e0             &  -4.32  &  -4.32       &  -4.26   &  -4.26          \\
@@ -66,7 +66,7 @@ $C_{44}$       &   116   &   125 (128)  &   186    &   164 (94)      \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Applying the Ackland 1997 potential, developed for BCC crystals, to the FCC structure.  Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.}
+\caption{Applying the Ackland 1997 potential\cite{acklandfe}, developed for BCC crystals, to the FCC structure.  Elastic constants are calculated using the method by Mehl et al with values from the method by Ravindran et al in brackets.}
 \label{table:feacklandtransferability}
 \end{table}
 
@@ -86,7 +86,7 @@ The fitting process was computationally intensive and utilised nodes on the Univ
 
 A number of functions and functionals have been used previously and these are discussed in detail in chapter \ref{chap:backgroundfitting}.  Several were used to attempt to fit the potentials, but eventually the cubic splines and tight binding type functional, as used by Mendelev, Ackland, Bonny et al, were selected.
 
-Initially, the computer program DIRAC was used to generate the density function, as it computes the radial electron density distribution, as seen in figure \ref{fig:dirac-fe-density-plot} and figure \ref{fig:dirac-fe-density-plot}.  Unfortunately, as may be expected, there were a number of issues in using the density distribution of a single atom.  The atomic separation for both \Gls{Fe} and \Gls{Pd}, for a relaxed crystal, begins at approximately 2-2.5 angstrom, but most of the electrons, from all shells, are distributed much closer.  The plot does not take into consideration the valence electrons shared in the crystal, bonding the metal atoms together.
+Initially, the computer program DIRAC was used to generate the density function, as it computes the radial electron density distribution, as seen in fig. \ref{fig:dirac-fe-density-plot} and fig. \ref{fig:dirac-pd-density-plot}.  Unfortunately, as may be expected, there were a number of issues in using the density distribution of a single atom.  The atomic separation for both \Gls{Fe} and \Gls{Pd}, for a relaxed crystal, begins at approximately 2-2.5 angstrom, but most of the electrons, from all shells, are distributed much closer.  The plot does not take into consideration the valence electrons shared in the crystal, bonding the metal atoms together.
 
 From the point of view of the potential, the pair potential will dominate at small separations due to the \acrshort{zbl} function.  The density function will be important at separations of 2 angstrom up to the cutoff radius (5-6 angstrom).  For this reason, in addition to moving away from attempting to represent the underlying physics, the idea to use the DIRAC computed densities was abandoned in favour of a cubic spline.
 
@@ -177,32 +177,32 @@ The full potentials are available from https://github.com/BenPalmer1983/fepd\_fe
 \begin{table}[ht]
 \renewcommand{\arraystretch}{1.2}
 \centering
-\resizebox{0.8\columnwidth}{!}{%
-\begin{tabular}{lcccccccc}
+\resizebox{0.95\columnwidth}{!}{%
+\begin{tabular}{lcccccccccc}
 \hline\hline
-Property & \multicolumn{2}{c}{Fe FCC} & \multicolumn{2}{c}{Fe BCC} & \multicolumn{2}{c}{Pd FCC} & \multicolumn{2}{c}{Ru FCC} \\
-  & DFT & Potential & DFT & Potential & DFT & Potential & DFT & Potential \\
+Property & \multicolumn{4}{c}{Fe FCC} & \multicolumn{2}{c}{Fe BCC} & \multicolumn{2}{c}{Pd FCC} & \multicolumn{2}{c}{Ru FCC} \\
+  & DFT & Potential & Mendelev\cite{femendelev} & Ackland\cite{acklandfe} & DFT & Potential & DFT & Potential & DFT & Potential \\
 \hline\hline
-$a_0$       &  3.42   &  3.42   &  2.80   &  2.76   &  3.93   &  3.89   &  3.81   &  3.79  \\
-$x$         &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0   \\
-$y$         &  1.054  &  1.05   &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0   \\
-$z$         &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0   \\ 
-$e_0$       & -4.26   & -4.27   & -4.32   & -4.16   & -3.91   & -3.78   & -6.62   & -6.61  \\
-$B_0$ (a)   &  226.1  &  246.6  &  239.2  &  229.0  &  184.4  &  165.0  &  307.8  &  331.1 \\
-$B_0$ (b)   &  222.0  &  235.2  &  205.3  &  207.6  &  173.7  &  156.0  &  303.3  &  320.4 \\
-$C_{11}$    &  364.6  &  312.6  &  250.1  &  190.1  &  218.5  &  191.1  &  471.5  &  375.0 \\
-$C_{12}$    &  141.6  &  182.3  &  182.8  &  248.5  &  151.4  &  152.0  &  219.1  &  309.2 \\
-$C_{13}$    &  233.8  &  222.8  &  -      &  -      &  -      &  -      &  -      &  -     \\
-$C_{22}$    &  298.7  &  321.6  &  -      &  -      &  -      &  -      &  -      &  -     \\
-$C_{23}$    &  130.4  &  182.3  &  -      &  -      &  -      &  -      &  -      &  -     \\
-$C_{33}$    &  364.6  &  312.6  &  -      &  -      &  -      &  -      &  -      &  -     \\
-$C_{44}$    &  186.3  &  171.9  &  139.4  &  168.7  &  80.3   &  58.8   &  245.0  &  97.5  \\
-$C_{55}$    &  266.8  &  223.1  &  -      &  -      &  -      &  -      &  -      &  -     \\
-$C_{66}$    &  186.3  &  171.9  &  -      &  -      &  -      &  -      &  -      &  -     \\
+$a_0$ (angs)    &  3.42   &  3.42   &  3.59   &  3.62   &  2.80   &  2.76   &  3.93   &  3.89   &  3.81   &  3.79  \\
+$x$             &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0   \\
+$y$             &  1.054  &  1.05   &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0   \\
+$z$             &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0    &  1.0   \\ 
+$e_0$ (eV)      & -4.26   & -4.27   & -4.01   & -4.26   & -4.32   & -4.16   & -3.91   & -3.78   & -6.62   & -6.61  \\
+$B_0$ (a) (GPa) &  226.1  &  246.6  &  98.4   &  141.0  &  239.2  &  229.0  &  184.4  &  165.0  &  307.8  &  331.1 \\
+$B_0$ (b) (GPa) &  222.0  &  235.2  &  88.5   &  135.5  &  205.3  &  207.6  &  173.7  &  156.0  &  303.3  &  320.4 \\
+$C_{11}$ (GPa)  &  364.6  &  312.6  &  79.2   &  140.5  &  250.1  &  190.1  &  218.5  &  191.1  &  471.5  &  375.0 \\
+$C_{12}$ (GPa)  &  141.6  &  182.3  &  68.6   &  117.5  &  182.8  &  248.5  &  151.4  &  152.0  &  219.1  &  309.2 \\
+$C_{13}$ (GPa)  &  233.8  &  222.8  &  105.7  &  130.9  &  -      &  -      &  -      &  -      &  -      &  -     \\
+$C_{22}$ (GPa)  &  298.7  &  321.6  &  161.7  &  228.5  &  -      &  -      &  -      &  -      &  -      &  -     \\
+$C_{23}$ (GPa)  &  130.4  &  182.3  &  68.6   &  117.5  &  -      &  -      &  -      &  -      &  -      &  -     \\
+$C_{33}$ (GPa)  &  364.6  &  312.6  &  79.2   &  140.5  &  -      &  -      &  -      &  -      &  -      &  -     \\
+$C_{44}$ (GPa)  &  186.3  &  171.9  &  47.8   &  93.8   &  139.4  &  168.7  &  80.3   &  58.8   &  245.0  &  97.5  \\
+$C_{55}$ (GPa)  &  266.8  &  223.1  &  73.7   &  108.9  &  -      &  -      &  -      &  -      &  -      &  -     \\
+$C_{66}$ (GPa)  &  186.3  &  171.9  &  47.79  &  93.8   &  -      &  -      &  -      &  -      &  -      &  -     \\
 \hline\hline
 \end{tabular}%
 }
-\caption{A summary of bulk properties from these potentials.  The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and an average of the Reuss and Voight bulk modulus (b). }
+\caption{A summary of bulk properties from these potentials.  The bulk modulus is computed from the Birch-Murnaghan equation of state (a) and an average of the Reuss and Voight bulk modulus (b).  The \acrshort{fcc} properties of \Gls{Fe} are compared to those predicted with two existing potentials designed for \acrshort{bcc} \Gls{Fe} to highlight the issue of transferability and the need for new potentials.}
 \label{table:fefccresults}
 \end{table}
 
@@ -229,7 +229,7 @@ A summary of the properties is given in table \ref{table:fefccresults}.  This da
 \label{fig:fe-rosevinet}
 \end{figure}
 
-Both the Birch-Murnaghan and Rose-Vinet equation of states were used to fit the potentials, and these are useful for fitting the bulk modulus (Birch-Murnaghan) and behaviour of the potential over a wider range of values for the lattice parameter (Rose-Vinet). The Rose-Vinet fit for Fe is given in figure \ref{fig:fe-rosevinet} for both the \acrshort{fcc} and \acrshort{bcc} structures.
+Both the Birch-Murnaghan and Rose-Vinet equation of states were used to fit the potentials, and these are useful for fitting the bulk modulus (Birch-Murnaghan) and behaviour of the potential over a wider range of values for the lattice parameter (Rose-Vinet). The Rose-Vinet fit for Fe is given in fig. \ref{fig:fe-rosevinet} for both the \acrshort{fcc} and \acrshort{bcc} structures.
 
 \begin{figure}[htb]
 \begin{subfigure}{.48\textwidth}
@@ -248,7 +248,7 @@ Both the Birch-Murnaghan and Rose-Vinet equation of states were used to fit the 
 \label{fig:rupd-rosevinet}
 \end{figure}
 
-The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet} for just \acrshort{fcc} structures.  The potentials were then used to calculate the energies predicted by \acrshort{dft} and how well these fit, for both potentials, are given in figure \ref{fig:fepd-feru-fit}.
+The Rose-Vinet fit for both Pd and Ru is given in fig. \ref{fig:rupd-rosevinet} for just \acrshort{fcc} structures.  The potentials were then used to calculate the energies predicted by \acrshort{dft} and how well these fit, for both potentials, are given in fig. \ref{fig:fepd-feru-fit}.
 
 \begin{figure}[htb]
 \begin{subfigure}{.48\textwidth}
@@ -267,7 +267,7 @@ The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet
 \label{fig:fepd-feru-fit}
 \end{figure}
 
-
+Configurations of atoms transitioning from bulk to a slab were used in fitting the potentials.  The comparison between \acrshort{dft} and the derived potentials are plotted in fig. \ref{fig:fepd-feru-surface}. There is a good match in the \acrshort{dft} and potential energies for \Gls{Fe} and \Gls{Pd}, and a discrepancy of less than 0.1eV per atom for \Gls{Ru}.
 
 \begin{figure}[htb]
 \begin{subfigure}{.48\textwidth}
@@ -282,12 +282,12 @@ The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet
   \caption{Pd}
   \label{fig:fepd-pd-surface}
 \end{subfigure}
-\begin{subfigure}{.48\textwidth}
-  \centering
-  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/feru_potential/fe_surface_energy.eps} 
-  \caption{Fe}
-  \label{fig:feru-fe-surface}
-\end{subfigure}
+%\begin{subfigure}{.48\textwidth}
+%  \centering
+%  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/feru_potential/fe_surface_energy.eps} 
+%  \caption{Fe}
+%  \label{fig:feru-fe-surface}
+%\end{subfigure}
 \begin{subfigure}{.48\textwidth}
   \centering
   \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/feru_potential/ru_surface_energy.eps} 
@@ -299,17 +299,40 @@ The Rose-Vinet fit for both Pd and Ru is given in figure \ref{fig:rupd-rosevinet
 \end{figure}
 
 
+\begin{comment}
+There has been very limited testing of the potentials with \acrshort{lammps} in order to verify that the output files are readable by the molecular dynamics code.  The code successfully reads in both potentials and was able to run a rudimentary simulation of Fe-Pd and Fe-Ru.  An single frame from a trial simulation of a 32,000 atom cube, made of 99\% Fe and 1\% Pd, is given in fig. \ref{fig:fepd-lammps-trial}.
 
-There has been very limited testing of the potentials with \acrshort{lammps} in order to verify that the output files are readable by the molecular dynamics code.  The code successfully reads in both potentials and was able to run a rudimentary simulation of Fe-Pd and Fe-Ru.  An single frame from a trial simulation of a 32,000 atom cube, made of 99\% Fe and 1\% Pd, is given in figure \ref{fig:fepd-lammps-trial}.
+%\begin{figure}[htb]
+%\includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/lammps/fepd_fct_cube_particle.png} 
+%\caption{LAMMPS modelled cube like Fe-Pd particle}
+%\label{fig:fepd-lammps-trial}
+%\end{figure}
+
+
 
 \begin{figure}[htb]
-\includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/lammps/fepd_fct_cube_particle.png} 
-\caption{LAMMPS modelled cube like Fe-Pd particle}
-\label{fig:fepd-lammps-trial}
+\begin{subfigure}{.70\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/concept/1_keV_101373_atoms_01.jpg} 
+  \label{fig:1kev-a}
+\end{subfigure}
+\begin{subfigure}{.70\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/concept/1_keV_101373_atoms_04.jpg} 
+  \label{fig:1kev-d}
+\end{subfigure}
+\begin{subfigure}{.70\textwidth}
+  \centering
+  \includegraphics[width=.94\linewidth]{chapters/potentials_fe_pd_ru/concept/1_keV_101373_atoms_06.jpg} 
+  \label{fig:1kev-f}
+\end{subfigure}
+\caption{Energy plotted as both a slab and two surfaces begin to form.  The plots give the energies predicted by \acrshort{dft} and computed using the potentials from this work.}
+\label{fig:1kev-example}
 \end{figure}
+
 
 There is certainly room for improvement and this will be discussed in more detail in chapter \ref{chapter:conclusions}.  More data relating to the potentials is given in appendix \ref{chapter:appendix-fepdpotential} and \ref{chapter:appendix-ferupotential} and these detail the bulk properties of the potentials and compare how well they fit to the \acrshort{dft} computed values to which they are fit.
 
-
+\end{comment}
 
 

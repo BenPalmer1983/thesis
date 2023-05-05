@@ -34,14 +34,14 @@ Stainless steel is a relatively new material, having first been developed and re
 
 While the criteria that qualifies an alloy as Stainless Steel is containing Fe, \Gls{C} and at least 10.5\% Cr, there are many grades that have a variety of properties and atomic structures.  The composition influences the structure and other properties such as resistance to corrosion, yield strength, creep resistance and whether the steel is magnetic or not.
 
-Both Fe and Cr are \acrshort{bcc} at standard temperatures and pressures, but adding austenite stabilisers such as Ni, Mn or C, the structure of the steel can be altered from \acrshort{bcc} to \acrshort{fcc}.  Balancing the proportion of these elements changes the phase of the steel, and this may be represented as a Schaeffler diagram (fig. \ref{fig:FeCrNiSchaeffler}) or a ternary phase diagram (fig. \ref{fig:FeCrNi-PhaseDiagram}).
+Both Fe and Cr are \acrshort{bcc} at standard temperatures and pressures, but adding austenite stabilisers such as Ni, Mn or C, the structure of the steel can be altered from \acrshort{bcc} to \acrshort{fcc}.  Balancing the proportion of these elements changes the phase of the steel, and this may be represented as a Schaeffler diagram (fig. \ref{fig:FeCrNiSchaeffler}\cite{fecrschaeffler}) or a ternary phase diagram (fig. \ref{fig:FeCrNi-PhaseDiagram}\cite{fenicrternaryphase}).
 
 \begin{figure}
 \centering
 \begin{minipage}{.46\textwidth}
 \centering
     \includegraphics[width=.9\linewidth]{chapters/austenitic_steels_in_nuclear/plots/fecrschaeffler.png}
-    \caption{Steel Cr-Ni Schaeffler Diagram}
+    \caption{Steel Cr-Ni Schaeffler Diagram\cite{fecrschaeffler}}
     \label{fig:FeCrNiSchaeffler}
 \end{minipage}
 \begin{minipage}{.46\textwidth}
@@ -63,7 +63,7 @@ Both Fe and Cr are \acrshort{bcc} at standard temperatures and pressures, but ad
 \begin{tikzpicture}[scale=0.40]
 \printtikzcrystalbcc{}
 \end{tikzpicture} 
-\caption{\acrshort{bcc} structure of ferritic stainless steel}
+\caption{\acrshort{bcc} structure of ferritic stainless steel - a 2x2x2 supercell\cite{tikzcrystal}}
 \label{fig:steelbcc}
 \end{figure} 
 
@@ -78,7 +78,7 @@ At room temperatures and pressures, Fe exists in the alpha phase, which is a \ac
 \begin{tikzpicture}[scale=0.40]
 \printtikzcrystalfcc{}
 \end{tikzpicture} 
-\caption{\acrshort{fcc} structure of austenitic stainless steel}
+\caption{\acrshort{fcc} structure of austenitic stainless steel - a 2x2x2 supercell\cite{tikzcrystal}}
 \label{fig:steelfcc}
 \end{figure} 
 
@@ -92,29 +92,7 @@ Ferritic and martensitic have a better resistance to thermal or swelling shock t
 
 \subsubsection{Martensitic Stainless Steel}
 
-Martensitic stainless steels have a \acrshort{fcc} structure at high temperature, but when heat treated take on a \acrshort{bcc}  structure.  This allows martensitic, unlike austenitic and ferritic, to be hardened by heat treatment.  These steels are magnetic, they contain more than 10.5\% Cr but have a much lower Ni than austenitic grades, if any.  They are corrosion resistant, but the corrosion resistance of austenitic steel is typically better.  Two examples of such steels are ASME codes 410 and 431.  A comparison of properties between common grades of each steel are detailed in table \ref{table:steelproperties}. 
-
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{c c c c c c c}
-\hline\hline
-Grade & Code & \acrshort{hrb} & \Gls{proofstrength} (MPa) & \acrshort{uts} (MPa) & Density ($kgm^3$) & E (GPa) \\
-\hline\hline
-Austenitic      & 304 & 80 & 230 & 540-750  & 7900 & 200 \\
-Austenitic      & 316 & 79 & 240 & 530-680  & 8000 & 200 \\
-Ferritic        & 405 & 75 & 250 & 400-600  & 7700 & 220 \\
-Ferritic        & 430 & 85 & 280 & 450-600  & 7700 & 220 \\
-Duplex          & 255 & 32 & 550 & 750-1000 & 7800 & 200 \\
-Martensitic     & 410 & 90 & 205 & 600      & 7700 & 215 \\
-Martensitic     & 420 & 95 & 345 & 700      & 7700 & 215 \\
-\hline\hline
-\end{tabular}
-\end{center}
-\caption{Common grades of ferritic, austenitic, duplex and martensitic stainless steel and their properties.  Hardness using the \acrshort{hrb}, \gls{ultimatetensilestrength} (\acrshort{uts}) and \Gls{youngsmodulus} E.}
-\label{table:steelproperties}
-\end{table}
-
+Martensitic stainless steels have a \acrshort{fcc} structure at high temperature, but when heat treated take on a \acrshort{bcc}  structure.  This allows martensitic, unlike austenitic and ferritic, to be hardened by heat treatment.  These steels are magnetic, they contain more than 10.5\% Cr but have a much lower Ni than austenitic grades, if any.  They are corrosion resistant, but the corrosion resistance of austenitic steel is typically better.  Two examples of such steels are ASME codes 410 and 431. 
 
 
 
@@ -131,7 +109,7 @@ Martensitic     & 420 & 95 & 345 & 700      & 7700 & 215 \\
 
 \subsection{The Use of Austenintic Steels in Reactors}
 
-Due to their excellent strength and corrosion resistance, austenitic steels have been widely used in nuclear reactors.  The cheaper to manufacture \gls{304SS} and more corrosion resistant \gls{316SS} have been particularly popular choices of steel.  There are drawbacks, when compared to other alloys including ferritic and martensitic steels, and two in particular are \acrshort{igscc} and swelling.
+Austenitic stainless steels are known to have better corrosion resistance when compared to their ferritic and martensitic counterparts.  Due to this and their excellent strength, austenitic steels have been widely used in nuclear reactors.  The cheaper to manufacture \gls{304SS} and more corrosion resistant \gls{316SS} have been particularly popular choices of steel.  There are drawbacks when compared to ferritic and martensitic steels, and two in particular are \acrshort{igscc} and swelling.
 
 
 
@@ -139,7 +117,7 @@ Due to their excellent strength and corrosion resistance, austenitic steels have
 
 Fission fragments carry away the majority of the energy released during fission, with an approximate energy of 170MeV per 235U fission event.  The fragments are large and have a highly charged positive nucleus that stops rapidly due to the Coulomb interaction with the nuclei of surrounding atoms.  Electrons released by beta decay travel a greater distance; they lose energy by interacting with electrons, but may also knock atoms out of place.  Neutrons travel further still and lose energy by interacting directly with the nuclei of the surrounding material.
 
-When an incoming projectile hits an atom in the target material, this about becomes the \acrfull{pka}.  This \acrshort{pka} is knocked out of its place and loses energy by colliding with other atoms and through electronic stopping.  If its energy is high enough it will cause a damage cascade through the material.  Atoms knocked out of their regular position in the crystal lattice leave vacancies behind.  The displaced atoms either recombine with vacancies, become interstitial atoms or diffuse to defect sinks.  
+When an incoming projectile hits an atom in the target material, this atom becomes the \acrfull{pka}.  This \acrshort{pka} is knocked out of its place and loses energy by colliding with other atoms and through electronic stopping.  If its energy is high enough it will cause a damage cascade through the material.  Atoms knocked out of their regular position in the crystal lattice leave vacancies behind.  The displaced atoms either recombine with vacancies, become interstitial atoms or diffuse to defect sinks.  
 
 The damage event has four main phases over a short period of time\cite{gswasdamage}:
 
@@ -168,12 +146,11 @@ The safety of a Nuclear reactor is the primary concern; it must generate power, 
 \end{figure}
 \FloatBarrier
 
-Neutrons released during the fission of ${}^{235}_{92}U$ range from 0 to 14 MeV (fig \ref{fig:neutronfissionspectra}), and the energy transferred to a target atom depends on the scattering angle of the neutron and the mass of the target nucleus.  
+Neutrons released during the fission of ${}^{235}_{92}U$ range from 0 to 14 MeV (fig \ref{fig:neutronfissionspectra}).  The energy transferred to a target atom ($E_{tr}$) depends on the neutron energy ($E_n$), the recoil angle of the neutron ($\theta$) in the lab frame and the mass of the target nucleus ($m_a$).  With the neutron mass ($m_n$) the energy transferred may be computed using eq \ref{eq:eqNeutronEnergyTransfer}\cite{dosimetrygreening}.  
 
 \begin{equation}
 \begin{split}
-\alpha = (\frac{m_N-1}{m_N+1})^2 \\
-E_N = E_n \left(1 - \frac{(1+\alpha) + (1 - \alpha) cos \theta_C}{2}\right)
+E_{tr} = E_{n} \frac{4 m_a m_n}{(m_a + m_n)^2} \cos^2{\theta}
 \end{split}
 \label{eq:eqNeutronEnergyTransfer}
 \end{equation}
@@ -183,7 +160,7 @@ E_N = E_n \left(1 - \frac{(1+\alpha) + (1 - \alpha) cos \theta_C}{2}\right)
 \begin{minipage}{.49\textwidth}
 \centering
 \includegraphics[width=.97\linewidth]{chapters/austenitic_steels_in_nuclear/plots/scattering_angle.eps}
-\caption{Scattering angle probability of neutrons}
+\caption{Scattering angle probability of neutrons plotted with a self written Python script using eq. \ref{eq:eqNeutronEnergyTransfer}\cite{dosimetrygreening}\cite{duderstadthamilton} (elastic scattering only)}
 \label{fig:scatteringangle}
 \end{minipage}
 \begin{minipage}{.01\textwidth}
@@ -191,12 +168,12 @@ E_N = E_n \left(1 - \frac{(1+\alpha) + (1 - \alpha) cos \theta_C}{2}\right)
 \begin{minipage}{.49\textwidth}
 \centering
 \includegraphics[width=.97\linewidth]{chapters/austenitic_steels_in_nuclear/plots/nuclei_mass.eps}
-\caption{Energy transfer as a from a neutron dependant on target mass}
+\caption{Energy transfer as a from a neutron dependant on target mass plotted with a self written Python script using eq. \ref{eq:eqNeutronEnergyTransfer}\cite{dosimetrygreening}\cite{duderstadthamilton} with the scattering angle set to $\pi$ radians, i.e. scattering back and transferring maximum energy to the target nucleus (elastic scattering only)}
 \label{fig:energytransfer}
 \end{minipage}
 \end{figure}
 
-In a collision, the amount of energy transferred to a target atom will depend on both the scattering angle of neutron recoiling from the target and the mass of the target nucleus.  If the neutron does not change direction, a small amount of energy will be transferred, but if it bounces back at 180 degrees it will transfer the maximum amount of energy.  A neutron will lose more energy per collision with light atoms (hydrogen, helium, carbon), but much less energy per collision with larger atoms (iron, molybdenum, lead).
+In a collision, the amount of energy transferred to a target atom will depend on both the scattering angle of neutron recoiling from the target and the mass of the target nucleus (fig. \ref{fig:scatteringangle}).  If the neutron does not change direction, a small amount of energy will be transferred, but if it bounces back at 180 degrees it will transfer the maximum amount of energy (fig. \ref{fig:energytransfer}).  A neutron will lose more energy per collision with light atoms (hydrogen, helium, carbon), but much less energy per collision with larger atoms (iron, molybdenum, lead).
 
 
 The energy of Fe \acrshort{pka}s as a result of neutron irradiation has been calculated for an Fe target\cite{pkaenergyspectra} (fig. \ref{fig:neutronironrecoil}), and those created by 1MeV neutrons may have an energy up to 100keV.  As nuclear reactions are also possible between the neutrons and the target nuclei, there is an inelastic $(n,n) {}^{56}Fe$ channel as well as other elastic scattering channels where the post collision particles are different to the pre collision particles (fig. \ref{fig:ferecoilchannels}).
@@ -219,13 +196,13 @@ The energy of Fe \acrshort{pka}s as a result of neutron irradiation has been cal
 
 \subsection{Swelling}
 
-Swelling results from damage to the crystalline structure of the metal, and is formed through small voids being created in the crystal.  As vacancies are created by radiation damage, they precipitate into small voids.  The temperature range for such swelling in steels is primarily from $670K$ to $870K$.
+Swelling results from damage to the crystalline structure of the metal and the temperature range for such swelling in steels is primarily from $670K$ to $870K$.  Radiation damage creates a constant supply of Frenkel defects and these take up more volume than the relaxed undamaged crystal.  The vacancies and interstitials may group into prismatic loops of either vacancies or interstitials as these are thermodynamically more stable than the defects being dispersed throughout the crystal\cite{prisloopscnm}.  The creation of vacancy and interstitial loops should balance each other out in terms of the change to the volume, but when the vacancy loops meet in three dimensions they form cavities and these do not decrease the volume of the material\cite{prisloops2}.  The interstitials are the cause for the change in volume, and so the material swells. 
 
 Materials have been known to swell to a 100\% increase in their original volume at these intermediate temperatures under irradiation\cite{wasstrucaustenitic}.  Swelling is sensitive to the total damage amount, the temperature and composition of the alloy.  An increase in Ni decreases swelling as does the addition of Zr.  Small amounts of \Gls{P} and Mo (0.02\% and 0.5-1.0\% respectively) cause the swelling of the alloy to increase, however higher concentrations of either cause swelling to decrease\cite{swellingris}.
 
-As a component swells its properties change.  By definition the volume changes, but so does the elastic moduli.  Not only this, but the swollen component may stress itself and surrounding components, and this may lead to \acrshort{scc}.
+As a component swells its properties change.  By definition the volume changes, but so does the elastic moduli.  Not only this, but the swollen component may stress itself and surrounding components, and this may lead to \acrshort{scc}.  Due to the formation of voids and interstitial dislocation networks, stresses are also cause within the material on the microscopic scale.
 
-In the \acrshort{ebr}-II structural \gls{304SS} was irradiated to 20\acrshort{dpa}.  At a temperature of approximately $650K$ the steel's volume increased by 2\% due to swelling\cite{radisandvoid}.  With components in future reactors expected to withstand ten times this damage, swelling is a concern.  However, increased temperatures and a careful balance in the composition of future alloys will help to reduce this.
+The swelling of components is a problem experienced in past and current reactors.  In the \acrshort{ebr}-II structural \gls{304SS} was irradiated to 20\acrshort{dpa}.  At a temperature of approximately $650K$ the steel's volume increased by 2\% due to swelling\cite{radisandvoid}.  With components in future reactors expected to withstand ten times this damage, swelling is a concern.  However, increased temperatures and a careful balance in the composition of future alloys will help to reduce this.
 
 
 
@@ -326,19 +303,19 @@ The $\text{Cr}_{2}\text{O}_{3}$ layer may be formed by heating the steel to $770
 
 \subsection{\Gls{sensitization} and Passive Film Removal}
 
-Steel by definition is Fe alloyed with varying small percentages of \Gls{C}.  The addition of \Gls{C} changes the property of the alloy, and one example of this is an increase in hardness over pure Fe.  At elevated temperatures, 670K to 1020K, the added Cr within the steel forms precipitates of Fe-Cr carbides $(\text{Fe}\text{Cr})_{23} C_{6}$ at the grain boundaries, reducing the percentage of Cr at the grain boundary and removing the layer of passive protection.
+Steel by definition is Fe alloyed with varying small percentages of \Gls{C}.  The addition of \Gls{C} changes the property of the alloy, and one example of this is an increase in hardness over pure Fe.  At elevated temperatures, 670K to 1020K, the added Cr within the steel forms precipitates of Fe-Cr carbides $(\text{Fe}\text{Cr})_{23} C_{6}$ at the grain boundaries, reducing the percentage of Cr at the grain boundary and removing the layer of passive protection (fig. \ref{fig:alloysensitization1} \& \ref{fig:alloysensitization2}).
 
-\begin{figure}
+\begin{figure}[!h]
 \centering
-\begin{minipage}{.46\textwidth}
+\begin{minipage}{.44\textwidth}
 \centering
   \includegraphics[width=.9\linewidth]{chapters/austenitic_steels_in_nuclear/images/alloy-sensitization.jpg}
   \caption{Formation of chromium precipitates at the grain boundary \cite{rolledalloys}}
   \label{fig:alloysensitization1}
 \end{minipage}
-\begin{minipage}{.05\textwidth}
+\begin{minipage}{.04\textwidth}
 \end{minipage}
-\begin{minipage}{.46\textwidth}
+\begin{minipage}{.44\textwidth}
 \centering
   \includegraphics[width=.9\linewidth]{chapters/austenitic_steels_in_nuclear/images/Intergranular-corrosion__figure2.jpg}
   \caption{Sensitization of an alloy: chromium carbide precipitation \cite{ssina}}
@@ -386,7 +363,7 @@ Steels such as \gls{316SS} are known to have better corrosion resistance in chlo
 
 Damage due to irradiation was first identified in high stress stainless steel components in a reactor, such as bolts, springs, and fuel elements\cite{gswasiascc}\cite{iascckenikjonesbell}, and later being found in lower stress austenitic stainless steel components\cite{iascckenikjonesbell}.
 
-\begin{figure}
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=.5\linewidth]{chapters/austenitic_steels_in_nuclear/images/water_radiolysis.png}
     \caption{Changing water chemistry: radiolysis of water\cite{waterradiolysis}}
@@ -394,27 +371,35 @@ Damage due to irradiation was first identified in high stress stainless steel co
   \end{center}
 \end{figure}
 
-Irradiation of water causes the radiolysis of water, changing the chemistry of water and creating hydrogen, radicals and other ions that increase the corrosiveness of the environment (fig \ref{fig:radiolysisofwater}).  The radiation also damages the material directly, changing its properties.  A form of \acrshort{iascc} to which high nickel alloys, including austenitic steels, are particularly susceptible to is \acrlong{igscc}.
+Irradiation of water causes the radiolysis of water, changing the chemistry of water and creating hydrogen, radicals and other ions that increase the corrosiveness of the environment (fig. \ref{fig:radiolysisofwater}).  The radiation also damages the material directly, changing its properties.  A form of \acrshort{iascc} to which high nickel alloys, including austenitic steels, are particularly susceptible to is \acrlong{igscc}.
 
 
 \FloatBarrier
 
 \section[IGSCC]{Inter Granular Stress Corrosion Cracking}
 
-Stress corrosion cracking may be trans granular (through the grains) or inter granular, at the grain boundary.  \acrshort{igscc} is a particularly prominent failure mechanism for austenitic stainless steels.  For \acrshort{igscc} to occur, there must be a material that is susceptible to this form of cracking, an environment that is corrosive to the material as well as stress (fig. \ref{fig:igsccrequirements}).  
+Stress corrosion cracking may be trans granular (through the grains) or inter granular (fig. \ref{fig:igsccni}), at the grain boundary.  \acrshort{igscc} is a particularly prominent failure mechanism for austenitic stainless steels.  For \acrshort{igscc} to occur, there must be a material that is susceptible to this form of cracking, an environment that is corrosive to the material as well as stress (fig. \ref{fig:igsccrequirements}).  
 
-Stress may come from a high pressure environment or residual stresses due to welding.  In a nuclear reactor the atomic structure may be under stress due to damage caused by neutrons passing through the steel, or due to the swelling of the steel on the macroscopic scale.  If Cr is depleted at the grain boundary, protection to corrosion due to the passive layer is lost.  This, coupled with the knowledge that austenitic stainless steels are susceptible to \acrshort{igscc}, completes the three requirements and, over time, components of this material in these conditions will eventually fail to \acrshort{igscc}.
-
-\begin{figure}
+\begin{figure}[h]
   \begin{center}
-\begin{tikzpicture}[scale=0.60]
-\draw (4.5,5.0) circle [radius=3.4];
-\draw (2.5,0.8) circle [radius=3.4];
-\draw (6.5,0.8) circle [radius=3.4];
+    \includegraphics[width=.45\linewidth]{chapters/austenitic_steels_in_nuclear/images/igscc_nickel_alloy600.png}
+    \caption{Inter Granular Stress Corrosion Cracking in Nickel Alloy\cite{staehlecoriou}}
+    \label{fig:igsccni}
+  \end{center}
+\end{figure}
+
+Stress may come from a high pressure environment, residual stresses due to welding and swelling.  In a nuclear reactor the swelling on a macroscopic scale is a result of damage caused by neutrons on the atomic scale as they pass through the steel creating defects.  If \Gls{Cr} is depleted at the grain boundary, protection to corrosion due to the passive layer is lost.  This, coupled with the knowledge that austenitic stainless steels are susceptible to \acrshort{igscc}, completes the three requirements and, over time, components of this material in these conditions will eventually fail to \acrshort{igscc}.
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}[scale=0.50]
+\draw (4.5,5.5) circle [radius=4.0];
+\draw (2.2,0.8) circle [radius=4.0];
+\draw (6.8,0.8) circle [radius=4.0];
 \node[align=left] at (4.5, 2.4) {IGSCC};
-\node[align=left] at (1.4,0.6) {Stress\\Welds\\Swelling\\Pressure\\Any applied stress};
+\node[align=left] at (1.15,0.9) {Stress\\Welds\\Swelling\\Pressure\\Any applied \\stress};
 \node[align=left] at (4.5, 6.2) {Susceptable material \\ e.g. sensitised SS};
-\node[align=left] at (7.9,0.6) {Environment\\ Corrosive\\ High electro \\chemical potential};
+\node[align=left] at (8.3,0.1) {Environment\\ Corrosive\\ High electro \\chemical \\ potential};
 \end{tikzpicture}
 \caption{Three requirements for \acrshort{igscc} to occur}
 \label{fig:igsccrequirements}
@@ -423,22 +408,14 @@ Stress may come from a high pressure environment or residual stresses due to wel
 
 \acrshort{igscc} has not only been a defect in stainless steel.  High Ni content alloys, such as Alloy 600 (Inconel:  Ni-72, Cr-17, Fe-10),  have been known to suffer from \acrshort{igscc} since the very early days of nuclear energy, in particular with the prototype S1W reactor, prototype for the first nuclear powered submarine, the USS Nautilus.
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=7.0cm]{chapters/austenitic_steels_in_nuclear/images/igscc_nickel_alloy600.png}
-    \caption{Inter Granular Stress Corrosion Cracking in Nickel Alloy\cite{staehlecoriou}}
-    \label{image:igsccni}
-  \end{center}
-\end{figure}
-
 After the war, there was a drive to develop a nuclear powered navy for the US.  There are obvious benefits in replacing conventional power in vessels with nuclear, in particular for submarines.  This was pushed by Admiral Rickover and the route to building the USS Nautilus began.  A number of available Fe-Cr-Ni alloys were considered for the construction of the reactor (fig. \ref{fig:fecrnialloys}).
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \begin{minipage}{.46\textwidth}
 \centering
     \includegraphics[width=.8\linewidth]{chapters/austenitic_steels_in_nuclear/images/fecrnialloys.png}
-    \caption{Alloy choices for early LWRs}
+    \caption{Alloy choices for early LWRs\cite{staehlecoriou12}}
     \label{fig:fecrnialloys}
 \end{minipage}
 \begin{minipage}{.05\textwidth}
@@ -446,7 +423,7 @@ After the war, there was a drive to develop a nuclear powered navy for the US.  
 \begin{minipage}{.46\textwidth}
 \centering
     \includegraphics[width=.8\linewidth]{chapters/austenitic_steels_in_nuclear/images/tgscc_igscc_vs_nickel.png}
-    \caption{Nickel, IGSCC and TGSCC}
+    \caption{Nickel, IGSCC and TGSCC\cite{staehlecoriou15}}
     \label{fig:nitgsccigscc}
 \end{minipage}
 \end{figure}
@@ -458,7 +435,7 @@ Prototypes developed for the USS Nautilus experienced stress corrosion cracking 
 
 \subsection{IGSCC in Light Water Reactors}
 
-In \acrshort{lwr}s a major factor in corrosion of components is the water chemistry and \acrlong{ecp} that they operate in.  Higher levels of oxygen dissolved in the water leads to an increase in the corrosion potential\cite{wasstrucaustenitic}.  Other factors within \acrshort{lwr}s include depletion of Cr due to either heat treatment, welding or irradiation.
+In \acrshort{lwr}s a major factor in corrosion of components is the water chemistry and \acrlong{ecp} that they operate in.  Higher levels of oxygen dissolved in the water leads to an increase in the corrosion potential\cite{wasstrucaustenitic}.  Other factors within \acrshort{lwr}s include depletion of \Gls{Cr} due to either heat treatment, welding or irradiation.
 
 The primary circuit of a \acrshort{bwr} includes components such as a reactor pressure vessel, piping that leads out of the containment building, fuel and fuel assembly.  300 series steels, including 304 and 316, are used within the primary circuit, including the piping and control rod absorbers.  In \acrshort{bwr}s the purity of the water has been addressed, and the addition of hydrogen to the water has reduced cracking of components\cite{staehlecoriou}.  
 
@@ -563,7 +540,7 @@ ${}^{196}Pt(n, \gamma){}^{197}Pt$ & 19.9 hrs  \\
 \label{table:304ssradioactive}
 \end{table}
 
-Adding elements to metals, even in small amounts, may be problematic as certain elements have high neutron reaction cross sections and transmute into radioactive isotopes.  ${}^{55}Cr$ is a concern for all neutron irradiated stainless steels, but with a very short half life it quickly cools and becomes less of a concern, with ${}^{65}Ni$ becoming the dominant source of activity after 10 hours.  Adding Mn to steel that is in a reactor is known to result in an increase in activity due to the ${}^{55}Mn(n, \gamma){}^{56}Mn$ reaction (section \ref{section:effectsofradiationorg}).  
+Adding elements to metals, even in small amounts, may be problematic as certain elements have high neutron reaction cross sections and transmute into radioactive isotopes.  ${}^{55}Cr$ is a concern for all neutron irradiated stainless steels, but with a very short half life it quickly cools and becomes less of a concern, with ${}^{65}Ni$ becoming the dominant source of activity after 10 hours.  Adding Mn to steel that is in a reactor is known to result in an increase in activity due to the ${}^{55}Mn(n, \gamma){}^{56}Mn$ reaction.  
 
 The addition of \acrshort{pgm}s alters the activity of the steel following neutron irradiation and with just a 1\% addition there is an increase in activity comparable to that of the 10\% Ni transmuted to ${}^{65}Ni$.  This is due to reactions that create ${}^{105}Ru$, 
  ${}^{109}Pd$ and ${}^{197}Pt$ for Ru, Pd and Pt respectively (table \ref{table:304ssradioactive}).  

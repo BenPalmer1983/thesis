@@ -160,7 +160,7 @@
 \newglossaryentry{planewave}
 {
     name={plane wave},
-    description={a wave of parallel planes of constant frequency that are normal to the direction of propagation}
+    description={a wave of parallel planes of constant frequency that are normal to the direction of propagation, for example $\exp(i\vec{k} \dot \vec{r})$}
 }
 
 \newglossaryentry{blochtheorem}
@@ -473,7 +473,49 @@
     name=mean free path,
     description={average (mean) distance a projectile travels before reacting with the target}
 }
+\newglossaryentry{pimesons}
+{
+    name=pi mesons,
+    description={Pi mesons are unstable particles made of two quarks and virtual pi mesons carry the strong nuclear force.  There are four combinations of quarks that make the three types of pi meson: $\Pi^{0}$ up quark and up antiquark or down quark and up antiquark, $\Pi^{+}$ up quark and down antiquark, $\Pi^{-}$ down quark and up antiquark.}
+}
 
+
+\newglossaryentry{etotconvthr}
+{
+    name=etot\_conv\_thr,
+    description={The PWscf energy convergence threshold in Ry for ionic minimization, i.e. when running a relax or vc-relax problem\cite{inputpw} - the default value is 1.0e-4}
+}
+\newglossaryentry{forcconvthr}
+{
+    name=forc\_conv\_thr,
+    description={The PWscf force convergence threshold in Ry/Bohr for ionic minimization, i.e. when running a relax or vc-relax problem\cite{inputpw} - the default value is 1.0e-3}
+}
+\newglossaryentry{convthr}
+{
+    name=conv\_thr,
+    description={The PWscf energy convergence threshold for self consistency\cite{inputpw}, the default value is 1.0e-6}
+}
+\newglossaryentry{mixingbeta}
+{
+    name=mixing\_beta,
+    description={The PWscf mixing factor during the self consistency iterations\cite{inputpw}.  The default value is 0.7}
+}
+\newglossaryentry{mixingmode}
+{
+    name=mixing\_mode,
+    description={The PWscf mixing mode\cite{inputpw}.  The default is plain - charge density Broyden mixing - TF (Thomas-Fermi screening) is recommended for highly homogeneous systems and local-TF for highly inhomogeneous systems}
+}
+\newglossaryentry{diagonalization}
+{
+    name=diagonalization,
+    description={The PWscf choice of diagonalization method\cite{inputpw} - David (Davidson) is the default method, but other methods including \acrshort{cg} are available}
+}
+
+\newglossaryentry{tart}
+{
+    name=TART,
+    description={A neutron transport code developed and maintained by Red Cullen at ORNL (Oak Ridge National Laboratory)}
+}
 
 
 \newacronym{kerma}{KERMA}{Kinetic Energy Released per unit MAss}
@@ -541,6 +583,8 @@
 
 \newacronym{hrb}{HRB}{Hardness Rockwell B}
 
+\newacronym{pept}{PEPT}{Positron Emission Particle Tracking}
+\newacronym{rbe}{RBE}{Relative Biological Effectiveness}
 
 \newacronym{md}{MD}{molecular dynamics}
 \newacronym{akmc}{akMC}{atomic kinetic Monte Carlo}
@@ -605,9 +649,18 @@
 \newacronym{iaea}{IAEA}{International Atomic Energy Agency}
 
 
+\newacronym{hpge}{HPGe}{High Purity Germanium}
+
 \newacronym{ins}{INS}{Institute for Nuclear Study}
+\newacronym{icrp}{ICRP}{International Commission on Radiological Protection}
 
 
+\newacronym{eampa}{EAMPA}{Embedded Atom Method Potential Analyser}
+\newacronym{pwscf}{PWscf}{Plane-Wave Self-Consistent Field}
+\newacronym{vasp}{VASP}{Vienna Ab initio Simulation Package}
+\newacronym{gulp}{GULP}{General Utility Lattice Program}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{ram}{RAM}{Random Access Memory}
 
 \newacronym{mox}{MOX}{mixed oxide}
 
@@ -645,6 +698,8 @@
 \newacronym{qp}{QP}{Quadratric Programming}
 
 
+\newacronym{fispact}{FISPACT}{FISPACT}
+\newacronym{fati}{FATI}{Fusion Activation Transport Interface}
 
 
 \newacronym{mpi}{MPI}{Message Parsing Interface}

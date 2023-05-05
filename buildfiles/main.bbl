@@ -17,133 +17,47 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{scrstainless}{article}{}
-    \name{author}{11}{}{%
-      {{hash=SDW}{%
-         family={Saxey},
-         familyi={S\bibinitperiod},
-         given={D.\bibnamedelima W.},
-         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=CBJ}{%
-         family={Connolly},
-         familyi={C\bibinitperiod},
-         given={B.\bibnamedelima J.},
-         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=CC}{%
-         family={Cooper},
-         familyi={C\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=HY}{%
-         family={Huang},
-         familyi={H\bibinitperiod},
-         given={Y.},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=GCRM}{%
-         family={Grovenor},
-         familyi={G\bibinitperiod},
-         given={C.\bibnamedelima R.\bibnamedelima M.},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-      }}%
-      {{hash=SGDW}{%
-         family={Smith},
-         familyi={S\bibinitperiod},
-         given={G.\bibnamedelima D.\bibnamedelima W.},
-         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  W\bibinitperiod},
-      }}%
-      {{hash=GK}{%
-         family={Govender},
-         familyi={G\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=LSB}{%
-         family={Lyon},
-         familyi={L\bibinitperiod},
-         given={S.\bibnamedelima B.},
-         giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=SAH}{%
-         family={Sherry},
-         familyi={S\bibinitperiod},
-         given={A.\bibnamedelima H.},
-         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=FAR}{%
-         family={Fones},
-         familyi={F\bibinitperiod},
-         given={A.\bibnamedelima R.},
-         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=PAD}{%
-         family={Pratt},
-         familyi={P\bibinitperiod},
-         given={A.\bibnamedelima D.},
-         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+  \entry{bateman}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BH}{%
+         family={Bateman},
+         familyi={B\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SDW+1}
-    \strng{fullhash}{SDWCBJCCHYGCRMSGDWGKLSBSAHFARPAD1}
+    \strng{namehash}{BH1}
+    \strng{fullhash}{BH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Understanding Stress Corrosion Resistant Stainless Steels at
-  the Atomic Scale}
+    \field{pages}{423}
+    \field{title}{The solution of a system of differential equations occurring
+  in the theory of radioactive transformations}
+    \field{volume}{15}
     \field{type}{ARTICLE}
-    \field{year}{2010}
+    \field{journaltitle}{Proc. Camb. Phil. Soc.}
+    \field{year}{1910}
   \endentry
 
-  \entry{genIIIimprovements}{online}{}
+  \entry{ukpowerdata}{online}{}
     \name{author}{1}{}{%
-      {{hash=NW}{%
-         family={Nuclear},
-         familyi={N\bibinitperiod},
-         given={World},
-         giveni={W\bibinitperiod},
+      {{hash=GU}{%
+         family={Government},
+         familyi={G\bibinitperiod},
+         given={UK},
+         giveni={U\bibinitperiod},
       }}%
     }
-    \strng{namehash}{NW1}
-    \strng{fullhash}{NW1}
+    \strng{namehash}{GU1}
+    \strng{fullhash}{GU1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Advanced Nuclear Power Reactors}
+    \field{title}{Historic Electricity Data}
     \verb{url}
-    \verb https://world-nuclear.org/information-library/nuclear-fuel-cycle/nucl
-    \verb ear-power-reactors/advanced-nuclear-power-reactors.aspx
+    \verb https://www.gov.uk/government/statistical-data-sets/historical-electr
+    \verb icity-data
     \endverb
     \field{type}{ONLINE}
-    \field{year}{2020}
-  \endentry
-
-  \entry{geniiiplussafety}{book}{}
-    \name{author}{2}{}{%
-      {{hash=KTW}{%
-         family={Kerlin},
-         familyi={K\bibinitperiod},
-         given={Thomas\bibnamedelima W.},
-         giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=UBR}{%
-         family={Upadhyaya},
-         familyi={U\bibinitperiod},
-         given={Belle\bibnamedelima R.},
-         giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KTWUBR1}
-    \strng{fullhash}{KTWUBR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Dynamics and Control of Nuclear Reactors}
-    \field{volume}{2}
-    \field{type}{BOOK}
-    \field{journaltitle}{Nuclear reactor designs}
-    \field{year}{2019}
   \endentry
 
   \entry{ftnppcost}{online}{}
@@ -377,6 +291,27 @@
     \field{year}{2020}
   \endentry
 
+  \entry{thermalfastflux}{online}{}
+    \name{author}{1}{}{%
+      {{hash=LLAN}{%
+         family={Laboratory},
+         familyi={L\bibinitperiod},
+         given={Los Alamos\bibnamedelima National},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LLAN1}
+    \strng{fullhash}{LLAN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Criticality Safety}
+    \verb{url}
+    \verb https://t2.lanl.gov/nis/tour/sch007.html
+    \endverb
+    \field{type}{ONLINE}
+  \endentry
+
   \entry{uraniumenrichment}{online}{}
     \name{author}{1}{}{%
       {{hash=NW}{%
@@ -397,6 +332,29 @@
     \endverb
     \field{type}{ONLINE}
     \field{year}{2020}
+  \endentry
+
+  \entry{duderstadthamilton}{online}{}
+    \name{author}{2}{}{%
+      {{hash=DJJ}{%
+         family={Duderstadt},
+         familyi={D\bibinitperiod},
+         given={James\bibnamedelima J},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HLJ}{%
+         family={Hamilton},
+         familyi={H\bibinitperiod},
+         given={Louis\bibnamedelima J},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJJHLJ1}
+    \strng{fullhash}{DJJHLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Nuclear Reactor Analysis}
+    \field{year}{1976}
   \endentry
 
   \entry{lanltour}{online}{}
@@ -481,6 +439,28 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Advances in Energy Research}
     \field{year}{2013}
+  \endentry
+
+  \entry{hydrogenelectrolysis}{online}{}
+    \name{author}{1}{}{%
+      {{hash=GCLC}{%
+         family={Greig\bibnamedelima Chisholm},
+         familyi={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Leroy\bibnamedelima Cronin},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GCLC1}
+    \strng{fullhash}{GCLC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hydrogen From Water Electrolysis}
+    \verb{url}
+    \verb https://www.chem.gla.ac.uk/cronin/images/pubs/Chisholm-Chapter_16_201
+    \verb 6.pdf
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2016}
   \endentry
 
   \entry{atomicaccidents}{book}{}
@@ -575,6 +555,33 @@
     \endverb
     \field{type}{ONLINE}
     \field{year}{2013}
+  \endentry
+
+  \entry{supercriticalwater}{article}{}
+    \name{author}{1}{}{%
+      {{hash=dSeaGBM}{%
+         prefix={de\bibnamedelima Souza\bibnamedelima et},
+         prefixi={d\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  e\bibinitperiod},
+         family={al},
+         familyi={a\bibinitperiod},
+         given={Guilherme Botelho\bibnamedelima Meireles},
+         giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{aGBMdSe1}
+    \strng{fullhash}{aGBMdSe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{110}
+    \field{pages}{75\bibrangedash 104}
+    \field{title}{Supercritical water technology: an emerging treatment process
+  for contaminated wastewaters and sludge}
+    \field{volume}{21}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Reviews in Environmental Science and Bio/Technology}
+    \field{year}{2022}
   \endentry
 
   \entry{gen4}{online}{}
@@ -768,6 +775,78 @@
     \field{year}{2015}
   \endentry
 
+  \entry{wasionchallenges}{online}{}
+    \name{author}{1}{}{%
+      {{hash=WGS}{%
+         family={Was},
+         familyi={W\bibinitperiod},
+         given={Gary\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WGS2}
+    \strng{fullhash}{WGS2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Challenges to the use of ion irradiation for emulating
+  reactor irradiation}
+    \verb{url}
+    \verb https://link.springer.com/content/pdf/10.1557/jmr.2015.73.pdf
+    \endverb
+    \field{type}{ONLINE}
+  \endentry
+
+  \entry{primarydamageiron}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SA}{%
+         family={Souidi},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hou},
+         familyi={H\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Becquart},
+         familyi={B\bibinitperiod},
+         given={C.S.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Malerba},
+         familyi={M\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DC}{%
+         family={Domain},
+         familyi={D\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Stoller},
+         familyi={S\bibinitperiod},
+         given={R.E.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA+1}
+    \strng{fullhash}{SAHMBCMLDCSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{122}
+    \field{title}{On the correlation between primary damage and long-term
+  nanostructural evolution in iron under irradiation}
+    \field{volume}{419}
+    \field{journaltitle}{Journal of nuclear Materials}
+    \field{year}{2011}
+  \endentry
+
   \entry{damagebcctungsten}{article}{}
     \name{author}{2}{}{%
       {{hash=FJ}{%
@@ -836,6 +915,40 @@
     \field{year}{2008}
   \endentry
 
+  \entry{srim}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZJF}{%
+         family={Ziegler},
+         familyi={Z\bibinitperiod},
+         given={James\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=ZMD}{%
+         family={Ziegler},
+         familyi={Z\bibinitperiod},
+         given={M.\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BJP}{%
+         family={Biersack},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZJFZMDBJP1}
+    \strng{fullhash}{ZJFZMDBJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1818\bibrangedash 1823}
+    \field{title}{SRIM - The stopping and range of ions in matter}
+    \field{volume}{268}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Nuclear Instruments and Methods in Physics Research
+  Section B}
+    \field{year}{2010}
+  \endentry
+
   \entry{njcarron}{book}{}
     \name{author}{1}{}{%
       {{hash=CNJ}{%
@@ -872,6 +985,71 @@
     \field{title}{Neutrons, Nuclei \& Matter}
     \field{type}{BOOK}
     \field{year}{2011}
+  \endentry
+
+  \entry{pairproductionfeynman}{online}{}
+    \name{author}{1}{}{%
+      {{hash=FD}{%
+         family={Fields},
+         familyi={F\bibinitperiod},
+         given={Douglas},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FD1}
+    \strng{fullhash}{FD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Pair Production and Uncertainty}
+    \verb{url}
+    \verb https://physics.unm.edu/Courses/Fields/Phys2310/Lectures/lecture34.pd
+    \verb f
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2020}
+  \endentry
+
+  \entry{comptonscatteringfeynman}{online}{}
+    \name{author}{1}{}{%
+      {{hash=GDM}{%
+         family={Gingrich},
+         familyi={G\bibinitperiod},
+         given={Douglas\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GDM1}
+    \strng{fullhash}{GDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Photon-Electron Scattering}
+    \verb{url}
+    \verb https://sites.ualberta.ca/~gingrich/courses/phys512/node102.html
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2004}
+  \endentry
+
+  \entry{photoelectricfeynman}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BAF}{%
+         family={Bielajew},
+         familyi={B\bibinitperiod},
+         given={Alex\bibnamedelima F},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BAF1}
+    \strng{fullhash}{BAF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Photoelectric Effect}
+    \verb{url}
+    \verb https://www.researchgate.net/figure/Photoelectric-effect_fig3_2285382
+    \verb 88
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2001}
   \endentry
 
   \entry{gknollattenuation}{book}{}
@@ -930,104 +1108,16 @@
     \field{year}{1985}
   \endentry
 
-  \entry{lethaldose1}{online}{}
-    \name{author}{1}{}{%
-      {{hash=AUHS}{%
-         family={Agency},
-         familyi={A\bibinitperiod},
-         given={UK\bibnamedelima Health\bibnamedelima Security},
-         giveni={U\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
-  S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AUHS1}
-    \strng{fullhash}{AUHS1}
-    \field{labelnamesource}{author}
+  \entry{icrp103}{online}{}
     \field{labeltitlesource}{title}
-    \field{title}{Comparison of doses from sources of exposure}
-    \verb{url}
-    \verb https://www.gov.uk/government/publications/ionising-radiation-dose-co
-    \verb mparisons/ionising-radiation-dose-comparisons
-    \endverb
+    \field{title}{ICRP Publication 103}
     \field{type}{ONLINE}
-    \field{year}{2020}
   \endentry
 
-  \entry{lethaldose2}{online}{}
-    \name{author}{2}{}{%
-      {{hash=fDCC}{%
-         prefix={for},
-         prefixi={f\bibinitperiod},
-         family={Disease\bibnamedelima Control},
-         familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
-         given={Centers},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=P}{%
-         family={Prevention},
-         familyi={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DCCfP1}
-    \strng{fullhash}{DCCfP1}
-    \field{labelnamesource}{author}
+  \entry{radiationweighting}{online}{}
     \field{labeltitlesource}{title}
-    \field{title}{Acute Radiation Syndrome: A Fact Sheet for Clinicians}
-    \verb{url}
-    \verb https://www.cdc.gov/nceh/radiation/emergencies/arsphysicianfactsheet.
-    \verb htm
-    \endverb
+    \field{title}{Radiation Factors}
     \field{type}{ONLINE}
-    \field{year}{2020}
-  \endentry
-
-  \entry{ionisingradiationregulations}{online}{}
-    \name{author}{1}{}{%
-      {{hash=IUS}{%
-         family={Instrument},
-         familyi={I\bibinitperiod},
-         given={UK\bibnamedelima Statutory},
-         giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{IUS1}
-    \strng{fullhash}{IUS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{The Ionising Radiations Regulations 2017}
-    \verb{url}
-    \verb https://www.legislation.gov.uk/uksi/2017/1075/schedule/3
-    \endverb
-    \field{type}{ONLINE}
-    \field{year}{2017}
-  \endentry
-
-  \entry{radionuclides}{article}{}
-    \name{author}{2}{}{%
-      {{hash=RJ}{%
-         family={Rodenas},
-         familyi={R\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=VG}{%
-         family={Verdu},
-         familyi={V\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RJVG1}
-    \strng{fullhash}{RJVG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{1\bibrangedash 6}
-    \field{title}{Analysis of nuclear reactions to determine the radionuclides
-  generated and its activity in various devices}
-    \field{volume}{167}
-    \field{type}{ARTICLE}
-    \field{journaltitle}{Radiation Physics and Chemistry}
-    \field{year}{2020}
   \endentry
 
   \entry{shengeamonline}{online}{}
@@ -1069,6 +1159,91 @@
     \field{year}{2007}
   \endentry
 
+  \entry{frenkel1}{online}{}
+    \name{author}{1}{}{%
+      {{hash=oCU}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={Cambridge},
+         familyi={C\bibinitperiod},
+         given={University},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CUo1}
+    \strng{fullhash}{CUo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Mechanisms of Radiation Damage 1}
+    \verb{url}
+    \verb https://www.doitpoms.ac.uk/tlplib/nuclear_materials/damage_mechanism.
+    \verb php
+    \endverb
+    \field{type}{ONLINE}
+  \endentry
+
+  \entry{prisloops2}{online}{}
+    \name{author}{1}{}{%
+      {{hash=oCU}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={Cambridge},
+         familyi={C\bibinitperiod},
+         given={University},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CUo1}
+    \strng{fullhash}{CUo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Mechanisms of Radiation Damage 2}
+    \verb{url}
+    \verb https://www.doitpoms.ac.uk/tlplib/nuclear_materials/damage_mechanism2
+    \verb .php
+    \endverb
+    \field{type}{ONLINE}
+  \endentry
+
+  \entry{prisloop3}{article}{}
+    \name{author}{4}{}{%
+      {{hash=EC}{%
+         family={Erel},
+         familyi={E\bibinitperiod},
+         given={Can},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Po},
+         familyi={P\bibinitperiod},
+         given={Giacomo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Crosby},
+         familyi={C\bibinitperiod},
+         given={Tamer},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Ghoniem},
+         familyi={G\bibinitperiod},
+         given={Nasr},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EC+1}
+    \strng{fullhash}{ECPGCTGN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{32}
+    \field{title}{Generation and interaction mechanisms of prismatic
+  dislocation loops in FCC metals}
+    \field{volume}{140}
+    \field{journaltitle}{Computational Materials Science}
+    \field{year}{2017}
+  \endentry
+
   \entry{stollerdamage1996}{article}{}
     \name{author}{1}{}{%
       {{hash=SRE}{%
@@ -1089,6 +1264,26 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Journal of Metals}
     \field{year}{1996}
+  \endentry
+
+  \entry{fecrschaeffler}{online}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={BSSA},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{BSSA}
+    \verb{url}
+    \verb https://bssa.org.uk/bssa_articles/the-schaeffler-and-delong-diagrams-
+    \verb for-predicting-ferrite-levels-in-austenitic-stainless-steel-welds
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2019}
   \endentry
 
   \entry{fenicrternaryphase}{article}{}
@@ -1121,6 +1316,27 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Journal of Alloys and Compounds}
     \field{year}{2008}
+  \endentry
+
+  \entry{tikzcrystal}{online}{}
+    \name{author}{1}{}{%
+      {{hash=PB}{%
+         family={Palmer},
+         familyi={P\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PB1}
+    \strng{fullhash}{PB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Photoelectric Effect}
+    \verb{url}
+    \verb https://github.com/BenPalmer1983/tikzcrystal
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2020}
   \endentry
 
   \entry{bccfenimodel}{article}{}
@@ -1242,6 +1458,27 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Journal of Materials}
     \field{year}{2009}
+  \endentry
+
+  \entry{prisloopscnm}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WT}{%
+         family={Wiss},
+         familyi={W\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WT1}
+    \strng{fullhash}{WT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Material Properties/Oxide Fuels for Light Water Reactors and
+  Fast Neutron Reactors}
+    \field{volume}{2}
+    \field{type}{BOOK}
+    \field{journaltitle}{Comprehensive Nuclear Materials}
+    \field{year}{2012}
   \endentry
 
   \entry{wasstrucaustenitic}{book}{}
@@ -1910,6 +2147,50 @@
     \field{year}{2016}
   \endentry
 
+  \entry{staehlecoriou12}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Staehle},
+         familyi={S\bibinitperiod},
+         given={R.W.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{12}
+    \field{title}{Historical views on stress corrosion cracking of nickel-based
+  alloys: the Coriou effect}
+    \field{type}{BOOK}
+    \field{journaltitle}{Stress Corrosion Cracking of Nickel-based Alloys in
+  Water-cooled Nuclear Reactors}
+    \field{year}{2016}
+  \endentry
+
+  \entry{staehlecoriou15}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Staehle},
+         familyi={S\bibinitperiod},
+         given={R.W.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{15}
+    \field{title}{Historical views on stress corrosion cracking of nickel-based
+  alloys: the Coriou effect}
+    \field{type}{BOOK}
+    \field{journaltitle}{Stress Corrosion Cracking of Nickel-based Alloys in
+  Water-cooled Nuclear Reactors}
+    \field{year}{2016}
+  \endentry
+
   \entry{ap1000dcd}{online}{}
     \name{author}{1}{}{%
       {{hash=CUSNR}{%
@@ -2137,6 +2418,87 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Canadian Metallurgical Quarterly}
     \field{year}{1994}
+  \endentry
+
+  \entry{scrstainless}{article}{}
+    \name{author}{11}{}{%
+      {{hash=SDW}{%
+         family={Saxey},
+         familyi={S\bibinitperiod},
+         given={D.\bibnamedelima W.},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=CBJ}{%
+         family={Connolly},
+         familyi={C\bibinitperiod},
+         given={B.\bibnamedelima J.},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Cooper},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HY}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GCRM}{%
+         family={Grovenor},
+         familyi={G\bibinitperiod},
+         given={C.\bibnamedelima R.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=SGDW}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={G.\bibnamedelima D.\bibnamedelima W.},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  W\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Govender},
+         familyi={G\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LSB}{%
+         family={Lyon},
+         familyi={L\bibinitperiod},
+         given={S.\bibnamedelima B.},
+         giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=SAH}{%
+         family={Sherry},
+         familyi={S\bibinitperiod},
+         given={A.\bibnamedelima H.},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=FAR}{%
+         family={Fones},
+         familyi={F\bibinitperiod},
+         given={A.\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=PAD}{%
+         family={Pratt},
+         familyi={P\bibinitperiod},
+         given={A.\bibnamedelima D.},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SDW+1}
+    \strng{fullhash}{SDWCBJCCHYGCRMSGDWGKLSBSAHFARPAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Understanding Stress Corrosion Resistant Stainless Steels at
+  the Atomic Scale}
+    \field{type}{ARTICLE}
+    \field{year}{2010}
   \endentry
 
   \entry{cyclotrons}{online}{}
@@ -2399,6 +2761,92 @@
     \field{year}{1956}
   \endentry
 
+  \entry{bhamcyclotron}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PD}{%
+         family={Parker},
+         familyi={P\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wheldon},
+         familyi={W\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PDWC1}
+    \strng{fullhash}{PDWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{4}
+    \field{pages}{15\bibrangedash 20}
+    \field{title}{The Birmingham MC40 Cyclotron Facility}
+    \field{volume}{28}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Nuclear Physics News}
+    \field{year}{2018}
+  \endentry
+
+  \entry{activitycpc}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PB}{%
+         family={Palmer},
+         familyi={P\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Connolly},
+         familyi={C\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Read},
+         familyi={R\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PBCBRM1}
+    \strng{fullhash}{PBCBRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{138\bibrangedash 144}
+    \field{title}{Activity computer program for calculating ion irradiation
+  activation}
+    \field{volume}{216}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Computer Physics Communications}
+    \field{year}{2017}
+  \endentry
+
+  \entry{tendl2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Koning},
+         familyi={K\bibinitperiod},
+         given={A.J.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rochman},
+         familyi={R\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KARD1}
+    \strng{fullhash}{KARD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{TENDL: Comprehensive Nuclear Data Library with Covariances}
+    \field{type}{ARTICLE}
+    \field{year}{2010}
+  \endentry
+
   \entry{coulombhyperphysics}{online}{}
     \name{author}{1}{}{%
       {{hash=H}{%
@@ -2431,8 +2879,7 @@
     \field{labeltitlesource}{title}
     \field{title}{Nuclear Size and Density}
     \verb{url}
-    \verb http://http://hyperphysics.phy-astr.gsu.edu/hbase/Nuclear/nucuni.html
-    \verb \#c4
+    \verb http://hyperphysics.phy-astr.gsu.edu/hbase/Nuclear/nucuni.html\#c4
     \endverb
     \field{type}{ONLINE}
     \field{year}{2022}
@@ -2621,6 +3068,39 @@
     \field{year}{1971}
   \endentry
 
+  \entry{feshbach}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FH}{%
+         family={Feshbach},
+         familyi={F\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+      {{hash=PCE}{%
+         family={Porter},
+         familyi={P\bibinitperiod},
+         given={C\bibnamedelima E},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WVF}{%
+         family={Weisskopf},
+         familyi={W\bibinitperiod},
+         given={V\bibnamedelima F},
+         giveni={V\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FHPCEWVF1}
+    \strng{fullhash}{FHPCEWVF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{448\bibrangedash 464}
+    \field{title}{Model for Nuclear Reactions with Neutrons}
+    \field{volume}{96}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Physical Review}
+    \field{year}{1954}
+  \endentry
+
   \entry{talysmanual}{book}{}
     \name{author}{3}{}{%
       {{hash=KA}{%
@@ -2689,6 +3169,28 @@
     \field{year}{2020}
   \endentry
 
+  \entry{batemanequation}{online}{}
+    \name{author}{1}{}{%
+      {{hash=np}{%
+         prefix={nuclear},
+         prefixi={n\bibinitperiod},
+         family={power.com},
+         familyi={p\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{pn1}
+    \strng{fullhash}{pn1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Bateman Equation}
+    \verb{url}
+    \verb https://nuclear-power.com/wp-content/uploads/2018/10/Bateman-Equation
+    \verb s-definition.png
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2020}
+  \endentry
+
   \entry{srimbook}{book}{}
     \name{author}{3}{}{%
       {{hash=ZJF}{%
@@ -2717,40 +3219,6 @@
     \field{title}{The Stopping and Range of Ions in Matter}
     \field{type}{BOOK}
     \field{year}{2015}
-  \endentry
-
-  \entry{srim}{article}{}
-    \name{author}{3}{}{%
-      {{hash=ZJF}{%
-         family={Ziegler},
-         familyi={Z\bibinitperiod},
-         given={James\bibnamedelima F.},
-         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=ZMD}{%
-         family={Ziegler},
-         familyi={Z\bibinitperiod},
-         given={M.\bibnamedelima D.},
-         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=BJP}{%
-         family={Biersack},
-         familyi={B\bibinitperiod},
-         given={J.\bibnamedelima P.},
-         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ZJFZMDBJP1}
-    \strng{fullhash}{ZJFZMDBJP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{1818\bibrangedash 1823}
-    \field{title}{SRIM - The stopping and range of ions in matter}
-    \field{volume}{268}
-    \field{type}{ARTICLE}
-    \field{journaltitle}{Nuclear Instruments and Methods in Physics Research
-  Section B}
-    \field{year}{2010}
   \endentry
 
   \entry{scalediagram}{article}{}
@@ -2942,6 +3410,41 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Journal of Physics Condensed Matter 1}
     \field{year}{1989}
+  \endentry
+
+  \entry{bonnywre}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BG}{%
+         family={Bonny},
+         familyi={B\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bakaev},
+         familyi={B\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Terentyev},
+         familyi={T\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BGBATD1}
+    \strng{fullhash}{BGBATD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{165107}
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{Interatomic potential to study plastic deformation in
+  tungsten-rhenium alloys}
+    \field{volume}{121}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Journal of Applied Physics}
+    \field{year}{2017}
   \endentry
 
   \entry{meamalsibaskes}{article}{}
@@ -3137,6 +3640,78 @@
   Metals}
     \field{type}{BOOK}
     \field{year}{1994}
+  \endentry
+
+  \entry{jonespot}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JJE}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={J.\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJE1}
+    \strng{fullhash}{JJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{738}
+    \field{title}{On the determination of molecular fields.—I. From the
+  variation of the viscosity of a gas with temperature}
+    \field{volume}{106}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Proceedings of the Royal Society A}
+    \field{year}{1924}
+  \endentry
+
+  \entry{morsepot}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MPM}{%
+         family={Morse},
+         familyi={M\bibinitperiod},
+         given={Philip\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MPM1}
+    \strng{fullhash}{MPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{57}
+    \field{title}{Diatomic Molecules According to the Wave Mechanics. II.
+  Vibrational Levels}
+    \field{volume}{34}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Phys. Rev.}
+    \field{year}{1929}
+  \endentry
+
+  \entry{buckpot}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MCM}{%
+         family={Mauney},
+         familyi={M\bibinitperiod},
+         given={Christopher\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lazzati},
+         familyi={L\bibinitperiod},
+         given={Davide},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCMLD1}
+    \strng{fullhash}{MCMLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{March}
+    \field{pages}{1\bibrangedash 9}
+    \field{title}{The formation of astrophysical Mg-rich silicate dust}
+    \field{volume}{12}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{Molecular Astrophysics}
+    \field{year}{2018}
   \endentry
 
   \entry{finnissinclair}{article}{}
@@ -3433,41 +4008,6 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Philosophical Magazine}
     \field{year}{2003}
-  \endentry
-
-  \entry{bonnywre}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BG}{%
-         family={Bonny},
-         familyi={B\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=BA}{%
-         family={Bakaev},
-         familyi={B\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=TD}{%
-         family={Terentyev},
-         familyi={T\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BGBATD1}
-    \strng{fullhash}{BGBATD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{issue}{165107}
-    \field{pages}{1\bibrangedash 13}
-    \field{title}{Interatomic potential to study plastic deformation in
-  tungsten-rhenium alloys}
-    \field{volume}{121}
-    \field{type}{ARTICLE}
-    \field{journaltitle}{Journal of Applied Physics}
-    \field{year}{2017}
   \endentry
 
   \entry{nocedalwright1}{book}{}
@@ -3775,6 +4315,29 @@
     \field{type}{ARTICLE}
     \field{journaltitle}{Europhys. Lett.}
     \field{year}{1994}
+  \endentry
+
+  \entry{gulp}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Gale},
+         familyi={G\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{4}
+    \field{pages}{629\bibrangedash 637}
+    \field{title}{GULP: A computer program for the symmetry-adapted simulation
+  of solids}
+    \field{volume}{93}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{J. Chem. Soc., Faraday Trans.}
+    \field{year}{1997}
   \endentry
 
   \entry{orthonisi}{article}{}
@@ -4639,6 +5202,149 @@
     \field{year}{2020}
   \endentry
 
+  \entry{fispact}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FRA}{%
+         family={Forrest},
+         familyi={F\bibinitperiod},
+         given={R.\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kopecky},
+         familyi={K\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FRAKJ1}
+    \strng{fullhash}{FRAKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The activation system EASY-2007}
+    \field{volume}{386}
+    \field{journaltitle}{Journal of Nuclear Materials}
+    \field{year}{2009}
+  \endentry
+
+  \entry{fati}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MLWG}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={L.\bibnamedelima W.\bibnamedelima G.},
+         giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+      }}%
+      {{hash=PLW}{%
+         family={Packer},
+         familyi={P\bibinitperiod},
+         given={L.\bibnamedelima W.},
+         giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Haeck},
+         familyi={H\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pasley},
+         familyi={P\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MLWG+1}
+    \strng{fullhash}{MLWGPLWHWPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{2891}
+    \field{title}{The development of a fusion specific depletion interface code
+  - FATI}
+    \field{volume}{88}
+    \field{journaltitle}{Fusion Engineering and Design}
+    \field{year}{2013}
+  \endentry
+
+  \entry{fispactii}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SJC}{%
+         family={Sublet},
+         familyi={S\bibinitperiod},
+         given={J.-Ch.},
+         giveni={J\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=EJW}{%
+         family={Eastwood},
+         familyi={E\bibinitperiod},
+         given={J.\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=MJG}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={J.\bibnamedelima G.},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GMR}{%
+         family={Gilbert},
+         familyi={G\bibinitperiod},
+         given={M.\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Fleming},
+         familyi={F\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AW}{%
+         family={Arter},
+         familyi={A\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJC+1}
+    \strng{fullhash}{SJCEJWMJGGMRFMAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{77}
+    \field{title}{FISPACT-II: An Advanced Simulation System for Activation,
+  Transmutation and Material Modelling}
+    \field{volume}{139}
+    \field{journaltitle}{Nuclear Data Sheets}
+    \field{year}{2017}
+  \endentry
+
+  \entry{loganjharr}{online}{}
+    \name{author}{1}{}{%
+      {{hash=HLJ}{%
+         family={Harr},
+         familyi={H\bibinitperiod},
+         given={Logan\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HLJ1}
+    \strng{fullhash}{HLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Precise Calculation of Complex Radioactive Decay Chains}
+    \verb{url}
+    \verb https://scholar.afit.edu/etd/2924
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2007}
+  \endentry
+
+  \entry{bromintegral}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Bromwich Integral}
+    \field{type}{ONLINE}
+  \endentry
+
   \entry{stehfest}{article}{}
     \name{author}{1}{}{%
       {{hash=SH}{%
@@ -4679,30 +5385,6 @@
     \endverb
     \field{type}{ONLINE}
     \field{year}{2019}
-  \endentry
-
-  \entry{tendl2009}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KA}{%
-         family={Koning},
-         familyi={K\bibinitperiod},
-         given={A.J.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=RD}{%
-         family={Rochman},
-         familyi={R\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KARD1}
-    \strng{fullhash}{KARD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{TENDL: Comprehensive Nuclear Data Library with Covariances}
-    \field{type}{ARTICLE}
-    \field{year}{2010}
   \endentry
 
   \entry{tendl2017}{article}{}
@@ -4941,6 +5623,65 @@
     \field{year}{1990}
   \endentry
 
+  \entry{mendelevruau}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FA}{%
+         family={Fortini},
+         familyi={F\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MMI}{%
+         family={Mendelev},
+         familyi={M\bibinitperiod},
+         given={Mikhail\bibnamedelima I},
+         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=eaSB}{%
+         prefix={et},
+         prefixi={e\bibinitperiod},
+         family={al},
+         familyi={a\bibinitperiod},
+         given={Sergey\bibnamedelima Buldyrev},
+         giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FAMMIaSBe1}
+    \strng{fullhash}{FAMMIaSBe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{074320}
+    \field{pages}{1\bibrangedash 9}
+    \field{title}{Asperity contacts at the nanoscale: Comparison of Ru and Au}
+    \field{volume}{104}
+    \field{type}{ARTICLE}
+    \field{journaltitle}{J. Appl. Phys.}
+    \field{year}{2008}
+  \endentry
+
+  \entry{transferability}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SMRMYZ}{%
+         family={Seyed Moein Rassoulinejad-Mousavi},
+         familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  R\bibinithyphendelim M\bibinitperiod},
+         given={Yuwen\bibnamedelima Zhang},
+         giveni={Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMRMYZ1}
+    \strng{fullhash}{SMRMYZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Interatomic Potentials Transferability for Molecular
+  Simulations: A Comparative Study for Platinum, Gold and Silver}
+    \verb{url}
+    \verb https://www.nature.com/articles/s41598-018-20375-4
+    \endverb
+    \field{type}{ONLINE}
+    \field{year}{2018}
+  \endentry
+
   \entry{webelementsal}{online}{}
     \name{author}{1}{}{%
       {{hash=w}{%
@@ -5069,8 +5810,7 @@
     \field{labeltitlesource}{title}
     \field{issue}{110}
     \field{pages}{4\bibrangedash 7}
-    \field{title}{Thermal Contraction and Disordering of the Al(110) Surface
-  Nicola}
+    \field{title}{Thermal Contraction and Disordering of the Al(110) Surface}
     \field{type}{ARTICLE}
     \field{journaltitle}{Condensed Matter}
     \field{year}{2008}
@@ -5294,40 +6034,45 @@
     \field{year}{2021}
   \endentry
 
-  \entry{mendelevruau}{article}{}
-    \name{author}{3}{}{%
-      {{hash=FA}{%
-         family={Fortini},
-         familyi={F\bibinitperiod},
-         given={Andrea},
+  \entry{acklandfe}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AG}{%
+         family={Ackland},
+         familyi={A\bibinitperiod},
+         given={G.J.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Bacon},
+         familyi={B\bibinitperiod},
+         given={D.J.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Calder},
+         familyi={C\bibinitperiod},
+         given={A.F.},
          giveni={A\bibinitperiod},
       }}%
-      {{hash=MMI}{%
-         family={Mendelev},
-         familyi={M\bibinitperiod},
-         given={Mikhail\bibnamedelima I},
-         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-      {{hash=eaSB}{%
-         prefix={et},
-         prefixi={e\bibinitperiod},
-         family={al},
-         familyi={a\bibinitperiod},
-         given={Sergey\bibnamedelima Buldyrev},
-         giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+      {{hash=HT}{%
+         family={Harry},
+         familyi={H\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{FAMMIaSBe1}
-    \strng{fullhash}{FAMMIaSBe1}
+    \strng{namehash}{AG+1}
+    \strng{fullhash}{AGBDCAHT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{issue}{074320}
-    \field{pages}{1\bibrangedash 9}
-    \field{title}{Asperity contacts at the nanoscale: Comparison of Ru and Au}
-    \field{volume}{104}
+    \field{issue}{3}
+    \field{pages}{713\bibrangedash 732}
+    \field{title}{Computer simulation of point defect properties in dilute
+  Fe-Cu alloy using a many-body interatomic potential}
+    \field{volume}{75}
     \field{type}{ARTICLE}
-    \field{journaltitle}{J. Appl. Phys.}
-    \field{year}{2008}
+    \field{journaltitle}{Philosophical Magazine A}
+    \field{year}{1997}
   \endentry
 
   \entry{typesofelasticstrain}{online}{}

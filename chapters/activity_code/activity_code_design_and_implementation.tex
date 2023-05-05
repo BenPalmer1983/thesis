@@ -16,11 +16,30 @@ Finally, the latest version of the Activity code was used to predict the activit
 
 \section{Introduction}
 
+\subsection{Motivation for an Ion Induced Activity Code}
 
-High flux neutron reactors are expensive to use, whereas proton accelerators capable of producing beams of adequate fluence and energy are more readily available, cheaper to buy and cheaper to run.  Ion beams, due to the Coulomb interaction, are more controllable in terms of energy, direction and fluence.  They may be concentrated on a desired target at a set fluence and energy.
+High flux neutron reactors are expensive to use, whereas proton accelerators capable of producing beams of adequate fluence and energy are more readily available, cheaper to buy and cheaper to run.  Ion beams, due to the Coulomb interaction, are more controllable in terms of energy, direction and fluence.  They may be concentrated on a desired target at a fixed flux and energy for a set amount of time.
 
-Depending on the energy of the ion beam, the target material will become radioactive.  The stable nuclei are transmuted and when the resulting isotope is unstable it will decay.  An equation was derived to predict the activity of isotopes for any decay chain with source terms and branching factors included.  Two versions of a computer code were developed to compute the reaction rates and activity of the irradiated targets.
+Depending on the energy of the ion beam, the target material will become radioactive.  The stable nuclei are transmuted and when the resulting isotope is unstable it will decay.  An equation was derived to predict the activity of isotopes for any decay chain and this includes source terms and branching factors.  Two versions of a computer code were developed to compute the reaction rates and activity of the irradiated targets\cite{activitycpc}.
 
+At the start of this work, the standard inventory code for computing activity was FISPACT-2007\cite{fispact}.  This takes a spectra and collapses it with the cross section, assuming the irradiation of an infinite and homogenous material.  There is no notion of transport in this code.  An alumni of the University of Birmingham developed an interface between \acrlong{mcnp} and \acrshort{fispact}, known as \acrfull{fati}\cite{fati}, in order to bring the spatial aspect of \acrshort{mcnp} and temporal aspect of \acrshort{fispact} together for neutron radiation. The latest version of \acrshort{fispact} (FISPACT-II\cite{fispactii}) was released in 2017, and it uses a sparse matrix to calculate the activity.
+
+Other solvers for Bateman equations exist, but it would be difficult to compare the methods of proprietary code without access to the source code.  Branching is a feature added to many methods of solving, but the source term is neglected in discussions\cite{loganjharr}.  One reason for this may be the isotopes of interest reach saturation when irradiated for long periods in high flux reactors.  Ion irradiation has the potential to cause more damage and reduce the irradiation time, not allowing isotopes to reach saturation.  In this situation the source and decay rates are important to model throughout the irradiation process.  
+
+For codes such as \acrshort{fispact} there is more emphasis on neutron activation through the development of \acrshort{fati}.  The work presented here is interested in radioactive isotopes generated as a result of ion irradiation.
+
+Given the above, the equations and code developed here fill a gap in several ways.  Rather than use a sparse matrix based Bateman solver, an equation was derived for both stable and unstable isotopes to compute the amount of an isotope individually with a single function call.  Each function call is only dependent upon the input parameters: isotope half lives, production rates, branching factors and starting amounts.
+
+A high resolution database of proton reaction cross sections was created to cover the entire range of energies available on the University of Birmingham Cyclotron, extending up to 50MeV in increments of 10keV.  This database is coupled to proton trajectory data from \acrshort{srim} and the single function call decay equations.
+
+Combined, this allows the user to predict the radioactivity of an ion irradiated target where the decay equations allow isotopes to decay away during and after irradiation.  It makes no difference to the code whether or not the isotopes created reach saturation.  
+
+The code allows the user to visualise the build up and decay of isotopes over time during and after irradiation.  This is in the form of plots and several videos output by the code.  It also allows the user to identify isotopes of particular interest where a complicated material, containing many isotopes, is due to be irradiated.
+
+
+\subsection{Summary of Chapter}
+
+In this chapter the development of the modified Bateman equations will be discussed (\ref{section:bateman}).  The Activity code and cross section database are introduced (\ref{section:activitycode}) and this is followed by a short discussion of the \acrshort{srim} code used to generate trajectory data (\ref{section:srimsimulating}).  The measured gamma activity following the irradiation of \Gls{Fe} with the University of Birmingham cyclotron (\ref{section:cyclotronirradiation}) is compared with predictions by the activity code; the predictions are extended to 100\acrshort{dpa} irradiated iron samples for a range of proton energies (\ref{section:100dpapredictedactivity}).  Finally the measured results following the irradiation of \Gls{Mo} are compared to those computed using the code (\ref{section:protonirradiatedmo} and a complex \Gls{Mo} doped steel is analysed (\ref{section:protonirradiatedmodopedsteel}) to investigate expected radiation levels when irradiated with 5MeV protons.
 
 
 %%====================================================================================================================================================
@@ -30,10 +49,10 @@ Depending on the energy of the ion beam, the target material will become radioac
 %%====================================================================================================================================================
 
 \section{Activation by Ion Irradiation}
+\label{section:bateman}
 
 
-
-The Bateman equation was derived using Laplace transforms, and this same method has been used to develop a modified equation that incorporates branching factors and production rates for each isotope in the decay chain, as illustrated by figure \ref{fig:decaytree}.
+The Bateman equation was derived using Laplace transforms, and this same method has been used to develop a modified equation that incorporates branching factors and production rates for each isotope in the decay chain, as illustrated by fig. \ref{fig:decaytree}\cite{activitycpc}.
 
 \begin{figure}[!h]
 	\centering
@@ -83,12 +102,22 @@ The Bateman equation was derived using Laplace transforms, and this same method 
 
 Laplace Transforms (eq. \ref{eq:eqLaplaceTransform}) are a useful mathematical tool, and allow ordinary differential equations to be solved by simple algebraic manipulation in the s domain (appendix \ref{chapter:usefullaplacetransforms}).  Bateman took advantage of Laplace Transforms in deriving his equation, and this is the method that has been taken here as well.
 
-\eqLaplaceTransform
+\begin{equation}
+  F(s) = \int \limits_{0}^{\infty} f(t) \exp(-st) dt
+  \label{eq:eqLaplaceTransform}
+\end{equation}
+
+\begin{equation}
+  f(t) = \frac{1}{2\pi i} \int_{\gamma - i \infty}^{\gamma + i \infty} \exp(st) F(s) ds
+  \label{eq:BromwichIntegral}
+\end{equation}
+
+The inverse of the Laplace transform is the Bromwich integral (eq. \ref{eq:BromwichIntegral}), where $\gamma$ is a vertical contour in the complex plane\cite{bromintegral}.  The inverse may be found using a table of standard inverses (appendix \ref{chapter:usefullaplacetransforms}) or by numerical methods (\ref{section:gaverstehfest}).
 
 
 \subsection{Constructing the Differential Equations}
 
-The first step is to set up differential equations for the parent isotope, unstable daughter isotopes and stable daughter isotope.  The parent isotope has a source term, due to production, and a loss term, due to decay.  The unstable daughter isotopes have two source terms, from the production by irradiation induced transmutation and the decay of preceding isotopes in the decay chain, and a loss term, due to decay.  Finally, the stable daughter that finalizes the decay chain has two source terms (the same as the unstable daughters) but no loss term.
+The first step is to set up differential equations for the parent isotope, unstable daughter isotopes and stable daughter isotope.  The parent isotope has a source term, due to production, and a loss term, due to decay.  The unstable daughter isotopes have two source terms, from the production by irradiation induced transmutation and the decay of preceding isotopes in the decay chain, and a loss term, due to decay.  Finally, the stable daughter that finalizes the decay chain has two source terms (the same as the unstable daughters) but no loss term\cite{activitycpc}.
 
 The variables (and vectors) used in these equations are defined as follows:
 \begin{itemize}
@@ -131,8 +160,9 @@ N_{z}(s) = \frac{1}{s^2} \omega_{z} + \frac{1}{s} b_{z-1} \lambda_{z-1} N_{z-1} 
 
 
 \subsection{Numerical Inversion of the Laplace Transform}
+\label{section:gaverstehfest}
 
-The Gaver-Stehfest\cite{stehfest} algorithm was developed in the 1960s and 1970s and is a method of calculating the inverse of a Laplace Transform in the real number domain.  It is an easy to implement and reasonably accurate method, although it is an approximation to the real value.  A comparison between an analytic and numeric inversion for the unstable isotope Po-218 is discussed at the end of this section (figure \ref{fig:po218decay}).
+The Gaver-Stehfest\cite{stehfest} algorithm was developed in the 1960s and 1970s and is a method of calculating the inverse of a Laplace Transform in the real number domain.  It is an easy to implement and reasonably accurate method, although it is an approximation to the real value.  A comparison between an analytic and numeric inversion for the unstable isotope Po-218 is discussed at the end of this section (fig. \ref{fig:po218decay}).
 
 \begin{equation}
 f(t) \approx f_{n}(t) = \frac{\ln(2)}{t} \sum_{k=1}^{2n} a_{k}(n)F(s) \textnormal{ where } n \ge 1, t>0
@@ -188,7 +218,7 @@ N_{4}(s) =
 \label{eq:example4thchainstable}
 \end{equation}
 
-By using partial fraction expansion and standard Laplace Transforms, the set of equations (eqs. \ref{eq:unstable1}, \ref{eq:unstable2}, \ref{eq:unstable3}, \ref{eq:unstable4}) is used to calculate the amount of the m\textsuperscript{th} isotope in the decay chain, providing the m\textsuperscript{th} isotope is unstable.
+By using partial fraction expansion and standard Laplace Transforms, the set of equations (eqs. \ref{eq:unstable1}, \ref{eq:unstable2}, \ref{eq:unstable3}, \ref{eq:unstable4}) is used to calculate the amount of the m\textsuperscript{th} isotope in the decay chain, providing the m\textsuperscript{th} isotope is unstable\cite{activitycpc}.
 
 \begin{equation}
 \begin{split}
@@ -235,7 +265,7 @@ g(t;k,m,\vec{\lambda})
 \label{eq:unstable4}
 \end{equation}
 
-The set of equations (eqs. \ref{eq:stable1}, \ref{eq:stable2}, \ref{eq:stable3}, \ref{eq:stable4}) is used to calculate the amount of the m\textsuperscript{th} isotope in the decay chain, where the m\textsuperscript{th} isotope is stable.
+The set of equations (eqs. \ref{eq:stable1}, \ref{eq:stable2}, \ref{eq:stable3}, \ref{eq:stable4}) is used to calculate the amount of the m\textsuperscript{th} isotope in the decay chain, where the m\textsuperscript{th} isotope is stable\cite{activitycpc}.
 
 \begin{equation}
 \begin{split}
@@ -299,13 +329,13 @@ g(t;k,m,\vec{\lambda})
 	\end{center}
 \end{figure}
 
-The numeric solution only requires the equation to be solved in the s-domain; the Gaver-Stehfest algorithm performs the inversion.  It is worth the extra effort to derive and implement an analytic solution, as the numeric is only an approximation.  Examples of the pitfalls of the numeric solution are that it can give negative amounts of an isotope and the difference between the numeric and analytic calculated amounts can become quite large when the isotope decays away to a very small value.  Figure \ref{fig:po218decay} shows the predicted decay of a sample of Po-218 irradiated for 1,000s, and sampled until 10,000s.  In the region between 4,000s and 9,000s the amount from the numeric calculation drops below zero, whereas the analytic calculation remains above zero, as would be expected.
+The numeric solution only requires the equation to be solved in the s-domain; the Gaver-Stehfest algorithm performs the inversion.  It is worth the extra effort to derive and implement an analytic solution, as the numeric is only an approximation.  Examples of the pitfalls of the numeric solution are that it can give negative amounts of an isotope and the difference between the numeric and analytic calculated amounts can become quite large when the isotope decays away to a very small value.  Fig. \ref{fig:po218decay}\cite{activitycpc} shows the predicted decay of a sample of Po-218 irradiated for 1,000s, and sampled until 10,000s.  In the region between 4,000s and 9,000s the amount from the numeric calculation drops below zero, whereas the analytic calculation remains above zero, as would be expected.
 
 
 
 \FloatBarrier
 \section{Activity Code}
-
+\label{section:activitycode}
 
 \subsection{Computer Code Development}
 
@@ -336,7 +366,7 @@ The decay equations were programmed as a class in python (appendix \ref{section:
   \end{center}
 \end{figure}
 
-Due to the large range in magnitude of the half life for various isotopes, a decay chain was selected where the time step for the numeric calculation would be applicable to the half life of the isotopes in the decay chain, whilst keeping the number of steps low enough to compute the activities in a reasonable amount of time with a simple algorithm.  The decay path of  ${}^{216}_{84}Po$ (figure \ref{fig:DecayPathPo216}) contains 6 isotopes and includes one branch at ${}^{212}_{83}Bi$.
+Due to the large range in magnitude of the half life for various isotopes, a decay chain was selected where the time step for the numeric calculation would be applicable to the half life of the isotopes in the decay chain, whilst keeping the number of steps low enough to compute the activities in a reasonable amount of time with a simple algorithm.  The decay path of  ${}^{216}_{84}Po$ (fig. \ref{fig:DecayPathPo216}) contains 6 isotopes and includes one branch at ${}^{212}_{83}Bi$.
 
 \begin{table}[h]
 \begin{center}
@@ -389,7 +419,7 @@ The numeric code used to perform these calculations is detailed in the appendix 
   \end{center}
 \end{figure}
 
-As seen in figure \ref{fig:decay_equations_vs_analytic}, for all but the shortest half life isotope Po-212, the numeric calculations are in good agreement with the decay equations.  As the number of steps increases, and hence the time step decreases, the numerically computed activity for Po-212 also converges to that calculated with the decay equations.
+As seen in fig. \ref{fig:decay_equations_vs_analytic}, for all but the shortest half life isotope Po-212, the numeric calculations are in good agreement with the decay equations.  As the number of steps increases, and hence the time step decreases, the numerically computed activity for Po-212 also converges to that calculated with the decay equations.
 
 The modified Bateman equation was also tested with several other decay chains against a numeric solution for each chain.  These were the decay of ${}^{49}_{24}Cr$, ${}^{66}_{28}Ni$, ${}^{125}_{55}Cs$, ${}^{213}_{83}Bi$, ${}^{216}_{84}Po$ and ${}^{218}_{86}Rn$.  Apart from a break down in the numeric code, where the half life was comparable to or smaller than the time step, the results from both the equations and the numeric solver were in good agreement.  The full results to this testing are included in appendix \ref{section:decaypo216numeric}.
 
@@ -434,13 +464,13 @@ Due to a variation in range of energies in the existing cross section data files
 \label{fig:xsdata-particle2}
 \end{figure}
 
-A set of proton reaction cross section data files already exist and are updated every few years.  The type and range of data changes between versions of the file.  For example, the \acrshort{tendl}-2014 version contains only elastic and (z,anything) files for (p,Fe56).  The \acrshort{tendl}-2009 file contains a wider ranger of reactions and under 50 data points span the energy range from 0MeV to 200MeV.  The 2019 version contains even more reactions but spans a much shorter energy range, 0MeV to 28MeV, with cross sections given at just under 60 energy points.
+A set of proton reaction cross section data files already exist and are updated every few years.  The type and range of data changes between versions of the file.  For example, the \acrshort{tendl}-2014 version contains only elastic and (z,anything) files for (p,Fe56).  As this reaction (z,anything) is the sum of all the reactions with individual isotopes, the user is unable to determine the reaction rates for those individual isotopes.  The \acrshort{tendl}-2009 file contains a wider ranger of reactions and under 50 data points span the energy range from 0MeV to 200MeV.  The 2019 version contains even more reactions but spans a much shorter energy range, 0MeV to 28MeV, with cross sections given at just under 60 energy points(fig. \ref{fig:xsdata-particle}).
 
 The cyclotron used in the experimental work has an energy range up to 40MeV for protons and 53MeV for ${}^{4}He^{2+}$ ions.  To cover this entire range, the TALYS code was used to compute cross section reaction data from 0.01MeV to 62.0MeV in increments of 10keV, breaking the energy range up into 6,200 data points for each reaction.
 
 Limitations of the TALYS code caused the calculations to be processed in batches of either 400 or 600 points.  The data was collated and processed resulting in a datafile of particle production reactions and residual production reactions.  This is accessible through a stand-alone python class that is also a part of the Activity V2 code.
 
-The residual reactions are grouped by target isotope and then by residual isotope, whereas the particle cross sections are grouped by target isotope then particle type.  The computed values are plotted for all available reactions and all residuals for ${}^{56}_{26}Fe$ reactions with protons (figures \ref{fig:xsdata-particle1} and \ref{fig:xsdata-particle2}) and these show a good agreement, although there is a more detailed set of residual isotopes for the generated cross sections.
+The residual reactions are grouped by target isotope and then by residual isotope, whereas the particle cross sections are grouped by target isotope then particle type.  The computed values are plotted for all available reactions and all residuals for ${}^{56}_{26}Fe$ reactions with protons (figs. \ref{fig:xsdata-particle2}) and these show a good agreement, although there is a more detailed set of residual isotopes for the generated cross sections.
 
 \FloatBarrier
 \begin{lstlisting}[style=sOutputFile,caption={Status report from TALYS database code},label={listing:talysstatus}]
@@ -479,7 +509,7 @@ The \acrshort{srim} code is used to generate ion trajectory data.  This uses a q
 \begin{figure}[htb]
   \begin{center}
     \includegraphics[width=0.5\linewidth]{chapters/activity_code/images/ion_transport.png}
-    \caption{36MeV Ion Track}
+    \caption{36MeV proton tracks into a 0.5mm thick steel generated with the \acrshort{srim} code where protons enter the material from the left of the figure and exit on the right.}
     \label{figure:36mevionsiniron}
   \end{center}
 \end{figure}
@@ -504,8 +534,9 @@ An additional feature was added to the Activity V2 code to estimate neutron acti
 
 \FloatBarrier
 \section[Simulating with SRIM - Iron]{Simulating Proton Irradiated Iron with SRIM}
+\label{section:srimsimulating}
 
-The trajectory data used by the activity code, and also to estimate the ${}^{55}_{27} Co$ activity, was provided by SRIM.  An input configuration was set with Iron as the target material and protons as the projectile ion.  The sample depth was set to at least the target thickness, 0.5mm.  The activity code truncates the data to fit the target thickness, so a much larger depth, say 1m, could be set in SRIM to ensure all the ions stop within the simulated target, and this data file may be reused for targets of varying thicknesses.
+The trajectory data used by the activity code, and also to estimate the ${}^{55}_{27} Co$ activity, was provided by acrshort{srim}.  An input configuration was set with Iron as the target material and protons as the projectile ion.  The sample depth was set to at least the target thickness, 0.5mm.  The activity code truncates the data to fit the target thickness, so a much larger depth, say 1m, could be set in SRIM to ensure all the ions stop within the simulated target, and this data file may be reused for targets of varying thicknesses.
 
 \begin{figure}[htb]
 \centering
@@ -525,10 +556,10 @@ The trajectory data used by the activity code, and also to estimate the ${}^{55}
   \label{fig:fe36mevenergydepth}
 \end{subfigure}
 \caption{Protons through a 0.5mm thick iron target - 100 proton histories}
-\label{fig:xsdata-particle1}
+\label{fig:protonsthroughthin}
 \end{figure}
 
-The ions travelling through the thin 0.5mm target lose between 4MeV and 5MeV (figure \ref{fig:energylost1}) as they pass, and they do so quite smoothly (figure \ref{fig:fe36mevenergydepth}).  The majority of the energy is lost smoothly through electronic stopping.  
+The ions travelling through the thin 0.5mm target lose between 4MeV and 5MeV as they pass, and they do so quite smoothly (fig. \ref{fig:protonsthroughthin}).  The majority of the energy is lost smoothly through electronic stopping.  
 
 The ion trajectory plot shows the deflection of ions in both the y and z axis.  A large percentage of the ions here deviate very little from a straight pass through, but several are deflected by quite a large angle.  Within the activity computer codes, these ions deflected ions will travel a greater distance through the target.  The only cutoffs applied to the ion trajectory data are either the ion reaching 0MeV or travelling more than the depth in the x-axis.  Any ions travelling a large distance in the y or z axis are still determined to be within the target.
 
@@ -550,10 +581,10 @@ The ion trajectory plot shows the deflection of ions in both the y and z axis.  
   \label{fig:fe36mevenergydepthfull}
 \end{subfigure}
 \caption{Protons through target thick enough to stop all ions - 100 proton histories}
-\label{fig:xsdata-particle2}
+\label{fig:protonsthroughthick}
 \end{figure}
 
-As the thickness of the iron is increased, all the energy is lost to the iron target, and this loss of energy occurs within a shorter range in the remaining quarter of a millimetre depth of the iron target (figure \ref{fig:iontrajectory2}).
+As the thickness of the iron is increased, all the energy is lost to the iron target, and this loss of energy occurs within a shorter range in the remaining quarter of a millimetre depth of the iron target (fig. \ref{fig:protonsthroughthick}).
 
 
 
@@ -565,6 +596,7 @@ As the thickness of the iron is increased, all the energy is lost to the iron ta
 
 
 \section{Cyclotron Irradiated Iron}
+\label{section:cyclotronirradiation}
 
 \subsection{Cyclotron Beam Line}
 
@@ -587,7 +619,7 @@ ${}^3 He^{2+}$ & 4-20 & 60 & $1.87 \times 10^{14}$ \\
 \label{table:scanditronixlimits}
 \end{table}
 
-The cyclotron is located in one room, and several beam lines run from the cyclotron to other rooms in the cyclotron building.  The operation room is separate from the cyclotron and beam line rooms (figure \ref{fig:cyclotronlayout}).
+The cyclotron is located in one room, and several beam lines run from the cyclotron to other rooms in the cyclotron building.  The operation room is separate from the cyclotron and beam line rooms (fig. \ref{fig:cyclotronlayout}).
 
 \begin{figure}[htp]
 	\minipage{0.49\textwidth}
@@ -608,9 +640,9 @@ The cyclotron is located in one room, and several beam lines run from the cyclot
 
 The iron sample was held perpendicular to the beam line, with the ions passing through the 0.5mm thickness of the sheet.  The beam area was approximately $6.4 \times 10^{-5} m^2$, irradiating a volume of approximately $3.2 \times 10^{-8} m^3$.  The target was irradiated for 300 seconds at 0.5 micro amps and it was expected to cause over $1.4 \times 10^{16}$ displacements within the volume of iron targetted by the beam.  With a number density of approximately $8\times10^{28}$ atoms per cubic meter, giving a relatively low damage dose, when compared to that expected over the lifetime of a component within the reactor, of $5.0 \times 10^{-6}$ \acrshort{dpa}.
 
-During irradiation, the amount of gamma radiation released was enough to trip the alarm for the room (figure \ref{fig:gammawarning}).  The proton fluence was less than 1\% of the maximum fluence capable of being produced by the cyclotron, so this was definitely a concern.  To increase the damage dose, and keep to a shorter period of time, the current would most probably be increased to a much higher percentage, also increasing the rate of Gammas produced during irradiation.
+During irradiation, the amount of gamma radiation released was enough to trip the alarm for the room (fig. \ref{fig:gammawarning}).  The proton fluence was less than 1\% of the maximum fluence capable of being produced by the cyclotron, so this was definitely a concern.  To increase the damage dose, and keep to a shorter period of time, the current would most probably be increased to a much higher percentage, also increasing the rate of Gammas produced during irradiation.
 
-Preliminary investigations with SRIM into the stopping distance of protons in a range of materials shows 36MeV ions stop within 3mm in Iron and Steel(figure \ref{fig:stoppingdistanceprotons}).
+Preliminary investigations with SRIM into the stopping distance of protons in a range of materials shows 36MeV ions stop within 3mm in Iron and Steel(fig. \ref{fig:stoppingdistanceprotons}).
 
 \FloatBarrier
 \begin{figure}[h]
@@ -621,12 +653,12 @@ Preliminary investigations with SRIM into the stopping distance of protons in a 
   \end{center}
 \end{figure}
 
-It is clear that 3mm thick samples of Iron or Steel will completely stop 36MeV protons and 1mm of the same is enough to stop any with an energy of 20MeV or less.  The target irradiated here, with a thickness of just 0.5mm, will allow most ions to pass through and retain a large proportion of their energy (figure \ref{fig:energylost1}).
+It is clear that 3mm thick samples of Iron or Steel will completely stop 36MeV protons and 1mm of the same is enough to stop any with an energy of 20MeV or less.  The target irradiated here, with a thickness of just 0.5mm, will allow most ions to pass through and retain a large proportion of their energy (fig. \ref{fig:energylost1}).
 
 
 \subsection{Creation of Cobalt-55}
 
-${}^{55}_{27} Co$ is a relatively short lived isotope with a half life of 17.5 hours and this is a concern to health during and shortly after irradiation.  Isotopes with a long half life are not as active in small quantities, and those with very short half life decay away quickly.  ${}^{55}_{27} Co$ decays into another radioactive isotope, ${}^{55}_{26} Fe$, which then decays into the stable isotope ${}^{55}_{25} Mn$ (figure \ref{fig:DecayPathCo55}).  The second step in the decay chain is 2.73 years, so the first step with a much shorter half life will be responsible for the majority of the radiation shortly after being irradiated by protons.
+${}^{55}_{27} Co$ is a relatively short lived isotope with a half life of 17.5 hours and this is a concern to health during and shortly after irradiation.  Isotopes with a long half life are not as active in small quantities, and those with very short half life decay away quickly.  ${}^{55}_{27} Co$ decays into another radioactive isotope, ${}^{55}_{26} Fe$, which then decays into the stable isotope ${}^{55}_{25} Mn$ (fig. \ref{fig:DecayPathCo55}).  The second step in the decay chain is 2.73 years, so the first step with a much shorter half life will be responsible for the majority of the radiation shortly after being irradiated by protons.
 
 \FloatBarrier
 \begin{figure}[h]
@@ -638,7 +670,7 @@ ${}^{55}_{27} Co$ is a relatively short lived isotope with a half life of 17.5 h
 \end{figure}
 
 \FloatBarrier
-The decay of ${}^{55}_{27} Co$ will produce a range of gammas (figure \ref{fig:Co55GammaIntensity}), but one in particular to focus on when measuring the radioactivity is the 931keV gamma with an intensity of 75\%.
+The decay of ${}^{55}_{27} Co$ will produce a range of gammas (fig. \ref{fig:Co55GammaIntensity}), but one in particular to focus on when measuring the radioactivity is the 931keV gamma with an intensity of 75\%.
 
 \FloatBarrier
 \begin{figure}[h]
@@ -657,8 +689,9 @@ The stable isotope ${}^{54}_{26} Fe$  makes up almost 6\% of natural iron, and o
 
 
 \subsection{Measurement of Sample Activity}
+\label{section:ironactivitysample}
 
-The sample was too radioactive to safely handle immediately after irradiation, so it was left to cool for several days before taking measurements.  After it had cooled, a high purity germanium detector (figure \ref{fig:hpge}) was used to measure the activity of the irradiated sample.  The detector was calibrated and was expected to detect approximately 4 out of every 100 gammas emitted.  
+The sample was too radioactive to safely handle immediately after irradiation, so it was left to cool for several days before taking measurements.  After it had cooled, a high purity germanium detector (fig. \ref{fig:hpge}) was used to measure the activity of the irradiated sample.  The detector was calibrated and was expected to detect approximately 4 out of every 100 gammas emitted.  
 
 \begin{figure}[htp]
   \begin{center}
@@ -682,7 +715,7 @@ ID: Bi-214 at 934.05keV
 Corrected Rate = 35349.26 +/- 58.11 cA
 \end{lstlisting}
 
-The gamma counts were recorded over a range of 0MeV to 3MeV (figure \ref{fig:measuredgammacounts}). Correcting the measured count for the 931keV peak, to account for the geometry and detector, the count rate for 931keV gamma rays from ${}^{55}_{27} Co$ was measured at $4.43\times10^4 \pm 1.05 \times 10^3$ counts per second.
+The gamma counts were recorded over a range of 0MeV to 3MeV (fig. \ref{fig:measuredgammacounts}). Correcting the measured count for the 931keV peak, to account for the geometry and detector, the count rate for 931keV gamma rays from ${}^{55}_{27} Co$ was measured at $4.43\times10^4 \pm 1.05 \times 10^3$ counts per second.
 
 \begin{figure}[ht] 
   \centering
@@ -704,7 +737,7 @@ There are several decay modes that contribute to the radioactivity of the sample
 \item ${}^{52}_{25}Mn^{*} \xrightarrow[]{\epsilon/\beta +} {}^{52}_{24}Cr$
 \end{itemize}
 
-Where positrons are emitted, they will annihilate with an electron.  This event will release two photons in opposite directions, each of which will have a 511keV energy.  This is responsible for the 511keV peak measured in figure \ref{fig:measuredgammacounts}.  However, at the time of writing, the computer code will not compute this peak and it will be omitted from the computational results.
+Where positrons are emitted, they will annihilate with an electron.  This event will release two photons in opposite directions, each of which will have a 511keV energy.  This is responsible for the 511keV peak measured in fig. \ref{fig:measuredgammacounts}.  However, at the time of writing, the computer code will not compute this peak and it will be omitted from the computational results.
 
 
 
@@ -720,8 +753,9 @@ Following the measurement of the thin target, in the first instance the predicte
 
 \FloatBarrier
 \subsection{Estimation of Cobalt-55 Radioactivity}
+\label{section:estimateco55}
 
-There are over ten \acrshort{tendl} libraries available, and the available data and the range of data points is inconsistent across these different versions.  The earlier library, that was used in the first version of the Activity code, covers a range up to 200MeV for Iron-proton reaction cross sections.  Many of the more recent data files contain total reaction cross sections only, and in the most recent data files, 2017 and 2019, the energy range only covers proton reactions from 0MeV to 28MeV, abruptly dropping to 0 barns at 30MeV as seen in fig \ref{fig:fe56co55-cross-sections}.
+There are over ten \acrshort{tendl} libraries available, and the available data and the range of data points is inconsistent across these different versions.  The earlier library, that was used in the first version of the Activity code, covers a range up to 200MeV for Iron-proton reaction cross sections.  Many of the more recent data files contain total reaction cross sections only, and in the most recent data files, 2017 and 2019, the energy range only covers proton reactions from 0MeV to 28MeV, abruptly dropping to 0 barns at 30MeV as seen in fig. \ref{fig:fe56co55-cross-sections}.
 
 \FloatBarrier
 \begin{figure}[!htb]
@@ -763,7 +797,7 @@ Co55 $\lambda$ & $1.1 \times 10^{-5}$ \\
 
 The 2019 data file ranges up to 30MeV for the ${}^{54}_{26} Fe (p, \gamma) {}^{55}_{27} Co$ and ${}^{56}_{26} Fe (p, 2n) {}^{55}_{27} Co$ reactions.  As the data cuts off at 30MeV, the cross section data for a 28-30MeV proton is used in the estimation.  This results in an over estimate in activity.
 
-A 36MeV proton is expected to lose up to 4-5MeV travelling through a 0.5mm thick Iron target, as seen in figure \ref{fig:fe36mevenergydepth}.  However, in this estimation the ions are assumed to be only 36MeV (or 28MeV, where 36MeV data are unavailable).
+A 36MeV proton is expected to lose up to 4-5MeV travelling through a 0.5mm thick Iron target, as seen in fig. \ref{fig:fe36mevenergydepth}.  However, in this estimation the ions are assumed to be only 36MeV (or 28MeV, where 36MeV data are unavailable).
 
 \begin{table}[h]
 \begin{center}
@@ -800,8 +834,9 @@ Out of the estimates calculated, the outliers are those that used data files wit
 
 
 \subsection{Simulating Proton Irradiated Iron with Actvity V1}
+\label{section:ironactivityv1}
 
-The first version of the Activity code with modified Bateman equations was used to calculate the predicted radioactivity (figure \ref{fig:act1top5radioactive}) and predicted gamma lines (figure \ref{fig:act1gammalines}).  A full output file and details of all isotopes and their activities are given in appendix \ref{chapter:appendix-activity-v1}.
+The first version of the Activity code with modified Bateman equations was used to calculate the predicted radioactivity (fig. \ref{fig:act1top5radioactive}) and predicted gamma lines (fig. \ref{fig:act1gammalines}).  A full output file and details of all isotopes and their activities are given in appendix \ref{chapter:appendix-activity-v1}.
 
 \FloatBarrier
 \begin{figure}[!htb]
@@ -824,10 +859,11 @@ The code predicts a final 931keV gamma activity of over 59,000 Bq and highlights
 
 
 \subsection{Simulating Proton Irradiated Iron with Actvity V2}
+\label{section:ironactivityv2}
 
 The iron irradiation experiment was modelled using the second version of the Activity code.  In this version the entire cross section database was created using the TALYS computer code (\ref{section:activitytalysdb}).  The same decay equations used in version 1 were also used here.
 
-As the iron sample is irradiated a large number of particles (neutrons, protons, deuterons, tritons, helium-3, alphas and gammas) are created.  Whilst the beam is on, these are produced at a rate of more than $10^9$ per second (figure \ref{fig:activity-v2-particle-production}).
+As the iron sample is irradiated a large number of particles (neutrons, protons, deuterons, tritons, helium-3, alpha particles and gamma rays) are created.  Whilst the beam is on, these are produced at a rate of more than $10^9$ per second (figure \ref{fig:activity-v2-particle-production}).
 
 As irradiation commences, the isotope of iron responsible for most of the non-particle radiation is ${}^{54}_{26} Fe$, despite having a natural abundance of only 5.8\%.  Two residuals in particular resulting from proton reactions with ${}^{54}_{26} Fe$ are responsible for the activity and these are ${}^{54}_{25}Co$ and ${}^{53}_{26}Fe$.  
 
@@ -840,7 +876,7 @@ As irradiation commences, the isotope of iron responsible for most of the non-pa
 
 With a short half life of 0.19 seconds, ${}^{54}_{25}Co$ is responsible for the majority of decays per second within a few seconds of irradiation starting.  However, at this same time the majority of the gamma energy from residual isotopes originates from the decays of ${}^{53}_{26}Fe$ (meta 1) and  ${}^{52}_{25}Mn$ (meta 1).  The average gamma energy per decay of these isotopes is 3.03MeV and 1.42MeV respectively, and this is the reason for such a high contribution towards the gamma energy output (\ref{fig:activity-v2-residual-1}).
 
-By the time the beam is turned off, at 300s, the primary isotope contributing almost 50\% of the decays per second is ${}^{53}_{26}Fe$.  It's contribution to the over all gamma output is still quite low with the main contributor being ${}^{52}_{25}Mn$ (meta 1) as was the case at the start of irradiation (\ref{fig:activity-v2-residual-2}).  This difference between the decays and gamma energy is due to ${}^{53}_{26} Fe$ having an average gamma energy of only 0.18MeV per decay, whereas the metastable ${}^{52}_{25} Mn$ has a much higher average gamma energy per decay of 1.4MeV.
+By the time the beam is turned off, at 300s, the primary isotope contributing almost 50\% of the decays per second is ${}^{53}_{26}Fe$.  Its contribution to the overall gamma output is still quite low with the main contributor being ${}^{52}_{25}Mn$ (meta 1) as was the case at the start of irradiation (\ref{fig:activity-v2-residual-2}).  This difference between the decays and gamma energy is due to ${}^{53}_{26} Fe$ having an average gamma energy of only 0.18MeV per decay, whereas the metastable ${}^{52}_{25} Mn$ has a much higher average gamma energy per decay of 1.4MeV.
 
 \begin{figure}[htb]
 \centering
@@ -890,14 +926,16 @@ Following a day of cooling the 931keV gamma from ${}^{55}_{27}Co$ will have an a
 \label{fig:act2totalactivity}
 \end{figure}
 
-At the end time of the simulated experiment, $2.6 \times 10^5$s, the activity of the 931keV Gamma is predicted to have dropped to just over 42,000Bq.  It's neighbour, the 935keV Gamma, will have an activity almost double, with 74,000 decays per second (figure \ref{fig:act2totalactivity}).  The full results calculated by this code are included in appendix \ref{chap:appendix-activity-v2}.  
+At the end time of the simulated experiment, $2.6 \times 10^5$s, the activity of the 931keV Gamma is predicted to have dropped to just over 42,000Bq.  It's neighbour, the 935keV Gamma, will have an activity almost double, with 74,000 decays per second (fig. \ref{fig:act2totalactivity}).  The full results calculated by this code are included in appendix \ref{chap:appendix-activity-v2}.  
 
 The prediction of such a large neighbouring Gamma does raise a question where the experimental value is concerned.  It may be that, due to the resolution of the Gamma detector, the measured peak is the sum of both the 931keV and 935keV Gamma.  Ideally the detector would be calibrated for a smaller range about that peak and the experiment would be repeated to determine the value of both the 931keV and 935keV peak.
  
 
 \subsection{Comparing Experimental Results with Calculated Values}
 
-The estimation is cruder and does not take into account the details of the loss of energy of the projectile as it passes through the target.  It also does not take into account the creation of ${}^{55}_{27} Co$ through other reactions.  It gives a lower value of activity that the computer codes and the experimentally measured value (table \ref{table:activityResultsCompared}).
+The \gls{Co}-55 gamma ray value was measured in section \ref{section:ironactivitysample}.  A crude estimation using cross section data files was carried out in section \ref{section:estimateco55} and this was followed by the use of both versions of the Activity code (section \ref{section:ironactivityv1} and section \ref{section:ironactivityv2}).
+
+The estimation, using the cross section data files only (TENDL, EXFOR), is cruder and does not take into account the details of the energy lost by the projectile as it passes through the target.  It also does not take into account the creation of ${}^{55}_{27} Co$ through other reactions.  It gives a lower value of activity than the computer codes and the experimentally measured value (table \ref{table:activityResultsCompared}).
 
 \begin{table}[h]
 \begin{center}
@@ -927,6 +965,7 @@ Although the predictions are in good agreement with the experimental value, ther
 
 
 \section[100DPA Predicted Activity]{Predicted Activity for 100DPA Irradiated Iron}
+\label{section:100dpapredictedactivity}
 
 \Acrlong{gen4} reactors are required to withstand 100-150DPA over the lifetime of the plant, which may span 30 years or more.  The Scanditronix cyclotron is capable of creating a 60 microamp beam and, due to the small area (and volume of material) this may be concentrated on, it is able to create high damage rates over a shorter period of time.
 
@@ -964,24 +1003,25 @@ The Coulomb potential between a proton and an \Gls{Fe} nucleus, at the combined 
 \centering
 \includegraphics[width=0.7\linewidth]{chapters/activity_code/fe_100dpa/cooling.eps}
 \caption{Change in isotope gamma output over time with proton beam off.}
-\label{fig:activity-v2-residual-b}
+\label{fig:gammaplot100dpa}
 \end{figure}
 
 The predominant isotope responsible for radiation in the 5MeV sample is expected to be ${}^{58}_{27}Co$, and with a half life of 77 days this will remain radioactive for a substantial amount of time (relative to testing by irradiating, cooling then testing the material).
 
 For the 10-20MeV irradiated samples the primary isotope responsible for the radiation is ${}^{56}_{27}Co$, and its contribution to the total gamma output in terms of power ranges from 95\% to 99\%.  This isotope has a similarly long half life, relative to the testing cycle, of 71 days.  Depending upon the volume of material being irradiated, this could lead to problems whereby the sample may need to cool for months to reach a safe activity to handle.
 
-As higher energy protons are used to damage the sample a wider range of reaction possibilities become more likely including that leading to both ${}^{52}_{25}Mn$ and ${}^{52}_{25}Mn (meta 1)$.  By the end of irradiation a large percentage of radioactivity is due to these isotopes (28.6\% for 25MeV protons and 42.8\% for 30MeV protons).  The half life of ${}^{52}_{25}Mn$ and ${}^{52}_{25}Mn (meta 1)$ are short, being 5.6 days and 21 minutes respectively, and will decay away leaving ${}^{56}_{27}Co$ as the main contributor to radiation once again.
+As higher energy protons are used to damage the sample a wider range of reaction possibilities become more likely including that leading to both ${}^{52}_{25}Mn$ and ${}^{52}_{25}Mn (\text{meta 1})$.  By the end of irradiation a large percentage of radioactivity is due to these isotopes (28.6\% for 25MeV protons and 42.8\% for 30MeV protons).  The half life of ${}^{52}_{25}Mn$ and ${}^{52}_{25}Mn (\text{meta 1})$ are short, being 5.6 days and 21 minutes respectively, and will decay away leaving ${}^{56}_{27}Co$ as the main contributor to radiation once again.
 
-Detailed plots resulting from this Activity V2 simulation are in appendix \ref{appendix:ironirradiation}.
+The overall gamma ray activity during cooling, for each proton energy, is plotted in fig. \ref{fig:gammaplot100dpa} and this shows the least radioactive at the end of cooling to be 5MeV protons, followed by 30MeV protons.  Detailed plots resulting from this Activity V2 simulation are in appendix \ref{appendix:ironirradiation}.
 
 
 
 
 
 \section{Proton Irradiated Molybdenum}
+\label{section:protonirradiatedmo}
 
-A colleague at the University of Birmingham, John Hewett, irradiated several samples of Molybdenum for materials testing and throughout this the activity of the Molybdenum was measured by the department's HPGe detector\cite{johnhewett}.  Similar to the Iron sample, thin sheets of Molybdenum were irradiated using a beam line from the cyclotron.
+A colleague at the University of Birmingham, John Hewett, irradiated several samples of Molybdenum for materials testing and throughout this the activity of the Molybdenum was measured by the department's \acrfull{hpge} detector\cite{johnhewett}.  Similar to the Iron sample, thin sheets of Molybdenum were irradiated using a beam line from the cyclotron.
 
 
 \subsection[Experimental Irradiation - Molybdenum]{Molybdenum Experimental Irradiation Results}
@@ -997,7 +1037,7 @@ The detector was calibrated to detect energies in the range covering 0MeV to 1.2
 \label{fig:john-hewett-mo}
 \end{figure}
 
-A full gamma spectra was also recorded for the thick sample by gamma peak at three days.  The isotopes responsible for the five most prominent peaks at this point were ${}^{95}_{43}Tc$ (half life of 20 hours\cite{jeff311}) and ${}^{96}_{43}Tc$ (half life of 4.28 days\cite{jeff311}).  The results measured and interpolated by my colleague are given in figure \ref{fig:john-hewett-mo} and table \ref{table:johnhewettresults}.
+A full gamma spectra was also recorded for the thick sample by gamma peak at three days.  The isotopes responsible for the five most prominent peaks at this point were ${}^{95}_{43}Tc$ (half life of 20 hours\cite{jeff311}) and ${}^{96}_{43}Tc$ (half life of 4.28 days\cite{jeff311}).  The results measured and interpolated by my colleague are given in fig. \ref{fig:john-hewett-mo} and table \ref{table:johnhewettresults}.
 
 \FloatBarrier
 \begin{table}[h]
@@ -1023,15 +1063,15 @@ Peak & Energy (keV) & Isotope & Gamma Intensity & Activity (Bq) & Measured Energ
 \subsection{Estimating the Activity of Proton Irradiated Molybdenum}
 \label{section:estimatingmoactivity}
 
-The gamma activity of the 0.5mm thick molybdenum target will be estimated.  The generated data are compared to a number of experimental data sources through \acrshort{exfor}.
+The gamma activity of the 0.5mm thick molybdenum target will be estimated using the generated TALYS cross section files.  The generated data are compared to a number of experimental data sources through \acrshort{exfor} as well as the \acrshort{tendl}-2019 data file.  In this estimate, there is no ion transport, but the average cross section reaction across the energy range is computed using the TALYS generated data.  This is then used to compute the reaction rate.  Simple decay equations are then used to compute the activity of the residual radioactive isotopes.
 
-Naturally occurring Molybdenum is made up of four stable isotopes, two \gls{obsstable} isotopes, ${}^{92}_{42}Mo$ and ${}^{98}_{42}Mo$ and one unstable isotope, ${}^{100}_{42}Mo$, with an extremely long half life of $9.9 \times 10^{19}$ years (figure \ref{fig:john-hewett-mo}).
+Naturally occurring Molybdenum is made up of four stable isotopes, two \gls{obsstable} isotopes, ${}^{92}_{42}Mo$ and ${}^{98}_{42}Mo$ and one unstable isotope, ${}^{100}_{42}Mo$, with an extremely long half life of $9.9 \times 10^{19}$ years (fig. \ref{fig:monaturalisotopes}).
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.5\linewidth]{chapters/activity_code/mo-john-hewett/mo.eps}
 \caption{Isotopes in naturally occurring Molybdenum}
-\label{fig:john-hewett-mo}
+\label{fig:monaturalisotopes}
 \end{figure}
 
 There are five reactions of particular interest that are predicted to create radioactive isotopes at the highest rate.  Two of the residual isotopes were identified in the experimental work and the reactions responsible are the first two of the five listed below.
@@ -1053,11 +1093,11 @@ The isotope ${}^{95}_{43}Tc$ produced four measurable gamma activities, and thes
 \label{fig:mo96tc96xs}
 \end{figure}
 
-The cross sections computed by the TALYS code are split into both the reaction to the Technetium-96 ground state and metastable 1 state.  The separate data are plotted in figure \ref{fig:mo96tc96xs} along with their combined cross section.  
+The cross sections computed by the TALYS code are split into both the reaction to the Technetium-96 ground state and metastable 1 state.  The separate data are plotted in fig. \ref{fig:mo96tc96xs} along with their combined cross section.  
 
 This estimate will calculate the contribution from the ground state only.  The metastable state of ${}^{96}_{43}Tc$ has a 2\% chance to decay directly to ${}^{96}_{42}Mo$ and a 98\% chance to decay to the ground state.  The half life for the metastable state is 51.5 minutes\cite{jeff311} and, coupled with a lower reaction cross section than the ground state, it will contribute a relatively small amount of ${}^{96}_{43}Tc$ when compared to those created by the ion beam and will delay the production of the ground state past the point at which the beam is removed.
 
-The 13MeV protons will lose all their energy within the first 375 micrometers of the material as computed by SRIM (figure \ref{fig:stoppingdistanceprotons}).  As the ions lose energy the probability of a reaction occurring changes.  The cross section ranges from a maximum of 475mb at 11MeV and this drops to zero once the ion energy falls to 3.8MeV.  The average cross section over the entire energy range based on SRIM stopping distance calculations and TALYS data is 0.269 barns.
+The 13MeV protons will lose all their energy within the first 375 micrometers of the material as computed by \acrshort{srim} (fig. \ref{fig:stoppingdistanceprotons}).  As the ions lose energy the probability of a reaction occurring changes.  The cross section ranges from a maximum of 475mb at 11MeV and this drops to zero once the ion energy falls to 3.8MeV.  The average cross section over the entire energy range based on \acrshort{srim} stopping distance calculations and TALYS data is 0.269 barns.
 
 Given the data used is in good agreement with \acrshort{exfor} experimental data, the 13MeV is expected to transmute $2.93 \times 10^9$ ${}^{96}_{42}Mo$ atoms into ${}^{96}_{43}Tc$ every second.  By the end of the beam almost $4.4 \times 10^{12}$ atoms will have been transmuted via this reaction and, as the half life of ${}^{96}_{43}Tc$ is 247 times greater than the 1,500s beam duration, atoms lost to decay during irradiation will be ignored in this estimate. The intensity of each gamma varies, and these are listed in \ref{table:johnhewettresults}.
 
@@ -1082,7 +1122,7 @@ There is a discrepancy between the measured amount and that predicted by past wo
 
 My colleague investigated the affect of self attenuation of gammas passing through the \Gls{Mo} sample.  They made the assumption that the radioactive isotopes were concentrated half way through the thickness of the sample and that the gammas would need to pass through 250 micrometers of matter.  It was expected that gammas above 200keV would retain 94\% of their intensity with those above 1MeV having 98.5\% of their original intensity\cite{johnhewett}.
 
-The distribution of radioactive isotopes would in fact be closer to the surface of the material than the midway point.  This is illustrated in figure \ref{fig:mo96tc96activitydepth} and it shows the majority of the ${}^{96}_{43}Tc$ is created in the top 150 microns.  This plot is based on the SRIM stopping range for protons in \Gls{Mo} and the cross section data used in the estimate.
+The distribution of radioactive isotopes would in fact be closer to the surface of the material than the midway point.  This is illustrated in fig. \ref{fig:mo96tc96activitydepth} and it shows the majority of the ${}^{96}_{43}Tc$ is created in the top 150 microns.  This plot is based on the SRIM stopping range for protons in \Gls{Mo} and the cross section data used in the estimate.
 
 \begin{figure}[htb]
 \centering
@@ -1100,7 +1140,7 @@ It is plausible that the orientation of the sample would affect the gamma count.
 \label{fig:moattenuation}
 \end{figure}
 
-When plotting the gamma attenuation through \Gls{Mo} over a range of gamma energies it is clear that those with an energy of 500keV or more are drop to an intensity of as low as 0.9 in targets up to 1mm thick (figure \ref{fig:moattenuation})\cite{massattenuation}.  This is double the target depth of the thick target and so it does not explain the discrepancy between the experimental and estimated values.
+When plotting the gamma attenuation through \Gls{Mo} over a range of gamma energies it is clear that those with an energy of 500keV or more are drop to an intensity of as low as 0.9 in targets up to 1mm thick (fig. \ref{fig:moattenuation})\cite{massattenuation}.  This is double the target depth of the thick target and so it does not explain the discrepancy between the experimental and estimated values.
 
 
 
@@ -1110,9 +1150,9 @@ Both the thin and thick samples irradiated experimentally are simulated.  Howeve
 
 Only stable isotopes are included in the cross section data file currently and, as 3 out of the 7 ``stable'' isotopes are either observationally stable, or have an incredibly long half life, their reactions are not included.  The addition of these isotopes could highlight additional reactions but the data would need to be created first, if possible, using TALYS.
 
-Out of the four stable isotopes of \Gls{Mo}, ${}^{96}_{42}Mo$ is responsible for most of the radioactivity both at the time the beam is turned off (1,500s) (figure \ref{fig:motargetisotopes1500s}) and after 3 days of cooling (figure \ref{fig:motargetisotopes3days}).  As discussed earlier this is due to the creation of both the ground state and metastable 1 state for ${}^{96}_{43}Tc$.  Whilst the beam is on over 60\% of the activity is due to the metastable-1 isotope.  The gamma energy emitted by the isomeric transition is comparatively low with an energy of just 32.28keV, and as a result it's contribution to the power output is also low.  In contrast the transition to the ground state for ${}^{96}_{43}Tc$ (meta 1) releases many energetic gammas.  The majority of the energy released towards the end of the ion irradiation is due to both the ground state and metastable 1 of ${}^{94}_{43}Tc$ (figure \ref{fig:moresidualenergy1500s}).
+Out of the four stable isotopes of \Gls{Mo}, ${}^{96}_{42}Mo$ is responsible for most of the radioactivity both at the time the beam is turned off (1,500s) (fig. \ref{fig:motargetisotopes1500s}) and after 3 days of cooling (fig. \ref{fig:motargetisotopes3days}).  As discussed earlier this is due to the creation of both the ground state and metastable 1 state for ${}^{96}_{43}Tc$.  Whilst the beam is on over 60\% of the activity is due to the metastable-1 isotope.  The gamma energy emitted by the isomeric transition is comparatively low with an energy of just 32.28keV, and as a result it's contribution to the power output is also low.  In contrast the transition to the ground state for ${}^{96}_{43}Tc$ (meta 1) releases many energetic gammas.  The majority of the energy released towards the end of the ion irradiation is due to both the ground state and metastable 1 of ${}^{94}_{43}Tc$ (fig. \ref{fig:moresidualenergy1500s}).
 
-After three days of cooling almost 67\% of the decays are due to the ground state ${}^{96}_{43}Tc$ isotopes in the sample with another 31\% from ${}^{95}_{43}Tc$ (figure \ref{fig:moresidualisotopes3days}).  The gamma energy output is also primarily due to these two isotopes, although with an 87\% and 12\% split (figure \ref{fig:moresidualenergy3days}). 
+After three days of cooling almost 67\% of the decays are due to the ground state ${}^{96}_{43}Tc$ isotopes in the sample with another 31\% from ${}^{95}_{43}Tc$ (fig. \ref{fig:moresidualisotopes3days}).  The gamma energy output is also primarily due to these two isotopes, although with an 87\% and 12\% split (fig. \ref{fig:moresidualenergy3days}). 
 
 \begin{figure}[htb]
 \centering
@@ -1121,7 +1161,7 @@ After three days of cooling almost 67\% of the decays are due to the ground stat
 \label{fig:mogammacomparison}
 \end{figure}
 
-It is clear that there is a disagreement in the values of the experimental, estimated and computed activities and gamma lines.  The fact that the estimated activities are lower than the calculated values was expected as the estimate only considered one reaction.  The difference between the experimental work with both the estimated and calculated values is harder to explain but will be discussed in section \ref{section:moirradiation}.  The full results from the activity code are included in appendix \ref{appendix:johnmo}.
+It is clear that there is a disagreement in the values of the experimental, estimated and computed activities and gamma lines (fig. \ref{fig:mogammacomparison}).  The fact that the estimated activities are lower than the calculated values was expected as the estimate only considered one reaction.  The difference between the experimental work with both the estimated and calculated values is harder to explain but will be discussed in section \ref{section:moirradiation}.  The full results from the activity code are included in appendix \ref{appendix:johnmo}.
 
 
 \begin{table}[h]
@@ -1148,6 +1188,7 @@ Peak & Energy (keV) & Measured Activity (Bq) & Computed Activity (Bq) & Factor o
 
 \FloatBarrier
 \section{Proton Irradiated Molybdenum Doped Steel}
+\label{section:protonirradiatedmodopedsteel}
 
 Another colleague in the Metallurgy and Materials department at the University of Birmingham, Alex Dickinson-Lomas,  requested a copy of the Activity code and a simulation of a steel with a specific composition (Fe: 96.375, C: 0.772, Cu: 0.024, Mn: 1.36, Ni: 0.698, Si: 0.381, Cr: 0.092, V: 0.008, P: 0.009, S: 0.003, Mo: 0.278) that would be irradiated with 5MeV protons.
 
@@ -1174,7 +1215,12 @@ https://github.com/BenPalmer1983/activitypy/wiki
 
 
 
+\FloatBarrier
+\section{Concluding Remarks on the Activity Code}
 
+Existing isotope inventory codes exist, but many are either designed to calculate decay chains, only considering decay rates and branching, or for neutron activation.  Methods exist to couple neutron transport codes with these inventory codes, for example \acrshort{fati}, \acrshort{mcnp} and \acrshort{fispact}.  Other Bateman solvers will exist, but they may be proprietary and will offer binaries only with no access to the source code.
+
+The Activity code is designed specifically for activation with light ions.  Decay rates, branching factors and source rates are included in the Bateman solver, so there is no need to make the assumption that saturation is reached for all radioactive isotopes.  It is open source and the code may be examined and modified by anyone.  It is also designed to highlight problematic isotopes during and after irradiation.
 
 
 

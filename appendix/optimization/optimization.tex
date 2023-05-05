@@ -135,6 +135,7 @@ The gradient descent method it a reliable way of searching for a local minimum. 
 
 
 \subsubsection{\acrlong{ng}}
+\label{subsection:newtongauss}
 
 The \acrlong{ng} method is an algorithm that finds the local minimum of a function by approximating the Hessian matrix with the Jacobian and its transpose (eq. \ref{eq:NewtonGauss}).  By estimating the Hessian, the algorithm only requires the computation of the first order derivatives with respect to each parameter, at each point pair x, y.  It is possible to use the function and the analytical derivative, but as this work requires the calculation of functions that have no simple analytical form, the first derivative will be approximated within the algorithm.
 

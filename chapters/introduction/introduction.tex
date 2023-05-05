@@ -29,7 +29,7 @@ Mass produced steels are not perfect repeating crystals, but are made up of smal
 
 Radiation damages the steel in a number of ways including directly knocking atoms out of place within the lattice, changing the environment (e.g. radiolysis) and transmuting isotopes.  An example of the latter is a neutron transmuting an \Gls{Fe} atom into a \Gls{Co} atom.
 
-In time, the radiation damage causes the percentage of Cr at the surface of the grains to drop, and as it falls the steel loses its protection from corrosion at the boundary between the grains it is made of.  
+In time, the radiation damage causes the percentage of Cr at the grain boundaries to drop, and as it falls the steel loses its protection from corrosion at the boundary between the grains it is made of.  
 
 This work is divided into two parts.
 
@@ -39,7 +39,7 @@ The materials must be tested before being used in a nuclear reactor.  One way to
 
 The damage that protons cause to a sample is not precisely the same as that cause by neutrons, but it is a cheaper alternative and is a trade-off between the cost and results.  One side effect that proton irradiation shares with neutron irradiation is the creation of radioactive waste.  
 
-The first part of this work investigates exactly how radioactive a samples becomes when irradiated with a proton beam.  An existing equation, named after Mathematician Harry Bateman, was modified and a computer program was created to perform the calculation.  The user inputs the constituent elements that make up the material, the ratio of these elements, and the irradiation settings.  The program then estimates how radioactive the sample will be and the predicted gamma energies.
+The first part of this work investigates exactly how radioactive a samples becomes when irradiated with a proton beam.  An existing equation, named after Mathematician Harry Bateman\cite{bateman}, was modified and a computer program was created to perform the calculation.  The user inputs the constituent elements that make up the material, the ratio of these elements, and the irradiation settings.  The program then estimates how radioactive the sample will be and the predicted gamma energies.
 
 
 \subsection{Part 2: Iron-Palladium and Iron-Ruthenium Potential}
@@ -61,6 +61,7 @@ Radiation causes Cr to be depleted at the grain boundary.  If these simulations 
 
 
 \FloatBarrier
+\begin{comment}
 \section{Nuclear Power in the United Kingdom}
 
 \subsection{Nuclear Fuel}
@@ -70,7 +71,7 @@ The primary fuel of commercial nuclear power stations since those first built in
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=.8\linewidth]{chapters/introduction/plots/uranium_cross_section/u_xs}%
-    \caption{U-235 and U-238 fission cross sections}
+    \caption{U-235 and U-238 fission cross sections plotted from the JEFF 3.3 data file\cite{jeff33}}
     \label{figure:u235u238fissionxs}
   \end{center}
 \end{figure}
@@ -100,7 +101,7 @@ There are many of these reactors from this period still in operation around the 
   \begin{center}
     \includegraphics[width=12.0cm]{chapters/introduction/images/remaining_plants.png}
     \captionsetup{font={it}}
-    \caption{Remaining reactor locations in the UK.  Active as of 2022: Heysham (4 x \acrshort{agr}), Torness (2 x \acrshort{agr}), Hartlepool (2 x \acrshort{agr}), Sizewell B (1 x \acrshort{pwr})}
+    \caption{Remaining reactor locations in the UK.  Active as of 2022: Heysham (4 x \acrshort{agr}), Torness (2 x \acrshort{agr}), Hartlepool (2 x \acrshort{agr}), Sizewell B (1 x \acrshort{pwr}) \cite{nuclearpoweruk}}
     \label{fig:remainingreactorsuk}
   \end{center}
 \end{figure}
@@ -117,17 +118,17 @@ There are no \acrshort{gen3} reactors operating in the UK.  The first was built 
 This generation of reactor was designed to exceed the service life of the previous generation, and generate power for at least 60 years.  The safety features have been improved and include increased resilience to external factors, including accidental or intentional aircraft collision into the plant\cite{genIIIimprovements}.
 
 \acrshort{gen3+} reactors go further in adding passive safety features, such as natural circulation and gravity coolant feed \cite{geniiiplussafety}.  Other aims of future generations are to standardise and simplify designs whilst improve the economy over \acrshort{gen2+} and \acrshort{gen3}. 
-
+\end{comment}
 
 \section{An Approaching Energy Gap for the UK}
 
 Since Calder Hall, the first commercial nuclear power plant, opened in 1956, the demand on electrical power generation in the UK has tripled (fig \ref{fig:electricityusagesuk}).  There is now a reliance on cheap and clean power from nuclear reactors as these have provided a quarter of our electricity until recently.
 
-\begin{figure}[tbp]
+\begin{figure}[!h]
   \begin{center}
     \includegraphics[width=.7\linewidth]{chapters/introduction/plots/elec_demand/elec_demand.eps}
     \captionsetup{font={it}}
-    \caption{Electricity in Millions of Tonnes of Oil Equivalent}
+    \caption{Electricity in Millions of Tonnes of Oil Equivalent\cite{ukpowerdata}}
     \label{fig:electricityusagesuk}
   \end{center}
 \end{figure}
@@ -149,7 +150,7 @@ Modern nuclear power plants are very expensive to build, with the proposed 3.2GW
 
 There is an effort around the world of countries aiming to reduce the production of carbon dioxide as a result of burning fossil fuels.  When a power plant is operational, the carbon dioxide produced by nuclear power is negligible when compared with gas, oil and coal power plants.  
 
-\begin{figure}[tbp]
+\begin{figure}[!h]
   \begin{center}
     \includegraphics[width=.95\linewidth]{chapters/introduction/images/safest.png}
     \captionsetup{font={it}}
@@ -251,10 +252,10 @@ Several \acrshort{gen4} reactors have designed operating temperatures that excee
 
 Examples of thermal neutron reactors include Magnox, \acrshort{agr}, LWR and Candu reactors.  These reactors contain moderators, designed to slow neutrons, decreasing their energy to thermal temperatures and leveraging the large neutron fission cross section of ${}^{235}_{92}U$.  The cross section for fast neutrons and ${}^{235}_{92}U$ is in the region of 1 barn, but thermal neutrons and ${}^{235}_{92}U$ have a fission cross section of over 1,000 barns.
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
   \begin{center}
     \includegraphics[width=7.0cm]{chapters/introduction/images/reactor-flux.png}
-    \caption{Typical reactor flux - thermal and fast spectra}
+    \caption{Typical reactor flux - thermal and fast spectra \cite{thermalfastflux}}
     \label{fig:flux1}
   \end{center}
 \end{figure}
@@ -265,19 +266,19 @@ Fast neutron reactors have been tested and used since the 1950s, and there are s
 
 \subsubsection[Lead-cooled Fast Reactors]{\acrlong{lfr}}
 
-Light elements such as the hydrogen in water molecules, or carbon in a graphite stack, allow neutrons to efficiently lose energy.  When neutrons scatter inelastically with heavier elements, such as lead, they lose a much smaller percentage of their energy (figure \ref{fig:inelasticscattering}).
+Light elements such as the hydrogen in water molecules, or carbon in a graphite stack, allow neutrons to efficiently lose energy.  When neutrons scatter inelastically with heavier elements, such as lead, they lose a much smaller percentage of their energy (fig. \ref{fig:inelasticscattering}).
 
 The \acrfull{lfr} uses lead as the coolant.  Lead has a low reaction cross section and, because of its mass relative to a neutron, the kinetic energy lost in collisions is low, keeping more neutrons in the fast energy group.  As the coolant is a liquid, and the boiling point of lead is over $1,970K$, the system will run at atmospheric pressures and any problems associated with void formation due to boiling are removed.  The molten lead will act as a gamma shield and it will be chemically less reactive than the coolant in a \acrfull{sfr} or \acrfull{scwr}.
 
-There are several disadvantages to using lead as a coolant.  The melting point of lead is $600K$, so the reactor would need to be heated first for the coolant to become a liquid.  This also restricts the lowest temperature and thus the maximum efficiency possible that may be extracted from the system without the coolant forming a solid.  The density of lead also poses a problem for the structure needed to support the reactor.
-
-\begin{figure}[htbp]
+\begin{figure}[!h]
   \begin{center}
-    \includegraphics[width=0.8\linewidth]{chapters/introduction/plots/neutron_scattering/neutron_scattering.eps}
-    \caption{Inelastic scattering - scattering angle vs energy loss for a range of target atoms}
+    \includegraphics[width=0.7\linewidth]{chapters/introduction/plots/neutron_scattering/neutron_scattering.eps}
+    \caption{Inelastic scattering - scattering angle vs energy loss for a range of target atoms - generated with a python script using the equations contained in Duderstadt and Hamilton: Nuclear Reactor Analysis\cite{duderstadthamilton}}
     \label{fig:inelasticscattering}
   \end{center}
 \end{figure}
+
+There are several disadvantages to using lead as a coolant.  The melting point of lead is $600K$, so the reactor would need to be heated first for the coolant to become a liquid.  This also restricts the lowest temperature and thus the maximum efficiency possible that may be extracted from the system without the coolant forming a solid.  The density of lead also poses a problem for the structure needed to support the reactor.
 
 \acrfull{elsy} is a 600MWe Lead-Bismuth \gls{eutectic} cooled fast neutron reactor.  It has a lower melting point than lead, but there are concerns for the transmutation of Bismuth to Polonium.  The 9,000 tonne molten lead coolant and the high flux of fast neutrons\cite{lanltour} will be challenging conditions to overcome.
 
@@ -296,17 +297,16 @@ Traditional nuclear power plants, as well as coal and the secondary cycle of \ac
 
 Hydrogen may be extracted from high temperature water either by a thermo-chemical, high temperature electrolysis or a hybrid process\cite{hydrogenhtr}.  Each process benefits from the very high temperatures provided by the predicted outlet temperatures (fig \ref{fig:energyhydrogenproduction}).
 
-\begin{figure}[tbp]
+\begin{figure}[!h]
   \begin{center}
     \includegraphics[width=7.0cm]{chapters/introduction/images/hydrogen-from-water.png}
-    \caption{Energy demand to produce hydrogen by electrolysis as temperature changes}
+    \caption{Energy demand to produce hydrogen by electrolysis as temperature changes\cite{hydrogenelectrolysis}}
     \label{fig:energyhydrogenproduction}
   \end{center}
 \end{figure}
 
 The \acrfull{pbr} is a type of \acrshort{vhtr} where spherical fuel pellets are held in a hopper shaped reactor.  Temperatures within the core may reach $1,770K$, and this will pose a challenge for materials scientists.
 
-\FloatBarrier
 \subsubsection[Gas-Cooled Fast Reactors]{\acrlong{gfr}}
 
 The \acrfull{gfr} design is similar to the \acrshort{vhtr}, but rather than use thermal neutrons, it will use fast neutrons.  The design will use a ceramic core and have outlet temperatures up to $1120K$.  This will give similar options to the \acrshort{vhtr} where high temperatures would be used to assist in the production of hydrogen, or it would be used to power a turbine with a secondary steam powered circuit similar to that of a \acrshort{ccgt}.
@@ -330,10 +330,10 @@ There have been several \acrshort{sfr}s built and operated using this technology
 
 At 647K and a pressure of 22.1MPa (approximately 218 atmospheres), water becomes \gls{supercritical} (fig. \ref{fig:waterphasespressuretemp}) and at this point it is neither a liquid or a gas\cite{advancedbiomass}.  The current generation \acrshort{pwr} and \acrshort{bwr} operate at approximately $501-598K$ at 15.2MPa\cite{ocw01} and $551-560K$ at 7.1MPa\cite{ocw02} respectively.
 
-\begin{figure}[tbp]
+\begin{figure}[!h]
   \begin{center}
-    \includegraphics[width=7.0cm]{chapters/introduction/images/water_phase_diagram.png}
-    \caption{Phases of water:  pressure vs temperature}
+    \includegraphics[width=7.0cm]{chapters/introduction/images/supercritical.png}
+    \caption{Phases of water:  pressure vs temperature \cite{supercriticalwater}}
     \label{fig:waterphasespressuretemp}
   \end{center}
 \end{figure}
@@ -390,18 +390,18 @@ Radiation damage in a reactor is caused by several projectiles.  Fission fragmen
 
 One fuel source for many of the \acrshort{gen3+} and \acrshort{gen4} reactors is ${}^{235}_{92}U$, whether as enriched U or otherwise.  The neutron(s) released by the fission of ${}^{235}_{92}U$ atoms have a spectra of energy (fig. \ref{fig:neutronfissionspectra}) which may roughly be split into four categories: cold (below 0.025eV), thermal (0.025eV), slow and intermediate (above 0.025eV and below 1MeV) and fast (1MeV and above).
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
   \begin{center}
     \includegraphics[width=10.0cm]{chapters/introduction/plots/fission_spectra/fission_spectra.eps}
     \captionsetup{font={it}}
-    \caption{Neutron energy spectrum from fission\cite{jeff311}}
+    \caption{Neutron energy spectrum from fission generated from the JEFF 3.1.1 data file\cite{jeff311}}
     \label{fig:neutronfissionspectra}
   \end{center}
 \end{figure}
 
 Thermal and slow/intermediate neutrons cause damage in their own particular way, as they are captured by and transmute the atoms within the target material.  Fast neutrons have enough energy to create a great deal of damage, whereby they transfer kinetic energy to an atom in the material that becomes the \acrfull{pka} in a cascade of atoms through the material.  Neutrons can travel deep into a material, creating many damage cascades throughout until they lose enough energy or pass through completely.
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
   \begin{center}
     \includegraphics[width=10.0cm]{chapters/introduction/plots/damage/pkaenergy.png}
     \captionsetup{font={it}}
@@ -427,13 +427,19 @@ The intensity of neutron energies from the fission of ${}^{235}_{92}U$ peaks aro
 \FloatBarrier
 \section{Radiation Damage: Replacing Neutrons with Protons}
 
-It is difficult to generate large fluxes of neutrons.  When we pick up a cup, press keys on a keyboard, they react because of the electromagnetic force.  Neutrons have no net charge, so they cannot be controlled in a similar way.  Nuclear reactors are the most common way to create large fluxes of neutrons.
+It is difficult to generate large fluxes of neutrons.  Neutrons have no net charge, so they cannot be controlled in a similar way.  Nuclear reactors are the most common way to create large fluxes of neutrons.
 
 This an expensive method, and one that may be inconvenient as the sample being tested would need to be placed inside a reactor.  Rather than do this, ions may be used to replicate the damage cause by neutrons, but in a more controlled and accessible way.
 
+Experimental reactors are not able to damage a material significantly faster than operational reactors, so a major reason for approximating with ion irradiation is the higher damage rate, with the hope of discovering potential problems before they manifest in current reactor designs\cite{wasionchallenges}. 
+
+The damage caused by neutrons, light ions and heavy ions differ due to their interactions with matter.  Ions lose energy gradually but within a very short distance, whereas neutrons lose larger amount of energy less frequently, but over much greater distances.  The \acrshort{pka} energies as a result are higher for neutrons than ions, however comparisons of low damage dose neutron and light ion irradiation show cluster size distribution to be independent of \acrshort{pka} energies\cite{wasionchallenges}\cite{primarydamageiron}.
+
 A major side effect from the process of nuclear fission is the creation of both radioactive fission fragments and radioactive isotopes within the components and structural material of the reactor.  Low energy protons are not captured as low energy neutrons would be, due to the opposing electromagnetic force between the proton and nucleus of the target atom.  Once the proton energies exceed a few MeV, they have sufficient energy to transmute target nuclei.
 
-By virtue of detailed reaction cross section data files and decay data, the amount of radioactivity induced by both protons and neutrons may be calculated.  This will assist in the selection of proton beam parameters to replicate irradiation damage, to the required \acrshort{dpa}, whilst keeping the radioactivity at a safe level.
+The benefits of ion irradiation as discussed, and positive studies into the independence of damage due to \acrshort{pka}s in the energy range 6.6keV to 176keV\cite{primarydamageiron}, support its use in emulating neutron damage.
+
+Induced radioactivity is still a problem.  By virtue of detailed reaction cross section data files and decay data, the amount of radioactivity induced by both protons and neutrons may be calculated.  This will assist in the selection of proton beam parameters to replicate irradiation damage, to the required \acrshort{dpa}, whilst keeping the radioactivity at a safe level.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -456,7 +462,7 @@ Molecular dynamics models have been used to simulate radiation damage.  Damage c
 
 Neutrons have a long mean path before interacting with a target when compared to ions.  It would be impossible with current and foreseable technology to simulate a neutron travelling through a material because the volume of the material, and the number of atoms and interactions between atoms, would be so large.  Rather than attempt this, it is more productive to focus on individual damage cascades caused by \acrshort{pka}s in order to conserve computing resources.
 
-\begin{figure}
+\begin{figure}[!h]
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=.7\linewidth]{chapters/introduction/images/5KeV.png}
@@ -481,12 +487,9 @@ Neutrons have a long mean path before interacting with a target when compared to
   \caption{20KeV Fe PKA damage cascade in Fe} 
 \label{fig:damagecascade10kev}
 \end{subfigure}
-\caption{Damage cascades in Fe for a range of energies.}
+\caption{Damage cascades in Fe for a range of energies generated in \acrshort{srim}\cite{srim}}
 \label{fig:damagecascades}
 \end{figure}
-
-
-\FloatBarrier
 
 Molecular Dynamics simulations require interatomic potentials to govern how the atoms in the simulation interact with one another.  Typical simulation sizes range from thousands of atoms to millions of atoms.
 
@@ -506,7 +509,7 @@ PKA Energy (KeV) & Volume $(Ang^3)$ & Atoms \\
 \hline\hline
 \end{tabular}
 \end{center}
-\caption{Approximate simulation sizes by PKA energy}
+\caption{Simulation sizes by PKA energy approximated using \acrshort{srim}\cite{srim}}
 \label{table:fesimulationsize}
 \end{table}
 
@@ -515,12 +518,11 @@ The interatomic potentials used to simulate a damage cascade must be able to mod
 There have been attempts to create potentials based on Physics, but the nuances are still poorly understood and there aren't any models that can be applied accurately to any material type under any set of circumstances.  A number of recent interatomic potentials, including a selection of transition metals, have been fit to match the experimental data rather than the underlying physics.
 
 
-\FloatBarrier
 \subsection{Density Functional Theory}
 
-In quantum mechanics, the Schr\"{o}dinger equation and the wavefunction of a system describes all that can be known about that quantum system.  Unfortunately, it is very difficult to compute when there are just several electrons in the system.  Many atoms in a system makes this an impossible task with current technology.
+In Quantum Mechanics, the Schr\"{o}dinger equation and the wavefunction of a system describes all that can be known about that quantum system.  Unfortunately, it is very difficult to compute when there are just several electrons in the system.  Many atoms in a system makes this an impossible task with current technology.
 
-\acrfull{dft} replaces the many electron wavefunction with a single electron wavefunction.  Rather that use the positions of all the electrons, which would result in $3^n$ parameters, the charge density is used.  It is important to note that \acrshort{dft} is an exact method for ground state calculations, although in practice approximations do need to be made in order to solve problems.  This is discussed in detail in section \ref{section:dftbackground}.
+\acrfull{dft} replaces the many electron wavefunction with many single electron wavefunctions.  Rather than use the positions of all the electrons, which would result in $3^n$ parameters, the charge density is used.  It is important to note that \acrshort{dft} is an exact method for ground state calculations, although in practice approximations do need to be made in order to solve problems.  This is discussed in detail in section \ref{section:dftbackground}.
 
 
 \subsection{Interatomic Potentials for Molecular Dynamics}

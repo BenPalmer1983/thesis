@@ -25,7 +25,7 @@ Many body potentials such as the \acrfull{fs} and \acrfull{eam}  are often used 
 
 \subsection{Introduction}
 
-Quantum Mechanics is a successful theory but solving its equations for more than a couple of electrons soon becomes impossible with current technology.  Carrying out experiments may be the most genuine way to investigate a material, but damage processes occur over an incredibly wide range of time scales.  Using computers to model a system helps to bridge the gap between theory and experiment and helps to give insights into materials.
+Quantum Mechanics is a successful theory but solving the many electron Schr\"{o}dinger equation for more than a couple of electrons soon becomes impossible with current technology.  Carrying out experiments may be the most genuine way to investigate a material, but damage processes occur over an incredibly wide range of time scales.  Using computers to model a system helps to bridge the gap between theory and experiment and helps to give insights into materials.
 
 \FloatBarrier
 \subsection{Simulating Materials on a Variety of Scales in Time and Space}
@@ -42,7 +42,7 @@ A single one micron grain of steel would contain tens of billions of atoms.  Thi
   \end{center}
 \end{figure}
 
-The properties of metals may be approximated using small crystals rather than the whole grain, and this is ideally suited to \acrshort{dft} calculations.  Simulations of small ensembles of atoms over time are now also possible using \acrshort{dft} molecular dynamics.  Larger simulations containing thousands to millions of atoms, that are able to simulate single damage cascades are suitable for \acrshort{md} simulations (figure \ref{fig:timesizascalesmodelling}). 
+The properties of metals may be approximated using small crystals rather than the whole grain, and this is ideally suited to \acrshort{dft} calculations.  Simulations of small ensembles of atoms over time are now also possible using \acrshort{dft} molecular dynamics.  Larger simulations containing thousands to millions of atoms, that are able to simulate single damage cascades are suitable for \acrshort{md} simulations (fig. \ref{fig:timesizascalesmodelling}). 
 
 
 
@@ -88,15 +88,27 @@ This work does not attempt to calculate properties based on a collection of many
 
 \subsection{Equation of State}
 
-The equation of state of a material relates either the pressure on that material as a function of the volume, or the energy of a sample of a material to the volume.  This not only allows one to predict the energy or pressure at a certain volume, but also the minimum energy, relaxed volume and the bulk modulus.
+The equation of state relates two or more intensive thermodynamic parameters.  In this work, the parameters of interest are the energy and volume of a system and the equation of state that connects them.  Knowing this not only allows one to predict the energy or pressure at a certain volume, but also the minimum energy, relaxed volume and the bulk modulus.  Being able to determine these equations for materials will be important when fitting interatomic potentials as they will be used to contribute to measuring how well the model, using the derived potentials, matches either \acrshort{dft} or experimental values.
 
 \subsubsection{Bulk Modulus}
 
 The bulk modulus of a material is defined as the bulk stress of a sample divided by the bulk strain on that sample and several example values are given in table \ref{table:examplebulkmodulii}.  It is also the inverse of the compressibility of that material, which means that materials with a higher bulk modulus are less compressible than those with a lower value.
 
-\eqBulkModulusA
+\begin{equation}
+  \begin{split}
+  B_{0} = -V \frac{\partial P}{\partial V}
+  \end{split}
+  \label{eq:eqBulkModulusA}
+\end{equation}
 
-\eqBulkModulusB
+\begin{equation}
+  \begin{split}
+  B_{0} = V \frac{\partial^2 E}{\partial V^2}
+  \end{split}
+  \label{eq:eqBulkModulusB}
+\end{equation}
+
+The bulk modulus ($B_0$) may be calculated using the change in pressure ($P$) with respect to volume ($V$), as given in eq. \ref{eq:eqBulkModulusA}.  It may also be computed using the second derivative of the energy ($E$) with respect to volume (eq. \ref{eq:eqBulkModulusB}). 
 
 \begin{table}[h]
 \begin{center}
@@ -117,7 +129,7 @@ Stainless Steel 18-8 & 163 \\
 
 \subsubsection{Murnaghan Equation of State}
 
-Hooke's law implies a linear relationship between stress and strain.  In practice, where a pressure is applied to a material, the application of Hooke's law is limited\cite{murnaghaneq}.  Muraghan derived a new equation to improve upon formulae developed in the 1930's, using compression data from high pressure experiments.
+Hooke's law implies a linear relationship between stress and strain.  In practice, where a pressure is applied to a material, the application of Hooke's law is limited.  Muraghan derived a new equation\cite{murnaghaneq} to improve upon formulae developed in the 1930's, using compression data from high pressure experiments.
 
 \begin{equation}
 \begin{split}
@@ -126,7 +138,7 @@ P(V) = \frac{B_0}{{B'}_0}\left(\left(\frac{V_0}{V}\right)^{{B'}_0}-1\right)
 \label{eq:eqMurnachanEquationofStatePressure}
 \end{equation}
 
-As pressure is the negative derivative of the internal energy of the system with respect to change in volume, $p = -(\partial E/dV)$, and the equation can be integrated and written in terms of the energy, volume, bulk modulus and its derivative\cite{crystaleos}.
+As pressure is the negative derivative of the internal energy of the system with respect to change in volume, $P = -(\partial E/dV)$ (eq. \ref{eq:eqMurnachanEquationofStatePressure}, the equation can be integrated and written in terms of the energy, volume, bulk modulus and its derivative (${B'}_0$)\cite{crystaleos}.
 
 \begin{equation}
 \begin{split}
@@ -135,24 +147,26 @@ E(V) = E_0 + \frac{B_0 V}{{B'}_0} \left[\left(\frac{V_0}{V}\right)^{{B'}_0} \fra
 \label{eq:eqMurnachanEquationofStateEnergy}
 \end{equation}
 
+The relaxed energy ($E_0$) and relaxed volume ($V_0$) are also required and the result is given in eq. \ref{eq:eqMurnachanEquationofStateEnergy}.
+
 \subsubsection{Birch-Murnaghan Equation of State}
 
-Several years after Murnaghan's equation, Birch developed the equation of state further upon the experimental data provided by work from Bridgman in high pressure physics.  For cubic symmetry, the description of free energy now includes third order terms in the strain components\cite{birchmurnaghaneq}.
+Several years after Murnaghan's equation, Birch developed the equation of state (eq. \ref{eq:eqBMEoS}) further upon the experimental data provided by work from Bridgman in high pressure physics.  For cubic symmetry, the description of free energy now includes third order terms in the strain components\cite{birchmurnaghaneq}.
 
 \begin{equation}
 \begin{split}
 P(V) = \frac{3 B_0}{2} \left[\left(\frac{V_0}{V}\right)^{\frac{7}{3}}-\left(\frac{V_0}{V}\right)^{\frac{5}{3}}\right] \left[1 + \frac{3}{4}({B'}_0-4)\left(\left(\frac{V_0}{V}\right)^{\frac{2}{3}}-1\right)\right]
 \end{split}
-\label{eq:eqMurnachan Equation of State}
+\label{eq:eqBMEoS}
 \end{equation}
 
-The energy-volume relationship may again be constructed\cite{crystaleos}.
+The energy-volume relationship may again be constructed\cite{crystaleos} (eq. \ref{eq:eqBMEoS2}).
 
 \begin{equation}
 \begin{split}
 E(V) = E_0 + \frac{9 V_0 B_0}{16} \left[ \left[ \left(\frac{V_0}{V} \right)^{\frac{2}{3}}-1\right]^{3} {B'}_0 + \left[ \left(\frac{V_0}{V} \right)^{\frac{2}{3}}-1\right]^{2} \left[6 - 4 \left(\frac{V_0}{V} \right)^{\frac{2}{3}}\right] \right]
 \end{split}
-\label{eq:eqMurnachanEquationofStateVolume}
+\label{eq:eqBMEoS2}
 \end{equation}
 
 In order to fit the Birch-Murnaghan, the first step is to fit a second order polynomial to the energy-volume data.  This may be achieved using least-squares fitting with a Vandermonde matrix.  The coefficients from this polynomial may then be used to calculate reasonable values for $E_0$, $V_0$ and $B_0$; sane starting values of ${B'}_0$ are between 1 and 10, and a recommended value in the literature is 2\cite{gilgamesheos}.
@@ -168,14 +182,7 @@ B_0 = 2 c_2 V_0 \\
 \label{eq:eqMurnachanEquationofStateVolume}
 \end{equation}
 
-Newton Gauss (eq. \ref{eq:eqNGBMfit}) may then be used to attempt to minimise the fit further for $E_0$, $V_0$ and $B_0$ whilst trying values of ${B'}_0 \in {1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0}$.  The parameters with the lowest residual square sum are returned.
-
-\begin{equation}
-\begin{split}
-\left[J^T J\right] P = J^T R
-\end{split}
-\label{eq:eqNGBMfit}
-\end{equation}
+A suitable optimization algorithm (Newton-Raphson, Newton-Gauss, \acrshort{bfgs}) may then be used to attempt to minimise the fit further for $E_0$, $V_0$ and $B_0$ whilst trying values of ${B'}_0 \in {1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0}$.  The parameters with the lowest residual square sum are returned.
 
 Mehl et al used a version of the Birch equation of state\cite{birchmurnaghaneq} and suggest a value for ${B'}_0$ between 3 and 5\cite{mehlsp} and limit the value of N in eq. \ref{eq:eqBirchMehlEtAl} to either 3 or 4 for the best data fit.
 
@@ -193,20 +200,22 @@ In generating the data for a Birch or Birch-Murnaghan fit the atom configuration
 \subsubsection{Rose-Vinet Equation of State}
 \label{section:rosevineteos}
 
+More recently a Universal form, eq \ref{eq:eqRoseVinet}, was proposed by Rose, Vinet et al\cite{rosevinet}\cite{bonnywre}.  With an exponential cut off, this fits from the relaxed lattice parameter to much wider separations with a good fit for simple and transition metals, including K, Mo, Cu (fig. \ref{fig:rosevinet}).
+
 \begin{equation}
 \begin{split}
-E(a) = E_0 + \left(1 + -\alpha \left(\frac{a}{a_0 - 1}\right)\right) exp\left(-\alpha \left(\frac{a}{a_0 - 1}\right)\right) 
+E(a) = E_0 + \left(1 + -\alpha \left(\frac{a}{a_0 - 1}\right)\right) \exp\left(-\alpha \left(\frac{a}{a_0 - 1}\right)\right) \\ 
 \alpha = \sqrt{\frac{9 \Omega B_0}{-E0}}
 \end{split}
 \label{eq:eqRoseVinet}
 \end{equation}
 
-More recently a Universal form, eq \ref{eq:eqRoseVinet}, was proposed by Rose, Vinet et al\cite{rosevinet}.  With an exponential cut off, this fits from the relaxed lattice parameter to much wider separations with a good fit for simple and transition metals, including K, Mo, Cu (fig. \ref{fig:rosevinet}).
+The energy ($E(a)$) is dependent upon the lattice parameter ($a$).  The relaxed lattice parameter ($a_0$), cohesive energy ($E_0$), atomic volume of the relaxed primitive cell ($\Omega$) and bulk modulus ($B_0$) are required for this equation of state.
 
 \begin{figure}[htbp]
   \begin{center}
     \includegraphics[width=.5\linewidth]{chapters/interatomic_potential_fitting/images/rosevinet.png}%
-    \caption{Rose-Vinet Equation of State}
+    \caption{Rose-Vinet Equation of State\cite{rosevinet}}
     \label{fig:rosevinet}
   \end{center}
 \end{figure}
@@ -422,7 +431,7 @@ Once the relaxed crystal basis vectors and atom positions have been determined f
 
 \FloatBarrier
 
-As a strain is applied to a crystal its energy can change.  The volume may also change, although it may be held constant.  The relationship between the energy and the strain $\sigma$ may be represented as a Taylor expansion of the internal energy in powers of the strain tensor\cite{dftrfkj}.  The equation used by Ravindran et al is in a slightly different notation to that used by Mehl\cite{elasticpropertiesmehl}.  It includes a constant $xi$ to account for the symmetry of $\sigma$ and the use of Voigt notation.
+As a strain is applied to a crystal its energy can change.  The volume may also change, although it may be held constant.  The relationship between the energy and the strain $\sigma$ may be represented as a Taylor expansion of the internal energy in powers of the strain tensor\cite{dftrfkj}.  The equation used by Ravindran et al is in a slightly different notation to that used by Mehl\cite{elasticpropertiesmehl}.  It includes a constant $\xi$ to account for the symmetry of $\sigma$ and the use of Voigt notation.
 
 \begin{equation}
   \begin{split}
@@ -724,7 +733,7 @@ A pair potential only considers individual pairs of nearby atoms, one pair at a 
 \subsubsection{Lennard-Jones}
 \label{section:LennardJones}
 
-The Lennard-Jones potential, figure \ref{fig:lennardjonespot}, was proposed in the 1920s and has both an attractive term and a repulsive term; the $(r_m/r)^{12}$ becomes much larger than the $(r_m/r)^6$ term at close distances, and this mimics the coulomb repulsion as two atoms are pushed closer together.  At larger separations, the attractive term dominates.
+The Lennard-Jones potential (eq. \ref{eq:eqLennardJones})\cite{jonespot}, fig. \ref{fig:lennardjonespot}, was proposed in the 1920s and has both an attractive term and a repulsive term; the $(r_m/r)^{12}$ becomes much larger than the $(r_m/r)^6$ term at close distances, and this mimics the coulomb repulsion as two atoms are pushed closer together.  At larger separations, the attractive term dominates.
 
 \begin{equation}
 \begin{split}
@@ -741,19 +750,20 @@ V(r) = e \left(\left(\frac{r_m}{r}\right)^{12} - 2 \left(\frac{r_m}{r}\right)^6\
   \end{center}
 \end{figure}
 
+The Lennard-Jones potential ($V(r)$) requires two parameters ($e$, $r_m$) and is dependent upon the atom separation ($r$).
 
 
 \FloatBarrier
 \subsubsection{Morse Potential}
 \label{section:Morse}
 
-The Morse potential, figure \ref{fig:morsepot}, was proposed five years after the Lennard-Jones potential.  It also has an attractive and repulsive term, but it uses the exponential function rather than 6th and 12th powers.
+The Morse potential (eq. \ref{eq:eqMorse})\cite{morsepot}, fig. \ref{fig:morsepot}, was proposed five years after the Lennard-Jones potential.  It also has an attractive and repulsive term, but it uses the exponential function rather than 6th and 12th powers.
 
 \begin{equation}
 \begin{split}
 V(r) = \exp(-2 a (r - re)) - 2 \exp (-a(r - re))
 \end{split}
-\label{eq:eqLennardJones}
+\label{eq:eqMorse}
 \end{equation}
 
 \begin{figure}[!htbp]
@@ -764,13 +774,13 @@ V(r) = \exp(-2 a (r - re)) - 2 \exp (-a(r - re))
   \end{center}
 \end{figure}
 
-
+The Morse potential ($V(r)$) requires two parameters ($a$, $r_e$) and is dependent upon the atom separation ($r$). 
 
 \FloatBarrier
 \subsubsection{Buckingham Potential}
 \label{section:Buckingham}
 
-The Buckingham Potential consists of a repulsive and attractive part.  As the separation decreases, the attractive term dominates and the overall functions tends towards negative infinity.  This shouldn't be problematic when gasses or solids are being modelled alone, but when collisions and damage cascades are being modelled, the separation between atoms may be much smaller than that in a typical simulation, ending with these atoms being pulled together (eq. \ref{eq:eqBuckinghamPotential} and figure \ref{fig:buckinghamplot}).
+The Buckingham Potential (eq. \ref{eq:eqBuckinghamPotential})\cite{buckpot} consists of a repulsive and attractive part.  As the separation decreases, the attractive term dominates and the overall functions tends towards negative infinity.  This shouldn't be problematic when gasses or solids are being modelled alone, but when collisions and damage cascades are being modelled, the separation between atoms may be much smaller than that in a typical simulation, ending with these atoms being pulled together (fig. \ref{fig:buckinghamplot}).
 
 \begin{equation}
 \begin{split}
@@ -787,6 +797,8 @@ V(r) = A \exp(-B  r) - \frac{C}{r^6}
   \end{center}
 \end{figure}
 
+The Buckingham potential ($V(r)$) requires three parameters ($A$, $B$, $C$) and is dependent upon the atom separation ($r$).
+
 
 
 \FloatBarrier
@@ -795,7 +807,7 @@ V(r) = A \exp(-B  r) - \frac{C}{r^6}
 
 It became clear, while experimenting with a number of existing potentials and \acrshort{md} programs, that at the very least modifications to those potentials would need to be made for small atom separations.  A simulation to model a projectile failed early on due to the projectile's proximity to target atoms, resulting in the MD code returning an error as the separation was out of the range of the potential.
 
-The \acrlong{zbl} potential, between an atom of charge $Z_i$ and $Z_j$ is set out in the \acrshort{srim} manual\cite{srimbook}.
+The \acrlong{zbl} (eq. \ref{eq:zblequation}) potential (fig. \ref{fig:zbluniversalscreening}), between an atom of charge $Z_i$ and $Z_j$ is set out in the \acrshort{srim} book\cite{srimbook}.
 
 
 \begin{equation}
@@ -806,16 +818,18 @@ V_{zbl}(r_{ij}, Z_i, Z_j) = \frac{1}{4 \pi \epsilon_0} \frac{Z_i Z_j}{r_{ij}} \p
 \label{eq:zblequation}
 \end{equation}
 
-The parameters of the Universal screening potential function are as follows:
+The parameters of the Universal screening potential $\phi \left( \frac{r_{ij}}{a_{ij}} \right)$ function are as follows:
 
 \begin{equation}
 \begin{split}
-\phi(x) = 0.181 e^{-3.2x} + 0.5099 e^{-0.9423x} + 0.2802 e^{-0.4029x} + 0.02817 e^{-0.2016x} \\
-\text{where } a_{ij} = \frac{0.8854 a_0}{Z^{0.23}_i + Z^{0.23}_j} \\
-\text{and } a_0 = 0.529 \text{ angstrom}
+\phi(x) = 0.181 \exp({-3.2x}) + 0.5099 \exp({-0.9423x}) + 0.2802 \exp({-0.4028x}) + 0.02817 \exp({-0.2016x}) \\
+\text{where } a_{ij} = \frac{0.8854 a_0}{Z^{\frac{2}{3}}_i + Z^{\frac{2}{3}}_j} \\
+\text{and } a_0 = 0.529 \text{ angstrom (Bohr radius)}
 \end{split}
 \label{eq:screeningPotential}
 \end{equation}
+
+The Universal screening function has 8 parameters defined.  They do vary depending on the source, but these are as defined in the \acrshort{srim} 2015 book\cite{srimbook}.  The argument $x$ is equal to $\frac{r_{ij}}{a_{ij}}$ where $r_{ij}$ is the separation between atoms and $a_{ij}$ is the screening length defined by J. F. Ziegler, J. P. Biersack and M. D. Ziegler\cite{srimbook}.
 
 
 \begin{figure}[!htbp]
@@ -829,16 +843,6 @@ The parameters of the Universal screening potential function are as follows:
 
 \FloatBarrier
 
-%\begin{equation}
-%\begin{split}
-%V(r) = \sum_{k} a_k (r - r_k)^{n_k} H(r_k - r) H(r - r_2) \\
-%+ H(r_2 - r) H(r - r_1) \exp(B_0 + B_1 r + B_2 r^2 + B_3 r^3) \\
-%+ H(r_1 - r) \frac{Q_i Q_j}{r} \xi(r/r_s) \\
-%r_s= \frac{0.4683766}{{Q_i}^{2/3} + {Q_j}^{2/3} \\
-%\xi(x) = 0.181 e^{-3.2x} + 0.5099 e^{-0.9423x} + 0.2802 e^{-0.4029x} + 0.02817e^{-0.2016x}
-%\end{split}
-%\label{eq:screeningPotential}
-%\end{equation}
 
 
 
@@ -849,24 +853,48 @@ This work is focused on metals, and two popular, and closely related potentials,
 \subsubsection{Finnis-Sinclair}
 \label{section:FinnisSinclair}
 
-The Finnis-Sinclair potential was published in 1984\cite{finnissinclair} and it introduced both a pair potential and an embedded term to take into account the cohesive energy dependent on the local electron density.  The pair term represents the repulsion between the atoms whereas the embedding functional glues the atoms together in the solid.  
-
-The tight-binding that this potential is based on is represented by the functional: square root of the density.  The potential for a single element model consists of a pair function, a density funstion and a tight-binding functional.
+The Finnis-Sinclair potential was published in 1984\cite{finnissinclair} and it introduced both a pair potential and an embedded term to take into account the cohesive energy dependent on the local electron density.  The pair term represents the repulsion between the atoms whereas the embedding functional glues the atoms together in the solid. 
 
 \begin{equation}
 \begin{split}
-u^{A,A} = \sum_{i \ne j}^{N}(r) v^{A,A}(r_{i,j}) \\
-\rho^{A}_{i}(r) = \sum_{j, j \ne i}^{N} \phi(r_{ij}) \\
-F^{A} = \sum_{i}^{N} \rho_i
+U_{total} = U_{P} + U_{N}
 \end{split}
-\label{eq:eqFinnisSinclair}
+\label{eq:eqFinnisSinclairTotal}
 \end{equation}
+
+The tight-binding that this potential is based on is represented by the functional: square root of the density.  The potential for a single element model consists of a pair function (eq. \ref{eq:eqFinnisSinclairPair}), a density function and a tight-binding functional (eq. \ref{eq:eqFinnisSinclairEmbed}).
+
+\begin{equation}
+\begin{split}
+U_P = \frac{1}{2} \sum_{ij} V(R_{ij}) \\
+\end{split}
+\label{eq:eqFinnisSinclairPair}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+U_N = -A \sum_i f(\rho_i) \\
+p_i = \sum_{j} \phi (R_{ij}) \\
+\end{split}
+\label{eq:eqFinnisSinclairEmbed}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+R_{ij} = \abs{\vec{R_j} - \vec{R_i}}
+\end{split}
+\label{eq:eqAtomSeparation}
+\end{equation}
+
+The total energy ($U_{total}$) is the sum of the total pair ($U_P$) and total N-body terms ($U_{N}$).  Both the pair potential ($V(R_{ij})$) and electron density ($\phi(R_{ij})$) are dependent upon the atom separation distance (eq. \ref{eq:eqAtomSeparation}).  In the Finnis-Sinclair model, the embedded functional ($f(\rho_i)$) is chosen to be $\sqrt{\rho}$ in order to mimic tight-binding theory\cite{finnissinclair}. This functional is multiplied by a parameter ($A$), a value determined by the author of the potential.
+
+
 
 
 \subsubsection{\Acrlong{eam}}
 \label{section:EAM}
 
-The \acrlong{eam} was also invented in the 1980s by Daw and Baskes.  It was developed with metals in mind, and in many ways is a more flexible variant of the Finnis-Sinclair potential.  It too has a pair and density function, but the functional of the \acrshort{eam} potential is not restricted to a square root.
+The \acrlong{eam} was also invented in the 1980s by Daw and Baskes\cite{dawbaskeseam} (eq. \ref{eq:eqEAM}).  It was developed with metals in mind, and in many ways is a more flexible variant of the Finnis-Sinclair potential.  It too has a pair and density function, but the functional of the \acrshort{eam} potential is not restricted to a square root.
 
 \begin{equation}
 \begin{split}
@@ -1048,7 +1076,7 @@ The chosen s-band density function for the Bonny et al Fe-Cr alloy was selected 
 
 \begin{equation}
 \begin{split}
-g_{cut} (r) = \left\{ \begin{matrix} 1 & r <= r_c^i \\  \frac{1}{2}\left(1 - sin(\frac{\pi}{2} \frac{r-r_m}{d}) \right) & r_c^i < r < r_c^f \\ 0 & r_c^r < r \end{matrix} \right . 
+g_{cut} (r) = \left\{ \begin{matrix} 1 & r <= r_c^i \\  \frac{1}{2}\left(1 - \sin(\frac{\pi}{2} \frac{r-r_m}{d}) \right) & r_c^i < r < r_c^f \\ 0 & r_c^r < r \end{matrix} \right . 
 \end{split}
 \label{eq:fecrsbanddensitycutoff}
 \end{equation}
@@ -1097,7 +1125,7 @@ The original form for the embedding functional is given below (eq. \ref{eq:eqMEA
 
 \begin{equation}
 \begin{split}
-F(\vec{\rho}) = A E_{coh} \frac{\vec{\rho}}{\vec{\rho^0}} ln \left(\frac{\vec{\rho}}{\vec{\rho^0}}\right)
+F(\vec{\rho}) = A E_{coh} \frac{\vec{\rho}}{\vec{\rho^0}} \ln \left(\frac{\vec{\rho}}{\vec{\rho^0}}\right)
 \end{split}
 \label{eq:eqMEAM2}
 \end{equation}
@@ -1114,6 +1142,7 @@ The electron density is made from four contributing functions.  The first, $\rho
 \label{eq:eqMEAM3}
 \end{equation}
 
+\begin{comment}
 The partial electron densities may be combined as is eq. \ref{eq:eqMEAM4}\cite{semiempiricalpots}.
 
 \begin{equation}
@@ -1126,6 +1155,7 @@ The partial electron densities may be combined as is eq. \ref{eq:eqMEAM4}\cite{s
 \end{equation}
 
 This form of potential is implemented in \acrshort{lammps} and other molecular dynamics codes.  It is more applicable to materials with bonds that depend on their angle, but it may have useful applications to metals where this is not as pronounced (if at all).
+\end{comment}
 
 
 \subsection{EAM and Two-Band EAM Functions}
@@ -1305,6 +1335,8 @@ Ab initio (\acrshort{dft}) calculations approximately solve the Schr\"{o}dinger 
 
 As a major element of steel, iron has often been the subject of \acrshort{md} simulations.  Damage cascades have been studied in iron at a range of temperatures and \acrshort{pka} energies.
 
+The development of new potentials coupled with both \acrshort{md} and other tools, such as \acrshort{akmc}, allows the study of radiation damage in a way that is not possible experimentally.  While a full \acrshort{md} simulation of a material over many years is beyond current technology, many useful properties may be extracted.  This could include vacancy energy barriers, energetics of a system modelling grain boundaries, the formation of defects and  prismatic loops.
+
 
 
 \subsection{Molecular Dynamics Codes}
@@ -1316,17 +1348,17 @@ Many \acrshort{md} codes are available for researchers to download freely and us
 \minipage{0.49\textwidth}
 \includegraphics[width=\linewidth]{chapters/interatomic_potential_fitting/images/puo2damage.png}
 \caption{Damage in \acrshort{mox} (LAMMPS)\cite{moxlammpsdamage}}
-\label{fig:feeosplot1}
+\label{fig:moxlammps}
 \endminipage\hfill
 \minipage{0.49\textwidth}
 \includegraphics[width=\linewidth]{chapters/interatomic_potential_fitting/images/puo-sputtering.png}
 \caption{Sputtering of plutonium oxide (LAMMPS)\cite{pusputtering}}
-\label{fig:feecplot1}
+\label{fig:pusputter}
 \endminipage
 \end{figure}
 \FloatBarrier
 
-Damage cascades in \acrlong{mox}s have been modelled recently using the \acrshort{lammps} code.  A 70x70x70 box with sides approximately 40nm in length and containing 4,116,000 atoms was used with \acrshort{pka}s having energies ranging from 5 to 75keV\cite{moxlammpsdamage}.  The sputtering of material from the surface of plutonium oxide (IV) has also been modelled with \acrshort{lammps} using a box of 393,216 atoms with a \acrshort{pka} of 87.7keV.  The timescale of the sputtering simulation was 7.8 picoseconds ($7.8 \times 10^{-12}$) and the entire event was split into $1.0 \times 10^{5}$ time steps of $7.8 \times 10^{-17}$s.
+Damage cascades in \acrlong{mox}s have been modelled recently using the \acrshort{lammps} code.  A 70x70x70 box with sides approximately 40nm in length and containing 4,116,000 atoms was used with \acrshort{pka}s having energies ranging from 5 to 75keV\cite{moxlammpsdamage} (fig. \ref{fig:moxlammps}).  The sputtering of material from the surface of plutonium oxide (IV) has also been modelled with \acrshort{lammps} using a box of 393,216 atoms with a \acrshort{pka} of 87.7keV\cite{pusputtering} (fig. \ref{fig:pusputter}).  The timescale of the sputtering simulation was 7.8 picoseconds ($7.8 \times 10^{-12}$) and the entire event was split into $1.0 \times 10^{5}$ time steps of $7.8 \times 10^{-17}$s.
 
 \FloatBarrier
 \begin{figure}[!htb]
@@ -1343,7 +1375,7 @@ Damage cascades in \acrlong{mox}s have been modelled recently using the \acrshor
 \end{figure}
 \FloatBarrier
 
-MOLDY has previously been used to model primary knock on atoms in metals, at energies of 5kev, 10keV and 20keV which would be slightly lower than the typical iron \acrshort{pka}s close to U235 fuel in the reactor (fig. \ref{fig:neutronironrecoil}).  This simulation however was in alpha-zirconium and the higher mass of zirconium, relative to iron, would lead to lower energy \acrshort{pka}s.  The damage cascades were modelled in a 104,832 atom block for the 5keV \acrshort{pka} (figure \ref{fig:moldy5kev}) and a 445,536 atom block for the 20keV \acrshort{pka} (figure \ref{fig:moldy20kev}).
+MOLDY has previously been used to model primary knock on atoms in metals, at energies of 5kev, 10keV and 20keV which would be slightly lower than the typical iron \acrshort{pka}s close to U235 fuel in the reactor (fig. \ref{fig:neutronironrecoil}).  This simulation however was in alpha-zirconium and the higher mass of zirconium, relative to iron, would lead to lower energy \acrshort{pka}s.  The damage cascades were modelled in a 104,832 atom block for the 5keV \acrshort{pka} (fig. \ref{fig:moldy5kev}) and a 445,536 atom block for the 20keV \acrshort{pka} (fig. \ref{fig:moldy20kev}).
 
 
 \FloatBarrier
@@ -1418,9 +1450,7 @@ This process is repeated for each time step $\delta t$ from the start of the sim
 
 \subsubsection{Bonny Quadratic Program Fitting}
 
-This code has been used to fit a number of potentials, including Fe-Cr and W-Re.  It is a Fortran code and uses know properties of the material in different configurations.  The only functional forms available in the 2012 version of the code are cubic spline for the pair and density functions and a polynomial for the embedding functional.  The fitting subroutine uses quadratic programming to find parameters for the pair and embedding function splines.
-
-
+This code has been used to fit a number of potentials, including Fe-Cr and W-Re.  It is a Fortran code and uses known properties of the material in different configurations.  The only functional forms available in the 2012 version of the code are cubic spline for the pair and density functions and a polynomial for the embedding functional.  The fitting subroutine uses quadratic programming to find parameters for the pair and embedding function splines.
 
 
 \subsubsection{Hepburn FitPot}
@@ -1439,7 +1469,12 @@ Originally developed in C, the PotFit\cite{pbrommer} program uses the force matc
 A set of potentials have been derived by Sheng et al\cite{shengeam} and are available to download in tabulated form\cite{shengeamonline}.   They were created using a modified version of the PotFit code by P. Brommer and F. G\"ahler\cite{pbrommer}.  The code had been modified extensively to include quintic spline interpolation, phonon calculation, elastic constant calculation and optimization techniques\cite{shengeamonline}.  The potentials (typically) used 15 knot splines for pair and density functions and 6 knot splines for the embedding functional for each element, but the potentials were published as tabulated functions.  Potentials for fourteen FCC metals were derived in the first instance, but more (including alloys) are available on the website.  Unfortunately, the (Sheng et al.) modified PotFit code is not available through the PotFit website\cite{pbrommer}, and the latest version of their code has moved on since 2011.
 
 
+\subsubsection{General Utility Lattice Program}
+\label{section:gulp}
 
+\acrfull{gulp}\cite{gulp} is a Fortran 90 code that has been developed by Julian Gale since the late 90s.  It is currently in its 6th version and is a large code at over 750,000 lines of code.  It is able to compute many properties of a material and is able to minimise the energy of a system and fit potentials.  Early in this work, \acrshort{gulp} was considered as a possible tool to wrap a potential fitting code around, but without an \acrshort{api} the first approach relied on writing input files and reading output files, which was inefficient.
+
+The author notes in Chapter 1 of the \acrshort{gulp} manual that it is a large code.  Adding the desired forms of potential for radiation damage that included splines and a \acrshort{zbl} core pair potential would have required knowledge of the code and a lot of time to program.  Adding new types of potential such as the \acrshort{2beam} would have resulted in the same issue.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1455,9 +1490,9 @@ A set of potentials have been derived by Sheng et al\cite{shengeam} and are avai
 \section{Density Functional Theory}
 \label{section:dftbackground}
 
-\Acrfull{dft} is a branch of quantum chemistry that approximately solves the Schr\"{o}dinger equation using electron density, rather than the coordinates of each electron in the system.  A number of simplifications are also applied in order for \acrshort{dft} to be practical to use, but despite this calculations are limited to just hundreds or thousands of atoms.  A calculation of a hundred or so atoms may take thousands of \acrshort{cpu} hours at the time of writing, depending on the type of calculation and complexity of the electron structures of the atoms involved.
+\Acrfull{dft} is a branch of quantum chemistry that approximately solves the Schr\"{o}dinger equation using electron density, rather than the coordinates of each electron in the system.  A number of simplifications are also applied in order for \acrshort{dft} to be practical to use (fig. \ref{fig:dftapproximations}), but despite this calculations are limited to just hundreds or thousands of atoms.  A calculation of a hundred or so atoms may take thousands of \acrshort{cpu} hours at the time of writing, depending on the type of calculation and complexity of the electron structures of the atoms involved.
 
-It is through \acrshort{dft} that the first principles energy, stress and force calculations will be made, and it's these results that the EAM potentials will be trained and fit to using the force matching method.  This will allow much larger scale modelling using the extrapolated behaviour of accurate \acrshort{dft} calculations.
+It is through \acrshort{dft} that the first principles energy, stress and force calculations will be made, and it is these results that the \acrshort{eam} potentials will be trained and fit to using the force matching method.  This will allow much larger scale modelling using the extrapolated behaviour of accurate \acrshort{dft} calculations.
 
 
 
@@ -1548,7 +1583,7 @@ The \Gls{hamiltonian} $\hat{H}$ is an operator and it is the total energy in the
 
 \begin{equation}
 \begin{split}
-\int_{-\infty}^{\infty} \int_{-\infty}^{\infty}  \int_{-\infty}^{\infty}  \Psi(x,y,z) dx dy dz = 1
+\int_{-\infty}^{\infty} \int_{-\infty}^{\infty}  \int_{-\infty}^{\infty}  \abs{\Psi(x,y,z)}^2 dx dy dz = 1
 \end{split}
 \label{eq:foundsomewhere}
 \end{equation}
@@ -1558,7 +1593,7 @@ The Schr\"{o}dinger equation is set up depending on the system being studied.  S
 
 \begin{equation}
 \begin{split}
-\hat{H} = \frac{\hbar^2}{2 m} \nabla^2 \\
+\hat{H} = -\frac{\hbar^2}{2 m} \nabla^2 \\
 -\frac{\hbar^2}{2 m} \nabla^2 \Psi(\vec{r}) = E \Psi(\vec{r})
 \end{split}
 \label{eq:eqTimeIndependentSchrodinger1}
@@ -1568,8 +1603,8 @@ If the particle is in a potential, it will have both kinetic energy $\hat{T}$ an
 
 \begin{equation}
 \begin{split}
-\hat{H} = \hat{T} + \hat{V} = \frac{\hbar^2}{2 m} \nabla^2 + V(\vec{r})\\
-\left[-\frac{\hbar^2}{2 m} \nabla^2 \right] \Psi(\vec{r}) = E \Psi(\vec{r})
+\hat{H} = \hat{T} + \hat{V} = -\frac{\hbar^2}{2 m} \nabla^2 + V(\vec{r})\\
+\left[-\frac{\hbar^2}{2 m} \nabla^2 + V(\vec{r}) \right] \Psi(\vec{r}) = E \Psi(\vec{r})
 \end{split}
 \label{eq:eqTimeIndependentSchrodinger2}
 \end{equation}
@@ -1858,30 +1893,30 @@ As the potential is a periodic function, it may be written as a fourier series i
   \label{eq:eqPeriodicPotentialSeries1}
 \end{equation}
 
-The wave function for an electron in the lattice is also periodic and may be written as the product of a \gls{planewave}.   
+The wave function for an electron ($\psi_{n\vec{k}}$) in the lattice is assumed periodic with the lattice structure (eq. \ref{eq:eqPeriodicWavefunction}) and may be written as the product of a \gls{planewave} and a cell periodic function ($u_{n\vec{k}}$), where $n$ denotes the band and $\vec{k}$ is the wave vector.
 
 \begin{equation}
   \begin{split}
-    \psi_{n\vec{k}} (\vec{r}) = u_{n\vec{k}}(\vec{r}) \exp(i \vec{k} \cdot \vec{r})
+    u_{n\vec{k}}(\vec{r}) = u_{n\vec{k}}(\vec{r} + \vec{R_{t}})
+  \end{split}
+  \label{eq:eqPeriodicWavefunction}
+\end{equation} 
+
+\begin{equation}
+  \begin{split}
+    \psi_{n\vec{k}} (\vec{r}) = u_{n\vec{k}}(\vec{r}) \exp(i \vec{k} \cdot \vec{r})\\
+    \psi_{n\vec{k}} (\vec{r}) = \psi_{n\vec{k}} (\vec{r}) \exp(i \vec{k} \cdot \vec{R_{t}})
   \end{split}
   \label{eq:eqPeriodicPotentialSeries2}
 \end{equation}
 
-\begin{equation}
-  \begin{split}
-    u_{n\vec{k}}(\vec{r}) = u_{n\vec{k}}(\vec{r} + \vec{R_{t}}) \\
-     \psi_{n\vec{k}} (\vec{r}) = \psi_{n\vec{k}} (\vec{r}) \exp(i \vec{k} \cdot \vec{R_{t}}) \\
-  \end{split}
-  \label{eq:eqPeriodicPotentialSeries3}
-\end{equation}
-
-The Born-von Karman boundary conditions apply to the wave function such that:
+The Born-von Karman boundary conditions apply eq. \ref{eq:eqPeriodicWavefunction} and eq. \ref{eq:eqPeriodicPotentialSeries2} to the wave function such that:
 
 \begin{equation}
   \begin{split}
     \psi_{n\vec{k}} (\vec{r} + \vec{R}_{t}) = \psi_{n\vec{k}} (\vec{r}) \
-    \text{where} \vec{R_t} = \sum_i N_i \vec{a_i} \
-    \text{and} N_i \in \mathbb{Z}
+    \text{where  } \vec{R_t} = \sum_i N_i \vec{a_i} \
+    \text{and  } N_i \in \mathbb{Z}
   \end{split}
   \label{eq:eqPeriodicPotentialSeries4}
 \end{equation}
@@ -1903,7 +1938,7 @@ With these boundary conditions and use of plane waves, \Gls{blochtheorem} replac
 \end{figure}
 \FloatBarrier
 
-The (first) \Gls{brillouinzone} is a volume in (3D) reciprocal space and it is analogous to the \Gls{wignerseitzcell} in real space.  It is the primitive lattice cell in reciprocal space.  The reciprocal of a \acrshort{bcc} lattice is a \acrshort{fcc} lattice (fig. \ref{fig:bccrecip}) and vice versa (fig. \ref{fig:fccrecip}).  In real space a point anywhere in the lattice is a integer multiple of the lattice vector away from the same point in the origin \Gls{wignerseitzcell}.  There are an infinite number of wave vectors $\vec{k}$ in reciprocal space, but by virtue of the periodicity of the lattice, they are also all found within the Brillouin Zone.  If the crystal has symmetries, the \acrshort{bz} may be reduced further to the \acrlong{ibz}.
+The (first) \Gls{brillouinzone} is a volume in (3D) reciprocal space and it is analogous to the \Gls{wignerseitzcell} in real space (figs. \ref{fig:bccrecip} and \ref{fig:fccrecip}).  It is the primitive lattice cell in reciprocal space.  The reciprocal of a \acrshort{bcc} lattice is a \acrshort{fcc} lattice (fig. \ref{fig:bccrecip}) and vice versa (fig. \ref{fig:fccrecip}).  In real space a point anywhere in the lattice is a integer multiple of the lattice vector away from the same point in the origin \Gls{wignerseitzcell}.  There are an infinite number of wave vectors $\vec{k}$ in reciprocal space, but by virtue of the periodicity of the lattice, they are also all found within the Brillouin Zone.  If the crystal has symmetries, the \acrshort{bz} may be reduced further to the \acrlong{ibz}.
 
 Within the \acrshort{bz} there are energy surfaces.  Picking a straight line through reciprocal space allows one to plot the energy bands along that one dimensional space.  A particularly important energy surface is the Fermi surface and, in the one electron model, this marks the boundary between the occupied and unoccupied states at 0K \cite{hjonesfermi}.  The \Gls{fermienergy} is the energy of the highest occupied state at 0K.
 
@@ -1922,8 +1957,8 @@ The proof starts by picturing a box of electrons that interact with each other t
 
 \begin{equation}
 \begin{split}
-\hat{H} = \hat{T} + \hat{V} = \frac{1}{2} \nabla^2 + V(\vec{r})\\
-\left[-\frac{1}{2} \nabla^2 \right] \Psi(\vec{r})_{0} = E_{0} \Psi(\vec{r})
+\hat{H} = \hat{T} + \hat{V} = -\frac{1}{2} \nabla^2 + V(\vec{r}) \\
+\left[-\frac{1}{2} \nabla^2 + V(\vec{r}) \right] \Psi(\vec{r})_{0} = E_{0} \Psi(\vec{r})
 \end{split}
 \label{eq:eqtishk}
 \end{equation}
@@ -2017,20 +2052,20 @@ E_A + E_B > E_A + E_B
 \label{eq:hkcontradiction}
 \end{equation}
 
-This (eq. \ref{eq:hkcontradiction}) is a contradiction and proves the first part of the \acrshort{hk} theorem: $v(\vec{r})$ is uniquely determined by $n(\vec{r})$.  If the charge density (fig. \ref{fig:cdalfcc1} and \ref{fig:cdalfcc1}) is known, a single external potential exists for it.
+This (eq. \ref{eq:hkcontradiction}) is a contradiction and proves the first part of the \acrshort{hk} theorem: $v(\vec{r})$ is uniquely determined by $n(\vec{r})$.  If the charge density is known, a single external potential exists for it.
 
-\FloatBarrier
-\begin{figure}[!htb]
-\includegraphics[width=0.8\linewidth]{chapters/interatomic_potential_fitting/images/layer0000.eps}
-\caption{Charge density FCC aluminium xy plane at $z=0.0 a_0$}
-\label{fig:cdalfcc1}
-\end{figure}
+%\FloatBarrier
+%\begin{figure}[!htb]
+%\includegraphics[width=0.8\linewidth]{chapters/interatomic_potential_fitting/images/layer0000.eps}
+%\caption{Charge density FCC aluminium xy plane at $z=0.0 a_0$}
+%\label{fig:cdalfcc1}
+%\end{figure}
 
-\begin{figure}[!htb]
-\includegraphics[width=0.8\linewidth]{chapters/interatomic_potential_fitting/images/layer0050.eps}
-\caption{Charge density FCC aluminium xy plane at $z=0.5 a_0$}
-\label{fig:cdalfcc2}
-\end{figure}
+%\begin{figure}[!htb]
+%\includegraphics[width=0.8\linewidth]{chapters/interatomic_potential_fitting/images/layer0050.eps}
+%\caption{Charge density FCC aluminium xy plane at $z=0.5 a_0$}
+%\label{fig:cdalfcc2}
+%\end{figure}
 
 
 The next part of the theorem is to show that the energy functional $E[n(\vec{r})]$ exists and the minimum can be found by varying the charge density function.  The kinetic and interaction functional $\hat{T}$ and $\hat{U}$ define a functional $F[n(\vec{r})]$.
@@ -2317,13 +2352,13 @@ Bonding and material properties are primarily determined by valence electrons, n
   \begin{center}
     \includegraphics[width=.4\linewidth]{chapters/interatomic_potential_fitting/images/pp.png}
     \caption{Replacing the complex potentials with a pseudopotential\cite{ppselloni}}
-    \label{graph:pseudopotentials}
+    \label{fig:pseudopotentials}
   \end{center}
 \end{figure}
 
 The eigen-energies of core electrons are also much larger than properties we see in materials, such as the cohesive energies and this also raises a concern that including the core electrons may introduce errors that are on a similar scale to the energies we are calculating.
 
-The rapidly oscillating function in the core is replaced by a smoother pseudopotential.  The same material properties are calculated as the valence electron functions are preferenced, but a much small basis set is required to do so.  There are a wide range of pseudopotentials available to use in DFT calculations, and one major distinguishing feature is how they treat the \acrshort{xc} potential $v_{xc} ([n]; \vec{r})$.  
+The rapidly oscillating function in the core is replaced by a smoother pseudopotential (fig. \ref{fig:pseudopotentials}).  The same material properties are calculated as the valence electron functions are preferenced, but a much small basis set is required to do so.  There are a wide range of pseudopotentials available to use in DFT calculations, and one major distinguishing feature is how they treat the \acrshort{xc} potential $v_{xc} ([n]; \vec{r})$.  
 
 \begin{equation}
 \begin{split}
@@ -2332,11 +2367,13 @@ The rapidly oscillating function in the core is replaced by a smoother pseudopot
 \label{eq:Fermi-Dirac distribution}
 \end{equation}
 
-The \acrshort{ks} equation consists of several potentials including the \acrlong{xc} energy.  This term represents the many-electron effects. 
+The \acrshort{ks} equation consists of several potentials including the \acrfull{xc} energy.  This term represents the many-electron effects. 
 
 \subsubsection{\acrshort{lda}}
 
 The \acrlong{lda} replaces the electron density with \gls{jellium}, a \gls{heg}.  Kohn and Sham, in their original 1965 work, introduced jellium as the density model and, despite its simplicity in comparison to the real electron density distribution, it has worked well for simple metals.
+
+The \acrshort{xc} energy for the \acrshort{lda} is an integral over space in the local neighbourhood of the point of interest.  Both the exchange term ($e_x$) and correlation term ($e_c$) are functionals of the local electron density ($\rho(\vec{r})$).
 
 \begin{equation}
 \begin{split}
@@ -2349,14 +2386,14 @@ Several different \acrshort{lda} functionals have been developed over the years,
 
 \begin{equation}
 \begin{split}
-\epsilon_{C} [n(\vec{r})] = \left\{ \begin{matrix} \frac{-0.14231}{1+1.9529 r_s^(0.5) + 0.334 r_s}  & r_s >= 1  \\ -0.0480+0.0311 lr(r_s) - 0.0116 r_s + 0.0020 r_s ln(r_s)  & r_s < 1 \end{matrix} \right . 
+\epsilon_{C} [n(\vec{r})] = \left\{ \begin{matrix} \frac{-0.14231}{1+1.9529 r_s^{(0.5)} + 0.334 r_s}  & r_s >= 1  \\ -0.0480+0.0311 \ln(r_s) - 0.0116 r_s + 0.0020 r_s \ln(r_s)  & r_s < 1 \end{matrix} \right . 
 \end{split}
 \label{eq:perdewzunger}
 \end{equation}
 
 \subsubsection{\acrshort{lsda}}
 
-Electrons are fermions and have half integer spin.  When trapped in a potential, such as an atom or a crystal lattice, electrons must take difference quantum states and one of the parameters is the spin of the electron.  The \acrshort{lda} does not treat spin at all, but the \acrshort{lsda} splits the density into up and down spin (eq. \ref{eq:lsdaDensity}\cite{ldaggaperdew}).
+Electrons are fermions and have half integer spin.  When trapped in a potential, such as an atom or a crystal lattice, electrons must take difference quantum states and one of the parameters is the spin of the electron.  The \acrshort{lda} does not treat spin at all, but the \acrshort{lsda} splits the density into spin up ($\rho_{\uparrow}$) and down spin ($\rho_{\downarrow}$) (eq. \ref{eq:lsdaDensity}\cite{ldaggaperdew}).
 
 \begin{equation}
 \begin{split}
@@ -2367,11 +2404,11 @@ Electrons are fermions and have half integer spin.  When trapped in a potential,
 \label{eq:lsdaDensity}
 \end{equation}
 
-The \acrshort{xc} energy is now dependent on the spin up and spin down density as well as the position (eq. \ref{eq:lsdaXcEnergy}\cite{ldaggaperdew}).
+As with the \acrshort{lda} the exchange and correlation terms are separate but the \acrshort{xc} energy is now dependent on the spin up and spin down density as well as the position (eq. \ref{eq:lsdaXcEnergy}\cite{ldaggaperdew}), where $\zeta(\vec{r})$ is the relative spin-polarisation.  Setting this to 0 reverts this to the spin unpolarised case.
 
 \begin{equation}
 \begin{split}
-E_{xc}^{LSDA}[\rho_{\uparrow},\rho_{\downarrow}] = \int d^3\vec{r} \rho(\vec{r})[e_x (\rho(\vec{r})) f(\zeta(\vec{r})) + e_c (\rho(\vec{r}), \zeta(\vec{r})) \\
+E_{xc}^{LSDA}[\rho_{\uparrow},\rho_{\downarrow}] = \int d^3\vec{r} \rho(\vec{r})[e_x (\rho(\vec{r})) f(\zeta(\vec{r})) + e_c (\rho(\vec{r}), \zeta(\vec{r}))] \\
 \zeta = \frac{\rho_{\uparrow} - \rho_{\downarrow}}{\rho_{\uparrow} + \rho_{\downarrow}} \\
  f(\zeta) = \frac{1}{2} \left((1 + \zeta)^{4/3} + (1 - \zeta)^{4/3}\right)
 \end{split}
@@ -2387,6 +2424,8 @@ E = T[\rho, \zeta] + E_{ext} [\rho] + \frac{1}{2} E_{ee}[\rho] + E_{xc}[\rho, \z
 \label{eq:sdftEnergy}
 \end{equation}
 
+Many correlation energy functionals have been developed in order to improved the \acrshort{lsda} and it is still widely used as will be discussed in section \ref{section:ggavslsda}.  There are now more complicated approaches including the \acrshort{gga}. 
+
 
 \subsubsection{\acrshort{gga}}
 
@@ -2399,7 +2438,7 @@ E_{xc}^{GGA} [\rho_{\uparrow}, \rho{\downarrow}] = \int d^3r f(\rho_{\uparrow}, 
 \label{eq:ggaexchangecorrelation}
 \end{equation}
 
-The GGA functional (eq. \ref{eq:ggaexchangecorrelation} \cite{ldaggaperdew}) takes the spin up spin down electron densities as well as their gradients.  
+The GGA functional (eq. \ref{eq:ggaexchangecorrelation} \cite{ldaggaperdew}) takes the spin up ($\rho_{\uparrow}$) spin down($\rho_{\downarrow}$) electron densities as well as the gradients of the spin densities ($\nabla \rho_{\uparrow}, \nabla \rho{\downarrow}$).  
 
 The \acrshort{pbe} functional was developed to address some of the short falls of the Perdew-Wang PW91 \acrshort{lsda} functional.  These include an over complication in the formulation of PW91 and that it was designed to satisfy many exact conditions.  The \acrshort{pbe} development focused more on energetically significant conditions\cite{perdewggamadesimple}.
 
@@ -2417,13 +2456,15 @@ E_{x}^{PBE} [\rho] = \int d^3r \rho e_x(\rho) F_x(s)
 \label{eq:pbeexchange}
 \end{equation}
 
-The functional is split into a correlation energy (eq. \ref{eq:pbecorrelation}) and exchange energy (eq. \ref{eq:pbeexchange}).  $\zeta$ is the relative spin polarization $\zeta = (\rho_{\uparrow}-\rho_{\downarrow})/(\rho_{\uparrow} + \rho_{\downarrow})$ and $r_s$ is the local Seitz radius where $\rho = 3/4 \pi r_s^3$.  The functions $e_x(\rho)$ and $e_c(\rho)$ are the exchange and correlation energy per electron of unpolarised uniform electron gas\cite{ldaggaperdew}.  A full description of the functional is in the appendix \ref{chaper:pbefunctional}.
+The functional is split into a correlation energy (eq. \ref{eq:pbecorrelation}) and exchange energy (eq. \ref{eq:pbeexchange}).  $\zeta$ is the relative spin polarization $\zeta = (\rho_{\uparrow}-\rho_{\downarrow})/(\rho_{\uparrow} + \rho_{\downarrow})$ and $r_s$ is the local Seitz radius where $\rho = 3/4 \pi r_s^3$.  The functions $e_x(\rho)$ and $e_c(\rho)$ are the exchange and correlation energy per electron of unpolarised uniform electron gas\cite{ldaggaperdew}.  
+
+Both functionals $H(r_s, \zeta, t)$ and $F_x(s)$ are dependent upon $t$ and $s$ and these in turn are dependent upon the density and density gradients.  Derived by Perdew, Burke and Ernzerhof\cite{perdewggamadesimple}, there is a full description outlined in a later review by Ziesche, Kurth and Perdew\cite{ldaggaperdew}.  A full description of the functional and the terms is also included in appendix \ref{chaper:pbefunctional}.
 
 
 \subsubsection{\acrshort{lsda} vs \acrshort{gga} Potentials}
 \label{section:ggavslsda}
 
-Typically, \acrshort{gga} is an improvement over \acrshort{lsda}, with improvements in the total energies and structural energy differences\cite{perdewggamadesimple}.  Another short coming of \acrshort{lsda} is that it predicts FCC to be the optimal structure for pure iron at 0K, which is incorrect\cite{perdewggabackwardforward}.  A list of success stories and failures were discussed shortly after the publication of the \acrshort{pbe} functional and these are summarised in figure \ref{fig:pbesuccessfailure}\cite{ldaggaperdew}.
+Typically, \acrshort{gga} is an improvement over \acrshort{lsda}, with improvements in the total energies and structural energy differences\cite{perdewggamadesimple}.  Another short coming of \acrshort{lsda} is that it predicts FCC to be the optimal structure for pure iron at 0K, which is incorrect\cite{perdewggabackwardforward}.  A list of success stories and failures were discussed shortly after the publication of the \acrshort{pbe} functional and these are summarised in fig. \ref{fig:pbesuccessfailure}\cite{ldaggaperdew}.
 
 \begin{figure}
 \begin{minipage}[t]{.42\textwidth}
@@ -2482,9 +2523,11 @@ $C_{23}$/GPa & 86.0 & 95.1 & 105.5 \\
 \label{table:ldaggatisi2}
 \end{table}
 
-In the case of the compound Titanium Disilicide, $TiSi_2$, \acrshort{gga} is in better agreement, overall, with experiment than \acrshort{lda}, although several values are better predicted by the latter.  As shown in table \ref{table:ldaggatisi2}, the data shows that \acrshort{lda} is within 1.26\% of the experimental lattice parameters, 6.16\% of the experimental bulk modulus and 18.3\% the value of the experimental elastic constants; several of these were particularly poor, with an almost 45\% disagreement.  On the other hand, \acrshort{gga} is within 0.66\% of the experimental lattice parameters, 3.62\% of the experimental bulk modulus and 14.97\% the value of the experimental elastic constants\cite{dftrfkj}.
+In the literature, investigations into comparisons between \acrshort{gga}, \acrshort{lda} and experiments have been carried out for Titanium Disilicide ($TiSi_2$) and Lanthanum aluminate ($LaAlO_3$).  This work is briefly discussed to highlight the fact that certain pseudopotentials and exchange functionals better reproduce a particular material and property.
 
-Lanthanum aluminate ($LaAlO_3$) has also been studied using \acrshort{dft}, but this material is better modelled (to reproduce lattice parameters and bulk modulus) with either \acrshort{lda} or a specific form of \acrshort{gga}, the \acrfull{pbesol} potential.  The \acrshort{pbesol} is a revised \acrshort{pbe} functional designed to better reproduce lattice parameters for solids, as shown in table \ref{table:ldaggalaal03}.
+In the case of the compound $TiSi_2$, \acrshort{gga} is in better agreement, overall, with experiment than \acrshort{lda}, although several values are better predicted by the latter.  As shown in table \ref{table:ldaggatisi2}, the data shows that \acrshort{lda} is within 1.26\% of the experimental lattice parameters, 6.16\% of the experimental bulk modulus and 18.3\% the value of the experimental elastic constants; several of these were particularly poor, with an almost 45\% disagreement.  On the other hand, \acrshort{gga} is within 0.66\% of the experimental lattice parameters, 3.62\% of the experimental bulk modulus and 14.97\% the value of the experimental elastic constants\cite{dftrfkj}.
+
+$LaAlO_3$ has also been studied using \acrshort{dft}, but this material is better modelled (to reproduce lattice parameters and bulk modulus) with either \acrshort{lda} or a specific form of \acrshort{gga}, the \acrfull{pbesol} potential.  The \acrshort{pbesol} is a revised \acrshort{pbe} functional designed to better reproduce lattice parameters for solids, as shown in table \ref{table:ldaggalaal03}.
 
 \begin{table}[h]
 \begin{center}
@@ -2578,7 +2621,7 @@ The integral over k-space is replaced by a set of points in k-space that are sam
 
 The Monkhorst-Pack grid is a special set of k-points.  They are distributed evenly in reciprocal space and may be aligned such that either one point coincides with $\Gamma$ or such that 8 points closest points surround $\Gamma$ at an equal distance.  By offsetting the grid from $\Gamma$ and the coordinate axis of reciprocal space, the sampling better avoids points of high symmetry.   
 
-Where the system is spin degenerate, each state is occupied by 2 electrons for the lower $\frac{N_e}{2}$ states ($f(\vec{k}, i) = 2$), and zero otherwise ($f(\vec{k}, i) = 0$)\cite{marzarithesis1}.  This drop, from states occupied by two electrons to empty states occurs at the Fermi surface and it results in a discontinuity in the functions being integrated over in eq. \ref{eq:bzintegration}.  This is the case for an electron gas at absolute zero, but if the gas is heated then there is sufficient energy for electrons to occupy states above the Fermi energy.  This is a problem that affects metals due to the overlap in conduction and valence bands (figure \ref{fig:bandgapshyperphysics}).
+Where the system is spin degenerate, each state is occupied by 2 electrons for the lower $\frac{N_e}{2}$ states ($f(\vec{k}, i) = 2$), and zero otherwise ($f(\vec{k}, i) = 0$)\cite{marzarithesis1}.  This drop, from states occupied by two electrons to empty states occurs at the Fermi surface and it results in a discontinuity in the functions being integrated over in eq. \ref{eq:bzintegration}.  This is the case for an electron gas at absolute zero, but if the gas is heated then there is sufficient energy for electrons to occupy states above the Fermi energy.  This is a problem that affects metals due to the overlap in conduction and valence bands (fig. \ref{fig:bandgapshyperphysics}).
 
 \begin{figure}
 \centering
@@ -2590,7 +2633,7 @@ Where the system is spin degenerate, each state is occupied by 2 electrons for t
 \end{minipage}
 \end{figure}
 
-Fermi-Dirac statistics determine the probability of a Fermion having an energy E (eq. \ref{eq:fermidirac}).  As the temperature increases the probability of finding a fermion above the Fermi energy increases (figure \ref{fig:fermidiracdist}).  This also smooths the discontinuity at the Fermi surface between the occupied and unoccupied states (at 0K). 
+Fermi-Dirac statistics determine the probability of a Fermion having an energy E (eq. \ref{eq:fermidirac}).  As the temperature increases the probability of finding a fermion above the Fermi energy increases (fig. \ref{fig:fermidiracdist}).  This also smooths the discontinuity at the Fermi surface between the occupied and unoccupied states (at 0K). 
 
 \begin{equation}
 \begin{split}
